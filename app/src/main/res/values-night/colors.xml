@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--DARK THEME COLORS-->
+    <color name="colorPrimary">#1DA1F2</color>
+    <color name="colorAccent">#1DA1F2</color>
+    <color name="backgroundColor">#202124</color>
+    <color name="filesToolbarColor">#363739</color>
+    <color name="textTitleColor">#FAFAFA</color>
+    <color name="dialogColor">#3C3D40</color>
+    <color name="switchTrackColor">#606165</color>
+    <color name="disabledColor">#56575B</color>
+    <color name="enabledColor">#B8B8BD</color>
+    <color name="hintColor">#9BA0A6</color>
+    <color name="cardStrokeColor">#5F6267</color>
+    <color name="rippleColor">#4D4D4D</color>
+    <color name="notesColor">@color/backgroundColor</color>
+    <color name="recordButtonsColor">#404040</color>
+    <color name="recordIconsColor">#FAFAFA</color>
+    <color name="radioBackgroundColor">#33A5D6A7</color>
+    <color name="scrollbarColor">#717274</color>
+    <color name="dividerColor">#5F6267</color>
+
+</resources>

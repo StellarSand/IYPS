@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--PARENT APP THEME-->
+    <style name="Base.Theme.OpenRec" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="fontFamily">@font/open_sans</item>
+        <!--<item name="snackbarStyle">@style/SnackBarStyle</item>-->
+    </style>
+
+    <!--BASE APP THEME-->
+    <style name="BaseAppTheme" parent="Base.Theme.OpenRec">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/backgroundColor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/backgroundColor</item>
+        <!--<item name="filesToolbarColor">@color/filesToolbarColor</item>
+        <item name="textTitleColor">@color/textTitleColor</item>
+        <item name="hintColor">@color/hintColor</item>
+        <item name="cardStrokeColor">@color/cardStrokeColor</item>
+        <item name="dialogColor">@color/dialogColor</item>
+        <item name="rippleColor">@color/rippleColor</item>
+        <item name="switchTrackColor">@color/switchTrackColor</item>
+        <item name="DisabledColor">@color/disabledColor</item>
+        <item name="EnabledColor">@color/enabledColor</item>
+        <item name="recordButtonsColor">@color/recordButtonsColor</item>
+        <item name="recordIconsColor">@color/recordIconsColor</item>
+        <item name="radioBackgroundColor">@color/radioBackgroundColor</item>
+        <item name="scrollbarColor">@color/scrollbarColor</item>
+        <item name="dividerColor">@color/dividerColor</item>-->
+    </style>
+
+    <!--MEDIUM BOLD TEXT STYLE-->
+    <style name="MediumBoldText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="fontFamily">@font/open_sans_medium</item>
+    </style>
+
+</resources>

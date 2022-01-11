@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ContentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor">
+
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_45"
+        android:layout_marginBottom="@dimen/margin_20"/>
+
+    <TextView
+        android:id="@+id/main_text"
+        android:layout_below="@+id/app_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:paddingStart="@dimen/margin_32"
+        android:paddingEnd="@dimen/margin_16"
+        android:text="@string/app_name"
+        android:textAlignment="viewStart"
+        android:textColor="@color/textTitleColor"
+        android:textSize="@dimen/text_20" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_box"
+        android:layout_below="@+id/main_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginEnd="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_4"
+        android:paddingBottom="@dimen/margin_4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColorHint="@color/hintColor"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_12">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:imeOptions="flagNoPersonalizedLearning"
+            android:id="@+id/password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:textAlignment="viewStart"
+            android:hint="@string/password"
+            android:textSize="@dimen/text_16"
+            android:textColor="@color/textTitleColor"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/unlock_btn"
+        android:layout_below="@id/password_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_16"
+        android:padding="@dimen/margin_12"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:selectableItemBackground"
+        android:text="@string/check"
+        android:textSize="@dimen/text_14"
+        android:textColor="@color/snackbarTextColor"
+        style="@style/MediumBoldText"/>
+
+    <!--<TextView
+        android:id="@+id/use_biometrics"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/unlock_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/big_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/dialog_buttons_ripple"
+        android:gravity="center"
+        android:paddingStart="@dimen/normal_padding"
+        android:paddingEnd="@dimen/normal_padding"
+        android:text="@string/use_biometrics"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/text_16" />-->
+
+</RelativeLayout>

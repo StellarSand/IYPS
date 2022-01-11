@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">IYPS</string>
+
+    <string name="password">Password</string>
+    <string name="check">Check</string>
+</resources>
