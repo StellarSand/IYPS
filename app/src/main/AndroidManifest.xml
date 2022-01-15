@@ -3,6 +3,7 @@
     package="com.iyps">
 
     <application
+        android:name=".appmanager.ApplicationManager"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--MAIN ACTIVITY MENU-->
+
+    <item
+        android:id="@+id/action_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_overflow_menu"
+        android:title="@string/menu_more">
+        <menu>
+
+            <item
+                android:id="@+id/theme"
+                android:icon="@drawable/ic_theme"
+                android:title="@string/choose_theme_title"/>
+
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/help_title"/>
+
+            <item
+                android:id="@+id/about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about_title"/>
+
+        </menu>
+
+    </item>
+
+</menu>

@@ -7,23 +7,20 @@
     <color name="backgroundColor">#FFFFFF</color>
     <color name="filesToolbarColor">#FFFFFF</color>
     <color name="textTitleColor">#424242</color>
-    <color name="dialogColor">#FFFFFF</color>
+    <color name="bottomSheetColor">#FFFFFF</color>
     <color name="switchTrackColor">#C0C1C3</color>
     <color name="disabledColor">#C4C4C4</color>
     <color name="enabledColor">#606163</color>
     <color name="hintColor">#B2B2B2</color>
     <color name="cardStrokeColor">#DBDCE0</color>
     <color name="rippleColor">#EBEBEB</color>
-    <color name="notesColor">@color/backgroundColor</color>
-    <color name="recordButtonsColor">#F2F2F2</color>
-    <color name="recordIconsColor">#606163</color>
-    <color name="radioBackgroundColor">#F2E8F5E9</color>
     <color name="scrollbarColor">#B8B8B8</color>
     <color name="dividerColor">#DBDCE0</color>
 
-    <!--COMMON COLORS-->
-    <color name="snackbarActionTextColor">#1DA1F2</color>
-    <color name="snackbarTextColor">#FAFAFA</color>
-    <color name="snackbarBackgroundColor">#3C3D40</color>
-    <color name="dialogDeleteButtonColor">#EE686F</color>
+    <color name="worstMeterColor">#FF1744</color>
+    <color name="weakMeterColor">#FF9100</color>
+    <color name="mediumMeterColor">#FFEA00</color>
+    <color name="strongMeterColor">#2979FF</color>
+    <color name="excellentMeterColor">#00E676</color>
+
 </resources>

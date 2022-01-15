@@ -7,6 +7,6 @@
     </style>
 
     <!--BOTTOM SHEET STYLE-->
-    <!--<style name="CustomBottomSheetTheme" parent="BaseBottomSheetTheme"/>-->
+    <style name="CustomBottomSheetTheme" parent="BaseBottomSheetTheme"/>
 
 </resources>
