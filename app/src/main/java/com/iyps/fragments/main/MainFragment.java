@@ -1,7 +1,7 @@
 package com.iyps.fragments.main;
 
-import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -28,8 +28,7 @@ public class MainFragment extends Fragment {
     private TextInputEditText passwordEditText;
     private TextView strengthSubtitle, timeToCrackSubtitle, warningSubtitle, suggestionsSubtitle;
     private LinearProgressIndicator worstMeter, weakMeter, mediumMeter, strongMeter, excellentMeter;
-    private int worstMeterColor, weakMeterColor, mediumMeterColor, strongMeterColor, excellentMeterColor, hintColor;
-    private Zxcvbn zxcvbn;
+    private static int worstMeterColor, weakMeterColor, mediumMeterColor, strongMeterColor, excellentMeterColor, emptyMeterColor;
 
     public MainFragment() {
         // Required empty public constructor
@@ -38,31 +37,12 @@ public class MainFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Resources.Theme theme = requireActivity().getTheme();
-
-        worstMeterColor = getColor(R.color.worstMeterColor, theme);
-        weakMeterColor = getColor(R.color.weakMeterColor, theme);
-        mediumMeterColor = getColor(R.color.mediumMeterColor, theme);
-        strongMeterColor = getColor(R.color.strongMeterColor, theme);
-        excellentMeterColor = getColor(R.color.excellentMeterColor, theme);
-        hintColor = getColor(R.color.hintColor, theme);
-
-        zxcvbn = new Zxcvbn();
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        setHasOptionsMenu(true);
-
-        Zxcvbn zxcvbn = new Zxcvbn();
-        Strength strength = zxcvbn.measure("This is password");
-
-        double d = strength.getCrackTimeSeconds().getOfflineFastHashing1e10PerSecond();
-
         return inflater.inflate(R.layout.fragment_main, container, false);
-
 
     }
 
@@ -70,237 +50,273 @@ public class MainFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         passwordEditText = view.findViewById(R.id.password_input);
-        passwordEditText.addTextChangedListener(passwordTextWatcher);
-        strengthSubtitle= view.findViewById(R.id.strength_subtitle);
-        timeToCrackSubtitle= view.findViewById(R.id.time_to_crack_subtitle);
+        strengthSubtitle = view.findViewById(R.id.strength_subtitle);
+        timeToCrackSubtitle = view.findViewById(R.id.time_to_crack_subtitle);
         warningSubtitle = view.findViewById(R.id.warning_subtitle);
         suggestionsSubtitle = view.findViewById(R.id.suggestions_subtitle);
-        worstMeter= view.findViewById(R.id.worst_meter);
-        weakMeter= view.findViewById(R.id.weak_meter);
-        mediumMeter= view.findViewById(R.id.medium_meter);
-        strongMeter= view.findViewById(R.id.strong_meter);
-        excellentMeter= view.findViewById(R.id.excellent_meter);
+        worstMeter = view.findViewById(R.id.worst_meter);
+        weakMeter = view.findViewById(R.id.weak_meter);
+        mediumMeter = view.findViewById(R.id.medium_meter);
+        strongMeter = view.findViewById(R.id.strong_meter);
+        excellentMeter = view.findViewById(R.id.excellent_meter);
+        worstMeterColor = getColor(R.color.worstMeterColor);
+        weakMeterColor = getColor(R.color.weakMeterColor);
+        mediumMeterColor = getColor(R.color.mediumMeterColor);
+        strongMeterColor = getColor(R.color.strongMeterColor);
+        excellentMeterColor = getColor(R.color.excellentMeterColor);
+        emptyMeterColor = getColor(R.color.hintColor);
 
     /*========================================================================================*/
+
+        passwordEditText.addTextChangedListener(passwordTextWatcher);
 
     }
 
     // PASSWORD TEXT WATCHER
     private final TextWatcher passwordTextWatcher =new TextWatcher() {
+
+        CountDownTimer delayTimer = null;
+
         @Override
         public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
 
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-            String passwordString= Objects.requireNonNull(passwordEditText.getText()).toString();
-
-            // IF EDIT TEXT NOT EMPTY
-            if (!passwordString.equals("")) {
-
-                Strength strength = zxcvbn.measure(passwordString);
-
-                long crackTimeSeconds= (long) ((strength.getCrackTimeSeconds().getOfflineSlowHashing1e4perSecond())*1000);
-
-                PasswordType result = setPasswordType(crackTimeSeconds);
-
-                switch (result){
-                    case WORST:
-                        setWorst();
-                        break;
-
-                    case WEAK:
-                        setWeak();
-                        break;
-
-                    case MEDIUM:
-                        setMedium();
-                        break;
-
-                    case STRONG:
-                        setStrong();
-                        break;
-
-                    case EXCELLENT:
-                        setExcellent();
-                        break;
-
-                }
-
-
-                // TIME TO CRACK
-                timeToCrackSubtitle.setText(strength.getCrackTimesDisplay().getOfflineSlowHashing1e4perSecond());
-
-                // WARNING
-                // IF EMPTY, SET CUSTOM WARNING MESSAGE
-                if (strength.getFeedback().getWarning().isEmpty()){
-
-                    if (result == PasswordType.WORST )
-                    {
-                        warningSubtitle.setText(getString(R.string.worst_pass_warning)); // WORST WARNING
-                    }
-                    else if (result == PasswordType.WEAK)
-                    {
-                        warningSubtitle.setText(getString(R.string.weak_pass_warning)); // WEAK WARNING
-                    }
-                    else
-                    {
-                        warningSubtitle.setText(getString(R.string.not_applicable)); // FOR MEDIUM AND ABOVE
-                    }
-                }
-
-                // IF NOT EMPTY, DISPLAY WARNING
-                else {
-                    warningSubtitle.setText(strength.getFeedback().getWarning());
-                }
-
-                // SUGGESTIONS
-                List<String> suggestions = strength.getFeedback().getSuggestions();
-
-                if(suggestions != null && suggestions.size() != 0){
-                    suggestionsSubtitle.setText(suggestions.get(suggestions.size()-1));
-                }
-                else{
-                    suggestionsSubtitle.setText(R.string.not_available);
-                }
-
+            // INTRODUCE A SUBTLE DELAY,
+            // SO PASSWORDS ARE CHECKED AFTER TYPING IS FINISHED
+            if (delayTimer != null) {
+                delayTimer.cancel();
             }
 
-            // IF EDIT TEXT IS EMPTY OR CLEARED, RESET EVERYTHING
-            else
-                setEmpty();
+            delayTimer = new CountDownTimer(300, 100) {
+
+                public void onTick(long millisUntilFinished) {}
+
+                // ON TIMER FINISH, PERFORM ACTION
+                public void onFinish() {
+
+                    String passwordString= Objects.requireNonNull(passwordEditText.getText()).toString();
+                    Zxcvbn zxcvbn = new Zxcvbn();
+
+                    // IF EDIT TEXT NOT EMPTY
+                    if (!passwordString.equals("")) {
+
+                        Strength strength = zxcvbn.measure(passwordString);
+
+                        long crackTimeMilliSeconds= (long) ((strength
+                                .getCrackTimeSeconds()
+                                .getOfflineSlowHashing1e4perSecond())*1000);
+
+                        switch (passwordCrackTimeResult(crackTimeMilliSeconds)){
+
+                            case "WORST":
+                                StrengthMeter(getString(R.string.worst), 1);
+                                break;
+
+                            case "WEAK":
+                                StrengthMeter(getString(R.string.weak), 2);
+                                break;
+
+                            case "MEDIUM":
+                                StrengthMeter(getString(R.string.medium), 3);
+                                break;
+
+                            case "STRONG":
+                                StrengthMeter(getString(R.string.strong), 4);
+                                break;
+
+                            case "EXCELLENT":
+                                StrengthMeter(getString(R.string.excellent), 5);
+                                break;
+
+                        }
+
+                        // TIME TO CRACK
+                        timeToCrackSubtitle.setText(strength.getCrackTimesDisplay().getOfflineSlowHashing1e4perSecond());
+
+                        // WARNING
+                        // IF EMPTY, SET CUSTOM WARNING MESSAGE
+                        if (strength.getFeedback().getWarning().isEmpty()){
+
+                            switch (passwordCrackTimeResult(crackTimeMilliSeconds)){
+                                case "WORST":
+                                    warningSubtitle.setText(getString(R.string.worst_pass_warning)); // WORST WARNING
+                                    break;
+
+                                case "WEAK":
+                                    warningSubtitle.setText(getString(R.string.weak_pass_warning)); // WEAK WARNING
+                                    break;
+
+                                case "MEDIUM":
+                                    warningSubtitle.setText(getString(R.string.medium_pass_warning)); // MEDIUM WARNING
+                                    break;
+
+                                default:
+                                    warningSubtitle.setText(getString(R.string.not_applicable)); // FOR STRONG AND ABOVE
+                                    break;
+                            }
+                        }
+
+                        // IF NOT EMPTY, DISPLAY WARNING
+                        else {
+                            warningSubtitle.setText(strength.getFeedback().getWarning());
+                        }
+
+                        // SUGGESTIONS
+                        List<String> suggestions = strength.getFeedback().getSuggestions();
+
+                        if(suggestions != null && suggestions.size() != 0){
+                            suggestionsSubtitle.setText(suggestions.get(suggestions.size()-1));
+                        }
+                        else{
+                            suggestionsSubtitle.setText(R.string.not_applicable);
+                        }
+
+                    }
+
+                    // IF EDIT TEXT IS EMPTY OR CLEARED, RESET EVERYTHING
+                    else{
+                        StrengthMeter(getString(R.string.worst), 1);
+                        timeToCrackSubtitle.setText(getString(R.string.less_than_a_second));
+                        warningSubtitle.setText(getString(R.string.worst_pass_warning));
+                        suggestionsSubtitle.setText(getString(R.string.default_suggestion));
+                    }
+
+                }
+
+            }.start();
+
         }
 
         @Override
-        public void afterTextChanged(Editable editable) {
-            //new Handler(Looper.getMainLooper()).postDelayed(this::NewReminderBottomSheet, 300);
-        }
+        public void afterTextChanged(Editable editable) {}
+
     };
 
-    private int getColor(int color, Resources.Theme theme){
-        return  getResources().getColor(color, theme);
+    private int getColor(int color){
+        return  getResources().getColor(color, requireActivity().getTheme());
     }
 
-    private void setWorst(){
-        strengthSubtitle.setText(getString(R.string.worst));
-        worstMeter.setIndicatorColor(worstMeterColor);
-        weakMeter.setIndicatorColor(hintColor);
-        mediumMeter.setIndicatorColor(hintColor);
-        strongMeter.setIndicatorColor(hintColor);
-        excellentMeter.setIndicatorColor(hintColor);
-        worstMeter.setProgress(100);
-        weakMeter.setProgress(0);
-        mediumMeter.setProgress(0);
-        strongMeter.setProgress(0);
-        excellentMeter.setProgress(0);
+    // SET UP STRENGTH METER
+    private void StrengthMeter(String strengthText, int filledProgressIndicators){
+
+        int progress2=0,
+            progress3=0,
+            progress4=0,
+            progress5=0;
+
+        switch (filledProgressIndicators)
+        {
+
+            case 1:
+                worstMeter.setIndicatorColor(worstMeterColor);
+                weakMeter.setIndicatorColor(emptyMeterColor);
+                mediumMeter.setIndicatorColor(emptyMeterColor);
+                strongMeter.setIndicatorColor(emptyMeterColor);
+                excellentMeter.setIndicatorColor(emptyMeterColor);
+                break;
+
+            case 2:
+                worstMeter.setIndicatorColor(weakMeterColor);
+                weakMeter.setIndicatorColor(weakMeterColor);
+                mediumMeter.setIndicatorColor(emptyMeterColor);
+                strongMeter.setIndicatorColor(emptyMeterColor);
+                excellentMeter.setIndicatorColor(emptyMeterColor);
+                progress2=100;
+                break;
+
+            case 3:
+                worstMeter.setIndicatorColor(mediumMeterColor);
+                weakMeter.setIndicatorColor(mediumMeterColor);
+                mediumMeter.setIndicatorColor(mediumMeterColor);
+                strongMeter.setIndicatorColor(emptyMeterColor);
+                excellentMeter.setIndicatorColor(emptyMeterColor);
+                progress2=100;
+                progress3=100;
+                break;
+
+            case 4:
+                worstMeter.setIndicatorColor(strongMeterColor);
+                weakMeter.setIndicatorColor(strongMeterColor);
+                mediumMeter.setIndicatorColor(strongMeterColor);
+                strongMeter.setIndicatorColor(strongMeterColor);
+                excellentMeter.setIndicatorColor(emptyMeterColor);
+                progress2=100;
+                progress3=100;
+                progress4=100;
+                break;
+
+            case 5:
+                worstMeter.setIndicatorColor(excellentMeterColor);
+                weakMeter.setIndicatorColor(excellentMeterColor);
+                mediumMeter.setIndicatorColor(excellentMeterColor);
+                strongMeter.setIndicatorColor(excellentMeterColor);
+                excellentMeter.setIndicatorColor(excellentMeterColor);
+                progress2=100;
+                progress3=100;
+                progress4=100;
+                progress5=100;
+                break;
+
+        }
+
+        strengthSubtitle.setText(strengthText);
+
+        worstMeter.setProgressCompat(100, true);
+        weakMeter.setProgressCompat(progress2, true);
+        mediumMeter.setProgressCompat(progress3, true);
+        strongMeter.setProgressCompat(progress4, true);
+        excellentMeter.setProgressCompat(progress5, true);
+
     }
 
-    private void setWeak(){
-        strengthSubtitle.setText(getString(R.string.weak));
-        worstMeter.setIndicatorColor(weakMeterColor);
-        weakMeter.setIndicatorColor(weakMeterColor);
-        mediumMeter.setIndicatorColor(hintColor);
-        strongMeter.setIndicatorColor(hintColor);
-        excellentMeter.setIndicatorColor(hintColor);
-        worstMeter.setProgress(100);
-        weakMeter.setProgress(100);
-        mediumMeter.setProgress(0);
-        strongMeter.setProgress(0);
-        excellentMeter.setProgress(0);
-    }
+    // CHECK PASSWORD CRACK TIME CUSTOM RESULT
+    private String passwordCrackTimeResult(long crackTimeMilliSeconds)
+    {
+        String result=null;
 
-    private void setMedium(){
-        strengthSubtitle.setText(getString(R.string.medium));
-        worstMeter.setIndicatorColor(mediumMeterColor);
-        weakMeter.setIndicatorColor(mediumMeterColor);
-        mediumMeter.setIndicatorColor(mediumMeterColor);
-        strongMeter.setIndicatorColor(hintColor);
-        excellentMeter.setIndicatorColor(hintColor);
-        worstMeter.setProgress(100);
-        weakMeter.setProgress(100);
-        mediumMeter.setProgress(100);
-        strongMeter.setProgress(0);
-        excellentMeter.setProgress(0);
-    }
+        // TAKE DAYS IN:
+        // MONTH=31, YEAR=365
 
-    private void setStrong(){
-        strengthSubtitle.setText(getString(R.string.strong));
-        worstMeter.setIndicatorColor(strongMeterColor);
-        weakMeter.setIndicatorColor(strongMeterColor);
-        mediumMeter.setIndicatorColor(strongMeterColor);
-        strongMeter.setIndicatorColor(strongMeterColor);
-        excellentMeter.setIndicatorColor(hintColor);
-        worstMeter.setProgress(100);
-        weakMeter.setProgress(100);
-        mediumMeter.setProgress(100);
-        strongMeter.setProgress(100);
-        excellentMeter.setProgress(0);
-    }
+        // WORST = LESS THAN/EQUAL TO 2 MINUTES
+        if(crackTimeMilliSeconds < TimeUnit.MINUTES.toMillis(2)
+           || crackTimeMilliSeconds == TimeUnit.MINUTES.toMillis(2))
+        {
+            result="WORST";
+        }
 
-    private void setExcellent(){
-        strengthSubtitle.setText(getString(R.string.excellent));
-        worstMeter.setIndicatorColor(excellentMeterColor);
-        weakMeter.setIndicatorColor(excellentMeterColor);
-        mediumMeter.setIndicatorColor(excellentMeterColor);
-        strongMeter.setIndicatorColor(excellentMeterColor);
-        excellentMeter.setIndicatorColor(excellentMeterColor);
-        worstMeter.setProgress(100);
-        weakMeter.setProgress(100);
-        mediumMeter.setProgress(100);
-        strongMeter.setProgress(100);
-        excellentMeter.setProgress(100);
-    }
+        // WEAK = MORE THAN 2 MINUTES, LESS THAN/EQUAL TO 5 DAYS
+        else if(crackTimeMilliSeconds > TimeUnit.MINUTES.toMillis(2)
+                && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(5)
+                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(5))
+        {
+            result="WEAK";
+        }
 
-    private void setEmpty(){
-        strengthSubtitle.setText(getString(R.string.worst));
-        worstMeter.setIndicatorColor(worstMeterColor);
-        weakMeter.setIndicatorColor(hintColor);
-        mediumMeter.setIndicatorColor(hintColor);
-        strongMeter.setIndicatorColor(hintColor);
-        excellentMeter.setIndicatorColor(hintColor);
-        worstMeter.setProgress(100);
-        weakMeter.setProgress(0);
-        mediumMeter.setProgress(0);
-        strongMeter.setProgress(0);
-        excellentMeter.setProgress(0);
-        timeToCrackSubtitle.setText(getString(R.string.less_than_a_second));
-        warningSubtitle.setText(getString(R.string.worst_pass_warning));
-    }
+        // MEDIUM = MORE THAN 5 DAYS, LESS THAN/EQUAL TO 5 MONTHS
+        else if(crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(5)
+                && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(155)
+                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(155))
+        {
+            result="MEDIUM";
+        }
 
-    private PasswordType setPasswordType(long crackTimeSeconds){
+        // STRONG = MORE THAN 5 MONTHS, LESS THAN/EQUAL TO 5 YEARS
+        else if(crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(155)
+                && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(1825)
+                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(1825))
+        {
+            result="STRONG";
+        }
 
-        PasswordType result = PasswordType.WORST;
-
-        if(crackTimeSeconds < TimeUnit.MINUTES.toMillis(2) || crackTimeSeconds == TimeUnit.MINUTES.toMillis(2))
-            result = PasswordType.WORST;
-
-        else if(crackTimeSeconds > TimeUnit.MINUTES.toMillis(2)
-                && crackTimeSeconds < TimeUnit.DAYS.toMillis(5)
-                || crackTimeSeconds == TimeUnit.DAYS.toMillis(5))
-            result = PasswordType.WEAK;
-
-        else if(crackTimeSeconds > TimeUnit.DAYS.toMillis(5)
-                && crackTimeSeconds < TimeUnit.DAYS.toMillis(155)
-                || crackTimeSeconds == TimeUnit.DAYS.toMillis(155))
-            result = PasswordType.MEDIUM;
-
-        else if(crackTimeSeconds > TimeUnit.DAYS.toMillis(155)
-                && crackTimeSeconds < TimeUnit.DAYS.toMillis(1825)
-                || crackTimeSeconds == TimeUnit.DAYS.toMillis(1825))
-            result = PasswordType.STRONG;
-
-        else if(crackTimeSeconds > TimeUnit.DAYS.toMillis(1825))
-            result = PasswordType.EXCELLENT;
+        // EXCELLENT = MORE THAN 5 YEARS
+        else if(crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(1825))
+        {
+            result="EXCELLENT";
+        }
 
         return result;
-    }
 
-    enum PasswordType{
-        WORST,
-        WEAK,
-        MEDIUM,
-        STRONG,
-        EXCELLENT
     }
-
 }

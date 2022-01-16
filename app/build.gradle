@@ -9,7 +9,7 @@ android {
         applicationId "com.iyps"
         minSdk 23
         targetSdk 31
-        versionCode 1
+        versionCode 100
         versionName "1.0.0"
     }
 

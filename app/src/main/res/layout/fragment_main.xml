@@ -33,7 +33,7 @@
                 android:id="@+id/password_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
+                android:hint="@string/test_password"
                 android:imeOptions="flagNoPersonalizedLearning"
                 android:inputType="textPassword"
                 android:textAlignment="viewStart"
@@ -297,182 +297,13 @@
                     android:layout_toEndOf="@+id/suggestions_img"
                     android:paddingStart="@dimen/margin_8"
                     android:paddingEnd="@dimen/margin_8"
-                    android:text="Uncommon words are better"
+                    android:text="@string/default_suggestion"
                     android:textColor="?colorControlNormal"
                     android:textSize="@dimen/text_14" />
 
             </RelativeLayout>
 
         </LinearLayout>
-
-        <!--<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginStart="@dimen/margin_20"
-            android:layout_marginEnd="@dimen/margin_20"
-            android:layout_marginTop="@dimen/margin_2.5"
-            android:layout_marginBottom="@dimen/margin_20"
-            android:paddingTop="@dimen/margin_6.5"
-            android:paddingBottom="@dimen/margin_6.5"
-            android:background="@drawable/card_shape">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_12"
-                android:layout_marginBottom="@dimen/margin_12"
-                android:layout_marginStart="@dimen/margin_8"
-                android:paddingStart="@dimen/margin_8"
-                android:paddingEnd="@dimen/margin_8"
-                android:text="@string/settings"
-                android:textColor="@color/textTitleColor"
-                android:textSize="@dimen/text_20"/>
-
-            <RelativeLayout
-                android:id="@+id/settings_theme_holder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_10"
-                android:layout_marginBottom="1dp"
-                android:paddingStart="@dimen/margin_20"
-                android:paddingTop="@dimen/margin_10"
-                android:paddingEnd="@dimen/margin_12"
-                android:paddingBottom="@dimen/margin_10">
-
-                <ImageView
-                    android:id="@+id/theme_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/margin_12"
-                    android:src="@drawable/ic_theme" />
-
-                <TextView
-                    android:id="@+id/settings_theme_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_2.5"
-                    android:layout_toEndOf="@+id/theme_img"
-                    android:paddingStart="@dimen/margin_8"
-                    android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/choose_theme_title"
-                    android:textColor="@color/textTitleColor"
-                    android:textSize="@dimen/text_16" />
-
-                <TextView
-                    android:id="@+id/settings_theme_subtitle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/settings_theme_title"
-                    android:layout_toEndOf="@+id/theme_img"
-                    android:paddingStart="@dimen/margin_8"
-                    android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/system_default"
-                    android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_14" />
-
-            </RelativeLayout>
-
-            &lt;!&ndash;=====================================================&ndash;&gt;
-
-            <RelativeLayout
-                android:id="@+id/settings_help_holder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_2.5"
-                android:layout_marginBottom="1dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:paddingStart="@dimen/margin_20"
-                android:paddingTop="@dimen/margin_10"
-                android:paddingEnd="@dimen/margin_12"
-                android:paddingBottom="@dimen/margin_10">
-
-                <ImageView
-                    android:id="@+id/settings_help_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/margin_12"
-                    android:src="@drawable/ic_help" />
-
-                <TextView
-                    android:id="@+id/settings_help_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_2.5"
-                    android:layout_toEndOf="@+id/settings_help_img"
-                    android:paddingStart="@dimen/margin_8"
-                    android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/help_title"
-                    android:textColor="@color/textTitleColor"
-                    android:textSize="@dimen/text_16" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/settings_help_title"
-                    android:layout_toEndOf="@+id/settings_help_img"
-                    android:paddingStart="@dimen/margin_8"
-                    android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/help_subtitle"
-                    android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_14" />
-
-            </RelativeLayout>
-
-            &lt;!&ndash;=====================================================&ndash;&gt;
-
-            <RelativeLayout
-                android:id="@+id/settings_about_holder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_2.5"
-                android:layout_marginBottom="1dp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:paddingStart="@dimen/margin_20"
-                android:paddingTop="@dimen/margin_10"
-                android:paddingEnd="@dimen/margin_12"
-                android:paddingBottom="@dimen/margin_10">
-
-                <ImageView
-                    android:id="@+id/settings_about_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="@dimen/margin_12"
-                    android:src="@drawable/ic_about" />
-
-                <TextView
-                    android:id="@+id/settings_about_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_2.5"
-                    android:layout_toEndOf="@+id/settings_about_img"
-                    android:paddingStart="@dimen/margin_8"
-                    android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/about_title"
-                    android:textColor="@color/textTitleColor"
-                    android:textSize="@dimen/text_16" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/settings_about_title"
-                    android:layout_toEndOf="@+id/settings_about_img"
-                    android:paddingStart="@dimen/margin_8"
-                    android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/about_subtitle"
-                    android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_14" />
-
-            </RelativeLayout>
-
-        </LinearLayout>-->
 
     </LinearLayout>
 

@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
     private PreferenceManager preferenceManager;
     private Fragment fragment;
-    private MaterialToolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -41,17 +41,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         preferenceManager=new PreferenceManager(this);
-        toolbar = findViewById(R.id.toolbar_main);
+        MaterialToolbar toolbar = findViewById(R.id.toolbar_main);
 
     /*===========================================================================================*/
+
+        // DISABLE SCREENSHOTS & SCREEN RECORDINGS
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         // TOOLBAR AS ACTIONBAR
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setHomeAsUpIndicator(R.drawable.ic_back);
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
-
-        // HIDE TITLE FROM TOOLBAR
-        //Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
 
         // DEFAULT FRAGMENT
         if (savedInstanceState==null) {
@@ -108,8 +108,8 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
-        // HELP
-        menu.findItem(R.id.help).setOnMenuItemClickListener(item2 -> {
+        // REPORT AN ISSUE
+        menu.findItem(R.id.report_issue).setOnMenuItemClickListener(item2 -> {
 
             try
             {

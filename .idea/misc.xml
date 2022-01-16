@@ -13,7 +13,9 @@
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_check.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_info.xml" value="0.2537037037037037" />
+        <entry key="app/src/main/res/drawable/ic_outline_bug_report_24.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_overflow_menu.xml" value="0.2537037037037037" />
+        <entry key="app/src/main/res/drawable/ic_report_issue.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_warning.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/scrollbar_thumb.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/settings_about.xml" value="0.22692307692307692" />
@@ -22,6 +24,8 @@
         <entry key="app/src/main/res/drawable/strength.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/suggestion.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/switch_track.xml" value="0.22692307692307692" />
+        <entry key="app/src/main/res/drawable/warning.xml" value="0.22692307692307692" />
+        <entry key="app/src/main/res/drawable/warning2.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/why_not_secure.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/font/open_sans.xml" value="0.26944444444444443" />
         <entry key="app/src/main/res/layout-w1240dp/activity_host_fragment.xml" value="0.2109375" />

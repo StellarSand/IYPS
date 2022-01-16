@@ -18,9 +18,9 @@
                 android:title="@string/choose_theme_title"/>
 
             <item
-                android:id="@+id/help"
-                android:icon="@drawable/ic_help"
-                android:title="@string/help_title"/>
+                android:id="@+id/report_issue"
+                android:icon="@drawable/ic_report_issue"
+                android:title="@string/report_issue_title"/>
 
             <item
                 android:id="@+id/about"
