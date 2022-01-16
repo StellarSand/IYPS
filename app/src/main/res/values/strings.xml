@@ -4,7 +4,7 @@
     <string name="app_name_full">Is Your Password Secure?</string>
     <string name="app_version">Version: 1.0.0</string>
 
-    <string name="password">Password</string>
+    <string name="password">Test Your Password</string>
     <!--<string name="check">Check</string>
     <string name="mode">Mode</string>
     <string name="info">Info</string>-->
@@ -55,5 +55,6 @@
 
     <!--TOASTS-->
     <string name="no_browsers">No browsers installed on this device</string>
+    <string name="not_available">Not Available</string>
 
 </resources>
