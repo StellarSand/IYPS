@@ -2,7 +2,7 @@
 <resources>
 
     <!--DARK THEME COLORS-->
-    <color name="colorPrimary">#59B268</color>
+    <color name="colorPrimary">#42A5F5</color>
     <color name="colorAccent">#59B268</color>
     <color name="backgroundColor">#202124</color>
     <color name="textTitleColor">#FAFAFA</color>

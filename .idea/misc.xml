@@ -6,14 +6,12 @@
         <entry key="../../../../layout/custom_preview.xml" value="0.2537037037037037" />
         <entry key="app/src/main/res/drawable/account.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/bottom_sheet_shape.xml" value="0.22692307692307692" />
-        <entry key="app/src/main/res/drawable/button_shape.xml" value="0.22735042735042735" />
         <entry key="app/src/main/res/drawable/card_shape_with_ripple.xml" value="0.24444444444444444" />
         <entry key="app/src/main/res/drawable/dialog_buttons_ripple.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/est_time_to_crack.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_back.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_check.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_info.xml" value="0.2537037037037037" />
-        <entry key="app/src/main/res/drawable/ic_outline_bug_report_24.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_overflow_menu.xml" value="0.2537037037037037" />
         <entry key="app/src/main/res/drawable/ic_report_issue.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/ic_warning.xml" value="0.22692307692307692" />
@@ -25,20 +23,16 @@
         <entry key="app/src/main/res/drawable/suggestion.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/switch_track.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/drawable/warning.xml" value="0.22692307692307692" />
-        <entry key="app/src/main/res/drawable/warning2.xml" value="0.22692307692307692" />
-        <entry key="app/src/main/res/drawable/why_not_secure.xml" value="0.22692307692307692" />
         <entry key="app/src/main/res/font/open_sans.xml" value="0.26944444444444443" />
-        <entry key="app/src/main/res/layout-w1240dp/activity_host_fragment.xml" value="0.2109375" />
         <entry key="app/src/main/res/layout/activity_host_fragment.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.2604166666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/bottom_sheet_header.xml" value="0.21367521367521367" />
-        <entry key="app/src/main/res/layout/bottom_sheet_long_click.xml" value="0.21367521367521367" />
         <entry key="app/src/main/res/layout/bottom_sheet_options.xml" value="0.21367521367521367" />
-        <entry key="app/src/main/res/layout/bottom_sheet_theme.xml" value="0.21367521367521367" />
+        <entry key="app/src/main/res/layout/bottom_sheet_theme.xml" value="0.33" />
         <entry key="app/src/main/res/layout/dialog_footer.xml" value="0.21367521367521367" />
         <entry key="app/src/main/res/layout/divider_horizontal.xml" value="0.21367521367521367" />
-        <entry key="app/src/main/res/layout/fragment_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_main.xml" value="0.21367521367521367" />
         <entry key="app/src/main/res/layout/fragment_settings_about.xml" value="0.25" />
         <entry key="app/src/main/res/menu/menu_activity_main.xml" value="0.2604166666666667" />
       </map>

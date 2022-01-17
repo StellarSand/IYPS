@@ -100,7 +100,7 @@
                     android:layout_toEndOf="@+id/strength_img"
                     android:paddingStart="@dimen/margin_8"
                     android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/worst"
+                    android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
                     android:textSize="@dimen/text_14" />
 
@@ -122,7 +122,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="2dp"
                         app:trackCornerRadius="@dimen/margin_10"
-                        app:trackColor="@color/worstMeterColor"
+                        app:trackColor="@color/hintColor"
                         android:layout_weight="1"/>
 
                     <com.google.android.material.progressindicator.LinearProgressIndicator
@@ -207,7 +207,7 @@
                     android:layout_toEndOf="@+id/time_to_crack_img"
                     android:paddingStart="@dimen/margin_8"
                     android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/less_than_a_second"
+                    android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
                     android:textSize="@dimen/text_14" />
 
@@ -252,7 +252,7 @@
                     android:layout_toEndOf="@+id/warning_img"
                     android:paddingStart="@dimen/margin_8"
                     android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/worst_pass_warning"
+                    android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
                     android:textSize="@dimen/text_14" />
 
@@ -297,7 +297,7 @@
                     android:layout_toEndOf="@+id/suggestions_img"
                     android:paddingStart="@dimen/margin_8"
                     android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/default_suggestion"
+                    android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
                     android:textSize="@dimen/text_14" />
 

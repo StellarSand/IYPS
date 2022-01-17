@@ -75,7 +75,7 @@
         android:padding="@dimen/margin_12"
         android:text="@string/cancel_button"
         style="@style/MediumBoldText"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
         android:textSize="@dimen/text_16" />
 
 </LinearLayout>

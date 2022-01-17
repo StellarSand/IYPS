@@ -2,7 +2,7 @@
 <resources>
 
     <!--LIGHT THEME COLORS-->
-    <color name="colorPrimary">#59B268</color>
+    <color name="colorPrimary">#2196F3</color>
     <color name="colorAccent">#59B268</color>
     <color name="backgroundColor">#FFFFFF</color>
     <color name="textTitleColor">#424242</color>
@@ -19,7 +19,7 @@
     <color name="worstMeterColor">#E53935</color>
     <color name="weakMeterColor">#FB8C00</color>
     <color name="mediumMeterColor">#FDD835</color>
-    <color name="strongMeterColor">#2196F3</color>
-    <color name="excellentMeterColor">#4CAF50</color>
+    <color name="strongMeterColor">#7CB342</color>
+    <color name="excellentMeterColor">#43A047</color>
 
 </resources>
