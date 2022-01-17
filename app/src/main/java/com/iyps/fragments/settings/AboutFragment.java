@@ -53,7 +53,7 @@ public class AboutFragment extends Fragment {
                     try
                     {
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://github.com/the-weird-aquarian/IYPS/blob/main/PRIVACY.md")));
+                                Uri.parse("https://github.com/the-weird-aquarian/IYPS/blob/master/PRIVACY.md")));
                     }
                     // IF BROWSERS NOT INSTALLED, SHOW TOAST
                     catch (ActivityNotFoundException e)
@@ -68,7 +68,7 @@ public class AboutFragment extends Fragment {
                     try
                     {
                         startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://github.com/the-weird-aquarian/IYPS/blob/main/LICENSE")));
+                                Uri.parse("https://github.com/the-weird-aquarian/IYPS/blob/master/LICENSE")));
                     }
                     // IF BROWSERS NOT INSTALLED, SHOW TOAST
                     catch (ActivityNotFoundException e)
