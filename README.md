@@ -1,3 +1,5 @@
+<img src="/app/src/main/res/drawable/app_icon.png" width="80"/> 
+
 # Is Your Password Secure?
 
 A password strength test app which displays strength, estimated crack time and provides warnings and suggestions to help make better passwords.
@@ -19,9 +21,9 @@ A password strength test app which displays strength, estimated crack time and p
 
 ## Screenshots
 
-<img src="https://github.com/the-weird-aquarian/IYPS/tree/master/fastlane/metadata/android/en-US/images/phoneScreenshots/worst.png" width="200"/>  <img src="https://github.com/the-weird-aquarian/IYPS/tree/master/fastlane/metadata/android/en-US/images/phoneScreenshots/weak.png" width="200"/>
+<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/worst.png" width="200"/>  <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/weak.png" width="200"/>
 
-<img src="https://github.com/the-weird-aquarian/IYPS/tree/master/fastlane/metadata/android/en-US/images/phoneScreenshots/medium.png" width="200"/>  <img src="https://github.com/the-weird-aquarian/IYPS/tree/master/fastlane/metadata/android/en-US/images/phoneScreenshots/excellent.png" width="200"/>
+<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/medium.png" width="200"/>  <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/excellent.png" width="200"/>
 
 
 
