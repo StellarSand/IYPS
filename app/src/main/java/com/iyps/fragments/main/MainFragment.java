@@ -29,6 +29,11 @@ public class MainFragment extends Fragment {
     private TextView strengthSubtitle, timeToCrackSubtitle, warningSubtitle, suggestionsSubtitle;
     private LinearProgressIndicator worstMeter, weakMeter, mediumMeter, strongMeter, excellentMeter;
     private static int worstMeterColor, weakMeterColor, mediumMeterColor, strongMeterColor, excellentMeterColor, emptyMeterColor;
+    private StringBuilder suggestionText;
+
+    private Zxcvbn zxcvbn;
+
+    private String worst, weak, medium, strong, excellent, not_applicable, passwordString;
 
     public MainFragment() {
         // Required empty public constructor
@@ -41,6 +46,18 @@ public class MainFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        suggestionText = new StringBuilder();
+
+        zxcvbn = new Zxcvbn();
+
+        worst = getString(R.string.worst);
+        weak = getString(R.string.weak);
+        medium = getString(R.string.medium);
+        strong = getString(R.string.strong);
+        excellent = getString(R.string.excellent);
+        not_applicable =getString(R.string.not_applicable);
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false);
 
@@ -66,7 +83,7 @@ public class MainFragment extends Fragment {
         excellentMeterColor = getColor(R.color.excellentMeterColor);
         emptyMeterColor = getColor(R.color.hintColor);
 
-    /*========================================================================================*/
+
 
         passwordEditText.addTextChangedListener(passwordTextWatcher);
 
@@ -96,8 +113,7 @@ public class MainFragment extends Fragment {
                 // ON TIMER FINISH, PERFORM ACTION
                 public void onFinish() {
 
-                    String passwordString= Objects.requireNonNull(passwordEditText.getText()).toString();
-                    Zxcvbn zxcvbn = new Zxcvbn();
+                    passwordString= Objects.requireNonNull(passwordEditText.getText()).toString();
 
                     // IF EDIT TEXT NOT EMPTY
                     if (!passwordString.equals("")) {
@@ -153,7 +169,7 @@ public class MainFragment extends Fragment {
                                     break;
 
                                 default:
-                                    warningSubtitle.setText(getString(R.string.not_applicable)); // FOR STRONG AND ABOVE
+                                    warningSubtitle.setText(not_applicable); // FOR STRONG AND ABOVE
                                     break;
                             }
                         }
@@ -167,18 +183,16 @@ public class MainFragment extends Fragment {
                         List<String> suggestions = strength.getFeedback().getSuggestions();
 
                         if(suggestions != null && suggestions.size() != 0){
-
-                            StringBuilder suggestionText = null;
-
+                            suggestionText.setLength(0);
                             for (int i = 0; i < suggestions.size(); i++) {
 
                                 suggestionText = new StringBuilder(suggestionText + "\u2022 " + suggestions.get(i) + "\n");
                             }
 
-                            suggestionsSubtitle.setText(suggestionText);
+                            suggestionsSubtitle.setText(suggestionText.toString());
                         }
                         else{
-                            suggestionsSubtitle.setText(R.string.not_applicable);
+                            suggestionsSubtitle.setText(not_applicable);
                         }
 
                     }
@@ -206,12 +220,14 @@ public class MainFragment extends Fragment {
     // WORST STRENGTH METER
     private void WorstStrengthMeter()
     {
-        strengthSubtitle.setText(getString(R.string.worst));
+        strengthSubtitle.setText(worst);
+
         worstMeter.setIndicatorColor(worstMeterColor);
         weakMeter.setIndicatorColor(emptyMeterColor);
         mediumMeter.setIndicatorColor(emptyMeterColor);
         strongMeter.setIndicatorColor(emptyMeterColor);
         excellentMeter.setIndicatorColor(emptyMeterColor);
+
         worstMeter.setProgressCompat(100, true);
         weakMeter.setProgressCompat(0, true);
         mediumMeter.setProgressCompat(0, true);
@@ -222,12 +238,14 @@ public class MainFragment extends Fragment {
     // WEAK STRENGTH METER
     private void WeakStrengthMeter()
     {
-        strengthSubtitle.setText(getString(R.string.weak));
+        strengthSubtitle.setText(weak);
+
         worstMeter.setIndicatorColor(weakMeterColor);
         weakMeter.setIndicatorColor(weakMeterColor);
         mediumMeter.setIndicatorColor(emptyMeterColor);
         strongMeter.setIndicatorColor(emptyMeterColor);
         excellentMeter.setIndicatorColor(emptyMeterColor);
+
         worstMeter.setProgressCompat(100, true);
         weakMeter.setProgressCompat(100, true);
         mediumMeter.setProgressCompat(0, true);
@@ -238,12 +256,14 @@ public class MainFragment extends Fragment {
     // MEDIUM STRENGTH METER
     private void MediumStrengthMeter()
     {
-        strengthSubtitle.setText(getString(R.string.medium));
+        strengthSubtitle.setText(medium);
+
         worstMeter.setIndicatorColor(mediumMeterColor);
         weakMeter.setIndicatorColor(mediumMeterColor);
         mediumMeter.setIndicatorColor(mediumMeterColor);
         strongMeter.setIndicatorColor(emptyMeterColor);
         excellentMeter.setIndicatorColor(emptyMeterColor);
+
         worstMeter.setProgressCompat(100, true);
         weakMeter.setProgressCompat(100, true);
         mediumMeter.setProgressCompat(100, true);
@@ -254,12 +274,14 @@ public class MainFragment extends Fragment {
     // STRONG STRENGTH METER
     private void StrongStrengthMeter()
     {
-        strengthSubtitle.setText(getString(R.string.strong));
+        strengthSubtitle.setText(strong);
+
         worstMeter.setIndicatorColor(strongMeterColor);
         weakMeter.setIndicatorColor(strongMeterColor);
         mediumMeter.setIndicatorColor(strongMeterColor);
         strongMeter.setIndicatorColor(strongMeterColor);
         excellentMeter.setIndicatorColor(emptyMeterColor);
+
         worstMeter.setProgressCompat(100, true);
         weakMeter.setProgressCompat(100, true);
         mediumMeter.setProgressCompat(100, true);
@@ -270,12 +292,14 @@ public class MainFragment extends Fragment {
     // EXCELLENT STRENGTH METER
     private void ExcellentStrengthMeter()
     {
-        strengthSubtitle.setText(getString(R.string.excellent));
+        strengthSubtitle.setText(excellent);
+
         worstMeter.setIndicatorColor(excellentMeterColor);
         weakMeter.setIndicatorColor(excellentMeterColor);
         mediumMeter.setIndicatorColor(excellentMeterColor);
         strongMeter.setIndicatorColor(excellentMeterColor);
         excellentMeter.setIndicatorColor(excellentMeterColor);
+
         worstMeter.setProgressCompat(100, true);
         weakMeter.setProgressCompat(100, true);
         mediumMeter.setProgressCompat(100, true);
@@ -285,26 +309,29 @@ public class MainFragment extends Fragment {
 
     // RESET WHEN EMPTY EDIT TEXT
     private void Reset(){
-        strengthSubtitle.setText(getString(R.string.not_applicable));
+        strengthSubtitle.setText(not_applicable);
+
         worstMeter.setIndicatorColor(emptyMeterColor);
         weakMeter.setIndicatorColor(emptyMeterColor);
         mediumMeter.setIndicatorColor(emptyMeterColor);
         strongMeter.setIndicatorColor(emptyMeterColor);
         excellentMeter.setIndicatorColor(emptyMeterColor);
+
         worstMeter.setProgressCompat(0, true);
         weakMeter.setProgressCompat(0, true);
         mediumMeter.setProgressCompat(0, true);
         strongMeter.setProgressCompat(0, true);
         excellentMeter.setProgressCompat(0, true);
-        timeToCrackSubtitle.setText(getString(R.string.not_applicable));
-        warningSubtitle.setText(getString(R.string.not_applicable));
-        suggestionsSubtitle.setText(R.string.not_applicable);
+
+        timeToCrackSubtitle.setText(not_applicable);
+        warningSubtitle.setText(not_applicable);
+        suggestionsSubtitle.setText(not_applicable);
     }
 
     // CHECK PASSWORD CRACK TIME CUSTOM RESULT
     private String passwordCrackTimeResult(long crackTimeMilliSeconds)
     {
-        String result=null;
+        String result="";
 
         // TAKE DAYS IN:
         // MONTH=31, YEAR=365
