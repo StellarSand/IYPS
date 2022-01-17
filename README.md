@@ -33,7 +33,7 @@ Download directly from [here](https://github.com/the-weird-aquarian/IYPS/release
 
 
 ## Privacy Policy
-Privacy policy is mentioned [here](https://github.com/the-weird-aquarian/IYPS/blob/main/PRIVACY.md).
+Privacy policy is mentioned [here](https://github.com/the-weird-aquarian/IYPS/blob/master/PRIVACY.md).
 
 
 
