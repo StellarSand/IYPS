@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_version">Versie: 1.0.0</string>
+
+    <!--MAIN FRAGMENT-->
+    <string name="test_password">Test je wachtwoord</string>
+    <string name="details">Details</string>
+    <string name="strength">Kracht</string>
+    <string name="worst">Slechtst</string>
+    <string name="weak">Zwak</string>
+    <string name="medium">Middelmatig</string>
+    <string name="strong">Sterk</string>
+    <string name="excellent">Excellent</string>
+    <string name="est_time_to_crack">Geschatte tijd om te kraken</string>
+    <string name="warning">Waarschuwing</string>
+    <string name="suggestions">Suggesties</string>
+
+    <!--ABOUT FRAGMENT-->
+    <string name="authors">Auteurs</string>
+    <string name="privacy_policy">Privacybeleid</string>
+    <string name="licenses">Licenties</string>
+    <string name="view_on_github">Bekijk op GitHub</string>
+
+    <!--TOOLBAR-->
+    <string name="menu_more">Meer</string>
+    <string name="choose_theme_title">Thema</string>
+    <string name="report_issue_title">Een probleem melden</string>
+    <string name="about_title">Over</string>
+
+    <!--CUSTOM WARNINGS & SUGGESTIONS-->
+    <string name="worst_pass_warning">Wachtwoord is te eenvoudig om te raden.</string>
+    <string name="weak_pass_warning">Wachtwoord kan eenvoudig worden gekraakt.</string>
+    <string name="medium_pass_warning">Wachtwoord is niet sterk genoeg.</string>
+    <string name="not_applicable">Niet toepasbaar.</string>
+
+    <!--BOTTOM SHEET-->
+    <string name="cancel_button">Annuleren</string>
+
+    <!--THEME-->
+    <string name="system_default">Systeemfout</string>
+    <string name="light">Licht</string>
+    <string name="dark">Donker</string>
+
+    <!--BOTTOM SHEET-->
+
+    <!--TOASTS-->
+    <string name="no_browsers">Geen browsers geïnstalleerd op dit apparaat</string>
+
+</resources>

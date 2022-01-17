@@ -1,0 +1,13 @@
+Une application de test de force de mot de passe qui affiche la force, l'heure de la crise estimée et fournit des avertissements et des suggestions pour améliorer les mots de passe.
+
+Caractéristiques:
+
+- Source entièrement ouverte
+- Conception matérielle
+- Complètement hors ligne
+- Aucune autorisation nécessaire
+- Fonctionne sur les appareils Android 6.0 et au-dessus
+- Soutient le thème léger et sombre
+- Pas de pubs
+- Pas de collection de données personnelles
+- Langues prises en charge: anglais, néerlandais, français, allemand, japonais

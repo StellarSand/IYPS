@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_version">Version: 1.0.0</string>
+
+    <!--MAIN FRAGMENT-->
+    <string name="test_password">Testez votre mot de passe</string>
+    <string name="details">Des détails</string>
+    <string name="strength">Robustesse</string>
+    <string name="worst">Pire </string>
+    <string name="weak">Weak</string>
+    <string name="medium">Moyen</string>
+    <string name="strong">Robuste</string>
+    <string name="excellent">Excellent</string>
+    <string name="est_time_to_crack">Temps estimé pour craquer</string>
+    <string name="warning">Avertissement </string>
+    <string name="suggestions">Suggestions</string>
+
+    <!--ABOUT FRAGMENT-->
+    <string name="authors">Auteurs</string>
+    <string name="privacy_policy">Politique de confidentialité</string>
+    <string name="licenses">Licenses</string>
+    <string name="view_on_github">Vue sur GitHub</string>
+
+    <!--TOOLBAR-->
+    <string name="menu_more">Suite</string>
+    <string name="choose_theme_title">Thème</string>
+    <string name="report_issue_title">Signaler un problème</string>
+    <string name="about_title">Sur</string>
+
+    <!--CUSTOM WARNINGS & SUGGESTIONS-->
+    <string name="worst_pass_warning">Le mot de passe est trop simple à deviner.</string>
+    <string name="weak_pass_warning">Le mot de passe peut être facilement fissuré.</string>
+    <string name="medium_pass_warning">Le mot de passe n\'est pas assez fort.</string>
+    <string name="not_applicable">N\'est pas applicable.</string>
+
+    <!--BOTTOM SHEET-->
+    <string name="cancel_button">Annuler</string>
+
+    <!--THEME-->
+    <string name="system_default">Défaillance du système</string>
+    <string name="light">Lumière</string>
+    <string name="dark">Sombre</string>
+
+    <!--BOTTOM SHEET-->
+
+    <!--TOASTS-->
+    <string name="no_browsers">Aucun navigateur n\'est installé sur cet appareil</string>
+
+</resources>

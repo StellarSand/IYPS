@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">IYPS</string>
-    <string name="app_name_full">Is Your Password Secure?</string>
+    <string name="app_name" translatable="false">IYPS</string>
+    <string name="app_name_full" translatable="false">Is Your Password Secure?</string>
     <string name="app_version">Version: 1.0.0</string>
 
     <!--MAIN FRAGMENT-->
@@ -14,7 +15,6 @@
     <string name="strong">Strong</string>
     <string name="excellent">Excellent</string>
     <string name="est_time_to_crack">Estimated time to crack</string>
-    <string name="less_than_a_second">Less than a second</string>
     <string name="warning">Warning</string>
     <string name="suggestions">Suggestions</string>
 
@@ -35,10 +35,9 @@
     <string name="weak_pass_warning">Password can be easily cracked.</string>
     <string name="medium_pass_warning">Password is not strong enough.</string>
     <string name="not_applicable">Not applicable.</string>
-    <string name="default_suggestion">Add a word or two.</string>
 
     <!--BOTTOM SHEET-->
-    <string name="bottom_sheet_title">Bottom Sheet Title</string>
+    <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
     <string name="cancel_button">Cancel</string>
 
         <!--THEME-->
@@ -47,8 +46,8 @@
         <string name="dark">Dark</string>
 
         <!--AUTHORS-->
-        <string name="the_weird_aquarian">the-weird-aquarian</string>
-        <string name="parveshnarwal">parveshnarwal</string>
+        <string name="the_weird_aquarian" translatable="false">the-weird-aquarian</string>
+        <string name="parveshnarwal" translatable="false">parveshnarwal</string>
     <!--BOTTOM SHEET-->
 
     <!--TOASTS-->

@@ -1,0 +1,13 @@
+Een wachtwoordsterkte-app die sterkte, geschatte scheurtijd weergeeft en waarschuwingen en suggesties biedt om betere wachtwoorden te maken. 
+
+Kenmerken:
+
+- Volledig open source
+- Materiaal ontwerp
+- Volledig offline
+- Geen machtigingen nodig
+- Werkt op Android 6.0 en boven-apparaten
+- Ondersteunt zowel licht als donker thema
+- Geen advertenties
+- Geen verzameling persoonlijke gegevens
+- Ondersteunde talen: Engels, Nederlands, Frans, Duits, Japans

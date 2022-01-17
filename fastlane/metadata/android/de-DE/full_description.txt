@@ -1,0 +1,13 @@
+Eine Passwortstärke-Test-App, die Stärke, geschätzte Risszeit anzeigt, und bietet Warnungen und Vorschläge, um bessere Kennwörter zu ermöglichen. 
+
+Merkmale:
+
+- Voll offene Quelle
+- Material design
+- Völlig offline
+- Keine Berechtigungen erforderlich 
+- Funktioniert auf Android 6.0 und höheren Geräten
+- Unterstützt sowohl das licht als auch das dunkle thema 
+- Keine werbung
+- Keine sammlung personenbezogener daten 
+- Unterstützte Sprachen: Englisch, Niederländisch, Französisch, Deutsch, Japanisch
