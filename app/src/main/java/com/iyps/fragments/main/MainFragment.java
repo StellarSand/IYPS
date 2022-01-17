@@ -29,6 +29,7 @@ public class MainFragment extends Fragment {
     private TextView strengthSubtitle, timeToCrackSubtitle, warningSubtitle, suggestionsSubtitle;
     private LinearProgressIndicator worstMeter, weakMeter, mediumMeter, strongMeter, excellentMeter;
     private static int worstMeterColor, weakMeterColor, mediumMeterColor, strongMeterColor, excellentMeterColor, emptyMeterColor;
+    private String suggestionText = "";
 
     public MainFragment() {
         // Required empty public constructor
@@ -69,6 +70,8 @@ public class MainFragment extends Fragment {
     /*========================================================================================*/
 
         passwordEditText.addTextChangedListener(passwordTextWatcher);
+
+        setInitial();
 
     }
 
@@ -167,7 +170,12 @@ public class MainFragment extends Fragment {
                         List<String> suggestions = strength.getFeedback().getSuggestions();
 
                         if(suggestions != null && suggestions.size() != 0){
-                            suggestionsSubtitle.setText(suggestions.get(suggestions.size()-1));
+                            suggestionText = "";
+                            for (int i = 0; i < suggestions.size(); i++) {
+                                suggestionText = suggestionText + "\u2022 " + suggestions.get(i) + "\n";
+                            }
+
+                            suggestionsSubtitle.setText(suggestionText);
                         }
                         else{
                             suggestionsSubtitle.setText(R.string.not_applicable);
@@ -177,10 +185,8 @@ public class MainFragment extends Fragment {
 
                     // IF EDIT TEXT IS EMPTY OR CLEARED, RESET EVERYTHING
                     else{
-                        StrengthMeter(getString(R.string.worst), 1);
-                        timeToCrackSubtitle.setText(getString(R.string.less_than_a_second));
-                        warningSubtitle.setText(getString(R.string.worst_pass_warning));
-                        suggestionsSubtitle.setText(getString(R.string.default_suggestion));
+                        //StrengthMeter(getString(R.string.worst), 1);
+                        setInitial();
                     }
 
                 }
@@ -269,6 +275,26 @@ public class MainFragment extends Fragment {
         strongMeter.setProgressCompat(progress4, true);
         excellentMeter.setProgressCompat(progress5, true);
 
+    }
+
+    private void setInitial(){
+
+
+        worstMeter.setIndicatorColor(emptyMeterColor);
+        weakMeter.setIndicatorColor(emptyMeterColor);
+        mediumMeter.setIndicatorColor(emptyMeterColor);
+        strongMeter.setIndicatorColor(emptyMeterColor);
+        excellentMeter.setIndicatorColor(emptyMeterColor);
+
+        worstMeter.setProgressCompat(0, true);
+        weakMeter.setProgressCompat(0, true);
+        mediumMeter.setProgressCompat(0, true);
+        strongMeter.setProgressCompat(0, true);
+        excellentMeter.setProgressCompat(0, true);
+
+        timeToCrackSubtitle.setText(R.string.not_applicable);
+        warningSubtitle.setText(getString(R.string.not_applicable));
+        suggestionsSubtitle.setText(getString(R.string.not_applicable));
     }
 
     // CHECK PASSWORD CRACK TIME CUSTOM RESULT
