@@ -6,6 +6,17 @@ A password strength test app which displays strength, estimated crack time and p
 
 
 
+## Index
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Download](#download)
+- [How does it work?](#how-does-it-work)
+- [Privacy Policy](#privacy-policy)
+- [Issues](#issues)
+- [Contributing](#contributing)
+
+
+
 ## Features
 - Fully open source
 - Material design
@@ -29,6 +40,14 @@ A password strength test app which displays strength, estimated crack time and p
 
 ## Download
 Download directly from [here](https://github.com/the-weird-aquarian/IYPS/releases/download/v1.0.0/IYPS_v1.0.0.apk).
+
+
+
+## How does it work?
+For a detailed explanation on how [zxcvbn](https://github.com/dropbox/zxcvbn) or [zxcvbn4j](https://github.com/nulab/zxcvbn4j) (which is used by this app) works, refer to the following:
+- [Realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
+- [Five algorithms to measure real password strength](https://nulab-inc.com/blog/nulab/password-strength)
+
 
 
 
