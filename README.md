@@ -14,6 +14,7 @@ A password strength test app which displays strength, estimated crack time and p
 - [Privacy Policy](#privacy-policy)
 - [Issues](#issues)
 - [Contributing](#contributing)
+- [Credits](#credits)
 
 
 
@@ -39,12 +40,14 @@ A password strength test app which displays strength, estimated crack time and p
 
 
 ## Download
-Download directly from [here](https://github.com/the-weird-aquarian/IYPS/releases/download/v1.0.0/IYPS_v1.0.0.apk).
+[<img src="https://camo.githubusercontent.com/70bffd8873ab81e1bb0bccc44e488c3a989e3bd5/68747470733a2f2f692e6962622e636f2f71306d6463345a2f6765742d69742d6f6e2d6769746875622e706e67"
+     alt="Get it on GitHub"
+     height="80">](https://github.com/the-weird-aquarian/IYPS/releases/download/v1.0.0/IYPS_v1.0.0.apk)
 
 
 
 ## How does it work?
-For a detailed explanation on how [zxcvbn](https://github.com/dropbox/zxcvbn) or [zxcvbn4j](https://github.com/nulab/zxcvbn4j) (which is used by this app) works, refer to the following:
+For a detailed explanation on how [zxcvbn](https://github.com/dropbox/zxcvbn) or [zxcvbn4j](https://github.com/nulab/zxcvbn4j) works, refer to the following:
 - [Realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
 - [Five algorithms to measure real password strength](https://nulab-inc.com/blog/nulab/password-strength)
 
@@ -63,4 +66,11 @@ If you find bugs or have suggestions, please report it to the [issue tracker](ht
 
 ## Contributing
 Any contribution to the project would be much appreciated.
+
+
+
+## Credits
+- [Nulab Inc](https://github.com/nulab) for developing [zxcvbn4j](https://github.com/nulab/zxcvbn4j), the underlying password strength estimation functionality of this app.
+- [parveshnarwal](https://github.com/parveshnarwal) for helping me out and co-leading the development of this app.
+- Literally my laptop for not crashing on me. :P
 
