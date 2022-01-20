@@ -1,1 +1,1 @@
-Eine Passwortstärke-Test-App, die Stärke, geschätzte Risszeit anzeigt, und bietet Warnungen und Vorschläge, um bessere Kennwörter zu ermöglichen.
+Eine passwortstärke pest app mit risszeiten, warnungen und vorschlägen.
