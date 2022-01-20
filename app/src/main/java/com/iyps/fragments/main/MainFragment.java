@@ -31,7 +31,7 @@ public class MainFragment extends Fragment {
     private LinearProgressIndicator worstMeter, weakMeter, mediumMeter, strongMeter, excellentMeter;
     private static int worstMeterColor, weakMeterColor, mediumMeterColor, strongMeterColor, excellentMeterColor, emptyMeterColor;
     private StringBuilder suggestionText;
-
+    private int wait = 0;
     private Zxcvbn zxcvbn;
 
     private static String worst, weak, medium, strong, excellent, not_applicable, passwordString;
@@ -49,7 +49,7 @@ public class MainFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         suggestionText = new StringBuilder();
-
+        wait = 0;
         zxcvbn = new Zxcvbn();
 
         worst = getResources().getString(R.string.worst);
@@ -59,6 +59,13 @@ public class MainFragment extends Fragment {
         excellent = getResources().getString(R.string.excellent);
         not_applicable =getResources().getString(R.string.not_applicable);
 
+
+        worstMeterColor = getColor(R.color.worstMeterColor);
+        weakMeterColor = getColor(R.color.weakMeterColor);
+        mediumMeterColor = getColor(R.color.mediumMeterColor);
+        strongMeterColor = getColor(R.color.strongMeterColor);
+        excellentMeterColor = getColor(R.color.excellentMeterColor);
+        emptyMeterColor = getColor(R.color.hintColor);
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false);
 
@@ -77,12 +84,6 @@ public class MainFragment extends Fragment {
         mediumMeter = view.findViewById(R.id.medium_meter);
         strongMeter = view.findViewById(R.id.strong_meter);
         excellentMeter = view.findViewById(R.id.excellent_meter);
-        worstMeterColor = getColor(R.color.worstMeterColor);
-        weakMeterColor = getColor(R.color.weakMeterColor);
-        mediumMeterColor = getColor(R.color.mediumMeterColor);
-        strongMeterColor = getColor(R.color.strongMeterColor);
-        excellentMeterColor = getColor(R.color.excellentMeterColor);
-        emptyMeterColor = getColor(R.color.hintColor);
 
     /*======================================================================================*/
 
@@ -107,7 +108,8 @@ public class MainFragment extends Fragment {
                 delayTimer.cancel();
             }
 
-            delayTimer = new CountDownTimer(300, 100) {
+
+            delayTimer = new CountDownTimer(wait, 100) {
 
                 public void onTick(long millisUntilFinished) {}
 
@@ -115,6 +117,7 @@ public class MainFragment extends Fragment {
                 public void onFinish() {
 
                     passwordString= Objects.requireNonNull(passwordEditText.getText()).toString();
+                    wait = 300;
 
                     // IF EDIT TEXT NOT EMPTY
                     if (!passwordString.equals("")) {
@@ -158,19 +161,19 @@ public class MainFragment extends Fragment {
 
                             switch (passwordCrackTimeResult(crackTimeMilliSeconds)){
                                 case "WORST":
-                                    warningSubtitle.setText(getResources().getString(R.string.worst_pass_warning)); // WORST WARNING
+                                    warningSubtitle.setText(worst); // WORST WARNING
                                     break;
 
                                 case "WEAK":
-                                    warningSubtitle.setText(getResources().getString(R.string.weak_pass_warning)); // WEAK WARNING
+                                    warningSubtitle.setText(weak); // WEAK WARNING
                                     break;
 
                                 case "MEDIUM":
-                                    warningSubtitle.setText(getResources().getString(R.string.medium_pass_warning)); // MEDIUM WARNING
+                                    warningSubtitle.setText(medium); // MEDIUM WARNING
                                     break;
 
                                 default:
-                                    warningSubtitle.setText(getResources().getString(R.string.not_applicable)); // FOR STRONG AND ABOVE
+                                    warningSubtitle.setText(not_applicable); // FOR STRONG AND ABOVE
                                     break;
                             }
                         }
@@ -180,7 +183,7 @@ public class MainFragment extends Fragment {
                             warningSubtitle.setText(strength.getFeedback().getWarning(Locale.getDefault()));
                         }
 
-                        // SUGGESTIONS
+                        // SUGGESTIONSs
                         List<String> suggestions = strength.getFeedback().getSuggestions(Locale.getDefault());
 
                         if(suggestions != null && suggestions.size() != 0){
