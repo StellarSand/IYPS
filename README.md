@@ -34,9 +34,9 @@ A password strength test app which displays strength, estimated crack time and p
 
 ## Screenshots
 
-<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/worst.png" width="200"/>  <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/weak.png" width="200"/>
+<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/1.png" width="200"/>  <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/2.png" width="200"/>
 
-<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/medium.png" width="200"/>  <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/excellent.png" width="200"/>
+<img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/3.png" width="200"/>  <img src="/fastlane/metadata/android/en-US/images/phoneScreenshots/4.png" width="200"/>
 
 
 
