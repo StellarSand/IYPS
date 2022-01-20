@@ -1,1 +1,1 @@
-Une application de test de force de mot de passe qui affiche la force, l'heure de la crise estimée et fournit des avertissements et des suggestions pour améliorer les mots de passe.
+Une application de test de force de mot de passe avec des temps de crack, des avertissements et des suggestions.
