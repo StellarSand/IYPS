@@ -1,5 +1,10 @@
 package com.iyps.fragments.main;
 
+import static android.content.Context.CLIPBOARD_SERVICE;
+
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.text.Editable;
@@ -8,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -88,6 +94,25 @@ public class MainFragment extends Fragment {
     /*======================================================================================*/
 
         passwordEditText.addTextChangedListener(passwordTextWatcher);
+
+
+        // CLEAR CLIPBOARD AFTER 30 SECONDS IF COPIED FROM THIS APP
+        /*ClipboardManager clipboardManager = (ClipboardManager) requireActivity().getSystemService(CLIPBOARD_SERVICE);
+
+        if (Build.VERSION.SDK_INT>=28) {
+            clipboardManager.clearPrimaryClip();
+            if (clipboardManager.getPrimaryClip()==null){
+                Toast.makeText(requireContext(), "Cleared", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(requireContext(), "Not Cleared", Toast.LENGTH_SHORT).show();
+            }
+        }
+        else {
+            clipboardManager.setPrimaryClip(ClipData.newPlainText(null,null));
+            Toast.makeText(requireContext(), "Cleared", Toast.LENGTH_SHORT).show();
+        }*/
+
 
     }
 
