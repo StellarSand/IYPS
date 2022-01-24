@@ -41,7 +41,9 @@ public class MainFragment extends Fragment {
     private CountDownTimer clearClipboardTimer = null;
     private ClipboardManager clipboardManager;
     boolean copiedFromHere;
-    private static String worst, weak, medium, strong, excellent, not_applicable, passwordString;
+    private static String worst, weak, medium, strong,
+                          excellent, worstPassWarning, weakPassWarning,
+                          mediumPassWarning, not_applicable, passwordString;
 
     public MainFragment() {
         // Required empty public constructor
@@ -81,6 +83,9 @@ public class MainFragment extends Fragment {
         medium = getResources().getString(R.string.medium);
         strong = getResources().getString(R.string.strong);
         excellent = getResources().getString(R.string.excellent);
+        worstPassWarning = getResources().getString(R.string.worst_pass_warning);
+        weakPassWarning = getResources().getString(R.string.weak_pass_warning);
+        mediumPassWarning = getResources().getString(R.string.medium_pass_warning);
         not_applicable = getResources().getString(R.string.not_applicable);
 
         worstMeterColor = getColor(R.color.worstMeterColor);
@@ -192,15 +197,15 @@ public class MainFragment extends Fragment {
 
                             switch (passwordCrackTimeResult(crackTimeMilliSeconds)) {
                                 case "WORST":
-                                    warningSubtitle.setText(worst); // WORST WARNING
+                                    warningSubtitle.setText(worstPassWarning); // WORST WARNING
                                     break;
 
                                 case "WEAK":
-                                    warningSubtitle.setText(weak); // WEAK WARNING
+                                    warningSubtitle.setText(weakPassWarning); // WEAK WARNING
                                     break;
 
                                 case "MEDIUM":
-                                    warningSubtitle.setText(medium); // MEDIUM WARNING
+                                    warningSubtitle.setText(mediumPassWarning); // MEDIUM WARNING
                                     break;
 
                                 default:
