@@ -1,1 +1,1 @@
-Une application de test de force de mot de passe avec des temps de crack, des avertissements et des suggestions.
+Test de force de mot de passe avec des temps de crack et des suggestions.
