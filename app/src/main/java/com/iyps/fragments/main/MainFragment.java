@@ -13,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -39,7 +38,9 @@ public class MainFragment extends Fragment {
     private StringBuilder suggestionText;
     private int wait = 0;
     private Zxcvbn zxcvbn;
-
+    private CountDownTimer clearClipboardTimer = null;
+    private ClipboardManager clipboardManager;
+    boolean copiedFromHere;
     private static String worst, weak, medium, strong, excellent, not_applicable, passwordString;
 
     public MainFragment() {
@@ -53,28 +54,8 @@ public class MainFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-
-        suggestionText = new StringBuilder();
-        wait = 0;
-        zxcvbn = new Zxcvbn();
-
-        worst = getResources().getString(R.string.worst);
-        weak = getResources().getString(R.string.weak);
-        medium = getResources().getString(R.string.medium);
-        strong = getResources().getString(R.string.strong);
-        excellent = getResources().getString(R.string.excellent);
-        not_applicable =getResources().getString(R.string.not_applicable);
-
-
-        worstMeterColor = getColor(R.color.worstMeterColor);
-        weakMeterColor = getColor(R.color.weakMeterColor);
-        mediumMeterColor = getColor(R.color.mediumMeterColor);
-        strongMeterColor = getColor(R.color.strongMeterColor);
-        excellentMeterColor = getColor(R.color.excellentMeterColor);
-        emptyMeterColor = getColor(R.color.hintColor);
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_main, container, false);
-
     }
 
     @Override
@@ -91,38 +72,62 @@ public class MainFragment extends Fragment {
         strongMeter = view.findViewById(R.id.strong_meter);
         excellentMeter = view.findViewById(R.id.excellent_meter);
 
-    /*======================================================================================*/
+        suggestionText = new StringBuilder();
+        wait = 0;
+        zxcvbn = new Zxcvbn();
+
+        worst = getResources().getString(R.string.worst);
+        weak = getResources().getString(R.string.weak);
+        medium = getResources().getString(R.string.medium);
+        strong = getResources().getString(R.string.strong);
+        excellent = getResources().getString(R.string.excellent);
+        not_applicable = getResources().getString(R.string.not_applicable);
+
+        worstMeterColor = getColor(R.color.worstMeterColor);
+        weakMeterColor = getColor(R.color.weakMeterColor);
+        mediumMeterColor = getColor(R.color.mediumMeterColor);
+        strongMeterColor = getColor(R.color.strongMeterColor);
+        excellentMeterColor = getColor(R.color.excellentMeterColor);
+        emptyMeterColor = getColor(R.color.hintColor);
+
+        clipboardManager = (ClipboardManager) requireActivity().getSystemService(CLIPBOARD_SERVICE);
+
+        /*======================================================================================*/
 
         passwordEditText.addTextChangedListener(passwordTextWatcher);
 
 
         // CLEAR CLIPBOARD AFTER 30 SECONDS IF COPIED FROM THIS APP
-        /*ClipboardManager clipboardManager = (ClipboardManager) requireActivity().getSystemService(CLIPBOARD_SERVICE);
+        clipboardManager.addPrimaryClipChangedListener(() -> {
 
-        if (Build.VERSION.SDK_INT>=28) {
-            clipboardManager.clearPrimaryClip();
-            if (clipboardManager.getPrimaryClip()==null){
-                Toast.makeText(requireContext(), "Cleared", Toast.LENGTH_SHORT).show();
-            }
-            else {
-                Toast.makeText(requireContext(), "Not Cleared", Toast.LENGTH_SHORT).show();
-            }
-        }
-        else {
-            clipboardManager.setPrimaryClip(ClipData.newPlainText(null,null));
-            Toast.makeText(requireContext(), "Cleared", Toast.LENGTH_SHORT).show();
-        }*/
+            copiedFromHere = true;
 
+            if (clearClipboardTimer != null) {
+                clearClipboardTimer.cancel();
+            }
+
+            clearClipboardTimer = new CountDownTimer(30000, 1000) {
+
+                public void onTick(long millisUntilFinished) {}
+
+                // ON TIMER FINISH, PERFORM ACTION
+                public void onFinish() {
+                    clearClipboard();
+                }
+            }.start();
+
+        });
 
     }
 
     // PASSWORD TEXT WATCHER
-    private final TextWatcher passwordTextWatcher =new TextWatcher() {
+    private final TextWatcher passwordTextWatcher = new TextWatcher() {
 
         CountDownTimer delayTimer = null;
 
         @Override
-        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {}
+        public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+        }
 
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -136,12 +141,13 @@ public class MainFragment extends Fragment {
 
             delayTimer = new CountDownTimer(wait, 100) {
 
-                public void onTick(long millisUntilFinished) {}
+                public void onTick(long millisUntilFinished) {
+                }
 
                 // ON TIMER FINISH, PERFORM ACTION
                 public void onFinish() {
 
-                    passwordString= Objects.requireNonNull(passwordEditText.getText()).toString();
+                    passwordString = Objects.requireNonNull(passwordEditText.getText()).toString();
                     wait = 300;
 
                     // IF EDIT TEXT NOT EMPTY
@@ -149,11 +155,11 @@ public class MainFragment extends Fragment {
 
                         Strength strength = zxcvbn.measure(passwordString);
 
-                        long crackTimeMilliSeconds= (long) ((strength
+                        long crackTimeMilliSeconds = (long) ((strength
                                 .getCrackTimeSeconds()
-                                .getOfflineSlowHashing1e4perSecond())*1000);
+                                .getOfflineSlowHashing1e4perSecond()) * 1000);
 
-                        switch (passwordCrackTimeResult(crackTimeMilliSeconds)){
+                        switch (passwordCrackTimeResult(crackTimeMilliSeconds)) {
 
                             case "WORST":
                                 WorstStrengthMeter();
@@ -182,9 +188,9 @@ public class MainFragment extends Fragment {
 
                         // WARNING
                         // IF EMPTY, SET CUSTOM WARNING MESSAGE
-                        if (strength.getFeedback().getWarning(Locale.getDefault()).isEmpty()){
+                        if (strength.getFeedback().getWarning(Locale.getDefault()).isEmpty()) {
 
-                            switch (passwordCrackTimeResult(crackTimeMilliSeconds)){
+                            switch (passwordCrackTimeResult(crackTimeMilliSeconds)) {
                                 case "WORST":
                                     warningSubtitle.setText(worst); // WORST WARNING
                                     break;
@@ -208,10 +214,10 @@ public class MainFragment extends Fragment {
                             warningSubtitle.setText(strength.getFeedback().getWarning(Locale.getDefault()));
                         }
 
-                        // SUGGESTIONSs
+                        // SUGGESTIONS
                         List<String> suggestions = strength.getFeedback().getSuggestions(Locale.getDefault());
 
-                        if(suggestions != null && suggestions.size() != 0){
+                        if (suggestions != null && suggestions.size() != 0) {
                             suggestionText.setLength(0);
                             for (int i = 0; i < suggestions.size(); i++) {
 
@@ -219,15 +225,14 @@ public class MainFragment extends Fragment {
                             }
 
                             suggestionsSubtitle.setText(suggestionText.toString());
-                        }
-                        else{
+                        } else {
                             suggestionsSubtitle.setText(getResources().getString(R.string.not_applicable));
                         }
 
                     }
 
                     // IF EDIT TEXT IS EMPTY OR CLEARED, RESET EVERYTHING
-                    else{
+                    else {
                         Reset();
                     }
 
@@ -238,17 +243,17 @@ public class MainFragment extends Fragment {
         }
 
         @Override
-        public void afterTextChanged(Editable editable) {}
+        public void afterTextChanged(Editable editable) {
+        }
 
     };
 
-    private int getColor(int color){
-        return  getResources().getColor(color, requireActivity().getTheme());
+    private int getColor(int color) {
+        return getResources().getColor(color, requireActivity().getTheme());
     }
 
     // WORST STRENGTH METER
-    private void WorstStrengthMeter()
-    {
+    private void WorstStrengthMeter() {
         strengthSubtitle.setText(worst);
 
         worstMeter.setIndicatorColor(worstMeterColor);
@@ -265,8 +270,7 @@ public class MainFragment extends Fragment {
     }
 
     // WEAK STRENGTH METER
-    private void WeakStrengthMeter()
-    {
+    private void WeakStrengthMeter() {
         strengthSubtitle.setText(weak);
 
         worstMeter.setIndicatorColor(weakMeterColor);
@@ -283,8 +287,7 @@ public class MainFragment extends Fragment {
     }
 
     // MEDIUM STRENGTH METER
-    private void MediumStrengthMeter()
-    {
+    private void MediumStrengthMeter() {
         strengthSubtitle.setText(medium);
 
         worstMeter.setIndicatorColor(mediumMeterColor);
@@ -301,8 +304,7 @@ public class MainFragment extends Fragment {
     }
 
     // STRONG STRENGTH METER
-    private void StrongStrengthMeter()
-    {
+    private void StrongStrengthMeter() {
         strengthSubtitle.setText(strong);
 
         worstMeter.setIndicatorColor(strongMeterColor);
@@ -319,8 +321,7 @@ public class MainFragment extends Fragment {
     }
 
     // EXCELLENT STRENGTH METER
-    private void ExcellentStrengthMeter()
-    {
+    private void ExcellentStrengthMeter() {
         strengthSubtitle.setText(excellent);
 
         worstMeter.setIndicatorColor(excellentMeterColor);
@@ -337,7 +338,7 @@ public class MainFragment extends Fragment {
     }
 
     // RESET WHEN EMPTY EDIT TEXT
-    private void Reset(){
+    private void Reset() {
         strengthSubtitle.setText(not_applicable);
 
         worstMeter.setIndicatorColor(emptyMeterColor);
@@ -358,51 +359,66 @@ public class MainFragment extends Fragment {
     }
 
     // CHECK PASSWORD CRACK TIME CUSTOM RESULT
-    private String passwordCrackTimeResult(long crackTimeMilliSeconds)
-    {
-        String result="";
+    private String passwordCrackTimeResult(long crackTimeMilliSeconds) {
+        String result = "";
 
         // TAKE DAYS IN:
         // MONTH=31, YEAR=365
 
         // WORST = LESS THAN/EQUAL TO 2 MINUTES
-        if(crackTimeMilliSeconds < TimeUnit.MINUTES.toMillis(2)
-           || crackTimeMilliSeconds == TimeUnit.MINUTES.toMillis(2))
-        {
-            result="WORST";
+        if (crackTimeMilliSeconds < TimeUnit.MINUTES.toMillis(2)
+                || crackTimeMilliSeconds == TimeUnit.MINUTES.toMillis(2)) {
+            result = "WORST";
         }
 
         // WEAK = MORE THAN 2 MINUTES, LESS THAN/EQUAL TO 5 DAYS
-        else if(crackTimeMilliSeconds > TimeUnit.MINUTES.toMillis(2)
+        else if (crackTimeMilliSeconds > TimeUnit.MINUTES.toMillis(2)
                 && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(5)
-                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(5))
-        {
-            result="WEAK";
+                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(5)) {
+            result = "WEAK";
         }
 
         // MEDIUM = MORE THAN 5 DAYS, LESS THAN/EQUAL TO 5 MONTHS
-        else if(crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(5)
+        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(5)
                 && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(155)
-                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(155))
-        {
-            result="MEDIUM";
+                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(155)) {
+            result = "MEDIUM";
         }
 
         // STRONG = MORE THAN 5 MONTHS, LESS THAN/EQUAL TO 5 YEARS
-        else if(crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(155)
+        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(155)
                 && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(1825)
-                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(1825))
-        {
-            result="STRONG";
+                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(1825)) {
+            result = "STRONG";
         }
 
         // EXCELLENT = MORE THAN 5 YEARS
-        else if(crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(1825))
-        {
-            result="EXCELLENT";
+        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(1825)) {
+            result = "EXCELLENT";
         }
 
         return result;
+
+    }
+
+    // CLEAR PASSWORD COPIED TO CLIPBOARD
+    private void clearClipboard(){
+        if (Build.VERSION.SDK_INT >= 28) {
+            clipboardManager.clearPrimaryClip();
+        }
+        else {
+            clipboardManager.setPrimaryClip(ClipData.newPlainText(null, null));
+        }
+
+        copiedFromHere=false;
+    }
+
+    // CLEAR CLIPBOARD IMMEDIATELY WHEN FRAGMENT DESTROYED
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+
+        clearClipboard();
 
     }
 }
