@@ -6,7 +6,8 @@ A password strength test app which displays strength, estimated crack time and p
 
 
 
-## Index
+## Contents
+- [Why?](#why)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Download](#download)
@@ -16,6 +17,17 @@ A password strength test app which displays strength, estimated crack time and p
 - [Issues](#issues)
 - [Contributing](#contributing)
 - [Credits](#credits)
+
+
+
+## Why?
+Two things that should always be strong: Coffee and Passwords. 
+
+With our growing digital life in a post pandemic world, data breaches & hacks have skyrocketed and passwords are the only thing keeping our digital accounts safe. It is always recommended to use a password manager like [Bitwarden](https://bitwarden.com/) or [KeePass](https://keepass.info/) to store and generate unique and strong passwords.
+
+However, if you don't want to use a password manager (seriously though, use a passsword manager) or want to make your own passwords, you have to be sure they are actually strong and not giving you false sense of security.
+
+Using this app you can determine whether the passwords are most commonly used ones or easy to guess, the estimated time it would take to crack and it also provides some helpful suggestions to help make your password secure if it isn't. Additionally, since it's completely offline and nothing is stored or saved anywhere, you can be sure that your passwords are yours alone.
 
 
 
