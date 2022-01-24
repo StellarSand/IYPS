@@ -143,7 +143,6 @@ public class MainFragment extends Fragment {
                 delayTimer.cancel();
             }
 
-
             delayTimer = new CountDownTimer(wait, 100) {
 
                 public void onTick(long millisUntilFinished) {

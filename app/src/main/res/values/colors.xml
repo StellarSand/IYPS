@@ -8,7 +8,6 @@
     <color name="textTitleColor">#424242</color>
     <color name="bottomSheetColor">#FFFFFF</color>
     <color name="dragHandleColor">#C0C1C3</color>
-    <color name="disabledColor">#C4C4C4</color>
     <color name="enabledColor">#606163</color>
     <color name="hintColor">#B2B2B2</color>
     <color name="cardStrokeColor">#DBDCE0</color>

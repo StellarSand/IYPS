@@ -7,7 +7,6 @@
     android:id="@+id/fragment_settings_default"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
     android:scrollbarThumbVertical="@drawable/scrollbar_thumb">
 
     <LinearLayout
