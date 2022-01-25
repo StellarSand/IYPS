@@ -5,6 +5,14 @@
 A password strength test app which displays strength, estimated crack time and provides warnings and suggestions to help make better passwords.
 
 
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" 
+      alt='Get it on IzzyOnDroid' 
+      height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.iyps)
+[<img src="https://camo.githubusercontent.com/70bffd8873ab81e1bb0bccc44e488c3a989e3bd5/68747470733a2f2f692e6962622e636f2f71306d6463345a2f6765742d69742d6f6e2d6769746875622e706e67"
+     alt="Get it on GitHub"
+     height="80">](https://github.com/the-weird-aquarian/IYPS/releases/download/v1.0.0/IYPS_v1.0.0.apk)
+
+
 
 ## Contents
 - [Why?](#why)
@@ -53,12 +61,15 @@ Using this app you can determine whether the passwords are most commonly used on
 
 
 ## Download
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" 
+      alt='Get it on IzzyOnDroid' 
+      height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.iyps)
 [<img src="https://camo.githubusercontent.com/70bffd8873ab81e1bb0bccc44e488c3a989e3bd5/68747470733a2f2f692e6962622e636f2f71306d6463345a2f6765742d69742d6f6e2d6769746875622e706e67"
      alt="Get it on GitHub"
      height="80">](https://github.com/the-weird-aquarian/IYPS/releases/download/v1.0.0/IYPS_v1.0.0.apk)
-     
-     
-     
+
+
+
 ## Changelog
 All notable changes to this project will be documented [here](https://github.com/the-weird-aquarian/IYPS/blob/master/CHANGELOG.md).
 
@@ -68,7 +79,6 @@ All notable changes to this project will be documented [here](https://github.com
 For a detailed explanation on how [zxcvbn](https://github.com/dropbox/zxcvbn) or [zxcvbn4j](https://github.com/nulab/zxcvbn4j) works, refer to the following:
 - [Realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
 - [Five algorithms to measure real password strength](https://nulab-inc.com/blog/nulab/password-strength)
-
 
 
 
@@ -91,4 +101,3 @@ Any contribution to the project would be much appreciated.
 - [Nulab Inc](https://github.com/nulab) for developing [zxcvbn4j](https://github.com/nulab/zxcvbn4j), the underlying password strength estimation functionality of this app.
 - [parveshnarwal](https://github.com/parveshnarwal) for helping me out and co-leading the development of this app.
 - Literally my laptop for not crashing on me. :P
-
