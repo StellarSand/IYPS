@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_version">Ausführung: 1.0.0</string>
+    <string name="app_version">Version: 1.0.0</string>
 
     <!--MAIN FRAGMENT-->
     <string name="test_password">Testen Sie Ihr Passwort</string>
-    <string name="details">Einzelheiten</string>
+    <string name="details">Details</string>
     <string name="strength">Stärke</string>
-    <string name="worst">Schlimmste </string>
+    <string name="worst">Schwächste </string>
     <string name="weak">Schwach </string>
     <string name="medium">Mittel</string>
     <string name="strong">Stark</string>
     <string name="excellent">Exzellent</string>
-    <string name="est_time_to_crack">Geschätzte zeit zum rissen</string>
+    <string name="est_time_to_crack">Geschätzte Zeit zum Knacken</string>
     <string name="warning">Warnung</string>
-    <string name="suggestions">Anregungen</string>
+    <string name="suggestions">Empfehlungen</string>
 
     <!--ABOUT FRAGMENT-->
     <string name="authors">Autoren</string>
-    <string name="privacy_policy">Datenschutz-Bestimmungen</string>
+    <string name="privacy_policy">Datenschutzbestimmungen</string>
     <string name="licenses">Lizenzen</string>
-    <string name="view_on_github">Blick auf GitHub</string>
+    <string name="view_on_github">Auf GitHub anschauen</string>
 
     <!--TOOLBAR-->
     <string name="menu_more">Mehr</string>
     <string name="choose_theme_title">Thema</string>
-    <string name="report_issue_title">Ein problem melden</string>
-    <string name="about_title">Etwa</string>
+    <string name="report_issue_title">Ein Problem melden</string>
+    <string name="about_title">Über</string>
 
     <!--CUSTOM WARNINGS & SUGGESTIONS-->
-    <string name="worst_pass_warning">Das passwort ist zu einfach, um zu erraten.</string>
-    <string name="weak_pass_warning">Das passwort kann leicht gebrochen werden.</string>
-    <string name="medium_pass_warning">Das passwort ist nicht stark genug.</string>
+    <string name="worst_pass_warning">Das Passwort ist zu einfach zu erraten.</string>
+    <string name="weak_pass_warning">Das Passwort kann leicht geknackt werden.</string>
+    <string name="medium_pass_warning">Das Passwort ist nicht stark genug.</string>
     <string name="not_applicable">Unzutreffend.</string>
 
     <!--BOTTOM SHEET-->
     <string name="cancel_button">Abbrechen</string>
 
     <!--THEME-->
-    <string name="system_default">Systemfehler</string>
-    <string name="light">Licht</string>
+    <string name="system_default">Systemvorgabe</string>
+    <string name="light">Hell</string>
     <string name="dark">Dunkel</string>
 
     <!--BOTTOM SHEET-->
 
     <!--TOASTS-->
-    <string name="no_browsers">Keine browser auf diesem gerät installiert </string>
+    <string name="no_browsers">Es ist kein Browser auf diesem Gerät installiert</string>
 
 </resources>
