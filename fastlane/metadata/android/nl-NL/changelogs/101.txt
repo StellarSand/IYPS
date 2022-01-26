@@ -1,0 +1,3 @@
+- Vaste onjuiste informatie weergegeven in sommige gevallen
+- Klembord wissen
+- Verbeterde Duitse vertaling

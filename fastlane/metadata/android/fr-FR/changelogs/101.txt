@@ -1,0 +1,3 @@
+- Correction des informations incorrectes affichées dans certains cas
+- Vider le presse-papiers
+- Amélioration de la traduction allemande
