@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name" translatable="false">IYPS</string>
+    <string name="app_name_full" translatable="false">Is Your Password Secure?</string>
+    <string name="app_version">Versione: 1.0.0</string>
+
+    <!--MAIN FRAGMENT-->
+    <string name="test_password">Prova la tua password</string>
+    <string name="details">Dettagli</string>
+    <string name="strength">Sicurezza</string>
+    <string name="worst">Peggiore</string>
+    <string name="weak">Debole</string>
+    <string name="medium">Media</string>
+    <string name="strong">Forte</string>
+    <string name="excellent">Eccellente</string>
+    <string name="est_time_to_crack">Tempo stimato per la decifratura</string>
+    <string name="warning">Avvertimento</string>
+    <string name="suggestions">Suggerimenti</string>
+
+    <!--ABOUT FRAGMENT-->
+    <string name="authors">Autori</string>
+    <string name="privacy_policy">Politica sulla Riservatezza</string>
+    <string name="licenses">Licenze</string>
+    <string name="view_on_github">Vedi su GitHub</string>
+
+    <!--TOOLBAR-->
+    <string name="menu_more">Più</string>
+    <string name="choose_theme_title">Tema</string>
+    <string name="report_issue_title">Segnala un problema</string>
+    <string name="about_title">Info</string>
+
+    <!--CUSTOM WARNINGS & SUGGESTIONS-->
+    <string name="worst_pass_warning">La password è troppo semplice da indovinare.</string>
+    <string name="weak_pass_warning">La password può essere facilmente decifrata.</string>
+    <string name="medium_pass_warning">La password non è abbastanza sicura.</string>
+    <string name="not_applicable">Non applicabile.</string>
+
+    <!--BOTTOM SHEET-->
+    <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
+    <string name="cancel_button">Annulla</string>
+
+        <!--THEME-->
+        <string name="system_default">Predefinito di Sistema</string>
+        <string name="light">Chiaro</string>
+        <string name="dark">Scuro</string>
+
+        <!--AUTHORS-->
+        <string name="the_weird_aquarian" translatable="false">the-weird-aquarian</string>
+        <string name="parveshnarwal" translatable="false">parveshnarwal</string>
+    <!--BOTTOM SHEET-->
+
+    <!--TOASTS-->
+    <string name="no_browsers">Nessun browser installato sul dispositivo</string>
+
+</resources>

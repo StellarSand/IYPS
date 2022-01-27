@@ -1,0 +1,3 @@
+- Risolte informazioni errate visualizzate in alcuni casi
+- Pulisci appunti
+- Migliorata traduzione tedesca
