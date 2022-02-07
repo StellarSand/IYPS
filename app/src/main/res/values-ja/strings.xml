@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_version">バージョン: 1.0.0</string>
+    <string name="app_version">バージョン:</string>
 
     <!--MAIN FRAGMENT-->
     <string name="test_password">パスワードをテストしてください</string>
@@ -15,6 +15,16 @@
     <string name="est_time_to_crack">割れ目の推定時間</string>
     <string name="warning">警告</string>
     <string name="suggestions">提案</string>
+    <string name="score">スコア</string>
+    <string name="base">• ベース</string>
+    <string name="length">• 長さ</string>
+    <string name="upper_case">• 大文字</string>
+    <string name="numbers">• 数字</string>
+    <string name="special_char">• 特殊文字</string>
+    <string name="all_upper_penalty">• すべて大文字のペナルティ</string>
+    <string name="all_lower_penalty">• すべて小文字のペナルティ</string>
+    <string name="all_num_penalty">• すべての数字のペナルティ</string>
+    <string name="all_special_char_penalty">• すべての特殊文字のペナルティ</string>
 
     <!--ABOUT FRAGMENT-->
     <string name="authors">著者</string>

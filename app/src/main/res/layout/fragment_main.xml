@@ -45,7 +45,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_margin="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_8"
             android:paddingTop="@dimen/margin_6.5"
             android:paddingBottom="@dimen/margin_6.5"
             android:background="@drawable/card_shape">
@@ -55,9 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_12"
                 android:layout_marginBottom="@dimen/margin_12"
-                android:layout_marginStart="@dimen/margin_8"
-                android:paddingStart="@dimen/margin_8"
-                android:paddingEnd="@dimen/margin_8"
+                android:layout_marginStart="@dimen/margin_16"
                 android:text="@string/details"
                 android:textColor="@color/textTitleColor"
                 android:textSize="@dimen/text_20"/>
@@ -301,6 +302,247 @@
                     android:textSize="@dimen/text_14" />
 
             </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--============================================-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_8"
+            android:paddingTop="@dimen/margin_6.5"
+            android:paddingBottom="@dimen/margin_6.5"
+            android:background="@drawable/card_shape">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginBottom="@dimen/margin_12"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_16"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/score"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_20"/>
+
+                <TextView
+                    android:id="@+id/total_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_20" />
+
+            </LinearLayout>
+
+            <!--============================================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_12"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_22"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/base"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/base_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+
+            <!--============================================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_22"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/length"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/length_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16"/>
+
+            </LinearLayout>
+
+            <!--============================================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_22"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/upper_case"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/upper_case_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16"/>
+
+            </LinearLayout>
+
+            <!--============================================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_22"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/numbers"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/num_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16"/>
+
+            </LinearLayout>
+
+            <!--============================================-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_22"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/special_char"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/special_char_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16"/>
+
+            </LinearLayout>
+
+            <!--============================================-->
+
+            <LinearLayout
+                android:id="@+id/penalty_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:layout_marginBottom="@dimen/margin_8"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/penalty_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_22"
+                    android:layout_marginEnd="@dimen/margin_8"
+                    android:text="@string/penalty"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16" />
+
+                <TextView
+                    android:id="@+id/penalty_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_16"
+                    android:gravity="end"
+                    android:layout_weight="1"
+                    android:text="@string/zero"
+                    android:textColor="@color/textTitleColor"
+                    android:textSize="@dimen/text_16"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
