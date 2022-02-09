@@ -3,6 +3,7 @@ package com.iyps.fragments.settings;
 import android.annotation.SuppressLint;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,6 +23,8 @@ import java.util.Objects;
 
 public class AboutFragment extends Fragment {
 
+    String version;
+
     public AboutFragment() {
         // Required empty public constructor
     }
@@ -35,12 +38,26 @@ public class AboutFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        setHasOptionsMenu(true);
         return inflater.inflate(R.layout.fragment_settings_about, container,  false);
     }
 
     // OPEN ABOUT ITEMS FRAGMENTS ON CLICK
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+
+        // VERSION
+        try {
+            version = getResources().getString(R.string.app_version)
+                          + " "
+                          + requireContext().getPackageManager()
+                                             .getPackageInfo(requireContext()
+                                             .getPackageName(), 0)
+                                             .versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        ((TextView)view.findViewById(R.id.version)).setText(version);
 
         // AUTHORS
         view.findViewById(R.id.authors_holder)

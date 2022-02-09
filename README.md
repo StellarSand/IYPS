@@ -5,6 +5,9 @@
 A password strength test app which displays strength, estimated crack time and provides warnings and suggestions to help make better passwords.
 
 
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+      alt="Get it on Google Play"
+      height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 [<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" 
       alt='Get it on IzzyOnDroid' 
       height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.iyps)
@@ -61,6 +64,9 @@ Using this app you can determine whether the passwords are most commonly used on
 
 
 ## Download
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+      alt="Get it on Google Play"
+      height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 [<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png" 
       alt='Get it on IzzyOnDroid' 
       height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.iyps)

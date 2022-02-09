@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_version">Versie: 1.0.0</string>
+    <string name="app_version">Versie:</string>
 
     <!--MAIN FRAGMENT-->
     <string name="test_password">Test je wachtwoord</string>
@@ -15,6 +15,16 @@
     <string name="est_time_to_crack">Geschatte tijd om te kraken</string>
     <string name="warning">Waarschuwing</string>
     <string name="suggestions">Suggesties</string>
+    <string name="score">Scoren</string>
+    <string name="base">• Baseren</string>
+    <string name="length">• Lengte</string>
+    <string name="upper_case">• hoofdletters</string>
+    <string name="numbers">• Cijfers</string>
+    <string name="special_char">• Speciale tekens</string>
+    <string name="all_upper_penalty">• Alle hoofdletters boete</string>
+    <string name="all_lower_penalty">• Alle kleine letters boete</string>
+    <string name="all_num_penalty">• Alle nummers straf</string>
+    <string name="all_special_char_penalty">• Alle speciale tekens straf</string>
 
     <!--ABOUT FRAGMENT-->
     <string name="authors">Auteurs</string>

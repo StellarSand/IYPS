@@ -12,6 +12,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -32,9 +33,16 @@ import java.util.concurrent.TimeUnit;
 public class MainFragment extends Fragment {
 
     private TextInputEditText passwordEditText;
-    private TextView strengthSubtitle, timeToCrackSubtitle, warningSubtitle, suggestionsSubtitle;
+    private LinearLayout penaltyLayout;
+    private TextView strengthSubtitle, timeToCrackSubtitle, warningSubtitle, suggestionsSubtitle,
+                    totalScoreText, baseScoreText, lengthScoreText, upperCaseScoreText,
+                    numScoreText, specialCharScoreText, penaltyScoreTitle, penaltyScoreText;
     private LinearProgressIndicator worstMeter, weakMeter, mediumMeter, strongMeter, excellentMeter;
-    private static int worstMeterColor, weakMeterColor, mediumMeterColor, strongMeterColor, excellentMeterColor, emptyMeterColor;
+    private static int worstMeterColor, weakMeterColor, mediumMeterColor,
+                       strongMeterColor, excellentMeterColor, emptyMeterColor,
+                       baseScore, lengthScore, upperCaseScore, numScore,
+                       specialCharScore, penaltyScore, totalScore, lengthCount,
+                       upperCaseCount, lowerCaseCount, numCount, specialCharCount, passwordLength;
     private StringBuilder suggestionText;
     private int wait = 0;
     private Zxcvbn zxcvbn;
@@ -43,7 +51,13 @@ public class MainFragment extends Fragment {
     boolean copiedFromHere;
     private static String worst, weak, medium, strong,
                           excellent, worstPassWarning, weakPassWarning,
-                          mediumPassWarning, not_applicable, passwordString;
+                          mediumPassWarning, not_applicable, passwordString, zero;
+    private static final int lengthScoreMultiplier=3,
+                             upperCaseScoreMultiplier=4,
+                             numScoreMultiplier=5,
+                             specialCharScoreMultiplier=5,
+                             penaltyScoreMultiplier=-15;
+
 
     public MainFragment() {
         // Required empty public constructor
@@ -57,6 +71,7 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        setHasOptionsMenu(true);
         return inflater.inflate(R.layout.fragment_main, container, false);
     }
 
@@ -73,9 +88,29 @@ public class MainFragment extends Fragment {
         mediumMeter = view.findViewById(R.id.medium_meter);
         strongMeter = view.findViewById(R.id.strong_meter);
         excellentMeter = view.findViewById(R.id.excellent_meter);
+        totalScoreText = view.findViewById(R.id.total_score);
+        baseScoreText = view.findViewById(R.id.base_score);
+        lengthScoreText = view.findViewById(R.id.length_score);
+        upperCaseScoreText = view.findViewById(R.id.upper_case_score);
+        numScoreText = view.findViewById(R.id.num_score);
+        specialCharScoreText = view.findViewById(R.id.special_char_score);
+        penaltyLayout = view.findViewById(R.id.penalty_layout);
+        penaltyScoreTitle = view.findViewById(R.id.penalty_title);
+        penaltyScoreText = view.findViewById(R.id.penalty_score);
 
         suggestionText = new StringBuilder();
         wait = 0;
+        baseScore = 0;
+        lengthScore = 0;
+        upperCaseScore = 0;
+        numScore = 0;
+        specialCharScore = 0;
+        penaltyScore = 0;
+        totalScore = 0;
+        lengthCount = 0;
+        upperCaseCount = 0;
+        numCount = 0;
+        specialCharCount = 0;
         zxcvbn = new Zxcvbn();
 
         worst = getResources().getString(R.string.worst);
@@ -87,6 +122,7 @@ public class MainFragment extends Fragment {
         weakPassWarning = getResources().getString(R.string.weak_pass_warning);
         mediumPassWarning = getResources().getString(R.string.medium_pass_warning);
         not_applicable = getResources().getString(R.string.not_applicable);
+        zero = getResources().getString(R.string.zero);
 
         worstMeterColor = getColor(R.color.worstMeterColor);
         weakMeterColor = getColor(R.color.weakMeterColor);
@@ -152,7 +188,8 @@ public class MainFragment extends Fragment {
                 public void onFinish() {
 
                     passwordString = Objects.requireNonNull(passwordEditText.getText()).toString();
-                    wait = 300;
+                    passwordLength = passwordString.length();
+                    wait = 400;
 
                     // IF EDIT TEXT NOT EMPTY
                     if (!passwordString.equals("")) {
@@ -229,15 +266,20 @@ public class MainFragment extends Fragment {
                             }
 
                             suggestionsSubtitle.setText(suggestionText.toString());
-                        } else {
+                        }
+                        else {
                             suggestionsSubtitle.setText(getResources().getString(R.string.not_applicable));
                         }
+
+                        // SCORE
+                        Score(passwordString, passwordLength);
 
                     }
 
                     // IF EDIT TEXT IS EMPTY OR CLEARED, RESET EVERYTHING
                     else {
-                        Reset();
+                        DetailsReset();
+                        ScoreReset();
                     }
 
                 }
@@ -341,8 +383,127 @@ public class MainFragment extends Fragment {
         excellentMeter.setProgressCompat(100, true);
     }
 
-    // RESET WHEN EMPTY EDIT TEXT
-    private void Reset() {
+    // PASSWORD SCORE
+    private void Score(String passwordString, int passwordStringLength)
+    {
+
+        // SCORING SYSTEM :
+        // IF PASSWORD LENGTH GREATER THAN 8, BASE SCORE = 50, ELSE 0
+        // IF PASSWORD LENGTH GREATER THAN 8, LENGTH SCORE = 3 POINTS FOR EACH EXTRA CHARACTER, ELSE 0
+        // UPPER CASE SCORE = 4 POINTS FOR EACH UPPER CASE CHAR
+        // NUMBERS SCORE = 5 POINTS FOR EACH NUMBER
+        // SPECIAL CHAR = 5 POINTS FOR EACH SPECIAL CHAR
+        // PENALTY = IF ALL UPPER CASE/LOWER CASE/NUMBERS/SPECIAL CHAR, SUBTRACT 15 POINTS TOTAL
+
+        if (passwordStringLength>8)
+        {
+            // BASE SCORE
+            baseScore=50;
+            baseScoreText.setText(String.valueOf(baseScore));
+
+            for(int i=0; i < passwordStringLength; i++)
+            {
+                if (Character.isUpperCase(passwordString.charAt(i)))
+                {
+                    upperCaseCount++;
+                }
+                else if (Character.isLowerCase(passwordString.charAt(i)))
+                {
+                    lowerCaseCount++;
+                }
+                else if (Character.isDigit(passwordString.charAt(i)))
+                {
+                    numCount++;
+                }
+                else if (!Character.isDigit(passwordString.charAt(i))
+                        && !Character.isLetter(passwordString.charAt(i))
+                        && !Character.isWhitespace(passwordString.charAt(i)))
+                {
+                    specialCharCount++;
+                }
+
+            }
+
+            for (int j=0; j < passwordStringLength - 8; j++)
+            {
+                lengthCount++;
+            }
+
+            if (upperCaseCount == passwordStringLength)
+            {
+                penaltyScore = penaltyScoreMultiplier;
+                penaltyLayout.setVisibility(View.VISIBLE);
+                penaltyScoreTitle.setText(getResources().getString(R.string.all_upper_penalty));
+            }
+            else if (lowerCaseCount == passwordStringLength)
+            {
+                penaltyScore = penaltyScoreMultiplier;
+                penaltyLayout.setVisibility(View.VISIBLE);
+                penaltyScoreTitle.setText(getResources().getString(R.string.all_lower_penalty));
+            }
+            else if (numCount == passwordStringLength)
+            {
+                penaltyScore = penaltyScoreMultiplier;
+                penaltyLayout.setVisibility(View.VISIBLE);
+                penaltyScoreTitle.setText(getResources().getString(R.string.all_num_penalty));
+            }
+            else if (specialCharCount == passwordStringLength)
+            {
+                penaltyScore = penaltyScoreMultiplier;
+                penaltyLayout.setVisibility(View.VISIBLE);
+                penaltyScoreTitle.setText(getResources().getString(R.string.all_special_char_penalty));
+            }
+            else
+            {
+                penaltyScore = 0;
+                penaltyLayout.setVisibility(View.GONE);
+                penaltyScoreText.setText(zero);
+            }
+
+            lengthScore = lengthScoreMultiplier * lengthCount;
+            upperCaseScore = upperCaseScoreMultiplier * upperCaseCount;
+            numScore = numScoreMultiplier * numCount;
+            specialCharScore = specialCharScoreMultiplier * specialCharCount;
+            totalScore = baseScore+lengthScore+upperCaseScore+numScore+specialCharScore+penaltyScore;
+        }
+
+        // IF PASSWORD LENGTH LESS THAN 8, RESET ALL SCORES TO 0
+        else
+        {
+            ScoreReset();
+        }
+
+        // LENGTH SCORE
+        lengthScoreText.setText(String.valueOf(lengthScore));
+        lengthCount = 0;
+        lengthScore = 0;
+
+        // UPPER CASE SCORE
+        upperCaseScoreText.setText(String.valueOf(upperCaseScore));
+        upperCaseCount = 0;
+        upperCaseScore = 0;
+
+        // NUMBERS SCORE
+        numScoreText.setText(String.valueOf(numScore));
+        numCount = 0;
+        numScore = 0;
+
+        // SPECIAL CHARACTERS SCORE
+        specialCharScoreText.setText(String.valueOf(specialCharScore));
+        specialCharCount = 0;
+        specialCharScore = 0;
+
+        // PENALTY SCORE
+        penaltyScoreText.setText(String.valueOf(penaltyScore));
+        penaltyScore = 0;
+
+        // TOTAL SCORE
+        totalScoreText.setText(String.valueOf(totalScore));
+        totalScore=0;
+    }
+
+    // RESET DETAILS
+    private void DetailsReset() {
         strengthSubtitle.setText(not_applicable);
 
         worstMeter.setIndicatorColor(emptyMeterColor);
@@ -360,6 +521,21 @@ public class MainFragment extends Fragment {
         timeToCrackSubtitle.setText(not_applicable);
         warningSubtitle.setText(not_applicable);
         suggestionsSubtitle.setText(not_applicable);
+
+    }
+
+    // RESET SCORE
+    private void ScoreReset()
+    {
+        totalScoreText.setText(zero);
+        lengthScoreText.setText(zero);
+        baseScoreText.setText(zero);
+        upperCaseScoreText.setText(zero);
+        numScoreText.setText(zero);
+        specialCharScoreText.setText(zero);
+        penaltyScoreText.setText(zero);
+
+        penaltyLayout.setVisibility(View.GONE);
     }
 
     // CHECK PASSWORD CRACK TIME CUSTOM RESULT

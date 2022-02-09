@@ -2,6 +2,7 @@
 
     <!--MARGINS AND PADDINGS-->
     <dimen name="margin_25">25dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
     <dimen name="margin_20">20dp</dimen>
     <dimen name="margin_16">16dp</dimen>
     <dimen name="margin_12">12dp</dimen>

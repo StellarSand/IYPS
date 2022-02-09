@@ -3,7 +3,7 @@
 
     <string name="app_name" translatable="false">IYPS</string>
     <string name="app_name_full" translatable="false">Is Your Password Secure?</string>
-    <string name="app_version">Version: 1.0.0</string>
+    <string name="app_version">Version:</string>
 
     <!--MAIN FRAGMENT-->
     <string name="test_password">Test Your Password</string>
@@ -17,6 +17,18 @@
     <string name="est_time_to_crack">Estimated time to crack</string>
     <string name="warning">Warning</string>
     <string name="suggestions">Suggestions</string>
+    <string name="score">Score</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="base">• Base</string>
+    <string name="length">• Length</string>
+    <string name="upper_case">• Upper case</string>
+    <string name="numbers">• Numbers</string>
+    <string name="special_char">• Special characters</string>
+    <string name="penalty" translatable="false">• Penalty</string>
+    <string name="all_upper_penalty">• All upper case penalty</string>
+    <string name="all_lower_penalty">• All lower case penalty</string>
+    <string name="all_num_penalty">• All numbers penalty</string>
+    <string name="all_special_char_penalty">• All special characters penalty</string>
 
     <!--ABOUT FRAGMENT-->
     <string name="authors">Authors</string>
