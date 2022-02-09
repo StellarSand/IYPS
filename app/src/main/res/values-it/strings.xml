@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name" translatable="false">IYPS</string>
-    <string name="app_name_full" translatable="false">Is Your Password Secure?</string>
-    <string name="app_version">Versione: 1.0.0</string>
+    <string name="app_version">Versione:</string>
 
     <!--MAIN FRAGMENT-->
     <string name="test_password">Prova la tua password</string>
@@ -17,6 +15,16 @@
     <string name="est_time_to_crack">Tempo stimato per la decifratura</string>
     <string name="warning">Avvertimento</string>
     <string name="suggestions">Suggerimenti</string>
+    <string name="score">Punteggio</string>
+    <string name="base">• Base</string>
+    <string name="length">• Lunghezza</string>
+    <string name="upper_case">• Maiuscole</string>
+    <string name="numbers">• Numeri</string>
+    <string name="special_char">• Caratteri speciali</string>
+    <string name="all_upper_penalty">• Penalità tutte maiuscole</string>
+    <string name="all_lower_penalty">• Penalità tutte minuscole</string>
+    <string name="all_num_penalty">• Penalità tutti numeri</string>
+    <string name="all_special_char_penalty">• Penalità tutti caratteri speciali</string>
 
     <!--ABOUT FRAGMENT-->
     <string name="authors">Autori</string>
@@ -37,7 +45,6 @@
     <string name="not_applicable">Non applicabile.</string>
 
     <!--BOTTOM SHEET-->
-    <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
     <string name="cancel_button">Annulla</string>
 
         <!--THEME-->
@@ -45,9 +52,6 @@
         <string name="light">Chiaro</string>
         <string name="dark">Scuro</string>
 
-        <!--AUTHORS-->
-        <string name="the_weird_aquarian" translatable="false">the-weird-aquarian</string>
-        <string name="parveshnarwal" translatable="false">parveshnarwal</string>
     <!--BOTTOM SHEET-->
 
     <!--TOASTS-->
