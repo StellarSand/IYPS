@@ -42,7 +42,6 @@ public class AboutFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_settings_about, container,  false);
     }
 
-    // OPEN ABOUT ITEMS FRAGMENTS ON CLICK
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 

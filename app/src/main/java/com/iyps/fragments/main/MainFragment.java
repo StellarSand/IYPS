@@ -12,6 +12,7 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -22,6 +23,7 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.google.android.material.textfield.TextInputEditText;
 import com.iyps.R;
+import com.iyps.activities.MainActivity;
 import com.nulabinc.zxcvbn.Strength;
 import com.nulabinc.zxcvbn.Zxcvbn;
 
@@ -33,7 +35,8 @@ import java.util.concurrent.TimeUnit;
 public class MainFragment extends Fragment {
 
     private TextInputEditText passwordEditText;
-    private LinearLayout penaltyLayout;
+    private TextView scoreTextView;
+    private LinearLayout expandedLayout, penaltyLayout;
     private TextView strengthSubtitle, timeToCrackSubtitle, warningSubtitle, suggestionsSubtitle,
                     totalScoreText, baseScoreText, lengthScoreText, upperCaseScoreText,
                     numScoreText, specialCharScoreText, penaltyScoreTitle, penaltyScoreText;
@@ -44,6 +47,7 @@ public class MainFragment extends Fragment {
                        specialCharScore, penaltyScore, totalScore, lengthCount,
                        upperCaseCount, lowerCaseCount, numCount, specialCharCount, passwordLength;
     private StringBuilder suggestionText;
+    private boolean isExpanded;
     private int wait = 0;
     private Zxcvbn zxcvbn;
     private CountDownTimer clearClipboardTimer = null;
@@ -55,8 +59,7 @@ public class MainFragment extends Fragment {
     private static final int lengthScoreMultiplier=3,
                              upperCaseScoreMultiplier=4,
                              numScoreMultiplier=5,
-                             specialCharScoreMultiplier=5,
-                             penaltyScoreMultiplier=-15;
+                             specialCharScoreMultiplier=5;
 
 
     public MainFragment() {
@@ -88,12 +91,15 @@ public class MainFragment extends Fragment {
         mediumMeter = view.findViewById(R.id.medium_meter);
         strongMeter = view.findViewById(R.id.strong_meter);
         excellentMeter = view.findViewById(R.id.excellent_meter);
+        scoreTextView = view.findViewById(R.id.score_text_view);
+        ImageView scoreDetails = view.findViewById(R.id.score_details_img);
         totalScoreText = view.findViewById(R.id.total_score);
         baseScoreText = view.findViewById(R.id.base_score);
         lengthScoreText = view.findViewById(R.id.length_score);
         upperCaseScoreText = view.findViewById(R.id.upper_case_score);
         numScoreText = view.findViewById(R.id.num_score);
         specialCharScoreText = view.findViewById(R.id.special_char_score);
+        expandedLayout = view.findViewById(R.id.expanded_layout);
         penaltyLayout = view.findViewById(R.id.penalty_layout);
         penaltyScoreTitle = view.findViewById(R.id.penalty_title);
         penaltyScoreText = view.findViewById(R.id.penalty_score);
@@ -124,18 +130,37 @@ public class MainFragment extends Fragment {
         not_applicable = getResources().getString(R.string.not_applicable);
         zero = getResources().getString(R.string.zero);
 
+        emptyMeterColor = getColor(R.color.hintColor);
         worstMeterColor = getColor(R.color.worstMeterColor);
         weakMeterColor = getColor(R.color.weakMeterColor);
         mediumMeterColor = getColor(R.color.mediumMeterColor);
         strongMeterColor = getColor(R.color.strongMeterColor);
         excellentMeterColor = getColor(R.color.excellentMeterColor);
-        emptyMeterColor = getColor(R.color.hintColor);
 
         clipboardManager = (ClipboardManager) requireActivity().getSystemService(CLIPBOARD_SERVICE);
 
         /*======================================================================================*/
 
         passwordEditText.addTextChangedListener(passwordTextWatcher);
+
+        // ON CLICK SCORE TEXT VIEW, EXPAND LAYOUT
+        scoreTextView.setOnClickListener(v -> {
+            if (!isExpanded) {
+                expandedLayout.setVisibility(View.VISIBLE);
+                isExpanded = true;
+                scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.up_arrow,0, 0, 0);
+            }
+            else{
+                expandedLayout.setVisibility(View.GONE);
+                isExpanded = false;
+                scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.down_arrow,0, 0, 0);
+            }
+        });
+
+        // ON CLICK INFO ICON
+        scoreDetails.setOnClickListener(v ->
+                ((MainActivity)requireActivity()).DisplayFragment("Score Details")
+        );
 
 
         // CLEAR CLIPBOARD AFTER 30 SECONDS IF COPIED FROM THIS APP
@@ -388,17 +413,17 @@ public class MainFragment extends Fragment {
     {
 
         // SCORING SYSTEM :
-        // IF PASSWORD LENGTH GREATER THAN 8, BASE SCORE = 50, ELSE 0
-        // IF PASSWORD LENGTH GREATER THAN 8, LENGTH SCORE = 3 POINTS FOR EACH EXTRA CHARACTER, ELSE 0
+        // IF PASSWORD LENGTH GREATER THAN 5, BASE SCORE = 10, ELSE 0
+        // IF PASSWORD LENGTH GREATER THAN 5, LENGTH SCORE = 3 POINTS FOR EACH EXTRA CHARACTER, ELSE 0
         // UPPER CASE SCORE = 4 POINTS FOR EACH UPPER CASE CHAR
         // NUMBERS SCORE = 5 POINTS FOR EACH NUMBER
         // SPECIAL CHAR = 5 POINTS FOR EACH SPECIAL CHAR
         // PENALTY = IF ALL UPPER CASE/LOWER CASE/NUMBERS/SPECIAL CHAR, SUBTRACT 15 POINTS TOTAL
 
-        if (passwordStringLength>8)
+        if (passwordStringLength>5)
         {
             // BASE SCORE
-            baseScore=50;
+            baseScore=10;
             baseScoreText.setText(String.valueOf(baseScore));
 
             for(int i=0; i < passwordStringLength; i++)
@@ -424,39 +449,34 @@ public class MainFragment extends Fragment {
 
             }
 
-            for (int j=0; j < passwordStringLength - 8; j++)
+            for (int j=0; j < passwordStringLength - 5; j++)
             {
                 lengthCount++;
             }
 
             if (upperCaseCount == passwordStringLength)
             {
-                penaltyScore = penaltyScoreMultiplier;
-                penaltyLayout.setVisibility(View.VISIBLE);
+                penaltyScore = -15;
                 penaltyScoreTitle.setText(getResources().getString(R.string.all_upper_penalty));
             }
             else if (lowerCaseCount == passwordStringLength)
             {
-                penaltyScore = penaltyScoreMultiplier;
-                penaltyLayout.setVisibility(View.VISIBLE);
+                penaltyScore = -15;
                 penaltyScoreTitle.setText(getResources().getString(R.string.all_lower_penalty));
             }
             else if (numCount == passwordStringLength)
             {
-                penaltyScore = penaltyScoreMultiplier;
-                penaltyLayout.setVisibility(View.VISIBLE);
+                penaltyScore = -15;
                 penaltyScoreTitle.setText(getResources().getString(R.string.all_num_penalty));
             }
             else if (specialCharCount == passwordStringLength)
             {
-                penaltyScore = penaltyScoreMultiplier;
-                penaltyLayout.setVisibility(View.VISIBLE);
+                penaltyScore = -15;
                 penaltyScoreTitle.setText(getResources().getString(R.string.all_special_char_penalty));
             }
             else
             {
                 penaltyScore = 0;
-                penaltyLayout.setVisibility(View.GONE);
                 penaltyScoreText.setText(zero);
             }
 
@@ -467,7 +487,7 @@ public class MainFragment extends Fragment {
             totalScore = baseScore+lengthScore+upperCaseScore+numScore+specialCharScore+penaltyScore;
         }
 
-        // IF PASSWORD LENGTH LESS THAN 8, RESET ALL SCORES TO 0
+        // IF PASSWORD LENGTH LESS THAN 5, RESET ALL SCORES TO 0
         else
         {
             ScoreReset();
@@ -494,8 +514,15 @@ public class MainFragment extends Fragment {
         specialCharScore = 0;
 
         // PENALTY SCORE
-        penaltyScoreText.setText(String.valueOf(penaltyScore));
+        if (penaltyScore!=0) {
+            penaltyLayout.setVisibility(View.VISIBLE);
+            penaltyScoreText.setText(String.valueOf(penaltyScore));
+        }
+        else {
+            penaltyLayout.setVisibility(View.GONE);
+        }
         penaltyScore = 0;
+        lowerCaseCount = 0;
 
         // TOTAL SCORE
         totalScoreText.setText(String.valueOf(totalScore));

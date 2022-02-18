@@ -4,7 +4,7 @@
     <string name="app_version">Versie:</string>
 
     <!--MAIN FRAGMENT-->
-    <string name="test_password">Test je wachtwoord</string>
+    <string name="test_your_password">Test je wachtwoord</string>
     <string name="details">Details</string>
     <string name="strength">Kracht</string>
     <string name="worst">Slechtst</string>
@@ -25,6 +25,46 @@
     <string name="all_lower_penalty">• Alle kleine letters boete</string>
     <string name="all_num_penalty">• Alle nummers straf</string>
     <string name="all_special_char_penalty">• Alle speciale tekens straf</string>
+
+    <!--SCORE DETAILS FRAGMENT-->
+    <string name="score_details">Score Details</string>
+    <string name="how_score_works">Hoe wordt de score berekend?</string>
+    <string name="score_details_explained">
+        • Als het wachtwoord minimaal 6 tekens heeft, dan is Basisscore = 10.
+        \n
+        \n• Als het wachtwoord minimaal 6 tekens heeft, dan is de lengtescore = 3 punten voor elk extra teken dat wordt toegevoegd.
+        \n
+        \n• Score in hoofdletters = 4 punten voor elk hoofdletterteken.
+        \n
+        \n• Nummerscore = 5 punten voor elk nummer.
+        \n
+        \n• Speciale karakterscore = 5 punten voor elk speciaal karakter.
+        \n
+        \n• Strafscore = Als tekens in het hele wachtwoord allemaal hoofdletters/kleine letters/cijfers/speciale tekens zijn, worden 15 punten afgetrokken van de totale score.
+        \n
+        \n• Als het wachtwoord niet uit minimaal 6 tekens bestaat, is de score 0.
+    </string>
+    <string name="example">Voorbeeld:</string>
+    <string name="test_password_123">1. Voor TestPassword123 :</string>
+    <string name="test_password_123_score">
+        • Basis = 10
+        \n
+        \n• Lengte = 30 (3 punten elk voor 10 extra karakters toegevoegd.)
+        \n
+        \n• Hoofdletters = 8 (4 punten elk voor 2 hoofdletters.)
+        \n
+        \n• Cijfers = 15 (5 punten elk voor 3 nummers.)
+    </string>
+    <string name="pass_123456789">2. Voor 123456789 :</string>
+    <string name="pass_123456789_score">
+        • Basis = 10
+        \n
+        \n• Lengte = 12 (3 punten elk voor 4 extra karakters toegevoegd.)
+        \n
+        \n• Cijfers = 45 (5 punten elk voor 9 nummers.)
+        \n
+        \n• Straf = -15 (Alle tekens zijn cijfers.)
+    </string>
 
     <!--ABOUT FRAGMENT-->
     <string name="authors">Auteurs</string>

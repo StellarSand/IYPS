@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_settings_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+    tools:context=".fragments.main.ScoreDetailsFragment"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_shape"
+        android:layout_margin="@dimen/margin_16">
+
+        <TextView
+            android:id="@+id/app_name"
+            style="@style/MediumBoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16"
+            android:layout_marginEnd="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="@dimen/margin_2.5"
+            android:text="@string/how_score_works"
+            android:textColor="@color/textTitleColor"
+            android:textSize="@dimen/text_18" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_2.5"
+            android:paddingStart="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_8"
+            android:paddingEnd="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_8"
+            android:text="@string/score_details_explained"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textTitleColor"
+            android:textSize="@dimen/text_16"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/margin_12"
+            android:background="@color/cardStrokeColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_2.5"
+            android:paddingStart="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_8"
+            android:paddingEnd="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_4"
+            android:text="@string/example"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textTitleColor"
+            android:textSize="@dimen/text_18"
+            style="@style/MediumBoldText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_2.5"
+            android:paddingStart="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_8"
+            android:paddingEnd="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_4"
+            android:text="@string/test_password_123"
+            android:textAlignment="viewStart"
+            android:textColor="?colorControlNormal"
+            android:textSize="@dimen/text_18"
+            style="@style/MediumBoldText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginBottom="@dimen/margin_2.5"
+            android:paddingStart="@dimen/margin_25"
+            android:paddingTop="@dimen/margin_8"
+            android:paddingEnd="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_16"
+            android:text="@string/test_password_123_score"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textTitleColor"
+            android:textSize="@dimen/text_16"
+            android:textStyle="normal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_2.5"
+            android:paddingStart="@dimen/margin_20"
+            android:paddingTop="@dimen/margin_8"
+            android:paddingEnd="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_4"
+            android:text="@string/pass_123456789"
+            android:textAlignment="viewStart"
+            android:textColor="?colorControlNormal"
+            android:textSize="@dimen/text_18"
+            style="@style/MediumBoldText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:paddingStart="@dimen/margin_25"
+            android:paddingTop="@dimen/margin_8"
+            android:paddingEnd="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_16"
+            android:text="@string/pass_123456789_score"
+            android:textAlignment="viewStart"
+            android:textColor="@color/textTitleColor"
+            android:textSize="@dimen/text_16"
+            android:textStyle="normal"/>
+
+    </LinearLayout>
+</ScrollView>

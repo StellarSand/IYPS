@@ -4,7 +4,7 @@
     <string name="app_version">バージョン:</string>
 
     <!--MAIN FRAGMENT-->
-    <string name="test_password">パスワードをテストしてください</string>
+    <string name="test_your_password">パスワードをテストしてください</string>
     <string name="details">詳細</string>
     <string name="strength">力</string>
     <string name="worst">最悪</string>
@@ -25,6 +25,46 @@
     <string name="all_lower_penalty">• すべて小文字のペナルティ</string>
     <string name="all_num_penalty">• すべての数字のペナルティ</string>
     <string name="all_special_char_penalty">• すべての特殊文字のペナルティ</string>
+
+    <!--SCORE DETAILS FRAGMENT-->
+    <string name="score_details">スコアの詳細</string>
+    <string name="how_score_works">スコアはどのように計算されますか？</string>
+    <string name="score_details_explained">
+        • パスワードの文字数が6文字以上の場合、基本スコア= 10です.
+        \n
+        \n• パスワードの文字数が6文字以上の場合、長さスコア=追加された文字ごとに3ポイント.
+        \n
+        \n• 大文字のスコア=大文字の文字ごとに4ポイント.
+        \n
+        \n• 数字のスコア=数字ごとに5ポイント.
+        \n
+        \n• 特殊文字スコア=特殊文字ごとに5ポイント.
+        \n
+        \n• ペナルティスコア=パスワード全体の文字がすべて大文字/小文字/数字/特殊文字の場合、合計スコアから15ポイントが差し引かれます.
+        \n
+        \n• パスワードの文字数が6文字以上でない場合、スコアは0です.
+    </string>
+    <string name="example">例:</string>
+    <string name="test_password_123">1.TestPassword123の場合 :</string>
+    <string name="test_password_123_score">
+        • 基数 = 10
+        \n
+        \n• 長さ= 30（10文字追加するとそれぞれ3ポイント）
+        \n
+        \n• 大文字= 8（2つの大文字に対してそれぞれ4ポイント）.
+        \n
+        \n• 数字= 15（3つの数字に対してそれぞれ5ポイント）
+    </string>
+    <string name="pass_123456789">2.123456789の場合 :</string>
+    <string name="pass_123456789_score">
+        • 基数= 10
+        \n
+        \n• 長さ= 12（4文字追加するとそれぞれ3ポイント）
+        \n
+        \n• 数字= 45（9つの数字に対してそれぞれ5ポイント）
+        \n
+        \n• ペナルティ= -15（すべての文字は数字です。）
+    </string>
 
     <!--ABOUT FRAGMENT-->
     <string name="authors">著者</string>

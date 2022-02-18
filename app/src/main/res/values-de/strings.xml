@@ -4,10 +4,10 @@
     <string name="app_version">Version:</string>
 
     <!--MAIN FRAGMENT-->
-    <string name="test_password">Testen Sie Ihr Passwort</string>
+    <string name="test_your_password">Testen Sie Ihr Passwort</string>
     <string name="details">Details</string>
-    <string name="strength">Stärke</string>
-    <string name="worst">Schwächste </string>
+    <string name="strength">St\u00E4rke</string>
+    <string name="worst">Schw\u00E4chste </string>
     <string name="weak">Schwach </string>
     <string name="medium">Mittel</string>
     <string name="strong">Stark</string>
@@ -17,14 +17,54 @@
     <string name="suggestions">Empfehlungen</string>
     <string name="score">Ergebnis</string>
     <string name="base">• Base</string>
-    <string name="length">• Länge</string>
-    <string name="upper_case">• Großbuchstaben</string>
+    <string name="length">• L\u00E4nge</string>
+    <string name="upper_case">• Gro\u00DFbuchstaben</string>
     <string name="numbers">• Zahlen</string>
     <string name="special_char">• Spezielle Charaktere</string>
-    <string name="all_upper_penalty">• Alle Strafen in Großbuchstaben</string>
+    <string name="all_upper_penalty">• Alle Strafen in Gro\u00DFbuchstaben</string>
     <string name="all_lower_penalty">• Alle Strafen in Kleinbuchstaben</string>
     <string name="all_num_penalty">• Alle Zahlen Strafe </string>
-    <string name="all_special_char_penalty">• Strafe für alle Sonderzeichen</string>
+    <string name="all_special_char_penalty">• Strafe f\u00FCr alle Sonderzeichen</string>
+
+    <!--SCORE DETAILS FRAGMENT-->
+    <string name="score_details">Ergebnisdetails</string>
+    <string name="how_score_works">Wie wird die Punktzahl berechnet?</string>
+    <string name="score_details_explained">
+        • Wenn das Passwort mindestens 6 Zeichen hat, dann Basispunktzahl = 10.
+        \n
+        \n• Wenn das Passwort mindestens 6 Zeichen hat, dann L\u00E4ngenbewertung = 3 Punkte f\u00FCr jedes hinzugefügte zus\u00E4tzliche Zeichen.
+        \n
+        \n• Gro\u00DFbuchstabenpunktzahl = 4 Punkte für jeden Gro\u00DFbuchstaben.
+        \n
+        \n• Zahlenwertung = 5 Punkte f\u00FCr jede Zahl.
+        \n
+        \n• Sonderzeichenpunktzahl = 5 Punkte f\u00FCr jedes Sonderzeichen.
+        \n
+        \n• Penalty Score = Wenn Zeichen im gesamten Passwort alle Gro\u00DFbuchstaben/Kleinbuchstaben/Zahlen/Sonderzeichen sind, werden 15 Punkte von der Gesamtpunktzahl abgezogen.
+        \n
+        \n• Wenn das Passwort nicht mindestens 6 Zeichen hat, ist die Punktzahl 0.
+    </string>
+    <string name="example">Beispiel:</string>
+    <string name="test_password_123">1. F\u00FCr TestPassword123:</string>
+    <string name="test_password_123_score">
+        • Basis = 10
+        \n
+        \n• L\u00E4nge = 30 (jeweils 3 Punkte f\u00FCr 10 zus\u00E4tzliche Zeichen hinzugef\u00FCgt.)
+        \n
+        \n• Gro\u00DFbuchstaben = 8 (jeweils 4 Punkte für 2 Gro\u00DFbuchstaben.)
+        \n
+        \n• Zahlen = 15 (jeweils 5 Punkte f\u00FCr 3 Zahlen.)
+    </string>
+    <string name="pass_123456789">2. F\u00FCr 123456789 :</string>
+    <string name="pass_123456789_score">
+        • Basis = 10
+        \n
+        \n• L\u00E4nge = 12 (jeweils 3 Punkte für 4 zus\u00E4tzliche Zeichen hinzugef\u00FCgt.)
+        \n
+        \n• Zahlen = 45 (jeweils 5 Punkte f\u00FCr 9 Zahlen.)
+        \n
+        \n• Strafe = -15 (Alle Zeichen sind Zahlen.)
+    </string>
 
     <!--ABOUT FRAGMENT-->
     <string name="authors">Autoren</string>
@@ -36,7 +76,7 @@
     <string name="menu_more">Mehr</string>
     <string name="choose_theme_title">Thema</string>
     <string name="report_issue_title">Ein Problem melden</string>
-    <string name="about_title">Über</string>
+    <string name="about_title">\u00DCber</string>
 
     <!--CUSTOM WARNINGS & SUGGESTIONS-->
     <string name="worst_pass_warning">Das Passwort ist zu einfach zu erraten.</string>
@@ -55,6 +95,6 @@
     <!--BOTTOM SHEET-->
 
     <!--TOASTS-->
-    <string name="no_browsers">Es ist kein Browser auf diesem Gerät installiert</string>
+    <string name="no_browsers">Es ist kein Browser auf diesem Ger\u00E4t installiert</string>
 
 </resources>
