@@ -25,6 +25,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.iyps.R;
 import com.iyps.fragments.main.MainFragment;
+import com.iyps.fragments.main.ScoreDetailsFragment;
 import com.iyps.fragments.settings.AboutFragment;
 import com.iyps.preferences.PreferenceManager;
 
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // SETUP FRAGMENTS
-    private void DisplayFragment (String fragmentName)
+    public void DisplayFragment (String fragmentName)
     {
 
         FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
@@ -71,19 +72,26 @@ public class MainActivity extends AppCompatActivity {
 
             case "Main":
                 Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name_full);
-                Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
                 fragment= new MainFragment();
                 break;
 
             case "About":
                 Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.about_title);
-                Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
                 fragment= new AboutFragment();
                 transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
-                        R.anim.slide_from_start, R.anim.slide_to_end);
+                                                R.anim.slide_from_start, R.anim.slide_to_end);
+                break;
+
+            case "Score Details":
+                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.score_details);
+                fragment= new ScoreDetailsFragment();
+                transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
+                                                R.anim.slide_from_start, R.anim.slide_to_end);
                 break;
 
         }
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(!fragmentName.equals("Main"));
 
         transaction
                 .replace(R.id.activity_host_fragment, fragment)
@@ -98,9 +106,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_activity_main, menu);
 
         // HIDE OVERFLOW MENU IN ABOUT FRAGMENT
-        if (getSupportFragmentManager().getBackStackEntryCount()>1){
-            menu.findItem(R.id.action_settings).setVisible(false);
-        }
+        menu.findItem(R.id.action_settings).setVisible(getSupportFragmentManager().getBackStackEntryCount() <= 1);
 
         // THEME
         menu.findItem(R.id.theme).setOnMenuItemClickListener(item1 -> {

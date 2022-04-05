@@ -36,6 +36,7 @@
 
             <TextView
                 android:id="@+id/app_name"
+                style="@style/MediumBoldText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_6.5"
@@ -45,11 +46,11 @@
                 android:paddingEnd="@dimen/margin_8"
                 android:text="@string/app_name_full"
                 android:textColor="@color/textTitleColor"
-                android:textSize="@dimen/text_18"
-                style="@style/MediumBoldText"/>
+                android:textSize="@dimen/text_18" />
 
             <TextView
                 android:id="@+id/version"
+                style="@style/MediumBoldText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/app_name"
@@ -58,8 +59,7 @@
                 android:paddingEnd="@dimen/margin_8"
                 android:text="@string/app_version"
                 android:textColor="?colorControlNormal"
-                android:textSize="@dimen/text_16"
-                style="@style/MediumBoldText"/>
+                android:textSize="@dimen/text_16" />
 
         </RelativeLayout>
 
