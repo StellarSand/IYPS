@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_version">Versione:</string>
+
+    <!--MAIN FRAGMENT-->
+    <string name="test_password">Prova la tua password</string>
+    <string name="details">Dettagli</string>
+    <string name="strength">Sicurezza</string>
+    <string name="worst">Peggiore</string>
+    <string name="weak">Debole</string>
+    <string name="medium">Media</string>
+    <string name="strong">Forte</string>
+    <string name="excellent">Eccellente</string>
+    <string name="est_time_to_crack">Tempo stimato per la decifratura</string>
+    <string name="warning">Avvertimento</string>
+    <string name="suggestions">Suggerimenti</string>
+    <string name="score">Punteggio</string>
+    <string name="base">• Base</string>
+    <string name="length">• Lunghezza</string>
+    <string name="upper_case">• Maiuscole</string>
+    <string name="numbers">• Numeri</string>
+    <string name="special_char">• Caratteri speciali</string>
+    <string name="all_upper_penalty">• Penalità tutte maiuscole</string>
+    <string name="all_lower_penalty">• Penalità tutte minuscole</string>
+    <string name="all_num_penalty">• Penalità tutti numeri</string>
+    <string name="all_special_char_penalty">• Penalità tutti caratteri speciali</string>
+
+    <!--SCORE DETAILS FRAGMENT-->
+    <string name="score_details">Dettagli del Punteggio</string>
+    <string name="how_score_works">Come è calcolato il punteggio?</string>
+    <string name="score_details_explained">
+        • Se la password ha almeno 6 caratteri, allora il punteggio base = 10.
+        \n
+        \n• Se la password ha almeno 6 caratteri, allora il punteggio lunghezza = 3 punti per ogni carattere extra aggiunto.
+        \n
+        \n• Punteggio maiuscole = 4 punti per ogni carattere maiuscolo.
+        \n
+        \n• Punteggio numeri = 5 punti per ogni numero.
+        \n
+        \n• Punteggio caratteri speciali = 4 punti per ogni carattere speciale.
+        \n
+        \n• Punteggio di penalità = Se i caratteri nell\'intera password sono tutti maiuscoli/minuscoli/numeri/caratteri speciali, allora 15 punti vengono sottratti dal punteggio totale.
+        \n
+        \n• Se la password non ha almeno 6 caratteri, il punteggio è 0.
+    </string>
+    <string name="example">Esempio:</string>
+    <string name="test_password_123">1. Per TestPassword123 :</string>
+    <string name="test_password_123_score">
+        • Base = 10
+        \n
+        \n• Lunghezza = 30 (3 punti ciascuno per i 10 caratteri extra aggiunti.)
+        \n
+        \n• Maiuscole = 8 (4 punti ciascuno per i 2 caratteri maiuscoli.)
+        \n
+        \n• Numeri = 15 (5 punti ciascuno per i 3 numeri.)
+    </string>
+    <string name="pass_123456789">2. Per 123456789 :</string>
+    <string name="pass_123456789_score">
+        • Base = 10
+        \n
+        \n• Lunghezza = 12 (3 punti ciascuno per i 4 caratteri extra aggiunti.)
+        \n
+        \n• Numberi = 45 (5 punti ciascuno per i 9 numeri.)
+        \n
+        \n• Penalità = -15 (Tutti i caratteri sono numeri.)
+    </string>
+
+    <!--ABOUT FRAGMENT-->
+    <string name="authors">Autori</string>
+    <string name="privacy_policy">Politica sulla Riservatezza</string>
+    <string name="licenses">Licenze</string>
+    <string name="view_on_github">Vedi su GitHub</string>
+
+    <!--TOOLBAR-->
+    <string name="menu_more">Più</string>
+    <string name="choose_theme_title">Tema</string>
+    <string name="report_issue_title">Segnala un problema</string>
+    <string name="about_title">Info</string>
+
+    <!--CUSTOM WARNINGS & SUGGESTIONS-->
+    <string name="worst_pass_warning">La password è troppo semplice da indovinare.</string>
+    <string name="weak_pass_warning">La password può essere facilmente decifrata.</string>
+    <string name="medium_pass_warning">La password non è abbastanza sicura.</string>
+    <string name="not_applicable">Non applicabile.</string>
+
+    <!--BOTTOM SHEET-->
+    <string name="cancel_button">Annulla</string>
+
+        <!--THEME-->
+        <string name="system_default">Predefinito di Sistema</string>
+        <string name="light">Chiaro</string>
+        <string name="dark">Scuro</string>
+
+    <!--BOTTOM SHEET-->
+
+    <!--TOASTS-->
+    <string name="no_browsers">Nessun browser installato sul dispositivo</string>
+
+</resources>
