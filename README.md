@@ -51,7 +51,7 @@ Using this app you can determine whether the passwords are most commonly used on
 - Supports both light and dark theme
 - No ads
 - No collection of personal data
-- Supported languages: English, Dutch, French, German, Japanese
+- Supported languages: English, Dutch, French, German, Italian, Japanese
 
 
 
@@ -77,7 +77,7 @@ Using this app you can determine whether the passwords are most commonly used on
 
 
 ## Changelog
-All notable changes to this project will be documented [here](https://github.com/the-weird-aquarian/IYPS/blob/master/CHANGELOG.md).
+All notable changes to this project will be documented in the [changelog](https://github.com/the-weird-aquarian/IYPS/blob/master/CHANGELOG.md).
 
 
 
@@ -94,7 +94,7 @@ Privacy policy is mentioned [here](https://github.com/the-weird-aquarian/IYPS/bl
 
 
 ## Issues
-If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/the-weird-aquarian/IYPS/issues).
+If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/the-weird-aquarian/IYPS/issues). We really encourage you to search for existing issues before opening a new one. Any duplicates will be closed immediately.
 
 
 
@@ -106,4 +106,4 @@ Any contribution to the project would be much appreciated.
 ## Credits
 - [Nulab Inc](https://github.com/nulab) for developing [zxcvbn4j](https://github.com/nulab/zxcvbn4j), the underlying password strength estimation functionality of this app.
 - [parveshnarwal](https://github.com/parveshnarwal) for helping me out and co-leading the development of this app.
-- Literally my laptop for not crashing on me. :P
+- Big thanks to the [contributors](https://github.com/the-weird-aquarian/IYPS/blob/master/CONTRIBUTORS.md) for making this app better.
