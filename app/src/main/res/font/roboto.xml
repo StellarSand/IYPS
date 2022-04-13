@@ -5,16 +5,16 @@
     <font
         app:fontStyle="normal"
         app:fontWeight="400"
-        app:font="@font/open_sans_regular"/>
+        app:font="@font/roboto_regular"/>
 
     <font
         app:fontStyle="normal"
         app:fontWeight="500"
-        app:font="@font/open_sans_medium"/>
+        app:font="@font/roboto_medium"/>
 
     <font
         app:fontStyle="normal"
         app:fontWeight="700"
-        app:font="@font/open_sans_bold"/>
+        app:font="@font/roboto_bold"/>
 
 </font-family>

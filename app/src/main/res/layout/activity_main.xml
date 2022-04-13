@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
@@ -16,7 +17,7 @@
             android:id="@+id/toolbar_main"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_2.5"
             app:contentInsetStartWithNavigation="0dp"
             android:paddingStart="@dimen/margin_2.5"
             android:paddingEnd="@dimen/margin_2.5"
@@ -24,6 +25,13 @@
             app:titleTextAppearance="@style/MediumBoldText">
 
         </com.google.android.material.appbar.MaterialToolbar>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardStrokeColor"
+            android:visibility="gone"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 

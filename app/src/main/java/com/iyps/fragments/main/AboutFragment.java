@@ -1,6 +1,7 @@
-package com.iyps.fragments.settings;
+package com.iyps.fragments.main;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -65,48 +66,18 @@ public class AboutFragment extends Fragment {
 
         // PRIVACY POLICY
         view.findViewById(R.id.privacy_policy_holder)
-                .setOnClickListener(v -> {
-                    try
-                    {
-                        startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://github.com/the-weird-aquarian/IYPS/blob/master/PRIVACY.md")));
-                    }
-                    // IF BROWSERS NOT INSTALLED, SHOW TOAST
-                    catch (ActivityNotFoundException e)
-                    {
-                        Toast.makeText(requireContext(), getString(R.string.no_browsers), Toast.LENGTH_SHORT).show();
-                    }
-                });
+                .setOnClickListener(v ->
+                        OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/PRIVACY.md"));
 
         // LICENSES
         view.findViewById(R.id.licenses_holder)
-                .setOnClickListener(v -> {
-                    try
-                    {
-                        startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://github.com/the-weird-aquarian/IYPS/blob/master/LICENSE")));
-                    }
-                    // IF BROWSERS NOT INSTALLED, SHOW TOAST
-                    catch (ActivityNotFoundException e)
-                    {
-                        Toast.makeText(requireContext(), getString(R.string.no_browsers), Toast.LENGTH_SHORT).show();
-                    }
-                });
+                .setOnClickListener(v ->
+                        OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/LICENSE"));
 
         // VIEW ON GITHUB
         view.findViewById(R.id.view_on_git_holder)
-                .setOnClickListener(v -> {
-                    try
-                    {
-                        startActivity(new Intent(Intent.ACTION_VIEW,
-                                Uri.parse("https://github.com/the-weird-aquarian/IYPS/")));
-                    }
-                    // IF BROWSERS NOT INSTALLED, SHOW TOAST
-                    catch (ActivityNotFoundException e)
-                    {
-                        Toast.makeText(requireContext(), getString(R.string.no_browsers), Toast.LENGTH_SHORT).show();
-                    }
-                });
+                .setOnClickListener(v ->
+                        OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS"));
 
     }
 
@@ -122,38 +93,35 @@ public class AboutFragment extends Fragment {
         ((TextView)(view.findViewById(R.id.bottom_sheet_title))).setText(getString(R.string.authors));
 
         // AUTHOR 1
-        view.findViewById(R.id.author_1_holder).setOnClickListener(v -> {
-            try
-            {
-                startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://github.com/the-weird-aquarian/")));
-            }
-            // IF BROWSERS NOT INSTALLED, SHOW TOAST
-            catch (ActivityNotFoundException e)
-            {
-                Toast.makeText(requireContext(), getString(R.string.no_browsers), Toast.LENGTH_SHORT).show();
-            }
+        view.findViewById(R.id.author_1).setOnClickListener(v -> {
+            OpenURL(requireActivity(), "https://github.com/the-weird-aquarian");
             bottomSheetDialog.dismiss();
         });
 
         // AUTHOR 2
-        view.findViewById(R.id.author_2_holder).setOnClickListener(v -> {
-            try
-            {
-                startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://github.com/parveshnarwal")));
-            }
-            // IF BROWSERS NOT INSTALLED, SHOW TOAST
-            catch (ActivityNotFoundException e)
-            {
-                Toast.makeText(requireContext(), getString(R.string.no_browsers), Toast.LENGTH_SHORT).show();
-            }
+        view.findViewById(R.id.author_2).setOnClickListener(v -> {
+            OpenURL(requireActivity(), "https://github.com/parveshnarwal");
             bottomSheetDialog.dismiss();
         });
 
         // SHOW BOTTOM SHEET WITH CUSTOM ANIMATION
         Objects.requireNonNull(bottomSheetDialog.getWindow()).getAttributes().windowAnimations = R.style.BottomSheetAnimation;
         bottomSheetDialog.show();
+    }
+
+    // OPEN LINKS
+    public static void OpenURL(Activity activityFrom, String URL) {
+
+        try
+        {
+            activityFrom.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(URL)));
+        }
+        // IF BROWSERS NOT INSTALLED, SHOW TOAST
+        catch (ActivityNotFoundException e)
+        {
+            Toast.makeText(activityFrom, activityFrom.getResources().getString(R.string.no_browsers), Toast.LENGTH_SHORT).show();
+        }
+
     }
 
 }

@@ -3,7 +3,7 @@
 
     <!--PARENT APP THEME-->
     <style name="Base.Theme.IYPS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="fontFamily">@font/open_sans</item>
+        <item name="fontFamily">@font/roboto</item>
     </style>
 
     <!--BASE APP THEME-->
@@ -16,7 +16,7 @@
 
     <!--MEDIUM BOLD TEXT STYLE-->
     <style name="MediumBoldText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
-        <item name="fontFamily">@font/open_sans_medium</item>
+        <item name="fontFamily">@font/roboto_medium</item>
     </style>
 
     <!--BASE BOTTOM SHEET STYLE-->

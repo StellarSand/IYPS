@@ -4,7 +4,7 @@
     <string name="app_version">Versione:</string>
 
     <!--MAIN FRAGMENT-->
-    <string name="test_password">Prova la tua password</string>
+    <string name="test_your_password">Prova la tua password</string>
     <string name="details">Dettagli</string>
     <string name="strength">Sicurezza</string>
     <string name="worst">Peggiore</string>

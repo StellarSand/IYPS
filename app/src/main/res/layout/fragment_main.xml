@@ -1,18 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:ignore="ContentDescription"
-    android:id="@+id/fragment_settings_default"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbarThumbVertical="@drawable/scrollbar_thumb">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+    android:orientation="vertical">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/password_box"
@@ -20,8 +14,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_16"
             android:layout_marginEnd="@dimen/margin_16"
-            android:layout_marginBottom="@dimen/margin_12"
-            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_10"
             android:paddingTop="@dimen/margin_4"
             android:paddingBottom="@dimen/margin_4"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -41,6 +34,19 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_4"
+        android:clipToPadding="false">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -51,7 +57,7 @@
             android:layout_marginBottom="@dimen/margin_8"
             android:paddingTop="@dimen/margin_6.5"
             android:paddingBottom="@dimen/margin_6.5"
-            android:background="@drawable/card_shape">
+            android:background="@drawable/shape_card">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -67,9 +73,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:paddingStart="@dimen/margin_20"
+                android:paddingStart="@dimen/margin_16"
                 android:paddingTop="@dimen/margin_10"
-                android:paddingEnd="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_16"
                 android:paddingBottom="@dimen/margin_10">
 
                 <ImageView
@@ -78,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/margin_12"
-                    android:src="@drawable/strength" />
+                    android:src="@drawable/ic_strength" />
 
                 <TextView
                     android:id="@+id/strength_title"
@@ -174,9 +180,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:paddingStart="@dimen/margin_20"
+                android:paddingStart="@dimen/margin_16"
                 android:paddingTop="@dimen/margin_10"
-                android:paddingEnd="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_16"
                 android:paddingBottom="@dimen/margin_10">
 
                 <ImageView
@@ -185,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/margin_12"
-                    android:src="@drawable/est_time_to_crack" />
+                    android:src="@drawable/ic_est_time_to_crack" />
 
                 <TextView
                     android:id="@+id/time_to_crack_title"
@@ -219,9 +225,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:paddingStart="@dimen/margin_20"
+                android:paddingStart="@dimen/margin_16"
                 android:paddingTop="@dimen/margin_10"
-                android:paddingEnd="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_16"
                 android:paddingBottom="@dimen/margin_10">
 
                 <ImageView
@@ -230,7 +236,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/margin_12"
-                    android:src="@drawable/warning" />
+                    android:src="@drawable/ic_warning" />
 
                 <TextView
                     android:id="@+id/warning_title"
@@ -264,9 +270,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="1dp"
-                android:paddingStart="@dimen/margin_20"
+                android:paddingStart="@dimen/margin_16"
                 android:paddingTop="@dimen/margin_10"
-                android:paddingEnd="@dimen/margin_12"
+                android:paddingEnd="@dimen/margin_16"
                 android:paddingBottom="@dimen/margin_10">
 
                 <ImageView
@@ -275,7 +281,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/margin_12"
-                    android:src="@drawable/suggestions" />
+                    android:src="@drawable/ic_suggestions" />
 
                 <TextView
                     android:id="@+id/suggestions_title"
@@ -317,7 +323,7 @@
             android:layout_marginBottom="@dimen/margin_8"
             android:paddingTop="@dimen/margin_6.5"
             android:paddingBottom="@dimen/margin_6.5"
-            android:background="@drawable/card_shape">
+            android:background="@drawable/shape_card">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -335,15 +341,15 @@
                     android:text="@string/score"
                     android:textColor="@color/textTitleColor"
                     android:textSize="@dimen/text_20"
-                    app:drawableStartCompat="@drawable/down_arrow"
+                    app:drawableStartCompat="@drawable/ic_down_arrow"
                     android:drawablePadding="@dimen/margin_2.5"
                     android:clickable="true"
                     android:focusable="true"/>
 
                 <ImageView
                     android:id="@+id/score_details_img"
-                    android:layout_width="@dimen/margin_22"
-                    android:layout_height="@dimen/margin_22"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
                     android:paddingTop="@dimen/margin_2.5"
                     android:layout_marginEnd="@dimen/margin_8"
                     android:layout_gravity="center_vertical"
@@ -571,4 +577,6 @@
 
     </LinearLayout>
 
-</ScrollView>
+    </ScrollView>
+
+</LinearLayout>

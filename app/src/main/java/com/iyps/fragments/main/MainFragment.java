@@ -148,12 +148,12 @@ public class MainFragment extends Fragment {
             if (!isExpanded) {
                 expandedLayout.setVisibility(View.VISIBLE);
                 isExpanded = true;
-                scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.up_arrow,0, 0, 0);
+                scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_up_arrow,0, 0, 0);
             }
             else{
                 expandedLayout.setVisibility(View.GONE);
                 isExpanded = false;
-                scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.down_arrow,0, 0, 0);
+                scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_down_arrow,0, 0, 0);
             }
         });
 

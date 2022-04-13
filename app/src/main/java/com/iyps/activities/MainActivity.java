@@ -1,11 +1,9 @@
 package com.iyps.activities;
 
+import static com.iyps.fragments.main.AboutFragment.OpenURL;
 import static com.iyps.preferences.PreferenceManager.THEME_PREF;
 
 import android.annotation.SuppressLint;
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,7 +11,6 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,7 +23,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.iyps.R;
 import com.iyps.fragments.main.MainFragment;
 import com.iyps.fragments.main.ScoreDetailsFragment;
-import com.iyps.fragments.settings.AboutFragment;
+import com.iyps.fragments.main.AboutFragment;
 import com.iyps.preferences.PreferenceManager;
 
 import java.util.Objects;
@@ -35,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     private PreferenceManager preferenceManager;
     private Fragment fragment;
+    private View divider;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -43,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         preferenceManager=new PreferenceManager(this);
         MaterialToolbar toolbar = findViewById(R.id.toolbar_main);
+        divider = findViewById(R.id.divider);
 
     /*===========================================================================================*/
 
@@ -55,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
         // DEFAULT FRAGMENT
-        if (savedInstanceState==null) {
+        if (savedInstanceState == null) {
             DisplayFragment("Main");
         }
 
@@ -75,13 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 fragment= new MainFragment();
                 break;
 
-            case "About":
-                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.about_title);
-                fragment= new AboutFragment();
-                transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
-                                                R.anim.slide_from_start, R.anim.slide_to_end);
-                break;
-
             case "Score Details":
                 Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.score_details);
                 fragment= new ScoreDetailsFragment();
@@ -89,9 +81,22 @@ public class MainActivity extends AppCompatActivity {
                                                 R.anim.slide_from_start, R.anim.slide_to_end);
                 break;
 
+            case "About":
+                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.about_title);
+                fragment= new AboutFragment();
+                transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
+                        R.anim.slide_from_start, R.anim.slide_to_end);
+                break;
+
         }
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(!fragmentName.equals("Main"));
+        if (fragmentName.equals("Main")) {
+            divider.setVisibility(View.GONE);
+        }
+        else {
+            divider.setVisibility(View.VISIBLE);
+        }
 
         transaction
                 .replace(R.id.activity_host_fragment, fragment)
@@ -117,16 +122,7 @@ public class MainActivity extends AppCompatActivity {
         // REPORT AN ISSUE
         menu.findItem(R.id.report_issue).setOnMenuItemClickListener(item2 -> {
 
-            try
-            {
-                startActivity(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://github.com/the-weird-aquarian/IYPS/issues")));
-            }
-            // IF BROWSERS NOT INSTALLED, SHOW TOAST
-            catch (ActivityNotFoundException e)
-            {
-                Toast.makeText(getApplicationContext(), getString(R.string.no_browsers), Toast.LENGTH_SHORT).show();
-            }
+            OpenURL(this, "https://github.com/the-weird-aquarian/IYPS/issues");
 
             return true;
         });
@@ -144,7 +140,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // THEME BOTTOM SHEET
-    @SuppressLint("NonConstantResourceId")
     private void ThemeBottomSheet(){
         final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this, R.style.CustomBottomSheetTheme);
         bottomSheetDialog.setCancelable(true);
@@ -183,19 +178,18 @@ public class MainActivity extends AppCompatActivity {
         // ON SELECTING OPTION
         ((RadioGroup)view.findViewById(R.id.options_radiogroup))
                 .setOnCheckedChangeListener((radioGroup, checkedId) -> {
-                    switch (checkedId){
-                        case R.id.option_default:
-                            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
-                            break;
 
-                        case R.id.option_light:
-                            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                            break;
-
-                        case R.id.option_dark:
-                            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                            break;
+                    if (checkedId == R.id.option_default) {
+                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
                     }
+                    else if (checkedId == R.id.option_light) {
+                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    }
+
+                    else if (checkedId == R.id.option_dark) {
+                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    }
+
                     preferenceManager.setInt(THEME_PREF, checkedId);
                     bottomSheetDialog.dismiss();
                     this.recreate();
@@ -216,6 +210,7 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().popBackStack();
             Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name_full);
             Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
+            divider.setVisibility(View.GONE);
         }
 
         // IF ON DEFAULT FRAGMENT, FINISH ACTIVITY
