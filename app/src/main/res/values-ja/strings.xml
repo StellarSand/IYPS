@@ -14,6 +14,14 @@
     <string name="excellent">優れた</string>
     <string name="est_time_to_crack">割れ目の推定時間</string>
     <string name="warning">警告</string>
+    <string name="less_than_sec">1秒未満</string>
+    <string name="second">秒数</string>
+    <string name="minute">minutes</string>
+    <string name="hour">分</string>
+    <string name="day">日</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="centuries">世紀</string>
     <string name="suggestions">提案</string>
     <string name="score">スコア</string>
     <string name="base">• ベース</string>

@@ -16,6 +16,14 @@
     <string name="excellent">Excellent</string>
     <string name="est_time_to_crack">Estimated time to crack</string>
     <string name="warning">Warning</string>
+    <string name="less_than_sec">Less than a second</string>
+    <string name="second">second</string>
+    <string name="minute">minute</string>
+    <string name="hour">hour</string>
+    <string name="day">day</string>
+    <string name="month">month</string>
+    <string name="year">year</string>
+    <string name="centuries">Centuries</string>
     <string name="suggestions">Suggestions</string>
     <string name="score">Score</string>
     <string name="zero" translatable="false">0</string>

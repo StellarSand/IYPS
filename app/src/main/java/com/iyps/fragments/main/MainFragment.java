@@ -225,6 +225,8 @@ public class MainFragment extends Fragment {
                                 .getCrackTimeSeconds()
                                 .getOfflineSlowHashing1e4perSecond()) * 1000);
 
+                        String timeToCrackString = strength.getCrackTimesDisplay().getOfflineSlowHashing1e4perSecond();
+
                         switch (passwordCrackTimeResult(crackTimeMilliSeconds)) {
 
                             case "WORST":
@@ -250,7 +252,48 @@ public class MainFragment extends Fragment {
                         }
 
                         // ESTIMATED TIME TO CRACK
-                        timeToCrackSubtitle.setText(strength.getCrackTimesDisplay().getOfflineSlowHashing1e4perSecond());
+                        // REPLACE HARDCODED STRINGS FROM THE LIBRARY FOR PROPER LANGUAGE SUPPORT
+                        // SINCE DEVS OF ZXCVBN4J WON'T FIX IT, WE DO IT OURSELVES
+                        if (timeToCrackString.contains("less than a second")) {
+                            timeToCrackString = timeToCrackString
+                                    .replace("less than a second", getString(R.string.less_than_sec));
+                        }
+
+                        else if (timeToCrackString.contains("second")) {
+                            timeToCrackString = timeToCrackString
+                                    .replace("second", getString(R.string.second));
+                        }
+
+                        else if (timeToCrackString.contains("minute")) {
+                            timeToCrackString = timeToCrackString
+                                    .replace("minute", getString(R.string.minute));
+                        }
+
+                        else if (timeToCrackString.contains("hour")) {
+                            timeToCrackString = timeToCrackString
+                                    .replace("hour", getString(R.string.hour));
+                        }
+
+                        else if (timeToCrackString.contains("day")) {
+                            timeToCrackString = timeToCrackString
+                                    .replace("day", getString(R.string.day));
+                        }
+
+                        else if (timeToCrackString.contains("month")) {
+                            timeToCrackString = timeToCrackString
+                                    .replace("month", getString(R.string.month));
+                        }
+
+                        else if (timeToCrackString.contains("year")) {
+                            timeToCrackString = timeToCrackString
+                                    .replace("year", getString(R.string.year));
+                        }
+
+                        else if (timeToCrackString.contains("centuries")) {
+                            timeToCrackString = timeToCrackString
+                                    .replace("centuries", getString(R.string.centuries));
+                        }
+                        timeToCrackSubtitle.setText(timeToCrackString);
 
                         // WARNING
                         // IF EMPTY, SET CUSTOM WARNING MESSAGE

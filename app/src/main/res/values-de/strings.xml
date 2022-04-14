@@ -14,6 +14,14 @@
     <string name="excellent">Exzellent</string>
     <string name="est_time_to_crack">Geschätzte Zeit zum Knacken</string>
     <string name="warning">Warnung</string>
+    <string name="less_than_sec">Weniger als eine sekunde</string>
+    <string name="second">sekunden</string>
+    <string name="minute">minuten</string>
+    <string name="hour">stunde</string>
+    <string name="day">tage</string>
+    <string name="month">monat</string>
+    <string name="year">jahre</string>
+    <string name="centuries">Jahrhunderte</string>
     <string name="suggestions">Empfehlungen</string>
     <string name="score">Ergebnis</string>
     <string name="base">• Base</string>
