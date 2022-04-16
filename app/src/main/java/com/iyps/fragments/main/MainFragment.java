@@ -12,18 +12,14 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.progressindicator.LinearProgressIndicator;
-import com.google.android.material.textfield.TextInputEditText;
 import com.iyps.R;
 import com.iyps.activities.MainActivity;
+import com.iyps.databinding.FragmentMainBinding;
 import com.nulabinc.zxcvbn.Strength;
 import com.nulabinc.zxcvbn.Zxcvbn;
 
@@ -34,13 +30,7 @@ import java.util.concurrent.TimeUnit;
 
 public class MainFragment extends Fragment {
 
-    private TextInputEditText passwordEditText;
-    private TextView scoreTextView;
-    private LinearLayout expandedLayout, penaltyLayout;
-    private TextView strengthSubtitle, timeToCrackSubtitle, warningSubtitle, suggestionsSubtitle,
-                    totalScoreText, baseScoreText, lengthScoreText, upperCaseScoreText,
-                    numScoreText, specialCharScoreText, penaltyScoreTitle, penaltyScoreText;
-    private LinearProgressIndicator worstMeter, weakMeter, mediumMeter, strongMeter, excellentMeter;
+    private FragmentMainBinding fragmentBinding;
     private static int worstMeterColor, weakMeterColor, mediumMeterColor,
                        strongMeterColor, excellentMeterColor, emptyMeterColor,
                        baseScore, lengthScore, upperCaseScore, numScore,
@@ -72,37 +62,15 @@ public class MainFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true);
-        return inflater.inflate(R.layout.fragment_main, container, false);
+        fragmentBinding = FragmentMainBinding.inflate(inflater, container, false);
+        return fragmentBinding.getRoot();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-
-        passwordEditText = view.findViewById(R.id.password_input);
-        strengthSubtitle = view.findViewById(R.id.strength_subtitle);
-        timeToCrackSubtitle = view.findViewById(R.id.time_to_crack_subtitle);
-        warningSubtitle = view.findViewById(R.id.warning_subtitle);
-        suggestionsSubtitle = view.findViewById(R.id.suggestions_subtitle);
-        worstMeter = view.findViewById(R.id.worst_meter);
-        weakMeter = view.findViewById(R.id.weak_meter);
-        mediumMeter = view.findViewById(R.id.medium_meter);
-        strongMeter = view.findViewById(R.id.strong_meter);
-        excellentMeter = view.findViewById(R.id.excellent_meter);
-        scoreTextView = view.findViewById(R.id.score_text_view);
-        ImageView scoreDetails = view.findViewById(R.id.score_details_img);
-        totalScoreText = view.findViewById(R.id.total_score);
-        baseScoreText = view.findViewById(R.id.base_score);
-        lengthScoreText = view.findViewById(R.id.length_score);
-        upperCaseScoreText = view.findViewById(R.id.upper_case_score);
-        numScoreText = view.findViewById(R.id.num_score);
-        specialCharScoreText = view.findViewById(R.id.special_char_score);
-        expandedLayout = view.findViewById(R.id.expanded_layout);
-        penaltyLayout = view.findViewById(R.id.penalty_layout);
-        penaltyScoreTitle = view.findViewById(R.id.penalty_title);
-        penaltyScoreText = view.findViewById(R.id.penalty_score);
 
         suggestionText = new StringBuilder();
         wait = 0;
@@ -141,24 +109,24 @@ public class MainFragment extends Fragment {
 
         /*======================================================================================*/
 
-        passwordEditText.addTextChangedListener(passwordTextWatcher);
+        fragmentBinding.passwordText.addTextChangedListener(passwordTextWatcher);
 
         // ON CLICK SCORE TEXT VIEW, EXPAND LAYOUT
-        scoreTextView.setOnClickListener(v -> {
+        fragmentBinding.scoreTextView.setOnClickListener(v -> {
             if (!isExpanded) {
-                expandedLayout.setVisibility(View.VISIBLE);
+                fragmentBinding.expandedLayout.setVisibility(View.VISIBLE);
                 isExpanded = true;
-                scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_up_arrow,0, 0, 0);
+                fragmentBinding.scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_up_arrow,0, 0, 0);
             }
             else{
-                expandedLayout.setVisibility(View.GONE);
+                fragmentBinding.expandedLayout.setVisibility(View.GONE);
                 isExpanded = false;
-                scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_down_arrow,0, 0, 0);
+                fragmentBinding.scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_down_arrow,0, 0, 0);
             }
         });
 
         // ON CLICK INFO ICON
-        scoreDetails.setOnClickListener(v ->
+        fragmentBinding.scoreDetailsImg.setOnClickListener(v ->
                 ((MainActivity)requireActivity()).DisplayFragment("Score Details")
         );
 
@@ -212,7 +180,7 @@ public class MainFragment extends Fragment {
                 // ON TIMER FINISH, PERFORM ACTION
                 public void onFinish() {
 
-                    passwordString = Objects.requireNonNull(passwordEditText.getText()).toString();
+                    passwordString = Objects.requireNonNull(fragmentBinding.passwordText.getText()).toString();
                     passwordLength = passwordString.length();
                     wait = 400;
 
@@ -293,7 +261,7 @@ public class MainFragment extends Fragment {
                             timeToCrackString = timeToCrackString
                                     .replace("centuries", getString(R.string.centuries));
                         }
-                        timeToCrackSubtitle.setText(timeToCrackString);
+                        fragmentBinding.timeToCrackSubtitle.setText(timeToCrackString);
 
                         // WARNING
                         // IF EMPTY, SET CUSTOM WARNING MESSAGE
@@ -301,26 +269,26 @@ public class MainFragment extends Fragment {
 
                             switch (passwordCrackTimeResult(crackTimeMilliSeconds)) {
                                 case "WORST":
-                                    warningSubtitle.setText(worstPassWarning); // WORST WARNING
+                                    fragmentBinding.warningSubtitle.setText(worstPassWarning); // WORST WARNING
                                     break;
 
                                 case "WEAK":
-                                    warningSubtitle.setText(weakPassWarning); // WEAK WARNING
+                                    fragmentBinding.warningSubtitle.setText(weakPassWarning); // WEAK WARNING
                                     break;
 
                                 case "MEDIUM":
-                                    warningSubtitle.setText(mediumPassWarning); // MEDIUM WARNING
+                                    fragmentBinding.warningSubtitle.setText(mediumPassWarning); // MEDIUM WARNING
                                     break;
 
                                 default:
-                                    warningSubtitle.setText(not_applicable); // FOR STRONG AND ABOVE
+                                    fragmentBinding.warningSubtitle.setText(not_applicable); // FOR STRONG AND ABOVE
                                     break;
                             }
                         }
 
                         // IF NOT EMPTY, DISPLAY WARNING
                         else {
-                            warningSubtitle.setText(strength.getFeedback().getWarning(Locale.getDefault()));
+                            fragmentBinding.warningSubtitle.setText(strength.getFeedback().getWarning(Locale.getDefault()));
                         }
 
                         // SUGGESTIONS
@@ -333,10 +301,10 @@ public class MainFragment extends Fragment {
                                 suggestionText = suggestionText.append("\u2022 ").append(suggestions.get(i)).append("\n");
                             }
 
-                            suggestionsSubtitle.setText(suggestionText.toString());
+                            fragmentBinding.suggestionsSubtitle.setText(suggestionText.toString());
                         }
                         else {
-                            suggestionsSubtitle.setText(getResources().getString(R.string.not_applicable));
+                            fragmentBinding.suggestionsSubtitle.setText(getResources().getString(R.string.not_applicable));
                         }
 
                         // SCORE
@@ -368,87 +336,87 @@ public class MainFragment extends Fragment {
 
     // WORST STRENGTH METER
     private void WorstStrengthMeter() {
-        strengthSubtitle.setText(worst);
+        fragmentBinding.strengthSubtitle.setText(worst);
 
-        worstMeter.setIndicatorColor(worstMeterColor);
-        weakMeter.setIndicatorColor(emptyMeterColor);
-        mediumMeter.setIndicatorColor(emptyMeterColor);
-        strongMeter.setIndicatorColor(emptyMeterColor);
-        excellentMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.worstMeter.setIndicatorColor(worstMeterColor);
+        fragmentBinding.weakMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.mediumMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.strongMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.excellentMeter.setIndicatorColor(emptyMeterColor);
 
-        worstMeter.setProgressCompat(100, true);
-        weakMeter.setProgressCompat(0, true);
-        mediumMeter.setProgressCompat(0, true);
-        strongMeter.setProgressCompat(0, true);
-        excellentMeter.setProgressCompat(0, true);
+        fragmentBinding.worstMeter.setProgressCompat(100, true);
+        fragmentBinding.weakMeter.setProgressCompat(0, true);
+        fragmentBinding.mediumMeter.setProgressCompat(0, true);
+        fragmentBinding.strongMeter.setProgressCompat(0, true);
+        fragmentBinding.excellentMeter.setProgressCompat(0, true);
     }
 
     // WEAK STRENGTH METER
     private void WeakStrengthMeter() {
-        strengthSubtitle.setText(weak);
+        fragmentBinding.strengthSubtitle.setText(weak);
 
-        worstMeter.setIndicatorColor(weakMeterColor);
-        weakMeter.setIndicatorColor(weakMeterColor);
-        mediumMeter.setIndicatorColor(emptyMeterColor);
-        strongMeter.setIndicatorColor(emptyMeterColor);
-        excellentMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.worstMeter.setIndicatorColor(weakMeterColor);
+        fragmentBinding.weakMeter.setIndicatorColor(weakMeterColor);
+        fragmentBinding.mediumMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.strongMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.excellentMeter.setIndicatorColor(emptyMeterColor);
 
-        worstMeter.setProgressCompat(100, true);
-        weakMeter.setProgressCompat(100, true);
-        mediumMeter.setProgressCompat(0, true);
-        strongMeter.setProgressCompat(0, true);
-        excellentMeter.setProgressCompat(0, true);
+        fragmentBinding.worstMeter.setProgressCompat(100, true);
+        fragmentBinding.weakMeter.setProgressCompat(100, true);
+        fragmentBinding.mediumMeter.setProgressCompat(0, true);
+        fragmentBinding.strongMeter.setProgressCompat(0, true);
+        fragmentBinding.excellentMeter.setProgressCompat(0, true);
     }
 
     // MEDIUM STRENGTH METER
     private void MediumStrengthMeter() {
-        strengthSubtitle.setText(medium);
+        fragmentBinding.strengthSubtitle.setText(medium);
 
-        worstMeter.setIndicatorColor(mediumMeterColor);
-        weakMeter.setIndicatorColor(mediumMeterColor);
-        mediumMeter.setIndicatorColor(mediumMeterColor);
-        strongMeter.setIndicatorColor(emptyMeterColor);
-        excellentMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.worstMeter.setIndicatorColor(mediumMeterColor);
+        fragmentBinding.weakMeter.setIndicatorColor(mediumMeterColor);
+        fragmentBinding.mediumMeter.setIndicatorColor(mediumMeterColor);
+        fragmentBinding.strongMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.excellentMeter.setIndicatorColor(emptyMeterColor);
 
-        worstMeter.setProgressCompat(100, true);
-        weakMeter.setProgressCompat(100, true);
-        mediumMeter.setProgressCompat(100, true);
-        strongMeter.setProgressCompat(0, true);
-        excellentMeter.setProgressCompat(0, true);
+        fragmentBinding.worstMeter.setProgressCompat(100, true);
+        fragmentBinding.weakMeter.setProgressCompat(100, true);
+        fragmentBinding.mediumMeter.setProgressCompat(100, true);
+        fragmentBinding.strongMeter.setProgressCompat(0, true);
+        fragmentBinding.excellentMeter.setProgressCompat(0, true);
     }
 
     // STRONG STRENGTH METER
     private void StrongStrengthMeter() {
-        strengthSubtitle.setText(strong);
+        fragmentBinding.strengthSubtitle.setText(strong);
 
-        worstMeter.setIndicatorColor(strongMeterColor);
-        weakMeter.setIndicatorColor(strongMeterColor);
-        mediumMeter.setIndicatorColor(strongMeterColor);
-        strongMeter.setIndicatorColor(strongMeterColor);
-        excellentMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.worstMeter.setIndicatorColor(strongMeterColor);
+        fragmentBinding.weakMeter.setIndicatorColor(strongMeterColor);
+        fragmentBinding.mediumMeter.setIndicatorColor(strongMeterColor);
+        fragmentBinding.strongMeter.setIndicatorColor(strongMeterColor);
+        fragmentBinding.excellentMeter.setIndicatorColor(emptyMeterColor);
 
-        worstMeter.setProgressCompat(100, true);
-        weakMeter.setProgressCompat(100, true);
-        mediumMeter.setProgressCompat(100, true);
-        strongMeter.setProgressCompat(100, true);
-        excellentMeter.setProgressCompat(0, true);
+        fragmentBinding.worstMeter.setProgressCompat(100, true);
+        fragmentBinding.weakMeter.setProgressCompat(100, true);
+        fragmentBinding.mediumMeter.setProgressCompat(100, true);
+        fragmentBinding.strongMeter.setProgressCompat(100, true);
+        fragmentBinding.excellentMeter.setProgressCompat(0, true);
     }
 
     // EXCELLENT STRENGTH METER
     private void ExcellentStrengthMeter() {
-        strengthSubtitle.setText(excellent);
+        fragmentBinding.strengthSubtitle.setText(excellent);
 
-        worstMeter.setIndicatorColor(excellentMeterColor);
-        weakMeter.setIndicatorColor(excellentMeterColor);
-        mediumMeter.setIndicatorColor(excellentMeterColor);
-        strongMeter.setIndicatorColor(excellentMeterColor);
-        excellentMeter.setIndicatorColor(excellentMeterColor);
+        fragmentBinding.worstMeter.setIndicatorColor(excellentMeterColor);
+        fragmentBinding.weakMeter.setIndicatorColor(excellentMeterColor);
+        fragmentBinding.mediumMeter.setIndicatorColor(excellentMeterColor);
+        fragmentBinding.strongMeter.setIndicatorColor(excellentMeterColor);
+        fragmentBinding.excellentMeter.setIndicatorColor(excellentMeterColor);
 
-        worstMeter.setProgressCompat(100, true);
-        weakMeter.setProgressCompat(100, true);
-        mediumMeter.setProgressCompat(100, true);
-        strongMeter.setProgressCompat(100, true);
-        excellentMeter.setProgressCompat(100, true);
+        fragmentBinding.worstMeter.setProgressCompat(100, true);
+        fragmentBinding.weakMeter.setProgressCompat(100, true);
+        fragmentBinding.mediumMeter.setProgressCompat(100, true);
+        fragmentBinding.strongMeter.setProgressCompat(100, true);
+        fragmentBinding.excellentMeter.setProgressCompat(100, true);
     }
 
     // PASSWORD SCORE
@@ -467,7 +435,7 @@ public class MainFragment extends Fragment {
         {
             // BASE SCORE
             baseScore=10;
-            baseScoreText.setText(String.valueOf(baseScore));
+            fragmentBinding.baseScore.setText(String.valueOf(baseScore));
 
             for(int i=0; i < passwordStringLength; i++)
             {
@@ -500,27 +468,27 @@ public class MainFragment extends Fragment {
             if (upperCaseCount == passwordStringLength)
             {
                 penaltyScore = -15;
-                penaltyScoreTitle.setText(getResources().getString(R.string.all_upper_penalty));
+                fragmentBinding.penaltyTitle.setText(getResources().getString(R.string.all_upper_penalty));
             }
             else if (lowerCaseCount == passwordStringLength)
             {
                 penaltyScore = -15;
-                penaltyScoreTitle.setText(getResources().getString(R.string.all_lower_penalty));
+                fragmentBinding.penaltyTitle.setText(getResources().getString(R.string.all_lower_penalty));
             }
             else if (numCount == passwordStringLength)
             {
                 penaltyScore = -15;
-                penaltyScoreTitle.setText(getResources().getString(R.string.all_num_penalty));
+                fragmentBinding.penaltyTitle.setText(getResources().getString(R.string.all_num_penalty));
             }
             else if (specialCharCount == passwordStringLength)
             {
                 penaltyScore = -15;
-                penaltyScoreTitle.setText(getResources().getString(R.string.all_special_char_penalty));
+                fragmentBinding.penaltyTitle.setText(getResources().getString(R.string.all_special_char_penalty));
             }
             else
             {
                 penaltyScore = 0;
-                penaltyScoreText.setText(zero);
+                fragmentBinding.penaltyTitle.setText(zero);
             }
 
             lengthScore = lengthScoreMultiplier * lengthCount;
@@ -537,75 +505,75 @@ public class MainFragment extends Fragment {
         }
 
         // LENGTH SCORE
-        lengthScoreText.setText(String.valueOf(lengthScore));
+        fragmentBinding.lengthScore.setText(String.valueOf(lengthScore));
         lengthCount = 0;
         lengthScore = 0;
 
         // UPPER CASE SCORE
-        upperCaseScoreText.setText(String.valueOf(upperCaseScore));
+        fragmentBinding.upperCaseScore.setText(String.valueOf(upperCaseScore));
         upperCaseCount = 0;
         upperCaseScore = 0;
 
         // NUMBERS SCORE
-        numScoreText.setText(String.valueOf(numScore));
+        fragmentBinding.numScore.setText(String.valueOf(numScore));
         numCount = 0;
         numScore = 0;
 
         // SPECIAL CHARACTERS SCORE
-        specialCharScoreText.setText(String.valueOf(specialCharScore));
+        fragmentBinding.specialCharScore.setText(String.valueOf(specialCharScore));
         specialCharCount = 0;
         specialCharScore = 0;
 
         // PENALTY SCORE
         if (penaltyScore!=0) {
-            penaltyLayout.setVisibility(View.VISIBLE);
-            penaltyScoreText.setText(String.valueOf(penaltyScore));
+            fragmentBinding.penaltyLayout.setVisibility(View.VISIBLE);
+            fragmentBinding.penaltyScore.setText(String.valueOf(penaltyScore));
         }
         else {
-            penaltyLayout.setVisibility(View.GONE);
+            fragmentBinding.penaltyLayout.setVisibility(View.GONE);
         }
         penaltyScore = 0;
         lowerCaseCount = 0;
 
         // TOTAL SCORE
-        totalScoreText.setText(String.valueOf(totalScore));
+        fragmentBinding.totalScore.setText(String.valueOf(totalScore));
         totalScore=0;
     }
 
     // RESET DETAILS
     private void DetailsReset() {
-        strengthSubtitle.setText(not_applicable);
+        fragmentBinding.strengthSubtitle.setText(not_applicable);
 
-        worstMeter.setIndicatorColor(emptyMeterColor);
-        weakMeter.setIndicatorColor(emptyMeterColor);
-        mediumMeter.setIndicatorColor(emptyMeterColor);
-        strongMeter.setIndicatorColor(emptyMeterColor);
-        excellentMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.worstMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.weakMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.mediumMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.strongMeter.setIndicatorColor(emptyMeterColor);
+        fragmentBinding.excellentMeter.setIndicatorColor(emptyMeterColor);
 
-        worstMeter.setProgressCompat(0, true);
-        weakMeter.setProgressCompat(0, true);
-        mediumMeter.setProgressCompat(0, true);
-        strongMeter.setProgressCompat(0, true);
-        excellentMeter.setProgressCompat(0, true);
+        fragmentBinding.worstMeter.setProgressCompat(0, true);
+        fragmentBinding.weakMeter.setProgressCompat(0, true);
+        fragmentBinding.mediumMeter.setProgressCompat(0, true);
+        fragmentBinding.strongMeter.setProgressCompat(0, true);
+        fragmentBinding.excellentMeter.setProgressCompat(0, true);
 
-        timeToCrackSubtitle.setText(not_applicable);
-        warningSubtitle.setText(not_applicable);
-        suggestionsSubtitle.setText(not_applicable);
+        fragmentBinding.timeToCrackSubtitle.setText(not_applicable);
+        fragmentBinding.warningSubtitle.setText(not_applicable);
+        fragmentBinding.suggestionsSubtitle.setText(not_applicable);
 
     }
 
     // RESET SCORE
     private void ScoreReset()
     {
-        totalScoreText.setText(zero);
-        lengthScoreText.setText(zero);
-        baseScoreText.setText(zero);
-        upperCaseScoreText.setText(zero);
-        numScoreText.setText(zero);
-        specialCharScoreText.setText(zero);
-        penaltyScoreText.setText(zero);
+        fragmentBinding.totalScore.setText(zero);
+        fragmentBinding.lengthScore.setText(zero);
+        fragmentBinding.baseScore.setText(zero);
+        fragmentBinding.upperCaseScore.setText(zero);
+        fragmentBinding.numScore.setText(zero);
+        fragmentBinding.specialCharScore.setText(zero);
+        fragmentBinding.penaltyScore.setText(zero);
 
-        penaltyLayout.setVisibility(View.GONE);
+        fragmentBinding.penaltyLayout.setVisibility(View.GONE);
     }
 
     // CHECK PASSWORD CRACK TIME CUSTOM RESULT

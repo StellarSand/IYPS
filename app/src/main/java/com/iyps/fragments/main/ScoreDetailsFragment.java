@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.iyps.R;
+import com.iyps.databinding.FragmentScoreDetailsBinding;
 
 public class ScoreDetailsFragment extends Fragment {
 
@@ -23,11 +23,11 @@ public class ScoreDetailsFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true);
-        return inflater.inflate(R.layout.fragment_score_details, container,  false);
+        return FragmentScoreDetailsBinding.inflate(inflater, container, false).getRoot();
     }
 
     @Override

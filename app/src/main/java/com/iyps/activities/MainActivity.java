@@ -3,14 +3,11 @@ package com.iyps.activities;
 import static com.iyps.fragments.main.AboutFragment.OpenURL;
 import static com.iyps.preferences.PreferenceManager.THEME_PREF;
 
-import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.RadioGroup;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,9 +15,11 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.iyps.R;
+import com.iyps.databinding.ActivityMainBinding;
+import com.iyps.databinding.BottomSheetHeaderBinding;
+import com.iyps.databinding.BottomSheetThemeBinding;
 import com.iyps.fragments.main.MainFragment;
 import com.iyps.fragments.main.ScoreDetailsFragment;
 import com.iyps.fragments.main.AboutFragment;
@@ -30,18 +29,17 @@ import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
+    private ActivityMainBinding activityBinding;
     private PreferenceManager preferenceManager;
     private Fragment fragment;
-    private View divider;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        activityBinding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(activityBinding.getRoot());
 
-        preferenceManager=new PreferenceManager(this);
-        MaterialToolbar toolbar = findViewById(R.id.toolbar_main);
-        divider = findViewById(R.id.divider);
+        preferenceManager = new PreferenceManager(this);
 
     /*===========================================================================================*/
 
@@ -49,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
         // TOOLBAR AS ACTIONBAR
-        setSupportActionBar(toolbar);
+        setSupportActionBar(activityBinding.toolbarMain);
         Objects.requireNonNull(getSupportActionBar()).setHomeAsUpIndicator(R.drawable.ic_back);
-        toolbar.setNavigationOnClickListener(v -> onBackPressed());
+        activityBinding.toolbarMain.setNavigationOnClickListener(v -> onBackPressed());
 
         // DEFAULT FRAGMENT
         if (savedInstanceState == null) {
@@ -64,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     public void DisplayFragment (String fragmentName)
     {
 
-        FragmentTransaction transaction=getSupportFragmentManager().beginTransaction();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
         switch (fragmentName)
         {
@@ -92,10 +90,10 @@ public class MainActivity extends AppCompatActivity {
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(!fragmentName.equals("Main"));
         if (fragmentName.equals("Main")) {
-            divider.setVisibility(View.GONE);
+            activityBinding.divider.setVisibility(View.GONE);
         }
         else {
-            divider.setVisibility(View.VISIBLE);
+            activityBinding.divider.setVisibility(View.VISIBLE);
         }
 
         transaction
@@ -144,39 +142,40 @@ public class MainActivity extends AppCompatActivity {
         final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this, R.style.CustomBottomSheetTheme);
         bottomSheetDialog.setCancelable(true);
 
-        @SuppressLint("InflateParams") final View view  = getLayoutInflater().inflate(R.layout.bottom_sheet_theme, null);
-        bottomSheetDialog.setContentView(view);
-
-        final RadioGroup themeRadioGroup = view.findViewById(R.id.options_radiogroup);
+        BottomSheetThemeBinding bottomSheetBinding;
+        BottomSheetHeaderBinding headerBinding;
+        bottomSheetBinding = BottomSheetThemeBinding.inflate(getLayoutInflater());
+        headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.getRoot());
+        bottomSheetDialog.setContentView(bottomSheetBinding.getRoot());
 
         // DEFAULT CHECKED RADIO
-        if (preferenceManager.getInt(THEME_PREF)==0){
-            if (Build.VERSION.SDK_INT>=29){
+        if (preferenceManager.getInt(THEME_PREF) == 0){
+            if (Build.VERSION.SDK_INT >= 29){
                 preferenceManager.setInt(THEME_PREF, R.id.option_default);
             }
             else{
                 preferenceManager.setInt(THEME_PREF, R.id.option_light);
             }
         }
-        themeRadioGroup.check(preferenceManager.getInt(THEME_PREF));
+        bottomSheetBinding.optionsRadiogroup.check(preferenceManager.getInt(THEME_PREF));
 
         // TITLE
-        ((TextView)view.findViewById(R.id.bottom_sheet_title)).setText(R.string.choose_theme_title);
+        headerBinding.bottomSheetTitle.setText(R.string.choose_theme_title);
 
         // CANCEL BUTTON
-        view.findViewById(R.id.cancel_button).setOnClickListener(view12 ->
+        bottomSheetBinding.cancelButton.setOnClickListener(view12 ->
                 bottomSheetDialog.cancel());
 
         // SHOW SYSTEM DEFAULT OPTION ONLY ON SDK 29 AND ABOVE
-        if (Build.VERSION.SDK_INT>=29){
-            view.findViewById(R.id.option_default).setVisibility(View.VISIBLE);
+        if (Build.VERSION.SDK_INT >= 29){
+            bottomSheetBinding.optionDefault.setVisibility(View.VISIBLE);
         }
         else{
-            view.findViewById(R.id.option_default).setVisibility(View.GONE);
+            bottomSheetBinding.optionDefault.setVisibility(View.GONE);
         }
 
         // ON SELECTING OPTION
-        ((RadioGroup)view.findViewById(R.id.options_radiogroup))
+        bottomSheetBinding.optionsRadiogroup
                 .setOnCheckedChangeListener((radioGroup, checkedId) -> {
 
                     if (checkedId == R.id.option_default) {
@@ -206,11 +205,11 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
 
         // IF NOT ON DEFAULT FRAGMENT, GO TO DEFAULT FRAGMENT
-        if (getSupportFragmentManager().getBackStackEntryCount()>1){
+        if (getSupportFragmentManager().getBackStackEntryCount() > 1){
             getSupportFragmentManager().popBackStack();
             Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name_full);
             Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
-            divider.setVisibility(View.GONE);
+            activityBinding.divider.setVisibility(View.GONE);
         }
 
         // IF ON DEFAULT FRAGMENT, FINISH ACTIVITY

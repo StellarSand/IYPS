@@ -1,6 +1,5 @@
 package com.iyps.fragments.main;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -10,7 +9,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -19,12 +17,16 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.iyps.R;
+import com.iyps.databinding.BottomSheetAuthorsBinding;
+import com.iyps.databinding.BottomSheetHeaderBinding;
+import com.iyps.databinding.FragmentAboutBinding;
 
 import java.util.Objects;
 
 public class AboutFragment extends Fragment {
 
-    String version;
+    private static String version;
+    private FragmentAboutBinding fragmentBinding;
 
     public AboutFragment() {
         // Required empty public constructor
@@ -36,11 +38,12 @@ public class AboutFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true);
-        return inflater.inflate(R.layout.fragment_settings_about, container,  false);
+        fragmentBinding = FragmentAboutBinding.inflate(inflater, container, false);
+        return fragmentBinding.getRoot();
     }
 
     @Override
@@ -57,25 +60,30 @@ public class AboutFragment extends Fragment {
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
-        ((TextView)view.findViewById(R.id.version)).setText(version);
+        fragmentBinding.version.setText(version);
 
         // AUTHORS
-        view.findViewById(R.id.authors_holder)
+        fragmentBinding.authors
                 .setOnClickListener(v ->
                         AuthorsBottomSheet());
 
+        // CONTRIBUTORS
+        fragmentBinding.contributors
+                .setOnClickListener(v ->
+                        OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/CONTRIBUTORS.md"));
+
         // PRIVACY POLICY
-        view.findViewById(R.id.privacy_policy_holder)
+        fragmentBinding.privacyPolicy
                 .setOnClickListener(v ->
                         OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/PRIVACY.md"));
 
         // LICENSES
-        view.findViewById(R.id.licenses_holder)
+        fragmentBinding.licenses
                 .setOnClickListener(v ->
                         OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/LICENSE"));
 
         // VIEW ON GITHUB
-        view.findViewById(R.id.view_on_git_holder)
+        fragmentBinding.viewOnGit
                 .setOnClickListener(v ->
                         OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS"));
 
@@ -86,20 +94,23 @@ public class AboutFragment extends Fragment {
         final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(requireContext(), R.style.CustomBottomSheetTheme);
         bottomSheetDialog.setCancelable(true);
 
-        @SuppressLint("InflateParams") View view  = getLayoutInflater().inflate(R.layout.bottom_sheet_authors, null);
-        bottomSheetDialog.setContentView(view);
+        BottomSheetAuthorsBinding bottomSheetBinding;
+        BottomSheetHeaderBinding headerBinding;
+        bottomSheetBinding = BottomSheetAuthorsBinding.inflate(getLayoutInflater());
+        headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.getRoot());
+        bottomSheetDialog.setContentView(bottomSheetBinding.getRoot());
 
         // TITLE
-        ((TextView)(view.findViewById(R.id.bottom_sheet_title))).setText(getString(R.string.authors));
+        headerBinding.bottomSheetTitle.setText(getString(R.string.authors));
 
         // AUTHOR 1
-        view.findViewById(R.id.author_1).setOnClickListener(v -> {
+        bottomSheetBinding.author1.setOnClickListener(v -> {
             OpenURL(requireActivity(), "https://github.com/the-weird-aquarian");
             bottomSheetDialog.dismiss();
         });
 
         // AUTHOR 2
-        view.findViewById(R.id.author_2).setOnClickListener(v -> {
+        bottomSheetBinding.author2.setOnClickListener(v -> {
             OpenURL(requireActivity(), "https://github.com/parveshnarwal");
             bottomSheetDialog.dismiss();
         });
@@ -123,5 +134,12 @@ public class AboutFragment extends Fragment {
         }
 
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        fragmentBinding = null;
+    }
+
 
 }

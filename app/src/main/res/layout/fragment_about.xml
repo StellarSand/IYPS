@@ -65,7 +65,7 @@
             android:layout_margin="@dimen/margin_12">
 
             <TextView
-                android:id="@+id/authors_holder"
+                android:id="@+id/authors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_10"
@@ -81,11 +81,31 @@
                 android:textAlignment="viewStart"
                 android:textColor="@color/textTitleColor"
                 android:textSize="@dimen/text_16"
-                app:drawableStartCompat="@drawable/ic_account"
+                app:drawableStartCompat="@drawable/ic_authors"
                 android:drawablePadding="@dimen/margin_16" />
 
             <TextView
-                android:id="@+id/privacy_policy_holder"
+                android:id="@+id/contributors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_2.5"
+                android:layout_marginBottom="@dimen/margin_2.5"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingStart="@dimen/margin_12"
+                android:paddingTop="@dimen/margin_16"
+                android:paddingEnd="@dimen/margin_12"
+                android:paddingBottom="@dimen/margin_16"
+                android:text="@string/contributors"
+                android:textAlignment="viewStart"
+                android:textColor="@color/textTitleColor"
+                android:textSize="@dimen/text_16"
+                app:drawableStartCompat="@drawable/ic_contributors"
+                android:drawablePadding="@dimen/margin_16" />
+
+            <TextView
+                android:id="@+id/privacy_policy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_2.5"
@@ -105,7 +125,7 @@
                 android:drawablePadding="@dimen/margin_16"/>
 
             <TextView
-                android:id="@+id/licenses_holder"
+                android:id="@+id/licenses"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_2.5"
@@ -125,7 +145,7 @@
                 android:drawablePadding="@dimen/margin_16" />
 
             <TextView
-                android:id="@+id/view_on_git_holder"
+                android:id="@+id/view_on_git"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_2.5"

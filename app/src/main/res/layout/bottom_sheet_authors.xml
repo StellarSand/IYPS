@@ -27,7 +27,7 @@
             android:text="@string/the_weird_aquarian"
             android:textColor="@color/textTitleColor"
             android:textSize="@dimen/text_16"
-            app:drawableStartCompat="@drawable/ic_account"
+            app:drawableStartCompat="@drawable/ic_authors"
             android:drawablePadding="@dimen/margin_12"/>
 
         <TextView
@@ -42,7 +42,7 @@
             android:text="@string/parveshnarwal"
             android:textColor="@color/textTitleColor"
             android:textSize="@dimen/text_16"
-            app:drawableStartCompat="@drawable/ic_account"
+            app:drawableStartCompat="@drawable/ic_authors"
             android:drawablePadding="@dimen/margin_12"/>
 
 </LinearLayout>
