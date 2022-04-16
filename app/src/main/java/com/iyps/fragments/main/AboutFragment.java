@@ -141,5 +141,4 @@ public class AboutFragment extends Fragment {
         fragmentBinding = null;
     }
 
-
 }
