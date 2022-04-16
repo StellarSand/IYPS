@@ -1,0 +1,2 @@
+- Ajout de la traduction italienne
+- Le temps de craquer a maintenant un support linguistique approprié

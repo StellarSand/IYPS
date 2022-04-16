@@ -1,0 +1,2 @@
+- Italiaanse vertaling toegevoegd
+- Tijd om te kraken heeft nu de juiste taalondersteuning

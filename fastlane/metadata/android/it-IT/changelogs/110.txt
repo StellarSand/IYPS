@@ -1,0 +1,2 @@
+- Aggiunta traduzione italiana
+- Time to crack ora ha un supporto linguistico adeguato
