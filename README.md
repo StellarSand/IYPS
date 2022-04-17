@@ -106,4 +106,5 @@ Any contribution to the project would be much appreciated.
 ## Credits
 - [Nulab Inc](https://github.com/nulab) for developing [zxcvbn4j](https://github.com/nulab/zxcvbn4j), the underlying password strength estimation functionality of this app.
 - [parveshnarwal](https://github.com/parveshnarwal) for helping me out and co-leading the development of this app.
+- Some additional icons (other than the official ones by Google) are provided by [MaterialDesignIcons](https://github.com/Templarian/MaterialDesign)
 - Thanks to the [contributors](https://github.com/the-weird-aquarian/IYPS/blob/master/CONTRIBUTORS.md) for making this app better.
