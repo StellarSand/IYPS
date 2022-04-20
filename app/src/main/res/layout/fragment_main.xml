@@ -6,7 +6,8 @@
     tools:ignore="ContentDescription"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".fragments.main.MainFragment">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/password_box"
@@ -191,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="@dimen/margin_12"
-                    android:src="@drawable/ic_est_time_to_crack" />
+                    android:src="@drawable/ic_time_to_crack" />
 
                 <TextView
                     android:id="@+id/time_to_crack_title"
@@ -203,19 +204,58 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/est_time_to_crack"
                     android:textColor="@color/textTitleColor"
-                    android:textSize="@dimen/text_16" />
+                    android:textSize="@dimen/text_16"
+                    tools:ignore="RelativeOverlap" />
 
                 <TextView
                     android:id="@+id/time_to_crack_subtitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/time_to_crack_title"
+                    android:layout_marginBottom="@dimen/margin_2.5"
                     android:layout_toEndOf="@+id/time_to_crack_img"
                     android:paddingStart="@dimen/margin_8"
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
                     android:textSize="@dimen/text_14" />
+
+                <TextView
+                    android:id="@+id/crack_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time_to_crack_subtitle"
+                    android:layout_toEndOf="@+id/time_to_crack_img"
+                    android:paddingStart="@dimen/margin_8"
+                    android:paddingEnd="@dimen/margin_8"
+                    android:text="@string/offline_slow"
+                    android:textColor="?colorControlNormal"
+                    android:textSize="@dimen/text_14" />
+
+                <ImageView
+                    android:id="@+id/time_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/time_settings"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/shape_circle_ripple"
+                    android:padding="@dimen/margin_4"
+                    android:src="@drawable/ic_help" />
+
+                <ImageView
+                    android:id="@+id/time_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_6.5"
+                    android:padding="@dimen/margin_4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/shape_circle_ripple"
+                    android:src="@drawable/ic_time_to_crack_settings" />
 
             </RelativeLayout>
 
@@ -337,23 +377,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/margin_4"
-                    android:layout_marginEnd="@dimen/margin_8"
+                    android:layout_marginEnd="@dimen/margin_4"
+                    android:padding="@dimen/margin_4"
                     android:text="@string/score"
                     android:textColor="@color/textTitleColor"
                     android:textSize="@dimen/text_20"
                     app:drawableStartCompat="@drawable/ic_down_arrow"
-                    android:drawablePadding="@dimen/margin_2.5"
                     android:clickable="true"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    android:foreground="@drawable/shape_dialog_buttons_ripple"/>
 
                 <ImageView
-                    android:id="@+id/score_details_img"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:paddingTop="@dimen/margin_2.5"
+                    android:id="@+id/score_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
                     android:layout_marginEnd="@dimen/margin_8"
+                    android:padding="@dimen/margin_4"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_about" />
+                    android:src="@drawable/ic_help"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="@drawable/shape_circle_ripple"/>
 
                 <TextView
                     android:id="@+id/total_score"

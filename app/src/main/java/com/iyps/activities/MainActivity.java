@@ -21,8 +21,9 @@ import com.iyps.databinding.ActivityMainBinding;
 import com.iyps.databinding.BottomSheetHeaderBinding;
 import com.iyps.databinding.BottomSheetThemeBinding;
 import com.iyps.fragments.main.MainFragment;
-import com.iyps.fragments.main.ScoreDetailsFragment;
 import com.iyps.fragments.main.AboutFragment;
+import com.iyps.fragments.main.ScoreHelpFragment;
+import com.iyps.fragments.main.TimeHelpFragment;
 import com.iyps.preferences.PreferenceManager;
 
 import java.util.Objects;
@@ -69,21 +70,28 @@ public class MainActivity extends AppCompatActivity {
 
             case "Main":
                 Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name_full);
-                fragment= new MainFragment();
+                fragment = new MainFragment();
                 break;
 
-            case "Score Details":
-                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.score_details);
-                fragment= new ScoreDetailsFragment();
+            case "Time Help":
+                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.help);
+                fragment = new TimeHelpFragment();
+                transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
+                                                R.anim.slide_from_start, R.anim.slide_to_end);
+                break;
+
+            case "Score Help":
+                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.help);
+                fragment = new ScoreHelpFragment();
                 transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
                                                 R.anim.slide_from_start, R.anim.slide_to_end);
                 break;
 
             case "About":
                 Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.about_title);
-                fragment= new AboutFragment();
+                fragment = new AboutFragment();
                 transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
-                        R.anim.slide_from_start, R.anim.slide_to_end);
+                                                R.anim.slide_from_start, R.anim.slide_to_end);
                 break;
 
         }

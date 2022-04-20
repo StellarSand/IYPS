@@ -13,7 +13,7 @@
     <string name="strong">Forte</string>
     <string name="excellent">Eccellente</string>
     <string name="est_time_to_crack">Tempo stimato per la decifratura</string>
-    <string name="warning">Avvertimento</string>
+    <string name="help">Help</string>
     <string name="less_than_sec">Meno di un secondo</string>
     <string name="second">second</string>
     <string name="minute">secondi</string>
@@ -22,6 +22,7 @@
     <string name="month">mesi</string>
     <string name="year">anni</string>
     <string name="centuries">Secoli</string>
+    <string name="warning">Avvertimento</string>
     <string name="suggestions">Suggerimenti</string>
     <string name="score">Punteggio</string>
     <string name="base">• Base</string>
@@ -34,10 +35,13 @@
     <string name="all_num_penalty">• Penalit\u00E0 tutti numeri</string>
     <string name="all_special_char_penalty">• Penalit\u00E0 tutti caratteri speciali</string>
 
+    <!--TIME TO CRACK HELP FRAGMENT-->
+    <string name="how_time_estimated">How are crack times calculated?</string>
+    <string name="time_to_crack_explained">Test Text</string>
+
     <!--SCORE DETAILS FRAGMENT-->
-    <string name="score_details">Dettagli del Punteggio</string>
-    <string name="how_score_works">Come \u00E8 calcolato il punteggio?</string>
-    <string name="score_details_explained">
+    <string name="how_score_calculated">Come \u00E8 calcolato il punteggio?</string>
+    <string name="score_explained">
         • Se la password ha almeno 6 caratteri, allora il punteggio base = 10.
         \n
         \n• Se la password ha almeno 6 caratteri, allora il punteggio lunghezza = 3 punti per ogni carattere extra aggiunto.

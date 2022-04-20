@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/fragment_settings_about"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb"
-    tools:context=".fragments.main.ScoreDetailsFragment"
-    tools:ignore="ContentDescription">
+    android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +19,7 @@
             android:layout_margin="@dimen/margin_16">
 
             <TextView
-                android:id="@+id/app_name"
+                android:id="@+id/title_1"
                 style="@style/MediumBoldText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -30,11 +27,12 @@
                 android:layout_marginEnd="@dimen/margin_8"
                 android:layout_marginTop="@dimen/margin_16"
                 android:layout_marginBottom="@dimen/margin_2.5"
-                android:text="@string/how_score_works"
+                android:text="@string/how_score_calculated"
                 android:textColor="@color/textTitleColor"
                 android:textSize="@dimen/text_18" />
 
             <TextView
+                android:id="@+id/subtitle_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_10"
@@ -42,7 +40,7 @@
                 android:paddingStart="@dimen/margin_20"
                 android:paddingTop="@dimen/margin_8"
                 android:paddingEnd="@dimen/margin_12"
-                android:text="@string/score_details_explained"
+                android:text="@string/score_explained"
                 android:textAlignment="viewStart"
                 android:textColor="@color/textTitleColor"
                 android:textSize="@dimen/text_16"
@@ -51,6 +49,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/layout_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"

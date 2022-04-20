@@ -12,8 +12,8 @@
     <string name="medium">Mittel</string>
     <string name="strong">Stark</string>
     <string name="excellent">Exzellent</string>
-    <string name="est_time_to_crack">Geschätzte Zeit zum Knacken</string>
-    <string name="warning">Warnung</string>
+    <string name="est_time_to_crack">Gesch\u00E4tzte Zeit zum Knacken</string>
+    <string name="help">Help</string>
     <string name="less_than_sec">Weniger als eine sekunde</string>
     <string name="second">sekunden</string>
     <string name="minute">minuten</string>
@@ -22,6 +22,7 @@
     <string name="month">monat</string>
     <string name="year">jahre</string>
     <string name="centuries">Jahrhunderte</string>
+    <string name="warning">Warnung</string>
     <string name="suggestions">Empfehlungen</string>
     <string name="score">Ergebnis</string>
     <string name="base">• Base</string>
@@ -34,10 +35,13 @@
     <string name="all_num_penalty">• Alle Zahlen Strafe </string>
     <string name="all_special_char_penalty">• Strafe f\u00FCr alle Sonderzeichen</string>
 
-    <!--SCORE DETAILS FRAGMENT-->
-    <string name="score_details">Ergebnisdetails</string>
-    <string name="how_score_works">Wie wird die Punktzahl berechnet?</string>
-    <string name="score_details_explained">
+    <!--TIME TO CRACK HELP FRAGMENT-->
+    <string name="how_time_estimated">How are crack times calculated?</string>
+    <string name="time_to_crack_explained">Test Text</string>
+
+    <!--SCORE HELP FRAGMENT-->
+    <string name="how_score_calculated">Wie wird die Punktzahl berechnet?</string>
+    <string name="score_explained">
         • Wenn das Passwort mindestens 6 Zeichen hat, dann Basispunktzahl = 10.
         \n
         \n• Wenn das Passwort mindestens 6 Zeichen hat, dann L\u00E4ngenbewertung = 3 Punkte f\u00FCr jedes hinzugefügte zus\u00E4tzliche Zeichen.

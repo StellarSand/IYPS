@@ -13,7 +13,7 @@
     <string name="strong">強い</string>
     <string name="excellent">優れた</string>
     <string name="est_time_to_crack">割れ目の推定時間</string>
-    <string name="warning">警告</string>
+    <string name="help">Help</string>
     <string name="less_than_sec">1秒未満</string>
     <string name="second">秒数</string>
     <string name="minute">minutes</string>
@@ -22,6 +22,7 @@
     <string name="month">月</string>
     <string name="year">年</string>
     <string name="centuries">世紀</string>
+    <string name="warning">警告</string>
     <string name="suggestions">提案</string>
     <string name="score">スコア</string>
     <string name="base">• ベース</string>
@@ -34,10 +35,13 @@
     <string name="all_num_penalty">• すべての数字のペナルティ</string>
     <string name="all_special_char_penalty">• すべての特殊文字のペナルティ</string>
 
+    <!--TIME TO CRACK HELP FRAGMENT-->
+    <string name="how_time_estimated">How are crack times calculated?</string>
+    <string name="time_to_crack_explained">Test Text</string>
+
     <!--SCORE DETAILS FRAGMENT-->
-    <string name="score_details">スコアの詳細</string>
-    <string name="how_score_works">スコアはどのように計算されますか？</string>
-    <string name="score_details_explained">
+    <string name="how_score_calculated">スコアはどのように計算されますか？</string>
+    <string name="score_explained">
         • パスワードの文字数が6文字以上の場合、基本スコア= 10です.
         \n
         \n• パスワードの文字数が6文字以上の場合、長さスコア=追加された文字ごとに3ポイント.

@@ -15,7 +15,7 @@
     <string name="strong">Strong</string>
     <string name="excellent">Excellent</string>
     <string name="est_time_to_crack">Estimated time to crack</string>
-    <string name="warning">Warning</string>
+    <string name="help">Help</string>
     <string name="less_than_sec">Less than a second</string>
     <string name="second">second</string>
     <string name="minute">minute</string>
@@ -24,6 +24,7 @@
     <string name="month">month</string>
     <string name="year">year</string>
     <string name="centuries">Centuries</string>
+    <string name="warning">Warning</string>
     <string name="suggestions">Suggestions</string>
     <string name="score">Score</string>
     <string name="zero" translatable="false">0</string>
@@ -38,10 +39,27 @@
     <string name="all_num_penalty">• All numbers penalty</string>
     <string name="all_special_char_penalty">• All special characters penalty</string>
     
-    <!--SCORE DETAILS FRAGMENT-->
-    <string name="score_details">Score Details</string>
-    <string name="how_score_works">How is the score calculated?</string>
-    <string name="score_details_explained">
+    <!--TIME HELP FRAGMENT-->
+    <string name="how_time_estimated">How are crack times estimated?</string>
+    <string name="time_to_crack_explained">
+        • Offline Slow (4/sec) - Offline attack. Assumes multiple attackers,
+        proper user-unique salting,
+        and a slow hash function with moderate work factor, such as bcrypt, scrypt, PBKDF2.
+        \n
+        \n• Offline Fast (10B/sec) - Offline attack with user-unique salting but a fast hash function like SHA-1, SHA-256 or MD5.
+        A wide range of reasonable numbers anywhere from one billion to one trillion guesses per second,
+        depending on number of cores and machines. Approximating at 10B/sec.
+        \n
+        \n• Online Slow (100/hr) - Online attack with a service that rate limits password auth attempts.
+        Rate limit refers to when an attacker has to guess online and deals with network latency, throttling and CAPTCHAs.
+        \n
+        \n• Online Fast (10/sec) - Online attack with a service that either doesn\'t rate limit,
+        or where an attacker has outsmarted rate limiting.
+    </string>
+    
+    <!--SCORE HELP FRAGMENT-->
+    <string name="how_score_calculated">How is the score calculated?</string>
+    <string name="score_explained">
         • If password has minimum 6 characters, then Base score = 10.
         \n
         \n• If password has minimum 6 characters, then Length score = 3 points for each extra character added.
@@ -100,6 +118,13 @@
     <!--BOTTOM SHEET-->
     <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
     <string name="cancel_button">Cancel</string>
+
+        <!--CRACK TIME-->
+        <string name="crack_times">Crack Times</string>
+        <string name="offline_slow">Offline Slow (4/sec)</string>
+        <string name="offline_fast">Offline Fast (10B/sec)</string>
+        <string name="online_slow">Online Slow (100/hr)</string>
+        <string name="online_fast">Online Fast (10/sec)</string>
 
         <!--THEME-->
         <string name="system_default">System Default</string>

@@ -2,6 +2,8 @@ package com.iyps.fragments.main;
 
 import static android.content.Context.CLIPBOARD_SERVICE;
 
+import static com.iyps.preferences.PreferenceManager.CRACK_TIMES_PREF;
+
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.os.Build;
@@ -17,9 +19,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.iyps.R;
 import com.iyps.activities.MainActivity;
+import com.iyps.databinding.BottomSheetCrackTimesBinding;
+import com.iyps.databinding.BottomSheetHeaderBinding;
 import com.iyps.databinding.FragmentMainBinding;
+import com.iyps.preferences.PreferenceManager;
 import com.nulabinc.zxcvbn.Strength;
 import com.nulabinc.zxcvbn.Zxcvbn;
 
@@ -30,6 +36,7 @@ import java.util.concurrent.TimeUnit;
 
 public class MainFragment extends Fragment {
 
+    private PreferenceManager preferenceManager;
     private FragmentMainBinding fragmentBinding;
     private static int worstMeterColor, weakMeterColor, mediumMeterColor,
                        strongMeterColor, excellentMeterColor, emptyMeterColor,
@@ -72,6 +79,8 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
+        preferenceManager = new PreferenceManager(requireContext());
+
         suggestionText = new StringBuilder();
         wait = 0;
         baseScore = 0;
@@ -87,16 +96,16 @@ public class MainFragment extends Fragment {
         specialCharCount = 0;
         zxcvbn = new Zxcvbn();
 
-        worst = getResources().getString(R.string.worst);
-        weak = getResources().getString(R.string.weak);
-        medium = getResources().getString(R.string.medium);
-        strong = getResources().getString(R.string.strong);
-        excellent = getResources().getString(R.string.excellent);
-        worstPassWarning = getResources().getString(R.string.worst_pass_warning);
-        weakPassWarning = getResources().getString(R.string.weak_pass_warning);
-        mediumPassWarning = getResources().getString(R.string.medium_pass_warning);
-        not_applicable = getResources().getString(R.string.not_applicable);
-        zero = getResources().getString(R.string.zero);
+        worst = getString(R.string.worst);
+        weak = getString(R.string.weak);
+        medium = getString(R.string.medium);
+        strong = getString(R.string.strong);
+        excellent = getString(R.string.excellent);
+        worstPassWarning = getString(R.string.worst_pass_warning);
+        weakPassWarning = getString(R.string.weak_pass_warning);
+        mediumPassWarning = getString(R.string.medium_pass_warning);
+        not_applicable = getString(R.string.not_applicable);
+        zero = getString(R.string.zero);
 
         emptyMeterColor = getColor(R.color.hintColor);
         worstMeterColor = getColor(R.color.worstMeterColor);
@@ -110,6 +119,30 @@ public class MainFragment extends Fragment {
         /*======================================================================================*/
 
         fragmentBinding.passwordText.addTextChangedListener(passwordTextWatcher);
+
+        // ON CLICK TIME TO CRACK HELP ICON
+        fragmentBinding.timeHelp.setOnClickListener(v ->
+                ((MainActivity)requireActivity()).DisplayFragment("Time Help")
+        );
+
+        // ON CLICK TIME TO CRACK SETTINGS ICON
+        fragmentBinding.timeSettings.setOnClickListener(v ->
+                CrackTimesBottomSheet());
+
+        // CRACK TIME TEXT
+        if (preferenceManager.getInt(CRACK_TIMES_PREF) == 0
+                || preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_1) {
+            fragmentBinding.crackTime.setText(getString(R.string.offline_slow));
+        }
+        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_2) {
+            fragmentBinding.crackTime.setText(getString(R.string.offline_fast));
+        }
+        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_3) {
+            fragmentBinding.crackTime.setText(getString(R.string.online_slow));
+        }
+        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_4) {
+            fragmentBinding.crackTime.setText(getString(R.string.online_fast));
+        }
 
         // ON CLICK SCORE TEXT VIEW, EXPAND LAYOUT
         fragmentBinding.scoreTextView.setOnClickListener(v -> {
@@ -125,9 +158,9 @@ public class MainFragment extends Fragment {
             }
         });
 
-        // ON CLICK INFO ICON
-        fragmentBinding.scoreDetailsImg.setOnClickListener(v ->
-                ((MainActivity)requireActivity()).DisplayFragment("Score Details")
+        // ON CLICK SCORE HELP ICON
+        fragmentBinding.scoreHelp.setOnClickListener(v ->
+                ((MainActivity)requireActivity()).DisplayFragment("Score Help")
         );
 
 
@@ -188,12 +221,34 @@ public class MainFragment extends Fragment {
                     if (!passwordString.equals("")) {
 
                         Strength strength = zxcvbn.measure(passwordString);
+                        long crackTimeMilliSeconds = 0;
+                        String timeToCrackString = null;
 
-                        long crackTimeMilliSeconds = (long) ((strength
-                                .getCrackTimeSeconds()
-                                .getOfflineSlowHashing1e4perSecond()) * 1000);
-
-                        String timeToCrackString = strength.getCrackTimesDisplay().getOfflineSlowHashing1e4perSecond();
+                        if (preferenceManager.getInt(CRACK_TIMES_PREF) == 0
+                            || preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_1) {
+                            timeToCrackString = strength.getCrackTimesDisplay().getOfflineSlowHashing1e4perSecond();
+                            crackTimeMilliSeconds = (long) ((strength
+                                    .getCrackTimeSeconds()
+                                    .getOfflineSlowHashing1e4perSecond()) * 1000);
+                        }
+                        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_2) {
+                            timeToCrackString = strength.getCrackTimesDisplay().getOfflineFastHashing1e10PerSecond();
+                            crackTimeMilliSeconds = (long) ((strength
+                                    .getCrackTimeSeconds()
+                                    .getOfflineFastHashing1e10PerSecond()) * 1000);
+                        }
+                        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_3) {
+                            timeToCrackString = strength.getCrackTimesDisplay().getOnlineThrottling100perHour();
+                            crackTimeMilliSeconds = (long) ((strength
+                                    .getCrackTimeSeconds()
+                                    .getOnlineThrottling100perHour()) * 1000);
+                        }
+                        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_4) {
+                            timeToCrackString = strength.getCrackTimesDisplay().getOnlineNoThrottling10perSecond();
+                            crackTimeMilliSeconds = (long) ((strength
+                                    .getCrackTimeSeconds()
+                                    .getOnlineNoThrottling10perSecond()) * 1000);
+                        }
 
                         switch (passwordCrackTimeResult(crackTimeMilliSeconds)) {
 
@@ -222,6 +277,7 @@ public class MainFragment extends Fragment {
                         // ESTIMATED TIME TO CRACK
                         // REPLACE HARDCODED STRINGS FROM THE LIBRARY FOR PROPER LANGUAGE SUPPORT
                         // SINCE DEVS OF ZXCVBN4J WON'T FIX IT, WE DO IT OURSELVES
+                        assert timeToCrackString != null;
                         if (timeToCrackString.contains("less than a second")) {
                             timeToCrackString = timeToCrackString
                                     .replace("less than a second", getString(R.string.less_than_sec));
@@ -304,7 +360,7 @@ public class MainFragment extends Fragment {
                             fragmentBinding.suggestionsSubtitle.setText(suggestionText.toString());
                         }
                         else {
-                            fragmentBinding.suggestionsSubtitle.setText(getResources().getString(R.string.not_applicable));
+                            fragmentBinding.suggestionsSubtitle.setText(getString(R.string.not_applicable));
                         }
 
                         // SCORE
@@ -468,22 +524,22 @@ public class MainFragment extends Fragment {
             if (upperCaseCount == passwordStringLength)
             {
                 penaltyScore = -15;
-                fragmentBinding.penaltyTitle.setText(getResources().getString(R.string.all_upper_penalty));
+                fragmentBinding.penaltyTitle.setText(getString(R.string.all_upper_penalty));
             }
             else if (lowerCaseCount == passwordStringLength)
             {
                 penaltyScore = -15;
-                fragmentBinding.penaltyTitle.setText(getResources().getString(R.string.all_lower_penalty));
+                fragmentBinding.penaltyTitle.setText(getString(R.string.all_lower_penalty));
             }
             else if (numCount == passwordStringLength)
             {
                 penaltyScore = -15;
-                fragmentBinding.penaltyTitle.setText(getResources().getString(R.string.all_num_penalty));
+                fragmentBinding.penaltyTitle.setText(getString(R.string.all_num_penalty));
             }
             else if (specialCharCount == passwordStringLength)
             {
                 penaltyScore = -15;
-                fragmentBinding.penaltyTitle.setText(getResources().getString(R.string.all_special_char_penalty));
+                fragmentBinding.penaltyTitle.setText(getString(R.string.all_special_char_penalty));
             }
             else
             {
@@ -629,6 +685,45 @@ public class MainFragment extends Fragment {
         }
 
         copiedFromHere=false;
+    }
+
+    // CRACK TIMES BOTTOM SHEET
+    private void CrackTimesBottomSheet(){
+        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(requireContext(), R.style.CustomBottomSheetTheme);
+        bottomSheetDialog.setCancelable(true);
+
+        BottomSheetCrackTimesBinding bottomSheetBinding;
+        BottomSheetHeaderBinding headerBinding;
+        bottomSheetBinding = BottomSheetCrackTimesBinding.inflate(getLayoutInflater());
+        headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.getRoot());
+        bottomSheetDialog.setContentView(bottomSheetBinding.getRoot());
+
+        // DEFAULT CHECKED RADIO
+        if (preferenceManager.getInt(CRACK_TIMES_PREF) == 0){
+                preferenceManager.setInt(CRACK_TIMES_PREF, R.id.option_1);
+
+        }
+        bottomSheetBinding.crackTimesRadiogroup.check(preferenceManager.getInt(CRACK_TIMES_PREF));
+
+        // TITLE
+        headerBinding.bottomSheetTitle.setText(R.string.crack_times);
+
+        // CANCEL BUTTON
+        bottomSheetBinding.cancelButton.setOnClickListener(view12 ->
+                bottomSheetDialog.cancel());
+
+        // ON SELECTING OPTION
+        bottomSheetBinding.crackTimesRadiogroup
+                .setOnCheckedChangeListener((radioGroup, checkedId) -> {
+                    preferenceManager.setInt(CRACK_TIMES_PREF, checkedId);
+                    bottomSheetDialog.dismiss();
+                    getParentFragmentManager().beginTransaction().detach(this).commitNow();
+                    getParentFragmentManager().beginTransaction().attach(this).commitNow();
+                });
+
+        // SHOW BOTTOM SHEET WITH CUSTOM ANIMATION
+        Objects.requireNonNull(bottomSheetDialog.getWindow()).getAttributes().windowAnimations = R.style.BottomSheetAnimation;
+        bottomSheetDialog.show();
     }
 
     // CLEAR CLIPBOARD IMMEDIATELY WHEN FRAGMENT DESTROYED

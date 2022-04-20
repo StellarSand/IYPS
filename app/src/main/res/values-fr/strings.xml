@@ -13,7 +13,7 @@
     <string name="strong">Robuste</string>
     <string name="excellent">Excellent</string>
     <string name="est_time_to_crack">Temps estim\u00E9 pour craquer</string>
-    <string name="warning">Avertissement </string>
+    <string name="help">Help</string>
     <string name="less_than_sec">Moins d\'une seconde</string>
     <string name="second">seconds</string>
     <string name="minute">minutes</string>
@@ -22,6 +22,7 @@
     <string name="month">mois</string>
     <string name="year">an</string>
     <string name="centuries">Des si\u00E8cles</string>
+    <string name="warning">Avertissement </string>
     <string name="suggestions">Suggestions</string>
     <string name="score">Score</string>
     <string name="base">• Base</string>
@@ -34,10 +35,13 @@
     <string name="all_num_penalty">• P\u00E9nalit\u00E9 pour tous les num\u00E9ros</string>
     <string name="all_special_char_penalty">• Pénalit\u00E9 pour tous les caract\u00E8res sp\u00E9ciaux</string>
 
+    <!--TIME TO CRACK HELP FRAGMENT-->
+    <string name="how_time_estimated">How are crack times calculated?</string>
+    <string name="time_to_crack_explained">Test Text</string>
+
     <!--SCORE DETAILS FRAGMENT-->
-    <string name="score_details">D\u00E9tails de la partition</string>
-    <string name="how_score_works">Comment est calcul\u00E9 le score ?</string>
-    <string name="score_details_explained">
+    <string name="how_score_calculated">Comment est calcul\u00E9 le score ?</string>
+    <string name="score_explained">
         • Si le mot de passe comporte au moins 6 caract\u00E8res, alors Score de base = 10.
         \n
         \n• Si le mot de passe comporte au moins 6 caract\u00E8res, alors le score de longueur = 3 points pour chaque caract\u00E8re suppl\u00E9mentaire ajout\u00E9.

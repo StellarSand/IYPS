@@ -9,11 +9,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.iyps.databinding.FragmentScoreDetailsBinding;
+import com.iyps.databinding.FragmentHelpBinding;
 
-public class ScoreDetailsFragment extends Fragment {
+public class ScoreHelpFragment extends Fragment {
 
-    public ScoreDetailsFragment() {
+    public ScoreHelpFragment() {
         // Required empty public constructor
     }
 
@@ -27,7 +27,7 @@ public class ScoreDetailsFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         setHasOptionsMenu(true);
-        return FragmentScoreDetailsBinding.inflate(inflater, container, false).getRoot();
+        return FragmentHelpBinding.inflate(inflater, container, false).getRoot();
     }
 
     @Override
