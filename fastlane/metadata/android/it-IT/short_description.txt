@@ -1,1 +1,1 @@
-Un'app di prova della sicurezza della password con tempi di decifratura, avvertimenti e suggerimenti.
+Un'app per la sicurezza della password con tempi di crack e suggerimenti.
