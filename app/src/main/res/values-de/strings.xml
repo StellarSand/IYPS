@@ -20,6 +20,14 @@
 
 <resources>
 
+    <!--
+    ENSURE PROPER ENCODING OF CHARACTERS
+        ä = \u00E4
+        ß = \u00DF
+        ü = \u00FC
+        Ü = \u00DC
+    -->
+
     <string name="app_version">Version:</string>
 
     <!--MAIN FRAGMENT-->
@@ -63,9 +71,9 @@
     <string name="score_explained">
         • Wenn das Passwort mindestens 6 Zeichen hat, dann Basispunktzahl = 10.
         \n
-        \n• Wenn das Passwort mindestens 6 Zeichen hat, dann L\u00E4ngenbewertung = 3 Punkte f\u00FCr jedes hinzugefügte zus\u00E4tzliche Zeichen.
+        \n• Wenn das Passwort mindestens 6 Zeichen hat, dann L\u00E4ngenbewertung = 3 Punkte f\u00FCr jedes hinzugef\u00FCgte zus\u00E4tzliche Zeichen.
         \n
-        \n• Gro\u00DFbuchstabenpunktzahl = 4 Punkte für jeden Gro\u00DFbuchstaben.
+        \n• Gro\u00DFbuchstabenpunktzahl = 4 Punkte f\u00FCr jeden Gro\u00DFbuchstaben.
         \n
         \n• Zahlenwertung = 5 Punkte f\u00FCr jede Zahl.
         \n
@@ -82,7 +90,7 @@
         \n
         \n• L\u00E4nge = 30 (jeweils 3 Punkte f\u00FCr 10 zus\u00E4tzliche Zeichen hinzugef\u00FCgt.)
         \n
-        \n• Gro\u00DFbuchstaben = 8 (jeweils 4 Punkte für 2 Gro\u00DFbuchstaben.)
+        \n• Gro\u00DFbuchstaben = 8 (jeweils 4 Punkte f\u00FCr 2 Gro\u00DFbuchstaben.)
         \n
         \n• Zahlen = 15 (jeweils 5 Punkte f\u00FCr 3 Zahlen.)
     </string>
@@ -90,7 +98,7 @@
     <string name="pass_123456789_score">
         • Basis = 10
         \n
-        \n• L\u00E4nge = 12 (jeweils 3 Punkte für 4 zus\u00E4tzliche Zeichen hinzugef\u00FCgt.)
+        \n• L\u00E4nge = 12 (jeweils 3 Punkte f\u00FCr 4 zus\u00E4tzliche Zeichen hinzugef\u00FCgt.)
         \n
         \n• Zahlen = 45 (jeweils 5 Punkte f\u00FCr 9 Zahlen.)
         \n
@@ -127,6 +135,6 @@
     <!--BOTTOM SHEET-->
 
     <!--TOASTS-->
-    <string name="no_browsers">Es ist kein Browser auf diesem Ger\u00E4t installiert</string>
+    <string name="no_browsers">Es ist kein browser auf diesem ger\u00E4t installiert</string>
 
 </resources>

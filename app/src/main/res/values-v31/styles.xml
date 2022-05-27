@@ -22,36 +22,26 @@
 <resources>
 
     <!--PARENT APP THEME-->
-    <style name="Base.Theme.IYPS" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.IYPS" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="fontFamily">@font/roboto</item>
     </style>
 
     <!--#########################################################################################-->
 
-    <!--BASE APP THEME-->
-    <style name="BaseAppTheme" parent="Base.Theme.IYPS">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/backgroundColor</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="backgroundColor">@color/backgroundColor</item>
-    </style>
-
-    <!--#########################################################################################-->
-
     <!--MEDIUM BOLD TEXT STYLE-->
-    <style name="MediumBoldText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <style name="MediumBoldText" parent="TextAppearance.Material3.ActionBar.Title">
         <item name="fontFamily">@font/roboto_medium</item>
     </style>
 
     <!--#########################################################################################-->
 
     <!--TEXT BOX STYLE-->
-    <style name="TextBoxStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+    <style name="TextBoxStyle" parent="Widget.Material3.TextInputLayout.OutlinedBox"/>
 
     <!--#########################################################################################-->
 
     <!--BASE BOTTOM SHEET STYLE-->
-    <style name="BaseBottomSheetTheme" parent="Theme.Design.Light.BottomSheetDialog">
+    <style name="BaseBottomSheetTheme" parent="Theme.Material3.DayNight.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
         <item name="android:windowIsFloating">false</item>
         <item name="android:windowSoftInputMode">adjustResize</item>
@@ -59,14 +49,8 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
-    <!--BOTTOM SHEET ANIMATION-->
-    <style name="BottomSheetAnimation">
-        <item name="android:windowEnterAnimation">@anim/fade_in_slide_from_bottom</item>
-        <item name="android:windowExitAnimation">@anim/fade_out_slide_to_bottom</item>
-    </style>
-
     <!--MAKE ROOT VIEW OF BOTTOM SHEET TRANSPARENT FOR CUSTOM VIEW TO SHOW PROPERLY-->
-    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+    <style name="BottomSheetStyle" parent="Widget.Material3.BottomSheet.Modal">
         <item name="android:background">@android:color/transparent</item>
     </style>
 

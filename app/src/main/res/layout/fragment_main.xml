@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ Copyright (c) 2022 the-weird-aquarian
   ~
@@ -37,7 +38,7 @@
             android:layout_marginTop="@dimen/margin_10"
             android:paddingTop="@dimen/margin_4"
             android:paddingBottom="@dimen/margin_4"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            style="@style/TextBoxStyle"
             android:textColorHint="@color/hintColor"
             app:passwordToggleEnabled="true">
 
@@ -116,7 +117,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/strength"
                     android:textColor="@color/textTitleColor"
-                    android:textSize="@dimen/text_16" />
+                    android:textSize="@dimen/text_17" />
 
                 <TextView
                     android:id="@+id/strength_subtitle"
@@ -128,7 +129,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_14" />
+                    android:textSize="@dimen/text_15" />
 
                 <LinearLayout
                     android:id="@+id/strength_meter_layout"
@@ -223,7 +224,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/est_time_to_crack"
                     android:textColor="@color/textTitleColor"
-                    android:textSize="@dimen/text_16"
+                    android:textSize="@dimen/text_17"
                     tools:ignore="RelativeOverlap" />
 
                 <TextView
@@ -237,7 +238,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_14" />
+                    android:textSize="@dimen/text_15" />
 
                 <TextView
                     android:id="@+id/crack_time"
@@ -249,7 +250,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/offline_slow"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_14" />
+                    android:textSize="@dimen/text_15" />
 
                 <ImageView
                     android:id="@+id/time_help"
@@ -261,7 +262,7 @@
                     android:focusable="true"
                     android:foreground="@drawable/shape_circle_ripple"
                     android:padding="@dimen/margin_4"
-                    android:src="@drawable/ic_help" />
+                    android:src="@drawable/ic_about" />
 
                 <ImageView
                     android:id="@+id/time_settings"
@@ -307,7 +308,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/warning"
                     android:textColor="@color/textTitleColor"
-                    android:textSize="@dimen/text_16" />
+                    android:textSize="@dimen/text_17" />
 
                 <TextView
                     android:id="@+id/warning_subtitle"
@@ -319,7 +320,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_14" />
+                    android:textSize="@dimen/text_15" />
 
             </RelativeLayout>
 
@@ -352,7 +353,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/suggestions"
                     android:textColor="@color/textTitleColor"
-                    android:textSize="@dimen/text_16" />
+                    android:textSize="@dimen/text_17" />
 
                 <TextView
                     android:id="@+id/suggestions_subtitle"
@@ -364,7 +365,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_14" />
+                    android:textSize="@dimen/text_15" />
 
             </RelativeLayout>
 
@@ -414,7 +415,7 @@
                     android:layout_marginEnd="@dimen/margin_8"
                     android:padding="@dimen/margin_4"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/ic_help"
+                    android:src="@drawable/ic_about"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="@drawable/shape_circle_ripple"/>

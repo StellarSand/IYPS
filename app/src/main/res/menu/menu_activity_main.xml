@@ -25,7 +25,7 @@
     <!--MAIN ACTIVITY MENU-->
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/more"
         app:showAsAction="always"
         android:icon="@drawable/ic_overflow_menu"
         android:title="@string/menu_more">

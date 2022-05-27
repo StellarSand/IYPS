@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ Copyright (c) 2022 the-weird-aquarian
   ~
@@ -23,9 +24,9 @@
     <!--DARK THEME COLORS-->
     <color name="colorPrimary">#42A5F5</color>
     <color name="colorAccent">#59B268</color>
-    <color name="backgroundColor">#202124</color>
+    <color name="backgroundColor">#212121</color>
     <color name="textTitleColor">#FAFAFA</color>
-    <color name="bottomSheetColor">#3C3D40</color>
+    <color name="bottomSheetColor">#363636</color>
     <color name="dragHandleColor">#606165</color>
     <color name="enabledColor">#B8B8BD</color>
     <color name="hintColor">#9BA0A6</color>

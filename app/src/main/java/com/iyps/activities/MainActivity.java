@@ -25,6 +25,7 @@ import static com.iyps.preferences.PreferenceManager.THEME_PREF;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -136,32 +137,31 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_activity_main, menu);
 
         // HIDE OVERFLOW MENU IN ABOUT FRAGMENT
-        menu.findItem(R.id.action_settings).setVisible(getSupportFragmentManager().getBackStackEntryCount() <= 1);
-
-        // THEME
-        menu.findItem(R.id.theme).setOnMenuItemClickListener(item1 -> {
-            ThemeBottomSheet();
-            return true;
-        });
-
-        // REPORT AN ISSUE
-        menu.findItem(R.id.report_issue).setOnMenuItemClickListener(item2 -> {
-
-            OpenURL(this, "https://github.com/the-weird-aquarian/IYPS/issues");
-
-            return true;
-        });
-
-        // ABOUT
-        menu.findItem(R.id.about).setOnMenuItemClickListener(item3 -> {
-
-            DisplayFragment("About");
-
-            return true;
-        });
+        menu.findItem(R.id.more).setVisible(getSupportFragmentManager().getBackStackEntryCount() <= 1);
 
         return true;
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected (MenuItem item) {
+
+        // THEME
+        if (item.getItemId() == R.id.theme) {
+            ThemeBottomSheet();
+        }
+
+        // REPORT AN ISSUE
+        else if (item.getItemId() == R.id.report_issue) {
+            OpenURL(this, "https://github.com/the-weird-aquarian/IYPS/issues");
+        }
+
+        // ABOUT
+        else if (item.getItemId() == R.id.about) {
+            DisplayFragment("About");
+        }
+
+        return true;
     }
 
     // THEME BOTTOM SHEET

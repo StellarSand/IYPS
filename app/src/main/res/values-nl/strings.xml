@@ -127,6 +127,6 @@
     <!--BOTTOM SHEET-->
 
     <!--TOASTS-->
-    <string name="no_browsers">Geen browsers geïnstalleerd op dit apparaat</string>
+    <string name="no_browsers">Geen browsers ge\u00EFnstalleerd op dit apparaat</string>
 
 </resources>
