@@ -94,7 +94,7 @@ Privacy policy is mentioned [here](https://github.com/the-weird-aquarian/IYPS/bl
 
 
 ## Issues
-If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/the-weird-aquarian/IYPS/issues). We really encourage you to search for existing issues before opening a new one. Any duplicates will be closed immediately.
+If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/the-weird-aquarian/IYPS/issues). We encourage you to search for existing issues before opening a new one. Any duplicates will be closed immediately.
 
 
 
