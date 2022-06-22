@@ -54,10 +54,6 @@
     <string name="all_num_penalty">• Penalit\u00E0 tutti numeri</string>
     <string name="all_special_char_penalty">• Penalit\u00E0 tutti caratteri speciali</string>
 
-    <!--TIME TO CRACK HELP FRAGMENT-->
-    <string name="how_time_estimated">How are crack times calculated?</string>
-    <string name="time_to_crack_explained">Test Text</string>
-
     <!--SCORE DETAILS FRAGMENT-->
     <string name="how_score_calculated">Come \u00E8 calcolato il punteggio?</string>
     <string name="score_explained">

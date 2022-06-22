@@ -37,7 +37,7 @@ public class ApplicationManager extends Application {
 
         PreferenceManager preferenceManager = new PreferenceManager(this);
 
-        // THEME
+        // Theme
         if (preferenceManager.getInt(THEME_PREF) == 0){
             if (Build.VERSION.SDK_INT >= 29){
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
@@ -46,7 +46,6 @@ public class ApplicationManager extends Application {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             }
         }
-
         else if (preferenceManager.getInt(THEME_PREF) == R.id.option_default){
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
         }

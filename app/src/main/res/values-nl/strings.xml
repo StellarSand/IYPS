@@ -54,10 +54,6 @@
     <string name="all_num_penalty">• Alle nummers straf</string>
     <string name="all_special_char_penalty">• Alle speciale tekens straf</string>
 
-    <!--TIME TO CRACK HELP FRAGMENT-->
-    <string name="how_time_estimated">How are crack times calculated?</string>
-    <string name="time_to_crack_explained">Test Text</string>
-
     <!--SCORE DETAILS FRAGMENT-->
     <string name="how_score_calculated">Hoe wordt de score berekend?</string>
     <string name="score_explained">

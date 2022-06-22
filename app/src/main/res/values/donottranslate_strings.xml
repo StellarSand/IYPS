@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ Copyright (c) 2022 the-weird-aquarian
   ~
@@ -18,7 +19,17 @@
   ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<manifest
-    package="com.iyps.preferences">
+<resources>
 
-</manifest>
+    <string name="app_name" translatable="false">IYPS</string>
+    <string name="app_name_full" translatable="false">Is Your Password Secure?</string>
+
+    <string name="zero" translatable="false">0</string>
+
+    <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
+
+    <!--AUTHORS-->
+    <string name="the_weird_aquarian" translatable="false">the-weird-aquarian</string>
+    <string name="parveshnarwal" translatable="false">parveshnarwal</string>
+
+</resources>

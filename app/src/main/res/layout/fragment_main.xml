@@ -38,7 +38,6 @@
             android:layout_marginTop="@dimen/margin_10"
             android:paddingTop="@dimen/margin_4"
             android:paddingBottom="@dimen/margin_4"
-            style="@style/TextBoxStyle"
             android:textColorHint="@color/hintColor"
             app:passwordToggleEnabled="true">
 
@@ -129,7 +128,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_15" />
+                    android:textSize="@dimen/text_16" />
 
                 <LinearLayout
                     android:id="@+id/strength_meter_layout"
@@ -238,44 +237,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_15" />
-
-                <TextView
-                    android:id="@+id/crack_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/time_to_crack_subtitle"
-                    android:layout_toEndOf="@+id/time_to_crack_img"
-                    android:paddingStart="@dimen/margin_8"
-                    android:paddingEnd="@dimen/margin_8"
-                    android:text="@string/offline_slow"
-                    android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_15" />
-
-                <ImageView
-                    android:id="@+id/time_help"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_toStartOf="@id/time_settings"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="@drawable/shape_circle_ripple"
-                    android:padding="@dimen/margin_4"
-                    android:src="@drawable/ic_about" />
-
-                <ImageView
-                    android:id="@+id/time_settings"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/margin_6.5"
-                    android:padding="@dimen/margin_4"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:foreground="@drawable/shape_circle_ripple"
-                    android:src="@drawable/ic_time_to_crack_settings" />
+                    android:textSize="@dimen/text_16" />
 
             </RelativeLayout>
 
@@ -320,7 +282,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_15" />
+                    android:textSize="@dimen/text_16" />
 
             </RelativeLayout>
 
@@ -365,7 +327,7 @@
                     android:paddingEnd="@dimen/margin_8"
                     android:text="@string/not_applicable"
                     android:textColor="?colorControlNormal"
-                    android:textSize="@dimen/text_15" />
+                    android:textSize="@dimen/text_16" />
 
             </RelativeLayout>
 

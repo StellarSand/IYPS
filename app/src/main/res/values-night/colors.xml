@@ -21,12 +21,13 @@
 
 <resources>
 
-    <!--DARK THEME COLORS-->
+    <!--Dark theme colors-->
     <color name="colorPrimary">#42A5F5</color>
     <color name="colorAccent">#59B268</color>
     <color name="backgroundColor">#212121</color>
+    <color name="colorControlNormal">#BCBCBC</color>
     <color name="textTitleColor">#FAFAFA</color>
-    <color name="bottomSheetColor">#363636</color>
+    <color name="bottomSheetColor">#3C3D40</color>
     <color name="dragHandleColor">#606165</color>
     <color name="enabledColor">#B8B8BD</color>
     <color name="hintColor">#9BA0A6</color>
@@ -34,7 +35,7 @@
     <color name="rippleColor">#4D4D4D</color>
     <color name="scrollbarColor">#717274</color>
 
-    <!--STRENGTH METER COLORS-->
+    <!--Strength meter colors-->
     <color name="weakMeterColor">#FF9800</color>
 
 </resources>

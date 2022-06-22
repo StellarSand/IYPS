@@ -82,7 +82,7 @@
 
         </RadioGroup>
 
-    <TextView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/cancel_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -90,11 +90,12 @@
         android:layout_marginStart="@dimen/margin_8"
         android:layout_marginEnd="@dimen/margin_25"
         android:layout_marginBottom="@dimen/margin_10"
-        android:foreground="@drawable/shape_dialog_buttons_ripple"
         android:padding="@dimen/margin_12"
         android:text="@string/cancel_button"
-        style="@style/MediumBoldText"
+        android:clickable="true"
+        android:focusable="true"
+        style="@style/Widget.Material3.Button.TextButton.Dialog"
         android:textColor="@color/colorAccent"
-        android:textSize="@dimen/text_16" />
+        android:textSize="@dimen/text_17" />
 
 </LinearLayout>

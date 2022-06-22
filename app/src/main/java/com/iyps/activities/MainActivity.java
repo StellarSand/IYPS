@@ -43,7 +43,6 @@ import com.iyps.databinding.BottomSheetThemeBinding;
 import com.iyps.fragments.main.MainFragment;
 import com.iyps.fragments.main.AboutFragment;
 import com.iyps.fragments.main.ScoreHelpFragment;
-import com.iyps.fragments.main.TimeHelpFragment;
 import com.iyps.preferences.PreferenceManager;
 
 import java.util.Objects;
@@ -62,24 +61,23 @@ public class MainActivity extends AppCompatActivity {
 
         preferenceManager = new PreferenceManager(this);
 
-    /*===========================================================================================*/
+        /*########################################################################################*/
 
-        // DISABLE SCREENSHOTS & SCREEN RECORDINGS
+        // Disable screenshots and screen recordings
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
 
-        // TOOLBAR AS ACTIONBAR
         setSupportActionBar(activityBinding.toolbarMain);
         Objects.requireNonNull(getSupportActionBar()).setHomeAsUpIndicator(R.drawable.ic_back);
         activityBinding.toolbarMain.setNavigationOnClickListener(v -> onBackPressed());
 
-        // DEFAULT FRAGMENT
+        // Default fragment
         if (savedInstanceState == null) {
             DisplayFragment("Main");
         }
 
     }
 
-    // SETUP FRAGMENTS
+    // Setup fragments
     public void DisplayFragment (String fragmentName)
     {
 
@@ -89,15 +87,8 @@ public class MainActivity extends AppCompatActivity {
         {
 
             case "Main":
-                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name_full);
+                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name);
                 fragment = new MainFragment();
-                break;
-
-            case "Time Help":
-                Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.help);
-                fragment = new TimeHelpFragment();
-                transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
-                                                R.anim.slide_from_start, R.anim.slide_to_end);
                 break;
 
             case "Score Help":
@@ -117,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(!fragmentName.equals("Main"));
+
         if (fragmentName.equals("Main")) {
             activityBinding.divider.setVisibility(View.GONE);
         }
@@ -136,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_activity_main, menu);
 
-        // HIDE OVERFLOW MENU IN ABOUT FRAGMENT
+        // Hide overflow in about fragment
         menu.findItem(R.id.more).setVisible(getSupportFragmentManager().getBackStackEntryCount() <= 1);
 
         return true;
@@ -146,17 +138,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected (MenuItem item) {
 
-        // THEME
+        // Theme
         if (item.getItemId() == R.id.theme) {
             ThemeBottomSheet();
         }
 
-        // REPORT AN ISSUE
+        // Report an issue
         else if (item.getItemId() == R.id.report_issue) {
             OpenURL(this, "https://github.com/the-weird-aquarian/IYPS/issues");
         }
 
-        // ABOUT
+        // About
         else if (item.getItemId() == R.id.about) {
             DisplayFragment("About");
         }
@@ -164,9 +156,8 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    // THEME BOTTOM SHEET
     private void ThemeBottomSheet(){
-        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this, R.style.CustomBottomSheetTheme);
+        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
         bottomSheetDialog.setCancelable(true);
 
         BottomSheetThemeBinding bottomSheetBinding;
@@ -175,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
         headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.getRoot());
         bottomSheetDialog.setContentView(bottomSheetBinding.getRoot());
 
-        // DEFAULT CHECKED RADIO
+        // Default checked radio
         if (preferenceManager.getInt(THEME_PREF) == 0){
             if (Build.VERSION.SDK_INT >= 29){
                 preferenceManager.setInt(THEME_PREF, R.id.option_default);
@@ -186,14 +177,10 @@ public class MainActivity extends AppCompatActivity {
         }
         bottomSheetBinding.optionsRadiogroup.check(preferenceManager.getInt(THEME_PREF));
 
-        // TITLE
+        // Title
         headerBinding.bottomSheetTitle.setText(R.string.choose_theme_title);
 
-        // CANCEL BUTTON
-        bottomSheetBinding.cancelButton.setOnClickListener(view12 ->
-                bottomSheetDialog.cancel());
-
-        // SHOW SYSTEM DEFAULT OPTION ONLY ON SDK 29 AND ABOVE
+        // Show system default option only on SDK 29 and above
         if (Build.VERSION.SDK_INT >= 29){
             bottomSheetBinding.optionDefault.setVisibility(View.VISIBLE);
         }
@@ -201,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
             bottomSheetBinding.optionDefault.setVisibility(View.GONE);
         }
 
-        // ON SELECTING OPTION
+        // On selecting option
         bottomSheetBinding.optionsRadiogroup
                 .setOnCheckedChangeListener((radioGroup, checkedId) -> {
 
@@ -211,7 +198,6 @@ public class MainActivity extends AppCompatActivity {
                     else if (checkedId == R.id.option_light) {
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     }
-
                     else if (checkedId == R.id.option_dark) {
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                     }
@@ -221,25 +207,23 @@ public class MainActivity extends AppCompatActivity {
                     this.recreate();
                 });
 
-        // SHOW BOTTOM SHEET WITH CUSTOM ANIMATION
-        Objects.requireNonNull(bottomSheetDialog.getWindow()).getAttributes().windowAnimations = R.style.BottomSheetAnimation;
+        // Cancel
+        bottomSheetBinding.cancelButton.setOnClickListener(view12 ->
+                bottomSheetDialog.cancel());
+
         bottomSheetDialog.show();
     }
 
 
-    // ON BACK PRESSED
     @Override
     public void onBackPressed() {
 
-        // IF NOT ON DEFAULT FRAGMENT, GO TO DEFAULT FRAGMENT
         if (getSupportFragmentManager().getBackStackEntryCount() > 1){
             getSupportFragmentManager().popBackStack();
-            Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name_full);
+            Objects.requireNonNull(getSupportActionBar()).setTitle(R.string.app_name);
             Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
             activityBinding.divider.setVisibility(View.GONE);
         }
-
-        // IF ON DEFAULT FRAGMENT, FINISH ACTIVITY
         else {
             finish();
         }

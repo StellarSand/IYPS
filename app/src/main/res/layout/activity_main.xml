@@ -40,7 +40,7 @@
             app:contentInsetStartWithNavigation="0dp"
             android:paddingStart="@dimen/margin_2.5"
             android:paddingEnd="@dimen/margin_2.5"
-            app:title="@string/app_name_full"
+            app:title="@string/app_name"
             app:titleTextAppearance="@style/MediumBoldText">
 
         </com.google.android.material.appbar.MaterialToolbar>

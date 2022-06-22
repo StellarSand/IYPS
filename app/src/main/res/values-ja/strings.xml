@@ -54,10 +54,6 @@
     <string name="all_num_penalty">• すべての数字のペナルティ</string>
     <string name="all_special_char_penalty">• すべての特殊文字のペナルティ</string>
 
-    <!--TIME TO CRACK HELP FRAGMENT-->
-    <string name="how_time_estimated">How are crack times calculated?</string>
-    <string name="time_to_crack_explained">Test Text</string>
-
     <!--SCORE DETAILS FRAGMENT-->
     <string name="how_score_calculated">スコアはどのように計算されますか？</string>
     <string name="score_explained">

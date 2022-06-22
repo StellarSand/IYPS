@@ -27,10 +27,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:installLocation="internalOnly">
+        android:theme="@style/AppTheme">
 
-        <!--MAIN ACTIVITY-->
+        <!--Main activity-->
         <activity
             android:name=".activities.MainActivity"
             android:configChanges="orientation|screenSize"

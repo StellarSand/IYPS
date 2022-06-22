@@ -40,8 +40,6 @@ import com.iyps.databinding.BottomSheetAuthorsBinding;
 import com.iyps.databinding.BottomSheetHeaderBinding;
 import com.iyps.databinding.FragmentAboutBinding;
 
-import java.util.Objects;
-
 public class AboutFragment extends Fragment {
 
     private static String version;
@@ -68,7 +66,7 @@ public class AboutFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        // VERSION
+        // Version
         try {
             version = getResources().getString(R.string.app_version)
                           + " "
@@ -81,36 +79,35 @@ public class AboutFragment extends Fragment {
         }
         fragmentBinding.version.setText(version);
 
-        // AUTHORS
+        // Authors
         fragmentBinding.authors
                 .setOnClickListener(v ->
                         AuthorsBottomSheet());
 
-        // CONTRIBUTORS
+        // Contributors
         fragmentBinding.contributors
                 .setOnClickListener(v ->
                         OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/CONTRIBUTORS.md"));
 
-        // PRIVACY POLICY
+        // Privacy policy
         fragmentBinding.privacyPolicy
                 .setOnClickListener(v ->
                         OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/PRIVACY.md"));
 
-        // LICENSES
+        // Licenses
         fragmentBinding.licenses
                 .setOnClickListener(v ->
                         OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/LICENSE"));
 
-        // VIEW ON GITHUB
+        // View on GitHub
         fragmentBinding.viewOnGit
                 .setOnClickListener(v ->
                         OpenURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS"));
 
     }
 
-    // AUTHORS BOTTOM SHEET
     private void AuthorsBottomSheet(){
-        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(requireContext(), R.style.CustomBottomSheetTheme);
+        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(requireContext());
         bottomSheetDialog.setCancelable(true);
 
         BottomSheetAuthorsBinding bottomSheetBinding;
@@ -119,34 +116,36 @@ public class AboutFragment extends Fragment {
         headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.getRoot());
         bottomSheetDialog.setContentView(bottomSheetBinding.getRoot());
 
-        // TITLE
+        // Title
         headerBinding.bottomSheetTitle.setText(getString(R.string.authors));
 
-        // AUTHOR 1
+        // Author 1
         bottomSheetBinding.author1.setOnClickListener(v -> {
             OpenURL(requireActivity(), "https://github.com/the-weird-aquarian");
             bottomSheetDialog.dismiss();
         });
 
-        // AUTHOR 2
+        // Author 2
         bottomSheetBinding.author2.setOnClickListener(v -> {
             OpenURL(requireActivity(), "https://github.com/parveshnarwal");
             bottomSheetDialog.dismiss();
         });
 
-        // SHOW BOTTOM SHEET WITH CUSTOM ANIMATION
-        Objects.requireNonNull(bottomSheetDialog.getWindow()).getAttributes().windowAnimations = R.style.BottomSheetAnimation;
+        // Cancel
+        bottomSheetBinding.cancelButton.setOnClickListener(view12 ->
+                bottomSheetDialog.cancel());
+
         bottomSheetDialog.show();
     }
 
-    // OPEN LINKS
+    // Open links
     public static void OpenURL(Activity activityFrom, String URL) {
 
         try
         {
             activityFrom.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(URL)));
         }
-        // IF BROWSERS NOT INSTALLED, SHOW TOAST
+        // If browsers not installed, show toast
         catch (ActivityNotFoundException e)
         {
             Toast.makeText(activityFrom, activityFrom.getResources().getString(R.string.no_browsers), Toast.LENGTH_SHORT).show();

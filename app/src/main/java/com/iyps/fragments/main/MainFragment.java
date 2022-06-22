@@ -21,8 +21,6 @@ package com.iyps.fragments.main;
 
 import static android.content.Context.CLIPBOARD_SERVICE;
 
-import static com.iyps.preferences.PreferenceManager.CRACK_TIMES_PREF;
-
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.os.Build;
@@ -38,13 +36,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.iyps.R;
 import com.iyps.activities.MainActivity;
-import com.iyps.databinding.BottomSheetCrackTimesBinding;
-import com.iyps.databinding.BottomSheetHeaderBinding;
 import com.iyps.databinding.FragmentMainBinding;
-import com.iyps.preferences.PreferenceManager;
 import com.nulabinc.zxcvbn.Strength;
 import com.nulabinc.zxcvbn.Zxcvbn;
 
@@ -55,7 +49,6 @@ import java.util.concurrent.TimeUnit;
 
 public class MainFragment extends Fragment {
 
-    private PreferenceManager preferenceManager;
     private FragmentMainBinding fragmentBinding;
     private static int worstMeterColor, weakMeterColor, mediumMeterColor,
                        strongMeterColor, excellentMeterColor, emptyMeterColor,
@@ -98,8 +91,6 @@ public class MainFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
-        preferenceManager = new PreferenceManager(requireContext());
-
         suggestionText = new StringBuilder();
         wait = 0;
         baseScore = 0;
@@ -135,35 +126,11 @@ public class MainFragment extends Fragment {
 
         clipboardManager = (ClipboardManager) requireActivity().getSystemService(CLIPBOARD_SERVICE);
 
-        /*======================================================================================*/
+        /*########################################################################################*/
 
         fragmentBinding.passwordText.addTextChangedListener(passwordTextWatcher);
 
-        // ON CLICK TIME TO CRACK HELP ICON
-        fragmentBinding.timeHelp.setOnClickListener(v ->
-                ((MainActivity)requireActivity()).DisplayFragment("Time Help")
-        );
-
-        // ON CLICK TIME TO CRACK SETTINGS ICON
-        fragmentBinding.timeSettings.setOnClickListener(v ->
-                CrackTimesBottomSheet());
-
-        // CRACK TIME TEXT
-        if (preferenceManager.getInt(CRACK_TIMES_PREF) == 0
-                || preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_1) {
-            fragmentBinding.crackTime.setText(getString(R.string.offline_slow));
-        }
-        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_2) {
-            fragmentBinding.crackTime.setText(getString(R.string.offline_fast));
-        }
-        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_3) {
-            fragmentBinding.crackTime.setText(getString(R.string.online_slow));
-        }
-        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_4) {
-            fragmentBinding.crackTime.setText(getString(R.string.online_fast));
-        }
-
-        // ON CLICK SCORE TEXT VIEW, EXPAND LAYOUT
+        // On click score text view, expand layout
         fragmentBinding.scoreTextView.setOnClickListener(v -> {
             if (!isExpanded) {
                 fragmentBinding.expandedLayout.setVisibility(View.VISIBLE);
@@ -177,13 +144,13 @@ public class MainFragment extends Fragment {
             }
         });
 
-        // ON CLICK SCORE HELP ICON
+        // On click score help icon
         fragmentBinding.scoreHelp.setOnClickListener(v ->
                 ((MainActivity)requireActivity()).DisplayFragment("Score Help")
         );
 
 
-        // CLEAR CLIPBOARD AFTER 30 SECONDS IF COPIED FROM THIS APP
+        // Clear clipboard after 1 minute if copied from this app
         clipboardManager.addPrimaryClipChangedListener(() -> {
 
             copiedFromHere = true;
@@ -192,7 +159,7 @@ public class MainFragment extends Fragment {
                 clearClipboardTimer.cancel();
             }
 
-            clearClipboardTimer = new CountDownTimer(30000, 1000) {
+            clearClipboardTimer = new CountDownTimer(60000, 1000) {
 
                 public void onTick(long millisUntilFinished) {}
 
@@ -206,7 +173,7 @@ public class MainFragment extends Fragment {
 
     }
 
-    // PASSWORD TEXT WATCHER
+    // Password text watcher
     private final TextWatcher passwordTextWatcher = new TextWatcher() {
 
         CountDownTimer delayTimer = null;
@@ -218,8 +185,8 @@ public class MainFragment extends Fragment {
         @Override
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-            // INTRODUCE A SUBTLE DELAY,
-            // SO PASSWORDS ARE CHECKED AFTER TYPING IS FINISHED
+            // Introduce a subtle delay
+            // So passwords are checked after typing is finished
             if (delayTimer != null) {
                 delayTimer.cancel();
             }
@@ -229,45 +196,25 @@ public class MainFragment extends Fragment {
                 public void onTick(long millisUntilFinished) {
                 }
 
-                // ON TIMER FINISH, PERFORM ACTION
+                // On timer finish, perform task
                 public void onFinish() {
 
                     passwordString = Objects.requireNonNull(fragmentBinding.passwordText.getText()).toString();
                     passwordLength = passwordString.length();
                     wait = 400;
 
-                    // IF EDIT TEXT NOT EMPTY
+                    // If edit text is not empty
                     if (!passwordString.equals("")) {
 
                         Strength strength = zxcvbn.measure(passwordString);
-                        long crackTimeMilliSeconds = 0;
-                        String timeToCrackString = null;
+                        long crackTimeMilliSeconds;
+                        String timeToCrackString;
 
-                        if (preferenceManager.getInt(CRACK_TIMES_PREF) == 0
-                            || preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_1) {
-                            timeToCrackString = strength.getCrackTimesDisplay().getOfflineSlowHashing1e4perSecond();
-                            crackTimeMilliSeconds = (long) ((strength
-                                    .getCrackTimeSeconds()
-                                    .getOfflineSlowHashing1e4perSecond()) * 1000);
-                        }
-                        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_2) {
-                            timeToCrackString = strength.getCrackTimesDisplay().getOfflineFastHashing1e10PerSecond();
-                            crackTimeMilliSeconds = (long) ((strength
-                                    .getCrackTimeSeconds()
-                                    .getOfflineFastHashing1e10PerSecond()) * 1000);
-                        }
-                        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_3) {
-                            timeToCrackString = strength.getCrackTimesDisplay().getOnlineThrottling100perHour();
-                            crackTimeMilliSeconds = (long) ((strength
-                                    .getCrackTimeSeconds()
-                                    .getOnlineThrottling100perHour()) * 1000);
-                        }
-                        else if (preferenceManager.getInt(CRACK_TIMES_PREF) == R.id.option_4) {
-                            timeToCrackString = strength.getCrackTimesDisplay().getOnlineNoThrottling10perSecond();
-                            crackTimeMilliSeconds = (long) ((strength
-                                    .getCrackTimeSeconds()
-                                    .getOnlineNoThrottling10perSecond()) * 1000);
-                        }
+
+                        timeToCrackString = strength.getCrackTimesDisplay().getOfflineSlowHashing1e4perSecond();
+                        crackTimeMilliSeconds = (long) ((strength
+                                                        .getCrackTimeSeconds()
+                                                        .getOfflineSlowHashing1e4perSecond()) * 1000);
 
                         switch (passwordCrackTimeResult(crackTimeMilliSeconds)) {
 
@@ -293,10 +240,9 @@ public class MainFragment extends Fragment {
 
                         }
 
-                        // ESTIMATED TIME TO CRACK
-                        // REPLACE HARDCODED STRINGS FROM THE LIBRARY FOR PROPER LANGUAGE SUPPORT
-                        // SINCE DEVS OF ZXCVBN4J WON'T FIX IT, WE DO IT OURSELVES
-                        assert timeToCrackString != null;
+                        // Estimated time to crack
+                        // Replace hardcoded strings form the library for proper language support
+                        // Since devs of zxcvbn4j won't fix it, we do it ourselves
                         if (timeToCrackString.contains("less than a second")) {
                             timeToCrackString = timeToCrackString
                                     .replace("less than a second", getString(R.string.less_than_sec));
@@ -338,8 +284,8 @@ public class MainFragment extends Fragment {
                         }
                         fragmentBinding.timeToCrackSubtitle.setText(timeToCrackString);
 
-                        // WARNING
-                        // IF EMPTY, SET CUSTOM WARNING MESSAGE
+                        // Warning
+                        // If empty, set to custom warning message
                         if (strength.getFeedback().getWarning(Locale.getDefault()).isEmpty()) {
 
                             switch (passwordCrackTimeResult(crackTimeMilliSeconds)) {
@@ -360,13 +306,12 @@ public class MainFragment extends Fragment {
                                     break;
                             }
                         }
-
-                        // IF NOT EMPTY, DISPLAY WARNING
+                        // If not empty, display inbuilt warning
                         else {
                             fragmentBinding.warningSubtitle.setText(strength.getFeedback().getWarning(Locale.getDefault()));
                         }
 
-                        // SUGGESTIONS
+                        // Suggestions
                         List<String> suggestions = strength.getFeedback().getSuggestions(Locale.getDefault());
 
                         if (suggestions != null && suggestions.size() != 0) {
@@ -382,12 +327,12 @@ public class MainFragment extends Fragment {
                             fragmentBinding.suggestionsSubtitle.setText(getString(R.string.not_applicable));
                         }
 
-                        // SCORE
+                        // Score
                         Score(passwordString, passwordLength);
 
                     }
 
-                    // IF EDIT TEXT IS EMPTY OR CLEARED, RESET EVERYTHING
+                    // If edit text is empty or cleared, reset everything
                     else {
                         DetailsReset();
                         ScoreReset();
@@ -409,7 +354,7 @@ public class MainFragment extends Fragment {
         return getResources().getColor(color, requireActivity().getTheme());
     }
 
-    // WORST STRENGTH METER
+    // Worst strength meter
     private void WorstStrengthMeter() {
         fragmentBinding.strengthSubtitle.setText(worst);
 
@@ -426,7 +371,7 @@ public class MainFragment extends Fragment {
         fragmentBinding.excellentMeter.setProgressCompat(0, true);
     }
 
-    // WEAK STRENGTH METER
+    // Weak strength meter
     private void WeakStrengthMeter() {
         fragmentBinding.strengthSubtitle.setText(weak);
 
@@ -443,7 +388,7 @@ public class MainFragment extends Fragment {
         fragmentBinding.excellentMeter.setProgressCompat(0, true);
     }
 
-    // MEDIUM STRENGTH METER
+    // Medium strength meter
     private void MediumStrengthMeter() {
         fragmentBinding.strengthSubtitle.setText(medium);
 
@@ -460,7 +405,7 @@ public class MainFragment extends Fragment {
         fragmentBinding.excellentMeter.setProgressCompat(0, true);
     }
 
-    // STRONG STRENGTH METER
+    // Strong strength meter
     private void StrongStrengthMeter() {
         fragmentBinding.strengthSubtitle.setText(strong);
 
@@ -477,7 +422,7 @@ public class MainFragment extends Fragment {
         fragmentBinding.excellentMeter.setProgressCompat(0, true);
     }
 
-    // EXCELLENT STRENGTH METER
+    // Excellent strength meter
     private void ExcellentStrengthMeter() {
         fragmentBinding.strengthSubtitle.setText(excellent);
 
@@ -494,19 +439,19 @@ public class MainFragment extends Fragment {
         fragmentBinding.excellentMeter.setProgressCompat(100, true);
     }
 
-    // PASSWORD SCORE
+    // Password score
     private void Score(String passwordString, int passwordStringLength)
     {
 
-        // SCORING SYSTEM :
-        // IF PASSWORD LENGTH GREATER THAN 5, BASE SCORE = 10, ELSE 0
-        // IF PASSWORD LENGTH GREATER THAN 5, LENGTH SCORE = 3 POINTS FOR EACH EXTRA CHARACTER, ELSE 0
-        // UPPER CASE SCORE = 4 POINTS FOR EACH UPPER CASE CHAR
-        // NUMBERS SCORE = 5 POINTS FOR EACH NUMBER
-        // SPECIAL CHAR = 5 POINTS FOR EACH SPECIAL CHAR
-        // PENALTY = IF ALL UPPER CASE/LOWER CASE/NUMBERS/SPECIAL CHAR, SUBTRACT 15 POINTS TOTAL
+        // Scoring system:
+        // If password length greater than 5, base score = 10, else 0
+        // If password length greater than 5, length score = 3 points for each extra character, else 0
+        // Upper case score = 4 points for each upper case char
+        // Numbers score = 5 points for each number
+        // Special char = 5 points for each special char
+        // Penalty = if all upper case/lower case/numbers/special char, subtract 15 points total
 
-        if (passwordStringLength>5)
+        if (passwordStringLength > 5)
         {
             // BASE SCORE
             baseScore=10;
@@ -573,33 +518,33 @@ public class MainFragment extends Fragment {
             totalScore = baseScore+lengthScore+upperCaseScore+numScore+specialCharScore+penaltyScore;
         }
 
-        // IF PASSWORD LENGTH LESS THAN 5, RESET ALL SCORES TO 0
+        // If password length less than 5, reset all scores to 0
         else
         {
             ScoreReset();
         }
 
-        // LENGTH SCORE
+        // Length score
         fragmentBinding.lengthScore.setText(String.valueOf(lengthScore));
         lengthCount = 0;
         lengthScore = 0;
 
-        // UPPER CASE SCORE
+        // Upper case score
         fragmentBinding.upperCaseScore.setText(String.valueOf(upperCaseScore));
         upperCaseCount = 0;
         upperCaseScore = 0;
 
-        // NUMBERS SCORE
+        // Numbers score
         fragmentBinding.numScore.setText(String.valueOf(numScore));
         numCount = 0;
         numScore = 0;
 
-        // SPECIAL CHARACTERS SCORE
+        // Special char score
         fragmentBinding.specialCharScore.setText(String.valueOf(specialCharScore));
         specialCharCount = 0;
         specialCharScore = 0;
 
-        // PENALTY SCORE
+        // Penalty score
         if (penaltyScore!=0) {
             fragmentBinding.penaltyLayout.setVisibility(View.VISIBLE);
             fragmentBinding.penaltyScore.setText(String.valueOf(penaltyScore));
@@ -610,12 +555,12 @@ public class MainFragment extends Fragment {
         penaltyScore = 0;
         lowerCaseCount = 0;
 
-        // TOTAL SCORE
+        // Total score
         fragmentBinding.totalScore.setText(String.valueOf(totalScore));
         totalScore=0;
     }
 
-    // RESET DETAILS
+    // Reset details
     private void DetailsReset() {
         fragmentBinding.strengthSubtitle.setText(not_applicable);
 
@@ -637,7 +582,7 @@ public class MainFragment extends Fragment {
 
     }
 
-    // RESET SCORE
+    // Reset score
     private void ScoreReset()
     {
         fragmentBinding.totalScore.setText(zero);
@@ -651,42 +596,40 @@ public class MainFragment extends Fragment {
         fragmentBinding.penaltyLayout.setVisibility(View.GONE);
     }
 
-    // CHECK PASSWORD CRACK TIME CUSTOM RESULT
+    // Check password crack time (custom result)
     private String passwordCrackTimeResult(long crackTimeMilliSeconds) {
         String result = "";
 
-        // TAKE DAYS IN:
-        // MONTH=31, YEAR=365
+        // Tke days in:
+        // Month = 31, Year = 365
 
-        // WORST = LESS THAN/EQUAL TO 2 MINUTES
+        // Worst = less than/equal to 2 minutes
         if (crackTimeMilliSeconds < TimeUnit.MINUTES.toMillis(2)
                 || crackTimeMilliSeconds == TimeUnit.MINUTES.toMillis(2)) {
+
             result = "WORST";
         }
-
-        // WEAK = MORE THAN 2 MINUTES, LESS THAN/EQUAL TO 5 DAYS
+        // Weak = more than 2 minutes, less than/equal to 30 days
         else if (crackTimeMilliSeconds > TimeUnit.MINUTES.toMillis(2)
-                && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(5)
-                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(5)) {
+                && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(30)) {
+
             result = "WEAK";
         }
+        // Medium = more than 30 days, less than/equal to 6 months
+        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(30)
+                && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(186)) {
 
-        // MEDIUM = MORE THAN 5 DAYS, LESS THAN/EQUAL TO 5 MONTHS
-        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(5)
-                && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(155)
-                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(155)) {
             result = "MEDIUM";
         }
+        // Strong = more than 6 months, less than/equal to 5 years
+        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(186)
+                && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(1825)) {
 
-        // STRONG = MORE THAN 5 MONTHS, LESS THAN/EQUAL TO 5 YEARS
-        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(155)
-                && crackTimeMilliSeconds < TimeUnit.DAYS.toMillis(1825)
-                || crackTimeMilliSeconds == TimeUnit.DAYS.toMillis(1825)) {
             result = "STRONG";
         }
-
-        // EXCELLENT = MORE THAN 5 YEARS
+        // Excellent = more than 5 years
         else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(1825)) {
+
             result = "EXCELLENT";
         }
 
@@ -694,7 +637,7 @@ public class MainFragment extends Fragment {
 
     }
 
-    // CLEAR PASSWORD COPIED TO CLIPBOARD
+    // Clear password from clipboard
     private void clearClipboard(){
         if (Build.VERSION.SDK_INT >= 28) {
             clipboardManager.clearPrimaryClip();
@@ -706,46 +649,7 @@ public class MainFragment extends Fragment {
         copiedFromHere=false;
     }
 
-    // CRACK TIMES BOTTOM SHEET
-    private void CrackTimesBottomSheet(){
-        final BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(requireContext(), R.style.CustomBottomSheetTheme);
-        bottomSheetDialog.setCancelable(true);
-
-        BottomSheetCrackTimesBinding bottomSheetBinding;
-        BottomSheetHeaderBinding headerBinding;
-        bottomSheetBinding = BottomSheetCrackTimesBinding.inflate(getLayoutInflater());
-        headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.getRoot());
-        bottomSheetDialog.setContentView(bottomSheetBinding.getRoot());
-
-        // DEFAULT CHECKED RADIO
-        if (preferenceManager.getInt(CRACK_TIMES_PREF) == 0){
-                preferenceManager.setInt(CRACK_TIMES_PREF, R.id.option_1);
-
-        }
-        bottomSheetBinding.crackTimesRadiogroup.check(preferenceManager.getInt(CRACK_TIMES_PREF));
-
-        // TITLE
-        headerBinding.bottomSheetTitle.setText(R.string.crack_times);
-
-        // CANCEL BUTTON
-        bottomSheetBinding.cancelButton.setOnClickListener(view12 ->
-                bottomSheetDialog.cancel());
-
-        // ON SELECTING OPTION
-        bottomSheetBinding.crackTimesRadiogroup
-                .setOnCheckedChangeListener((radioGroup, checkedId) -> {
-                    preferenceManager.setInt(CRACK_TIMES_PREF, checkedId);
-                    bottomSheetDialog.dismiss();
-                    getParentFragmentManager().beginTransaction().detach(this).commitNow();
-                    getParentFragmentManager().beginTransaction().attach(this).commitNow();
-                });
-
-        // SHOW BOTTOM SHEET WITH CUSTOM ANIMATION
-        Objects.requireNonNull(bottomSheetDialog.getWindow()).getAttributes().windowAnimations = R.style.BottomSheetAnimation;
-        bottomSheetDialog.show();
-    }
-
-    // CLEAR CLIPBOARD IMMEDIATELY WHEN FRAGMENT DESTROYED
+    // Clear clipboard immediately when fragment destroyed
     @Override
     public void onDestroyView() {
         super.onDestroyView();

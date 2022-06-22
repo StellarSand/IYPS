@@ -21,10 +21,11 @@
 
 <resources>
 
-    <!--LIGHT THEME COLORS-->
+    <!--Light theme colors-->
     <color name="colorPrimary">#2196F3</color>
     <color name="colorAccent">#59B268</color>
     <color name="backgroundColor">#FFFFFF</color>
+    <color name="colorControlNormal">#747474</color>
     <color name="textTitleColor">#424242</color>
     <color name="bottomSheetColor">@color/backgroundColor</color>
     <color name="dragHandleColor">#C0C1C3</color>
@@ -34,7 +35,7 @@
     <color name="rippleColor">#EBEBEB</color>
     <color name="scrollbarColor">#B8B8B8</color>
 
-    <!--STRENGTH METER COLORS-->
+    <!--Strength meter colors-->
     <color name="worstMeterColor">#E53935</color>
     <color name="weakMeterColor">#FB8C00</color>
     <color name="mediumMeterColor">#FDD835</color>

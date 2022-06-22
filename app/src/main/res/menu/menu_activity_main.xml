@@ -22,8 +22,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!--MAIN ACTIVITY MENU-->
-
     <item
         android:id="@+id/more"
         app:showAsAction="always"

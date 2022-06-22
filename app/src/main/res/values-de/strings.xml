@@ -62,10 +62,6 @@
     <string name="all_num_penalty">• Alle Zahlen Strafe </string>
     <string name="all_special_char_penalty">• Strafe f\u00FCr alle Sonderzeichen</string>
 
-    <!--TIME TO CRACK HELP FRAGMENT-->
-    <string name="how_time_estimated">How are crack times calculated?</string>
-    <string name="time_to_crack_explained">Test Text</string>
-
     <!--SCORE HELP FRAGMENT-->
     <string name="how_score_calculated">Wie wird die Punktzahl berechnet?</string>
     <string name="score_explained">

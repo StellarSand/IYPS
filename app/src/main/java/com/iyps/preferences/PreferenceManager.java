@@ -26,9 +26,8 @@ public class PreferenceManager {
 
     private final SharedPreferences sharedPreferences;
 
-    // SHARED PREF KEYS
+    // Shared pref keys
     public static final String THEME_PREF ="theme";
-    public static final String CRACK_TIMES_PREF = "crack_time";
 
     public PreferenceManager(Context context){
         sharedPreferences = context.getSharedPreferences(context.getPackageName() + "_preferences", Context.MODE_PRIVATE);
