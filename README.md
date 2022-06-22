@@ -5,15 +5,7 @@
 A password strength test app which displays strength, estimated crack time and provides warnings and suggestions to help make better passwords.
 
 
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
-      alt="Get it on Google Play"
-      height="80">](https://play.google.com/store/apps/details?id=com.iyps)
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-     alt="Get it on F-Droid"
-     height="80">](https://f-droid.org/packages/com.iyps/)
-[<img src="https://camo.githubusercontent.com/70bffd8873ab81e1bb0bccc44e488c3a989e3bd5/68747470733a2f2f692e6962622e636f2f71306d6463345a2f6765742d69742d6f6e2d6769746875622e706e67"
-     alt="Get it on GitHub"
-     height="80">](https://github.com/the-weird-aquarian/IYPS/releases/tag/v1.1.0)
+<img src="https://img.shields.io/f-droid/v/com.iyps?logo=FDroid&color=green&style=for-the-badge" alt="F-Droid Version"> <img src="https://img.shields.io/endpoint?url=https://playshields.herokuapp.com/play?i=com.iyps&m=$version&logo=GooglePlay&color=3BCCFF&label=Google%20Play&style=for-the-badge" alt="GitHub Version"> <img src="https://img.shields.io/github/v/release/the-weird-aquarian/IYPS?logo=GitHub&color=212121&label=GitHub&style=for-the-badge" alt="GitHub Version">
 
 
 
@@ -64,12 +56,12 @@ Using this app you can determine whether the passwords are most commonly used on
 
 
 ## Download
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
-      alt="Get it on Google Play"
-      height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on F-Droid"
      height="80">](https://f-droid.org/packages/com.iyps/)
+[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
+      alt="Get it on Google Play"
+      height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 [<img src="https://camo.githubusercontent.com/70bffd8873ab81e1bb0bccc44e488c3a989e3bd5/68747470733a2f2f692e6962622e636f2f71306d6463345a2f6765742d69742d6f6e2d6769746875622e706e67"
      alt="Get it on GitHub"
      height="80">](https://github.com/the-weird-aquarian/IYPS/releases/tag/v1.1.0)
