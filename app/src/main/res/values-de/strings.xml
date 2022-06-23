@@ -112,7 +112,7 @@
     <string name="menu_more">Mehr</string>
     <string name="choose_theme_title">Thema</string>
     <string name="report_issue_title">Ein Problem melden</string>
-    <string name="about_title">\u00DCber</string>
+    <string name="about">\u00DCber</string>
 
     <!--CUSTOM WARNINGS & SUGGESTIONS-->
     <string name="worst_pass_warning">Das Passwort ist zu einfach zu erraten.</string>

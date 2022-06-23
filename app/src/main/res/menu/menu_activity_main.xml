@@ -42,7 +42,7 @@
             <item
                 android:id="@+id/about"
                 android:icon="@drawable/ic_about"
-                android:title="@string/about_title"/>
+                android:title="@string/about"/>
 
         </menu>
 

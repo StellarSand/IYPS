@@ -16,14 +16,8 @@
  *  You should have received a copy of the GNU General Public License
  *  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
  */
+package com.iyps.models
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id 'com.android.application' version '7.2.1' apply false
-    id 'com.android.library' version '7.2.1' apply false
-    id 'org.jetbrains.kotlin.android' version '1.7.0' apply false
-}
-
-task clean(type: Delete) {
-    delete rootProject.buildDir
+class FileItem {
+    var passwordLine: String? = null
 }

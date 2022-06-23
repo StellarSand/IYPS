@@ -104,7 +104,7 @@
     <string name="menu_more">Meer</string>
     <string name="choose_theme_title">Thema</string>
     <string name="report_issue_title">Een probleem melden</string>
-    <string name="about_title">Over</string>
+    <string name="about">Over</string>
 
     <!--CUSTOM WARNINGS & SUGGESTIONS-->
     <string name="worst_pass_warning">Wachtwoord is te eenvoudig om te raden.</string>

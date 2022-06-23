@@ -25,7 +25,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb"
-    tools:context=".fragments.main.AboutFragment"
+    tools:context=".fragments.help.AboutFragment"
     tools:ignore="ContentDescription">
 
         <RelativeLayout

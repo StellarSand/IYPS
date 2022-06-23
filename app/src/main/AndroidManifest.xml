@@ -22,6 +22,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iyps">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:name=".appmanager.ApplicationManager"
         android:icon="@mipmap/ic_launcher"
@@ -39,6 +41,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--Details activity-->
+        <activity android:name=".activities.DetailsActivity"/>
+
+        <!--Help activity-->
+        <activity android:name=".activities.HelpActivity"/>
 
     </application>
 

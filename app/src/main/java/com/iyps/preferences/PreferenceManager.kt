@@ -17,30 +17,32 @@
  *  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.iyps.preferences;
+package com.iyps.preferences
 
-import android.content.Context;
-import android.content.SharedPreferences;
+import android.content.Context
+import android.content.SharedPreferences
 
-public class PreferenceManager {
+class PreferenceManager(context: Context) {
 
-    private final SharedPreferences sharedPreferences;
+    private val sharedPreferences: SharedPreferences
 
-    // Shared pref keys
-    public static final String THEME_PREF ="theme";
-
-    public PreferenceManager(Context context){
-        sharedPreferences = context.getSharedPreferences(context.getPackageName() + "_preferences", Context.MODE_PRIVATE);
+    companion object {
+        // Shared pref keys
+        const val THEME_PREF = "theme"
     }
 
-    public int getInt(String key){
-        return sharedPreferences.getInt(key,0);
+    init {
+        sharedPreferences = context.getSharedPreferences("${context.packageName}_preferences", Context.MODE_PRIVATE)
     }
 
-    public void setInt(String key, int integer){
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putInt(key, integer);
-        editor.apply();
+    fun getInt(key: String): Int {
+        return sharedPreferences.getInt(key, 0)
+    }
+
+    fun setInt(key: String, integer: Int) {
+        val editor = sharedPreferences.edit()
+        editor.putInt(key, integer)
+        editor.apply()
     }
 
 }

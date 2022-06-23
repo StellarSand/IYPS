@@ -104,7 +104,7 @@
     <string name="menu_more">もっと</string>
     <string name="choose_theme_title">テーマ</string>
     <string name="report_issue_title">問題を報告する</string>
-    <string name="about_title">約</string>
+    <string name="about">約</string>
 
     <!--CUSTOM WARNINGS & SUGGESTIONS-->
     <string name="worst_pass_warning">パスワードは推測するには簡単すぎます。 </string>

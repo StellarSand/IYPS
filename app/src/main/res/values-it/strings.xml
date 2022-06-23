@@ -104,7 +104,7 @@
     <string name="menu_more">Pi\u00F9</string>
     <string name="choose_theme_title">Tema</string>
     <string name="report_issue_title">Segnala un problema</string>
-    <string name="about_title">Info</string>
+    <string name="about">Info</string>
 
     <!--CUSTOM WARNINGS & SUGGESTIONS-->
     <string name="worst_pass_warning">La password \u00E8 troppo semplice da indovinare.</string>

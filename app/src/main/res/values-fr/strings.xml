@@ -104,7 +104,7 @@
     <string name="menu_more">Suite</string>
     <string name="choose_theme_title">Th\u00E8me</string>
     <string name="report_issue_title">Signaler un probl\u00E8me</string>
-    <string name="about_title">Sur</string>
+    <string name="about">Sur</string>
 
     <!--CUSTOM WARNINGS & SUGGESTIONS-->
     <string name="worst_pass_warning">Le mot de passe est trop simple \u00E0 deviner.</string>

@@ -17,13 +17,23 @@
  *  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-plugins {
-    id 'com.android.application' version '7.2.1' apply false
-    id 'com.android.library' version '7.2.1' apply false
-    id 'org.jetbrains.kotlin.android' version '1.7.0' apply false
-}
+package com.iyps.fragments.help
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.iyps.R
+
+class ScoreHelpFragment : Fragment() {
+
+    override fun onCreateView(inflater: LayoutInflater,
+                              container: ViewGroup?,
+                              savedInstanceState: Bundle?): View {
+        // Inflate the layout for this fragment
+        setHasOptionsMenu(true)
+        return inflater.inflate(R.layout.fragment_help, container, false)
+    }
+
 }

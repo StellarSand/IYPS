@@ -23,7 +23,21 @@
 
     <string name="app_version">Version:</string>
 
-    <!--MAIN FRAGMENT-->
+    <!--Tabs-->
+    <string name="password">Password</string>
+    <string name="file">File</string>
+
+    <!--#########################################################################################-->
+
+    <!--Toolbar-->
+    <string name="menu_more">More</string>
+    <string name="choose_theme_title">Theme</string>
+    <string name="report_issue_title">Report an issue</string>
+    <string name="about">About</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
     <string name="test_your_password">Test Your Password</string>
     <string name="details">Details</string>
     <string name="strength">Strength</string>
@@ -55,8 +69,17 @@
     <string name="all_lower_penalty">• All lower case penalty</string>
     <string name="all_num_penalty">• All numbers penalty</string>
     <string name="all_special_char_penalty">• All special characters penalty</string>
-    
-    <!--SCORE HELP FRAGMENT-->
+
+    <!--#########################################################################################-->
+
+    <!--File fragment-->
+    <string name="select_file_text">
+        Select a text file with multiple passwords. Each password must be on a separate line in the file.</string>
+    <string name="select_file_btn">Select file</string>
+
+    <!--#########################################################################################-->
+
+    <!--Score help fragment-->
     <string name="how_score_calculated">How is the score calculated?</string>
     <string name="score_explained">
         • If password has minimum 6 characters, then Base score = 10.
@@ -95,34 +118,43 @@
         \n• Penalty = -15 (All characters are numbers.)
     </string>
 
-    <!--ABOUT FRAGMENT-->
+    <!--#########################################################################################-->
+
+    <!--About fragment-->
     <string name="authors">Authors</string>
     <string name="contributors">Contributors</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="licenses">Licenses</string>
     <string name="view_on_github">View on GitHub</string>
 
-    <!--TOOLBAR-->
-    <string name="menu_more">More</string>
-    <string name="choose_theme_title">Theme</string>
-    <string name="report_issue_title">Report an issue</string>
-    <string name="about_title">About</string>
+    <!--#########################################################################################-->
 
-    <!--CUSTOM WARNINGS & SUGGESTIONS-->
+    <!--Custom warnings-->
     <string name="worst_pass_warning">Password is too simple to guess.</string>
     <string name="weak_pass_warning">Password can be easily cracked.</string>
     <string name="medium_pass_warning">Password is not strong enough.</string>
     <string name="not_applicable">Not applicable.</string>
 
-    <!--BOTTOM SHEET-->
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
     <string name="cancel_button">Cancel</string>
 
-        <!--THEME-->
-        <string name="system_default">System Default</string>
-        <string name="light">Light</string>
-        <string name="dark">Dark</string>
+    <!--THEME-->
+    <string name="system_default">System Default</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+
+    <!--#########################################################################################-->
 
     <!--TOASTS-->
     <string name="no_browsers">No browsers installed on this device</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="read_files_perm_denied">Allow the app to read files to use this feature</string>
+    <string name="read_files_perm_blocked">File access blocked</string>
+    <string name="enable">Enable</string>
 
 </resources>
