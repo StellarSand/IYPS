@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ Copyright (c) 2022 the-weird-aquarian
   ~
@@ -22,7 +23,21 @@
 
     <string name="app_version">バージョン:</string>
 
-    <!--MAIN FRAGMENT-->
+    <!--Tabs-->
+    <string name="password">パスワード</string>
+    <string name="file">ファイル</string>
+
+    <!--#########################################################################################-->
+
+    <!--Toolbar-->
+    <string name="menu_more">もっと</string>
+    <string name="theme">テーマ</string>
+    <string name="report_issue">問題を報告する</string>
+    <string name="about">約</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
     <string name="test_your_password">パスワードをテストしてください</string>
     <string name="details">詳細</string>
     <string name="strength">力</string>
@@ -49,12 +64,22 @@
     <string name="upper_case">• 大文字</string>
     <string name="numbers">• 数字</string>
     <string name="special_char">• 特殊文字</string>
+    <string name="penalty">• ペナルティ</string>
     <string name="all_upper_penalty">• すべて大文字のペナルティ</string>
     <string name="all_lower_penalty">• すべて小文字のペナルティ</string>
     <string name="all_num_penalty">• すべての数字のペナルティ</string>
     <string name="all_special_char_penalty">• すべての特殊文字のペナルティ</string>
 
-    <!--SCORE DETAILS FRAGMENT-->
+    <!--#########################################################################################-->
+
+    <!--File fragment-->
+    <string name="select_file_text">
+        複数のパスワードを持つテキストファイルを選択します。 各パスワードは、ファイル内の個別の行にある必要があります.</string>
+    <string name="select_file_btn">ファイルを選ぶ</string>
+
+    <!--#########################################################################################-->
+
+    <!--Score help fragment-->
     <string name="how_score_calculated">スコアはどのように計算されますか？</string>
     <string name="score_explained">
         • パスワードの文字数が6文字以上の場合、基本スコア= 10です.
@@ -93,36 +118,43 @@
         \n• ペナルティ= -15（すべての文字は数字です。）
     </string>
 
-    <!--ABOUT FRAGMENT-->
+    <!--#########################################################################################-->
+
+    <!--About fragment-->
     <string name="authors">著者</string>
     <string name="contributors">貢献者</string>
     <string name="privacy_policy">プライバシーポリシー</string>
     <string name="licenses">ライセンス</string>
     <string name="view_on_github">GitHubを見る</string>
 
-    <!--TOOLBAR-->
-    <string name="menu_more">もっと</string>
-    <string name="choose_theme_title">テーマ</string>
-    <string name="report_issue_title">問題を報告する</string>
-    <string name="about">約</string>
+    <!--#########################################################################################-->
 
-    <!--CUSTOM WARNINGS & SUGGESTIONS-->
+    <!--Custom warnings-->
     <string name="worst_pass_warning">パスワードは推測するには簡単すぎます。 </string>
     <string name="weak_pass_warning">パスワードは簡単に割れます.</string>
     <string name="medium_pass_warning">パスワードは十分に強くありません.</string>
     <string name="not_applicable">適用できない.</string>
 
-    <!--BOTTOM SHEET-->
-    <string name="cancel_button">キャンセル</string>
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
+    <string name="cancel">キャンセル</string>
 
     <!--THEME-->
     <string name="system_default">システムのデフォルト</string>
     <string name="light">光</string>
     <string name="dark">闇</string>
 
-    <!--BOTTOM SHEET-->
+    <!--#########################################################################################-->
 
-    <!--TOASTS-->
+    <!--Toasts-->
     <string name="no_browsers">このデバイスにブラウザがインストールされていません</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="read_files_perm_denied">アプリがファイルを読み取ってこの機能を使用できるようにします</string>
+    <string name="read_files_perm_blocked">ファイルアクセスブロック</string>
+    <string name="enable">有効</string>
 
 </resources>

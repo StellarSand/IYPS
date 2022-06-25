@@ -72,7 +72,7 @@ class AboutFragment : Fragment() {
         // Contributors
         fragmentBinding.contributors
             .setOnClickListener {
-                openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/CONTRIBUTORS.md")
+                openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/graphs/contributors")
             }
 
         // Privacy policy
@@ -84,7 +84,12 @@ class AboutFragment : Fragment() {
         // Licenses
         fragmentBinding.licenses
             .setOnClickListener {
-                openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/LICENSE")
+                parentFragmentManager.beginTransaction()
+                    .setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
+                                         R.anim.slide_from_start, R.anim.slide_to_end)
+                    .replace(R.id.activity_host_fragment, LicensesFragment())
+                    .addToBackStack(null)
+                    .commit()
             }
 
         // View on GitHub
@@ -117,6 +122,10 @@ class AboutFragment : Fragment() {
             openURL(requireActivity(), "https://github.com/parveshnarwal")
             bottomSheetDialog.dismiss()
         }
+
+        // Cancel
+        bottomSheetBinding.cancelButton.setOnClickListener { bottomSheetDialog.dismiss() }
+
         bottomSheetDialog.show()
 
     }

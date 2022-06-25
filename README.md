@@ -19,7 +19,9 @@ A password strength test app which displays strength, estimated crack time and p
 - [Privacy Policy](#privacy-policy)
 - [Issues](#issues)
 - [Contributing](#contributing)
+- [Libraries Used](#libraries-used)
 - [Credits](#credits)
+- [License](#license)
 
 
 
@@ -38,7 +40,6 @@ Using this app you can determine whether the passwords are most commonly used on
 - Fully open source
 - Material design
 - Completely offline
-- No permissions needed
 - Works on Android 6.0 and above devices
 - Supports both light and dark theme
 - No ads
@@ -58,13 +59,13 @@ Using this app you can determine whether the passwords are most commonly used on
 ## Download
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
      alt="Get it on F-Droid"
-     height="80">](https://f-droid.org/packages/com.iyps/)
+     height="80">](https://f-droid.org/packages/com.iyps)
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
       alt="Get it on Google Play"
       height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 [<img src="https://camo.githubusercontent.com/70bffd8873ab81e1bb0bccc44e488c3a989e3bd5/68747470733a2f2f692e6962622e636f2f71306d6463345a2f6765742d69742d6f6e2d6769746875622e706e67"
      alt="Get it on GitHub"
-     height="80">](https://github.com/the-weird-aquarian/IYPS/releases/tag/v1.1.0)
+     height="80">](https://github.com/the-weird-aquarian/IYPS/releases/latest)
 
 
 
@@ -95,8 +96,17 @@ Any contribution to the project would be much appreciated.
 
 
 
+## Libraries Used
+- [zxcvbn4j](https://github.com/nulab/zxcvbn4j) | [MIT License](https://github.com/nulab/zxcvbn4j/blob/master/LICENSE.txt)
+
+
+
 ## Credits
-- [Nulab Inc](https://github.com/nulab) for developing [zxcvbn4j](https://github.com/nulab/zxcvbn4j), the underlying password strength estimation functionality of this app.
 - [parveshnarwal](https://github.com/parveshnarwal) for helping me out and co-leading the development of this app.
-- Some additional icons (other than the official ones by Google) are provided by [MaterialDesignIcons](https://github.com/Templarian/MaterialDesign)
-- Thanks to the [contributors](https://github.com/the-weird-aquarian/IYPS/blob/master/CONTRIBUTORS.md) for making this app better.
+- Some additional icons (other than the official ones by Google) are provided by [Material Design Icons](https://github.com/Templarian/MaterialDesign) | [Apache 2.0 License](https://github.com/Templarian/MaterialDesign/blob/master/LICENSE)
+- Thanks to the [contributors](https://github.com/the-weird-aquarian/IYPS/graphs/contributors) for making this app better.
+
+
+
+## License
+Except where indicated otherwise, this project is licensed under the terms of [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html).

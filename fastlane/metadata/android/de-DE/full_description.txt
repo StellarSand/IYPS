@@ -5,9 +5,7 @@ Merkmale:
 - Voll offene Quelle
 - Material design
 - Völlig offline
-- Keine Berechtigungen erforderlich 
-- Funktioniert auf Android 6.0 und höheren Geräten
 - Unterstützt sowohl das licht als auch das dunkle thema 
 - Keine werbung
 - Keine sammlung personenbezogener daten 
-- Unterstützte Sprachen: Englisch, Niederländisch, Französisch, Deutsch, Japanisch
+- Unterstützte Sprachen: Englisch, Niederländisch, Französisch, Deutsch, Italienisch, Japanisch

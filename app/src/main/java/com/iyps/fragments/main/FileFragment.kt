@@ -41,7 +41,7 @@ import com.iyps.databinding.FragmentFileBinding
 import com.iyps.models.FileItem
 import java.io.*
 
-class FileFragment : Fragment() {
+class FileFragment : Fragment(), FileItemAdapter.OnItemClickListener {
 
     private var _binding: FragmentFileBinding? = null
     private val fragmentBinding get() = _binding!!
@@ -60,7 +60,7 @@ class FileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         fileItemList = ArrayList()
-        fileItemAdapter = FileItemAdapter(fileItemList)
+        fileItemAdapter = FileItemAdapter(fileItemList, this)
 
         /*########################################################################################*/
 
@@ -83,13 +83,6 @@ class FileFragment : Fragment() {
                 intent = Intent.createChooser(intent, "Select file")
                 filePicker.launch(intent)
             }
-        }
-
-        // On click
-        fileItemAdapter.setOnItemClickListener{position: Int ->
-            val fileItem = fileItemList[position]
-           startActivity(Intent(requireActivity(), DetailsActivity::class.java)
-                        .putExtra("PwdLine", fileItem.passwordLine))
         }
 
     }
@@ -141,6 +134,13 @@ class FileFragment : Fragment() {
 
         }
 
+    }
+
+    // On click
+    override fun onItemClick(position: Int) {
+        val fileItem = fileItemList[position]
+        startActivity(Intent(requireActivity(), DetailsActivity::class.java)
+            .putExtra("PwdLine", fileItem.passwordLine))
     }
 
     override fun onDestroyView() {

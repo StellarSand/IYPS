@@ -30,7 +30,6 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
-import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.ActivityCompat
@@ -73,9 +72,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(activityBinding.toolbarMain)
 
         // Default fragment
-        if (savedInstanceState == null) {
-            displayFragment(0)
-        }
+        displayFragment(0)
 
         // On click tab
         activityBinding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
@@ -148,7 +145,7 @@ class MainActivity : AppCompatActivity() {
         bottomSheetDialog.setContentView(bottomSheetBinding.root)
 
         // Title
-        headerBinding.bottomSheetTitle.setText(R.string.choose_theme_title)
+        headerBinding.bottomSheetTitle.setText(R.string.theme)
 
         // Show system default option only on SDK 29 and above
         if (Build.VERSION.SDK_INT >= 29) {
@@ -172,7 +169,7 @@ class MainActivity : AppCompatActivity() {
         bottomSheetBinding.optionsRadiogroup.check(preferenceManager.getInt(PreferenceManager.THEME_PREF))
 
         bottomSheetBinding.optionsRadiogroup
-            .setOnCheckedChangeListener { _: RadioGroup?, checkedId: Int ->
+            .setOnCheckedChangeListener { _, checkedId ->
 
                 when(checkedId) {
 

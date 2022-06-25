@@ -32,12 +32,12 @@
             <item
                 android:id="@+id/theme"
                 android:icon="@drawable/ic_theme"
-                android:title="@string/choose_theme_title"/>
+                android:title="@string/theme"/>
 
             <item
                 android:id="@+id/report_issue"
                 android:icon="@drawable/ic_report_issue"
-                android:title="@string/report_issue_title"/>
+                android:title="@string/report_issue"/>
 
             <item
                 android:id="@+id/about"

@@ -29,6 +29,9 @@
         <item name="colorControlNormal">@color/colorControlNormal</item>
         <item name="fontFamily">@font/roboto</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetTheme</item>
+        <item name="snackbarStyle">@style/SnackbarStyle</item>
+        <item name="snackbarTextViewStyle">@style/SnackbarTextStyle</item>
+        <item name="snackbarButtonStyle">@style/SnackbarButtonStyle</item>
     </style>
 
     <!--#########################################################################################-->
@@ -40,7 +43,7 @@
 
     <!--Medium bold text style-->
     <style name="TabText" parent="MediumBoldText">
-        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textSize">@dimen/text_17</item>
     </style>
 
     <!--#########################################################################################-->
@@ -49,6 +52,22 @@
     <!--Make root view of bottom sheet transparent for custom view to show properly-->
     <style name="BaseBottomSheetStyle" parent="ThemeOverlay.Material3.BottomSheetDialog">
         <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbar style-->
+    <style name="SnackbarStyle" parent="Widget.Material3.Snackbar">
+        <item name="android:backgroundTint">@color/snackbarBackgroundColor</item>
+    </style>
+
+    <!--Snackbar text style-->
+    <style name="SnackbarTextStyle" parent="Widget.Material3.Snackbar.TextView">
+        <item name="android:textColor">@color/snackbarTextColor</item>
+    </style>
+
+    <style name="SnackbarButtonStyle" parent="Widget.Material3.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/colorAccent</item>
     </style>
 
 </resources>

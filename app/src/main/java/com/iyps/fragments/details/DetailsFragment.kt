@@ -229,20 +229,20 @@ class DetailsFragment : Fragment() {
             if (!isExpanded) {
                 fragmentBinding.expandedLayout.visibility = View.VISIBLE
                 isExpanded = true
-                fragmentBinding.scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(
-                    R.drawable.ic_up_arrow,
-                    0,
-                    0,
-                    0)
+                fragmentBinding.scoreTextView
+                    .setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_up_arrow,
+                                                                    0,
+                                                                    0,
+                                                                    0)
             }
             else {
                 fragmentBinding.expandedLayout.visibility = View.GONE
                 isExpanded = false
-                fragmentBinding.scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(
-                    R.drawable.ic_down_arrow,
-                    0,
-                    0,
-                    0)
+                fragmentBinding.scoreTextView
+                    .setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_down_arrow,
+                                                                    0,
+                                                                    0,
+                                                                    0)
             }
         }
 

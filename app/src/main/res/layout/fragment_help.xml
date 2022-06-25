@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/shape_card"
+            android:background="@drawable/shape_card_with_ripple"
             android:layout_margin="@dimen/margin_16">
 
             <TextView
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/shape_card"
+            android:background="@drawable/shape_card_with_ripple"
             android:layout_marginStart="@dimen/margin_16"
             android:layout_marginEnd="@dimen/margin_16"
             android:layout_marginBottom="@dimen/margin_8">

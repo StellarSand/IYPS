@@ -31,8 +31,8 @@
 
     <!--Toolbar-->
     <string name="menu_more">More</string>
-    <string name="choose_theme_title">Theme</string>
-    <string name="report_issue_title">Report an issue</string>
+    <string name="theme">Theme</string>
+    <string name="report_issue">Report an issue</string>
     <string name="about">About</string>
 
     <!--#########################################################################################-->
@@ -64,7 +64,7 @@
     <string name="upper_case">• Upper case</string>
     <string name="numbers">• Numbers</string>
     <string name="special_char">• Special characters</string>
-    <string name="penalty" translatable="false">• Penalty</string>
+    <string name="penalty">• Penalty</string>
     <string name="all_upper_penalty">• All upper case penalty</string>
     <string name="all_lower_penalty">• All lower case penalty</string>
     <string name="all_num_penalty">• All numbers penalty</string>
@@ -138,16 +138,16 @@
     <!--#########################################################################################-->
 
     <!--Bottom sheet-->
-    <string name="cancel_button">Cancel</string>
+    <string name="cancel">Cancel</string>
 
-    <!--THEME-->
+    <!--Theme-->
     <string name="system_default">System Default</string>
     <string name="light">Light</string>
     <string name="dark">Dark</string>
 
     <!--#########################################################################################-->
 
-    <!--TOASTS-->
+    <!--Toasts-->
     <string name="no_browsers">No browsers installed on this device</string>
 
     <!--#########################################################################################-->

@@ -31,6 +31,7 @@
     <color name="dragHandleColor">#C0C1C3</color>
     <color name="enabledColor">#606163</color>
     <color name="hintColor">#B2B2B2</color>
+    <color name="urlColor">#1976D2</color>
     <color name="cardStrokeColor">#E0E0E0</color>
     <color name="rippleColor">#EBEBEB</color>
     <color name="scrollbarColor">#B8B8B8</color>
@@ -41,5 +42,9 @@
     <color name="mediumMeterColor">#FDD835</color>
     <color name="strongMeterColor">#7CB342</color>
     <color name="excellentMeterColor">#43A047</color>
+
+    <!--Common colors-->
+    <color name="snackbarTextColor">#FFFFFF</color>
+    <color name="snackbarBackgroundColor">#3C3D40</color>
 
 </resources>

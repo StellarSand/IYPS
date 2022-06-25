@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ Copyright (c) 2022 the-weird-aquarian
   ~
@@ -40,9 +41,9 @@
 
             <ImageView
                 android:id="@+id/app_icon_img"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_centerVertical="true"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
                 android:layout_marginEnd="@dimen/margin_12"
                 android:src="@drawable/app_icon" />
 
@@ -53,12 +54,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_6.5"
                 android:layout_marginBottom="@dimen/margin_2.5"
-                android:layout_toEndOf="@+id/app_icon_img"
+                android:layout_below="@+id/app_icon_img"
+                android:layout_centerHorizontal="true"
                 android:paddingStart="@dimen/margin_8"
                 android:paddingEnd="@dimen/margin_8"
                 android:text="@string/app_name_full"
                 android:textColor="@color/textTitleColor"
-                android:textSize="@dimen/text_18" />
+                android:textSize="@dimen/text_20" />
 
             <TextView
                 android:id="@+id/version"
@@ -66,12 +68,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/app_name"
-                android:layout_toEndOf="@+id/app_icon_img"
+                android:layout_centerHorizontal="true"
                 android:paddingStart="@dimen/margin_8"
                 android:paddingEnd="@dimen/margin_8"
                 android:text="@string/app_version"
-                android:textColor="?colorControlNormal"
-                android:textSize="@dimen/text_16" />
+                android:textColor="@color/colorControlNormal"
+                android:textSize="@dimen/text_17" />
 
         </RelativeLayout>
 
@@ -79,7 +81,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@drawable/shape_card"
+            android:background="@drawable/shape_card_with_ripple"
             android:layout_marginTop="@dimen/margin_10"
             android:layout_margin="@dimen/margin_12">
 

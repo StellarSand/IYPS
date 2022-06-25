@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ Copyright (c) 2022 the-weird-aquarian
   ~
@@ -20,9 +21,29 @@
 
 <resources>
 
+    <!--
+    Ensure proper encoding of characters
+        à = \u00E0
+        ù = \u00F9
+    -->
+
     <string name="app_version">Versione:</string>
 
-    <!--MAIN FRAGMENT-->
+    <!--Tabs-->
+    <string name="password">Parola d\'ordine</string>
+    <string name="file">File</string>
+
+    <!--#########################################################################################-->
+
+    <!--Toolbar-->
+    <string name="menu_more">Pi\u00F9</string>
+    <string name="theme">Tema</string>
+    <string name="report_issue">Segnala un problema</string>
+    <string name="about">Info</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
     <string name="test_your_password">Prova la tua password</string>
     <string name="details">Dettagli</string>
     <string name="strength">Sicurezza</string>
@@ -49,12 +70,22 @@
     <string name="upper_case">• Maiuscole</string>
     <string name="numbers">• Numeri</string>
     <string name="special_char">• Caratteri speciali</string>
+    <string name="penalty">• Pena</string>
     <string name="all_upper_penalty">• Penalit\u00E0 tutte maiuscole</string>
     <string name="all_lower_penalty">• Penalit\u00E0 tutte minuscole</string>
     <string name="all_num_penalty">• Penalit\u00E0 tutti numeri</string>
     <string name="all_special_char_penalty">• Penalit\u00E0 tutti caratteri speciali</string>
 
-    <!--SCORE DETAILS FRAGMENT-->
+    <!--#########################################################################################-->
+
+    <!--File fragment-->
+    <string name="select_file_text">
+        Seleziona un file di testo con pi\u00F9 password. Ogni password deve essere su una riga separata nel file.</string>
+    <string name="select_file_btn">Seleziona il file</string>
+
+    <!--#########################################################################################-->
+
+    <!--Score help fragment-->
     <string name="how_score_calculated">Come \u00E8 calcolato il punteggio?</string>
     <string name="score_explained">
         • Se la password ha almeno 6 caratteri, allora il punteggio base = 10.
@@ -93,36 +124,41 @@
         \n• Penalit\u00E0 = -15 (Tutti i caratteri sono numeri.)
     </string>
 
-    <!--ABOUT FRAGMENT-->
+    <!--About fragment-->
     <string name="authors">Autori</string>
     <string name="contributors">Contributori</string>
     <string name="privacy_policy">Politica sulla Riservatezza</string>
     <string name="licenses">Licenze</string>
     <string name="view_on_github">Vedi su GitHub</string>
 
-    <!--TOOLBAR-->
-    <string name="menu_more">Pi\u00F9</string>
-    <string name="choose_theme_title">Tema</string>
-    <string name="report_issue_title">Segnala un problema</string>
-    <string name="about">Info</string>
+    <!--#########################################################################################-->
 
-    <!--CUSTOM WARNINGS & SUGGESTIONS-->
+    <!--Custom warnings-->
     <string name="worst_pass_warning">La password \u00E8 troppo semplice da indovinare.</string>
     <string name="weak_pass_warning">La password può essere facilmente decifrata.</string>
     <string name="medium_pass_warning">La password non \u00E8 abbastanza sicura.</string>
     <string name="not_applicable">Non applicabile.</string>
 
-    <!--BOTTOM SHEET-->
-    <string name="cancel_button">Annulla</string>
+    <!--#########################################################################################-->
 
-        <!--THEME-->
-        <string name="system_default">Predefinito di Sistema</string>
-        <string name="light">Chiaro</string>
-        <string name="dark">Scuro</string>
+    <!--Bottom sheet-->
+    <string name="cancel">Annulla</string>
 
-    <!--BOTTOM SHEET-->
+    <!--Theme-->
+    <string name="system_default">Predefinito di Sistema</string>
+    <string name="light">Chiaro</string>
+    <string name="dark">Scuro</string>
 
-    <!--TOASTS-->
+    <!--#########################################################################################-->
+
+    <!--Toasts-->
     <string name="no_browsers">Nessun browser installato sul dispositivo</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="read_files_perm_denied">Consenti all\'app di leggere i file di utilizzare questa funzione</string>
+    <string name="read_files_perm_blocked">Accesso al file bloccato</string>
+    <string name="enable">Abilitare</string>
 
 </resources>

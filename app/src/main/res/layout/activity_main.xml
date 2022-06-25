@@ -96,6 +96,6 @@
         android:layout_marginBottom="@dimen/margin_16"
         android:text="@string/select_file_btn"
         android:textSize="@dimen/text_17"
-        android:textColor="#FAFAFA"/>
+        android:textColor="@color/snackbarTextColor"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

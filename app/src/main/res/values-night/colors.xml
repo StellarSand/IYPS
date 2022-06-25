@@ -31,6 +31,7 @@
     <color name="dragHandleColor">#606165</color>
     <color name="enabledColor">#B8B8BD</color>
     <color name="hintColor">#9BA0A6</color>
+    <color name="urlColor">#42A5F5</color>
     <color name="cardStrokeColor">#5F6267</color>
     <color name="rippleColor">#4D4D4D</color>
     <color name="scrollbarColor">#717274</color>

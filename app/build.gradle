@@ -29,8 +29,8 @@ android {
         applicationId "com.iyps"
         minSdk 23
         targetSdk 32
-        versionCode 110
-        versionName "1.1.0"
+        versionCode 120
+        versionName "1.2.0"
     }
 
     buildTypes {

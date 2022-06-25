@@ -5,9 +5,7 @@ Features:
 - Fully open source
 - Material design
 - Completely offline
-- No permissions needed
-- Works on Android 6.0 and above devices
 - Supports both light and dark theme
 - No ads
 - No collection of personal data
-- Supported languages: English, Dutch, French, German, Japanese
+- Supported languages: English, Dutch, French, German, Italian, Japanese

@@ -31,7 +31,7 @@
     android:paddingEnd="@dimen/margin_8"
     android:paddingTop="@dimen/margin_4"
     android:paddingBottom="@dimen/margin_4"
-    android:background="@drawable/shape_card">
+    android:background="@drawable/shape_card_with_ripple">
 
     <TextView
         android:id="@+id/password_line"

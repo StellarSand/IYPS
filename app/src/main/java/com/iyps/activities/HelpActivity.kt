@@ -46,12 +46,12 @@ class HelpActivity : AppCompatActivity() {
         activityBinding.tabLayout.visibility = View.GONE
         activityBinding.selectButton.visibility = View.GONE
 
-        displayFragment(intent.getStringExtra("fragment"))
+        intent.getStringExtra("fragment")?.let { displayFragment(it) }
 
     }
 
     // Setup fragments
-    private fun displayFragment(fragmentName: String?) {
+    private fun displayFragment(fragmentName: String) {
 
         lateinit var fragment: Fragment
 

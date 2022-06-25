@@ -19,7 +19,7 @@
 
 <resources>
 
-    <!--MARGINS AND PADDINGS-->
+    <!--Margins & paddings-->
     <dimen name="margin_25">25dp</dimen>
     <dimen name="margin_22">22dp</dimen>
     <dimen name="margin_20">20dp</dimen>
@@ -31,7 +31,7 @@
     <dimen name="margin_4">4dp</dimen>
     <dimen name="margin_2.5">2.5dp</dimen>
 
-    <!--TEXT-->
+    <!--Text-->
     <dimen name="text_20">20sp</dimen>
     <dimen name="text_18">18sp</dimen>
     <dimen name="text_17">17sp</dimen>

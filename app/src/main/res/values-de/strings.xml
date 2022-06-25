@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~ Copyright (c) 2022 the-weird-aquarian
   ~
@@ -21,16 +22,31 @@
 <resources>
 
     <!--
-    ENSURE PROPER ENCODING OF CHARACTERS
+    Ensure proper encoding of characters
         ä = \u00E4
         ß = \u00DF
         ü = \u00FC
         Ü = \u00DC
+        ö = \u00F6
     -->
 
     <string name="app_version">Version:</string>
 
-    <!--MAIN FRAGMENT-->
+    <!--Tabs-->
+    <string name="password">Passwort</string>
+    <string name="file">Datei</string>
+
+    <!--#########################################################################################-->
+
+    <!--Toolbar-->
+    <string name="menu_more">Mehr</string>
+    <string name="theme">Thema</string>
+    <string name="report_issue">Ein Problem melden</string>
+    <string name="about">\u00DCber</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
     <string name="test_your_password">Testen Sie Ihr Passwort</string>
     <string name="details">Details</string>
     <string name="strength">St\u00E4rke</string>
@@ -57,12 +73,22 @@
     <string name="upper_case">• Gro\u00DFbuchstaben</string>
     <string name="numbers">• Zahlen</string>
     <string name="special_char">• Spezielle Charaktere</string>
+    <string name="penalty">• Strafe</string>
     <string name="all_upper_penalty">• Alle Strafen in Gro\u00DFbuchstaben</string>
     <string name="all_lower_penalty">• Alle Strafen in Kleinbuchstaben</string>
     <string name="all_num_penalty">• Alle Zahlen Strafe </string>
     <string name="all_special_char_penalty">• Strafe f\u00FCr alle Sonderzeichen</string>
 
-    <!--SCORE HELP FRAGMENT-->
+    <!--#########################################################################################-->
+
+    <!--File fragment-->
+    <string name="select_file_text">
+        W\u00E4hlen Sie eine Textdatei mit mehreren Passw\u00F6rtern aus. Jedes Passwort muss in einer separaten Zeile in der Datei sein.</string>
+    <string name="select_file_btn">Datei aussuchen</string>
+
+    <!--#########################################################################################-->
+
+    <!--Score help fragment-->
     <string name="how_score_calculated">Wie wird die Punktzahl berechnet?</string>
     <string name="score_explained">
         • Wenn das Passwort mindestens 6 Zeichen hat, dann Basispunktzahl = 10.
@@ -101,36 +127,43 @@
         \n• Strafe = -15 (Alle Zeichen sind Zahlen.)
     </string>
 
-    <!--ABOUT FRAGMENT-->
+    <!--#########################################################################################-->
+
+    <!--About fragment-->
     <string name="authors">Autoren</string>
     <string name="contributors">Mitwirkende</string>
     <string name="privacy_policy">Datenschutzbestimmungen</string>
     <string name="licenses">Lizenzen</string>
     <string name="view_on_github">Auf GitHub anschauen</string>
 
-    <!--TOOLBAR-->
-    <string name="menu_more">Mehr</string>
-    <string name="choose_theme_title">Thema</string>
-    <string name="report_issue_title">Ein Problem melden</string>
-    <string name="about">\u00DCber</string>
+    <!--#########################################################################################-->
 
-    <!--CUSTOM WARNINGS & SUGGESTIONS-->
+    <!--Custom warnings-->
     <string name="worst_pass_warning">Das Passwort ist zu einfach zu erraten.</string>
     <string name="weak_pass_warning">Das Passwort kann leicht geknackt werden.</string>
     <string name="medium_pass_warning">Das Passwort ist nicht stark genug.</string>
     <string name="not_applicable">Unzutreffend.</string>
 
-    <!--BOTTOM SHEET-->
-    <string name="cancel_button">Abbrechen</string>
+    <!--#########################################################################################-->
 
-    <!--THEME-->
+    <!--Bottom sheet-->
+    <string name="cancel">Abbrechen</string>
+
+    <!--Theme-->
     <string name="system_default">Systemvorgabe</string>
     <string name="light">Hell</string>
     <string name="dark">Dunkel</string>
 
-    <!--BOTTOM SHEET-->
+    <!--#########################################################################################-->
 
-    <!--TOASTS-->
+    <!--Toast-->
     <string name="no_browsers">Es ist kein browser auf diesem ger\u00E4t installiert</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="read_files_perm_denied">Erm\u00F6glichen Sie der App, Dateien zu lesen, um diese Funktion zu verwenden</string>
+    <string name="read_files_perm_blocked">Dateizugriff gesperrt</string>
+    <string name="enable">Erm\u00F6glichen</string>
 
 </resources>
