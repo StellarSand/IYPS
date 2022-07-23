@@ -30,7 +30,7 @@
     <string name="app_version">Versione:</string>
 
     <!--Tabs-->
-    <string name="password">Parola d\'ordine</string>
+    <string name="password">Password</string>
     <string name="file">File</string>
 
     <!--#########################################################################################-->
@@ -81,12 +81,12 @@
     <!--File fragment-->
     <string name="select_file_text">
         Seleziona un file di testo con pi\u00F9 password. Ogni password deve essere su una riga separata nel file.</string>
-    <string name="select_file_btn">Seleziona il file</string>
+    <string name="select_file_btn">Seleziona file</string>
 
     <!--#########################################################################################-->
 
     <!--Score help fragment-->
-    <string name="how_score_calculated">Come \u00E8 calcolato il punteggio?</string>
+    <string name="how_score_calculated">Come viene calcolato il punteggio?</string>
     <string name="score_explained">
         • Se la password ha almeno 6 caratteri, allora il punteggio base = 10.
         \n
@@ -145,7 +145,7 @@
     <string name="cancel">Annulla</string>
 
     <!--Theme-->
-    <string name="system_default">Predefinito di Sistema</string>
+    <string name="system_default">Predefinito di sistema</string>
     <string name="light">Chiaro</string>
     <string name="dark">Scuro</string>
 
@@ -157,8 +157,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
-    <string name="read_files_perm_denied">Consenti all\'app di leggere i file di utilizzare questa funzione</string>
-    <string name="read_files_perm_blocked">Accesso al file bloccato</string>
-    <string name="enable">Abilitare</string>
+    <string name="read_files_perm_denied">Consenti all\'app di leggere i file per utilizzare questa funzione</string>
+    <string name="read_files_perm_blocked">Accesso ai file bloccato</string>
+    <string name="enable">Abilita</string>
 
 </resources>
