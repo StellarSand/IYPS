@@ -5,7 +5,7 @@
 A password strength test app which displays strength, estimated crack time and provides warnings and suggestions to help make better passwords.
 
 
-<img src="https://img.shields.io/f-droid/v/com.iyps?logo=FDroid&color=green&style=for-the-badge" alt="F-Droid Version"> <img src="https://img.shields.io/endpoint?url=https://playshields.herokuapp.com/play?i=com.iyps&m=$version&logo=GooglePlay&color=3BCCFF&label=Google%20Play&style=for-the-badge" alt="Google Play Version"> <img src="https://img.shields.io/github/v/release/the-weird-aquarian/IYPS?logo=GitHub&color=212121&label=GitHub&style=for-the-badge" alt="GitHub Version">
+<img src="https://img.shields.io/f-droid/v/com.iyps?logo=FDroid&color=green&style=for-the-badge" alt="F-Droid Version"> <img src="https://img.shields.io/endpoint?url=https://play.cuzi.workers.dev/play?i=com.iyps&m=$version&logo=GooglePlay&color=3BCCFF&label=Google%20Play&style=for-the-badge" alt="Google Play Version"> <img src="https://img.shields.io/github/v/release/the-weird-aquarian/IYPS?logo=GitHub&color=212121&label=GitHub&style=for-the-badge" alt="GitHub Version">
 
 
 
