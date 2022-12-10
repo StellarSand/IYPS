@@ -19,22 +19,18 @@
 
 package com.iyps.fragments.help
 
-import android.app.Activity
-import android.content.ActivityNotFoundException
-import android.content.Intent
 import android.content.pm.PackageManager
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.iyps.R
 import com.iyps.databinding.BottomSheetAuthorsBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.FragmentAboutBinding
+import com.iyps.utils.IntentUtils.Companion.openURL
 
 class AboutFragment : Fragment() {
 
@@ -127,20 +123,6 @@ class AboutFragment : Fragment() {
         bottomSheetBinding.cancelButton.setOnClickListener { bottomSheetDialog.dismiss() }
 
         bottomSheetDialog.show()
-
-    }
-
-    companion object {
-        fun openURL(activityFrom: Activity, URL: String?) {
-
-            try {
-                activityFrom.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(URL)))
-            }
-            // If browsers not installed, show toast
-            catch (e: ActivityNotFoundException) {
-                Toast.makeText(activityFrom, activityFrom.resources.getString(R.string.no_browsers), Toast.LENGTH_SHORT).show()
-            }
-        }
 
     }
 

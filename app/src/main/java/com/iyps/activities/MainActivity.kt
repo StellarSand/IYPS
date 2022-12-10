@@ -42,10 +42,10 @@ import com.iyps.R
 import com.iyps.databinding.ActivityMainBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetThemeBinding
-import com.iyps.fragments.help.AboutFragment.Companion.openURL
 import com.iyps.fragments.main.FileFragment
 import com.iyps.fragments.main.PasswordFragment
 import com.iyps.preferences.PreferenceManager
+import com.iyps.utils.IntentUtils.Companion.openURL
 
 class MainActivity : AppCompatActivity() {
 

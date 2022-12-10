@@ -19,11 +19,9 @@
 
 package com.iyps.fragments.details
 
-import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.LayoutInflater
@@ -34,10 +32,12 @@ import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.HelpActivity
 import com.iyps.databinding.FragmentPasswordBinding
+import com.iyps.utils.IntentUtils.Companion.clearClipboard
+import com.iyps.utils.PasswordUtils.Companion.passwordCrackTimeResult
+import com.iyps.utils.PasswordUtils.Companion.replaceStrings
 import com.nulabinc.zxcvbn.Zxcvbn
 import java.lang.StringBuilder
-import java.util.*
-import java.util.concurrent.TimeUnit
+import java.util.Locale
 
 class DetailsFragment : Fragment() {
 
@@ -136,12 +136,11 @@ class DetailsFragment : Fragment() {
         passwordLength = passwordString!!.length
 
         val strength = zxcvbn.measure(passwordString)
-        var timeToCrackString: String?
 
-        timeToCrackString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
+        val timeToCrackString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
         val crackTimeMilliSeconds: Long = (strength.crackTimeSeconds
-            .offlineSlowHashing1e4perSecond * 1000)
-            .toLong()
+                                            .offlineSlowHashing1e4perSecond * 1000)
+                                            .toLong()
 
 
         when (passwordCrackTimeResult(crackTimeMilliSeconds)) {
@@ -155,37 +154,8 @@ class DetailsFragment : Fragment() {
         }
 
         // Estimated time to crack
-        // Replace hardcoded strings form the library for proper language support
-        // Since devs of zxcvbn4j won't fix it, we do it ourselves
         assert(timeToCrackString != null)
-        when {
-
-            timeToCrackString!!.contains("less than a second") -> timeToCrackString = timeToCrackString
-                .replace("less than a second", getString(R.string.less_than_sec))
-
-            timeToCrackString.contains("second") -> timeToCrackString = timeToCrackString
-                .replace("second", getString(R.string.second))
-
-            timeToCrackString.contains("minute") -> timeToCrackString = timeToCrackString
-                .replace("minute", getString(R.string.minute))
-
-            timeToCrackString.contains("hour") -> timeToCrackString = timeToCrackString
-                .replace("hour", getString(R.string.hour))
-
-            timeToCrackString.contains("day") -> timeToCrackString = timeToCrackString
-                .replace("day", getString(R.string.day))
-
-            timeToCrackString.contains("month") -> timeToCrackString = timeToCrackString
-                .replace("month", getString(R.string.month))
-
-            timeToCrackString.contains("year") -> timeToCrackString = timeToCrackString
-                .replace("year", getString(R.string.year))
-
-            timeToCrackString.contains("centuries") -> timeToCrackString = timeToCrackString
-                .replace("centuries", getString(R.string.centuries))
-
-        }
-        fragmentBinding.timeToCrackSubtitle.text = timeToCrackString
+        fragmentBinding.timeToCrackSubtitle.text = replaceStrings(timeToCrackString, this@DetailsFragment)
 
         // Warning
         // If empty, set to custom warning message
@@ -269,7 +239,8 @@ class DetailsFragment : Fragment() {
 
                 // On timer finish, perform task
                 override fun onFinish() {
-                    clearClipboard()
+                    clearClipboard(clipboardManager)
+                    copiedFromHere = false
                 }
 
             }.start()
@@ -484,63 +455,11 @@ class DetailsFragment : Fragment() {
         fragmentBinding.penaltyLayout.visibility = View.GONE
     }
 
-    // Check password crack time (custom result)
-    private fun passwordCrackTimeResult(crackTimeMilliSeconds: Long): String {
-        lateinit var result: String
-
-        // Tke days in:
-        // Month = 31, Year = 365
-
-        // Worst = less than/equal to 2 minutes
-        if (crackTimeMilliSeconds < TimeUnit.MINUTES.toMillis(2)
-            || crackTimeMilliSeconds == TimeUnit.MINUTES.toMillis(2)) {
-
-            result = "WORST"
-        }
-        // Weak = more than 2 minutes, less than/equal to 30 days
-        else if (crackTimeMilliSeconds > TimeUnit.MINUTES.toMillis(2)
-            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(30)) {
-
-            result = "WEAK"
-        }
-        // Medium = more than 30 days, less than/equal to 6 months
-        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(30)
-            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(186)) {
-
-            result = "MEDIUM"
-        }
-        // Strong = more than 6 months, less than/equal to 5 years
-        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(186)
-            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(1825)) {
-
-            result = "STRONG"
-        }
-        // Excellent = more than 5 years
-        else if (crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(1825)) {
-
-            result = "EXCELLENT"
-        }
-
-        return result
-    }
-
-    // Clear password from clipboard
-    private fun clearClipboard() {
-
-        if (Build.VERSION.SDK_INT >= 28) {
-            clipboardManager.clearPrimaryClip()
-        }
-        else {
-            clipboardManager.setPrimaryClip(ClipData.newPlainText(null, null))
-        }
-        copiedFromHere = false
-
-    }
-
     // Clear clipboard immediately when fragment destroyed
     override fun onDestroyView() {
         super.onDestroyView()
-        clearClipboard()
+        clearClipboard(clipboardManager)
+        copiedFromHere = false
         _binding = null
     }
 }

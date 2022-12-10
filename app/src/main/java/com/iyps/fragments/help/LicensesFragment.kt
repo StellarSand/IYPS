@@ -27,7 +27,7 @@ import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.activities.HelpActivity
 import com.iyps.databinding.FragmentLicensesBinding
-import com.iyps.fragments.help.AboutFragment.Companion.openURL
+import com.iyps.utils.IntentUtils.Companion.openURL
 
 class LicensesFragment : Fragment() {
 
