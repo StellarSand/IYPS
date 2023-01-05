@@ -47,7 +47,7 @@
 
         </com.google.android.material.appbar.MaterialToolbar>
 
-        <com.google.android.material.tabs.TabLayout
+        <!--<com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -73,10 +73,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/file"/>
 
-        </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.tabs.TabLayout>-->
 
-        <View
-            android:id="@+id/divider"
+       <View
+            android:id="@+id/top_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/cardStrokeColor"/>
@@ -93,9 +93,28 @@
         android:backgroundTint="@color/colorAccent"
         android:layout_marginStart="@dimen/margin_25"
         android:layout_marginEnd="@dimen/margin_25"
-        android:layout_marginBottom="@dimen/margin_16"
+        android:layout_marginBottom="110dp"
         android:text="@string/select_file_btn"
         android:textSize="@dimen/text_17"
         android:textColor="@color/snackbarTextColor"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/backgroundColor"
+        app:itemIconTint="@color/colorControlNormal"
+        app:itemTextAppearanceActive="@style/NavTextActive"
+        app:itemTextAppearanceInactive="@style/NavTextInactive"
+        app:menu="@menu/menu_bottom_nav">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_anchor="@id/bottom_nav"
+            android:background="@color/cardStrokeColor"/>
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

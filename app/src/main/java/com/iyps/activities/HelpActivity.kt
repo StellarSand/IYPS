@@ -42,8 +42,9 @@ class HelpActivity : AppCompatActivity() {
         setSupportActionBar(activityBinding.toolbarMain)
         activityBinding.toolbarMain.setNavigationIcon(R.drawable.ic_back)
         activityBinding.toolbarMain.setNavigationOnClickListener { onBackPressed() }
+        activityBinding.bottomNav.visibility = View.GONE
 
-        activityBinding.tabLayout.visibility = View.GONE
+        //activityBinding.tabLayout.visibility = View.GONE
         activityBinding.selectButton.visibility = View.GONE
 
         intent.getStringExtra("fragment")?.let { displayFragment(it) }

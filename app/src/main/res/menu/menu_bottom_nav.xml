@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/password"
+        android:enabled="true"
+        android:icon="@drawable/ic_password"
+        android:title="@string/password"/>
+    <item
+        android:id="@+id/file"
+        android:enabled="true"
+        android:icon="@drawable/ic_file"
+        android:title="@string/file"/>
+</menu>

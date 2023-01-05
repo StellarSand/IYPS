@@ -70,12 +70,29 @@ class MainActivity : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
 
         setSupportActionBar(activityBinding.toolbarMain)
+        
+        activityBinding.topDivider.visibility = View.GONE
 
         // Default fragment
-        displayFragment(0)
+        displayFragment(R.id.password)
 
         // On click tab
-        activityBinding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+        activityBinding.bottomNav.setOnItemSelectedListener { item ->
+            when(item.itemId) {
+                R.id.password -> {
+                    // Respond to navigation item 1 click
+                    displayFragment(R.id.password)
+                    true
+                }
+                R.id.file -> {
+                    // Respond to navigation item 2 click
+                    displayFragment(R.id.file)
+                    true
+                }
+                else -> false
+            }
+        }
+        /*activityBinding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 displayFragment(tab.position)
             }
@@ -83,24 +100,24 @@ class MainActivity : AppCompatActivity() {
             override fun onTabUnselected(tab: TabLayout.Tab) {}
             override fun onTabReselected(tab: TabLayout.Tab) {}
         })
-
+*/
     }
 
     // Setup fragments
-    fun displayFragment(tab: Int) {
+    fun displayFragment(navItem: Int) {
 
         val transaction = supportFragmentManager.beginTransaction()
 
-        when (tab) {
+        when (navItem) {
 
-            0 -> {
+            R.id.password -> {
                 fragment = PasswordFragment()
                 transaction.setCustomAnimations(R.anim.slide_from_start, R.anim.slide_to_end,
                                                 R.anim.slide_from_end, R.anim.slide_to_start)
                 activityBinding.selectButton.visibility = View.GONE
             }
 
-            1 -> {
+            R.id.file -> {
                 fragment = FileFragment()
                 transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
                                                 R.anim.slide_from_start, R.anim.slide_to_end)

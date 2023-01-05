@@ -41,9 +41,19 @@
         <item name="fontFamily">@font/roboto_medium</item>
     </style>
 
-    <!--Medium bold text style-->
+    <!--Tab text style-->
     <style name="TabText" parent="MediumBoldText">
         <item name="android:textSize">@dimen/text_17</item>
+    </style>
+
+    <!--Bottom Nav text style-->
+    <style name="NavTextActive" parent="MediumBoldText">
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+
+    <style name="NavTextInactive" parent="TextAppearance.Material3.ActionBar.Subtitle">
+        <item name="android:textSize">@dimen/text_15</item>
+        <item name="android:textColor">@color/colorControlNormal</item>
     </style>
 
     <!--#########################################################################################-->
