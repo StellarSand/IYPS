@@ -26,7 +26,6 @@ import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.databinding.ActivityMainBinding
 import com.iyps.fragments.help.AboutFragment
-import com.iyps.fragments.help.ScoreHelpFragment
 
 class HelpActivity : AppCompatActivity() {
 
@@ -58,10 +57,10 @@ class HelpActivity : AppCompatActivity() {
 
         when (fragmentName) {
 
-            "Score Help" -> {
+            /*"Score Help" -> {
                 supportActionBar?.title = getString(R.string.help)
                 fragment = ScoreHelpFragment()
-            }
+            }*/
             "About" -> {
                 supportActionBar?.title = getString(R.string.about)
                 fragment = AboutFragment()

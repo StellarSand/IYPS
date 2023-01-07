@@ -58,17 +58,6 @@
     <string name="centuries">Centuries</string>
     <string name="warning">Warning</string>
     <string name="suggestions">Suggestions</string>
-    <string name="score">Score</string>
-    <string name="base">• Base</string>
-    <string name="length">• Length</string>
-    <string name="upper_case">• Upper case</string>
-    <string name="numbers">• Numbers</string>
-    <string name="special_char">• Special characters</string>
-    <string name="penalty">• Penalty</string>
-    <string name="all_upper_penalty">• All upper case penalty</string>
-    <string name="all_lower_penalty">• All lower case penalty</string>
-    <string name="all_num_penalty">• All numbers penalty</string>
-    <string name="all_special_char_penalty">• All special characters penalty</string>
 
     <!--#########################################################################################-->
 
@@ -76,47 +65,6 @@
     <string name="select_file_text">
         Select a text file with multiple passwords. Each password must be on a separate line in the file.</string>
     <string name="select_file_btn">Select file</string>
-
-    <!--#########################################################################################-->
-
-    <!--Score help fragment-->
-    <string name="how_score_calculated">How is the score calculated?</string>
-    <string name="score_explained">
-        • If password has minimum 6 characters, then Base score = 10.
-        \n
-        \n• If password has minimum 6 characters, then Length score = 3 points for each extra character added.
-        \n
-        \n• Upper case score = 4 points for each upper case character.
-        \n
-        \n• Numbers score = 5 points for each number.
-        \n
-        \n• Special character score = 5 points for each special character.
-        \n
-        \n• Penalty score = If characters in the whole password are all upper case/lower case/numbers/special characters, then 15 points are subtracted from total score.
-        \n
-        \n• If password does not have minimum 6 characters, score is 0.
-    </string>
-    <string name="example">Example:</string>
-    <string name="test_password_123">1. For TestPassword123 :</string>
-    <string name="test_password_123_score">
-        • Base = 10
-        \n
-        \n• Length = 30 (3 points each for 10 extra characters added.)
-        \n
-        \n• Upper case = 8 (4 points each for 2 upper case characters.)
-        \n
-        \n• Numbers = 15 (5 points each for 3 numbers.)
-    </string>
-    <string name="pass_123456789">2. For 123456789 :</string>
-    <string name="pass_123456789_score">
-        • Base = 10
-        \n
-        \n• Length = 12 (3 points each for 4 extra characters added.)
-        \n
-        \n• Numbers = 45 (5 points each for 9 numbers.)
-        \n
-        \n• Penalty = -15 (All characters are numbers.)
-    </string>
 
     <!--#########################################################################################-->
 

@@ -63,17 +63,6 @@
     <string name="centuries">Eeuwenouder</string>
     <string name="warning">Waarschuwing</string>
     <string name="suggestions">Suggesties</string>
-    <string name="score">Scoren</string>
-    <string name="base">• Baseren</string>
-    <string name="length">• Lengte</string>
-    <string name="upper_case">• hoofdletters</string>
-    <string name="numbers">• Cijfers</string>
-    <string name="special_char">• Speciale tekens</string>
-    <string name="penalty">• Boete</string>
-    <string name="all_upper_penalty">• Alle hoofdletters boete</string>
-    <string name="all_lower_penalty">• Alle kleine letters boete</string>
-    <string name="all_num_penalty">• Alle nummers straf</string>
-    <string name="all_special_char_penalty">• Alle speciale tekens straf</string>
 
     <!--#########################################################################################-->
 
@@ -81,47 +70,6 @@
     <string name="select_file_text">
         Selecteer een tekstbestand met meerdere wachtwoorden. Elk wachtwoord moet op een afzonderlijke regel in het bestand staan.</string>
     <string name="select_file_btn">Selecteer bestand</string>
-
-    <!--#########################################################################################-->
-
-    <!--Score help fragment-->
-    <string name="how_score_calculated">Hoe wordt de score berekend?</string>
-    <string name="score_explained">
-        • Als het wachtwoord minimaal 6 tekens heeft, dan is Basisscore = 10.
-        \n
-        \n• Als het wachtwoord minimaal 6 tekens heeft, dan is de lengtescore = 3 punten voor elk extra teken dat wordt toegevoegd.
-        \n
-        \n• Score in hoofdletters = 4 punten voor elk hoofdletterteken.
-        \n
-        \n• Nummerscore = 5 punten voor elk nummer.
-        \n
-        \n• Speciale karakterscore = 5 punten voor elk speciaal karakter.
-        \n
-        \n• Strafscore = Als tekens in het hele wachtwoord allemaal hoofdletters/kleine letters/cijfers/speciale tekens zijn, worden 15 punten afgetrokken van de totale score.
-        \n
-        \n• Als het wachtwoord niet uit minimaal 6 tekens bestaat, is de score 0.
-    </string>
-    <string name="example">Voorbeeld:</string>
-    <string name="test_password_123">1. Voor TestPassword123 :</string>
-    <string name="test_password_123_score">
-        • Basis = 10
-        \n
-        \n• Lengte = 30 (3 punten elk voor 10 extra karakters toegevoegd.)
-        \n
-        \n• Hoofdletters = 8 (4 punten elk voor 2 hoofdletters.)
-        \n
-        \n• Cijfers = 15 (5 punten elk voor 3 nummers.)
-    </string>
-    <string name="pass_123456789">2. Voor 123456789 :</string>
-    <string name="pass_123456789_score">
-        • Basis = 10
-        \n
-        \n• Lengte = 12 (3 punten elk voor 4 extra karakters toegevoegd.)
-        \n
-        \n• Cijfers = 45 (5 punten elk voor 9 nummers.)
-        \n
-        \n• Straf = -15 (Alle tekens zijn cijfers.)
-    </string>
 
     <!--#########################################################################################-->
 

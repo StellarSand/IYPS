@@ -37,7 +37,6 @@ import androidx.fragment.app.Fragment
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.tabs.TabLayout
 import com.iyps.R
 import com.iyps.databinding.ActivityMainBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
@@ -67,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         /*########################################################################################*/
 
         // Disable screenshots and screen recordings
-        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
+        //window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
 
         setSupportActionBar(activityBinding.toolbarMain)
         
@@ -78,33 +77,27 @@ class MainActivity : AppCompatActivity() {
 
         // On click tab
         activityBinding.bottomNav.setOnItemSelectedListener { item ->
+            
             when(item.itemId) {
+                
                 R.id.password -> {
-                    // Respond to navigation item 1 click
                     displayFragment(R.id.password)
                     true
                 }
+                
                 R.id.file -> {
-                    // Respond to navigation item 2 click
                     displayFragment(R.id.file)
                     true
                 }
+                
                 else -> false
             }
         }
-        /*activityBinding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-            override fun onTabSelected(tab: TabLayout.Tab) {
-                displayFragment(tab.position)
-            }
-
-            override fun onTabUnselected(tab: TabLayout.Tab) {}
-            override fun onTabReselected(tab: TabLayout.Tab) {}
-        })
-*/
+        
     }
 
     // Setup fragments
-    fun displayFragment(navItem: Int) {
+    private fun displayFragment(navItem: Int) {
 
         val transaction = supportFragmentManager.beginTransaction()
 

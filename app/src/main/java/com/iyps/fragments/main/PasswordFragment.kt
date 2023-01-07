@@ -19,25 +19,22 @@
 
 package com.iyps.fragments.main
 
-import com.nulabinc.zxcvbn.Zxcvbn
-import android.os.CountDownTimer
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import com.iyps.R
-import android.text.TextWatcher
-import android.text.Editable
 import android.content.ClipboardManager
 import android.content.Context
-import android.content.Intent
+import android.os.Bundle
+import android.os.CountDownTimer
+import android.text.Editable
+import android.text.TextWatcher
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.iyps.activities.HelpActivity
+import com.iyps.R
 import com.iyps.databinding.FragmentPasswordBinding
 import com.iyps.utils.IntentUtils.Companion.clearClipboard
 import com.iyps.utils.PasswordUtils.Companion.passwordCrackTimeResult
 import com.iyps.utils.PasswordUtils.Companion.replaceStrings
-import java.lang.StringBuilder
+import com.nulabinc.zxcvbn.Zxcvbn
 import java.util.Locale
 
 class PasswordFragment : Fragment() {
@@ -46,7 +43,6 @@ class PasswordFragment : Fragment() {
     private val fragmentBinding get() = _binding!!
     private lateinit var zxcvbn: Zxcvbn
     private lateinit var suggestionText: StringBuilder
-    private var isExpanded = false
     private var wait = 0
     private var clearClipboardTimer: CountDownTimer? = null
     private lateinit var clipboardManager: ClipboardManager
@@ -59,19 +55,6 @@ class PasswordFragment : Fragment() {
         private var strongMeterColor = 0
         private var excellentMeterColor = 0
         private var emptyMeterColor = 0
-        private var baseScore = 0
-        private var lengthScore = 0
-        private var upperCaseScore = 0
-        private var numScore = 0
-        private var specialCharScore = 0
-        private var penaltyScore = 0
-        private var totalScore = 0
-        private var lengthCount = 0
-        private var upperCaseCount = 0
-        private var lowerCaseCount = 0
-        private var numCount = 0
-        private var specialCharCount = 0
-        private var passwordLength = 0
         private var worst: String? = null
         private var weak: String? = null
         private var medium: String? = null
@@ -82,11 +65,6 @@ class PasswordFragment : Fragment() {
         private var mediumPassWarning: String? = null
         private var not_applicable: String? = null
         private var passwordString: String? = null
-        private var zero: String? = null
-        private const val lengthScoreMultiplier = 3
-        private const val upperCaseScoreMultiplier = 4
-        private const val numScoreMultiplier = 5
-        private const val specialCharScoreMultiplier = 5
     }
 
     override fun onCreateView(inflater: LayoutInflater,
@@ -103,17 +81,6 @@ class PasswordFragment : Fragment() {
         suggestionText = StringBuilder()
         clipboardManager = requireActivity().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         wait = 0
-        baseScore = 0
-        lengthScore = 0
-        upperCaseScore = 0
-        numScore = 0
-        specialCharScore = 0
-        penaltyScore = 0
-        totalScore = 0
-        lengthCount = 0
-        upperCaseCount = 0
-        numCount = 0
-        specialCharCount = 0
         worst = getString(R.string.worst)
         weak = getString(R.string.weak)
         medium = getString(R.string.medium)
@@ -123,7 +90,6 @@ class PasswordFragment : Fragment() {
         weakPassWarning = getString(R.string.weak_pass_warning)
         mediumPassWarning = getString(R.string.medium_pass_warning)
         not_applicable = getString(R.string.not_applicable)
-        zero = getString(R.string.zero)
         emptyMeterColor = getColor(R.color.hintColor)
         worstMeterColor = getColor(R.color.worstMeterColor)
         weakMeterColor = getColor(R.color.weakMeterColor)
@@ -134,36 +100,6 @@ class PasswordFragment : Fragment() {
         /*########################################################################################*/
 
         fragmentBinding.passwordText.addTextChangedListener(passwordTextWatcher)
-
-        // On click score text view, expand layout
-        fragmentBinding.scoreTextView.setOnClickListener {
-
-            if (!isExpanded) {
-                fragmentBinding.expandedLayout.visibility = View.VISIBLE
-                isExpanded = true
-                fragmentBinding.scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(
-                    R.drawable.ic_up_arrow,
-                    0,
-                    0,
-                    0)
-            }
-            else {
-                fragmentBinding.expandedLayout.visibility = View.GONE
-                isExpanded = false
-                fragmentBinding.scoreTextView.setCompoundDrawablesRelativeWithIntrinsicBounds(
-                    R.drawable.ic_down_arrow,
-                    0,
-                    0,
-                    0)
-            }
-        }
-
-        // On click score help icon
-        fragmentBinding.scoreHelp.setOnClickListener {
-            startActivity(Intent(requireActivity(), HelpActivity::class.java)
-                          .putExtra("fragment", "Score Help"))
-        }
-
 
         // Clear clipboard after 1 minute if copied from this app
         clipboardManager.addPrimaryClipChangedListener {
@@ -211,7 +147,6 @@ class PasswordFragment : Fragment() {
                 override fun onFinish() {
 
                     passwordString = fragmentBinding.passwordText.text.toString()
-                    passwordLength = passwordString!!.length
                     wait = 400
 
                     // If edit text is not empty
@@ -219,7 +154,11 @@ class PasswordFragment : Fragment() {
 
                         val strength = zxcvbn.measure(passwordString)
 
-                        val timeToCrackString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
+                        val offlineSlowCrackTimeString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
+                        val offlineFastCrackTimeString = strength.crackTimesDisplay.offlineFastHashing1e10PerSecond
+                        val onlineSlowCrackTimeString  = strength.crackTimesDisplay.onlineThrottling100perHour
+                        val onlineFastCrackTimeString = strength.crackTimesDisplay.onlineNoThrottling10perSecond
+                        
                         val crackTimeMilliSeconds: Long = (strength.crackTimeSeconds
                                                 .offlineSlowHashing1e4perSecond * 1000)
                                                 .toLong()
@@ -235,9 +174,8 @@ class PasswordFragment : Fragment() {
 
                         }
 
-                        // Estimated time to crack
-                        assert(timeToCrackString != null)
-                        fragmentBinding.timeToCrackSubtitle.text = replaceStrings(timeToCrackString, this@PasswordFragment)
+                        // Basic estimated time to crack
+                        fragmentBinding.offlineSlowSubtitle.text = replaceStrings(offlineSlowCrackTimeString, this@PasswordFragment)
 
                         // Warning
                         // If empty, set to custom warning message
@@ -270,14 +208,22 @@ class PasswordFragment : Fragment() {
                         else {
                             fragmentBinding.suggestionsSubtitle.text = getString(R.string.not_applicable)
                         }
-
-                        // Score
-                        score(passwordString, passwordLength)
+    
+                        // Advanced estimated time to crack
+                        fragmentBinding.offlineFastSubtitle.text = replaceStrings(offlineFastCrackTimeString, this@PasswordFragment)
+                        fragmentBinding.onlineFastSubtitle.text = replaceStrings(onlineFastCrackTimeString, this@PasswordFragment)
+                        fragmentBinding.onlineSlowSubtitle.text = replaceStrings(onlineSlowCrackTimeString, this@PasswordFragment)
+    
+                        // Guesses
+                        fragmentBinding.guessesSubtitle.text = strength.guesses.toString()
+                        
+                        // Order of magnitude of guesses
+                        fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.toString()
+                        
                     }
                     // If edit text is empty or cleared, reset everything
                     else {
                         detailsReset()
-                        scoreReset()
                     }
                 }
             }.start()
@@ -375,117 +321,13 @@ class PasswordFragment : Fragment() {
         fragmentBinding.excellentMeter.setProgressCompat(100, true)
     }
 
-    // Password score
-    private fun score(passwordString: String?, passwordStringLength: Int) {
-
-        // Scoring system:
-        // If password length greater than 5, base score = 10, else 0
-        // If password length greater than 5, length score = 3 points for each extra character, else 0
-        // Upper case score = 4 points for each upper case char
-        // Numbers score = 5 points for each number
-        // Special char = 5 points for each special char
-        // Penalty = if all upper case/lower case/numbers/special char, subtract 15 points total
-
-        if (passwordStringLength > 5) {
-
-            // Base score
-            baseScore = 10
-            fragmentBinding.baseScore.text = baseScore.toString()
-
-            for (i in 0 until passwordStringLength) {
-
-                if (Character.isUpperCase(passwordString!![i])) {
-                    upperCaseCount++
-                }
-                else if (Character.isLowerCase(passwordString[i])) {
-                    lowerCaseCount++
-                }
-                else if (Character.isDigit(passwordString[i])) {
-                    numCount++
-                }
-                else if (!Character.isDigit(passwordString[i])
-                            && !Character.isLetter(passwordString[i])
-                            && !Character.isWhitespace(passwordString[i])) {
-                    specialCharCount++
-                }
-            }
-
-            for (j in 0 until (passwordStringLength - 5)) {
-                lengthCount++
-            }
-
-            if (upperCaseCount == passwordStringLength) {
-                penaltyScore = -15
-                fragmentBinding.penaltyTitle.text = getString(R.string.all_upper_penalty)
-            }
-            else if (lowerCaseCount == passwordStringLength) {
-                penaltyScore = -15
-                fragmentBinding.penaltyTitle.text = getString(R.string.all_lower_penalty)
-            }
-            else if (numCount == passwordStringLength) {
-                penaltyScore = -15
-                fragmentBinding.penaltyTitle.text = getString(R.string.all_num_penalty)
-            }
-            else if (specialCharCount == passwordStringLength) {
-                penaltyScore = -15
-                fragmentBinding.penaltyTitle.text = getString(R.string.all_special_char_penalty)
-            }
-            else {
-                penaltyScore = 0
-                fragmentBinding.penaltyTitle.text = zero
-            }
-
-            lengthScore = lengthScoreMultiplier * lengthCount
-            upperCaseScore = upperCaseScoreMultiplier * upperCaseCount
-            numScore = numScoreMultiplier * numCount
-            specialCharScore = specialCharScoreMultiplier * specialCharCount
-            totalScore = baseScore + lengthScore + upperCaseScore + numScore + specialCharScore + penaltyScore
-        }
-        // If password length less than 5, reset all scores to 0
-        else {
-            scoreReset()
-        }
-
-        // Length score
-        fragmentBinding.lengthScore.text = lengthScore.toString()
-        lengthCount = 0
-        lengthScore = 0
-
-        // Upper case score
-        fragmentBinding.upperCaseScore.text = upperCaseScore.toString()
-        upperCaseCount = 0
-        upperCaseScore = 0
-
-        // Numbers score
-        fragmentBinding.numScore.text = numScore.toString()
-        numCount = 0
-        numScore = 0
-
-        // Special char score
-        fragmentBinding.specialCharScore.text = specialCharScore.toString()
-        specialCharCount = 0
-        specialCharScore = 0
-
-        // Penalty score
-        if (penaltyScore != 0) {
-            fragmentBinding.penaltyLayout.visibility = View.VISIBLE
-            fragmentBinding.penaltyScore.text = penaltyScore.toString()
-        }
-        else {
-            fragmentBinding.penaltyLayout.visibility = View.GONE
-        }
-        penaltyScore = 0
-        lowerCaseCount = 0
-
-        // Total score
-        fragmentBinding.totalScore.text = totalScore.toString()
-        totalScore = 0
-    }
-
     // Reset details
     private fun detailsReset() {
         fragmentBinding.strengthSubtitle.text = not_applicable
-        fragmentBinding.timeToCrackSubtitle.text = not_applicable
+        fragmentBinding.offlineSlowSubtitle.text = not_applicable
+        fragmentBinding.offlineFastSubtitle.text = not_applicable
+        fragmentBinding.onlineSlowSubtitle.text = not_applicable
+        fragmentBinding.onlineFastSubtitle.text = not_applicable
         fragmentBinding.warningSubtitle.text = not_applicable
         fragmentBinding.suggestionsSubtitle.text = not_applicable
 
@@ -501,18 +343,6 @@ class PasswordFragment : Fragment() {
         fragmentBinding.strongMeter.setProgressCompat(0, true)
         fragmentBinding.excellentMeter.setProgressCompat(0, true)
 
-    }
-
-    // Reset score
-    private fun scoreReset() {
-        fragmentBinding.totalScore.text = zero
-        fragmentBinding.lengthScore.text = zero
-        fragmentBinding.baseScore.text = zero
-        fragmentBinding.upperCaseScore.text = zero
-        fragmentBinding.numScore.text = zero
-        fragmentBinding.specialCharScore.text = zero
-        fragmentBinding.penaltyScore.text = zero
-        fragmentBinding.penaltyLayout.visibility = View.GONE
     }
 
     // Clear clipboard immediately when fragment destroyed

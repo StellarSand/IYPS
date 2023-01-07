@@ -64,17 +64,6 @@
     <string name="centuries">Secoli</string>
     <string name="warning">Avvertimento</string>
     <string name="suggestions">Suggerimenti</string>
-    <string name="score">Punteggio</string>
-    <string name="base">• Base</string>
-    <string name="length">• Lunghezza</string>
-    <string name="upper_case">• Maiuscole</string>
-    <string name="numbers">• Numeri</string>
-    <string name="special_char">• Caratteri speciali</string>
-    <string name="penalty">• Pena</string>
-    <string name="all_upper_penalty">• Penalit\u00E0 tutte maiuscole</string>
-    <string name="all_lower_penalty">• Penalit\u00E0 tutte minuscole</string>
-    <string name="all_num_penalty">• Penalit\u00E0 tutti numeri</string>
-    <string name="all_special_char_penalty">• Penalit\u00E0 tutti caratteri speciali</string>
 
     <!--#########################################################################################-->
 
@@ -84,45 +73,6 @@
     <string name="select_file_btn">Seleziona file</string>
 
     <!--#########################################################################################-->
-
-    <!--Score help fragment-->
-    <string name="how_score_calculated">Come viene calcolato il punteggio?</string>
-    <string name="score_explained">
-        • Se la password ha almeno 6 caratteri, allora il punteggio base = 10.
-        \n
-        \n• Se la password ha almeno 6 caratteri, allora il punteggio lunghezza = 3 punti per ogni carattere extra aggiunto.
-        \n
-        \n• Punteggio maiuscole = 4 punti per ogni carattere maiuscolo.
-        \n
-        \n• Punteggio numeri = 5 punti per ogni numero.
-        \n
-        \n• Punteggio caratteri speciali = 4 punti per ogni carattere speciale.
-        \n
-        \n• Punteggio di penalit\u00E0 = Se i caratteri nell\'intera password sono tutti maiuscoli/minuscoli/numeri/caratteri speciali, allora 15 punti vengono sottratti dal punteggio totale.
-        \n
-        \n• Se la password non ha almeno 6 caratteri, il punteggio \u00E8 0.
-    </string>
-    <string name="example">Esempio:</string>
-    <string name="test_password_123">1. Per TestPassword123 :</string>
-    <string name="test_password_123_score">
-        • Base = 10
-        \n
-        \n• Lunghezza = 30 (3 punti ciascuno per i 10 caratteri extra aggiunti.)
-        \n
-        \n• Maiuscole = 8 (4 punti ciascuno per i 2 caratteri maiuscoli.)
-        \n
-        \n• Numeri = 15 (5 punti ciascuno per i 3 numeri.)
-    </string>
-    <string name="pass_123456789">2. Per 123456789 :</string>
-    <string name="pass_123456789_score">
-        • Base = 10
-        \n
-        \n• Lunghezza = 12 (3 punti ciascuno per i 4 caratteri extra aggiunti.)
-        \n
-        \n• Numberi = 45 (5 punti ciascuno per i 9 numeri.)
-        \n
-        \n• Penalit\u00E0 = -15 (Tutti i caratteri sono numeri.)
-    </string>
 
     <!--About fragment-->
     <string name="authors">Autori</string>

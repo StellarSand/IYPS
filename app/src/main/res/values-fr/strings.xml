@@ -67,17 +67,6 @@
     <string name="centuries">Des si\u00E8cles</string>
     <string name="warning">Avertissement </string>
     <string name="suggestions">Suggestions</string>
-    <string name="score">Score</string>
-    <string name="base">• Base</string>
-    <string name="length">• Longueur</string>
-    <string name="upper_case">• Haut de casse</string>
-    <string name="numbers">• Nombres</string>
-    <string name="special_char">• Caract\u00E8res sp\u00E9ciaux</string>
-    <string name="penalty">• Peine</string>
-    <string name="all_upper_penalty">• Toutes les p\u00E9nalit\u00E9s en majuscules</string>
-    <string name="all_lower_penalty">• Toutes les p\u00E9nalit\u00E9s en minuscules</string>
-    <string name="all_num_penalty">• P\u00E9nalit\u00E9 pour tous les num\u00E9ros</string>
-    <string name="all_special_char_penalty">• Pénalit\u00E9 pour tous les caract\u00E8res sp\u00E9ciaux</string>
 
     <!--#########################################################################################-->
 
@@ -85,47 +74,6 @@
     <string name="select_file_text">
         S\u00E9lectionnez un fichier texte avec plusieurs mots de passe. Chaque mot de passe doit \u00EAtre sur une ligne distincte dans le fichier.</string>
     <string name="select_file_btn">Choisir le dossier</string>
-
-    <!--#########################################################################################-->
-
-    <!--Score help fragment-->
-    <string name="how_score_calculated">Comment est calcul\u00E9 le score ?</string>
-    <string name="score_explained">
-        • Si le mot de passe comporte au moins 6 caract\u00E8res, alors Score de base = 10.
-        \n
-        \n• Si le mot de passe comporte au moins 6 caract\u00E8res, alors le score de longueur = 3 points pour chaque caract\u00E8re suppl\u00E9mentaire ajout\u00E9.
-        \n
-        \n• Score majuscule = 4 points pour chaque caract\u00E8re en majuscule.
-        \n
-        \n• Score des nombres = 5 points pour chaque nombre.
-        \n
-        \n• Score de caract\u00E8re sp\u00E9cial = 5 points pour chaque caract\u00E8re sp\u00E9cial.
-        \n
-        \n• Score de p\u00E9nalit\u00E9 = Si les caract\u00E8res du mot de passe entier sont tous en majuscules/minuscules/chiffres/caract\u00E8res sp\u00E9ciaux, alors 15 points sont soustraits du score total.
-        \n
-        \n• Si le mot de passe n\'a pas un minimum de 6 caract\u00E8res, le score est 0.
-    </string>
-    <string name="example">Exemple:</string>
-    <string name="test_password_123">1. Pour TestPassword123 :</string>
-    <string name="test_password_123_score">
-        • Socle = 10
-        \n
-        \n• Longueur = 30 (3 points chacun pour 10 caract\u00E8res suppl\u00E9mentaires ajout\u00E9s.)
-        \n
-        \n• Majuscule = 8 (4 points chacun pour 2 caract\u00E8res majuscules.)
-        \n
-        \n• Nombres = 15 (5 points chacun pour 3 nombres.)
-    </string>
-    <string name="pass_123456789">2. Pour 123456789 :</string>
-    <string name="pass_123456789_score">
-        • Socle = 10
-        \n
-        \n• Longueur = 12 (3 points chacun pour 4 caract\u00E8res suppl\u00E9mentaires ajout\u00E9s.)
-        \n
-        \n• Nombres = 45 (5 points chacun pour 9 nombres.)
-        \n
-        \n• P\u00E9nalit\u00E9 = -15 (Tous les caract\u00E8res sont des nombres.)
-    </string>
 
     <!--#########################################################################################-->
 

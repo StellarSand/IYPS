@@ -47,34 +47,6 @@
 
         </com.google.android.material.appbar.MaterialToolbar>
 
-        <!--<com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            app:tabGravity="fill"
-            app:tabIndicator="@drawable/shape_drag_handle"
-            app:tabIndicatorHeight="3.5dp"
-            app:tabIndicatorAnimationMode="elastic"
-            app:tabIndicatorFullWidth="false"
-            app:tabIndicatorColor="@color/colorAccent"
-            app:tabSelectedTextColor="@color/textTitleColor"
-            app:tabTextAppearance="@style/TabText"
-            app:tabTextColor="@color/colorControlNormal"
-            app:tabRippleColor="@android:color/transparent">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/password"/>
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/file"/>
-
-        </com.google.android.material.tabs.TabLayout>-->
-
        <View
             android:id="@+id/top_divider"
             android:layout_width="match_parent"
