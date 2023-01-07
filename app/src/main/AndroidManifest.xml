@@ -35,6 +35,7 @@
         <activity
             android:name=".activities.MainActivity"
             android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustNothing"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
