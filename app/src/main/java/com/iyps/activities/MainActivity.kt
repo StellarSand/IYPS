@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
         /*########################################################################################*/
 
         // Disable screenshots and screen recordings
-        //window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
+        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
 
         setSupportActionBar(activityBinding.toolbarMain)
         
