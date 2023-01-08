@@ -65,7 +65,7 @@
         android:backgroundTint="@color/colorAccent"
         android:layout_marginStart="@dimen/margin_25"
         android:layout_marginEnd="@dimen/margin_25"
-        android:layout_marginBottom="110dp"
+        android:layout_marginBottom="100dp"
         android:text="@string/select_file_btn"
         android:textSize="@dimen/text_17"
         android:textColor="@color/snackbarTextColor"/>
@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_gravity="bottom"
-        android:background="@color/backgroundColor"
+        android:background="@color/bottomSheetColor"
         app:itemIconTint="@color/colorControlNormal"
         app:itemTextAppearanceActive="@style/NavTextActive"
         app:itemTextAppearanceInactive="@style/NavTextInactive"

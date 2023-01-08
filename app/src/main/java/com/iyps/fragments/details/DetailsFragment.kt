@@ -26,6 +26,8 @@ import android.os.CountDownTimer
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
@@ -98,6 +100,11 @@ class DetailsFragment : Fragment() {
         /*########################################################################################*/
 
         fragmentBinding.passwordBox.visibility = View.GONE
+    
+        // Remove 80dp bottom margin in scrollview
+        val layoutParams = fragmentBinding.scrollview.layoutParams as (LinearLayout.LayoutParams)
+        layoutParams.bottomMargin = 100
+        fragmentBinding.scrollview.layoutParams = layoutParams
 
         passwordString = (requireActivity() as DetailsActivity).passwordLine
 

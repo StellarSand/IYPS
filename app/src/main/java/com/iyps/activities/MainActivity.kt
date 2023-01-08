@@ -94,6 +94,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
         
+        activityBinding.bottomNav.setOnItemReselectedListener {}
+        
     }
 
     // Setup fragments
@@ -220,7 +222,7 @@ class MainActivity : AppCompatActivity() {
                             .setAnchorView(activityBinding.selectButton)
                             .show()
                 }
-                // On click deny adn don't ask again
+                // On click deny and don't ask again
                 else {
                     Snackbar.make(activityBinding.coordinatorLayout,
                                   getString(R.string.read_files_perm_blocked),

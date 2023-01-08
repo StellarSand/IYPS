@@ -47,9 +47,9 @@ class DetailsActivity : AppCompatActivity() {
         setSupportActionBar(activityBinding.toolbarMain)
         supportActionBar?.title = passwordLine
         activityBinding.toolbarMain.setNavigationIcon(R.drawable.ic_back)
-        activityBinding.toolbarMain.setNavigationOnClickListener { onBackPressed() }
+        activityBinding.toolbarMain.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
 
-        //activityBinding.tabLayout.visibility = View.GONE
+        activityBinding.bottomNav.visibility = View.GONE
         activityBinding.selectButton.visibility = View.GONE
 
         supportFragmentManager.beginTransaction()

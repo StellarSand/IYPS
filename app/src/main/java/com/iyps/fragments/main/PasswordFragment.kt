@@ -325,11 +325,13 @@ class PasswordFragment : Fragment() {
     private fun detailsReset() {
         fragmentBinding.strengthSubtitle.text = not_applicable
         fragmentBinding.offlineSlowSubtitle.text = not_applicable
+        fragmentBinding.warningSubtitle.text = not_applicable
+        fragmentBinding.suggestionsSubtitle.text = not_applicable
         fragmentBinding.offlineFastSubtitle.text = not_applicable
         fragmentBinding.onlineSlowSubtitle.text = not_applicable
         fragmentBinding.onlineFastSubtitle.text = not_applicable
-        fragmentBinding.warningSubtitle.text = not_applicable
-        fragmentBinding.suggestionsSubtitle.text = not_applicable
+        fragmentBinding.guessesSubtitle.text = not_applicable
+        fragmentBinding.orderMagnSubtitle.text = not_applicable
 
         fragmentBinding.worstMeter.setIndicatorColor(emptyMeterColor)
         fragmentBinding.weakMeter.setIndicatorColor(emptyMeterColor)
