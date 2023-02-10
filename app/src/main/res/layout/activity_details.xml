@@ -22,39 +22,39 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/coordinator_layout"
+    android:id="@+id/help_coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor">
 
-    <include layout="@layout/activity_host_fragment"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/select_button"
+    <include
+        layout="@layout/activity_host_fragment"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_gravity="bottom"
-        android:backgroundTint="@color/colorAccent"
-        android:layout_marginStart="@dimen/margin_25"
-        android:layout_marginEnd="@dimen/margin_25"
-        android:layout_marginBottom="100dp"
-        android:text="@string/select_file_btn"
-        android:textSize="@dimen/text_17"
-        android:textColor="@color/snackbarTextColor"/>
+        android:layout_height="match_parent"
+        android:layout_marginBottom="?attr/actionBarSize"/>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav"
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/bottomSheetColor"
-        app:itemIconTint="@color/colorControlNormal"
-        app:itemTextAppearanceActive="@style/NavTextActive"
-        app:itemTextAppearanceInactive="@style/NavTextInactive"
-        app:menu="@menu/menu_bottom_nav">
+        app:elevation="0dp">
 
-        <include layout="@layout/divider_horizontal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/cardStrokeColor"/>
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginBottom="@dimen/margin_2.5"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_back"
+            android:paddingStart="@dimen/margin_2.5"
+            android:paddingEnd="@dimen/margin_2.5"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

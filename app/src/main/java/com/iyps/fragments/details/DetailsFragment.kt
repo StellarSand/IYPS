@@ -27,7 +27,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
-import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
@@ -103,7 +102,7 @@ class DetailsFragment : Fragment() {
     
         // Remove 80dp bottom margin in scrollview
         val layoutParams = fragmentBinding.scrollview.layoutParams as (LinearLayout.LayoutParams)
-        layoutParams.bottomMargin = 100
+        layoutParams.bottomMargin = 40
         fragmentBinding.scrollview.layoutParams = layoutParams
 
         passwordString = (requireActivity() as DetailsActivity).passwordLine
@@ -131,7 +130,7 @@ class DetailsFragment : Fragment() {
         }
 
         // Basic estimated time to crack
-        fragmentBinding.offlineSlowSubtitle.text = replaceStrings(offlineSlowCrackTimeString, this@DetailsFragment)
+        fragmentBinding.tenKGuessesSubtitle.text = replaceStrings(offlineSlowCrackTimeString, this@DetailsFragment)
         
         // Warning
         // If empty, set to custom warning message
@@ -167,9 +166,9 @@ class DetailsFragment : Fragment() {
         }
     
         // Advanced estimated time to crack
-        fragmentBinding.offlineFastSubtitle.text = replaceStrings(offlineFastCrackTimeString, this@DetailsFragment)
-        fragmentBinding.onlineFastSubtitle.text = replaceStrings(onlineFastCrackTimeString, this@DetailsFragment)
-        fragmentBinding.onlineSlowSubtitle.text = replaceStrings(onlineSlowCrackTimeString, this@DetailsFragment)
+        fragmentBinding.tenBGuessesSubtitle.text = replaceStrings(offlineFastCrackTimeString, this@DetailsFragment)
+        fragmentBinding.tenGuessesSubtitle.text = replaceStrings(onlineFastCrackTimeString, this@DetailsFragment)
+        fragmentBinding.hundredGuessesSubtitle.text = replaceStrings(onlineSlowCrackTimeString, this@DetailsFragment)
     
         // Guesses
         fragmentBinding.guessesSubtitle.text = strength.guesses.toString()

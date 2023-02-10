@@ -35,6 +35,7 @@
     <color name="cardStrokeColor">#5F6267</color>
     <color name="rippleColor">#4D4D4D</color>
     <color name="scrollbarColor">#717274</color>
+    <color name="color_divider">#5F6267</color>
 
     <!--Strength meter colors-->
     <color name="weakMeterColor">#FF9800</color>

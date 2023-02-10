@@ -20,37 +20,34 @@
 package com.iyps.activities
 
 import android.os.Bundle
-import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.iyps.R
-import com.iyps.databinding.ActivityMainBinding
+import com.iyps.databinding.ActivityDetailsBinding
 import com.iyps.fragments.details.DetailsFragment
 
 class DetailsActivity : AppCompatActivity() {
 
-    private lateinit var activityBinding: ActivityMainBinding
+    private lateinit var activityBinding: ActivityDetailsBinding
     lateinit var passwordLine: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        activityBinding = ActivityMainBinding.inflate(layoutInflater)
+        activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
 
-        passwordLine = intent.getStringExtra("PwdLine").toString()
+        passwordLine = intent.getStringExtra("PwdLine")!!
 
         /*########################################################################################*/
 
         // Disable screenshots and screen recordings
         window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
-
-        setSupportActionBar(activityBinding.toolbarMain)
+    
+        setSupportActionBar(activityBinding.detailsToolbar)
+        
         supportActionBar?.title = passwordLine
-        activityBinding.toolbarMain.setNavigationIcon(R.drawable.ic_back)
-        activityBinding.toolbarMain.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
-
-        activityBinding.bottomNav.visibility = View.GONE
-        activityBinding.selectButton.visibility = View.GONE
+    
+        activityBinding.detailsToolbar.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.activity_host_fragment, DetailsFragment())

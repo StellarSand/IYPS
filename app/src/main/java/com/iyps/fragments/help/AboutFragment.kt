@@ -20,34 +20,42 @@
 package com.iyps.fragments.help
 
 import android.content.pm.PackageManager
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.iyps.R
+import com.iyps.activities.MainActivity
 import com.iyps.databinding.BottomSheetAuthorsBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
+import com.iyps.databinding.BottomSheetLicensesBinding
+import com.iyps.databinding.BottomSheetThemeBinding
 import com.iyps.databinding.FragmentAboutBinding
+import com.iyps.preferences.PreferenceManager
 import com.iyps.utils.IntentUtils.Companion.openURL
 
 class AboutFragment : Fragment() {
 
     private var _binding: FragmentAboutBinding? = null
     private val fragmentBinding get() = _binding!!
+    private lateinit var preferenceManager: PreferenceManager
     private lateinit var version: String
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
-        setHasOptionsMenu(true)
         _binding = FragmentAboutBinding.inflate(inflater, container, false)
         return fragmentBinding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    
+        preferenceManager = PreferenceManager(requireContext())
 
         // Version
         try {
@@ -60,6 +68,10 @@ class AboutFragment : Fragment() {
             e.printStackTrace()
         }
         fragmentBinding.version.text = version
+    
+        // Theme
+        fragmentBinding.theme
+            .setOnClickListener { themeBottomSheet() }
 
         // Authors
         fragmentBinding.authors
@@ -70,6 +82,11 @@ class AboutFragment : Fragment() {
             .setOnClickListener {
                 openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/graphs/contributors")
             }
+    
+        // Report an issue
+        fragmentBinding.reportIssue.setOnClickListener {
+            openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/issues")
+        }
 
         // Privacy policy
         fragmentBinding.privacyPolicy
@@ -79,14 +96,7 @@ class AboutFragment : Fragment() {
 
         // Licenses
         fragmentBinding.licenses
-            .setOnClickListener {
-                parentFragmentManager.beginTransaction()
-                    .setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
-                                         R.anim.slide_from_start, R.anim.slide_to_end)
-                    .replace(R.id.activity_host_fragment, LicensesFragment())
-                    .addToBackStack(null)
-                    .commit()
-            }
+            .setOnClickListener { licensesBottomSheet() }
 
         // View on GitHub
         fragmentBinding.viewOnGit
@@ -94,6 +104,59 @@ class AboutFragment : Fragment() {
                 openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS")
             }
 
+    }
+    
+    private fun themeBottomSheet() {
+        
+        val bottomSheetDialog = BottomSheetDialog(requireContext())
+        val bottomSheetBinding = BottomSheetThemeBinding.inflate(layoutInflater)
+        val headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.root)
+        
+        bottomSheetDialog.setContentView(bottomSheetBinding.root)
+        
+        // Title
+        headerBinding.bottomSheetTitle.setText(R.string.theme)
+        
+        // Show system default option only on SDK 29 and above
+        if (Build.VERSION.SDK_INT >= 29) {
+            bottomSheetBinding.optionDefault.visibility = View.VISIBLE
+        }
+        else {
+            bottomSheetBinding.optionDefault.visibility = View.GONE
+        }
+        
+        // Default checked radio
+        if (preferenceManager.getInt(PreferenceManager.THEME_PREF) == 0) {
+            
+            if (Build.VERSION.SDK_INT >= 29) {
+                preferenceManager.setInt(PreferenceManager.THEME_PREF, R.id.option_default)
+            }
+            else {
+                preferenceManager.setInt(PreferenceManager.THEME_PREF, R.id.option_light)
+            }
+            
+        }
+        bottomSheetBinding.optionsRadiogroup.check(preferenceManager.getInt(PreferenceManager.THEME_PREF))
+        
+        bottomSheetBinding.optionsRadiogroup
+            .setOnCheckedChangeListener { _, checkedId ->
+                
+                when(checkedId) {
+                    
+                    R.id.option_default -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
+                    R.id.option_light -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                    R.id.option_dark -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                    
+                }
+                
+                preferenceManager.setInt(PreferenceManager.THEME_PREF, checkedId)
+                bottomSheetDialog.dismiss()
+                requireActivity().recreate()
+            }
+        
+        // Cancel
+        bottomSheetBinding.cancelButton.setOnClickListener { bottomSheetDialog.cancel() }
+        bottomSheetDialog.show()
     }
 
     private fun authorsBottomSheet() {
@@ -124,6 +187,37 @@ class AboutFragment : Fragment() {
 
         bottomSheetDialog.show()
 
+    }
+    
+    private fun licensesBottomSheet() {
+        
+        val bottomSheetDialog = BottomSheetDialog(requireContext())
+        val bottomSheetBinding = BottomSheetLicensesBinding.inflate(layoutInflater)
+        val headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.root)
+        
+        bottomSheetDialog.setContentView(bottomSheetBinding.root)
+        
+        // Title
+        headerBinding.bottomSheetTitle.setText(R.string.licenses)
+    
+        // IYPS
+        bottomSheetBinding.iyps.setOnClickListener {
+            openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS")
+        }
+    
+        // zxcvbn4j
+        bottomSheetBinding.zxcvbn4j.setOnClickListener {
+            openURL(requireActivity(), "https://github.com/nulab/zxcvbn4j")
+        }
+    
+        // Material Design Icons
+        bottomSheetBinding.mdIcons.setOnClickListener {
+            openURL(requireActivity(), "https://github.com/Templarian/MaterialDesign")
+        }
+        
+        // Cancel
+        bottomSheetBinding.cancelButton.setOnClickListener { bottomSheetDialog.cancel() }
+        bottomSheetDialog.show()
     }
 
     override fun onDestroyView() {

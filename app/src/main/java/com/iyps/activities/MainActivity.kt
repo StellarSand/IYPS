@@ -23,220 +23,153 @@ import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.content.Intent
 import android.content.pm.PackageManager.PERMISSION_DENIED
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import com.iyps.R
 import com.iyps.databinding.ActivityMainBinding
-import com.iyps.databinding.BottomSheetHeaderBinding
-import com.iyps.databinding.BottomSheetThemeBinding
+import com.iyps.fragments.help.AboutFragment
 import com.iyps.fragments.main.FileFragment
 import com.iyps.fragments.main.PasswordFragment
 import com.iyps.preferences.PreferenceManager
-import com.iyps.utils.IntentUtils.Companion.openURL
+import com.iyps.preferences.PreferenceManager.Companion.SEL_ITEM
 
 class MainActivity : AppCompatActivity() {
-
+    
     lateinit var activityBinding: ActivityMainBinding
     private lateinit var preferenceManager: PreferenceManager
     private lateinit var fragment: Fragment
-
+    
     companion object {
         const val READ_FILE_REQ_CODE = 1000
     }
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
-
+        
         preferenceManager = PreferenceManager(this)
-
+        
         /*########################################################################################*/
-
+        
         // Disable screenshots and screen recordings
         window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
-
-        setSupportActionBar(activityBinding.toolbarMain)
         
-        activityBinding.topDivider.visibility = View.GONE
-
         // Default fragment
-        displayFragment(R.id.password)
-
+        if (preferenceManager.getInt(SEL_ITEM) == 0) {
+            displayFragment(R.id.password)
+        }
+        else {
+            displayFragment(preferenceManager.getInt(SEL_ITEM))
+        }
+        
         // On click tab
         activityBinding.bottomNav.setOnItemSelectedListener { item ->
             
             when(item.itemId) {
                 
                 R.id.password -> {
-                    displayFragment(R.id.password)
-                    true
+                    preferenceManager.setInt(SEL_ITEM, R.id.password)
                 }
                 
                 R.id.file -> {
-                    displayFragment(R.id.file)
-                    true
+                    preferenceManager.setInt(SEL_ITEM, R.id.file)
                 }
                 
-                else -> false
+                R.id.about -> {
+                    preferenceManager.setInt(SEL_ITEM, R.id.about)
+                }
             }
+            
+            displayFragment(preferenceManager.getInt(SEL_ITEM))
+            true
+            
         }
         
         activityBinding.bottomNav.setOnItemReselectedListener {}
         
     }
-
+    
     // Setup fragments
     private fun displayFragment(navItem: Int) {
-
+        
         val transaction = supportFragmentManager.beginTransaction()
-
+        
         when (navItem) {
-
+            
             R.id.password -> {
                 fragment = PasswordFragment()
                 transaction.setCustomAnimations(R.anim.slide_from_start, R.anim.slide_to_end,
                                                 R.anim.slide_from_end, R.anim.slide_to_start)
                 activityBinding.selectButton.visibility = View.GONE
             }
-
+            
             R.id.file -> {
                 fragment = FileFragment()
                 transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
                                                 R.anim.slide_from_start, R.anim.slide_to_end)
                 activityBinding.selectButton.visibility = View.VISIBLE
-
+                
             }
-
+            
+            R.id.about -> {
+                fragment = AboutFragment()
+                transaction.setCustomAnimations(R.anim.slide_from_end, R.anim.slide_to_start,
+                                                R.anim.slide_from_start, R.anim.slide_to_end)
+                activityBinding.selectButton.visibility = View.GONE
+                
+            }
+            
         }
-
+        
         transaction
             .replace(R.id.activity_host_fragment, fragment)
             .commitNow()
     }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_activity_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
-        // Theme
-        when(item.itemId) {
-
-            R.id.theme -> themeBottomSheet()
-            R.id.report_issue -> openURL(this, "https://github.com/the-weird-aquarian/IYPS/issues")
-            R.id.about -> startActivity(Intent(this, HelpActivity::class.java)
-                                        .putExtra("fragment", "About"))
-
-        }
-
-        return true
-    }
-
-    private fun themeBottomSheet() {
-
-        val bottomSheetDialog = BottomSheetDialog(this)
-        val bottomSheetBinding = BottomSheetThemeBinding.inflate(layoutInflater)
-        val headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.root)
-
-        bottomSheetDialog.setContentView(bottomSheetBinding.root)
-
-        // Title
-        headerBinding.bottomSheetTitle.setText(R.string.theme)
-
-        // Show system default option only on SDK 29 and above
-        if (Build.VERSION.SDK_INT >= 29) {
-            bottomSheetBinding.optionDefault.visibility = View.VISIBLE
-        }
-        else {
-            bottomSheetBinding.optionDefault.visibility = View.GONE
-        }
-
-        // Default checked radio
-        if (preferenceManager.getInt(PreferenceManager.THEME_PREF) == 0) {
-
-            if (Build.VERSION.SDK_INT >= 29) {
-                preferenceManager.setInt(PreferenceManager.THEME_PREF, R.id.option_default)
-            }
-            else {
-                preferenceManager.setInt(PreferenceManager.THEME_PREF, R.id.option_light)
-            }
-
-        }
-        bottomSheetBinding.optionsRadiogroup.check(preferenceManager.getInt(PreferenceManager.THEME_PREF))
-
-        bottomSheetBinding.optionsRadiogroup
-            .setOnCheckedChangeListener { _, checkedId ->
-
-                when(checkedId) {
-
-                    R.id.option_default -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-                    R.id.option_light -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                    R.id.option_dark -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-
-                }
-
-                preferenceManager.setInt(PreferenceManager.THEME_PREF, checkedId)
-                bottomSheetDialog.dismiss()
-                recreate()
-            }
-
-        // Cancel
-        bottomSheetBinding.cancelButton.setOnClickListener { bottomSheetDialog.cancel() }
-        bottomSheetDialog.show()
-    }
-
-
+    
+    
     // Manage deny and don't ask again in read external storage permission
     override fun onRequestPermissionsResult(requestCode: Int,
                                             permissions: Array<String?>,
                                             grantResults: IntArray) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-
+        
         if (requestCode == READ_FILE_REQ_CODE) {
-
+            
             if (grantResults[0] == PERMISSION_DENIED) {
-
+                
                 // On click deny
                 if (ActivityCompat
                         .shouldShowRequestPermissionRationale(this, READ_EXTERNAL_STORAGE)) {
-
+                    
                     Snackbar.make(activityBinding.coordinatorLayout,
                                   getString(R.string.read_files_perm_denied),
                                   BaseTransientBottomBar.LENGTH_SHORT)
-                            .setAnchorView(activityBinding.selectButton)
-                            .show()
+                        .setAnchorView(activityBinding.selectButton)
+                        .show()
                 }
                 // On click deny and don't ask again
                 else {
                     Snackbar.make(activityBinding.coordinatorLayout,
                                   getString(R.string.read_files_perm_blocked),
                                   BaseTransientBottomBar.LENGTH_LONG)
-                            .setAnchorView(activityBinding.selectButton)
+                        .setAnchorView(activityBinding.selectButton)
                         // On click enable button, show app info in device settings
-                            .setAction(getString(R.string.enable)) {
-                                startActivity(Intent(ACTION_APPLICATION_DETAILS_SETTINGS)
+                        .setAction(getString(R.string.enable)) {
+                            startActivity(Intent(ACTION_APPLICATION_DETAILS_SETTINGS)
                                               .setData(Uri.parse("package:$packageName")))
                         }
-                            .show()
+                        .show()
                 }
             }
         }
     }
-
+    
 }

@@ -36,8 +36,7 @@ class FileItemAdapter(private val aListViewItems: List<FileItem>,
         fun onItemClick(position: Int)
     }
 
-    inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView),
-        View.OnClickListener {
+    inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
         val passwordLine: TextView = itemView.findViewById(R.id.password_line)
 

@@ -45,14 +45,13 @@ class FileFragment : Fragment(), FileItemAdapter.OnItemClickListener {
 
     private var _binding: FragmentFileBinding? = null
     private val fragmentBinding get() = _binding!!
-    private lateinit var fileItemList: MutableList<FileItem>
+    private lateinit var fileItemList: ArrayList<FileItem>
     private lateinit var fileItemAdapter: FileItemAdapter
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
-        setHasOptionsMenu(true)
         _binding = FragmentFileBinding.inflate(inflater, container, false)
         return fragmentBinding.root
     }

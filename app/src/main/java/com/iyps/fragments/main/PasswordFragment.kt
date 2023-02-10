@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 the-weird-aquarian
+ * Copyright (c) 2022-present the-weird-aquarian
  *
  *  This file is part of IYPS.
  *
@@ -175,7 +175,7 @@ class PasswordFragment : Fragment() {
                         }
 
                         // Basic estimated time to crack
-                        fragmentBinding.offlineSlowSubtitle.text = replaceStrings(offlineSlowCrackTimeString, this@PasswordFragment)
+                        fragmentBinding.tenKGuessesSubtitle.text = replaceStrings(offlineSlowCrackTimeString, this@PasswordFragment)
 
                         // Warning
                         // If empty, set to custom warning message
@@ -210,10 +210,10 @@ class PasswordFragment : Fragment() {
                         }
     
                         // Advanced estimated time to crack
-                        fragmentBinding.offlineFastSubtitle.text = replaceStrings(offlineFastCrackTimeString, this@PasswordFragment)
-                        fragmentBinding.onlineFastSubtitle.text = replaceStrings(onlineFastCrackTimeString, this@PasswordFragment)
-                        fragmentBinding.onlineSlowSubtitle.text = replaceStrings(onlineSlowCrackTimeString, this@PasswordFragment)
-    
+                        fragmentBinding.tenBGuessesSubtitle.text = replaceStrings(offlineFastCrackTimeString, this@PasswordFragment)
+                        fragmentBinding.tenGuessesSubtitle.text = replaceStrings(onlineFastCrackTimeString, this@PasswordFragment)
+                        fragmentBinding.hundredGuessesSubtitle.text = replaceStrings(onlineSlowCrackTimeString, this@PasswordFragment)
+
                         // Guesses
                         fragmentBinding.guessesSubtitle.text = strength.guesses.toString()
                         
@@ -324,12 +324,12 @@ class PasswordFragment : Fragment() {
     // Reset details
     private fun detailsReset() {
         fragmentBinding.strengthSubtitle.text = not_applicable
-        fragmentBinding.offlineSlowSubtitle.text = not_applicable
+        fragmentBinding.tenKGuessesSubtitle.text = not_applicable
         fragmentBinding.warningSubtitle.text = not_applicable
         fragmentBinding.suggestionsSubtitle.text = not_applicable
-        fragmentBinding.offlineFastSubtitle.text = not_applicable
-        fragmentBinding.onlineSlowSubtitle.text = not_applicable
-        fragmentBinding.onlineFastSubtitle.text = not_applicable
+        fragmentBinding.tenBGuessesSubtitle.text = not_applicable
+        fragmentBinding.tenGuessesSubtitle.text = not_applicable
+        fragmentBinding.hundredGuessesSubtitle.text = not_applicable
         fragmentBinding.guessesSubtitle.text = not_applicable
         fragmentBinding.orderMagnSubtitle.text = not_applicable
 

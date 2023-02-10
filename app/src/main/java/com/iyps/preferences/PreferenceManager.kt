@@ -29,6 +29,7 @@ class PreferenceManager(context: Context) {
     companion object {
         // Shared pref keys
         const val THEME_PREF = "theme"
+        const val SEL_ITEM = "selected_item"
     }
 
     init {
