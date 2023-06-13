@@ -26,7 +26,7 @@
         ï = \u00EF
     -->
 
-    <string name="app_version">Versie:</string>
+    <string name="app_version">Versie</string>
 
     <!--Tabs-->
     <string name="password">Wachtwoord</string>

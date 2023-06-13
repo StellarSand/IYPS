@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2022-present the-weird-aquarian
+  ~
+  ~  This file is part of IYPS.
+  ~
+  ~  IYPS is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~  IYPS is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_fragments_nav_graph"
+    app:startDestination="@id/passwordFragment">
+
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="com.iyps.fragments.main.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_from_end"
+            app:exitAnim="@anim/slide_to_start"/>
+        <action
+            android:id="@+id/action_passwordFragment_to_fileFragment"
+            app:destination="@id/fileFragment"
+            app:enterAnim="@anim/slide_from_end"
+            app:exitAnim="@anim/slide_to_start"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fileFragment"
+        android:name="com.iyps.fragments.main.FileFragment"
+        android:label="fragment_file"
+        tools:layout="@layout/fragment_file" >
+        <action
+            android:id="@+id/action_fileFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+        <action
+            android:id="@+id/action_fileFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_from_end"
+            app:exitAnim="@anim/slide_to_start"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.iyps.fragments.main.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" >
+        <action
+            android:id="@+id/action_aboutFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+        <action
+            android:id="@+id/action_aboutFragment_to_fileFragment"
+            app:destination="@id/fileFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+    </fragment>
+
+</navigation>

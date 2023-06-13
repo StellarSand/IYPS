@@ -48,9 +48,6 @@
             android:name=".activities.DetailsActivity"
             android:configChanges="orientation|screenSize"/>
 
-        <!--Help activity-->
-        <activity android:name=".activities.HelpActivity"/>
-
     </application>
 
 </manifest>

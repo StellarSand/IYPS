@@ -21,7 +21,7 @@
 
 <resources>
 
-    <string name="app_version">Version:</string>
+    <string name="app_version">Version</string>
 
     <!--Tabs-->
     <string name="password">Password</string>

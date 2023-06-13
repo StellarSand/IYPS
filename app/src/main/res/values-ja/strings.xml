@@ -21,7 +21,7 @@
 
 <resources>
 
-    <string name="app_version">バージョン:</string>
+    <string name="app_version">バージョン</string>
 
     <!--Tabs-->
     <string name="password">パスワード</string>

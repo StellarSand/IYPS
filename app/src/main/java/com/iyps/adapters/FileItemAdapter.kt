@@ -29,48 +29,47 @@ import android.view.LayoutInflater
 import android.view.View
 
 class FileItemAdapter(private val aListViewItems: List<FileItem>,
-                      private val clickListener: OnItemClickListener) :
-    RecyclerView.Adapter<ListViewHolder>() {
-
+                      private val clickListener: OnItemClickListener): RecyclerView.Adapter<ListViewHolder>() {
+    
     interface OnItemClickListener {
         fun onItemClick(position: Int)
     }
-
+    
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
-
+        
         val passwordLine: TextView = itemView.findViewById(R.id.password_line)
-
+        
         init {
             // Handle click events of items
             itemView.setOnClickListener(this)
         }
-
+        
         override fun onClick(v: View?) {
             val position = adapterPosition
             if (position != RecyclerView.NO_POSITION) {
                 clickListener.onItemClick(position)
             }
         }
-
+        
     }
-
+    
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_recycler_view, parent, false)
         return ListViewHolder(view)
     }
-
+    
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val fileItem = aListViewItems[position]
         holder.passwordLine.text = fileItem.passwordLine
-
+        
         // Horizontally scrolling text
         //hScrollText(holder.passwordLine);
     }
-
+    
     override fun getItemCount(): Int {
         return aListViewItems.size
     }
-
+    
     override fun getItemViewType(position: Int): Int {
         return position
     }

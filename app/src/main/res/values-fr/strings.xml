@@ -30,7 +30,7 @@
         É = \u00C9
     -->
 
-    <string name="app_version">Version:</string>
+    <string name="app_version">Version</string>
 
     <!--Tabs-->
     <string name="password">Mot de passe</string>

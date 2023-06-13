@@ -32,6 +32,7 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResult
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
@@ -64,7 +65,9 @@ class FileFragment : Fragment(), FileItemAdapter.OnItemClickListener {
         /*########################################################################################*/
 
         // Select file button
-        (requireActivity() as MainActivity).activityBinding.selectButton.setOnClickListener {
+        val mainActivityBinding = (requireActivity() as MainActivity).activityBinding
+        mainActivityBinding.selectButton.isVisible = true
+        mainActivityBinding.selectButton.setOnClickListener {
 
             // If not granted ask for permission
             if (ContextCompat.checkSelfPermission(requireActivity(), READ_EXTERNAL_STORAGE)

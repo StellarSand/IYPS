@@ -20,21 +20,16 @@
 package com.iyps.preferences
 
 import android.content.Context
-import android.content.SharedPreferences
 
 class PreferenceManager(context: Context) {
-
-    private val sharedPreferences: SharedPreferences
 
     companion object {
         // Shared pref keys
         const val THEME_PREF = "theme"
-        const val SEL_ITEM = "selected_item"
     }
-
-    init {
-        sharedPreferences = context.getSharedPreferences("${context.packageName}_preferences", Context.MODE_PRIVATE)
-    }
+    
+    private val sharedPreferences =
+        context.getSharedPreferences("com.iyps_preferences", Context.MODE_PRIVATE)
 
     fun getInt(key: String): Int {
         return sharedPreferences.getInt(key, 0)

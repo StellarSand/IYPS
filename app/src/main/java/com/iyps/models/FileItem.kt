@@ -18,6 +18,4 @@
  */
 package com.iyps.models
 
-class FileItem {
-    var passwordLine: String? = null
-}
+data class FileItem(var passwordLine: String? = null)

@@ -27,7 +27,7 @@
         ù = \u00F9
     -->
 
-    <string name="app_version">Versione:</string>
+    <string name="app_version">Versione</string>
 
     <!--Tabs-->
     <string name="password">Password</string>

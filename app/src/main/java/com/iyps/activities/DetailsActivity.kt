@@ -43,11 +43,12 @@ class DetailsActivity : AppCompatActivity() {
         // Disable screenshots and screen recordings
         window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
     
-        setSupportActionBar(activityBinding.detailsToolbar)
+        activityBinding.detailsToolbar.apply {
+            setSupportActionBar(this)
+            setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
+        }
         
         supportActionBar?.title = passwordLine
-    
-        activityBinding.detailsToolbar.setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.activity_host_fragment, DetailsFragment())
