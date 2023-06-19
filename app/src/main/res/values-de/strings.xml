@@ -90,7 +90,6 @@
     <string name="worst_pass_warning">Das Passwort ist zu einfach zu erraten.</string>
     <string name="weak_pass_warning">Das Passwort kann leicht geknackt werden.</string>
     <string name="medium_pass_warning">Das Passwort ist nicht stark genug.</string>
-    <string name="not_applicable">Unzutreffend.</string>
 
     <!--#########################################################################################-->
 

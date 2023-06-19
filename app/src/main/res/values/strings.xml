@@ -81,7 +81,7 @@
     <string name="worst_pass_warning">Password is too simple to guess.</string>
     <string name="weak_pass_warning">Password can be easily cracked.</string>
     <string name="medium_pass_warning">Password is not strong enough.</string>
-    <string name="not_applicable">Not applicable.</string>
+    <string name="na" translatable="false">NA</string>
 
     <!--#########################################################################################-->
 

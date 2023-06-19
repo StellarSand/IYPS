@@ -57,11 +57,11 @@ class PasswordFragment : Fragment() {
         private var strongMeterColor = 0
         private var excellentMeterColor = 0
         private var emptyMeterColor = 0
-        private var worst: String? = null
-        private var weak: String? = null
-        private var medium: String? = null
-        private var strong: String? = null
-        private var excellent: String? = null
+        private var worstString: String? = null
+        private var weakString: String? = null
+        private var mediumString: String? = null
+        private var strongString: String? = null
+        private var excellentString: String? = null
         private var worstPassWarning: String? = null
         private var weakPassWarning: String? = null
         private var mediumPassWarning: String? = null
@@ -82,21 +82,21 @@ class PasswordFragment : Fragment() {
         suggestionText = StringBuilder()
         clipboardManager = requireActivity().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         wait = 0
-        worst = getString(R.string.worst)
-        weak = getString(R.string.weak)
-        medium = getString(R.string.medium)
-        strong = getString(R.string.strong)
-        excellent = getString(R.string.excellent)
+        worstString = getString(R.string.worst)
+        weakString = getString(R.string.weak)
+        mediumString = getString(R.string.medium)
+        strongString = getString(R.string.strong)
+        excellentString = getString(R.string.excellent)
         worstPassWarning = getString(R.string.worst_pass_warning)
         weakPassWarning = getString(R.string.weak_pass_warning)
         mediumPassWarning = getString(R.string.medium_pass_warning)
-        not_applicable = getString(R.string.not_applicable)
-        emptyMeterColor = getColor(R.color.hintColor)
-        worstMeterColor = getColor(R.color.worstMeterColor)
-        weakMeterColor = getColor(R.color.weakMeterColor)
-        mediumMeterColor = getColor(R.color.mediumMeterColor)
-        strongMeterColor = getColor(R.color.strongMeterColor)
-        excellentMeterColor = getColor(R.color.excellentMeterColor)
+        not_applicable = getString(R.string.na)
+        emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
+        worstMeterColor = resources.getColor(R.color.worstMeterColor, requireContext().theme)
+        weakMeterColor = resources.getColor(R.color.weakMeterColor, requireContext().theme)
+        mediumMeterColor = resources.getColor(R.color.mediumMeterColor, requireContext().theme)
+        strongMeterColor = resources.getColor(R.color.strongMeterColor, requireContext().theme)
+        excellentMeterColor = resources.getColor(R.color.excellentMeterColor, requireContext().theme)
         
         /*########################################################################################*/
         
@@ -134,30 +134,31 @@ class PasswordFragment : Fragment() {
                                 val tenCrackTimeString = strength.crackTimesDisplay.onlineNoThrottling10perSecond
                                 val hundredCrackTimeString  = strength.crackTimesDisplay.onlineThrottling100perHour
                                 
-                                val crackTimeMilliSeconds =
+                                val tenBCrackTimeMilliSeconds =
                                     (strength.crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
-                                
-                                
-                                when (passwordCrackTimeResult(crackTimeMilliSeconds)) {
-                                    "WORST" -> worstStrengthMeter()
-                                    "WEAK" -> weakStrengthMeter()
-                                    "MEDIUM" -> mediumStrengthMeter()
-                                    "STRONG" -> strongStrengthMeter()
-                                    "EXCELLENT" -> excellentStrengthMeter()
-                                }
+                                val tenKCrackTimeMilliSeconds =
+                                    (strength.crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
+                                val tenCrackTimeMilliSeconds =
+                                    (strength.crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
+                                val hundredCrackTimeMilliSeconds =
+                                    (strength.crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
                                 
                                 // Estimated time to crack
                                 fragmentBinding.tenBGuessesSubtitle.text = replaceStrings(tenBCrackTimeString, this@PasswordFragment)
+                                tenBStrengthProgressAndText(passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
                                 fragmentBinding.tenKGuessesSubtitle.text = replaceStrings(tenKCrackTimeString, this@PasswordFragment)
+                                tenKStrengthProgressAndText(passwordCrackTimeResult(tenKCrackTimeMilliSeconds))
                                 fragmentBinding.tenGuessesSubtitle.text = replaceStrings(tenCrackTimeString, this@PasswordFragment)
+                                tenStrengthProgressAndText(passwordCrackTimeResult(tenCrackTimeMilliSeconds))
                                 fragmentBinding.hundredGuessesSubtitle.text = replaceStrings(hundredCrackTimeString, this@PasswordFragment)
+                                hundredStrengthProgressAndText(passwordCrackTimeResult(hundredCrackTimeMilliSeconds))
                                 
                                 // Warning
                                 // If empty, set to custom warning message
                                 fragmentBinding.warningSubtitle.text =
                                     strength.feedback.getWarning(Locale.getDefault())
                                         .ifEmpty {
-                                            when (passwordCrackTimeResult(crackTimeMilliSeconds)) {
+                                            when (passwordCrackTimeResult(tenBCrackTimeMilliSeconds)) {
                                                 "WORST" -> worstPassWarning // Worst warning
                                                 "WEAK" -> weakPassWarning // Weak warning
                                                 "MEDIUM" -> mediumPassWarning // Medium warning
@@ -176,7 +177,7 @@ class PasswordFragment : Fragment() {
                                             suggestionText
                                         }
                                         else {
-                                            getString(R.string.not_applicable)
+                                            getString(R.string.na)
                                         }
                                 }
                                 
@@ -218,163 +219,58 @@ class PasswordFragment : Fragment() {
         }
     }
     
-    private fun getColor(color: Int): Int {
-        return resources.getColor(color, requireActivity().theme)
+    private fun strengthProgressAndTextMap(timeToCrackResult: String): Triple<Int, Int, String?> {
+        val map = mapOf("WORST" to Triple(20, worstMeterColor, worstString),
+                        "WEAK" to Triple(40, weakMeterColor, weakString),
+                        "MEDIUM" to Triple(60, mediumMeterColor, mediumString),
+                        "STRONG" to Triple(80, strongMeterColor, strongString),
+                        "EXCELLENT" to Triple(100, excellentMeterColor, excellentString))
+        
+        return map[timeToCrackResult] ?: Triple(0, emptyMeterColor, "NA")
     }
     
-    // Worst strength meter
-    private fun worstStrengthMeter() {
-        fragmentBinding.strengthSubtitle.text = worst
-        
-        fragmentBinding.worstMeter.apply {
-            setIndicatorColor(worstMeterColor)
-            setProgressCompat(100, true)
+    private fun tenBStrengthProgressAndText(timeToCrackResult: String) {
+        val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(timeToCrackResult)
+        fragmentBinding.tenBGuessesStrengthMeter.apply {
+            setIndicatorColor(indicatorColor)
+            setProgressCompat(progress, true)
         }
-        
-        fragmentBinding.weakMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.mediumMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.strongMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.excellentMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
+        fragmentBinding.tenBGuessesStrength.text = strengthText
     }
     
-    // Weak strength meter
-    private fun weakStrengthMeter() {
-        fragmentBinding.strengthSubtitle.text = weak
-        
-        fragmentBinding.worstMeter.apply {
-            setIndicatorColor(weakMeterColor)
-            setProgressCompat(100, true)
+    private fun tenKStrengthProgressAndText(timeToCrackResult: String) {
+        val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(timeToCrackResult)
+        fragmentBinding.tenKGuessesStrengthMeter.apply {
+            setIndicatorColor(indicatorColor)
+            setProgressCompat(progress, true)
         }
-        
-        fragmentBinding.weakMeter.apply {
-            setIndicatorColor(weakMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.mediumMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.strongMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.excellentMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
+        fragmentBinding.tenKGuessesStrength.text = strengthText
     }
     
-    // Medium strength meter
-    private fun mediumStrengthMeter() {
-        fragmentBinding.strengthSubtitle.text = medium
-        
-        fragmentBinding.worstMeter.apply {
-            setIndicatorColor(mediumMeterColor)
-            setProgressCompat(100, true)
+    private fun tenStrengthProgressAndText(timeToCrackResult: String) {
+        val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(timeToCrackResult)
+        fragmentBinding.tenGuessesStrengthMeter.apply {
+            setIndicatorColor(indicatorColor)
+            setProgressCompat(progress, true)
         }
-        
-        fragmentBinding.weakMeter.apply {
-            setIndicatorColor(mediumMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.mediumMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.strongMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.excellentMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
+        fragmentBinding.tenGuessesStrength.text = strengthText
     }
     
-    // Strong strength meter
-    private fun strongStrengthMeter() {
-        fragmentBinding.strengthSubtitle.text = strong
-        
-        fragmentBinding.worstMeter.apply {
-            setIndicatorColor(strongMeterColor)
-            setProgressCompat(100, true)
+    private fun hundredStrengthProgressAndText(timeToCrackResult: String) {
+        val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(timeToCrackResult)
+        fragmentBinding.hundredGuessesStrengthMeter.apply {
+            setIndicatorColor(indicatorColor)
+            setProgressCompat(progress, true)
         }
-        
-        fragmentBinding.weakMeter.apply {
-            setIndicatorColor(strongMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.mediumMeter.apply {
-            setIndicatorColor(strongMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.strongMeter.apply {
-            setIndicatorColor(strongMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.excellentMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-    }
-    
-    // Excellent strength meter
-    private fun excellentStrengthMeter() {
-        fragmentBinding.strengthSubtitle.text = excellent
-        
-        fragmentBinding.worstMeter.apply {
-            setIndicatorColor(excellentMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.weakMeter.apply {
-            setIndicatorColor(excellentMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.mediumMeter.apply {
-            setIndicatorColor(excellentMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.strongMeter.apply {
-            setIndicatorColor(excellentMeterColor)
-            setProgressCompat(100, true)
-        }
-        
-        fragmentBinding.excellentMeter.apply {
-            setIndicatorColor(excellentMeterColor)
-            setProgressCompat(100, true)
-        }
+        fragmentBinding.hundredGuessesStrength.text = strengthText
     }
     
     // Reset details
     private fun detailsReset() {
-        fragmentBinding.strengthSubtitle.text = not_applicable
+        fragmentBinding.tenBGuessesStrength.text = not_applicable
+        fragmentBinding.tenKGuessesStrength.text = not_applicable
+        fragmentBinding.tenGuessesStrength.text = not_applicable
+        fragmentBinding.hundredGuessesStrength.text = not_applicable
         fragmentBinding.tenBGuessesSubtitle.text = not_applicable
         fragmentBinding.tenKGuessesSubtitle.text = not_applicable
         fragmentBinding.tenGuessesSubtitle.text = not_applicable
@@ -384,27 +280,22 @@ class PasswordFragment : Fragment() {
         fragmentBinding.guessesSubtitle.text = not_applicable
         fragmentBinding.orderMagnSubtitle.text = not_applicable
         
-        fragmentBinding.worstMeter.apply {
+        fragmentBinding.tenBGuessesStrengthMeter.apply {
             setIndicatorColor(emptyMeterColor)
             setProgressCompat(0, true)
         }
         
-        fragmentBinding.weakMeter.apply {
+        fragmentBinding.tenKGuessesStrengthMeter.apply {
             setIndicatorColor(emptyMeterColor)
             setProgressCompat(0, true)
         }
         
-        fragmentBinding.mediumMeter.apply {
+        fragmentBinding.tenGuessesStrengthMeter.apply {
             setIndicatorColor(emptyMeterColor)
             setProgressCompat(0, true)
         }
         
-        fragmentBinding.strongMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.excellentMeter.apply {
+        fragmentBinding.hundredGuessesStrengthMeter.apply {
             setIndicatorColor(emptyMeterColor)
             setProgressCompat(0, true)
         }

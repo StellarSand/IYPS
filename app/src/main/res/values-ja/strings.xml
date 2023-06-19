@@ -81,7 +81,6 @@
     <string name="worst_pass_warning">パスワードは推測するには簡単すぎます。 </string>
     <string name="weak_pass_warning">パスワードは簡単に割れます.</string>
     <string name="medium_pass_warning">パスワードは十分に強くありません.</string>
-    <string name="not_applicable">適用できない.</string>
 
     <!--#########################################################################################-->
 

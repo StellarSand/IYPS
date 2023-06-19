@@ -90,7 +90,6 @@
     <string name="worst_pass_warning">Le mot de passe est trop simple \u00E0 deviner.</string>
     <string name="weak_pass_warning">Le mot de passe peut \u00EAtre facilement cass\u00E9.</string>
     <string name="medium_pass_warning">Le mot de passe n\'est pas assez fort.</string>
-    <string name="not_applicable">N\'est pas applicable.</string>
 
     <!--#########################################################################################-->
 

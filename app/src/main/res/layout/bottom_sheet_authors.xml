@@ -18,7 +18,8 @@
   ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:ignore="ContentDescription"
@@ -26,7 +27,6 @@
     android:layout_height="wrap_content"
     android:paddingTop="@dimen/margin_12"
     android:paddingBottom="@dimen/margin_8"
-    android:background="@drawable/shape_bottom_sheet"
     android:layout_gravity="center"
     android:orientation="vertical">
 

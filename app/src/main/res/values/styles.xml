@@ -59,9 +59,13 @@
     <!--#########################################################################################-->
 
     <!--Base bottom sheet style-->
-    <!--Make root view of bottom sheet transparent for custom view to show properly-->
-    <style name="BaseBottomSheetStyle" parent="ThemeOverlay.Material3.BottomSheetDialog">
-        <item name="android:background">@android:color/transparent</item>
+    <style name="CustomBottomSheet" parent="Widget.Material3.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/BottomSheetShapeStyle</item>
+    </style>
+
+    <!--Bottom sheet rounded corners-->
+    <style name="BottomSheetShapeStyle" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerSize">@dimen/margin_12</item>
     </style>
 
     <!--#########################################################################################-->

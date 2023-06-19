@@ -86,7 +86,6 @@
     <string name="worst_pass_warning">Wachtwoord is te eenvoudig om te raden.</string>
     <string name="weak_pass_warning">Wachtwoord kan eenvoudig worden gekraakt.</string>
     <string name="medium_pass_warning">Wachtwoord is niet sterk genoeg.</string>
-    <string name="not_applicable">Niet toepasbaar.</string>
 
     <!--#########################################################################################-->
 

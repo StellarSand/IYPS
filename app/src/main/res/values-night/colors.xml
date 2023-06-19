@@ -38,6 +38,10 @@
     <color name="color_divider">#5F6267</color>
 
     <!--Strength meter colors-->
-    <color name="weakMeterColor">#FF9800</color>
+    <color name="worstMeterColor">#E62E2E</color>
+    <color name="weakMeterColor">#FF6800</color>
+    <color name="mediumMeterColor">#FF9C00</color>
+    <color name="strongMeterColor">#27B763</color>
+    <color name="excellentMeterColor">#408B50</color>
 
 </resources>

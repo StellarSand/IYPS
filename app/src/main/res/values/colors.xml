@@ -32,17 +32,17 @@
     <color name="enabledColor">#606163</color>
     <color name="hintColor">#B2B2B2</color>
     <color name="urlColor">#1976D2</color>
-    <color name="cardStrokeColor">#E0E0E0</color>
+    <color name="cardStrokeColor">#D6D6D6</color>
     <color name="rippleColor">#EBEBEB</color>
     <color name="scrollbarColor">#B8B8B8</color>
     <color name="color_divider">#DBDCE0</color>
 
     <!--Strength meter colors-->
-    <color name="worstMeterColor">#E53935</color>
-    <color name="weakMeterColor">#FB8C00</color>
-    <color name="mediumMeterColor">#FDD835</color>
-    <color name="strongMeterColor">#7CB342</color>
-    <color name="excellentMeterColor">#43A047</color>
+    <color name="worstMeterColor">#FF8980</color>
+    <color name="weakMeterColor">#FFB865</color>
+    <color name="mediumMeterColor">#FFE084</color>
+    <color name="strongMeterColor">#4ADC8C</color>
+    <color name="excellentMeterColor">#4DCD68</color>
 
     <!--Common colors-->
     <color name="snackbarTextColor">#FFFFFF</color>

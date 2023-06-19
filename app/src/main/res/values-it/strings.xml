@@ -87,7 +87,6 @@
     <string name="worst_pass_warning">La password \u00E8 troppo semplice da indovinare.</string>
     <string name="weak_pass_warning">La password può essere facilmente decifrata.</string>
     <string name="medium_pass_warning">La password non \u00E8 abbastanza sicura.</string>
-    <string name="not_applicable">Non applicabile.</string>
 
     <!--#########################################################################################-->
 
