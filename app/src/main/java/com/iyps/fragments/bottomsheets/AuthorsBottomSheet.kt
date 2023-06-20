@@ -32,13 +32,13 @@ class AuthorsBottomSheet : BottomSheetDialogFragment() {
     
         // Author 1
         bottomSheetBinding.author1.setOnClickListener {
-            openURL(requireActivity(), "https://github.com/the-weird-aquarian")
+            openURL(requireActivity(), getString(R.string.the_weird_aquarian_github_url))
             dismiss()
         }
     
         // Author 2
         bottomSheetBinding.author2.setOnClickListener {
-            openURL(requireActivity(), "https://github.com/parveshnarwal")
+            openURL(requireActivity(), getString(R.string.parveshnarwal_github_url))
             dismiss()
         }
     

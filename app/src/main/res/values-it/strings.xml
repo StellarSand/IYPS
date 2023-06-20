@@ -32,13 +32,6 @@
     <!--Tabs-->
     <string name="password">Password</string>
     <string name="file">File</string>
-
-    <!--#########################################################################################-->
-
-    <!--Toolbar-->
-    <string name="menu_more">Pi\u00F9</string>
-    <string name="theme">Tema</string>
-    <string name="report_issue">Segnala un problema</string>
     <string name="about">Info</string>
 
     <!--#########################################################################################-->
@@ -64,6 +57,14 @@
     <string name="centuries">Secoli</string>
     <string name="warning">Avvertimento</string>
     <string name="suggestions">Suggerimenti</string>
+    <string name="est_guesses_to_crack">Stime di indovinelli da decifrare</string>
+    <string name="order_of_magn">Ordine di grandezza delle ipotesi</string>
+    <string name="statistics">Statistiche</string>
+    <string name="length">• Lunghezza</string>
+    <string name="upper_case">• Maiuscole</string>
+    <string name="lower_case">• Minuscole</string>
+    <string name="numbers">• Numeri</string>
+    <string name="special_char">• Caratteri speciali</string>
 
     <!--#########################################################################################-->
 
@@ -75,8 +76,10 @@
     <!--#########################################################################################-->
 
     <!--About fragment-->
+    <string name="theme">Tema</string>
     <string name="authors">Autori</string>
     <string name="contributors">Contributori</string>
+    <string name="report_issue">Segnala un problema</string>
     <string name="privacy_policy">Politica sulla Riservatezza</string>
     <string name="licenses">Licenze</string>
     <string name="view_on_github">Vedi su GitHub</string>

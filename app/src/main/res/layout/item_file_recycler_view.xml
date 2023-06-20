@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present the-weird-aquarian
+  ~ Copyright (c) 2022 the-weird-aquarian
   ~
   ~  This file is part of IYPS.
   ~
@@ -19,8 +19,22 @@
   ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<com.google.android.material.divider.MaterialDivider
+<com.google.android.material.textview.MaterialTextView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/divider"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/password_line"
     android:layout_width="match_parent"
-    android:layout_height="1dp" />
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@drawable/shape_card_with_ripple"
+    android:layout_marginStart="@dimen/margin_12"
+    android:layout_marginEnd="@dimen/margin_12"
+    android:layout_marginTop="@dimen/margin_4"
+    android:layout_marginBottom="@dimen/margin_12"
+    android:padding="@dimen/margin_25"
+    android:ellipsize="marquee"
+    android:text="@string/password"
+    android:textAlignment="viewStart"
+    android:textColor="@color/color_text_title"
+    android:textSize="@dimen/text_17" />

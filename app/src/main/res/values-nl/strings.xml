@@ -31,13 +31,6 @@
     <!--Tabs-->
     <string name="password">Wachtwoord</string>
     <string name="file">Bestand</string>
-
-    <!--#########################################################################################-->
-
-    <!--Toolbar-->
-    <string name="menu_more">Meer</string>
-    <string name="theme">Thema</string>
-    <string name="report_issue">Een probleem melden</string>
     <string name="about">Over</string>
 
     <!--#########################################################################################-->
@@ -63,6 +56,14 @@
     <string name="centuries">Eeuwenouder</string>
     <string name="warning">Waarschuwing</string>
     <string name="suggestions">Suggesties</string>
+    <string name="est_guesses_to_crack">Geschatte gissingen om te kraken</string>
+    <string name="order_of_magn">Grootteorde van gissingen</string>
+    <string name="statistics">Statistieken</string>
+    <string name="length">• Lengte</string>
+    <string name="upper_case">• Hoofdletters</string>
+    <string name="lower_case">• Kleineletters</string>
+    <string name="numbers">• Cijfers</string>
+    <string name="special_char">• Speciale tekens</string>
 
     <!--#########################################################################################-->
 
@@ -74,8 +75,10 @@
     <!--#########################################################################################-->
 
     <!--About fragment-->
+    <string name="theme">Thema</string>
     <string name="authors">Auteurs</string>
     <string name="contributors">Medewerkers</string>
+    <string name="report_issue">Een probleem melden</string>
     <string name="privacy_policy">Privacybeleid</string>
     <string name="licenses">Licenties</string>
     <string name="view_on_github">Bekijk op GitHub</string>

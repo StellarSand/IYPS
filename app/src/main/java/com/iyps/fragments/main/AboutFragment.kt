@@ -71,18 +71,18 @@ class AboutFragment : Fragment() {
         // Contributors
         fragmentBinding.contributors
             .setOnClickListener {
-                openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/graphs/contributors")
+                openURL(requireActivity(), getString(R.string.iyps_contributors_url))
             }
         
         // Report an issue
         fragmentBinding.reportIssue.setOnClickListener {
-            openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/issues")
+            openURL(requireActivity(), getString(R.string.iyps_issues_url))
         }
         
         // Privacy policy
         fragmentBinding.privacyPolicy
             .setOnClickListener {
-                openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS/blob/master/PRIVACY.md")
+                openURL(requireActivity(), getString(R.string.iyps_privacy_policy_url))
             }
         
         // Licenses
@@ -94,7 +94,7 @@ class AboutFragment : Fragment() {
         // View on GitHub
         fragmentBinding.viewOnGit
             .setOnClickListener {
-                openURL(requireActivity(), "https://github.com/the-weird-aquarian/IYPS")
+                openURL(requireActivity(), getString(R.string.iyps_github_url))
             }
         
     }

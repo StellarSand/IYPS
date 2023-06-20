@@ -22,20 +22,49 @@
 <resources>
 
     <!--Dark theme colors-->
-    <color name="colorPrimary">#42A5F5</color>
-    <color name="colorAccent">#59B268</color>
-    <color name="backgroundColor">#212121</color>
-    <color name="colorControlNormal">#BCBCBC</color>
-    <color name="textTitleColor">#FAFAFA</color>
-    <color name="bottomSheetColor">#3C3D40</color>
-    <color name="dragHandleColor">#606165</color>
-    <color name="enabledColor">#B8B8BD</color>
-    <color name="hintColor">#9BA0A6</color>
-    <color name="urlColor">#42A5F5</color>
-    <color name="cardStrokeColor">#5F6267</color>
-    <color name="rippleColor">#4D4D4D</color>
-    <color name="scrollbarColor">#717274</color>
-    <color name="color_divider">#5F6267</color>
+    <color name="color_primary">#80DA8B</color>
+    <color name="color_onPrimary">#003913</color>
+    <color name="color_primaryContainer">#00531F</color>
+    <color name="color_onPrimaryContainer">#9BF7A5</color>
+    <color name="color_secondary">#9ECAFF</color>
+    <color name="color_onSecondary">#003258</color>
+    <color name="color_secondaryContainer">#00497D</color>
+    <color name="color_onSecondaryContainer">#D1E4FF</color>
+    <color name="color_tertiary">#A1CED6</color>
+    <color name="color_onTertiary">#00363D</color>
+    <color name="color_tertiaryContainer">#1F4D54</color>
+    <color name="color_onTertiaryContainer">#BDEAF3</color>
+    <color name="color_error">#FFB4AB</color>
+    <color name="color_errorContainer">#93000A</color>
+    <color name="color_onError">#690005</color>
+    <color name="color_onErrorContainer">#FFDAD6</color>
+    <color name="color_background">#1A1C19</color>
+    <color name="color_onBackground">#E2E3DD</color>
+    <color name="color_surface">#1A1C19</color>
+    <color name="color_onSurface">#E2E3DD</color>
+    <color name="color_surfaceVariant">#424940</color>
+    <color name="color_onSurfaceVariant">#C1C9BE</color>
+    <color name="color_outline">#8B9389</color>
+    <color name="color_inverseOnSurface">#1A1C19</color>
+    <color name="color_inverseSurface">#E2E3DD</color>
+    <color name="color_inversePrimary">#046D2D</color>
+    <color name="color_shadow">#000000</color>
+    <color name="color_surfaceTint">#80DA8B</color>
+    <color name="color_outlineVariant">#424940</color>
+    <color name="color_scrim">#000000</color>
+
+    <color name="color_bottom_nav_indicator">#49A25A</color>
+    <color name="color_button_bg">#49A25A</color>
+    <color name="color_control_normal">#CAC4D0</color>
+    <color name="color_text_title">#FAFAFA</color>
+    <color name="color_enabled">#B8B8BD</color>
+    <color name="color_disabled">#3F3F47</color>
+    <color name="color_hint">#9BA0A6</color>
+    <color name="color_card_stroke">#5F6267</color>
+    <color name="color_grey_text_surface">#4D4D4D</color>
+    <color name="color_scrollbar">#717274</color>
+    <color name="color_drag_handle">#606165</color>
+    <color name="color_url">#42A5F5</color>
 
     <!--Strength meter colors-->
     <color name="worstMeterColor">#E62E2E</color>

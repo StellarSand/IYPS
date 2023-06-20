@@ -26,7 +26,7 @@
     android:id="@+id/coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor">
+    android:background="@color/color_background">
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/main_nav_host"
@@ -41,13 +41,13 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:layout_gravity="bottom"
-        android:backgroundTint="@color/colorAccent"
+        android:backgroundTint="@color/color_button_bg"
         android:layout_marginStart="@dimen/margin_25"
         android:layout_marginEnd="@dimen/margin_25"
         android:layout_marginBottom="100dp"
         android:text="@string/select_file_btn"
         android:textSize="@dimen/text_17"
-        android:textColor="@color/snackbarTextColor"
+        android:textColor="@color/color_snackbar_text"
         android:visibility="gone"
         tools:visibility="visible"/>
 
@@ -56,7 +56,8 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_gravity="bottom"
-        app:itemIconTint="@color/colorControlNormal"
+        app:itemActiveIndicatorStyle="@style/NavIndicatorStyle"
+        app:itemIconTint="@color/color_text_title"
         app:itemTextAppearanceActive="@style/NavTextActive"
         app:itemTextAppearanceInactive="@style/NavTextInactive"
         app:menu="@menu/menu_bottom_nav"/>

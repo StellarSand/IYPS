@@ -21,8 +21,6 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-
     <application
         android:name=".appmanager.ApplicationManager"
         android:icon="@mipmap/ic_launcher"

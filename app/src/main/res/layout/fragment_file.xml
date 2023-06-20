@@ -37,7 +37,7 @@
         android:clipToPadding="false"
         android:paddingTop="@dimen/margin_10"
         android:paddingBottom="10dp"
-        tools:listitem="@layout/item_recycler_view"/>
+        tools:listitem="@layout/item_file_recycler_view"/>
 
     <TextView
         android:id="@+id/text_view"
@@ -53,6 +53,6 @@
         android:gravity="center"
         android:text="@string/select_file_text"
         android:textSize="@dimen/text_16"
-        android:textColor="@color/colorControlNormal"/>
+        android:textColor="@color/color_control_normal"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

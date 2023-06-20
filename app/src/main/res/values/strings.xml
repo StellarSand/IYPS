@@ -26,19 +26,12 @@
     <!--Tabs-->
     <string name="password">Password</string>
     <string name="file">File</string>
-
-    <!--#########################################################################################-->
-
-    <!--Toolbar-->
-    <string name="menu_more">More</string>
-    <string name="theme">Theme</string>
-    <string name="report_issue">Report an issue</string>
     <string name="about">About</string>
 
     <!--#########################################################################################-->
 
     <!--Password fragment-->
-    <string name="test_your_password">Test Your Password</string>
+    <string name="test_your_password">Test your password</string>
     <string name="details">Details</string>
     <string name="strength">Strength</string>
     <string name="worst">Worst</string>
@@ -58,19 +51,28 @@
     <string name="centuries">Centuries</string>
     <string name="warning">Warning</string>
     <string name="suggestions">Suggestions</string>
+    <string name="est_guesses_to_crack">Estimated guesses to crack</string>
+    <string name="order_of_magn">Order of magnitude of guesses</string>
+    <string name="statistics">Statistics</string>
+    <string name="length">• Length</string>
+    <string name="upper_case">• Upper case</string>
+    <string name="lower_case">• Lower case</string>
+    <string name="numbers">• Numbers</string>
+    <string name="special_char">• Special characters</string>
 
     <!--#########################################################################################-->
 
     <!--File fragment-->
-    <string name="select_file_text">
-        Select a text file with multiple passwords. Each password must be on a separate line in the file.</string>
+    <string name="select_file_text">Select a text file with multiple passwords. Each password must be on a separate line in the file.</string>
     <string name="select_file_btn">Select file</string>
 
     <!--#########################################################################################-->
 
     <!--About fragment-->
+    <string name="theme">Theme</string>
     <string name="authors">Authors</string>
     <string name="contributors">Contributors</string>
+    <string name="report_issue">Report an issue</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="licenses">Licenses</string>
     <string name="view_on_github">View on GitHub</string>
@@ -81,7 +83,6 @@
     <string name="worst_pass_warning">Password is too simple to guess.</string>
     <string name="weak_pass_warning">Password can be easily cracked.</string>
     <string name="medium_pass_warning">Password is not strong enough.</string>
-    <string name="na" translatable="false">NA</string>
 
     <!--#########################################################################################-->
 

@@ -49,24 +49,22 @@ class PasswordFragment : Fragment() {
     private var clearClipboardTimer: CountDownTimer? = null
     private lateinit var clipboardManager: ClipboardManager
     private var copiedFromHere = false
-    
-    companion object {
-        private var worstMeterColor = 0
-        private var weakMeterColor = 0
-        private var mediumMeterColor = 0
-        private var strongMeterColor = 0
-        private var excellentMeterColor = 0
-        private var emptyMeterColor = 0
-        private var worstString: String? = null
-        private var weakString: String? = null
-        private var mediumString: String? = null
-        private var strongString: String? = null
-        private var excellentString: String? = null
-        private var worstPassWarning: String? = null
-        private var weakPassWarning: String? = null
-        private var mediumPassWarning: String? = null
-        private var not_applicable: String? = null
-    }
+    private var worstMeterColor = 0
+    private var weakMeterColor = 0
+    private var mediumMeterColor = 0
+    private var strongMeterColor = 0
+    private var excellentMeterColor = 0
+    private var emptyMeterColor = 0
+    private lateinit var worstString: String
+    private lateinit var weakString: String
+    private lateinit var mediumString: String
+    private lateinit var strongString: String
+    private lateinit var excellentString: String
+    private lateinit var worstPassWarning: String
+    private lateinit var weakPassWarning: String
+    private lateinit var mediumPassWarning: String
+    private lateinit var notApplicable: String
+    private lateinit var zeroString: String
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -82,6 +80,12 @@ class PasswordFragment : Fragment() {
         suggestionText = StringBuilder()
         clipboardManager = requireActivity().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         wait = 0
+        emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
+        worstMeterColor = resources.getColor(R.color.worstMeterColor, requireContext().theme)
+        weakMeterColor = resources.getColor(R.color.weakMeterColor, requireContext().theme)
+        mediumMeterColor = resources.getColor(R.color.mediumMeterColor, requireContext().theme)
+        strongMeterColor = resources.getColor(R.color.strongMeterColor, requireContext().theme)
+        excellentMeterColor = resources.getColor(R.color.excellentMeterColor, requireContext().theme)
         worstString = getString(R.string.worst)
         weakString = getString(R.string.weak)
         mediumString = getString(R.string.medium)
@@ -90,13 +94,8 @@ class PasswordFragment : Fragment() {
         worstPassWarning = getString(R.string.worst_pass_warning)
         weakPassWarning = getString(R.string.weak_pass_warning)
         mediumPassWarning = getString(R.string.medium_pass_warning)
-        not_applicable = getString(R.string.na)
-        emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
-        worstMeterColor = resources.getColor(R.color.worstMeterColor, requireContext().theme)
-        weakMeterColor = resources.getColor(R.color.weakMeterColor, requireContext().theme)
-        mediumMeterColor = resources.getColor(R.color.mediumMeterColor, requireContext().theme)
-        strongMeterColor = resources.getColor(R.color.strongMeterColor, requireContext().theme)
-        excellentMeterColor = resources.getColor(R.color.excellentMeterColor, requireContext().theme)
+        notApplicable = getString(R.string.na)
+        zeroString = getString(R.string.zero)
         
         /*########################################################################################*/
         
@@ -121,7 +120,6 @@ class PasswordFragment : Fragment() {
                         
                         // On timer finish, perform task
                         override fun onFinish() {
-                            
                             wait = 400
                             
                             // If edit text is not empty
@@ -162,7 +160,7 @@ class PasswordFragment : Fragment() {
                                                 "WORST" -> worstPassWarning // Worst warning
                                                 "WEAK" -> weakPassWarning // Weak warning
                                                 "MEDIUM" -> mediumPassWarning // Medium warning
-                                                else -> not_applicable // For strong & above
+                                                else -> notApplicable // For strong & above
                                             }
                                         }
                                 
@@ -182,10 +180,31 @@ class PasswordFragment : Fragment() {
                                 }
                                 
                                 // Guesses
-                                fragmentBinding.guessesSubtitle.text = strength.guesses.toString()
+                                val stringValue = strength.guesses.toString()
+                                val formattedString =
+                                    if (stringValue.contains("E")) {
+                                        val splitString = stringValue.split("E")
+                                        "${splitString[0]} x 10^${splitString[1]}"
+                                    }
+                                    else {
+                                        stringValue
+                                    }
+                                fragmentBinding.guessesSubtitle.text = formattedString
                                 
                                 // Order of magnitude of guesses
                                 fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.toString()
+                                
+                                // Statistics
+                                val length = charSequence.length
+                                val upperCaseCount = charSequence.count { it.isUpperCase() }
+                                val lowerCaseCount = charSequence.count { it.isLowerCase() }
+                                val numbersCount = charSequence.count { it.isDigit() }
+                                val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount
+                                fragmentBinding.lengthText.text = length.toString()
+                                fragmentBinding.upperCaseText.text = upperCaseCount.toString()
+                                fragmentBinding.lowerCaseText.text = lowerCaseCount.toString()
+                                fragmentBinding.numbersText.text = numbersCount.toString()
+                                fragmentBinding.specialCharsText.text = specialCharsCount.toString()
                                 
                             }
                             // If edit text is empty or cleared, reset everything
@@ -267,18 +286,23 @@ class PasswordFragment : Fragment() {
     
     // Reset details
     private fun detailsReset() {
-        fragmentBinding.tenBGuessesStrength.text = not_applicable
-        fragmentBinding.tenKGuessesStrength.text = not_applicable
-        fragmentBinding.tenGuessesStrength.text = not_applicable
-        fragmentBinding.hundredGuessesStrength.text = not_applicable
-        fragmentBinding.tenBGuessesSubtitle.text = not_applicable
-        fragmentBinding.tenKGuessesSubtitle.text = not_applicable
-        fragmentBinding.tenGuessesSubtitle.text = not_applicable
-        fragmentBinding.hundredGuessesSubtitle.text = not_applicable
-        fragmentBinding.warningSubtitle.text = not_applicable
-        fragmentBinding.suggestionsSubtitle.text = not_applicable
-        fragmentBinding.guessesSubtitle.text = not_applicable
-        fragmentBinding.orderMagnSubtitle.text = not_applicable
+        fragmentBinding.tenBGuessesStrength.text = notApplicable
+        fragmentBinding.tenKGuessesStrength.text = notApplicable
+        fragmentBinding.tenGuessesStrength.text = notApplicable
+        fragmentBinding.hundredGuessesStrength.text = notApplicable
+        fragmentBinding.tenBGuessesSubtitle.text = notApplicable
+        fragmentBinding.tenKGuessesSubtitle.text = notApplicable
+        fragmentBinding.tenGuessesSubtitle.text = notApplicable
+        fragmentBinding.hundredGuessesSubtitle.text = notApplicable
+        fragmentBinding.warningSubtitle.text = notApplicable
+        fragmentBinding.suggestionsSubtitle.text = notApplicable
+        fragmentBinding.guessesSubtitle.text = notApplicable
+        fragmentBinding.orderMagnSubtitle.text = notApplicable
+        fragmentBinding.lengthText.text = zeroString
+        fragmentBinding.upperCaseText.text = zeroString
+        fragmentBinding.lowerCaseText.text = zeroString
+        fragmentBinding.numbersText.text = zeroString
+        fragmentBinding.specialCharsText.text = zeroString
         
         fragmentBinding.tenBGuessesStrengthMeter.apply {
             setIndicatorColor(emptyMeterColor)

@@ -54,7 +54,7 @@ class FileItemAdapter(private val aListViewItems: List<FileItem>,
     }
     
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_recycler_view, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_file_recycler_view, parent, false)
         return ListViewHolder(view)
     }
     

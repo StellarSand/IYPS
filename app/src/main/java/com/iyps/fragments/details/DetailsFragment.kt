@@ -47,25 +47,22 @@ class DetailsFragment : Fragment() {
     private var clearClipboardTimer: CountDownTimer? = null
     private lateinit var clipboardManager: ClipboardManager
     private var copiedFromHere = false
-    
-    companion object {
-        private var worstMeterColor = 0
-        private var weakMeterColor = 0
-        private var mediumMeterColor = 0
-        private var strongMeterColor = 0
-        private var excellentMeterColor = 0
-        private var emptyMeterColor = 0
-        private var worstString: String? = null
-        private var weakString: String? = null
-        private var mediumString: String? = null
-        private var strongString: String? = null
-        private var excellentString: String? = null
-        private var worstPassWarning: String? = null
-        private var weakPassWarning: String? = null
-        private var mediumPassWarning: String? = null
-        private var not_applicable: String? = null
-        private var passwordString: String? = null
-    }
+    private var worstMeterColor = 0
+    private var weakMeterColor = 0
+    private var mediumMeterColor = 0
+    private var strongMeterColor = 0
+    private var excellentMeterColor = 0
+    private var emptyMeterColor = 0
+    private lateinit var worstString: String
+    private lateinit var weakString: String
+    private lateinit var mediumString: String
+    private lateinit var strongString: String
+    private lateinit var excellentString: String
+    private lateinit var worstPassWarning: String
+    private lateinit var weakPassWarning: String
+    private lateinit var mediumPassWarning: String
+    private lateinit var notApplicable: String
+    private lateinit var passwordString: String
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -88,13 +85,14 @@ class DetailsFragment : Fragment() {
         worstPassWarning = getString(R.string.worst_pass_warning)
         weakPassWarning = getString(R.string.weak_pass_warning)
         mediumPassWarning = getString(R.string.medium_pass_warning)
-        not_applicable = getString(R.string.na)
+        notApplicable = getString(R.string.na)
         emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
         worstMeterColor = resources.getColor(R.color.worstMeterColor, requireContext().theme)
         weakMeterColor = resources.getColor(R.color.weakMeterColor, requireContext().theme)
         mediumMeterColor = resources.getColor(R.color.mediumMeterColor, requireContext().theme)
         strongMeterColor = resources.getColor(R.color.strongMeterColor, requireContext().theme)
         excellentMeterColor = resources.getColor(R.color.excellentMeterColor, requireContext().theme)
+        passwordString = (requireActivity() as DetailsActivity).passwordLine
         
         /*########################################################################################*/
         
@@ -102,10 +100,8 @@ class DetailsFragment : Fragment() {
         
         // Remove 80dp bottom margin in scrollview
         val layoutParams = fragmentBinding.scrollview.layoutParams as (LinearLayout.LayoutParams)
-        layoutParams.bottomMargin = 40
+        layoutParams.bottomMargin = 0
         fragmentBinding.scrollview.layoutParams = layoutParams
-        
-        passwordString = (requireActivity() as DetailsActivity).passwordLine
         
         val strength = zxcvbn.measure(passwordString)
         
@@ -143,7 +139,7 @@ class DetailsFragment : Fragment() {
                         "WORST" -> worstPassWarning // Worst warning
                         "WEAK" -> weakPassWarning // Weak warning
                         "MEDIUM" -> mediumPassWarning // Medium warning
-                        else -> not_applicable // For strong & above
+                        else -> notApplicable // For strong & above
                     }
                 }
         
@@ -163,10 +159,31 @@ class DetailsFragment : Fragment() {
         }
         
         // Guesses
-        fragmentBinding.guessesSubtitle.text = strength.guesses.toString()
+        val stringValue = strength.guesses.toString()
+        val formattedString =
+            if (stringValue.contains("E")) {
+                val splitString = stringValue.split("E")
+                "${splitString[0]} x 10^${splitString[1]}"
+            }
+            else {
+                stringValue
+            }
+        fragmentBinding.guessesSubtitle.text = formattedString
         
         // Order of magnitude of guesses
         fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.toString()
+    
+        // Statistics
+        val length = passwordString.length
+        val upperCaseCount = passwordString.count { it.isUpperCase() }
+        val lowerCaseCount = passwordString.count { it.isLowerCase() }
+        val numbersCount = passwordString.count { it.isDigit() }
+        val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount
+        fragmentBinding.lengthText.text = length.toString()
+        fragmentBinding.upperCaseText.text = upperCaseCount.toString()
+        fragmentBinding.lowerCaseText.text = lowerCaseCount.toString()
+        fragmentBinding.numbersText.text = numbersCount.toString()
+        fragmentBinding.specialCharsText.text = specialCharsCount.toString()
         
         
         // Clear clipboard after 1 minute if copied from this app

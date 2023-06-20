@@ -19,4 +19,8 @@
 
 package com.iyps.models
 
-data class FileItem(val passwordLine: String)
+data class License(
+    val licenseTitle: String,
+    val licenseDesc: String,
+    val url: String
+)

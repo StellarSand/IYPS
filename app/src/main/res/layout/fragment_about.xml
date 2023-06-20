@@ -30,64 +30,62 @@
     tools:context=".fragments.main.AboutFragment"
     tools:ignore="ContentDescription">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_10"
-            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_12"
             android:paddingStart="@dimen/margin_12"
             android:paddingTop="@dimen/margin_10"
             android:paddingEnd="@dimen/margin_12"
             android:paddingBottom="@dimen/margin_10">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/app_icon_img"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:src="@drawable/app_icon" />
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_launcher_foreground"
+                android:scaleType="center"
+                android:background="@color/seed"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/app_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/app_icon_img"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/app_icon_img"
                 android:layout_marginTop="@dimen/margin_6.5"
                 android:paddingStart="@dimen/margin_8"
                 android:paddingEnd="@dimen/margin_8"
                 android:text="@string/app_name"
-                android:textColor="@color/textTitleColor"
+                android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_20"
                 style="@style/MediumBoldText"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/version"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/app_name"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/app_name"
                 android:layout_marginTop="@dimen/margin_2.5"
                 android:paddingStart="@dimen/margin_8"
                 android:paddingEnd="@dimen/margin_8"
                 android:text="@string/app_version"
-                android:textColor="@color/colorControlNormal"
+                android:textColor="@color/color_control_normal"
                 android:textSize="@dimen/text_17"
                 style="@style/MediumBoldText"/>
 
-            <TextView
+            <include
+                layout="@layout/divider_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginStart="@dimen/margin_8"
+                android:layout_marginEnd="@dimen/margin_8"/>
+
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/theme"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/version"
                 android:layout_marginTop="@dimen/margin_16"
                 android:clickable="true"
                 android:focusable="true"
@@ -98,40 +96,34 @@
                 android:paddingBottom="@dimen/margin_16"
                 android:text="@string/theme"
                 android:textAlignment="viewStart"
-                android:textColor="@color/textTitleColor"
+                android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_16"
                 app:drawableStartCompat="@drawable/ic_theme"
                 android:drawablePadding="@dimen/margin_16" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/authors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/theme"
-                android:layout_marginTop="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_4"
                 android:clickable="true"
                 android:focusable="true"
                 android:foreground="?android:attr/selectableItemBackground"
                 android:paddingStart="@dimen/margin_16"
-                android:paddingTop="@dimen/margin_4"
+                android:paddingTop="@dimen/margin_16"
                 android:paddingEnd="@dimen/margin_12"
                 android:paddingBottom="@dimen/margin_16"
                 android:text="@string/authors"
                 android:textAlignment="viewStart"
-                android:textColor="@color/textTitleColor"
+                android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_16"
                 app:drawableStartCompat="@drawable/ic_authors"
                 android:drawablePadding="@dimen/margin_16" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/contributors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/authors"
                 android:layout_marginTop="@dimen/margin_4"
                 android:clickable="true"
                 android:focusable="true"
@@ -142,18 +134,15 @@
                 android:paddingBottom="@dimen/margin_16"
                 android:text="@string/contributors"
                 android:textAlignment="viewStart"
-                android:textColor="@color/textTitleColor"
+                android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_16"
                 app:drawableStartCompat="@drawable/ic_contributors"
                 android:drawablePadding="@dimen/margin_16" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/report_issue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/contributors"
                 android:layout_marginTop="@dimen/margin_4"
                 android:clickable="true"
                 android:focusable="true"
@@ -164,18 +153,15 @@
                 android:paddingBottom="@dimen/margin_16"
                 android:text="@string/report_issue"
                 android:textAlignment="viewStart"
-                android:textColor="@color/textTitleColor"
+                android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_16"
                 app:drawableStartCompat="@drawable/ic_report_issue"
                 android:drawablePadding="@dimen/margin_16"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/privacy_policy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/report_issue"
                 android:layout_marginTop="@dimen/margin_4"
                 android:clickable="true"
                 android:focusable="true"
@@ -186,18 +172,15 @@
                 android:paddingBottom="@dimen/margin_16"
                 android:text="@string/privacy_policy"
                 android:textAlignment="viewStart"
-                android:textColor="@color/textTitleColor"
+                android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_16"
                 app:drawableStartCompat="@drawable/ic_privacy_policy"
                 android:drawablePadding="@dimen/margin_16"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/licenses"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/privacy_policy"
                 android:layout_marginTop="@dimen/margin_4"
                 android:clickable="true"
                 android:focusable="true"
@@ -208,18 +191,15 @@
                 android:paddingBottom="@dimen/margin_16"
                 android:text="@string/licenses"
                 android:textAlignment="viewStart"
-                android:textColor="@color/textTitleColor"
+                android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_16"
                 app:drawableStartCompat="@drawable/ic_licenses"
                 android:drawablePadding="@dimen/margin_16" />
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/view_on_git"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/licenses"
                 app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginTop="@dimen/margin_4"
                 android:layout_marginBottom="@dimen/margin_10"
@@ -232,11 +212,11 @@
                 android:paddingBottom="@dimen/margin_16"
                 android:text="@string/view_on_github"
                 android:textAlignment="viewStart"
-                android:textColor="@color/textTitleColor"
+                android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_16"
                 app:drawableStartCompat="@drawable/ic_github"
                 android:drawablePadding="@dimen/margin_16" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
 </ScrollView>
