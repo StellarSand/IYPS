@@ -1,0 +1,6 @@
+- Refonte pour une meilleure accessibilité.
+- Afficher plus de détails pour les mots de passe.
+- Prise en charge des fichiers sélectionnés pour Android 13 et plus.
+- Icône d'application adaptative.
+- Icônes thématiques incluses pour Android 13 et supérieur.
+- Amélioration des traductions en italien et en français.

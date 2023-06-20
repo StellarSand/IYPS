@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 
 
+## v1.4.0
+- Redesign for better accessibility.
+- Show more details for passwords.
+- Select file support for Android 13 and above.
+- Adaptive app icon.
+- Included themed icons for Android 13 and above.
+- Improved Italian(by [gdonisi](https://github.com/gdonisi)) and French(by [Amiralgaby](https://github.com/Amiralgaby)) translations.
+
+
+
 ## v1.2.0
 - Test multiple passwords from a text file
 

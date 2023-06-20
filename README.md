@@ -92,12 +92,12 @@ If you find bugs or have suggestions, please report it to the [issue tracker](ht
 ## Contributing
 Please read the [contributing guidelines](https://github.com/the-weird-aquarian/IYPS/blob/main/CONTRIBUTING.md) before contributing.
 
-New pull requests can be submitted [here](https://github.com/tthe-weird-aquarian/IYPS/pulls).
+New pull requests can be submitted [here](https://github.com/the-weird-aquarian/IYPS/pulls).
 
 
 
 ## Credits
-- [parveshnarwal](https://github.com/parveshnarwal) for helping me out and co-leading the development of this app.
+- [parveshnarwal](https://github.com/parveshnarwal) for helping and co-leading the development of this app.
 - [Contributors](https://github.com/the-weird-aquarian/IYPS/graphs/contributors) for making this app better.
 
 

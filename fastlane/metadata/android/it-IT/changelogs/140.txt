@@ -1,0 +1,6 @@
+- Riprogettazione per una migliore accessibilità.
+- Mostra più dettagli per le password.
+- Supporto dei file selezionati per Android 13 e successivi.
+- Icona dell'app adattabile.
+- Icone a tema incluse per Android 13 e versioni successive.
+- Miglioramento delle traduzioni in italiano e francese.
