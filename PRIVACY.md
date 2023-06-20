@@ -1,15 +1,16 @@
 # IYPS Privacy Policy
 
-This privacy policy governs your use of the software application IYPS for mobile devices that was created by [the-weird-aquarian](https://github.com/the-weird-aquarian) & [parveshnarwal](https://github.com/parveshnarwal).
+This privacy policy applies to your use of the IYPS software application on mobile devices.
 
-The terms “we,” “us,” and “our” refer to the developers of this app. “You” refers to you, as a user of the IYPS application.
+The terms “we,” “us,” and “our” refer to the developers of this app, while “you” and "your" refers to you, as a user of the IYPS app.
 
 
 
 ## Data collected by us
-We are committed to protecting the privacy of our users. We do not collect any personal information whatsoever.
+We are committed to protecting the privacy of our users. We do not collect any personal information whatsoever. 
 
+This app does not contain any trackers, you can check the [εxodus report](https://reports.exodus-privacy.eu.org/en/reports/com.iyps/latest/).
 
 
 ## Changes to our privacy policy
-We reserve the right to change this Privacy Policy and our Terms of Use at any time. If we change this Privacy Policy, we will post these changes on this page so that you are always aware of what information we collect, how we use it, and under what circumstances we disclose it. It is your sole responsibility to view any such changes to the terms of this Privacy Policy. If you do not agree to any changes, if and when such changes may be made to this Privacy Policy, you must cease access to this application.
+We reserve the right to modify this Privacy Policy and our Terms of Use as needed. If any changes are made, we will post them on this page to ensure you are always aware of the information we collect, how we use it, and when we disclose it. It is your responsibility to review any updates to this Privacy Policy. If you disagree with any modifications, if and when such changes may be made to this Privacy Policy, you must stop using this application.
