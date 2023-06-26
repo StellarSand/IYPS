@@ -25,6 +25,22 @@
         <item name="android:windowLightStatusBar">true</item>
     </style>
 
+    <!--Theme chips-->
+    <style name="SystemDefaultChipTheme" parent="BaseThemeChipStyle">
+        <item name="closeIcon">@drawable/ic_system_default</item>
+        <item name="android:text">@string/system_default</item>
+    </style>
+
+    <style name="LightChipTheme" parent="BaseThemeChipStyle">
+        <item name="closeIcon">@drawable/ic_light</item>
+        <item name="android:text">@string/light</item>
+    </style>
+
+    <style name="DarkChipTheme" parent="BaseThemeChipStyle">
+        <item name="closeIcon">@drawable/ic_dark</item>
+        <item name="android:text">@string/dark</item>
+    </style>
+
     <!--Bottom sheet theme-->
     <style name="BottomSheetTheme" parent="@style/ThemeOverlay.Material3.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/CustomBottomSheet</item>

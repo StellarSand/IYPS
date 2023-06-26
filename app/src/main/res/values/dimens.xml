@@ -20,6 +20,7 @@
 <resources>
 
     <!--Margins & paddings-->
+    <dimen name="margin_75">75dp</dimen>
     <dimen name="margin_50">50dp</dimen>
     <dimen name="margin_25">25dp</dimen>
     <dimen name="margin_22">22dp</dimen>

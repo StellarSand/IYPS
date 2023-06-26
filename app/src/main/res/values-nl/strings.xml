@@ -76,7 +76,6 @@
 
     <!--About fragment-->
     <string name="theme">Thema</string>
-    <string name="authors">Auteurs</string>
     <string name="contributors">Medewerkers</string>
     <string name="report_issue">Een probleem melden</string>
     <string name="privacy_policy">Privacybeleid</string>

@@ -71,7 +71,6 @@
 
     <!--About fragment-->
     <string name="theme">テーマ</string>
-    <string name="authors">著者</string>
     <string name="contributors">貢献者</string>
     <string name="report_issue">問題を報告する</string>
     <string name="privacy_policy">プライバシーポリシー</string>

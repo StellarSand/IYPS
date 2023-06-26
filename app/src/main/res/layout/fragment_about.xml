@@ -102,7 +102,7 @@
                 android:drawablePadding="@dimen/margin_16" />
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/authors"
+                android:id="@+id/privacy_policy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_4"
@@ -113,11 +113,30 @@
                 android:paddingTop="@dimen/margin_16"
                 android:paddingEnd="@dimen/margin_12"
                 android:paddingBottom="@dimen/margin_16"
-                android:text="@string/authors"
+                android:text="@string/privacy_policy"
                 android:textAlignment="viewStart"
                 android:textColor="@color/color_text_title"
                 android:textSize="@dimen/text_16"
-                app:drawableStartCompat="@drawable/ic_authors"
+                app:drawableStartCompat="@drawable/ic_privacy_policy"
+                android:drawablePadding="@dimen/margin_16"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/licenses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_4"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingStart="@dimen/margin_16"
+                android:paddingTop="@dimen/margin_16"
+                android:paddingEnd="@dimen/margin_12"
+                android:paddingBottom="@dimen/margin_16"
+                android:text="@string/licenses"
+                android:textAlignment="viewStart"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/text_16"
+                app:drawableStartCompat="@drawable/ic_licenses"
                 android:drawablePadding="@dimen/margin_16" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -157,44 +176,6 @@
                 android:textSize="@dimen/text_16"
                 app:drawableStartCompat="@drawable/ic_report_issue"
                 android:drawablePadding="@dimen/margin_16"/>
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/privacy_policy"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_4"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:paddingStart="@dimen/margin_16"
-                android:paddingTop="@dimen/margin_16"
-                android:paddingEnd="@dimen/margin_12"
-                android:paddingBottom="@dimen/margin_16"
-                android:text="@string/privacy_policy"
-                android:textAlignment="viewStart"
-                android:textColor="@color/color_text_title"
-                android:textSize="@dimen/text_16"
-                app:drawableStartCompat="@drawable/ic_privacy_policy"
-                android:drawablePadding="@dimen/margin_16"/>
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/licenses"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_4"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:paddingStart="@dimen/margin_16"
-                android:paddingTop="@dimen/margin_16"
-                android:paddingEnd="@dimen/margin_12"
-                android:paddingBottom="@dimen/margin_16"
-                android:text="@string/licenses"
-                android:textAlignment="viewStart"
-                android:textColor="@color/color_text_title"
-                android:textSize="@dimen/text_16"
-                app:drawableStartCompat="@drawable/ic_licenses"
-                android:drawablePadding="@dimen/margin_16" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/view_on_git"

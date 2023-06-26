@@ -53,6 +53,8 @@
     <string name="suggestions">Suggestions</string>
     <string name="est_guesses_to_crack">Estimated guesses to crack</string>
     <string name="order_of_magn">Order of magnitude of guesses</string>
+    <string name="entropy">Entropy</string>
+    <string name="bits">bits</string>
     <string name="statistics">Statistics</string>
     <string name="length">• Length</string>
     <string name="upper_case">• Upper case</string>
@@ -70,7 +72,6 @@
 
     <!--About fragment-->
     <string name="theme">Theme</string>
-    <string name="authors">Authors</string>
     <string name="contributors">Contributors</string>
     <string name="report_issue">Report an issue</string>
     <string name="privacy_policy">Privacy Policy</string>

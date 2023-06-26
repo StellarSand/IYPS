@@ -80,7 +80,6 @@
 
     <!--About fragment-->
     <string name="theme">Thema</string>
-    <string name="authors">Autoren</string>
     <string name="contributors">Mitwirkende</string>
     <string name="report_issue">Ein Problem melden</string>
     <string name="privacy_policy">Datenschutzbestimmungen</string>

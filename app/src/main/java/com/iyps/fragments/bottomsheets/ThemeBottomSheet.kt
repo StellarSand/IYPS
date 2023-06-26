@@ -38,9 +38,9 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
         bottomSheetBinding.sysDefault.isVisible = Build.VERSION.SDK_INT >= 29
         
         // Radio group
-        bottomSheetBinding.themeRadiogroup.apply {
-            
-            // Default checked radio btn
+        bottomSheetBinding.themeChipGroup.apply {
+        
+            // Default checked chip
             if (preferenceManager.getInt(THEME_PREF) == 0) {
                 if (Build.VERSION.SDK_INT >= 29) {
                     preferenceManager.setInt(THEME_PREF, R.id.sys_default)
@@ -50,23 +50,23 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
                 }
             }
             check(preferenceManager.getInt(THEME_PREF))
-            
+        
             // On selecting option
-            setOnCheckedChangeListener { _, checkedId ->
-                preferenceManager.setInt(THEME_PREF, checkedId)
-                when (checkedId) {
+            setOnCheckedStateChangeListener { _, checkedIds ->
+                val checkedChip = checkedIds.first()
+                preferenceManager.setInt(THEME_PREF, checkedChip)
+                when (checkedChip) {
                     R.id.sys_default ->
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-                    
+                
                     R.id.light ->
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                    
+                
                     R.id.dark ->
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                 }
                 dismiss()
-                requireActivity().recreate()
-                
+            
             }
         }
     

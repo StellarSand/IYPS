@@ -30,7 +30,6 @@ import com.iyps.BuildConfig
 import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.databinding.FragmentAboutBinding
-import com.iyps.fragments.bottomsheets.AuthorsBottomSheet
 import com.iyps.fragments.bottomsheets.LicensesBottomSheet
 import com.iyps.fragments.bottomsheets.ThemeBottomSheet
 import com.iyps.utils.IntentUtils.Companion.openURL
@@ -62,23 +61,6 @@ class AboutFragment : Fragment() {
                 ThemeBottomSheet().show(parentFragmentManager, "ThemeBottomSheet")
             }
         
-        // Authors
-        fragmentBinding.authors
-            .setOnClickListener {
-                AuthorsBottomSheet().show(parentFragmentManager, "AuthorsBottomSheet")
-            }
-        
-        // Contributors
-        fragmentBinding.contributors
-            .setOnClickListener {
-                openURL(requireActivity(), getString(R.string.iyps_contributors_url))
-            }
-        
-        // Report an issue
-        fragmentBinding.reportIssue.setOnClickListener {
-            openURL(requireActivity(), getString(R.string.iyps_issues_url))
-        }
-        
         // Privacy policy
         fragmentBinding.privacyPolicy
             .setOnClickListener {
@@ -90,6 +72,17 @@ class AboutFragment : Fragment() {
             .setOnClickListener {
                 LicensesBottomSheet().show(parentFragmentManager, "LicensesBottomSheet")
             }
+    
+        // Contributors
+        fragmentBinding.contributors
+            .setOnClickListener {
+                openURL(requireActivity(), getString(R.string.iyps_contributors_url))
+            }
+    
+        // Report an issue
+        fragmentBinding.reportIssue.setOnClickListener {
+            openURL(requireActivity(), getString(R.string.iyps_issues_url))
+        }
         
         // View on GitHub
         fragmentBinding.viewOnGit
