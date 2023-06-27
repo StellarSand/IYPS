@@ -31,8 +31,8 @@ import androidx.activity.result.ActivityResult
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.RecyclerView
 import com.iyps.activities.DetailsActivity
-import com.iyps.activities.MainActivity
 import com.iyps.adapters.FileItemAdapter
 import com.iyps.databinding.FragmentFileBinding
 import com.iyps.models.FileItem
@@ -66,11 +66,8 @@ class FileFragment : Fragment(), FileItemAdapter.OnItemClickListener {
         
         /*########################################################################################*/
         
-        // Select file button
-        val mainActivityBinding = (requireActivity() as MainActivity).activityBinding
-        mainActivityBinding.selectButton.isVisible = true
-        mainActivityBinding.selectButton.setOnClickListener {
-            
+        // Select file FAB
+        fragmentBinding.selectFab.setOnClickListener {
             val intent =
                 Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
                     addCategory(Intent.CATEGORY_OPENABLE)
@@ -123,8 +120,25 @@ class FileFragment : Fragment(), FileItemAdapter.OnItemClickListener {
                 }
                 
                 withContext(Dispatchers.Main) {
-                    fragmentBinding.recyclerView.adapter = fileItemAdapter
-                    fragmentBinding.textView.visibility = View.GONE
+                    fragmentBinding.recyclerView.apply {
+                        //isVisible = true
+                        adapter = fileItemAdapter
+                        addOnScrollListener(object : RecyclerView.OnScrollListener() {
+                            override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
+                                super.onScrollStateChanged(recyclerView, newState)
+                                    fragmentBinding.selectFab.apply {
+                                        if (newState == RecyclerView.SCROLL_STATE_IDLE) {
+                                            postDelayed({ extend() }, 500)
+                                        }
+                                        else if (recyclerView.canScrollVertically(-1)
+                                                 || recyclerView.canScrollVertically(1)) {
+                                            shrink()
+                                        }
+                                    }
+                            }
+                        })
+                    }
+                    fragmentBinding.textView.isVisible = false
                 }
             }
         }

@@ -19,52 +19,44 @@
 
 package com.iyps.fragments.main
 
+import android.annotation.SuppressLint
 import android.content.ClipboardManager
 import android.content.Context
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.text.Editable
+import android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
 import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
+import androidx.core.view.inputmethod.EditorInfoCompat.IME_FLAG_NO_PERSONALIZED_LEARNING
 import androidx.fragment.app.Fragment
 import com.iyps.R
-import com.iyps.activities.MainActivity
+import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentPasswordBinding
-import com.iyps.utils.IntentUtils.Companion.clearClipboard
-import com.iyps.utils.PasswordUtils.Companion.passwordCrackTimeResult
-import com.iyps.utils.PasswordUtils.Companion.replaceStrings
-import com.nulabinc.zxcvbn.Zxcvbn
-import java.util.Locale
+import com.iyps.preferences.PreferenceManager
+import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
+import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
+import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
+import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
+import com.iyps.utils.UiUtils.Companion.passwordCrackTimeResult
+import com.iyps.utils.UiUtils.Companion.replaceCrackTimeStrings
+import com.iyps.utils.UiUtils.Companion.getGuessesText
+import com.iyps.utils.UiUtils.Companion.getMatchSequenceText
+import com.iyps.utils.UiUtils.Companion.setStrengthProgressAndText
+import com.iyps.utils.UiUtils.Companion.getStatisticsCounts
+import com.iyps.utils.UiUtils.Companion.getSuggestionsText
+import com.iyps.utils.UiUtils.Companion.getWarningText
+import kotlin.math.log2
 
 class PasswordFragment : Fragment() {
     
     private var _binding: FragmentPasswordBinding? = null
     private val fragmentBinding get() = _binding!!
-    private lateinit var zxcvbn: Zxcvbn
-    private lateinit var suggestionText: StringBuilder
     private var wait = 0
     private var clearClipboardTimer: CountDownTimer? = null
     private lateinit var clipboardManager: ClipboardManager
-    private var copiedFromHere = false
-    private var worstMeterColor = 0
-    private var weakMeterColor = 0
-    private var mediumMeterColor = 0
-    private var strongMeterColor = 0
-    private var excellentMeterColor = 0
-    private var emptyMeterColor = 0
-    private lateinit var worstString: String
-    private lateinit var weakString: String
-    private lateinit var mediumString: String
-    private lateinit var strongString: String
-    private lateinit var excellentString: String
-    private lateinit var worstPassWarning: String
-    private lateinit var weakPassWarning: String
-    private lateinit var mediumPassWarning: String
-    private lateinit var notApplicable: String
-    private lateinit var zeroString: String
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -76,228 +68,152 @@ class PasswordFragment : Fragment() {
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
-        zxcvbn = Zxcvbn()
-        suggestionText = StringBuilder()
-        clipboardManager = requireActivity().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
+        clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         wait = 0
-        emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
-        worstMeterColor = resources.getColor(R.color.worstMeterColor, requireContext().theme)
-        weakMeterColor = resources.getColor(R.color.weakMeterColor, requireContext().theme)
-        mediumMeterColor = resources.getColor(R.color.mediumMeterColor, requireContext().theme)
-        strongMeterColor = resources.getColor(R.color.strongMeterColor, requireContext().theme)
-        excellentMeterColor = resources.getColor(R.color.excellentMeterColor, requireContext().theme)
-        worstString = getString(R.string.worst)
-        weakString = getString(R.string.weak)
-        mediumString = getString(R.string.medium)
-        strongString = getString(R.string.strong)
-        excellentString = getString(R.string.excellent)
-        worstPassWarning = getString(R.string.worst_pass_warning)
-        weakPassWarning = getString(R.string.weak_pass_warning)
-        mediumPassWarning = getString(R.string.medium_pass_warning)
-        notApplicable = getString(R.string.na)
-        zeroString = getString(R.string.zero)
         
         /*########################################################################################*/
         
-        (requireActivity() as MainActivity).activityBinding.selectButton.isVisible = false
-        
-        fragmentBinding.passwordText.addTextChangedListener(object : TextWatcher {
+        fragmentBinding.passwordText.apply {
             
-            var delayTimer: CountDownTimer? = null
-            
-            override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
-            
-            override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
-                
-                // Introduce a subtle delay
-                // So passwords are checked after typing is finished
-                delayTimer.apply {
-                    this?.cancel()
-                    
-                    object : CountDownTimer(wait.toLong(), 100) {
-                        
-                        override fun onTick(millisUntilFinished: Long) {}
-                        
-                        // On timer finish, perform task
-                        override fun onFinish() {
-                            wait = 400
-                            
-                            // If edit text is not empty
-                            if (charSequence.isNotEmpty()) {
-                                
-                                val strength = zxcvbn.measure(charSequence)
-                                
-                                val tenBCrackTimeString = strength.crackTimesDisplay.offlineFastHashing1e10PerSecond
-                                val tenKCrackTimeString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
-                                val tenCrackTimeString = strength.crackTimesDisplay.onlineNoThrottling10perSecond
-                                val hundredCrackTimeString  = strength.crackTimesDisplay.onlineThrottling100perHour
-                                
-                                val tenBCrackTimeMilliSeconds =
-                                    (strength.crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
-                                val tenKCrackTimeMilliSeconds =
-                                    (strength.crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
-                                val tenCrackTimeMilliSeconds =
-                                    (strength.crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
-                                val hundredCrackTimeMilliSeconds =
-                                    (strength.crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
-                                
-                                // Estimated time to crack
-                                fragmentBinding.tenBGuessesSubtitle.text = replaceStrings(tenBCrackTimeString, this@PasswordFragment)
-                                tenBStrengthProgressAndText(passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
-                                fragmentBinding.tenKGuessesSubtitle.text = replaceStrings(tenKCrackTimeString, this@PasswordFragment)
-                                tenKStrengthProgressAndText(passwordCrackTimeResult(tenKCrackTimeMilliSeconds))
-                                fragmentBinding.tenGuessesSubtitle.text = replaceStrings(tenCrackTimeString, this@PasswordFragment)
-                                tenStrengthProgressAndText(passwordCrackTimeResult(tenCrackTimeMilliSeconds))
-                                fragmentBinding.hundredGuessesSubtitle.text = replaceStrings(hundredCrackTimeString, this@PasswordFragment)
-                                hundredStrengthProgressAndText(passwordCrackTimeResult(hundredCrackTimeMilliSeconds))
-                                
-                                // Warning
-                                // If empty, set to custom warning message
-                                fragmentBinding.warningSubtitle.text =
-                                    strength.feedback.getWarning(Locale.getDefault())
-                                        .ifEmpty {
-                                            when (passwordCrackTimeResult(tenBCrackTimeMilliSeconds)) {
-                                                "WORST" -> worstPassWarning // Worst warning
-                                                "WEAK" -> weakPassWarning // Weak warning
-                                                "MEDIUM" -> mediumPassWarning // Medium warning
-                                                else -> notApplicable // For strong & above
-                                            }
-                                        }
-                                
-                                // Suggestions
-                                strength.feedback.getSuggestions(Locale.getDefault()).apply {
-                                    fragmentBinding.suggestionsSubtitle.text =
-                                        if (!this.isNullOrEmpty() && this.size != 0) {
-                                            suggestionText.setLength(0)
-                                            for (sText in this.indices) {
-                                                suggestionText.append("\u2022 ").append(this[sText]).append("\n")
-                                            }
-                                            suggestionText
-                                        }
-                                        else {
-                                            getString(R.string.na)
-                                        }
-                                }
-                                
-                                // Guesses
-                                val stringValue = strength.guesses.toString()
-                                val formattedString =
-                                    if (stringValue.contains("E")) {
-                                        val splitString = stringValue.split("E")
-                                        "${splitString[0]} x 10^${splitString[1]}"
-                                    }
-                                    else {
-                                        stringValue
-                                    }
-                                fragmentBinding.guessesSubtitle.text = formattedString
-                                
-                                // Order of magnitude of guesses
-                                fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.toString()
-                                
-                                // Statistics
-                                val length = charSequence.length
-                                val upperCaseCount = charSequence.count { it.isUpperCase() }
-                                val lowerCaseCount = charSequence.count { it.isLowerCase() }
-                                val numbersCount = charSequence.count { it.isDigit() }
-                                val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount
-                                fragmentBinding.lengthText.text = length.toString()
-                                fragmentBinding.upperCaseText.text = upperCaseCount.toString()
-                                fragmentBinding.lowerCaseText.text = lowerCaseCount.toString()
-                                fragmentBinding.numbersText.text = numbersCount.toString()
-                                fragmentBinding.specialCharsText.text = specialCharsCount.toString()
-                                
-                            }
-                            // If edit text is empty or cleared, reset everything
-                            else {
-                                detailsReset()
-                            }
-                        }
-                    }.start()
+                if (PreferenceManager(requireContext()).getBoolean(INCOG_KEYBOARD)) {
+                    imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
+                    inputType = TYPE_TEXT_VARIATION_PASSWORD
                 }
-            }
-            
-            override fun afterTextChanged(editable: Editable) {}
-        })
+    
+            addTextChangedListener(object : TextWatcher {
         
-        // Clear clipboard after 1 minute if copied from this app
-        clipboardManager.addPrimaryClipChangedListener {
-            copiedFromHere = true
+                var delayTimer: CountDownTimer? = null
+        
+                override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
+        
+                override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
             
-            clearClipboardTimer.apply {
-                this?.cancel()
-                object : CountDownTimer(60000, 1000) {
-                    override fun onTick(millisUntilFinished: Long) {}
+                    // Introduce a subtle delay
+                    // So passwords are checked after typing is finished
+                    delayTimer.apply {
+                        this?.cancel()
+                
+                        object : CountDownTimer(wait.toLong(), 100) {
                     
-                    // On timer finish, perform task
-                    override fun onFinish() {
-                        clearClipboard(clipboardManager)
-                        copiedFromHere = false
+                            override fun onTick(millisUntilFinished: Long) {}
+                    
+                            // On timer finish, perform task
+                            override fun onFinish() {
+                                wait = 400
+                        
+                                // If edit text is not empty
+                                if (charSequence.isNotEmpty()) {
+                            
+                                    val strength = zxcvbn.measure(charSequence)
+                            
+                                    val tenBCrackTimeString = strength.crackTimesDisplay.offlineFastHashing1e10PerSecond
+                                    val tenKCrackTimeString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
+                                    val tenCrackTimeString = strength.crackTimesDisplay.onlineNoThrottling10perSecond
+                                    val hundredCrackTimeString  = strength.crackTimesDisplay.onlineThrottling100perHour
+                            
+                                    val tenBCrackTimeMilliSeconds =
+                                        (strength.crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
+                                    val tenKCrackTimeMilliSeconds =
+                                        (strength.crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
+                                    val tenCrackTimeMilliSeconds =
+                                        (strength.crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
+                                    val hundredCrackTimeMilliSeconds =
+                                        (strength.crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
+                            
+                                    // Estimated time to crack
+                                    fragmentBinding.tenBGuessesSubtitle.text = replaceCrackTimeStrings(tenBCrackTimeString, requireContext())
+                                    setStrengthProgressAndText(requireContext(),
+                                                               passwordCrackTimeResult(tenBCrackTimeMilliSeconds),
+                                                               fragmentBinding.tenBGuessesStrengthMeter,
+                                                               fragmentBinding.tenBGuessesStrength)
+                                    fragmentBinding.tenKGuessesSubtitle.text = replaceCrackTimeStrings(tenKCrackTimeString, requireContext())
+                                    setStrengthProgressAndText(requireContext(),
+                                                               passwordCrackTimeResult(tenKCrackTimeMilliSeconds),
+                                                               fragmentBinding.tenKGuessesStrengthMeter,
+                                                               fragmentBinding.tenKGuessesStrength)
+                                    fragmentBinding.tenGuessesSubtitle.text = replaceCrackTimeStrings(tenCrackTimeString, requireContext())
+                                    setStrengthProgressAndText(requireContext(),
+                                                               passwordCrackTimeResult(tenCrackTimeMilliSeconds),
+                                                               fragmentBinding.tenGuessesStrengthMeter,
+                                                               fragmentBinding.tenGuessesStrength)
+                                    fragmentBinding.hundredGuessesSubtitle.text = replaceCrackTimeStrings(hundredCrackTimeString, requireContext())
+                                    setStrengthProgressAndText(requireContext(),
+                                                               passwordCrackTimeResult(hundredCrackTimeMilliSeconds),
+                                                               fragmentBinding.hundredGuessesStrengthMeter,
+                                                               fragmentBinding.hundredGuessesStrength)
+                            
+                                    // Warning
+                                    fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
+                                                                                          strength,
+                                                                                          passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
+                            
+                                    // Suggestions
+                                    fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), strength)
+                            
+                                    // Guesses
+                                    val guesses = strength.guesses
+                                    fragmentBinding.guessesSubtitle.text = getGuessesText(guesses)
+                            
+                                    // Order of magnitude of guesses
+                                    fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
+                            
+                                    // Entropy
+                                    @SuppressLint("SetTextI18n")
+                                    fragmentBinding.entropySubtitle.text =
+                                        "${log2(guesses).formatToTwoDecimalPlaces()} ${getString(R.string.bits)}"
+                            
+                                    // Match sequence
+                                    fragmentBinding.matchSequenceSubtitle.text =
+                                        getMatchSequenceText(requireContext(), strength)
+                            
+                                    // Statistics
+                                    val statsList = getStatisticsCounts(charSequence)
+                                    fragmentBinding.lengthText.text = statsList[0].toString()
+                                    fragmentBinding.upperCaseText.text = statsList[1].toString()
+                                    fragmentBinding.lowerCaseText.text = statsList[2].toString()
+                                    fragmentBinding.numbersText.text = statsList[3].toString()
+                                    fragmentBinding.specialCharsText.text = statsList[4].toString()
+                            
+                                }
+                                // If edit text is empty or cleared, reset everything
+                                else {
+                                    detailsReset()
+                                }
+                            }
+                        }.start()
                     }
-                }.start()
-            }
-        }
-    }
-    
-    private fun strengthProgressAndTextMap(timeToCrackResult: String): Triple<Int, Int, String?> {
-        val map = mapOf("WORST" to Triple(20, worstMeterColor, worstString),
-                        "WEAK" to Triple(40, weakMeterColor, weakString),
-                        "MEDIUM" to Triple(60, mediumMeterColor, mediumString),
-                        "STRONG" to Triple(80, strongMeterColor, strongString),
-                        "EXCELLENT" to Triple(100, excellentMeterColor, excellentString))
+                }
         
-        return map[timeToCrackResult] ?: Triple(0, emptyMeterColor, "NA")
-    }
-    
-    private fun tenBStrengthProgressAndText(timeToCrackResult: String) {
-        val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(timeToCrackResult)
-        fragmentBinding.tenBGuessesStrengthMeter.apply {
-            setIndicatorColor(indicatorColor)
-            setProgressCompat(progress, true)
+                override fun afterTextChanged(editable: Editable) {}
+            })
         }
-        fragmentBinding.tenBGuessesStrength.text = strengthText
-    }
-    
-    private fun tenKStrengthProgressAndText(timeToCrackResult: String) {
-        val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(timeToCrackResult)
-        fragmentBinding.tenKGuessesStrengthMeter.apply {
-            setIndicatorColor(indicatorColor)
-            setProgressCompat(progress, true)
-        }
-        fragmentBinding.tenKGuessesStrength.text = strengthText
-    }
-    
-    private fun tenStrengthProgressAndText(timeToCrackResult: String) {
-        val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(timeToCrackResult)
-        fragmentBinding.tenGuessesStrengthMeter.apply {
-            setIndicatorColor(indicatorColor)
-            setProgressCompat(progress, true)
-        }
-        fragmentBinding.tenGuessesStrength.text = strengthText
-    }
-    
-    private fun hundredStrengthProgressAndText(timeToCrackResult: String) {
-        val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(timeToCrackResult)
-        fragmentBinding.hundredGuessesStrengthMeter.apply {
-            setIndicatorColor(indicatorColor)
-            setProgressCompat(progress, true)
-        }
-        fragmentBinding.hundredGuessesStrength.text = strengthText
+        
+        // Clipboard
+        manageClipboard(clipboardManager, clearClipboardTimer)
     }
     
     // Reset details
     private fun detailsReset() {
-        fragmentBinding.tenBGuessesStrength.text = notApplicable
-        fragmentBinding.tenKGuessesStrength.text = notApplicable
-        fragmentBinding.tenGuessesStrength.text = notApplicable
-        fragmentBinding.hundredGuessesStrength.text = notApplicable
-        fragmentBinding.tenBGuessesSubtitle.text = notApplicable
-        fragmentBinding.tenKGuessesSubtitle.text = notApplicable
-        fragmentBinding.tenGuessesSubtitle.text = notApplicable
-        fragmentBinding.hundredGuessesSubtitle.text = notApplicable
-        fragmentBinding.warningSubtitle.text = notApplicable
-        fragmentBinding.suggestionsSubtitle.text = notApplicable
-        fragmentBinding.guessesSubtitle.text = notApplicable
-        fragmentBinding.orderMagnSubtitle.text = notApplicable
+        val notApplicableString = getString(R.string.na)
+        val zeroString = getString(R.string.zero)
+        val emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
+        
+        fragmentBinding.tenBGuessesStrength.text = notApplicableString
+        fragmentBinding.tenKGuessesStrength.text = notApplicableString
+        fragmentBinding.tenGuessesStrength.text = notApplicableString
+        fragmentBinding.hundredGuessesStrength.text = notApplicableString
+        fragmentBinding.tenBGuessesSubtitle.text = notApplicableString
+        fragmentBinding.tenKGuessesSubtitle.text = notApplicableString
+        fragmentBinding.tenGuessesSubtitle.text = notApplicableString
+        fragmentBinding.hundredGuessesSubtitle.text = notApplicableString
+        fragmentBinding.warningSubtitle.text = notApplicableString
+        fragmentBinding.suggestionsSubtitle.text = notApplicableString
+        fragmentBinding.guessesSubtitle.text = notApplicableString
+        fragmentBinding.orderMagnSubtitle.text = notApplicableString
+        fragmentBinding.orderMagnSubtitle.text = notApplicableString
+        fragmentBinding.entropySubtitle.text = notApplicableString
+        fragmentBinding.matchSequenceSubtitle.text = notApplicableString
         fragmentBinding.lengthText.text = zeroString
         fragmentBinding.upperCaseText.text = zeroString
         fragmentBinding.lowerCaseText.text = zeroString
@@ -330,7 +246,6 @@ class PasswordFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         clearClipboard(clipboardManager)
-        copiedFromHere = false
         _binding = null
     }
 }

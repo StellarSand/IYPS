@@ -1,5 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <!--
   ~ Copyright (c) 2022-present the-weird-aquarian
   ~
@@ -19,20 +17,12 @@
   ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item
-        android:id="@+id/nav_password"
-        android:icon="@drawable/ic_password"
-        android:title="@string/password"/>
-    <item
-        android:id="@+id/nav_file"
-        android:icon="@drawable/ic_file"
-        android:title="@string/file"/>
-
-    <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/ic_settings"
-        android:title="@string/settings"/>
-</menu>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="960"
+    android:viewportHeight="960"
+    android:tint="@color/color_enabled">
+    <path android:fillColor="@android:color/white" android:pathData="M200 280V160q0-33 23.5-56.5T280 80h120v80H280v120h-80zm80 600q-33 0-56.5-23.5T200 800V680h80v120h120v80H280zm400-600V160H560V80h120q33 0 56.5 23.5T760 160v120h-80zM560 880v-80h120V680h80v120q0 33-23.5 56.5T680 880H560z"/>
+</vector>

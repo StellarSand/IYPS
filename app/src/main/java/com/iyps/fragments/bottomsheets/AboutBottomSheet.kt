@@ -17,78 +17,69 @@
  *  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.iyps.fragments.main
+package com.iyps.fragments.bottomsheets
 
-import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
-import androidx.fragment.app.Fragment
-import com.iyps.BuildConfig
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.R
-import com.iyps.activities.MainActivity
-import com.iyps.databinding.FragmentAboutBinding
-import com.iyps.fragments.bottomsheets.LicensesBottomSheet
-import com.iyps.fragments.bottomsheets.ThemeBottomSheet
+import com.iyps.databinding.BottomSheetAboutBinding
+import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.utils.IntentUtils.Companion.openURL
 
-class AboutFragment : Fragment() {
+class AboutBottomSheet : BottomSheetDialogFragment() {
     
-    private var _binding: FragmentAboutBinding? = null
-    private val fragmentBinding get() = _binding!!
+    private var _binding: BottomSheetAboutBinding? = null
+    private val bottomSheetBinding get() = _binding!!
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
-        _binding = FragmentAboutBinding.inflate(inflater, container, false)
-        return fragmentBinding.root
+        _binding = BottomSheetAboutBinding.inflate(inflater, container, false)
+        return bottomSheetBinding.root
     }
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     
-        (requireActivity() as MainActivity).activityBinding.selectButton.isVisible = false
-        
-        // Version
-        @SuppressLint("SetTextI18n")
-        fragmentBinding.version.text = "${getString(R.string.app_version)}: ${BuildConfig.VERSION_NAME}"
-        
-        // Theme
-        fragmentBinding.theme
-            .setOnClickListener {
-                ThemeBottomSheet().show(parentFragmentManager, "ThemeBottomSheet")
-            }
+        val headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.root)
+    
+        // Title
+        headerBinding.bottomSheetTitle.setText(R.string.about)
         
         // Privacy policy
-        fragmentBinding.privacyPolicy
+        bottomSheetBinding.privacyPolicy
             .setOnClickListener {
                 openURL(requireActivity(), getString(R.string.iyps_privacy_policy_url))
             }
         
         // Licenses
-        fragmentBinding.licenses
+        bottomSheetBinding.licenses
             .setOnClickListener {
                 LicensesBottomSheet().show(parentFragmentManager, "LicensesBottomSheet")
             }
     
         // Contributors
-        fragmentBinding.contributors
+        bottomSheetBinding.contributors
             .setOnClickListener {
                 openURL(requireActivity(), getString(R.string.iyps_contributors_url))
             }
     
         // Report an issue
-        fragmentBinding.reportIssue.setOnClickListener {
+        bottomSheetBinding.reportIssue.setOnClickListener {
             openURL(requireActivity(), getString(R.string.iyps_issues_url))
         }
         
         // View on GitHub
-        fragmentBinding.viewOnGit
+        bottomSheetBinding.viewOnGit
             .setOnClickListener {
                 openURL(requireActivity(), getString(R.string.iyps_github_url))
             }
+    
+        // Cancel
+        bottomSheetBinding.cancelButton.setOnClickListener { dismiss() }
         
     }
     

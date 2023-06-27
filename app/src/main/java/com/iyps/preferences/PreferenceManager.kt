@@ -26,6 +26,8 @@ class PreferenceManager(context: Context) {
     companion object {
         // Shared pref keys
         const val THEME_PREF = "theme"
+        const val BLOCK_SS = "block_ss"
+        const val INCOG_KEYBOARD = "incog_keyboard"
     }
     
     private val sharedPreferences =
@@ -38,6 +40,16 @@ class PreferenceManager(context: Context) {
     fun setInt(key: String, integer: Int) {
         val editor = sharedPreferences.edit()
         editor.putInt(key, integer)
+        editor.apply()
+    }
+    
+    fun getBoolean(key: String): Boolean {
+        return sharedPreferences.getBoolean(key, true)
+    }
+    
+    fun setBoolean(key: String, boolean: Boolean) {
+        val editor = sharedPreferences.edit()
+        editor.putBoolean(key, boolean)
         editor.apply()
     }
 

@@ -31,13 +31,12 @@
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="150dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:background="@android:color/transparent"
         android:clipToPadding="false"
         android:paddingTop="@dimen/margin_10"
-        android:paddingBottom="10dp"
-        tools:listitem="@layout/item_file_recycler_view"/>
+        android:paddingBottom="80dp"
+        tools:listitem="@layout/item_file_recycler_view" />
 
     <TextView
         android:id="@+id/text_view"
@@ -54,5 +53,21 @@
         android:text="@string/select_file_text"
         android:textSize="@dimen/text_16"
         android:textColor="@color/color_control_normal"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/select_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginBottom="@dimen/margin_16"
+        app:backgroundTint="@color/color_fab_bg"
+        app:icon="@drawable/ic_select_file"
+        app:iconTint="@color/color_snackbar_text"
+        android:text="@string/select_file_btn"
+        android:textSize="@dimen/text_16"
+        android:textColor="@color/color_snackbar_text"
+        style="@style/MediumBoldText"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

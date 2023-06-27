@@ -55,14 +55,13 @@
     <color name="color_scrim">#000000</color>
 
     <color name="color_bottom_nav_indicator">#80DA8B</color>
-    <color name="color_button_bg">@color/color_primary</color>
+    <color name="color_fab_bg">@color/color_primary</color>
     <color name="color_control_normal">#5E5E5E</color>
     <color name="color_text_title">#424242</color>
     <color name="color_enabled">#606163</color>
     <color name="color_disabled">#D4D3DD</color>
     <color name="color_hint">#B2B2B2</color>
     <color name="color_card_stroke">#D6D6D6</color>
-    <color name="color_grey_text_surface">#EBEBEB</color>
     <color name="color_scrollbar">#B8B8B8</color>
     <color name="color_drag_handle">#C0C1C3</color>
     <color name="color_url">#1976D2</color>

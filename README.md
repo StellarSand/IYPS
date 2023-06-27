@@ -97,7 +97,7 @@ New pull requests can be submitted [here](https://github.com/the-weird-aquarian/
 
 
 ## Credits
-- [parveshnarwal](https://github.com/parveshnarwal) for helping and co-leading the development of this app.
+- [parveshnarwal](https://github.com/parveshnarwal) for uploading the app on Google Play and previously co-leading the development.
 - [Contributors](https://github.com/the-weird-aquarian/IYPS/graphs/contributors) for making this app better.
 
 

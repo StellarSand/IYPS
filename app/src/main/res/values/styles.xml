@@ -107,7 +107,7 @@
 
     <!--Bottom sheet rounded corners-->
     <style name="BottomSheetShapeStyle" parent="ShapeAppearance.Material3.LargeComponent">
-        <item name="cornerSize">@dimen/margin_12</item>
+        <item name="cornerSize">@dimen/margin_16</item>
     </style>
 
     <style name="NegativeButtonStyle" parent="Widget.Material3.Button.OutlinedButton">

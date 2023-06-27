@@ -21,29 +21,14 @@ package com.iyps.utils
 
 import android.app.Activity
 import android.content.ActivityNotFoundException
-import android.content.ClipData
-import android.content.ClipboardManager
 import android.content.Intent
 import android.net.Uri
-import android.os.Build
 import android.widget.Toast
 import com.iyps.R
 
 class IntentUtils {
 
     companion object {
-
-        // Clear password from clipboard
-        fun clearClipboard(clipboardManager: ClipboardManager) {
-
-            if (Build.VERSION.SDK_INT >= 28) {
-                clipboardManager.clearPrimaryClip()
-            }
-            else {
-                clipboardManager.setPrimaryClip(ClipData.newPlainText(null, null))
-            }
-
-        }
 
         // URLs
         fun openURL(activityFrom: Activity, URL: String?) {

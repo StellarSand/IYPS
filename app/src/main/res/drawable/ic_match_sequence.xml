@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright (c) 2022-present the-weird-aquarian
+  ~
+  ~  This file is part of IYPS.
+  ~
+  ~  IYPS is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~  IYPS is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="960"
+    android:viewportHeight="960"
+    android:tint="@color/color_enabled">
+
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M120 761q-33 0-56.5-23.5T40 681v-80q0-17 11.5-28.5T80 561q17 0 28.5 11.5T120 601v80h720v-80q0-17 11.5-28.5T880 561q17 0 28.5 11.5T920 601v80q0 33-23.5 56.5T840 761H120zm174-152q-49 0-77-25.5T189 514q0-42 32.5-68.5T305 419q23 0 42.5 3.5T381 434v-14q0-27-18.5-43T312 361q-15 0-28.5 4.5T259 378q-9 7-19.5 8t-19.5-6q-9-7-11-17.5t6-18.5q18-17 42.5-26t55.5-9q62 0 95 29.5t33 85.5v147q0 12-8.5 20.5T412 600q-13 0-21.5-8.5T382 570v-4h-3q-13 20-35 31.5T294 609zm22-143q-32 0-49 12.5T250 514q0 20 15 32.5t39 12.5q32 0 54.5-22.5T381 482q-14-8-32-12t-33-4zm337 143q-41 0-62.5-18T563 563h-3v13q0 12-8.5 20.5T531 605q-12 0-21-9t-9-21V230q0-13 9-22t22-9q13 0 22 9t9 22v82l-3 40h3q3-5 24-25.5t66-20.5q64 0 101 46t37 106q0 60-36.5 105.5T653 609zm-9-247q-40 0-62 29.5T560 457q0 37 22 66t62 29q40 0 62.5-29t22.5-66q0-37-22.5-66T644 362z"/>
+</vector>

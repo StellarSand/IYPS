@@ -32,13 +32,13 @@
         android:label="fragment_password"
         tools:layout="@layout/fragment_password" >
         <action
-            android:id="@+id/action_passwordFragment_to_aboutFragment"
-            app:destination="@id/aboutFragment"
+            android:id="@+id/action_passwordFragment_to_fileFragment"
+            app:destination="@id/fileFragment"
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
         <action
-            android:id="@+id/action_passwordFragment_to_fileFragment"
-            app:destination="@id/fileFragment"
+            android:id="@+id/action_passwordFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
     </fragment>
@@ -54,24 +54,24 @@
             app:enterAnim="@anim/slide_from_start"
             app:exitAnim="@anim/slide_to_end"/>
         <action
-            android:id="@+id/action_fileFragment_to_aboutFragment"
-            app:destination="@id/aboutFragment"
+            android:id="@+id/action_fileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
     </fragment>
 
     <fragment
-        android:id="@+id/aboutFragment"
-        android:name="com.iyps.fragments.main.AboutFragment"
+        android:id="@+id/settingsFragment"
+        android:name="com.iyps.fragments.main.SettingsFragment"
         android:label="fragment_about"
-        tools:layout="@layout/fragment_about" >
+        tools:layout="@layout/fragment_settings" >
         <action
-            android:id="@+id/action_aboutFragment_to_passwordFragment"
+            android:id="@+id/action_settingsFragment_to_passwordFragment"
             app:destination="@id/passwordFragment"
             app:enterAnim="@anim/slide_from_start"
             app:exitAnim="@anim/slide_to_end"/>
         <action
-            android:id="@+id/action_aboutFragment_to_fileFragment"
+            android:id="@+id/action_settingsFragment_to_fileFragment"
             app:destination="@id/fileFragment"
             app:enterAnim="@anim/slide_from_start"
             app:exitAnim="@anim/slide_to_end"/>

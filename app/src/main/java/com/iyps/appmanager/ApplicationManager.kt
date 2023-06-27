@@ -29,10 +29,43 @@ import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import com.google.android.material.elevation.SurfaceColors
 import com.iyps.R
+import com.iyps.inputstream.ResourceFromInputStream
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
+import com.nulabinc.zxcvbn.StandardDictionaries
+import com.nulabinc.zxcvbn.StandardKeyboards
+import com.nulabinc.zxcvbn.Zxcvbn
+import com.nulabinc.zxcvbn.ZxcvbnBuilder
+import com.nulabinc.zxcvbn.matchers.DictionaryLoader
 
 class ApplicationManager : Application() {
+    
+    private val passwordsResource by lazy {
+        val passwordsStream = resources.openRawResource(R.raw.passwords)
+        ResourceFromInputStream(passwordsStream)
+    }
+    private val englishWordsResource by lazy {
+        val englishWordsStream = resources.openRawResource(R.raw.english_words)
+        ResourceFromInputStream(englishWordsStream)
+    }
+    
+    private val effUnrankedResource by lazy {
+        val effUnrankedStream = resources.openRawResource(R.raw.eff_unranked)
+        ResourceFromInputStream(effUnrankedStream)
+    }
+    
+    val zxcvbn: Zxcvbn by lazy {
+        ZxcvbnBuilder()
+            .dictionary(DictionaryLoader("passwords", passwordsResource).load())
+            .dictionary(DictionaryLoader("english_words", englishWordsResource).load())
+            .dictionary(DictionaryLoader("EFF_unranked", effUnrankedResource).load())
+            .dictionary(StandardDictionaries.FEMALE_NAMES_LOADER.load())
+            .dictionary(StandardDictionaries.MALE_NAMES_LOADER.load())
+            .dictionary(StandardDictionaries.SURNAMES_LOADER.load())
+            .dictionary(StandardDictionaries.US_TV_AND_FILM_LOADER.load())
+            .keyboards(StandardKeyboards.loadAllKeyboards())
+            .build()
+    }
     
     override fun onCreate() {
         super.onCreate()
