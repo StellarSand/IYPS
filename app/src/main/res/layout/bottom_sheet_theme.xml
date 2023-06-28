@@ -45,7 +45,7 @@
         app:selectionRequired="true">
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/sys_default"
+            android:id="@+id/follow_system"
             android:layout_width="match_parent"
             android:layout_height="@dimen/margin_75"
             android:layoutDirection="rtl"

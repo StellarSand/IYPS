@@ -29,11 +29,12 @@ import androidx.fragment.app.Fragment
 import com.iyps.BuildConfig
 import com.iyps.R
 import com.iyps.databinding.FragmentSettingsBinding
-import com.iyps.fragments.bottomsheets.AboutBottomSheet
+import com.iyps.fragments.bottomsheets.LicensesBottomSheet
 import com.iyps.fragments.bottomsheets.ThemeBottomSheet
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
+import com.iyps.utils.IntentUtils.Companion.openURL
 
 class SettingsFragment : Fragment() {
     
@@ -82,11 +83,34 @@ class SettingsFragment : Fragment() {
                 preferenceManager.setBoolean(INCOG_KEYBOARD, isChecked)
             }
         }
-        
-        // About
-        fragmentBinding.about
+    
+        // Privacy policy
+        fragmentBinding.privacyPolicy
             .setOnClickListener {
-                AboutBottomSheet().show(parentFragmentManager, "AboutBottomSheet")
+                openURL(requireActivity(), getString(R.string.iyps_privacy_policy_url))
+            }
+    
+        // Licenses
+        fragmentBinding.licenses
+            .setOnClickListener {
+                LicensesBottomSheet().show(parentFragmentManager, "LicensesBottomSheet")
+            }
+    
+        // Contributors
+        fragmentBinding.contributors
+            .setOnClickListener {
+                openURL(requireActivity(), getString(R.string.iyps_contributors_url))
+            }
+    
+        // Report an issue
+        fragmentBinding.reportIssue.setOnClickListener {
+            openURL(requireActivity(), getString(R.string.iyps_issues_url))
+        }
+    
+        // View on GitHub
+        fragmentBinding.viewOnGit
+            .setOnClickListener {
+                openURL(requireActivity(), getString(R.string.iyps_github_url))
             }
         
     }

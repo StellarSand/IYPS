@@ -99,7 +99,7 @@
     <string name="cancel">Abbrechen</string>
 
     <!--Theme-->
-    <string name="system_default">Systemvorgabe</string>
+    <string name="follow_system">Systemvorgabe</string>
     <string name="light">Hell</string>
     <string name="dark">Dunkel</string>
 

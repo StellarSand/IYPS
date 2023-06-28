@@ -26,7 +26,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb"
-    tools:context=".fragments.bottomsheets.AboutBottomSheet"
+    tools:context=".fragments.main.SettingsFragment"
     tools:ignore="ContentDescription">
 
     <LinearLayout
@@ -42,7 +42,7 @@
             android:id="@+id/app_icon_img"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_16"
             android:src="@drawable/ic_launcher_foreground"
             android:scaleType="center"
             android:background="@color/seed"
@@ -88,10 +88,7 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            android:paddingStart="@dimen/margin_16"
-            android:paddingTop="@dimen/margin_16"
-            android:paddingEnd="@dimen/margin_12"
-            android:paddingBottom="@dimen/margin_16"
+            android:padding="@dimen/margin_16"
             android:text="@string/theme"
             android:textAlignment="viewStart"
             android:textColor="@color/color_text_title"
@@ -99,15 +96,26 @@
             android:drawableStart="@drawable/ic_theme"
             android:drawablePadding="@dimen/margin_16" />
 
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_12"
+            android:layout_marginStart="@dimen/margin_8"
+            android:text="@string/privacy"
+            android:layout_gravity="start"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_17"
+            style="@style/MediumBoldText"/>
+
         <com.google.android.material.materialswitch.MaterialSwitch
             android:id="@+id/block_screenshots_switch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_4"
-            android:paddingStart="@dimen/margin_16"
-            android:paddingTop="@dimen/margin_16"
-            android:paddingEnd="@dimen/margin_12"
-            android:paddingBottom="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_2.5"
+            android:padding="@dimen/margin_16"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/block_screenshots"
             android:textAlignment="viewStart"
             android:textColor="@color/color_text_title"
@@ -121,10 +129,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/margin_4"
-            android:paddingStart="@dimen/margin_16"
-            android:paddingTop="@dimen/margin_16"
-            android:paddingEnd="@dimen/margin_12"
-            android:paddingBottom="@dimen/margin_16"
+            android:padding="@dimen/margin_16"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/incognito_keyboard"
             android:textAlignment="viewStart"
             android:textColor="@color/color_text_title"
@@ -135,6 +143,82 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginStart="@dimen/margin_8"
+            android:text="@string/about"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_17"
+            style="@style/MediumBoldText"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/privacy_policy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_2.5"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/margin_16"
+            android:text="@string/privacy_policy"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_16"
+            app:drawableStartCompat="@drawable/ic_privacy_policy"
+            android:drawablePadding="@dimen/margin_16"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/licenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/margin_16"
+            android:text="@string/licenses"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_16"
+            app:drawableStartCompat="@drawable/ic_licenses"
+            android:drawablePadding="@dimen/margin_16" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/contributors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/margin_16"
+            android:text="@string/contributors"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_16"
+            app:drawableStartCompat="@drawable/ic_contributors"
+            android:drawablePadding="@dimen/margin_16" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/report_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_4"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="@dimen/margin_16"
+            android:text="@string/report_issue"
+            android:textAlignment="viewStart"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_16"
+            app:drawableStartCompat="@drawable/ic_report_issue"
+            android:drawablePadding="@dimen/margin_16"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/view_on_git"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -143,15 +227,12 @@
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            android:paddingStart="@dimen/margin_16"
-            android:paddingTop="@dimen/margin_16"
-            android:paddingEnd="@dimen/margin_12"
-            android:paddingBottom="@dimen/margin_16"
-            android:text="@string/about"
+            android:padding="@dimen/margin_16"
+            android:text="@string/view_on_github"
             android:textAlignment="viewStart"
             android:textColor="@color/color_text_title"
             android:textSize="@dimen/text_16"
-            android:drawableStart="@drawable/ic_about"
+            app:drawableStartCompat="@drawable/ic_github"
             android:drawablePadding="@dimen/margin_16" />
 
     </LinearLayout>

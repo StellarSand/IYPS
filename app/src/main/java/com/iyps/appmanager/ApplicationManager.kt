@@ -85,7 +85,7 @@ class ApplicationManager : Application() {
                 }
                 
             }
-            R.id.sys_default -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
+            R.id.follow_system -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
             R.id.light -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
             R.id.dark -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
         }

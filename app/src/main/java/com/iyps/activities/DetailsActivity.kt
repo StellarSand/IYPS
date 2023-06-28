@@ -48,7 +48,7 @@ class DetailsActivity : AppCompatActivity() {
             setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
         }
         
-        supportActionBar?.title = passwordLine
+        supportActionBar?.title = getString(R.string.details)
 
         supportFragmentManager.beginTransaction()
             .replace(R.id.activity_host_fragment, DetailsFragment())

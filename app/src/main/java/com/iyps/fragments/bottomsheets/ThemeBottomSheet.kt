@@ -34,8 +34,8 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
         
         headerBinding.bottomSheetTitle.setText(R.string.theme)
         
-        // Show system default option only on SDK 29 and above
-        bottomSheetBinding.sysDefault.isVisible = Build.VERSION.SDK_INT >= 29
+        // Show "follow system" option only on SDK 29 and above
+        bottomSheetBinding.followSystem.isVisible = Build.VERSION.SDK_INT >= 29
         
         // Radio group
         bottomSheetBinding.themeChipGroup.apply {
@@ -43,7 +43,7 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
             // Default checked chip
             if (preferenceManager.getInt(THEME_PREF) == 0) {
                 if (Build.VERSION.SDK_INT >= 29) {
-                    preferenceManager.setInt(THEME_PREF, R.id.sys_default)
+                    preferenceManager.setInt(THEME_PREF, R.id.follow_system)
                 }
                 else {
                     preferenceManager.setInt(THEME_PREF, R.id.light)
@@ -56,7 +56,7 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
                 val checkedChip = checkedIds.first()
                 preferenceManager.setInt(THEME_PREF, checkedChip)
                 when (checkedChip) {
-                    R.id.sys_default ->
+                    R.id.follow_system ->
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
                 
                     R.id.light ->

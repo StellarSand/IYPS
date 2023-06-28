@@ -95,7 +95,7 @@
     <string name="cancel">Annuleren</string>
 
     <!--Theme-->
-    <string name="system_default">Systeemfout</string>
+    <string name="follow_system">Systeemfout</string>
     <string name="light">Licht</string>
     <string name="dark">Donker</string>
 

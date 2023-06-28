@@ -99,7 +99,7 @@
     <string name="cancel">Annuler</string>
 
     <!--Theme-->
-    <string name="system_default">D\u00E9faillance du syst\u00E8me</string>
+    <string name="follow_system">D\u00E9faillance du syst\u00E8me</string>
     <string name="light">Lumi\u00E8re</string>
     <string name="dark">Sombre</string>
 

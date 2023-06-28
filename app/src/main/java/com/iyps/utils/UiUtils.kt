@@ -189,7 +189,8 @@ class UiUtils {
                 matchesText.apply {
                     append("<b>${index + 1}) \"${match.token}\"</b>")
                     append("<br>${context.getString(R.string.pattern)}: $pattern")
-                    append("<br>\u2022 ${context.getString(R.string.order_of_magn)}: ${match.guessesLog10.formatToTwoDecimalPlaces()}")
+                    if (matchSequence.size > 1)
+                        append("<br>\u2022 ${context.getString(R.string.order_of_magn)}: ${match.guessesLog10.formatToTwoDecimalPlaces()}")
                     
                     when (pattern) {
                         Pattern.Dictionary -> {

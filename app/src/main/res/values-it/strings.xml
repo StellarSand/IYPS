@@ -96,7 +96,7 @@
     <string name="cancel">Annulla</string>
 
     <!--Theme-->
-    <string name="system_default">Predefinito di sistema</string>
+    <string name="follow_system">Predefinito di sistema</string>
     <string name="light">Chiaro</string>
     <string name="dark">Scuro</string>
 

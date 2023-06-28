@@ -20,21 +20,15 @@
 package com.iyps.fragments.details
 
 import android.annotation.SuppressLint
-import android.content.ClipboardManager
-import android.content.Context
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentPasswordBinding
-import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
-import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
 import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
 import com.iyps.utils.UiUtils.Companion.getGuessesText
 import com.iyps.utils.UiUtils.Companion.getMatchSequenceText
@@ -44,16 +38,12 @@ import com.iyps.utils.UiUtils.Companion.getWarningText
 import com.iyps.utils.UiUtils.Companion.passwordCrackTimeResult
 import com.iyps.utils.UiUtils.Companion.replaceCrackTimeStrings
 import com.iyps.utils.UiUtils.Companion.setStrengthProgressAndText
-import java.lang.StringBuilder
 import kotlin.math.log2
 
 class DetailsFragment : Fragment() {
     
     private var _binding: FragmentPasswordBinding? = null
     private val fragmentBinding get() = _binding!!
-    private lateinit var suggestionText: StringBuilder
-    private var clearClipboardTimer: CountDownTimer? = null
-    private lateinit var clipboardManager: ClipboardManager
     private lateinit var passwordString: String
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -67,13 +57,15 @@ class DetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
-        suggestionText = StringBuilder()
-        clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         passwordString = (requireActivity() as DetailsActivity).passwordLine
         
         /*########################################################################################*/
         
-        fragmentBinding.passwordBox.isVisible = false
+        fragmentBinding.passwordText.apply {
+            setText(passwordString)
+            isFocusable = false
+            isCursorVisible = false
+        }
         
         val strength = zxcvbn.measure(passwordString)
         
@@ -127,7 +119,7 @@ class DetailsFragment : Fragment() {
         fragmentBinding.guessesSubtitle.text = getGuessesText(guesses)
         
         // Order of magnitude of guesses
-        fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.toString()
+        fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
         
         // Entropy
         @SuppressLint("SetTextI18n")
@@ -144,15 +136,11 @@ class DetailsFragment : Fragment() {
         fragmentBinding.lowerCaseText.text = statsList[2].toString()
         fragmentBinding.numbersText.text = statsList[3].toString()
         fragmentBinding.specialCharsText.text = statsList[4].toString()
-        
-        // Clipboard
-        manageClipboard(clipboardManager, clearClipboardTimer)
     }
     
     // Clear clipboard immediately when fragment destroyed
     override fun onDestroyView() {
         super.onDestroyView()
-        clearClipboard(clipboardManager)
         _binding = null
     }
 }

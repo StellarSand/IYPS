@@ -121,7 +121,6 @@ class FileFragment : Fragment(), FileItemAdapter.OnItemClickListener {
                 
                 withContext(Dispatchers.Main) {
                     fragmentBinding.recyclerView.apply {
-                        //isVisible = true
                         adapter = fileItemAdapter
                         addOnScrollListener(object : RecyclerView.OnScrollListener() {
                             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {

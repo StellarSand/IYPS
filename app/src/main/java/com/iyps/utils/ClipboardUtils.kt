@@ -9,8 +9,8 @@ class ClipboardUtils {
     
     companion object {
         
-        fun manageClipboard(clipboardManager: ClipboardManager,
-                            clearClipboardTimer: CountDownTimer?) {
+        fun manageClipboard(clipboardManager: ClipboardManager) {
+            val clearClipboardTimer: CountDownTimer? = null
             
             // Clear clipboard after 1 minute if password is copied
             clipboardManager.addPrimaryClipChangedListener {

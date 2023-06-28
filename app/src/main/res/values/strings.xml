@@ -91,11 +91,10 @@
 
     <!--Settings fragment-->
     <string name="theme">Theme</string>
+    <string name="privacy">Privacy</string>
     <string name="block_screenshots">Block screenshots in app</string>
     <string name="incognito_keyboard">Incognito keyboard</string>
     <string name="about">About</string>
-
-    <!--About fragment-->
     <string name="contributors">Contributors</string>
     <string name="report_issue">Report an issue</string>
     <string name="privacy_policy">Privacy Policy</string>
@@ -115,7 +114,7 @@
     <string name="cancel">Cancel</string>
 
     <!--Theme-->
-    <string name="system_default">System Default</string>
+    <string name="follow_system">Follow system</string>
     <string name="light">Light</string>
     <string name="dark">Dark</string>
 

@@ -54,8 +54,6 @@ class PasswordFragment : Fragment() {
     
     private var _binding: FragmentPasswordBinding? = null
     private val fragmentBinding get() = _binding!!
-    private var wait = 0
-    private var clearClipboardTimer: CountDownTimer? = null
     private lateinit var clipboardManager: ClipboardManager
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -70,7 +68,7 @@ class PasswordFragment : Fragment() {
         
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-        wait = 0
+        var wait = 0
         
         /*########################################################################################*/
         
@@ -190,7 +188,7 @@ class PasswordFragment : Fragment() {
         }
         
         // Clipboard
-        manageClipboard(clipboardManager, clearClipboardTimer)
+        manageClipboard(clipboardManager)
     }
     
     // Reset details

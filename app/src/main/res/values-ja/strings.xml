@@ -90,7 +90,7 @@
     <string name="cancel">キャンセル</string>
 
     <!--Theme-->
-    <string name="system_default">システムのデフォルト</string>
+    <string name="follow_system">システムのデフォルト</string>
     <string name="light">光</string>
     <string name="dark">闇</string>
 

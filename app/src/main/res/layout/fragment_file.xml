@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022 the-weird-aquarian
+  ~ Copyright (c) 2022-present the-weird-aquarian
   ~
   ~  This file is part of IYPS.
   ~
@@ -36,7 +36,7 @@
         android:clipToPadding="false"
         android:paddingTop="@dimen/margin_10"
         android:paddingBottom="80dp"
-        tools:listitem="@layout/item_file_recycler_view" />
+        tools:listitem="@layout/item_file_recycler_view"/>
 
     <TextView
         android:id="@+id/text_view"
