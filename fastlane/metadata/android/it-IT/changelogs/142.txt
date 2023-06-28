@@ -1,0 +1,4 @@
+- Mostra più dettagli per le password.
+- Correzione della navigazione all'indietro.
+- Aggiunta opzione per impedire gli screenshot nell'app.
+- Aggiunta opzione per la tastiera in incognito.

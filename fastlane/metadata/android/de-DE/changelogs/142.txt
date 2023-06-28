@@ -1,0 +1,4 @@
+- Mehr Details für Passwörter anzeigen.
+- Die Rückwärtsnavigation wurde korrigiert.
+- Option hinzugefügt, um Screenshots in der App zu verhindern.
+- Option für Inkognito-Tastatur zugefügt.

@@ -195,7 +195,7 @@ class UiUtils {
                     when (pattern) {
                         Pattern.Dictionary -> {
                             append("<br>${context.getString(R.string.dict_name)}: ${match.dictionaryName}")
-                            append("<br>${context.getString(R.string.rank)}: ${match.rank}")
+                            if (matchSequence.size > 1) append("<br>${context.getString(R.string.rank)}: ${match.rank}")
                             append("<br>${context.getString(R.string.reversed)}: ${match.reversed}")
                             if (match.l33t)
                                 append("<br>${context.getString(R.string.substitutions)}: ${match.subDisplay.removeSurrounding("[", "]")}")

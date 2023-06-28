@@ -10,7 +10,7 @@ A password strength test app which displays strength, estimated crack time and p
 
 
 ## Contents
-- [Why?](#why)
+- [Overview](#overview)
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Download](#download)
@@ -24,7 +24,7 @@ A password strength test app which displays strength, estimated crack time and p
 
 
 
-## Why?
+## Overview
 Two things that should always be strong: Coffee ☕ and Passwords 🔑.
 
 With our growing digital life in a post pandemic world, data breaches & hacks have skyrocketed and passwords are the only thing keeping our digital accounts safe. It is always recommended to use a password manager like [Bitwarden](https://bitwarden.com/) or [KeePass](https://keepass.info/) to store and generate unique and strong passwords.
@@ -74,8 +74,7 @@ All notable changes to this project will be documented in the [changelog](https:
 
 
 ## How does it work?
-For a detailed explanation on how [zxcvbn](https://github.com/dropbox/zxcvbn) or [zxcvbn4j](https://github.com/nulab/zxcvbn4j) works, refer to the following:
-- [Realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
+For an in-depth explanation, check out this article on [realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
 
 
 
@@ -85,7 +84,9 @@ Privacy policy is located [here](https://github.com/the-weird-aquarian/IYPS/blob
 
 
 ## Issues
-If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/the-weird-aquarian/IYPS/issues). We encourage you to search for existing issues before opening a new one. Any duplicates will be closed immediately.
+If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/the-weird-aquarian/IYPS/issues). 
+
+We encourage you to search for existing issues before opening a new one. Any duplicates will be closed immediately.
 
 
 

@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 
 
+## v1.4.2
+- Show more details for passwords.
+- Fixed back navigation.
+- Added option to prevent screenshots in app.
+- Added option for incognito keyboard.
+
+
+
 ## v1.4.0
 - Redesign for better accessibility.
 - Show more details for passwords.
@@ -34,6 +42,7 @@ All notable changes to this project will be documented in this file.
 - Fixed incorrect information displayed in some cases
 - Clear clipboard
 - Improved German translation (by [toXel](https://github.com/toXel))
+
 
 
 ## v1.0.0
