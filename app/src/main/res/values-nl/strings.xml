@@ -28,10 +28,10 @@
 
     <string name="app_version">Versie</string>
 
-    <!--Tabs-->
+    <!--Bottom nav view-->
     <string name="password">Wachtwoord</string>
     <string name="file">Bestand</string>
-    <string name="about">Over</string>
+    <string name="settings">Instellingen</string>
 
     <!--#########################################################################################-->
 
@@ -58,12 +58,33 @@
     <string name="suggestions">Suggesties</string>
     <string name="est_guesses_to_crack">Geschatte gissingen om te kraken</string>
     <string name="order_of_magn">Grootteorde van gissingen</string>
+    <string name="entropy">Entropie</string>
+    <string name="bits">bits</string>
+    <string name="match_sequence">Overeenkomende reeks</string>
+    <string name="pattern">\u2022 Patroon</string>
+    <string name="dict_name">\u2022 Naam woordenboek</string>
+    <string name="rank">\u2022 Rang</string>
+    <string name="reversed">\u2022 Omgekeerd</string>
+    <string name="substitutions">\u2022 Vervangingen</string>
+    <string name="base_token">\u2022 Basis token</string>
+    <string name="repeat_times">\u2022 %1$s keer herhaald</string>
+    <string name="sequence_name">\u2022 Sequentie naam</string>
+    <string name="sequence_size">\u2022 Sequentiegrootte</string>
+    <string name="ascending">\u2022 Oplopend</string>
+    <string name="Day">\u2022 Dag</string>
+    <string name="Month">\u2022 Maand</string>
+    <string name="Year">\u2022 Jaar</string>
+    <string name="separator">\u2022 Scheidingsteken</string>
+    <string name="graph">\u2022 Grafiek</string>
+    <string name="turns">\u2022 Draait</string>
+    <string name="shifted_times">\u2022 Verschoven %1$s keer</string>
+    <string name="regex_name">\u2022 Regex naam</string>
     <string name="statistics">Statistieken</string>
-    <string name="length">• Lengte</string>
-    <string name="upper_case">• Hoofdletters</string>
-    <string name="lower_case">• Kleineletters</string>
-    <string name="numbers">• Cijfers</string>
-    <string name="special_char">• Speciale tekens</string>
+    <string name="length">\u2022 Lengte</string>
+    <string name="upper_case">\u2022 Hoofdletters</string>
+    <string name="lower_case">\u2022 Kleineletters</string>
+    <string name="numbers">\u2022 Cijfers</string>
+    <string name="special_char">\u2022 Speciale tekens</string>
 
     <!--#########################################################################################-->
 
@@ -74,12 +95,16 @@
 
     <!--#########################################################################################-->
 
-    <!--About fragment-->
+    <!--Settings fragment-->
     <string name="theme">Thema</string>
+    <string name="privacy">Privacy</string>
+    <string name="block_screenshots">Screenshots blokkeren in app</string>
+    <string name="incognito_keyboard">Incognito toetsenbord</string>
+    <string name="about">Over</string>
+    <string name="privacy_policy">Privacybeleid</string>
+    <string name="third_party_licenses">Licenties van derden</string>
     <string name="contributors">Medewerkers</string>
     <string name="report_issue">Een probleem melden</string>
-    <string name="privacy_policy">Privacybeleid</string>
-    <string name="licenses">Licenties</string>
     <string name="view_on_github">Bekijk op GitHub</string>
 
     <!--#########################################################################################-->
@@ -95,20 +120,13 @@
     <string name="cancel">Annuleren</string>
 
     <!--Theme-->
-    <string name="follow_system">Systeemfout</string>
+    <string name="follow_system">Systeem volgen</string>
     <string name="light">Licht</string>
     <string name="dark">Donker</string>
 
     <!--#########################################################################################-->
 
-    <!--Toasts-->
-    <string name="no_browsers">Geen browsers ge\u00EFnstalleerd op dit apparaat</string>
-
-    <!--#########################################################################################-->
-
     <!--Snackbars-->
-    <string name="read_files_perm_denied">Laat de app bestanden lezen om deze functie te gebruiken</string>
-    <string name="read_files_perm_blocked">Bestandstoegang geblokkeerd</string>
-    <string name="enable">Inschakelen</string>
+    <string name="no_browsers">Geen browsers ge\u00EFnstalleerd op dit apparaat</string>
 
 </resources>

@@ -197,12 +197,13 @@ class UiUtils {
                             append("<br>${context.getString(R.string.dict_name)}: ${match.dictionaryName}")
                             append("<br>${context.getString(R.string.rank)}: ${match.rank}")
                             append("<br>${context.getString(R.string.reversed)}: ${match.reversed}")
-                            if (match.l33t) append("<br>${context.getString(R.string.substitutions)}: ${match.subDisplay.removeSurrounding("[", "]")}")
+                            if (match.l33t)
+                                append("<br>${context.getString(R.string.substitutions)}: ${match.subDisplay.removeSurrounding("[", "]")}")
                         }
                         
                         Pattern.Repeat -> {
                             append("<br>${context.getString(R.string.base_token)}: ${match.baseToken}")
-                            append("<br>${context.getString(R.string.no_of_repeats)}: ${match.repeatCount}")
+                            append("<br>${context.getString(R.string.repeat_times, match.repeatCount.toString())}")
                         }
                         
                         Pattern.Sequence -> {
@@ -221,7 +222,7 @@ class UiUtils {
                         Pattern.Spatial -> {
                             append("<br>${context.getString(R.string.graph)}: ${match.graph}")
                             append("<br>${context.getString(R.string.turns)}: ${match.turns}")
-                            append("<br>${context.getString(R.string.no_of_shifts)}: ${match.shiftedCount}")
+                            append("<br>${context.getString(R.string.shifted_times, match.shiftedCount.toString())}")
                         }
                         
                         Pattern.Regex -> append("<br>${context.getString(R.string.regex_name)}: ${match.regexName}")

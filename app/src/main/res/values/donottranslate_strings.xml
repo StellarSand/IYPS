@@ -33,13 +33,9 @@
 
     <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
 
-    <string name="the_weird_aquarian" translatable="false">the-weird-aquarian</string>
-    <string name="parveshnarwal" translatable="false">parveshnarwal</string>
-
     <string name="zxcvbn4j" translatable="false">zxcvbn4j</string>
     <string name="md_icons" translatable="false">Material Design Icons</string>
 
-    <string name="copyright_iyps" translatable="false">Copyright © 2022-present the-weird-aquarian</string>
     <string name="copyright_zxcvbn4j" translatable="false">Copyright © 2014 Nulab Inc</string>
 
 </resources>

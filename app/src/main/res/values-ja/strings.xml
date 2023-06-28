@@ -23,10 +23,10 @@
 
     <string name="app_version">バージョン</string>
 
-    <!--Tabs-->
+    <!--Bottom nav view-->
     <string name="password">パスワード</string>
     <string name="file">ファイル</string>
-    <string name="about">約</string>
+    <string name="settings">設定</string>
 
     <!--#########################################################################################-->
 
@@ -53,12 +53,33 @@
     <string name="suggestions">提案</string>
     <string name="est_guesses_to_crack">クラックする推定推測値</string>
     <string name="order_of_magn">推測の桁</string>
+    <string name="entropy">エントロピー</string>
+    <string name="bits">ビット</string>
+    <string name="match_sequence">マッチシーケンス</string>
+    <string name="pattern">\u2022 パターン</string>
+    <string name="dict_name">\u2022 辞書名</string>
+    <string name="rank">\u2022 順位</string>
+    <string name="reversed">\u2022 置換</string>
+    <string name="substitutions">\u2022 逆順</string>
+    <string name="base_token">\u2022 ベーストークン</string>
+    <string name="repeat_times">\u2022 繰り返し %1$s 回</string>
+    <string name="sequence_name">\u2022 配列名</string>
+    <string name="sequence_size">\u2022 シーケンスサイズ</string>
+    <string name="ascending">\u2022 昇順</string>
+    <string name="Day">\u2022 日</string>
+    <string name="Month">\u2022 月</string>
+    <string name="Year">\u2022 年</string>
+    <string name="separator">\u2022 セパレーター</string>
+    <string name="graph">\u2022 グラフ</string>
+    <string name="turns">\u2022 ターン</string>
+    <string name="shifted_times">\u2022 %1$s回シフト</string>
+    <string name="regex_name">\u2022 正規表現名</string>
     <string name="statistics">統計情報</string>
-    <string name="length">• 長さ</string>
-    <string name="upper_case">• 大文字</string>
-    <string name="lower_case">• 小文字</string>
-    <string name="numbers">• 数字</string>
-    <string name="special_char">• 特殊文字</string>
+    <string name="length">\u2022 長さ</string>
+    <string name="upper_case">\u2022 大文字</string>
+    <string name="lower_case">\u2022 小文字</string>
+    <string name="numbers">\u2022 数字</string>
+    <string name="special_char">\u2022 特殊文字</string>
 
     <!--#########################################################################################-->
 
@@ -69,12 +90,16 @@
 
     <!--#########################################################################################-->
 
-    <!--About fragment-->
+    <!--Settings fragment-->
     <string name="theme">テーマ</string>
+    <string name="privacy">プライバシー</string>
+    <string name="block_screenshots">アプリでスクリーンショットをブロック</string>
+    <string name="incognito_keyboard">インコグニートキーボード</string>
+    <string name="about">約</string>
+    <string name="privacy_policy">プライバシーポリシー</string>
+    <string name="third_party_licenses">サードパーティライセンス</string>
     <string name="contributors">貢献者</string>
     <string name="report_issue">問題を報告する</string>
-    <string name="privacy_policy">プライバシーポリシー</string>
-    <string name="licenses">ライセンス</string>
     <string name="view_on_github">GitHubを見る</string>
 
     <!--#########################################################################################-->
@@ -90,20 +115,13 @@
     <string name="cancel">キャンセル</string>
 
     <!--Theme-->
-    <string name="follow_system">システムのデフォルト</string>
+    <string name="follow_system">フォローシステム</string>
     <string name="light">光</string>
     <string name="dark">闇</string>
 
     <!--#########################################################################################-->
 
-    <!--Toasts-->
-    <string name="no_browsers">このデバイスにブラウザがインストールされていません</string>
-
-    <!--#########################################################################################-->
-
     <!--Snackbars-->
-    <string name="read_files_perm_denied">アプリがファイルを読み取ってこの機能を使用できるようにします</string>
-    <string name="read_files_perm_blocked">ファイルアクセスブロック</string>
-    <string name="enable">有効</string>
+    <string name="no_browsers">このデバイスにブラウザがインストールされていません</string>
 
 </resources>

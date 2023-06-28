@@ -113,6 +113,7 @@
     <style name="NegativeButtonStyle" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:paddingStart">@dimen/margin_16</item>
         <item name="android:paddingEnd">@dimen/margin_20</item>
+        <item name="android:gravity">center</item>
         <item name="icon">@drawable/ic_cancel</item>
         <item name="iconSize">18dp</item>
         <item name="iconPadding">@dimen/margin_4</item>

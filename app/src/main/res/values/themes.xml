@@ -26,7 +26,7 @@
     </style>
 
     <!--Theme chips-->
-    <style name="SystemDefaultChipTheme" parent="BaseThemeChipStyle">
+    <style name="FollowSystemChipTheme" parent="BaseThemeChipStyle">
         <item name="closeIcon">@drawable/ic_system_default</item>
         <item name="android:text">@string/follow_system</item>
     </style>

@@ -51,7 +51,7 @@
             android:layoutDirection="rtl"
             android:checked="true"
             app:closeIconEnabled="true"
-            style="@style/SystemDefaultChipTheme"/>
+            style="@style/FollowSystemChipTheme"/>
 
         <com.google.android.material.chip.Chip
             android:id="@+id/light"

@@ -29,10 +29,10 @@
 
     <string name="app_version">Versione</string>
 
-    <!--Tabs-->
+    <!--Bottom nav view-->
     <string name="password">Password</string>
     <string name="file">File</string>
-    <string name="about">Info</string>
+    <string name="settings">Impostazioni</string>
 
     <!--#########################################################################################-->
 
@@ -59,12 +59,33 @@
     <string name="suggestions">Suggerimenti</string>
     <string name="est_guesses_to_crack">Stime di indovinelli da decifrare</string>
     <string name="order_of_magn">Ordine di grandezza delle ipotesi</string>
+    <string name="entropy">Entropia</string>
+    <string name="bits">bits</string>
+    <string name="match_sequence">Sequenza di corrispondenza</string>
+    <string name="pattern">\u2022 Schema</string>
+    <string name="dict_name">\u2022 Nome del dizionario</string>
+    <string name="rank">\u2022 Classifica</string>
+    <string name="reversed">\u2022 Invertito</string>
+    <string name="substitutions">\u2022 Sostituzioni</string>
+    <string name="base_token">\u2022 Token di base</string>
+    <string name="repeat_times">\u2022 Ripetuto %1$s volte</string>
+    <string name="sequence_name">\u2022 Nome della sequenza</string>
+    <string name="sequence_size">\u2022 Dimensione della sequenza</string>
+    <string name="ascending">\u2022 Ascendente</string>
+    <string name="Day">\u2022 Giorno</string>
+    <string name="Month">\u2022 Mese</string>
+    <string name="Year">\u2022 Anno</string>
+    <string name="separator">\u2022 Separatore</string>
+    <string name="graph">\u2022 Grafico</string>
+    <string name="turns">\u2022 Giri</string>
+    <string name="shifted_times">\u2022 Spostato %1$s volte</string>
+    <string name="regex_name">\u2022 Nome Regex</string>
     <string name="statistics">Statistiche</string>
-    <string name="length">• Lunghezza</string>
-    <string name="upper_case">• Maiuscole</string>
-    <string name="lower_case">• Minuscole</string>
-    <string name="numbers">• Numeri</string>
-    <string name="special_char">• Caratteri speciali</string>
+    <string name="length">\u2022 Lunghezza</string>
+    <string name="upper_case">\u2022 Maiuscole</string>
+    <string name="lower_case">\u2022 Minuscole</string>
+    <string name="numbers">\u2022 Numeri</string>
+    <string name="special_char">\u2022 Caratteri speciali</string>
 
     <!--#########################################################################################-->
 
@@ -75,12 +96,16 @@
 
     <!--#########################################################################################-->
 
-    <!--About fragment-->
+    <!--Settings fragment-->
     <string name="theme">Tema</string>
+    <string name="privacy">Privacy</string>
+    <string name="block_screenshots">Bloccare gli screenshot nelle app</string>
+    <string name="incognito_keyboard">Tastiera in incognito</string>
+    <string name="about">Info</string>
+    <string name="privacy_policy">Politica sulla Riservatezza</string>
+    <string name="third_party_licenses">Licenze di terze parti</string>
     <string name="contributors">Contributori</string>
     <string name="report_issue">Segnala un problema</string>
-    <string name="privacy_policy">Politica sulla Riservatezza</string>
-    <string name="licenses">Licenze</string>
     <string name="view_on_github">Vedi su GitHub</string>
 
     <!--#########################################################################################-->
@@ -96,20 +121,13 @@
     <string name="cancel">Annulla</string>
 
     <!--Theme-->
-    <string name="follow_system">Predefinito di sistema</string>
+    <string name="follow_system">Segui il sistema</string>
     <string name="light">Chiaro</string>
     <string name="dark">Scuro</string>
 
     <!--#########################################################################################-->
 
-    <!--Toasts-->
-    <string name="no_browsers">Nessun browser installato sul dispositivo</string>
-
-    <!--#########################################################################################-->
-
     <!--Snackbars-->
-    <string name="read_files_perm_denied">Consenti all\'app di leggere i file per utilizzare questa funzione</string>
-    <string name="read_files_perm_blocked">Accesso ai file bloccato</string>
-    <string name="enable">Abilita</string>
+    <string name="no_browsers">Nessun browser installato sul dispositivo</string>
 
 </resources>

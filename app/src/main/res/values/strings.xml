@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022 the-weird-aquarian
+  ~ Copyright (c) 2022-present the-weird-aquarian
   ~
   ~  This file is part of IYPS.
   ~
@@ -23,7 +23,7 @@
 
     <string name="app_version">Version</string>
 
-    <!--Tabs-->
+    <!--Bottom nav view-->
     <string name="password">Password</string>
     <string name="file">File</string>
     <string name="settings">Settings</string>
@@ -55,12 +55,6 @@
     <string name="order_of_magn">Order of magnitude of guesses</string>
     <string name="entropy">Entropy</string>
     <string name="bits">bits</string>
-    <string name="statistics">Statistics</string>
-    <string name="length">\u2022 Length</string>
-    <string name="upper_case">\u2022 Upper case</string>
-    <string name="lower_case">\u2022 Lower case</string>
-    <string name="numbers">\u2022 Numbers</string>
-    <string name="special_char">\u2022 Special characters</string>
     <string name="match_sequence">Match sequence</string>
     <string name="pattern">\u2022 Pattern</string>
     <string name="dict_name">\u2022 Dictionary name</string>
@@ -68,7 +62,7 @@
     <string name="reversed">\u2022 Reversed</string>
     <string name="substitutions">\u2022 Substitutions</string>
     <string name="base_token">\u2022 Base token</string>
-    <string name="no_of_repeats">\u2022 No. of repeats</string>
+    <string name="repeat_times">\u2022 Repeated %1$s times</string>
     <string name="sequence_name">\u2022 Sequence name</string>
     <string name="sequence_size">\u2022 Sequence size</string>
     <string name="ascending">\u2022 Ascending</string>
@@ -78,8 +72,14 @@
     <string name="separator">\u2022 Separator</string>
     <string name="graph">\u2022 Graph</string>
     <string name="turns">\u2022 Turns</string>
-    <string name="no_of_shifts">\u2022 No. of shifts</string>
+    <string name="shifted_times">\u2022 Shifted %1$s times</string>
     <string name="regex_name">\u2022 Regex name</string>
+    <string name="statistics">Statistics</string>
+    <string name="length">\u2022 Length</string>
+    <string name="upper_case">\u2022 Upper case</string>
+    <string name="lower_case">\u2022 Lower case</string>
+    <string name="numbers">\u2022 Numbers</string>
+    <string name="special_char">\u2022 Special characters</string>
 
     <!--#########################################################################################-->
 
@@ -95,10 +95,10 @@
     <string name="block_screenshots">Block screenshots in app</string>
     <string name="incognito_keyboard">Incognito keyboard</string>
     <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="third_party_licenses">Third party licenses</string>
     <string name="contributors">Contributors</string>
     <string name="report_issue">Report an issue</string>
-    <string name="privacy_policy">Privacy Policy</string>
-    <string name="licenses">Licenses</string>
     <string name="view_on_github">View on GitHub</string>
 
     <!--#########################################################################################-->
@@ -120,14 +120,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Toasts-->
-    <string name="no_browsers">No browsers installed on this device</string>
-
-    <!--#########################################################################################-->
-
     <!--Snackbars-->
-    <string name="read_files_perm_denied">Allow the app to read files to use this feature</string>
-    <string name="read_files_perm_blocked">File access blocked</string>
-    <string name="enable">Enable</string>
+    <string name="no_browsers">No browsers installed on this device</string>
 
 </resources>

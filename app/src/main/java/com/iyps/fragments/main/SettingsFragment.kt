@@ -28,6 +28,7 @@ import android.view.WindowManager
 import androidx.fragment.app.Fragment
 import com.iyps.BuildConfig
 import com.iyps.R
+import com.iyps.activities.MainActivity
 import com.iyps.databinding.FragmentSettingsBinding
 import com.iyps.fragments.bottomsheets.LicensesBottomSheet
 import com.iyps.fragments.bottomsheets.ThemeBottomSheet
@@ -52,6 +53,7 @@ class SettingsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val preferenceManager = PreferenceManager(requireContext())
+        val mainActivity = requireActivity() as MainActivity
         
         // Version
         @SuppressLint("SetTextI18n")
@@ -69,9 +71,9 @@ class SettingsFragment : Fragment() {
             setOnCheckedChangeListener { _, isChecked ->
                 preferenceManager.setBoolean(BLOCK_SS, isChecked)
                 when (isChecked) {
-                    true -> requireActivity().window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                    true -> mainActivity.window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,
                                                               WindowManager.LayoutParams.FLAG_SECURE)
-                    false -> requireActivity().window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
+                    false -> mainActivity.window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
                 }
             }
         }
@@ -87,7 +89,10 @@ class SettingsFragment : Fragment() {
         // Privacy policy
         fragmentBinding.privacyPolicy
             .setOnClickListener {
-                openURL(requireActivity(), getString(R.string.iyps_privacy_policy_url))
+                openURL(mainActivity,
+                        getString(R.string.iyps_privacy_policy_url),
+                        mainActivity.activityBinding.mainCoordLayout,
+                        mainActivity.activityBinding.mainBottomNav)
             }
     
         // Licenses
@@ -99,18 +104,27 @@ class SettingsFragment : Fragment() {
         // Contributors
         fragmentBinding.contributors
             .setOnClickListener {
-                openURL(requireActivity(), getString(R.string.iyps_contributors_url))
+                openURL(mainActivity,
+                        getString(R.string.iyps_contributors_url),
+                        mainActivity.activityBinding.mainCoordLayout,
+                        mainActivity.activityBinding.mainBottomNav)
             }
     
         // Report an issue
         fragmentBinding.reportIssue.setOnClickListener {
-            openURL(requireActivity(), getString(R.string.iyps_issues_url))
+            openURL(mainActivity,
+                    getString(R.string.iyps_issues_url),
+                    mainActivity.activityBinding.mainCoordLayout,
+                    mainActivity.activityBinding.mainBottomNav)
         }
     
         // View on GitHub
         fragmentBinding.viewOnGit
             .setOnClickListener {
-                openURL(requireActivity(), getString(R.string.iyps_github_url))
+                openURL(mainActivity,
+                        getString(R.string.iyps_github_url),
+                        mainActivity.activityBinding.mainCoordLayout,
+                        mainActivity.activityBinding.mainBottomNav)
             }
         
     }

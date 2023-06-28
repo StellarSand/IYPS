@@ -39,14 +39,9 @@ class LicensesBottomSheet : BottomSheetDialogFragment() {
         val headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.root)
     
         // Title
-        headerBinding.bottomSheetTitle.setText(R.string.licenses)
+        headerBinding.bottomSheetTitle.setText(R.string.third_party_licenses)
     
         licenseList = ArrayList<License>().apply {
-    
-            // IYPS
-            add(License(getString(R.string.app_name),
-                        "${getString(R.string.copyright_iyps)}\n\n${getString(R.string.gpl_3_0_license)}",
-                        getString(R.string.iyps_license_url)))
     
             // zxcvbn4j
             add(License(getString(R.string.zxcvbn4j),

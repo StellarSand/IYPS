@@ -23,21 +23,30 @@ import android.app.Activity
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
-import android.widget.Toast
+import android.view.View
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import com.google.android.material.snackbar.BaseTransientBottomBar
+import com.google.android.material.snackbar.Snackbar
 import com.iyps.R
 
 class IntentUtils {
 
     companion object {
-
-        // URLs
-        fun openURL(activityFrom: Activity, URL: String?) {
+    
+        fun openURL(activity: Activity,
+                    URL: String,
+                    coordinatorLayout: CoordinatorLayout,
+                    anchorView: View?) {
             try {
-                activityFrom.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(URL)))
+                activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(URL)))
             }
-            // If browsers not installed, show toast
+            // If no browser installed, show snackbar
             catch (e: ActivityNotFoundException) {
-                Toast.makeText(activityFrom, activityFrom.resources.getString(R.string.no_browsers), Toast.LENGTH_SHORT).show()
+                Snackbar.make(coordinatorLayout,
+                              activity.getString(R.string.no_browsers),
+                              BaseTransientBottomBar.LENGTH_SHORT)
+                    .setAnchorView(anchorView) // Above FAB, bottom bar etc.
+                    .show()
             }
         }
 

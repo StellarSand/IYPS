@@ -61,9 +61,6 @@ class FileItemAdapter(private val aListViewItems: List<FileItem>,
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val fileItem = aListViewItems[position]
         holder.passwordLine.text = fileItem.passwordLine
-        
-        // Horizontally scrolling text
-        //hScrollText(holder.passwordLine);
     }
     
     override fun getItemCount(): Int {

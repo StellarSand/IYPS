@@ -32,10 +32,10 @@
 
     <string name="app_version">Version</string>
 
-    <!--Tabs-->
+    <!--Bottom nav view-->
     <string name="password">Passwort</string>
     <string name="file">Datei</string>
-    <string name="about">\u00DCber</string>
+    <string name="settings">Einstellungen</string>
 
     <!--#########################################################################################-->
 
@@ -62,12 +62,33 @@
     <string name="suggestions">Empfehlungen</string>
     <string name="est_guesses_to_crack">Gesch\u00E4tzte raten zum knacken</string>
     <string name="order_of_magn">Gr\u00F6\u00DFenordnung der sch\u00E4tzungen</string>
+    <string name="entropy">Entropie</string>
+    <string name="bits">bits</string>
+    <string name="match_sequence">Match sequenz</string>
+    <string name="pattern">\u2022 Muster</string>
+    <string name="dict_name">\u2022 Name im w\u00F6rterbuch</string>
+    <string name="rank">\u2022 Rang</string>
+    <string name="reversed">\u2022 Umgekehrt</string>
+    <string name="substitutions">\u2022 Ersetzungen</string>
+    <string name="base_token">\u2022 Basis token</string>
+    <string name="repeat_times">\u2022 Wiederholt %1$s mal</string>
+    <string name="sequence_name">\u2022 Name der sequenz</string>
+    <string name="sequence_size">\u2022 Gr\u00F6\u00DFe der Sequenz</string>
+    <string name="ascending">\u2022 Aufsteigend</string>
+    <string name="Day">\u2022 Tag</string>
+    <string name="Month">\u2022 Monat</string>
+    <string name="Year">\u2022 Jahr</string>
+    <string name="separator">\u2022 Trennzeichen</string>
+    <string name="graph">\u2022 Grafik</string>
+    <string name="turns">\u2022 Bl\u00E4ttert</string>
+    <string name="shifted_times">\u2022 %1$s mal verschoben</string>
+    <string name="regex_name">\u2022 Regex name</string>
     <string name="statistics">Statistik</string>
-    <string name="length">• L\u00E4nge</string>
-    <string name="upper_case">• Gro\u00DFbuchstaben</string>
-    <string name="lower_case">• Kleinbuchstaben</string>
-    <string name="numbers">• Zahlen</string>
-    <string name="special_char">• Spezielle charaktere</string>
+    <string name="length">\u2022 L\u00E4nge</string>
+    <string name="upper_case">\u2022 Gro\u00DFbuchstaben</string>
+    <string name="lower_case">\u2022 Kleinbuchstaben</string>
+    <string name="numbers">\u2022 Zahlen</string>
+    <string name="special_char">\u2022 Spezielle charaktere</string>
 
     <!--#########################################################################################-->
 
@@ -78,12 +99,16 @@
 
     <!--#########################################################################################-->
 
-    <!--About fragment-->
+    <!--Settings fragment-->
     <string name="theme">Thema</string>
+    <string name="privacy">Datenschutz</string>
+    <string name="block_screenshots">Screenshots in der app blockieren</string>
+    <string name="incognito_keyboard">Inkognito tastatur</string>
+    <string name="about">\u00DCber</string>
+    <string name="privacy_policy">Datenschutzbestimmungen</string>
+    <string name="third_party_licenses">Lizenzen von drittanbietern</string>
     <string name="contributors">Mitwirkende</string>
     <string name="report_issue">Ein Problem melden</string>
-    <string name="privacy_policy">Datenschutzbestimmungen</string>
-    <string name="licenses">Lizenzen</string>
     <string name="view_on_github">Auf GitHub anschauen</string>
 
     <!--#########################################################################################-->
@@ -99,20 +124,13 @@
     <string name="cancel">Abbrechen</string>
 
     <!--Theme-->
-    <string name="follow_system">Systemvorgabe</string>
+    <string name="follow_system">System verfolgen</string>
     <string name="light">Hell</string>
     <string name="dark">Dunkel</string>
 
     <!--#########################################################################################-->
 
-    <!--Toast-->
-    <string name="no_browsers">Es ist kein browser auf diesem ger\u00E4t installiert</string>
-
-    <!--#########################################################################################-->
-
     <!--Snackbars-->
-    <string name="read_files_perm_denied">Erm\u00F6glichen Sie der App, Dateien zu lesen, um diese Funktion zu verwenden</string>
-    <string name="read_files_perm_blocked">Dateizugriff gesperrt</string>
-    <string name="enable">Erm\u00F6glichen</string>
+    <string name="no_browsers">Es ist kein browser auf diesem ger\u00E4t installiert</string>
 
 </resources>

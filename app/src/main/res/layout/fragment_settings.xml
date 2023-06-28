@@ -178,7 +178,7 @@
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             android:padding="@dimen/margin_16"
-            android:text="@string/licenses"
+            android:text="@string/third_party_licenses"
             android:textAlignment="viewStart"
             android:textColor="@color/color_text_title"
             android:textSize="@dimen/text_16"

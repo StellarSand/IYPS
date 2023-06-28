@@ -32,7 +32,7 @@ import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 
 class MainActivity : AppCompatActivity() {
     
-    private lateinit var activityBinding: ActivityMainBinding
+    lateinit var activityBinding: ActivityMainBinding
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var navController: NavController
     private var selectedItem = 0
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         selectedItem = savedInstanceState?.getInt("selectedItem") ?: R.id.nav_password
         
         // On click tab
-        activityBinding.bottomNav.apply {
+        activityBinding.mainBottomNav.apply {
             menu.findItem(selectedItemId).isChecked = true
             
             setOnItemSelectedListener { item ->
@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
         // Destination id == 0 can only be used in conjunction with a valid navOptions.popUpTo
         // Hence the second check
         if (clickedItem != currentFragment.id && action != 0) {
-            activityBinding.bottomNav.menu.findItem(clickedItem).isChecked = true
+            activityBinding.mainBottomNav.menu.findItem(clickedItem).isChecked = true
             navController.navigate(action)
         }
     }
