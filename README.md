@@ -74,7 +74,7 @@ All notable changes to this project will be documented in the [changelog](https:
 
 
 ## How does it work?
-For an in-depth explanation, check out this article on [realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
+For an in-depth explanation, check out this article on [realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation).
 
 
 
