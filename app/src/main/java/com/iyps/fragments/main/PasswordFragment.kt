@@ -68,121 +68,116 @@ class PasswordFragment : Fragment() {
         
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-        var wait = 0
         
         /*########################################################################################*/
         
         fragmentBinding.passwordText.apply {
             
-                if (PreferenceManager(requireContext()).getBoolean(INCOG_KEYBOARD)) {
-                    imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
-                    inputType = TYPE_TEXT_VARIATION_PASSWORD
-                }
-    
-            addTextChangedListener(object : TextWatcher {
-        
-                var delayTimer: CountDownTimer? = null
-        
-                override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
-        
-                override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+            if (PreferenceManager(requireContext()).getBoolean(INCOG_KEYBOARD)) {
+                imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
+                inputType = TYPE_TEXT_VARIATION_PASSWORD
+            }
             
+            addTextChangedListener(object : TextWatcher {
+                
+                var delayTimer: CountDownTimer? = null
+                
+                override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
+                
+                override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+                    
                     // Introduce a subtle delay
                     // So passwords are checked after typing is finished
-                    delayTimer.apply {
-                        this?.cancel()
-                
-                        object : CountDownTimer(wait.toLong(), 100) {
-                    
-                            override fun onTick(millisUntilFinished: Long) {}
-                    
-                            // On timer finish, perform task
-                            override fun onFinish() {
-                                wait = 400
+                    delayTimer?.cancel()
+                    delayTimer = object : CountDownTimer(400, 100) {
                         
-                                // If edit text is not empty
-                                if (charSequence.isNotEmpty()) {
+                        override fun onTick(millisUntilFinished: Long) {}
+                        
+                        // On timer finish, perform task
+                        override fun onFinish() {
                             
-                                    val strength = zxcvbn.measure(charSequence)
-                            
-                                    val tenBCrackTimeString = strength.crackTimesDisplay.offlineFastHashing1e10PerSecond
-                                    val tenKCrackTimeString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
-                                    val tenCrackTimeString = strength.crackTimesDisplay.onlineNoThrottling10perSecond
-                                    val hundredCrackTimeString  = strength.crackTimesDisplay.onlineThrottling100perHour
-                            
-                                    val tenBCrackTimeMilliSeconds =
-                                        (strength.crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
-                                    val tenKCrackTimeMilliSeconds =
-                                        (strength.crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
-                                    val tenCrackTimeMilliSeconds =
-                                        (strength.crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
-                                    val hundredCrackTimeMilliSeconds =
-                                        (strength.crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
-                            
-                                    // Estimated time to crack
-                                    fragmentBinding.tenBGuessesSubtitle.text = replaceCrackTimeStrings(tenBCrackTimeString, requireContext())
-                                    setStrengthProgressAndText(requireContext(),
-                                                               passwordCrackTimeResult(tenBCrackTimeMilliSeconds),
-                                                               fragmentBinding.tenBGuessesStrengthMeter,
-                                                               fragmentBinding.tenBGuessesStrength)
-                                    fragmentBinding.tenKGuessesSubtitle.text = replaceCrackTimeStrings(tenKCrackTimeString, requireContext())
-                                    setStrengthProgressAndText(requireContext(),
-                                                               passwordCrackTimeResult(tenKCrackTimeMilliSeconds),
-                                                               fragmentBinding.tenKGuessesStrengthMeter,
-                                                               fragmentBinding.tenKGuessesStrength)
-                                    fragmentBinding.tenGuessesSubtitle.text = replaceCrackTimeStrings(tenCrackTimeString, requireContext())
-                                    setStrengthProgressAndText(requireContext(),
-                                                               passwordCrackTimeResult(tenCrackTimeMilliSeconds),
-                                                               fragmentBinding.tenGuessesStrengthMeter,
-                                                               fragmentBinding.tenGuessesStrength)
-                                    fragmentBinding.hundredGuessesSubtitle.text = replaceCrackTimeStrings(hundredCrackTimeString, requireContext())
-                                    setStrengthProgressAndText(requireContext(),
-                                                               passwordCrackTimeResult(hundredCrackTimeMilliSeconds),
-                                                               fragmentBinding.hundredGuessesStrengthMeter,
-                                                               fragmentBinding.hundredGuessesStrength)
-                            
-                                    // Warning
-                                    fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
-                                                                                          strength,
-                                                                                          passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
-                            
-                                    // Suggestions
-                                    fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), strength)
-                            
-                                    // Guesses
-                                    val guesses = strength.guesses
-                                    fragmentBinding.guessesSubtitle.text = getGuessesText(guesses)
-                            
-                                    // Order of magnitude of guesses
-                                    fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
-                            
-                                    // Entropy
-                                    @SuppressLint("SetTextI18n")
-                                    fragmentBinding.entropySubtitle.text =
-                                        "${log2(guesses).formatToTwoDecimalPlaces()} ${getString(R.string.bits)}"
-                            
-                                    // Match sequence
-                                    fragmentBinding.matchSequenceSubtitle.text =
-                                        getMatchSequenceText(requireContext(), strength)
-                            
-                                    // Statistics
-                                    val statsList = getStatisticsCounts(charSequence)
-                                    fragmentBinding.lengthText.text = statsList[0].toString()
-                                    fragmentBinding.upperCaseText.text = statsList[1].toString()
-                                    fragmentBinding.lowerCaseText.text = statsList[2].toString()
-                                    fragmentBinding.numbersText.text = statsList[3].toString()
-                                    fragmentBinding.specialCharsText.text = statsList[4].toString()
-                            
-                                }
-                                // If edit text is empty or cleared, reset everything
-                                else {
-                                    detailsReset()
-                                }
+                            // If edit text is not empty
+                            if (charSequence.isNotEmpty()) {
+                                
+                                val strength = zxcvbn.measure(charSequence)
+                                
+                                val tenBCrackTimeString = strength.crackTimesDisplay.offlineFastHashing1e10PerSecond
+                                val tenKCrackTimeString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
+                                val tenCrackTimeString = strength.crackTimesDisplay.onlineNoThrottling10perSecond
+                                val hundredCrackTimeString  = strength.crackTimesDisplay.onlineThrottling100perHour
+                                
+                                val tenBCrackTimeMilliSeconds =
+                                    (strength.crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
+                                val tenKCrackTimeMilliSeconds =
+                                    (strength.crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
+                                val tenCrackTimeMilliSeconds =
+                                    (strength.crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
+                                val hundredCrackTimeMilliSeconds =
+                                    (strength.crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
+                                
+                                // Estimated time to crack
+                                fragmentBinding.tenBGuessesSubtitle.text = replaceCrackTimeStrings(tenBCrackTimeString, requireContext())
+                                setStrengthProgressAndText(requireContext(),
+                                                           passwordCrackTimeResult(tenBCrackTimeMilliSeconds),
+                                                           fragmentBinding.tenBGuessesStrengthMeter,
+                                                           fragmentBinding.tenBGuessesStrength)
+                                fragmentBinding.tenKGuessesSubtitle.text = replaceCrackTimeStrings(tenKCrackTimeString, requireContext())
+                                setStrengthProgressAndText(requireContext(),
+                                                           passwordCrackTimeResult(tenKCrackTimeMilliSeconds),
+                                                           fragmentBinding.tenKGuessesStrengthMeter,
+                                                           fragmentBinding.tenKGuessesStrength)
+                                fragmentBinding.tenGuessesSubtitle.text = replaceCrackTimeStrings(tenCrackTimeString, requireContext())
+                                setStrengthProgressAndText(requireContext(),
+                                                           passwordCrackTimeResult(tenCrackTimeMilliSeconds),
+                                                           fragmentBinding.tenGuessesStrengthMeter,
+                                                           fragmentBinding.tenGuessesStrength)
+                                fragmentBinding.hundredGuessesSubtitle.text = replaceCrackTimeStrings(hundredCrackTimeString, requireContext())
+                                setStrengthProgressAndText(requireContext(),
+                                                           passwordCrackTimeResult(hundredCrackTimeMilliSeconds),
+                                                           fragmentBinding.hundredGuessesStrengthMeter,
+                                                           fragmentBinding.hundredGuessesStrength)
+                                
+                                // Warning
+                                fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
+                                                                                      strength,
+                                                                                      passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
+                                
+                                // Suggestions
+                                fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), strength)
+                                
+                                // Guesses
+                                val guesses = strength.guesses
+                                fragmentBinding.guessesSubtitle.text = getGuessesText(guesses)
+                                
+                                // Order of magnitude of guesses
+                                fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
+                                
+                                // Entropy
+                                @SuppressLint("SetTextI18n")
+                                fragmentBinding.entropySubtitle.text =
+                                    "${log2(guesses).formatToTwoDecimalPlaces()} ${getString(R.string.bits)}"
+                                
+                                // Match sequence
+                                fragmentBinding.matchSequenceSubtitle.text =
+                                    getMatchSequenceText(requireContext(), strength)
+                                
+                                // Statistics
+                                val statsList = getStatisticsCounts(charSequence)
+                                fragmentBinding.lengthText.text = statsList[0].toString()
+                                fragmentBinding.upperCaseText.text = statsList[1].toString()
+                                fragmentBinding.lowerCaseText.text = statsList[2].toString()
+                                fragmentBinding.numbersText.text = statsList[3].toString()
+                                fragmentBinding.specialCharsText.text = statsList[4].toString()
+                                
                             }
-                        }.start()
-                    }
+                            // If edit text is empty or cleared, reset everything
+                            else {
+                                detailsReset()
+                            }
+                        }
+                    }.start()
                 }
-        
+                
                 override fun afterTextChanged(editable: Editable) {}
             })
         }
