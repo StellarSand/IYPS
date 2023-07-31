@@ -28,6 +28,7 @@
         é = \u00E9
         ê = \u00EA
         É = \u00C9
+        À = \u00C0
     -->
 
     <string name="app_version">Version</string>
@@ -43,7 +44,7 @@
     <string name="test_your_password">Tester votre mot de passe</string>
     <string name="details">Des d\u00E9tails</string>
     <string name="strength">Robustesse</string>
-    <string name="worst">Pire</string>
+    <string name="worst">Mauvais</string>
     <string name="weak">Faible</string>
     <string name="medium">Moyen</string>
     <string name="strong">Robuste</string>
@@ -56,12 +57,12 @@
     <string name="hour">heure</string>
     <string name="day">jour</string>
     <string name="month">mois</string>
-    <string name="year">an</string>
+    <string name="year">an</string> <!-- un an / une année -->
     <string name="centuries">Des si\u00E8cles</string>
-    <string name="warning">Avertissement </string>
+    <string name="warning">Avertissement</string>
     <string name="suggestions">Suggestions</string>
-    <string name="est_guesses_to_crack">Estimation des suppositions \u00E0 faire</string>
-    <string name="order_of_magn">Ordre de grandeur des suppositions</string>
+    <string name="est_guesses_to_crack">Estimation de test \u00E0 faire pour craquer</string> <!-- De base le mot "guesses" est traduit en "suggestions" mais "test à faire" est plus réaliste du vocabulaire utilisé par un francophone -->
+    <string name="order_of_magn">Ordre de grandeur de test \u00E0 faire</string>
     <string name="entropy">Entropie</string>
     <string name="bits">bits</string>
     <string name="match_sequence">S\u00E9quence de correspondance</string>
@@ -80,14 +81,14 @@
     <string name="Year">\u2022 Ann\u00E9e</string>
     <string name="separator">\u2022 S\u00E9parateur</string>
     <string name="graph">\u2022 Graphique</string>
-    <string name="turns">\u2022 Tourne</string>
+    <string name="turns">\u2022 Tours</string> <!-- Tourne ? -->
     <string name="shifted_times">\u2022 D\u00E9cal\u00E9 %1$s fois</string>
     <string name="regex_name">\u2022 Nom de l\'expression rationnelle</string>
     <string name="statistics">Statistiques</string>
     <string name="length">\u2022 Longueur</string>
-    <string name="upper_case">\u2022 Haut de casse</string>
+    <string name="upper_case">\u2022 Majuscules</string>
     <string name="lower_case">\u2022 Minuscules</string>
-    <string name="numbers">\u2022 Nombres</string>
+    <string name="numbers">\u2022 Chiffres</string> <!-- On compte le nombre de chiffres -->
     <string name="special_char">\u2022 Caract\u00E8res sp\u00E9ciaux</string>
 
     <!--#########################################################################################-->
@@ -104,12 +105,12 @@
     <string name="privacy">Vie priv\u00E9e</string>
     <string name="block_screenshots">Bloquer les captures d\'\u00E9cran dans l\'application</string>
     <string name="incognito_keyboard">Clavier inconnu</string>
-    <string name="about">Sur</string>
+    <string name="about">\u00C0 propos</string>
     <string name="privacy_policy">Politique de confidentialit\u00E9</string>
-    <string name="third_party_licenses">Licences de tiers</string>
+    <string name="third_party_licenses">Licences de code tiers</string>
     <string name="contributors">Contributeurs</string>
     <string name="report_issue">Signaler un probl\u00E8me</string>
-    <string name="view_on_github">Vue sur GitHub</string>
+    <string name="view_on_github">voir le projet sur GitHub</string>
 
     <!--#########################################################################################-->
 
@@ -124,8 +125,8 @@
     <string name="cancel">Annuler</string>
 
     <!--Theme-->
-    <string name="follow_system">Suivre le syst\u00E8me</string>
-    <string name="light">Lumi\u00E8re</string>
+    <string name="follow_system">Th\u00E8me du syst\u00E8me</string>
+    <string name="light">Lumineux</string>
     <string name="dark">Sombre</string>
 
     <!--#########################################################################################-->
