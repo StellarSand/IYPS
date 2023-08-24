@@ -24,12 +24,12 @@ plugins {
 
 android {
     namespace = "com.iyps"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.iyps"
         minSdk = 23
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 142
         versionName = "1.4.2"
     }
@@ -67,7 +67,7 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("com.nulab-inc:zxcvbn:1.8.0")
-    implementation("androidx.navigation:navigation-runtime-ktx:2.6.0")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
-    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
+    implementation("androidx.navigation:navigation-runtime-ktx:2.7.1")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.1")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.1")
 }
