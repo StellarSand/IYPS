@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2022 the-weird-aquarian
+# Copyright (c) 2022-present StellarSand
 #
 #  This file is part of IYPS.
 #

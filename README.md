@@ -5,7 +5,7 @@
 A password strength test app which displays strength, estimated crack time and provides warnings and suggestions to help make better passwords.
 
 
-<img src="https://img.shields.io/f-droid/v/com.iyps?logo=FDroid&color=green&style=for-the-badge" alt="F-Droid Version"> <img src="https://img.shields.io/endpoint?url=https://play.cuzi.workers.dev/play?i=com.iyps&m=$version&logo=GooglePlay&color=3BCCFF&label=Google%20Play&style=for-the-badge" alt="Google Play Version"> <img src="https://img.shields.io/github/v/release/the-weird-aquarian/IYPS?logo=GitHub&color=212121&label=GitHub&style=for-the-badge" alt="GitHub Version">
+<img src="https://img.shields.io/f-droid/v/com.iyps?logo=FDroid&color=green&style=for-the-badge" alt="F-Droid Version"> <img src="https://img.shields.io/endpoint?url=https://play.cuzi.workers.dev/play?i=com.iyps&m=$version&logo=GooglePlay&color=3BCCFF&label=Google%20Play&style=for-the-badge" alt="Google Play Version"> <img src="https://img.shields.io/github/v/release/StellarSand/IYPS?logo=GitHub&color=212121&label=GitHub&style=for-the-badge" alt="GitHub Version">
 
 
 
@@ -64,12 +64,12 @@ alt="Get it on Google Play"
 height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 [<img src="https://camo.githubusercontent.com/70bffd8873ab81e1bb0bccc44e488c3a989e3bd5/68747470733a2f2f692e6962622e636f2f71306d6463345a2f6765742d69742d6f6e2d6769746875622e706e67"
 alt="Get it on GitHub"
-height="80">](https://github.com/the-weird-aquarian/IYPS/releases/latest)
+height="80">](https://github.com/StellarSand/IYPS/releases/latest)
 
 
 
 ## Changelog
-All notable changes to this project will be documented in the [changelog](https://github.com/the-weird-aquarian/IYPS/blob/master/CHANGELOG.md).
+All notable changes to this project will be documented in the [changelog](https://github.com/StellarSand/IYPS/blob/master/CHANGELOG.md).
 
 
 
@@ -79,29 +79,29 @@ For an in-depth explanation, check out this article on [realistic password stren
 
 
 ## Privacy Policy
-Privacy policy is located [here](https://github.com/the-weird-aquarian/IYPS/blob/master/PRIVACY.md).
+Privacy policy is located [here](https://github.com/StellarSand/IYPS/blob/master/PRIVACY.md).
 
 
 
 ## Issues
-If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/the-weird-aquarian/IYPS/issues). 
+If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/StellarSand/IYPS/issues). 
 
 We encourage you to search for existing issues before opening a new one. Any duplicates will be closed immediately.
 
 
 
 ## Contributing
-Please read the [contributing guidelines](https://github.com/the-weird-aquarian/IYPS/blob/main/CONTRIBUTING.md) before contributing.
+Please read the [contributing guidelines](https://github.com/StellarSand/IYPS/blob/main/CONTRIBUTING.md) before contributing.
 
-New pull requests can be submitted [here](https://github.com/the-weird-aquarian/IYPS/pulls).
+New pull requests can be submitted [here](https://github.com/StellarSand/IYPS/pulls).
 
 
 
 ## Credits
 - [parveshnarwal](https://github.com/parveshnarwal) for uploading the app on Google Play and previously co-leading the development.
-- [Contributors](https://github.com/the-weird-aquarian/IYPS/graphs/contributors) for making this app better.
+- [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) for making this app better.
 
 
 
 ## License
-This project is licensed under the terms of [GPL v3.0 license](https://github.com/the-weird-aquarian/IYPS/blob/main/LICENSE).
+This project is licensed under the terms of [GPL v3.0 license](https://github.com/StellarSand/IYPS/blob/main/LICENSE).

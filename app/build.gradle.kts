@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 the-weird-aquarian
+ * Copyright (c) 2022-present StellarSand
  *
  *  This file is part of IYPS.
  *
@@ -30,8 +30,8 @@ android {
         applicationId = "com.iyps"
         minSdk = 23
         targetSdk = 34
-        versionCode = 142
-        versionName = "1.4.2"
+        versionCode = 143
+        versionName = "1.4.3"
     }
     
     buildTypes {
@@ -65,9 +65,9 @@ android {
 dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.9.0")
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("com.nulab-inc:zxcvbn:1.8.0")
-    implementation("androidx.navigation:navigation-runtime-ktx:2.7.1")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.1")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.1")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("com.nulab-inc:zxcvbn:1.8.2")
+    implementation("androidx.navigation:navigation-runtime-ktx:2.7.2")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.2")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.2")
 }

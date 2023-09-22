@@ -23,5 +23,5 @@ Remove this section if not applicable.
 
 
 ### Checklist
-- [ ] I have read the [contributing guidelines](https://github.com/the-weird-aquarian/IYPS/blob/main/CONTRIBUTING.md).
+- [ ] I have read the [contributing guidelines](https://github.com/StellarSand/IYPS/blob/main/CONTRIBUTING.md).
 - [ ] I have properly tested new/changed/fixed functionality.
