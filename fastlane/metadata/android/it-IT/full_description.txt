@@ -8,4 +8,4 @@ Caratteristiche:
 - Supporta sia tema chiaro che scuro
 - Nessuna pubblicità
 - Nessuna raccolta di dati personali
-- Lingue supportate: Inglese, Olandese, Francese, Tedesco, Italiano, Giapponese
+- Lingue supportate: Inglese, Olandese, Francese, Tedesco, Italiano, Giapponese, Spagnolo

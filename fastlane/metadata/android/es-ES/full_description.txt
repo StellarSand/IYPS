@@ -1,0 +1,11 @@
+Una app de prueba de fuerza de contraseña que muestra la fuerza, el tiempo estimado de crack y proporciona advertencias y sugerencias para ayudar a hacer mejores contraseñas.
+
+Características:
+
+- Totalmente de código abierto
+- Diseño material
+- Completamente offline
+- Soporta temas claros y oscuros
+- Sin anuncios
+- No recopila datos personales
+- Idiomas soportados: Inglés, Holandés, Francés, Alemán, Italiano, Japonés, Español

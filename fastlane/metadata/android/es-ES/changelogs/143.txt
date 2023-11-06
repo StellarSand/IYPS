@@ -1,0 +1,3 @@
+- Añadido soporte para Android 14.
+- Añadidas traducciones al español.
+- Mejoradas las traducciones al francés.

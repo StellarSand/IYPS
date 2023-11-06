@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+## v1.4.3
+- Added support for Android 14.
+- Added Spanish translations.
+- Improved French translations (by [Amiralgaby](https://github.com/Amiralgaby)).
+
+
+
 ## v1.4.2
 - Show more details for passwords.
 - Fixed back navigation.

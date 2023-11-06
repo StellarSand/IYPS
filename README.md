@@ -43,7 +43,7 @@ Using this app you can determine whether the passwords are most commonly used on
 - Supports both light and dark theme
 - No ads
 - No collection of personal data
-- Supported languages: English, Dutch, French, German, Italian, Japanese
+- Supported languages: English, Dutch, French, German, Italian, Japanese, Spanish
 
 
 
@@ -86,7 +86,7 @@ Privacy policy is located [here](https://github.com/StellarSand/IYPS/blob/master
 ## Issues
 If you find bugs or have suggestions, please report it to the [issue tracker](https://github.com/StellarSand/IYPS/issues). 
 
-We encourage you to search for existing issues before opening a new one. Any duplicates will be closed immediately.
+Please search for existing issues before opening a new one. Any duplicates will be closed immediately.
 
 
 

@@ -1,0 +1,1 @@
+Una app para comprobar la seguridad de las contraseñas con tiempos de descifrado, advertencias y sugerencias.
