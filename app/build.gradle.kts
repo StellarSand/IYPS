@@ -30,8 +30,8 @@ android {
         applicationId = "com.iyps"
         minSdk = 23
         targetSdk = 34
-        versionCode = 143
-        versionName = "1.4.3"
+        versionCode = 144
+        versionName = "1.4.4"
     }
     
     buildTypes {

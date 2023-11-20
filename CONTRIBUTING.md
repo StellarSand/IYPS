@@ -2,7 +2,8 @@
 - Do not submit pull requests to update gradle, dependencies or SDK.
 - Try not to use any deprecated libraries, dependencies or methods, if other alternatives are available.
 - Make sure the characters are properly encoded when translating strings (example: ä as \u00E4, é as \u00E9 etc).
-  <br> Translate **both** the primary and the feedback strings. The strings can be found here:
+- When localizing strings to a new language, translate **both** the [primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values/strings.xml) and the [feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_en.properties) strings.
+- The strings can be found here:
   - English: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_en.properties)
   - Dutch: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-nl/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_nl.properties)
   - French: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-fr/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_fr.properties)
