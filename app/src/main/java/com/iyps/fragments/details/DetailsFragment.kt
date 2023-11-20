@@ -30,6 +30,7 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentPasswordBinding
 import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
+import com.iyps.utils.UiUtils
 import com.iyps.utils.UiUtils.Companion.getGuessesText
 import com.iyps.utils.UiUtils.Companion.getMatchSequenceText
 import com.iyps.utils.UiUtils.Companion.getStatisticsCounts
@@ -107,12 +108,14 @@ class DetailsFragment : Fragment() {
                                    fragmentBinding.hundredGuessesStrength)
         
         // Warning
+        val localizedFeedback =
+            strength.feedback.withResourceBundle(UiUtils.localizedResourceBundle(requireContext()))
         fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
-                                                              strength,
+                                                              localizedFeedback,
                                                               passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
         
         // Suggestions
-        fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), strength)
+        fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), localizedFeedback)
         
         // Guesses
         val guesses = strength.guesses

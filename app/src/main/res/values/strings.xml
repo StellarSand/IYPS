@@ -21,6 +21,11 @@
 
 <resources>
 
+    <!--
+    Ensure proper encoding of characters when translating to other languages.
+    example: ä as \u00E4, é as \u00E9 etc.
+    -->
+
     <string name="app_version">Version</string>
 
     <!--Bottom nav view-->

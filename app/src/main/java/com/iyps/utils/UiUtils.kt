@@ -25,14 +25,54 @@ import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
 import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
+import com.nulabinc.zxcvbn.Feedback
 import com.nulabinc.zxcvbn.Pattern
 import com.nulabinc.zxcvbn.Strength
+import java.io.InputStreamReader
+import java.util.Collections
+import java.util.Enumeration
 import java.util.Locale
+import java.util.Properties
+import java.util.ResourceBundle
 import java.util.concurrent.TimeUnit
 
 class UiUtils {
     
     companion object {
+        
+        fun localizedResourceBundle(context: Context): ResourceBundle {
+            val mapLocaleToResourceId =
+                mapOf("en" to R.raw.messages_en,
+                      "nl" to R.raw.messages_nl,
+                      "fr" to R.raw.messages_fr,
+                      "de" to R.raw.messages_de,
+                      "it" to R.raw.messages_it,
+                      "ja" to R.raw.messages_ja,
+                      "es" to R.raw.messages_es,
+                      "tr" to R.raw.messages_tr)
+            
+            val resourceId = mapLocaleToResourceId[Locale.getDefault().language] ?: R.raw.messages_en
+            
+            val properties =
+                Properties().apply {
+                    load(InputStreamReader(context.resources.openRawResource(resourceId), Charsets.UTF_8))
+                }
+            
+            return object : ResourceBundle() {
+                override fun handleGetObject(key: String): Any {
+                    return properties.getProperty(key)
+                }
+                
+                override fun getKeys(): Enumeration<String> {
+                    return Collections.enumeration(properties.keys()
+                                                       .asSequence()
+                                                       .map {
+                                                           it.toString()
+                                                       }
+                                                       .toList())
+                }
+            }
+        }
         
         // Check password crack time (custom result)
         fun passwordCrackTimeResult(crackTimeMilliSeconds: Long): String {
@@ -126,7 +166,7 @@ class UiUtils {
         }
         
         fun getWarningText(context: Context,
-                           strength: Strength,
+                           localizedFeedback: Feedback,
                            passwordCrackTimeResult: String): String {
             val worstPassWarning = context.getString(R.string.worst_pass_warning)
             val weakPassWarning = context.getString(R.string.weak_pass_warning)
@@ -134,7 +174,7 @@ class UiUtils {
             val notApplicableString = context.getString(R.string.na)
             
             val warningText =
-                strength.feedback.getWarning(Locale.getDefault())
+                localizedFeedback.warning
                     .ifEmpty { // If empty, set to custom warning message
                         when (passwordCrackTimeResult) {
                             "WORST" -> worstPassWarning // Worst warning
@@ -147,9 +187,10 @@ class UiUtils {
             return warningText
         }
         
-        fun getSuggestionsText(context: Context, strength: Strength): CharSequence {
+        fun getSuggestionsText(context: Context,
+                               localizedFeedback: Feedback): CharSequence {
             val suggestionText = StringBuilder()
-            val suggestions = strength.feedback.getSuggestions(Locale.getDefault())
+            val suggestions = localizedFeedback.suggestions
             val suggestionsText =
                 if (suggestions.isNotEmpty()) {
                     suggestions.forEachIndexed { index, suggestion ->

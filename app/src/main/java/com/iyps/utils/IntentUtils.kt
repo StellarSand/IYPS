@@ -34,11 +34,11 @@ class IntentUtils {
     companion object {
     
         fun openURL(activity: Activity,
-                    URL: String,
+                    url: String,
                     coordinatorLayout: CoordinatorLayout,
                     anchorView: View?) {
             try {
-                activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(URL)))
+                activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
             }
             // If no browser installed, show snackbar
             catch (e: ActivityNotFoundException) {

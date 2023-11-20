@@ -48,6 +48,7 @@ import com.iyps.utils.UiUtils.Companion.setStrengthProgressAndText
 import com.iyps.utils.UiUtils.Companion.getStatisticsCounts
 import com.iyps.utils.UiUtils.Companion.getSuggestionsText
 import com.iyps.utils.UiUtils.Companion.getWarningText
+import com.iyps.utils.UiUtils.Companion.localizedResourceBundle
 import kotlin.math.log2
 
 class PasswordFragment : Fragment() {
@@ -138,12 +139,14 @@ class PasswordFragment : Fragment() {
                                                            fragmentBinding.hundredGuessesStrength)
                                 
                                 // Warning
+                                val localizedFeedback =
+                                    strength.feedback.withResourceBundle(localizedResourceBundle(requireContext()))
                                 fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
-                                                                                      strength,
+                                                                                      localizedFeedback,
                                                                                       passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
                                 
                                 // Suggestions
-                                fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), strength)
+                                fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), localizedFeedback)
                                 
                                 // Guesses
                                 val guesses = strength.guesses

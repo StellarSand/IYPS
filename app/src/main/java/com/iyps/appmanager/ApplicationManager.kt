@@ -76,14 +76,12 @@ class ApplicationManager : Application() {
         when(preferenceManager.getInt(THEME_PREF)) {
             
             0 -> {
-                
                 if (Build.VERSION.SDK_INT >= 29){
                     AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
                 }
                 else {
                     AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
                 }
-                
             }
             R.id.follow_system -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
             R.id.light -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
