@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2022-present StellarSand
+  ~
+  ~  This file is part of IYPS.
+  ~
+  ~  IYPS is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~  IYPS is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <!--
+    Ensure proper encoding of characters
+        ç = \u00E7
+        Ç = \u00C7
+        ğ = \u011F
+        ı = \u0131
+        İ = \u0130
+        ö = \u00F6
+        Ö = \u00D6
+        ü = \u00FC
+        Ü = \u00DC
+        ş = \u015F
+        Ş = \u015E
+    -->
+
+    <string name="app_version">S\u00FCr\u00FCm</string>
+
+    <!--Bottom nav view-->
+    <string name="password">\u015Eifre</string>
+    <string name="file">Dosya</string>
+    <string name="settings">Ayarlar</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
+    <string name="test_your_password">\u015Eifrenizi test edin</string>
+    <string name="details">Detaylar</string>
+    <string name="strength">G\u00FC\u00E7</string>
+    <string name="worst">\u00C7ok zay\u0131f</string>
+    <string name="weak">Zay\u0131f</string>
+    <string name="medium">Orta</string>
+    <string name="strong">G\u00FC\u00E7l\u00FC</string>
+    <string name="excellent">\u00C7ok g\u00FC\u00E7l\u00FC</string>
+    <string name="est_time_to_crack">Tahmini k\u0131r\u0131lma s\u00FCresi</string>
+    <string name="help">Yard\u0131m</string>
+    <string name="less_than_sec">Bir saniyeden az</string>
+    <string name="second">saniye</string>
+    <string name="minute">dakika</string>
+    <string name="hour">saat</string>
+    <string name="day">g\u00FCn</string>
+    <string name="month">ay</string>
+    <string name="year">y\u0131l</string>
+    <string name="centuries">Y\u00FCzy\u0131l</string>
+    <string name="warning">Uyar\u0131</string>
+    <string name="suggestions">\u00D6neriler</string>
+    <string name="est_guesses_to_crack">Tahmini k\u0131rma denemesi say\u0131s\u0131</string>
+    <string name="order_of_magn">Tahminlerin b\u00FCy\u00FCkl\u00FCk s\u0131ras\u0131</string>
+    <string name="entropy">Entropi</string>
+    <string name="bits">bits</string>
+    <string name="match_sequence">E\u015Fle\u015Fme s\u0131ras\u0131</string>
+    <string name="pattern">\u2022 Model</string>
+    <string name="dict_name">\u2022 S\u00F6zl\u00FCk ad\u0131</string>
+    <string name="rank">\u2022 R\u00FCtbe</string>
+    <string name="reversed">\u2022 Tersine \u00E7evrildi</string>
+    <string name="substitutions">\u2022 De\u011Fi\u015Fimler</string>
+    <string name="base_token">\u2022 Temel belirte\u00E7</string>
+    <string name="repeat_times">\u2022 %1$s kez tekrarlanm\u0131\u015F</string>
+    <string name="sequence_name">\u2022 S\u0131ra ad\u0131</string>
+    <string name="sequence_size">\u2022 S\u0131ra boyutu</string>
+    <string name="ascending">\u2022 Artan</string>
+    <string name="Day">\u2022 G\u00FCn</string>
+    <string name="Month">\u2022 Ay</string>
+    <string name="Year">\u2022 Y\u0131l</string>
+    <string name="separator">\u2022 Ay\u0131r\u0131c\u0131</string>
+    <string name="graph">\u2022 Grafik</string>
+    <string name="turns">\u2022 D\u00F6n\u00FC\u015Fler</string>
+    <string name="shifted_times">\u2022 %1$s kez kayd\u0131r\u0131lm\u0131\u015F</string>
+    <string name="regex_name">\u2022 Regex ad\u0131</string>
+    <string name="statistics">\u0130statistikler</string>
+    <string name="length">\u2022 Uzunluk</string>
+    <string name="upper_case">\u2022 B\u00FCy\u00FCk harf</string>
+    <string name="lower_case">\u2022 K\u00FC\u00E7\u00FCk harf</string>
+    <string name="numbers">\u2022 Say\u0131lar</string>
+    <string name="special_char">\u2022 \u00D6zel karakterler</string>
+
+    <!--#########################################################################################-->
+
+    <!--File fragment-->
+    <string name="select_file_text">Bir metin dosyas\u0131 se\u00E7in, bu dosyada birden fazla \u015Fifre olmal\u0131d\u0131r. Her \u015Fifre dosyada ayr\u0131 bir sat\u0131rda olmal\u0131d\u0131r.</string>
+    <string name="select_file_btn">Dosya se\u00E7</string>
+
+    <!--#########################################################################################-->
+
+    <!--Settings fragment-->
+    <string name="theme">Tema</string>
+    <string name="privacy">Gizlilik</string>
+    <string name="block_screenshots">Ekran g\u00F6r\u00FCnt\u00FCs\u00FCn\u00FC engelle</string>
+    <string name="incognito_keyboard">Gizli klavye</string>
+    <string name="about">Hakk\u0131m\u0131zda</string>
+    <string name="privacy_policy">Gizlilik Politikas\u0131</string>
+    <string name="third_party_licenses">\u00DC\u00E7\u00FCnc\u00FC taraf lisanslar</string>
+    <string name="contributors">Katk\u0131da Bulunanlar</string>
+    <string name="report_issue">Sorun bildir</string>
+    <string name="view_on_github">GitHub\'da G\u00F6r\u00FCnt\u00FCle</string>
+
+    <!--#########################################################################################-->
+
+    <!--Custom warnings-->
+    <string name="worst_pass_warning">\u015Eifre tahmin edilemeyecek kadar basit.</string>
+    <string name="weak_pass_warning">\u015Eifre kolayca k\u0131r\u0131labilir.</string>
+    <string name="medium_pass_warning">\u015Eifre yeterince g\u00FC\u00E7l\u00FC de\u011Fil.</string>
+
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
+    <string name="cancel">\u0130ptal et</string>
+
+    <!--Theme-->
+    <string name="follow_system">Sistemi takip et</string>
+    <string name="light">Ayd\u0131nl\u0131k</string>
+    <string name="dark">Karanl\u0131k</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="no_browsers">Bu cihazda y\u00FCkl\u00FC taray\u0131c\u0131 yok</string>
+
+</resources>
