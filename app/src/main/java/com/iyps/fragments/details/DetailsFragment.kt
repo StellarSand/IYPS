@@ -30,12 +30,12 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentPasswordBinding
 import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
-import com.iyps.utils.UiUtils
 import com.iyps.utils.UiUtils.Companion.getGuessesText
 import com.iyps.utils.UiUtils.Companion.getMatchSequenceText
 import com.iyps.utils.UiUtils.Companion.getStatisticsCounts
 import com.iyps.utils.UiUtils.Companion.getSuggestionsText
 import com.iyps.utils.UiUtils.Companion.getWarningText
+import com.iyps.utils.UiUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.UiUtils.Companion.passwordCrackTimeResult
 import com.iyps.utils.UiUtils.Companion.replaceCrackTimeStrings
 import com.iyps.utils.UiUtils.Companion.setStrengthProgressAndText
@@ -109,7 +109,7 @@ class DetailsFragment : Fragment() {
         
         // Warning
         val localizedFeedback =
-            strength.feedback.withResourceBundle(UiUtils.localizedResourceBundle(requireContext()))
+            strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(requireContext()))
         fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
                                                               localizedFeedback,
                                                               passwordCrackTimeResult(tenBCrackTimeMilliSeconds))

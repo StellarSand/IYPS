@@ -25,15 +25,18 @@
     Ensure proper encoding of characters
         ç = \u00E7
         Ç = \u00C7
+        ð = \u00F0
         ğ = \u011F
         ı = \u0131
         İ = \u0130
         ö = \u00F6
         Ö = \u00D6
+        þ = \u00FE
         ü = \u00FC
         Ü = \u00DC
         ş = \u015F
         Ş = \u015E
+        ý = \u00FD
     -->
 
     <string name="app_version">S\u00FCr\u00FCm</string>

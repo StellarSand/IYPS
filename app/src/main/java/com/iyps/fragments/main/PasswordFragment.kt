@@ -48,7 +48,7 @@ import com.iyps.utils.UiUtils.Companion.setStrengthProgressAndText
 import com.iyps.utils.UiUtils.Companion.getStatisticsCounts
 import com.iyps.utils.UiUtils.Companion.getSuggestionsText
 import com.iyps.utils.UiUtils.Companion.getWarningText
-import com.iyps.utils.UiUtils.Companion.localizedResourceBundle
+import com.iyps.utils.UiUtils.Companion.localizedFeedbackResourceBundle
 import kotlin.math.log2
 
 class PasswordFragment : Fragment() {
@@ -140,7 +140,7 @@ class PasswordFragment : Fragment() {
                                 
                                 // Warning
                                 val localizedFeedback =
-                                    strength.feedback.withResourceBundle(localizedResourceBundle(requireContext()))
+                                    strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(requireContext()))
                                 fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
                                                                                       localizedFeedback,
                                                                                       passwordCrackTimeResult(tenBCrackTimeMilliSeconds))

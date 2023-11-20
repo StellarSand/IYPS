@@ -10,4 +10,4 @@
   - Italian: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-it/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_it.properties)
   - Japanese: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-ja/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_ja.properties)
   - Spanish: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-es/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_es.properties)
-  - Turkish: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-tr/strings.xml)
+  - Turkish: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-tr/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_tr.properties)

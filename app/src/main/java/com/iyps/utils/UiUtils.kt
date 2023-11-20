@@ -40,7 +40,7 @@ class UiUtils {
     
     companion object {
         
-        fun localizedResourceBundle(context: Context): ResourceBundle {
+        fun localizedFeedbackResourceBundle(context: Context): ResourceBundle {
             val mapLocaleToResourceId =
                 mapOf("en" to R.raw.messages_en,
                       "nl" to R.raw.messages_nl,
@@ -116,16 +116,13 @@ class UiUtils {
                       "month" to context.getString(R.string.month),
                       "year" to context.getString(R.string.year),
                       "centuries" to context.getString(R.string.centuries))
-            
+    
+            var replacedString = timeToCrackString
             for ((key, value) in replacementStringMap) {
-                timeToCrackString.apply {
-                    if (contains(key)) {
-                        replace(key, value)
-                    }
-                }
+                replacedString = replacedString.replace(key, value)
             }
-            
-            return timeToCrackString
+    
+            return replacedString
         }
         
         private fun strengthProgressAndTextMap(context: Context,
