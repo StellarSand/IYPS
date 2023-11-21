@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2022-present StellarSand
+  ~
+  ~  This file is part of IYPS.
+  ~
+  ~  IYPS is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~  IYPS is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <!--
+    Ensure proper encoding of characters
+        ä = \u00E4
+        å = \u00E5
+        Å = \u00C5
+        ö = \u00F6
+    -->
+
+    <string name="app_version">Version</string>
+
+    <!--Bottom nav view-->
+    <string name="password">L\u00F6senord</string>
+    <string name="file">Fil</string>
+    <string name="settings">Inst\u00E4llningar</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
+    <string name="test_your_password">Testa ditt l\u00F6senord</string>
+    <string name="details">Detaljer</string>
+    <string name="strength">Styrka</string>
+    <string name="worst">V\u00E4rsta</string>
+    <string name="weak">Svag</string>
+    <string name="medium">Medium</string>
+    <string name="strong">Stark</string>
+    <string name="excellent">Utm\u00E4rkt</string>
+    <string name="est_time_to_crack">Ber\u00E4knad tid till sprickbildning</string>
+    <string name="less_than_sec">Mindre \u00E4n en sekund</string>
+    <string name="second">sekund</string>
+    <string name="minute">minut</string>
+    <string name="hour">timme</string>
+    <string name="day">dag</string>
+    <string name="month">m\u00E5nad</string>
+    <string name="year">\u00E5r</string>
+    <string name="centuries">\u00C5rhundraden</string>
+    <string name="warning">Varning</string>
+    <string name="suggestions">F\u00F6rslag</string>
+    <string name="est_guesses_to_crack">Uppskattade gissningar f\u00F6r att kn\u00E4cka</string>
+    <string name="order_of_magn">Storleksordning av gissningar</string>
+    <string name="entropy">Entropi</string>
+    <string name="bits">bits</string>
+    <string name="match_sequence">Matchningssekvens</string>
+    <string name="pattern">\u2022 M\u00F6nster</string>
+    <string name="dict_name">\u2022 Namn p\u00E5 ordbok</string>
+    <string name="rank">\u2022 Rang</string>
+    <string name="reversed">\u2022 Upph\u00E4vd</string>
+    <string name="substitutions">\u2022 Ers\u00E4ttningar</string>
+    <string name="base_token">\u2022 Bas-token</string>
+    <string name="repeat_times">\u2022 Upprepad %1$s g\u00E5nger</string>
+    <string name="sequence_name">\u2022 Sekvensens namn</string>
+    <string name="sequence_size">\u2022 Sekvensens storlek</string>
+    <string name="ascending">\u2022 Stigande</string>
+    <string name="Day">\u2022 Dag</string>
+    <string name="Month">\u2022 M\u00E5nad</string>
+    <string name="Year">\u2022 \u00C5r</string>
+    <string name="separator">\u2022 Separator</string>
+    <string name="graph">\u2022 Graf</string>
+    <string name="turns">\u2022 V\u00E4ndningar</string>
+    <string name="shifted_times">\u2022 F\u00F6rskjuten %1$s g\u00E5nger</string>
+    <string name="regex_name">\u2022 Regex namn</string>
+    <string name="statistics">Statistik</string>
+    <string name="length">\u2022 L\u00E4ngd</string>
+    <string name="upper_case">\u2022 Stora bokst\u00E4ver</string>
+    <string name="lower_case">\u2022 L\u00E4gre fall</string>
+    <string name="numbers">\u2022 Siffror</string>
+    <string name="special_char">\u2022 S\u00E4rskilda tecken</string>
+
+    <!--#########################################################################################-->
+
+    <!--File fragment-->
+    <string name="select_file_text">V\u00E4lj en textfil med flera l\u00F6senord. Varje l\u00F6senord m\u00E5ste finnas p\u00E5 en separat rad i filen.</string>
+    <string name="select_file_btn">V\u00E4lj fil</string>
+
+    <!--#########################################################################################-->
+
+    <!--Settings fragment-->
+    <string name="theme">Tema</string>
+    <string name="privacy">Integritet</string>
+    <string name="block_screenshots">Blockera sk\u00E4rmdumpar i appen</string>
+    <string name="incognito_keyboard">Inkognito tangentbord</string>
+    <string name="about">Om</string>
+    <string name="privacy_policy">Integritetspolicy</string>
+    <string name="third_party_licenses">Licenser fr\u00E5n tredje part</string>
+    <string name="contributors">Medverkande</string>
+    <string name="report_issue">Rapportera ett problem</string>
+    <string name="view_on_github">Visa p\u00E5 GitHub</string>
+
+    <!--#########################################################################################-->
+
+    <!--Custom warnings-->
+    <string name="worst_pass_warning">L\u00F6senordet \u00E4r f\u00F6r enkelt att gissa.</string>
+    <string name="weak_pass_warning">L\u00F6senordet kan l\u00E4tt kn\u00E4ckas.</string>
+    <string name="medium_pass_warning">L\u00F6senordet \u00E4r inte tillr\u00E4ckligt starkt.</string>
+
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
+    <string name="cancel">Avbryt</string>
+
+    <!--Theme-->
+    <string name="follow_system">F\u00F6lj systemet</string>
+    <string name="light">Ljus</string>
+    <string name="dark">M\u00F6rk</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="no_browsers">Inga webbl\u00E4sare installerade p\u00E5 den h\u00E4r enheten</string>
+
+</resources>

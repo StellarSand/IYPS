@@ -1,0 +1,11 @@
+Gücü, tahmini kırılma süresini gösteren ve daha iyi şifreler oluşturmaya yardımcı olmak için uyarılar ve öneriler sağlayan bir şifre gücü testi uygulaması.
+
+Özellikler
+
+- Tamamen açık kaynak
+- Materyal tasarım
+- Tamamen çevrimdışı
+- Hem açık hem de koyu temayı destekler
+- Reklam yok
+- Kişisel veri toplama yok
+- Desteklenen diller: İngilizce, Hollandaca, Fransızca, Almanca, İtalyanca, Japonca, İspanyolca, İsveççe, Türkçe

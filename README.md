@@ -43,7 +43,7 @@ Using this app you can determine whether the passwords are most commonly used on
 - Supports both light and dark theme
 - No ads
 - No collection of personal data
-- Supported languages: English, Dutch, French, German, Italian, Japanese, Spanish
+- Supported languages: English, Dutch, French, German, Italian, Japanese, Spanish, Swedish, Turkish
 
 
 
@@ -74,7 +74,9 @@ All notable changes to this project will be documented in the [changelog](https:
 
 
 ## How does it work?
-For an in-depth explanation, check out this article on [realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation).
+For a detailed explanation, refer to the following:
+- [Realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
+- [Five algorithms to measure real password strength](https://medium.com/nulab/five-algorithms-to-measure-real-password-strength-bd30126e82cc)
 
 
 

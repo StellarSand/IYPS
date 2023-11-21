@@ -50,7 +50,6 @@
     <string name="strong">Robuste</string>
     <string name="excellent">Excellent</string>
     <string name="est_time_to_crack">Temps estim\u00E9 pour craquer</string>
-    <string name="help">Aide</string>
     <string name="less_than_sec">Moins d\'une seconde</string>
     <string name="second">secondes</string>
     <string name="minute">minutes</string>

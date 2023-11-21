@@ -1,0 +1,1 @@
+Kırılma süreleri, uyarılar ve öneriler içeren bir şifre gücü testi uygulaması.

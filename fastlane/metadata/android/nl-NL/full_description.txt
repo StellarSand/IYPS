@@ -8,4 +8,4 @@ Kenmerken:
 - Ondersteunt zowel licht als donker thema
 - Geen advertenties
 - Geen verzameling persoonlijke gegevens
-- Ondersteunde talen: Engels, Nederlands, Frans, Duits, Italiaans, Japans, Spaans
+- Ondersteunde talen: Engels, Nederlands, Frans, Duits, Italiaans, Japans, Spaans, Zweeds, Turks

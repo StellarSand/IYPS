@@ -8,4 +8,4 @@ Features:
 - Supports both light and dark theme
 - No ads
 - No collection of personal data
-- Supported languages: English, Dutch, French, German, Italian, Japanese, Spanish
+- Supported languages: English, Dutch, French, German, Italian, Japanese, Spanish, Swedish, Turkish

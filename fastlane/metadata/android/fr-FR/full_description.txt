@@ -8,4 +8,4 @@ Caractéristiques:
 - Soutient le thème léger et sombre
 - Pas de pubs
 - Pas de collection de données personnelles
-- Langues prises en charge: Anglais, Néerlandais, Français, Allemand, Italien, Japonais, Espagnol
+- Langues prises en charge: Anglais, Néerlandais, Français, Allemand, Italien, Japonais, Espagnol, Suédois, Turc
