@@ -43,14 +43,6 @@ class UiUtils {
         fun localizedFeedbackResourceBundle(context: Context): ResourceBundle {
             
             val locale = Locale.getDefault().language
-            
-            val properties = Properties().apply {
-                // Load custom messages.properties for locales not included in zxcvbn4j
-                when(locale) {
-                    "sv" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_sv), Charsets.UTF_8))
-                    "tr" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_tr), Charsets.UTF_8))
-                }
-            }
     
             // If locale is in zxcvbn4j, use default resource bundle
             // else use custom messages.properties
@@ -58,6 +50,14 @@ class UiUtils {
                 ResourceBundle.getBundle("com/nulabinc/zxcvbn/messages")
             }
             else {
+                val properties = Properties().apply {
+                    // Load custom messages.properties from res/raw
+                    when(locale) {
+                        "sv" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_sv), Charsets.UTF_8))
+                        "tr" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_tr), Charsets.UTF_8))
+                    }
+                }
+                
                 object : ResourceBundle() {
                     override fun handleGetObject(key: String?): Any? {
                         return properties.getProperty(key)
