@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 StellarSand
+ * Copyright (c) 2022-present StellarSand
  *
  *  This file is part of IYPS.
  *

@@ -41,35 +41,31 @@ class UiUtils {
     companion object {
         
         fun localizedFeedbackResourceBundle(context: Context): ResourceBundle {
-            val mapLocaleToResourceId =
-                mapOf("en" to R.raw.messages_en,
-                      "nl" to R.raw.messages_nl,
-                      "fr" to R.raw.messages_fr,
-                      "de" to R.raw.messages_de,
-                      "it" to R.raw.messages_it,
-                      "ja" to R.raw.messages_ja,
-                      "es" to R.raw.messages_es,
-                      "tr" to R.raw.messages_tr)
             
-            val resourceId = mapLocaleToResourceId[Locale.getDefault().language] ?: R.raw.messages_en
+            val locale = Locale.getDefault().language
             
-            val properties =
-                Properties().apply {
-                    load(InputStreamReader(context.resources.openRawResource(resourceId), Charsets.UTF_8))
+            val properties = Properties().apply {
+                // Load custom messages.properties for locales not included in zxcvbn4j
+                when(locale) {
+                    "sv" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_sv), Charsets.UTF_8))
+                    "tr" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_tr), Charsets.UTF_8))
                 }
-            
-            return object : ResourceBundle() {
-                override fun handleGetObject(key: String): Any {
-                    return properties.getProperty(key)
-                }
-                
-                override fun getKeys(): Enumeration<String> {
-                    return Collections.enumeration(properties.keys()
-                                                       .asSequence()
-                                                       .map {
-                                                           it.toString()
-                                                       }
-                                                       .toList())
+            }
+    
+            // If locale is in zxcvbn4j, use default resource bundle
+            // else use custom messages.properties
+            return if (locale !in setOf("sv", "tr")) {
+                ResourceBundle.getBundle("com/nulabinc/zxcvbn/messages")
+            }
+            else {
+                object : ResourceBundle() {
+                    override fun handleGetObject(key: String?): Any? {
+                        return properties.getProperty(key)
+                    }
+        
+                    override fun getKeys(): Enumeration<String> {
+                        return Collections.enumeration(properties.keys.map { it.toString() })
+                    }
                 }
             }
         }
@@ -116,12 +112,12 @@ class UiUtils {
                       "month" to context.getString(R.string.month),
                       "year" to context.getString(R.string.year),
                       "centuries" to context.getString(R.string.centuries))
-    
+            
             var replacedString = timeToCrackString
             for ((key, value) in replacementStringMap) {
                 replacedString = replacedString.replace(key, value)
             }
-    
+            
             return replacedString
         }
         

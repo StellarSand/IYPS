@@ -56,13 +56,13 @@ class ApplicationManager : Application() {
     
     val zxcvbn: Zxcvbn by lazy {
         ZxcvbnBuilder()
-            .dictionary(DictionaryLoader("passwords", passwordsResource).load())
-            .dictionary(DictionaryLoader("english_words", englishWordsResource).load())
-            .dictionary(DictionaryLoader("EFF_unranked", effUnrankedResource).load())
-            .dictionary(StandardDictionaries.FEMALE_NAMES_LOADER.load())
-            .dictionary(StandardDictionaries.MALE_NAMES_LOADER.load())
-            .dictionary(StandardDictionaries.SURNAMES_LOADER.load())
-            .dictionary(StandardDictionaries.US_TV_AND_FILM_LOADER.load())
+            .dictionaries(listOf(DictionaryLoader("passwords", passwordsResource).load(),
+                                 DictionaryLoader("english_words", englishWordsResource).load(),
+                                 DictionaryLoader("EFF_unranked", effUnrankedResource).load(),
+                                 StandardDictionaries.FEMALE_NAMES_LOADER.load(),
+                                 StandardDictionaries.MALE_NAMES_LOADER.load(),
+                                 StandardDictionaries.SURNAMES_LOADER.load(),
+                                 StandardDictionaries.US_TV_AND_FILM_LOADER.load()))
             .keyboards(StandardKeyboards.loadAllKeyboards())
             .build()
     }
