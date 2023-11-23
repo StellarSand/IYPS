@@ -31,6 +31,7 @@
     <!--Bottom nav view-->
     <string name="password">Password</string>
     <string name="file">File</string>
+    <string name="generate">Generate</string>
     <string name="settings">Settings</string>
 
     <!--#########################################################################################-->
@@ -79,17 +80,27 @@
     <string name="shifted_times">\u2022 Shifted %1$s times</string>
     <string name="regex_name">\u2022 Regex name</string>
     <string name="statistics">Statistics</string>
-    <string name="length">\u2022 Length</string>
-    <string name="upper_case">\u2022 Upper case</string>
-    <string name="lower_case">\u2022 Lower case</string>
-    <string name="numbers">\u2022 Numbers</string>
-    <string name="special_char">\u2022 Special characters</string>
+    <string name="length">Length</string>
+    <string name="uppercase">Uppercase</string>
+    <string name="lowercase">Lowercase</string>
+    <string name="numbers">Numbers</string>
+    <string name="special_char">Special characters</string>
 
     <!--#########################################################################################-->
 
     <!--File fragment-->
     <string name="select_file_text">Select a text file with multiple passwords. Each password must be on a separate line in the file.</string>
     <string name="select_file_btn">Select file</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragment-->
+    <string name="copy">Copy</string>
+    <string name="regenerate">Regenerate</string>
+    <string name="share">Share</string>
+    <string name="customize">Customize</string>
+    <string name="avoid_amb_chars">Avoid ambiguous characters</string>
+    <string name="include_spaces">Include spaces</string>
 
     <!--#########################################################################################-->
 
@@ -126,5 +137,6 @@
 
     <!--Snackbars-->
     <string name="no_browsers">No browsers installed on this device</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
 
 </resources>

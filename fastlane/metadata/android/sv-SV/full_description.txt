@@ -8,4 +8,3 @@ Funktioner:
 - Stödjer både ljust och mörkt tema
 - Inga annonser
 - Ingen insamling av personuppgifter
-- Språk som stöds: Engelska, Franska, Italienska, Japanska, Spanska, Svenska, Holländska, Tyska, Turkiska

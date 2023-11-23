@@ -31,6 +31,7 @@
     <!--Bottom nav view-->
     <string name="password">Wachtwoord</string>
     <string name="file">Bestand</string>
+    <string name="generate">Genereren</string>
     <string name="settings">Instellingen</string>
 
     <!--#########################################################################################-->
@@ -79,11 +80,11 @@
     <string name="shifted_times">\u2022 Verschoven %1$s keer</string>
     <string name="regex_name">\u2022 Regex naam</string>
     <string name="statistics">Statistieken</string>
-    <string name="length">\u2022 Lengte</string>
-    <string name="upper_case">\u2022 Hoofdletters</string>
-    <string name="lower_case">\u2022 Kleineletters</string>
-    <string name="numbers">\u2022 Cijfers</string>
-    <string name="special_char">\u2022 Speciale tekens</string>
+    <string name="length">Lengte</string>
+    <string name="uppercase">Hoofdletters</string>
+    <string name="lowercase">Kleineletters</string>
+    <string name="numbers">Cijfers</string>
+    <string name="special_char">Speciale tekens</string>
 
     <!--#########################################################################################-->
 
@@ -91,6 +92,16 @@
     <string name="select_file_text">
         Selecteer een tekstbestand met meerdere wachtwoorden. Elk wachtwoord moet op een afzonderlijke regel in het bestand staan.</string>
     <string name="select_file_btn">Selecteer bestand</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragment-->
+    <string name="copy">Kopie</string>
+    <string name="regenerate">Regenereer</string>
+    <string name="share">Deel</string>
+    <string name="customize">Pas  aan</string>
+    <string name="avoid_amb_chars">Vermijd dubbelzinnige tekens</string>
+    <string name="include_spaces">Ruimtes opnemen</string>
 
     <!--#########################################################################################-->
 
@@ -127,5 +138,6 @@
 
     <!--Snackbars-->
     <string name="no_browsers">Geen browsers ge\u00EFnstalleerd op dit apparaat</string>
+    <string name="copied_to_clipboard">Gekopieerd naar klembord</string>
 
 </resources>

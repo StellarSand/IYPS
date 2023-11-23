@@ -1,5 +1,5 @@
 <!--
-  ~ Copyright (c) 2022 StellarSand
+  ~ Copyright (c) 2022-present StellarSand
   ~
   ~  This file is part of IYPS.
   ~
@@ -21,8 +21,7 @@
 
     <!--Margins & paddings-->
     <dimen name="margin_75">75dp</dimen>
-    <dimen name="margin_50">50dp</dimen>
-    <dimen name="margin_35">35dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
     <dimen name="margin_30">30dp</dimen>
     <dimen name="margin_25">25dp</dimen>
     <dimen name="margin_22">22dp</dimen>

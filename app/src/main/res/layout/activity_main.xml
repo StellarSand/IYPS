@@ -46,7 +46,6 @@
         app:itemActiveIndicatorStyle="@style/NavIndicatorStyle"
         app:itemIconTint="@color/color_text_title"
         app:itemTextAppearanceActive="@style/NavTextActive"
-        app:itemTextAppearanceInactive="@style/NavTextInactive"
         app:menu="@menu/menu_bottom_nav"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

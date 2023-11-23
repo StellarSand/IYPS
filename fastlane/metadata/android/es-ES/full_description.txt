@@ -8,4 +8,3 @@ Características:
 - Soporta temas claros y oscuros
 - Sin anuncios
 - No recopila datos personales
-- Idiomas soportados: Inglés, Holandés, Francés, Alemán, Italiano, Japonés, Español, Sueco, Turco

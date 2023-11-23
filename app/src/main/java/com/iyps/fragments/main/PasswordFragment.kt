@@ -65,12 +65,19 @@ class PasswordFragment : Fragment() {
         return fragmentBinding.root
     }
     
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         
         /*########################################################################################*/
+    
+        fragmentBinding.lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
+        fragmentBinding.uppercaseSubtitle.text = "\u2022 ${getString(R.string.uppercase)}"
+        fragmentBinding.lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
+        fragmentBinding.numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
+        fragmentBinding.specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
         
         fragmentBinding.passwordText.apply {
             
@@ -156,7 +163,6 @@ class PasswordFragment : Fragment() {
                                 fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
                                 
                                 // Entropy
-                                @SuppressLint("SetTextI18n")
                                 fragmentBinding.entropySubtitle.text =
                                     "${log2(guesses).formatToTwoDecimalPlaces()} ${getString(R.string.bits)}"
                                 
@@ -167,8 +173,8 @@ class PasswordFragment : Fragment() {
                                 // Statistics
                                 val statsList = getStatisticsCounts(charSequence)
                                 fragmentBinding.lengthText.text = statsList[0].toString()
-                                fragmentBinding.upperCaseText.text = statsList[1].toString()
-                                fragmentBinding.lowerCaseText.text = statsList[2].toString()
+                                fragmentBinding.uppercaseText.text = statsList[1].toString()
+                                fragmentBinding.lowercaseText.text = statsList[2].toString()
                                 fragmentBinding.numbersText.text = statsList[3].toString()
                                 fragmentBinding.specialCharsText.text = statsList[4].toString()
                                 
@@ -211,8 +217,8 @@ class PasswordFragment : Fragment() {
         fragmentBinding.entropySubtitle.text = notApplicableString
         fragmentBinding.matchSequenceSubtitle.text = notApplicableString
         fragmentBinding.lengthText.text = zeroString
-        fragmentBinding.upperCaseText.text = zeroString
-        fragmentBinding.lowerCaseText.text = zeroString
+        fragmentBinding.uppercaseText.text = zeroString
+        fragmentBinding.lowercaseText.text = zeroString
         fragmentBinding.numbersText.text = zeroString
         fragmentBinding.specialCharsText.text = zeroString
         

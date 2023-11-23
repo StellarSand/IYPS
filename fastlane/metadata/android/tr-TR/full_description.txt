@@ -8,4 +8,3 @@ Gücü, tahmini kırılma süresini gösteren ve daha iyi şifreler oluşturmaya
 - Hem açık hem de koyu temayı destekler
 - Reklam yok
 - Kişisel veri toplama yok
-- Desteklenen diller: İngilizce, Hollandaca, Fransızca, Almanca, İtalyanca, Japonca, İspanyolca, İsveççe, Türkçe

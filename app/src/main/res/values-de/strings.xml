@@ -35,6 +35,7 @@
     <!--Bottom nav view-->
     <string name="password">Passwort</string>
     <string name="file">Datei</string>
+    <string name="generate">Erzeugen Sie</string>
     <string name="settings">Einstellungen</string>
 
     <!--#########################################################################################-->
@@ -83,11 +84,11 @@
     <string name="shifted_times">\u2022 %1$s mal verschoben</string>
     <string name="regex_name">\u2022 Regex name</string>
     <string name="statistics">Statistik</string>
-    <string name="length">\u2022 L\u00E4nge</string>
-    <string name="upper_case">\u2022 Gro\u00DFbuchstaben</string>
-    <string name="lower_case">\u2022 Kleinbuchstaben</string>
-    <string name="numbers">\u2022 Zahlen</string>
-    <string name="special_char">\u2022 Spezielle charaktere</string>
+    <string name="length">L\u00E4nge</string>
+    <string name="uppercase">Gro\u00DFbuchstaben</string>
+    <string name="lowercase">Kleinbuchstaben</string>
+    <string name="numbers">Zahlen</string>
+    <string name="special_char">Spezielle charaktere</string>
 
     <!--#########################################################################################-->
 
@@ -95,6 +96,16 @@
     <string name="select_file_text">
         W\u00E4hlen Sie eine Textdatei mit mehreren Passw\u00F6rtern aus. Jedes Passwort muss in einer separaten Zeile in der Datei sein.</string>
     <string name="select_file_btn">Datei aussuchen</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragment-->
+    <string name="copy">Kopieren</string>
+    <string name="regenerate">Regenerieren Sie</string>
+    <string name="share">Teilen Sie</string>
+    <string name="customize">Anpassen</string>
+    <string name="avoid_amb_chars">Vermeiden Sie zweideutige Zeichen</string>
+    <string name="include_spaces">R\u00E4ume einbeziehen</string>
 
     <!--#########################################################################################-->
 
@@ -131,5 +142,6 @@
 
     <!--Snackbars-->
     <string name="no_browsers">Es ist kein browser auf diesem ger\u00E4t installiert</string>
+    <string name="copied_to_clipboard">In die Zwischenablage kopiert</string>
 
 </resources>

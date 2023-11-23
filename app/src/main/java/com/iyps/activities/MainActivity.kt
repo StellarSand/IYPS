@@ -81,11 +81,17 @@ class MainActivity : AppCompatActivity() {
         
         val actionsMap =
             mapOf(Pair(R.id.fileFragment, R.id.nav_password) to R.id.action_fileFragment_to_passwordFragment,
+                  Pair(R.id.generateFragment, R.id.nav_password) to R.id.action_generateFragment_to_passwordFragment,
                   Pair(R.id.settingsFragment, R.id.nav_password) to R.id.action_settingsFragment_to_passwordFragment,
                   Pair(R.id.passwordFragment, R.id.nav_file) to R.id.action_passwordFragment_to_fileFragment,
+                  Pair(R.id.generateFragment, R.id.nav_file) to R.id.action_generateFragment_to_fileFragment,
                   Pair(R.id.settingsFragment, R.id.nav_file) to R.id.action_settingsFragment_to_fileFragment,
+                  Pair(R.id.passwordFragment, R.id.nav_generate) to R.id.action_passwordFragment_to_generateFragment,
+                  Pair(R.id.fileFragment, R.id.nav_generate) to R.id.action_fileFragment_to_generateFragment,
+                  Pair(R.id.settingsFragment, R.id.nav_generate) to R.id.action_settingsFragment_to_generateFragment,
                   Pair(R.id.passwordFragment, R.id.nav_settings) to R.id.action_passwordFragment_to_settingsFragment,
-                  Pair(R.id.fileFragment, R.id.nav_settings) to R.id.action_fileFragment_to_settingsFragment)
+                  Pair(R.id.fileFragment, R.id.nav_settings) to R.id.action_fileFragment_to_settingsFragment,
+                  Pair(R.id.generateFragment, R.id.nav_settings) to R.id.action_generateFragment_to_settingsFragment)
         
         val action = actionsMap[Pair(currentFragment.id, clickedItem)] ?: 0
         

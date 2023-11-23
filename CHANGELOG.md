@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 
 
+## v1.4.6
+- Added random password generator.
+- Fixed estimated time to crack not translating.
+- Added Swedish and Turkish(by [mdksec](https://github.com/mdksec)) translations.
+
+
+
 ## v1.4.3
 - Added support for Android 14.
 - Added Spanish translations.
@@ -25,7 +32,7 @@ All notable changes to this project will be documented in this file.
 - Select file support for Android 13 and above.
 - Adaptive app icon.
 - Included themed icons for Android 13 and above.
-- Improved Italian(by [gdonisi](https://github.com/gdonisi)) and French(by [Amiralgaby](https://github.com/Amiralgaby)) translations.
+- Improved Italian (by [gdonisi](https://github.com/gdonisi)) and French (by [Amiralgaby](https://github.com/Amiralgaby)) translations.
 
 
 

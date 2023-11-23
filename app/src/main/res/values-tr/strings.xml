@@ -44,6 +44,7 @@
     <!--Bottom nav view-->
     <string name="password">\u015Eifre</string>
     <string name="file">Dosya</string>
+    <string name="generate">Olu\u015Fturmak</string>
     <string name="settings">Ayarlar</string>
 
     <!--#########################################################################################-->
@@ -92,17 +93,27 @@
     <string name="shifted_times">\u2022 %1$s kez kayd\u0131r\u0131lm\u0131\u015F</string>
     <string name="regex_name">\u2022 Regex ad\u0131</string>
     <string name="statistics">\u0130statistikler</string>
-    <string name="length">\u2022 Uzunluk</string>
-    <string name="upper_case">\u2022 B\u00FCy\u00FCk harf</string>
-    <string name="lower_case">\u2022 K\u00FC\u00E7\u00FCk harf</string>
-    <string name="numbers">\u2022 Say\u0131lar</string>
-    <string name="special_char">\u2022 \u00D6zel karakterler</string>
+    <string name="length">Uzunluk</string>
+    <string name="uppercase">B\u00FCy\u00FCk harf</string>
+    <string name="lowercase">K\u00FC\u00E7\u00FCk harf</string>
+    <string name="numbers">Say\u0131lar</string>
+    <string name="special_char">\u00D6zel karakterler</string>
 
     <!--#########################################################################################-->
 
     <!--File fragment-->
     <string name="select_file_text">Bir metin dosyas\u0131 se\u00E7in, bu dosyada birden fazla \u015Fifre olmal\u0131d\u0131r. Her \u015Fifre dosyada ayr\u0131 bir sat\u0131rda olmal\u0131d\u0131r.</string>
     <string name="select_file_btn">Dosya se\u00E7</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragment-->
+    <string name="copy">Anla\u015F\u0131ld\u0131</string>
+    <string name="regenerate">Yenilenme</string>
+    <string name="share">Payla\u015F</string>
+    <string name="customize">\u00D6zelle\u015Ftirme</string>
+    <string name="avoid_amb_chars">Belirsiz karakterlerden ka\u00E7\u0131n\u0131n</string>
+    <string name="include_spaces">Bo\u015Fluklar\u0131 dahil edin</string>
 
     <!--#########################################################################################-->
 
@@ -139,5 +150,6 @@
 
     <!--Snackbars-->
     <string name="no_browsers">Bu cihazda y\u00FCkl\u00FC taray\u0131c\u0131 yok</string>
+    <string name="copied_to_clipboard">Panoya kopyaland\u0131</string>
 
 </resources>

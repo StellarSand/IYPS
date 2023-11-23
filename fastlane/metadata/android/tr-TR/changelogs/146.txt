@@ -1,0 +1,3 @@
+- Rastgele şifre üreticisi eklendi.
+- Tahmini kırma süresinin çevrilmemesi düzeltildi.
+- İsveççe ve Türkçe çeviriler eklendi.

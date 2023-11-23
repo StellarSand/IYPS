@@ -26,6 +26,7 @@
     <!--Bottom nav view-->
     <string name="password">パスワード</string>
     <string name="file">ファイル</string>
+    <string name="generate">生成する</string>
     <string name="settings">設定</string>
 
     <!--#########################################################################################-->
@@ -74,11 +75,11 @@
     <string name="shifted_times">\u2022 %1$s回シフト</string>
     <string name="regex_name">\u2022 正規表現名</string>
     <string name="statistics">統計情報</string>
-    <string name="length">\u2022 長さ</string>
-    <string name="upper_case">\u2022 大文字</string>
-    <string name="lower_case">\u2022 小文字</string>
-    <string name="numbers">\u2022 数字</string>
-    <string name="special_char">\u2022 特殊文字</string>
+    <string name="length">長さ</string>
+    <string name="uppercase">大文字</string>
+    <string name="lowercase">小文字</string>
+    <string name="numbers">数字</string>
+    <string name="special_char">特殊文字</string>
 
     <!--#########################################################################################-->
 
@@ -86,6 +87,16 @@
     <string name="select_file_text">
         複数のパスワードを持つテキストファイルを選択します。 各パスワードは、ファイル内の個別の行にある必要があります.</string>
     <string name="select_file_btn">ファイルを選ぶ</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragment-->
+    <string name="copy">コピー</string>
+    <string name="regenerate">再生</string>
+    <string name="share">シェア</string>
+    <string name="customize">カスタマイズ</string>
+    <string name="avoid_amb_chars">曖昧な文字は避ける</string>
+    <string name="include_spaces">スペースを含む</string>
 
     <!--#########################################################################################-->
 
@@ -122,5 +133,6 @@
 
     <!--Snackbars-->
     <string name="no_browsers">このデバイスにブラウザがインストールされていません</string>
+    <string name="copied_to_clipboard">クリップボードにコピー</string>
 
 </resources>

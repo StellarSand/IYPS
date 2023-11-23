@@ -28,6 +28,13 @@ class PreferenceManager(context: Context) {
         const val THEME_PREF = "theme"
         const val BLOCK_SS = "block_ss"
         const val INCOG_KEYBOARD = "incog_keyboard"
+        const val PASS_LENGTH = "pass_length"
+        const val UPPERCASE = "uppercase"
+        const val LOWERCASE = "lowercase"
+        const val NUMBERS = "numbers"
+        const val SPEC_CHARS = "spec_chars"
+        const val AMB_CHARS = "amb_chars"
+        const val SPACES = "spaces"
     }
     
     private val sharedPreferences =
@@ -43,8 +50,22 @@ class PreferenceManager(context: Context) {
         editor.apply()
     }
     
+    fun getFloat(key: String): Float {
+        return sharedPreferences.getFloat(key, 20f)
+    }
+    
+    fun setFloat(key: String, float: Float) {
+        val editor = sharedPreferences.edit()
+        editor.putFloat(key, float)
+        editor.apply()
+    }
+    
     fun getBoolean(key: String): Boolean {
         return sharedPreferences.getBoolean(key, true)
+    }
+    
+    fun getBooleanDefValFalse(key: String): Boolean {
+        return sharedPreferences.getBoolean(key, false)
     }
     
     fun setBoolean(key: String, boolean: Boolean) {

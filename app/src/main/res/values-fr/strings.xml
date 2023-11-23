@@ -36,6 +36,7 @@
     <!--Bottom nav view-->
     <string name="password">Mot de passe</string>
     <string name="file">Dossier</string>
+    <string name="generate">G\u00E9n\u00E9rer</string>
     <string name="settings">Param\u00E8tres</string>
 
     <!--#########################################################################################-->
@@ -84,11 +85,11 @@
     <string name="shifted_times">\u2022 D\u00E9cal\u00E9 %1$s fois</string>
     <string name="regex_name">\u2022 Nom de l\'expression rationnelle</string>
     <string name="statistics">Statistiques</string>
-    <string name="length">\u2022 Longueur</string>
-    <string name="upper_case">\u2022 Majuscules</string>
-    <string name="lower_case">\u2022 Minuscules</string>
-    <string name="numbers">\u2022 Chiffres</string> <!-- On compte le nombre de chiffres -->
-    <string name="special_char">\u2022 Caract\u00E8res sp\u00E9ciaux</string>
+    <string name="length">Longueur</string>
+    <string name="uppercase">Majuscules</string>
+    <string name="lowercase">Minuscules</string>
+    <string name="numbers">Chiffres</string> <!-- On compte le nombre de chiffres -->
+    <string name="special_char">Caract\u00E8res sp\u00E9ciaux</string>
 
     <!--#########################################################################################-->
 
@@ -96,6 +97,16 @@
     <string name="select_file_text">
         S\u00E9lectionnez un fichier texte avec plusieurs mots de passe. Chaque mot de passe doit \u00EAtre sur une ligne distincte dans le fichier.</string>
     <string name="select_file_btn">Choisir le dossier</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragment-->
+    <string name="copy">Copie</string>
+    <string name="regenerate">R\u00E9g\u00E9n\u00E9rer</string>
+    <string name="share">Partager</string>
+    <string name="customize">Personnaliser</string>
+    <string name="avoid_amb_chars">\u00C9viter les caract\u00E8res ambigus</string>
+    <string name="include_spaces">Inclure les espaces</string>
 
     <!--#########################################################################################-->
 
@@ -132,5 +143,6 @@
 
     <!--Snackbars-->
     <string name="no_browsers">Aucun navigateur n\'est install\u00E9 sur cet appareil</string>
+    <string name="copied_to_clipboard">Copi\u00E9 dans le presse-papiers</string>
 
 </resources>

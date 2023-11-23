@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2022 StellarSand
+ * Copyright (c) 2022-present StellarSand
  *
  *  This file is part of IYPS.
  *
@@ -55,12 +55,19 @@ class DetailsFragment : Fragment() {
         return fragmentBinding.root
     }
     
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         passwordString = (requireActivity() as DetailsActivity).passwordLine
         
         /*########################################################################################*/
+    
+        fragmentBinding.lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
+        fragmentBinding.uppercaseText.text = "\u2022 ${getString(R.string.uppercase)}"
+        fragmentBinding.lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
+        fragmentBinding.numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
+        fragmentBinding.specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
         
         fragmentBinding.passwordText.apply {
             setText(passwordString)
@@ -125,7 +132,6 @@ class DetailsFragment : Fragment() {
         fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
         
         // Entropy
-        @SuppressLint("SetTextI18n")
         fragmentBinding.entropySubtitle.text =
             "${log2(guesses).formatToTwoDecimalPlaces()} ${getString(R.string.bits)}"
         
@@ -135,8 +141,8 @@ class DetailsFragment : Fragment() {
         // Statistics
         val statsList = getStatisticsCounts(passwordString)
         fragmentBinding.lengthText.text = statsList[0].toString()
-        fragmentBinding.upperCaseText.text = statsList[1].toString()
-        fragmentBinding.lowerCaseText.text = statsList[2].toString()
+        fragmentBinding.uppercaseText.text = statsList[1].toString()
+        fragmentBinding.lowercaseText.text = statsList[2].toString()
         fragmentBinding.numbersText.text = statsList[3].toString()
         fragmentBinding.specialCharsText.text = statsList[4].toString()
     }

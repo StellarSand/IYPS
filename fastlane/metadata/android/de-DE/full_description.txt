@@ -7,5 +7,4 @@ Merkmale:
 - Völlig offline
 - Unterstützt sowohl das licht als auch das dunkle thema 
 - Keine werbung
-- Keine sammlung personenbezogener daten 
-- Unterstützte Sprachen: Englisch, Niederländisch, Französisch, Deutsch, Italienisch, Japanisch, Spanisch, Schwedisch, Türkisch
+- Keine sammlung personenbezogener daten

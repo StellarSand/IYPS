@@ -1,0 +1,3 @@
+- Lagt till slumpmässig lösenordsgenerator.
+- Fast beräknad tid till crack översattes inte.
+- Svenska och turkiska översättningar har lagts till.

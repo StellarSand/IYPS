@@ -32,6 +32,7 @@
     <!--Bottom nav view-->
     <string name="password">Password</string>
     <string name="file">File</string>
+    <string name="generate">Generare</string>
     <string name="settings">Impostazioni</string>
 
     <!--#########################################################################################-->
@@ -80,11 +81,11 @@
     <string name="shifted_times">\u2022 Spostato %1$s volte</string>
     <string name="regex_name">\u2022 Nome Regex</string>
     <string name="statistics">Statistiche</string>
-    <string name="length">\u2022 Lunghezza</string>
-    <string name="upper_case">\u2022 Maiuscole</string>
-    <string name="lower_case">\u2022 Minuscole</string>
-    <string name="numbers">\u2022 Numeri</string>
-    <string name="special_char">\u2022 Caratteri speciali</string>
+    <string name="length">Lunghezza</string>
+    <string name="uppercase">Maiuscole</string>
+    <string name="lowercase">Minuscole</string>
+    <string name="numbers">Numeri</string>
+    <string name="special_char">Caratteri speciali</string>
 
     <!--#########################################################################################-->
 
@@ -92,6 +93,16 @@
     <string name="select_file_text">
         Seleziona un file di testo con pi\u00F9 password. Ogni password deve essere su una riga separata nel file.</string>
     <string name="select_file_btn">Seleziona file</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragment-->
+    <string name="copy">Copia</string>
+    <string name="regenerate">Rigenerare</string>
+    <string name="share">Condividi</string>
+    <string name="customize">Personalizzare</string>
+    <string name="avoid_amb_chars">Evitare i caratteri ambigui</string>
+    <string name="include_spaces">Includere spazi</string>
 
     <!--#########################################################################################-->
 
@@ -128,5 +139,6 @@
 
     <!--Snackbars-->
     <string name="no_browsers">Nessun browser installato sul dispositivo</string>
+    <string name="copied_to_clipboard">Copiato negli appunti</string>
 
 </resources>

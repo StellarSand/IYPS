@@ -1,0 +1,3 @@
+- Ajout d'un générateur de mot de passe aléatoire.
+- Correction de l'erreur de traduction de l'estimation du temps de craquage.
+- Ajout de traductions en suédois et en turc.

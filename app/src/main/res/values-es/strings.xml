@@ -36,6 +36,7 @@
     <!--Bottom nav view-->
     <string name="password">Contrase\u00F1a</string>
     <string name="file">Archivo</string>
+    <string name="generate">Genere</string>
     <string name="settings">Ajustes</string>
 
     <!--#########################################################################################-->
@@ -84,17 +85,27 @@
     <string name="shifted_times">\u2022 Desplazado %1$s veces</string>
     <string name="regex_name">\u2022 Nombre Regex</string>
     <string name="statistics">Estad\u00EDsticas</string>
-    <string name="length">\u2022 Longitud</string>
-    <string name="upper_case">\u2022 May\u00FAsculas</string>
-    <string name="lower_case">\u2022 Min\u00FAsculas</string>
-    <string name="numbers">\u2022 N\u00FAmeros</string>
-    <string name="special_char">\u2022 Caracteres especiales</string>
+    <string name="length">Longitud</string>
+    <string name="uppercase">May\u00FAsculas</string>
+    <string name="lowercase">Min\u00FAsculas</string>
+    <string name="numbers">N\u00FAmeros</string>
+    <string name="special_char">Caracteres especiales</string>
 
     <!--#########################################################################################-->
 
     <!--File fragment-->
     <string name="select_file_text">Seleccione un archivo de texto con varias contrase\u00F1as. Cada contrase\u00F1a debe estar en una l\u00EDnea distinta del archivo.</string>
     <string name="select_file_btn">Seleccionar archivo</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragment-->
+    <string name="copy">Copia</string>
+    <string name="regenerate">Regenere</string>
+    <string name="share">Compartir</string>
+    <string name="customize">Personalice</string>
+    <string name="avoid_amb_chars">Evite los caracteres ambiguos</string>
+    <string name="include_spaces">Incluir espacios</string>
 
     <!--#########################################################################################-->
 
@@ -131,5 +142,6 @@
 
     <!--Snackbars-->
     <string name="no_browsers">No hay navegadores instalados en este dispositivo</string>
+    <string name="copied_to_clipboard">Copiado al portapapeles</string>
 
 </resources>
