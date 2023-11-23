@@ -25,6 +25,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.iyps.R
 import com.iyps.databinding.ActivityDetailsBinding
 import com.iyps.fragments.details.DetailsFragment
+import com.iyps.preferences.PreferenceManager
 
 class DetailsActivity : AppCompatActivity() {
 
@@ -41,7 +42,13 @@ class DetailsActivity : AppCompatActivity() {
         /*########################################################################################*/
 
         // Disable screenshots and screen recordings
-        window.setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE)
+        if (PreferenceManager(this).getBoolean(PreferenceManager.BLOCK_SS)) {
+            window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,
+                            WindowManager.LayoutParams.FLAG_SECURE)
+        }
+        else {
+            window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
+        }
     
         activityBinding.detailsToolbar.apply {
             setSupportActionBar(this)
