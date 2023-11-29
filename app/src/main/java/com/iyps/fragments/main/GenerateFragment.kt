@@ -62,13 +62,18 @@ class GenerateFragment : Fragment() {
     private lateinit var includeSpaceSwitch: MaterialSwitch
     private lateinit var primarySwitchesList: List<MaterialSwitch>
     private lateinit var  primarySwitchesPrefMap: Map<MaterialSwitch, String>
+    private var uppercaseWithoutAmbChars = ""
+    private var lowercaseWithoutAmbChars = ""
+    private var numbersWithoutAmbChars = ""
     
     companion object {
         val uppercaseChars = ('A'..'Z').joinToString("")
         val lowercaseChars = ('a'..'z').joinToString("")
         val numbers = ('0'..'9').joinToString("")
-        const val specialChars = "!@#$%^&*-_=+<.>"
-        const val ambChars = "IiLlOo05S8B|"
+        const val specialChars = "!@#$%^&*+_-<.>="
+        const val uppercaseAmbChars = "ILOSB"
+        const val lowercaseAmbChars = "ilo"
+        const val numbersAmbChars = "058"
     }
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -198,28 +203,43 @@ class GenerateFragment : Fragment() {
             else {
                 requireContext().getColor(R.color.color_onPrimary)
             }
-    
+        
         slider.thumbTintList = ColorStateList.valueOf(sliderThumbColor)
+    }
+    
+    private fun getNonAmbChars(allChars: String, ambChars: String): String {
+        return allChars.filterNot { it in ambChars }
     }
     
     private fun generatePassword() {
         val allChars = buildString {
             if (uppercaseSwitch.isChecked) {
-                append(if (avoidAmbCharsSwitch.isChecked) uppercaseChars.filterNot { it in ambChars }
-                       else uppercaseChars)
+                append(
+                    if (avoidAmbCharsSwitch.isChecked) uppercaseWithoutAmbChars.ifEmpty {
+                        // Only generate non-ambiguous chars if not done already.
+                        // This would avoid unnecessary generations everytime this function is called.
+                        getNonAmbChars(uppercaseChars, uppercaseAmbChars).also { uppercaseWithoutAmbChars = it }
+                    }
+                    else uppercaseChars
+                )
             }
             if (lowercaseSwitch.isChecked) {
-                append(if (avoidAmbCharsSwitch.isChecked) lowercaseChars.filterNot { it in ambChars }
-                       else lowercaseChars)
+                append(
+                    if (avoidAmbCharsSwitch.isChecked) lowercaseWithoutAmbChars.ifEmpty {
+                        getNonAmbChars(lowercaseChars, lowercaseAmbChars).also { lowercaseWithoutAmbChars = it }
+                    }
+                    else lowercaseChars
+                )
             }
             if (numbersSwitch.isChecked) {
-                append(if (avoidAmbCharsSwitch.isChecked) numbers.filterNot { it in ambChars }
-                       else numbers)
+                append(
+                    if (avoidAmbCharsSwitch.isChecked) numbersWithoutAmbChars.ifEmpty {
+                        getNonAmbChars(numbers, numbersAmbChars).also { numbersWithoutAmbChars = it }
+                    }
+                    else numbers
+                )
             }
-            if (specialCharsSwitch.isChecked) {
-                append(if (avoidAmbCharsSwitch.isChecked) specialChars.filterNot { it in ambChars }
-                       else specialChars)
-            }
+            if (specialCharsSwitch.isChecked) append(specialChars)
         }
         
         val password = buildString {
@@ -230,8 +250,7 @@ class GenerateFragment : Fragment() {
             
             for (i in 0 until length) {
                 if (includeSpaceSwitch.isChecked
-                    && i > 0 // Avoid space at beginning
-                    && i < length - 1 // Avoid space at end
+                    && i in 1 until (length - 1) // Avoid spaces at the beginning & end
                     && i < spacesToInsert) {
                     append(' ')
                 }
@@ -247,14 +266,16 @@ class GenerateFragment : Fragment() {
     
     override fun onPause() {
         super.onPause()
-        preferenceManager.setFloat(PASS_LENGTH, fragmentBinding.passwordLengthSlider.value)
-        primarySwitchesList.forEach { switch ->
-            primarySwitchesPrefMap[switch]?.let { preferenceKey ->
-                preferenceManager.setBoolean(preferenceKey, switch.isChecked)
+        preferenceManager.apply {
+            setFloat(PASS_LENGTH, fragmentBinding.passwordLengthSlider.value)
+            primarySwitchesList.forEach { switch ->
+                primarySwitchesPrefMap[switch]?.let { preferenceKey ->
+                    setBoolean(preferenceKey, switch.isChecked)
+                }
             }
+            setBoolean(AMB_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
+            setBoolean(SPACES, fragmentBinding.includeSpacesSwitch.isChecked)
         }
-        preferenceManager.setBoolean(AMB_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
-        preferenceManager.setBoolean(SPACES, fragmentBinding.includeSpacesSwitch.isChecked)
     }
     
     override fun onDestroyView() {

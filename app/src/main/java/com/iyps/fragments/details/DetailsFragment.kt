@@ -30,15 +30,15 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentPasswordBinding
 import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
-import com.iyps.utils.UiUtils.Companion.getGuessesText
-import com.iyps.utils.UiUtils.Companion.getMatchSequenceText
-import com.iyps.utils.UiUtils.Companion.getStatisticsCounts
-import com.iyps.utils.UiUtils.Companion.getSuggestionsText
-import com.iyps.utils.UiUtils.Companion.getWarningText
-import com.iyps.utils.UiUtils.Companion.localizedFeedbackResourceBundle
-import com.iyps.utils.UiUtils.Companion.passwordCrackTimeResult
-import com.iyps.utils.UiUtils.Companion.replaceCrackTimeStrings
-import com.iyps.utils.UiUtils.Companion.setStrengthProgressAndText
+import com.iyps.utils.ResultUtils.Companion.getGuessesText
+import com.iyps.utils.ResultUtils.Companion.getMatchSequenceText
+import com.iyps.utils.ResultUtils.Companion.getStatisticsCounts
+import com.iyps.utils.ResultUtils.Companion.getSuggestionsText
+import com.iyps.utils.ResultUtils.Companion.getWarningText
+import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
+import com.iyps.utils.ResultUtils.Companion.crackTimeResult
+import com.iyps.utils.ResultUtils.Companion.replaceCrackTimeStrings
+import com.iyps.utils.ResultUtils.Companion.setStrengthProgressAndText
 import kotlin.math.log2
 
 class DetailsFragment : Fragment() {
@@ -64,7 +64,7 @@ class DetailsFragment : Fragment() {
         /*########################################################################################*/
     
         fragmentBinding.lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
-        fragmentBinding.uppercaseText.text = "\u2022 ${getString(R.string.uppercase)}"
+        fragmentBinding.uppercaseSubtitle.text = "\u2022 ${getString(R.string.uppercase)}"
         fragmentBinding.lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
         fragmentBinding.numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
         fragmentBinding.specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
@@ -95,22 +95,22 @@ class DetailsFragment : Fragment() {
         // Estimated time to crack
         fragmentBinding.tenBGuessesSubtitle.text = replaceCrackTimeStrings(tenBCrackTimeString, requireContext())
         setStrengthProgressAndText(requireContext(),
-                                   passwordCrackTimeResult(tenBCrackTimeMilliSeconds),
+                                   crackTimeResult(tenBCrackTimeMilliSeconds),
                                    fragmentBinding.tenBGuessesStrengthMeter,
                                    fragmentBinding.tenBGuessesStrength)
         fragmentBinding.tenKGuessesSubtitle.text = replaceCrackTimeStrings(tenKCrackTimeString, requireContext())
         setStrengthProgressAndText(requireContext(),
-                                   passwordCrackTimeResult(tenKCrackTimeMilliSeconds),
+                                   crackTimeResult(tenKCrackTimeMilliSeconds),
                                    fragmentBinding.tenKGuessesStrengthMeter,
                                    fragmentBinding.tenKGuessesStrength)
         fragmentBinding.tenGuessesSubtitle.text = replaceCrackTimeStrings(tenCrackTimeString, requireContext())
         setStrengthProgressAndText(requireContext(),
-                                   passwordCrackTimeResult(tenCrackTimeMilliSeconds),
+                                   crackTimeResult(tenCrackTimeMilliSeconds),
                                    fragmentBinding.tenGuessesStrengthMeter,
                                    fragmentBinding.tenGuessesStrength)
         fragmentBinding.hundredGuessesSubtitle.text = replaceCrackTimeStrings(hundredCrackTimeString, requireContext())
         setStrengthProgressAndText(requireContext(),
-                                   passwordCrackTimeResult(hundredCrackTimeMilliSeconds),
+                                   crackTimeResult(hundredCrackTimeMilliSeconds),
                                    fragmentBinding.hundredGuessesStrengthMeter,
                                    fragmentBinding.hundredGuessesStrength)
         
@@ -119,7 +119,7 @@ class DetailsFragment : Fragment() {
             strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(requireContext()))
         fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
                                                               localizedFeedback,
-                                                              passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
+                                                              crackTimeResult(tenBCrackTimeMilliSeconds))
         
         // Suggestions
         fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), localizedFeedback)

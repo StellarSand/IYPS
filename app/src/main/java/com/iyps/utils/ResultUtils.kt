@@ -28,50 +28,35 @@ import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
 import com.nulabinc.zxcvbn.Feedback
 import com.nulabinc.zxcvbn.Pattern
 import com.nulabinc.zxcvbn.Strength
-import java.io.InputStreamReader
-import java.util.Collections
-import java.util.Enumeration
-import java.util.Locale
-import java.util.Properties
-import java.util.ResourceBundle
 import java.util.concurrent.TimeUnit
 
-class UiUtils {
+class ResultUtils {
     
     companion object {
         
-        fun localizedFeedbackResourceBundle(context: Context): ResourceBundle {
+        // Replace hardcoded strings from the library for proper language support
+        fun replaceCrackTimeStrings(timeToCrackString: String, context: Context): String{
             
-            val locale = Locale.getDefault().language
-    
-            // If locale is in zxcvbn4j, use default resource bundle
-            // else use custom messages.properties
-            return if (locale !in setOf("sv", "tr")) {
-                ResourceBundle.getBundle("com/nulabinc/zxcvbn/messages")
+            val replacementStringMap =
+                mapOf("less than a second" to context.getString(R.string.less_than_sec),
+                      "second" to context.getString(R.string.second),
+                      "minute" to context.getString(R.string.minute),
+                      "hour" to context.getString(R.string.hour),
+                      "day" to context.getString(R.string.day),
+                      "month" to context.getString(R.string.month),
+                      "year" to context.getString(R.string.year),
+                      "centuries" to context.getString(R.string.centuries))
+            
+            var replacedString = timeToCrackString
+            for ((key, value) in replacementStringMap) {
+                replacedString = replacedString.replace(key, value)
             }
-            else {
-                val properties = Properties().apply {
-                    // Load custom messages.properties from res/raw
-                    when(locale) {
-                        "sv" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_sv), Charsets.UTF_8))
-                        "tr" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_tr), Charsets.UTF_8))
-                    }
-                }
-                
-                object : ResourceBundle() {
-                    override fun handleGetObject(key: String?): Any? {
-                        return properties.getProperty(key)
-                    }
-        
-                    override fun getKeys(): Enumeration<String> {
-                        return Collections.enumeration(properties.keys.map { it.toString() })
-                    }
-                }
-            }
+            
+            return replacedString
         }
         
         // Check password crack time (custom result)
-        fun passwordCrackTimeResult(crackTimeMilliSeconds: Long): String {
+        fun crackTimeResult(crackTimeMilliSeconds: Long): String {
             
             // Take days in:
             // Month = 31, Year = 365
@@ -99,30 +84,10 @@ class UiUtils {
             return result
         }
         
-        // Replace hardcoded strings from the library for proper language support
-        // Since devs of zxcvbn4j won't fix it, we do it ourselves
-        fun replaceCrackTimeStrings(timeToCrackString: String, context: Context): String{
-            
-            val replacementStringMap =
-                mapOf("less than a second" to context.getString(R.string.less_than_sec),
-                      "second" to context.getString(R.string.second),
-                      "minute" to context.getString(R.string.minute),
-                      "hour" to context.getString(R.string.hour),
-                      "day" to context.getString(R.string.day),
-                      "month" to context.getString(R.string.month),
-                      "year" to context.getString(R.string.year),
-                      "centuries" to context.getString(R.string.centuries))
-            
-            var replacedString = timeToCrackString
-            for ((key, value) in replacementStringMap) {
-                replacedString = replacedString.replace(key, value)
-            }
-            
-            return replacedString
-        }
-        
-        private fun strengthProgressAndTextMap(context: Context,
-                                               timeToCrackResult: String): Triple<Int, Int, String?> {
+        fun setStrengthProgressAndText(context: Context,
+                                       timeToCrackResult: String,
+                                       strengthMeter: LinearProgressIndicator,
+                                       strengthTextView: MaterialTextView) {
             val emptyMeterColor = context.resources.getColor(android.R.color.transparent, context.theme)
             val worstMeterColor = context.resources.getColor(R.color.worstMeterColor, context.theme)
             val weakMeterColor = context.resources.getColor(R.color.weakMeterColor, context.theme)
@@ -137,20 +102,17 @@ class UiUtils {
             val excellentString = context.getString(R.string.excellent)
             val notApplicableString = context.getString(R.string.na)
             
-            val map = mapOf("WORST" to Triple(20, worstMeterColor, worstString),
-                            "WEAK" to Triple(40, weakMeterColor, weakString),
-                            "MEDIUM" to Triple(60, mediumMeterColor, mediumString),
-                            "STRONG" to Triple(80, strongMeterColor, strongString),
-                            "EXCELLENT" to Triple(100, excellentMeterColor, excellentString))
+            val strengthProgTextMap = mapOf("WORST" to Triple(20, worstMeterColor, worstString),
+                                            "WEAK" to Triple(40, weakMeterColor, weakString),
+                                            "MEDIUM" to Triple(60, mediumMeterColor, mediumString),
+                                            "STRONG" to Triple(80, strongMeterColor, strongString),
+                                            "EXCELLENT" to Triple(100, excellentMeterColor, excellentString))
             
-            return map[timeToCrackResult] ?: Triple(0, emptyMeterColor, notApplicableString)
-        }
-        
-        fun setStrengthProgressAndText(context: Context,
-                                       timeToCrackResult: String,
-                                       strengthMeter: LinearProgressIndicator,
-                                       strengthTextView: MaterialTextView) {
-            val (progress, indicatorColor, strengthText) = strengthProgressAndTextMap(context, timeToCrackResult)
+            val (progress, indicatorColor, strengthText) =
+                strengthProgTextMap[timeToCrackResult] ?: Triple(0,
+                                                                 emptyMeterColor,
+                                                                 notApplicableString)
+            
             strengthMeter.apply {
                 setIndicatorColor(indicatorColor)
                 setProgressCompat(progress, true)

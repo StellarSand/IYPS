@@ -40,15 +40,15 @@ import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
 import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
 import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
-import com.iyps.utils.UiUtils.Companion.passwordCrackTimeResult
-import com.iyps.utils.UiUtils.Companion.replaceCrackTimeStrings
-import com.iyps.utils.UiUtils.Companion.getGuessesText
-import com.iyps.utils.UiUtils.Companion.getMatchSequenceText
-import com.iyps.utils.UiUtils.Companion.setStrengthProgressAndText
-import com.iyps.utils.UiUtils.Companion.getStatisticsCounts
-import com.iyps.utils.UiUtils.Companion.getSuggestionsText
-import com.iyps.utils.UiUtils.Companion.getWarningText
-import com.iyps.utils.UiUtils.Companion.localizedFeedbackResourceBundle
+import com.iyps.utils.ResultUtils.Companion.crackTimeResult
+import com.iyps.utils.ResultUtils.Companion.replaceCrackTimeStrings
+import com.iyps.utils.ResultUtils.Companion.getGuessesText
+import com.iyps.utils.ResultUtils.Companion.getMatchSequenceText
+import com.iyps.utils.ResultUtils.Companion.setStrengthProgressAndText
+import com.iyps.utils.ResultUtils.Companion.getStatisticsCounts
+import com.iyps.utils.ResultUtils.Companion.getSuggestionsText
+import com.iyps.utils.ResultUtils.Companion.getWarningText
+import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import kotlin.math.log2
 
 class PasswordFragment : Fragment() {
@@ -126,22 +126,22 @@ class PasswordFragment : Fragment() {
                                 // Estimated time to crack
                                 fragmentBinding.tenBGuessesSubtitle.text = replaceCrackTimeStrings(tenBCrackTimeString, requireContext())
                                 setStrengthProgressAndText(requireContext(),
-                                                           passwordCrackTimeResult(tenBCrackTimeMilliSeconds),
+                                                           crackTimeResult(tenBCrackTimeMilliSeconds),
                                                            fragmentBinding.tenBGuessesStrengthMeter,
                                                            fragmentBinding.tenBGuessesStrength)
                                 fragmentBinding.tenKGuessesSubtitle.text = replaceCrackTimeStrings(tenKCrackTimeString, requireContext())
                                 setStrengthProgressAndText(requireContext(),
-                                                           passwordCrackTimeResult(tenKCrackTimeMilliSeconds),
+                                                           crackTimeResult(tenKCrackTimeMilliSeconds),
                                                            fragmentBinding.tenKGuessesStrengthMeter,
                                                            fragmentBinding.tenKGuessesStrength)
                                 fragmentBinding.tenGuessesSubtitle.text = replaceCrackTimeStrings(tenCrackTimeString, requireContext())
                                 setStrengthProgressAndText(requireContext(),
-                                                           passwordCrackTimeResult(tenCrackTimeMilliSeconds),
+                                                           crackTimeResult(tenCrackTimeMilliSeconds),
                                                            fragmentBinding.tenGuessesStrengthMeter,
                                                            fragmentBinding.tenGuessesStrength)
                                 fragmentBinding.hundredGuessesSubtitle.text = replaceCrackTimeStrings(hundredCrackTimeString, requireContext())
                                 setStrengthProgressAndText(requireContext(),
-                                                           passwordCrackTimeResult(hundredCrackTimeMilliSeconds),
+                                                           crackTimeResult(hundredCrackTimeMilliSeconds),
                                                            fragmentBinding.hundredGuessesStrengthMeter,
                                                            fragmentBinding.hundredGuessesStrength)
                                 
@@ -150,7 +150,7 @@ class PasswordFragment : Fragment() {
                                     strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(requireContext()))
                                 fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
                                                                                       localizedFeedback,
-                                                                                      passwordCrackTimeResult(tenBCrackTimeMilliSeconds))
+                                                                                      crackTimeResult(tenBCrackTimeMilliSeconds))
                                 
                                 // Suggestions
                                 fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), localizedFeedback)
