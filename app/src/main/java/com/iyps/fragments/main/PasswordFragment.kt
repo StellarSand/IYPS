@@ -23,7 +23,6 @@ import android.annotation.SuppressLint
 import android.content.ClipboardManager
 import android.content.Context
 import android.os.Bundle
-import android.os.CountDownTimer
 import android.text.Editable
 import android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
 import android.text.TextWatcher
@@ -32,24 +31,19 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.inputmethod.EditorInfoCompat.IME_FLAG_NO_PERSONALIZED_LEARNING
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.iyps.R
 import com.iyps.appmanager.ApplicationManager
+import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentPasswordBinding
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
 import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
-import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
-import com.iyps.utils.ResultUtils.Companion.crackTimeResult
-import com.iyps.utils.ResultUtils.Companion.replaceCrackTimeStrings
-import com.iyps.utils.ResultUtils.Companion.getGuessesText
-import com.iyps.utils.ResultUtils.Companion.getMatchSequenceText
-import com.iyps.utils.ResultUtils.Companion.setStrengthProgressAndText
-import com.iyps.utils.ResultUtils.Companion.getStatisticsCounts
-import com.iyps.utils.ResultUtils.Companion.getSuggestionsText
-import com.iyps.utils.ResultUtils.Companion.getWarningText
-import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
-import kotlin.math.log2
+import com.iyps.utils.ResultUtils
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class PasswordFragment : Fragment() {
     
@@ -70,14 +64,13 @@ class PasswordFragment : Fragment() {
         
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-        
-        /*########################################################################################*/
-    
         fragmentBinding.lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
         fragmentBinding.uppercaseSubtitle.text = "\u2022 ${getString(R.string.uppercase)}"
         fragmentBinding.lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
         fragmentBinding.numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
         fragmentBinding.specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
+        
+        /*########################################################################################*/
         
         fragmentBinding.passwordText.apply {
             
@@ -88,7 +81,8 @@ class PasswordFragment : Fragment() {
             
             addTextChangedListener(object : TextWatcher {
                 
-                var delayTimer: CountDownTimer? = null
+                var job: Job? = null
+                val resultUtils = ResultUtils(requireContext())
                 
                 override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {}
                 
@@ -96,95 +90,22 @@ class PasswordFragment : Fragment() {
                     
                     // Introduce a subtle delay
                     // So passwords are checked after typing is finished
-                    delayTimer?.cancel()
-                    delayTimer = object : CountDownTimer(400, 100) {
-                        
-                        override fun onTick(millisUntilFinished: Long) {}
-                        
-                        // On timer finish, perform task
-                        override fun onFinish() {
-                            
-                            // If edit text is not empty
+                    job?.cancel()
+                    job =
+                        lifecycleScope.launch {
+                            delay(300)
                             if (charSequence.isNotEmpty()) {
-                                
-                                val strength = zxcvbn.measure(charSequence)
-                                
-                                val tenBCrackTimeString = strength.crackTimesDisplay.offlineFastHashing1e10PerSecond
-                                val tenKCrackTimeString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
-                                val tenCrackTimeString = strength.crackTimesDisplay.onlineNoThrottling10perSecond
-                                val hundredCrackTimeString  = strength.crackTimesDisplay.onlineThrottling100perHour
-                                
-                                val tenBCrackTimeMilliSeconds =
-                                    (strength.crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
-                                val tenKCrackTimeMilliSeconds =
-                                    (strength.crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
-                                val tenCrackTimeMilliSeconds =
-                                    (strength.crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
-                                val hundredCrackTimeMilliSeconds =
-                                    (strength.crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
-                                
-                                // Estimated time to crack
-                                fragmentBinding.tenBGuessesSubtitle.text = replaceCrackTimeStrings(tenBCrackTimeString, requireContext())
-                                setStrengthProgressAndText(requireContext(),
-                                                           crackTimeResult(tenBCrackTimeMilliSeconds),
-                                                           fragmentBinding.tenBGuessesStrengthMeter,
-                                                           fragmentBinding.tenBGuessesStrength)
-                                fragmentBinding.tenKGuessesSubtitle.text = replaceCrackTimeStrings(tenKCrackTimeString, requireContext())
-                                setStrengthProgressAndText(requireContext(),
-                                                           crackTimeResult(tenKCrackTimeMilliSeconds),
-                                                           fragmentBinding.tenKGuessesStrengthMeter,
-                                                           fragmentBinding.tenKGuessesStrength)
-                                fragmentBinding.tenGuessesSubtitle.text = replaceCrackTimeStrings(tenCrackTimeString, requireContext())
-                                setStrengthProgressAndText(requireContext(),
-                                                           crackTimeResult(tenCrackTimeMilliSeconds),
-                                                           fragmentBinding.tenGuessesStrengthMeter,
-                                                           fragmentBinding.tenGuessesStrength)
-                                fragmentBinding.hundredGuessesSubtitle.text = replaceCrackTimeStrings(hundredCrackTimeString, requireContext())
-                                setStrengthProgressAndText(requireContext(),
-                                                           crackTimeResult(hundredCrackTimeMilliSeconds),
-                                                           fragmentBinding.hundredGuessesStrengthMeter,
-                                                           fragmentBinding.hundredGuessesStrength)
-                                
-                                // Warning
-                                val localizedFeedback =
-                                    strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(requireContext()))
-                                fragmentBinding.warningSubtitle.text = getWarningText(requireContext(),
-                                                                                      localizedFeedback,
-                                                                                      crackTimeResult(tenBCrackTimeMilliSeconds))
-                                
-                                // Suggestions
-                                fragmentBinding.suggestionsSubtitle.text = getSuggestionsText(requireContext(), localizedFeedback)
-                                
-                                // Guesses
-                                val guesses = strength.guesses
-                                fragmentBinding.guessesSubtitle.text = getGuessesText(guesses)
-                                
-                                // Order of magnitude of guesses
-                                fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
-                                
-                                // Entropy
-                                fragmentBinding.entropySubtitle.text =
-                                    "${log2(guesses).formatToTwoDecimalPlaces()} ${getString(R.string.bits)}"
-                                
-                                // Match sequence
-                                fragmentBinding.matchSequenceSubtitle.text =
-                                    getMatchSequenceText(requireContext(), strength)
-                                
-                                // Statistics
-                                val statsList = getStatisticsCounts(charSequence)
-                                fragmentBinding.lengthText.text = statsList[0].toString()
-                                fragmentBinding.uppercaseText.text = statsList[1].toString()
-                                fragmentBinding.lowercaseText.text = statsList[2].toString()
-                                fragmentBinding.numbersText.text = statsList[3].toString()
-                                fragmentBinding.specialCharsText.text = statsList[4].toString()
-                                
+                                EvaluatePassword(zxcvbn = zxcvbn,
+                                                 password = charSequence,
+                                                 fragmentPasswordBinding = fragmentBinding,
+                                                 context = requireContext(),
+                                                 resultUtils = resultUtils)
                             }
                             // If edit text is empty or cleared, reset everything
                             else {
-                                detailsReset()
+                                resetDetails()
                             }
                         }
-                    }.start()
                 }
                 
                 override fun afterTextChanged(editable: Editable) {}
@@ -196,7 +117,7 @@ class PasswordFragment : Fragment() {
     }
     
     // Reset details
-    private fun detailsReset() {
+    private fun resetDetails() {
         val notApplicableString = getString(R.string.na)
         val zeroString = getString(R.string.zero)
         val emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
