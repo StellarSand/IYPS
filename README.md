@@ -2,7 +2,7 @@
 
 # Is Your Password Secure?
 
-A password strength test app which displays strength, estimated crack time and provides warnings and suggestions to help make better passwords.
+A password strength app that evaluates and rates your password's robustness, estimates crack time, and provides helpful warnings and suggestions for stronger passwords.
 
 
 <img src="https://img.shields.io/f-droid/v/com.iyps?logo=FDroid&color=green&style=for-the-badge" alt="F-Droid Version"> <img src="https://img.shields.io/endpoint?url=https://play.cuzi.workers.dev/play?i=com.iyps&m=$version&logo=GooglePlay&color=3BCCFF&label=Google%20Play&style=for-the-badge" alt="Google Play Version"> <img src="https://img.shields.io/github/v/release/StellarSand/IYPS?logo=GitHub&color=212121&label=GitHub&style=for-the-badge" alt="GitHub Version">
@@ -27,11 +27,10 @@ A password strength test app which displays strength, estimated crack time and p
 ## Overview
 Two things that should always be strong: Coffee ☕ and Passwords 🔑.
 
-With our growing digital life in a post pandemic world, data breaches & hacks have skyrocketed and passwords are the only thing keeping our digital accounts safe. It is always recommended to use a password manager like [Bitwarden](https://bitwarden.com/) or [KeePass](https://keepass.info/) to store and generate unique and strong passwords.
-
-However, if you don't want to use a password manager (seriously though, use a password manager) or want to make your own passwords, you have to be sure they are actually strong and not giving you false sense of security.
-
-Using this app you can determine whether the passwords are most commonly used ones or easy to guess, the estimated time it would take to crack, and it also provides some helpful suggestions to help make your password secure if it isn't. Additionally, since it's completely offline and nothing is stored or saved anywhere, you can be sure that your passwords are yours alone.
+In our digital age, where data breaches and hacks have skyrocketed, robust passwords are vital for safeguarding our online accounts. Using a password manager like [Bitwarden](https://bitwarden.com/) or [KeePass](https://keepass.info/) is strongly recommended for storing and generating unique, strong passwords.
+<br>However, if you choose not to use a password manager (seriously though, consider using one), validating the strength of your passwords is crucial. 
+ 
+ This app analyzes password patterns, predicts potential cracking times, and offers helpful suggestions for maximizing security. Additionally, it features a random password generator that is configurable. Being entirely offline ensures that your passwords remain exclusively yours.
 
 
 
