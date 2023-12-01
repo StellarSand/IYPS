@@ -25,6 +25,7 @@ import android.content.ClipboardManager
 import android.content.Context.CLIPBOARD_SERVICE
 import android.content.Intent
 import android.content.res.ColorStateList
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -33,8 +34,6 @@ import android.view.ViewGroup
 import com.google.android.material.materialswitch.MaterialSwitch
 import com.google.android.material.slider.Slider
 import com.google.android.material.slider.Slider.OnSliderTouchListener
-import com.google.android.material.snackbar.BaseTransientBottomBar
-import com.google.android.material.snackbar.Snackbar
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
@@ -47,6 +46,8 @@ import com.iyps.preferences.PreferenceManager.Companion.PASS_LENGTH
 import com.iyps.preferences.PreferenceManager.Companion.SPACES
 import com.iyps.preferences.PreferenceManager.Companion.SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.UPPERCASE
+import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.ClipboardUtils.Companion.showCopiedSnackbar
 import java.security.SecureRandom
 
 class GenerateFragment : Fragment() {
@@ -61,16 +62,17 @@ class GenerateFragment : Fragment() {
     private lateinit var avoidAmbCharsSwitch: MaterialSwitch
     private lateinit var includeSpaceSwitch: MaterialSwitch
     private lateinit var primarySwitchesList: List<MaterialSwitch>
-    private lateinit var  primarySwitchesPrefMap: Map<MaterialSwitch, String>
+    private lateinit var primarySwitchesPrefMap: Map<MaterialSwitch, String>
     private var uppercaseWithoutAmbChars = ""
     private var lowercaseWithoutAmbChars = ""
     private var numbersWithoutAmbChars = ""
+    private val secureRandom = SecureRandom()
     
     companion object {
         val uppercaseChars = ('A'..'Z').joinToString("")
         val lowercaseChars = ('a'..'z').joinToString("")
         val numbers = ('0'..'9').joinToString("")
-        const val specialChars = "!@#$%^&*+_-<.>="
+        const val specialChars = "!@#$%^&*+_-.="
         const val uppercaseAmbChars = "ILOSB"
         const val lowercaseAmbChars = "ilo"
         const val numbersAmbChars = "058"
@@ -167,17 +169,16 @@ class GenerateFragment : Fragment() {
         
         // Copy
         fragmentBinding.copyPasswordBtn.setOnClickListener {
-            val clipData = ClipData.newPlainText("Generated password",
-                                                 fragmentBinding.generatedPasswordTextView.text)
-            
-            (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager)
-                .setPrimaryClip(clipData)
-            
-            Snackbar.make(mainActivity.activityBinding.mainCoordLayout,
-                          getString(R.string.copied_to_clipboard),
-                          BaseTransientBottomBar.LENGTH_SHORT)
-                .setAnchorView(mainActivity.activityBinding.mainBottomNav)
-                .show()
+            val clipData = ClipData.newPlainText("", fragmentBinding.generatedPasswordTextView.text)
+            hideSensitiveContent(clipData)
+            (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
+            // Only show snackbar in 12L or lower to avoid duplicate notifications
+            // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
+            if (Build.VERSION.SDK_INT <= 32) {
+                showCopiedSnackbar(requireContext(),
+                                   mainActivity.activityBinding.mainCoordLayout,
+                                   mainActivity.activityBinding.mainBottomNav)
+            }
         }
         
         // Regenerate
@@ -244,18 +245,20 @@ class GenerateFragment : Fragment() {
         
         val password = buildString {
             val length = fragmentBinding.passwordLengthSlider.value.toInt()
+            val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
             val spacesToInsert =
-                if (includeSpaceSwitch.isChecked) SecureRandom().nextInt(length)
+                if (includeSpaceSwitch.isChecked) maxSpaces
                 else 0
             
             for (i in 0 until length) {
                 if (includeSpaceSwitch.isChecked
                     && i in 1 until (length - 1) // Avoid spaces at the beginning & end
-                    && i < spacesToInsert) {
+                    && secureRandom.nextInt(length + 1) < spacesToInsert
+                    && this[i - 1] != ' ') {
                     append(' ')
                 }
                 else {
-                    val randomIndex = SecureRandom().nextInt(allChars.length)
+                    val randomIndex = secureRandom.nextInt(allChars.length)
                     append(allChars[randomIndex])
                 }
             }

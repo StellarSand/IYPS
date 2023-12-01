@@ -52,75 +52,66 @@
             android:orientation="vertical"
             android:paddingBottom="@dimen/margin_12">
 
-            <GridLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="2"
-                android:layout_marginHorizontal="@dimen/margin_20"
-                android:layout_marginTop="@dimen/margin_8">
+                android:orientation="horizontal"
+                android:layout_marginVertical="@dimen/margin_12"
+                android:layout_marginHorizontal="@dimen/margin_22">
 
-                <com.google.android.material.button.MaterialButton
+                <ImageButton
                     android:id="@+id/detailsBtn"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_8"
                     android:paddingVertical="@dimen/margin_12"
-                    android:drawableTop="@drawable/ic_details"
-                    android:drawableTint="@color/color_text_title"
-                    android:text="@string/details"
-                    android:textSize="@dimen/text_15"
-                    android:textColor="@color/color_text_title"
-                    android:backgroundTint="@color/color_bottom_nav_indicator" />
+                    android:background="@drawable/shape_card_with_ripple"
+                    android:backgroundTint="@color/color_bottom_nav_indicator"
+                    android:src="@drawable/ic_details"
+                    app:tint="@color/color_text_title"
+                    android:contentDescription="@string/details"/>
 
-                <com.google.android.material.button.MaterialButton
+                <ImageButton
                     android:id="@+id/copyPasswordBtn"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_8"
                     android:paddingVertical="@dimen/margin_12"
-                    android:drawableTop="@drawable/ic_copy"
-                    android:drawableTint="@color/color_text_title"
-                    android:text="@string/copy"
-                    android:textSize="@dimen/text_15"
-                    android:textColor="@color/color_text_title"
-                    android:backgroundTint="@color/color_bottom_nav_indicator" />
+                    android:background="@drawable/shape_card_with_ripple"
+                    android:backgroundTint="@color/color_bottom_nav_indicator"
+                    android:src="@drawable/ic_copy"
+                    app:tint="@color/color_text_title"
+                    android:contentDescription="@string/copy"/>
 
-                <com.google.android.material.button.MaterialButton
+                <ImageButton
                     android:id="@+id/regenerateBtn"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_8"
                     android:paddingVertical="@dimen/margin_12"
-                    android:drawableTop="@drawable/ic_regenerate"
-                    android:drawableTint="@color/color_text_title"
-                    android:text="@string/regenerate"
-                    android:textSize="@dimen/text_15"
-                    android:textColor="@color/color_text_title"
-                    android:backgroundTint="@color/color_bottom_nav_indicator" />
+                    android:background="@drawable/shape_card_with_ripple"
+                    android:backgroundTint="@color/color_bottom_nav_indicator"
+                    android:src="@drawable/ic_regenerate"
+                    app:tint="@color/color_text_title"
+                    android:contentDescription="@string/regenerate"/>
 
-                <com.google.android.material.button.MaterialButton
+                <ImageButton
                     android:id="@+id/shareBtn"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/margin_8"
                     android:paddingVertical="@dimen/margin_12"
-                    android:drawableTop="@drawable/ic_share"
-                    android:drawableTint="@color/color_text_title"
-                    android:text="@string/share"
-                    android:textSize="@dimen/text_15"
-                    android:textColor="@color/color_text_title"
-                    android:backgroundTint="@color/color_bottom_nav_indicator" />
+                    android:background="@drawable/shape_card_with_ripple"
+                    android:backgroundTint="@color/color_bottom_nav_indicator"
+                    android:src="@drawable/ic_share"
+                    app:tint="@color/color_text_title"
+                    android:contentDescription="@string/share"/>
 
-            </GridLayout>
+            </LinearLayout>
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/customizeText"
