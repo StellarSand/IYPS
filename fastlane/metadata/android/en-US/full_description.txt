@@ -1,4 +1,4 @@
-A password strength test app which displays strength, estimated crack time and provides warnings and suggestions to help make better passwords.
+A password strength app that evaluates and rates your password's robustness, estimates crack time, and provides helpful warnings and suggestions for stronger passwords.
 
 Features:
 

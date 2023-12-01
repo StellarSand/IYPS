@@ -1,4 +1,4 @@
-Gücü, tahmini kırılma süresini gösteren ve daha iyi şifreler oluşturmaya yardımcı olmak için uyarılar ve öneriler sağlayan bir şifre gücü testi uygulaması.
+Parolanızın sağlamlığını değerlendiren ve derecelendiren, kırılma süresini tahmin eden ve daha güçlü parolalar için yararlı uyarılar ve öneriler sunan bir parola gücü uygulaması.
 
 Özellikler
 

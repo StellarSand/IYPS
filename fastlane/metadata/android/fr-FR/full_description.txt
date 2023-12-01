@@ -1,4 +1,4 @@
-Une application de test de force de mot de passe qui affiche la force, l'heure de la crise estimée et fournit des avertissements et des suggestions pour améliorer les mots de passe.
+Une application qui évalue et note la robustesse de votre mot de passe, estime le temps de craquage et fournit des avertissements utiles et des suggestions pour des mots de passe plus forts.
 
 Caractéristiques:
 

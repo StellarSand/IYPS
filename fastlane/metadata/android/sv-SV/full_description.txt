@@ -1,4 +1,4 @@
-En app för att testa lösenordsstyrka som visar styrka, uppskattad tid för knäckning och ger varningar och förslag för att hjälpa till att skapa bättre lösenord.
+En app för lösenordsstyrka som utvärderar och betygsätter ditt lösenords robusthet, uppskattar hur lång tid det tar att knäcka lösenordet och ger användbara varningar och förslag på starkare lösenord.
 
 Funktioner:
 

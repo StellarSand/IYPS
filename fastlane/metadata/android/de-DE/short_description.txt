@@ -1,1 +1,1 @@
-Eine passwortstärke test app mit risszeiten, warnungen und vorschlägen.
+Bewerten Sie Passwörter und erhalten Sie Tipps für sichere Passwörter.

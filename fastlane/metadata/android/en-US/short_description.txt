@@ -1,1 +1,1 @@
-A password strength test app with crack times, warnings and suggestions.
+Evaluate passwords, predict crack times, and get tips for stronger passwords.

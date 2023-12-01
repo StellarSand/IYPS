@@ -1,1 +1,1 @@
-Kırılma süreleri, uyarılar ve öneriler içeren bir şifre gücü testi uygulaması.
+Parolaları değerlendirin ve daha güçlü parolalar için ipuçları alın.

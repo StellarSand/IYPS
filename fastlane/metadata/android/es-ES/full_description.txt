@@ -1,4 +1,4 @@
-Una app de prueba de fuerza de contraseña que muestra la fuerza, el tiempo estimado de crack y proporciona advertencias y sugerencias para ayudar a hacer mejores contraseñas.
+Una aplicación de seguridad de contraseñas que evalúa y clasifica la solidez de tu contraseña, calcula el tiempo de descifrado y proporciona advertencias útiles y sugerencias para contraseñas más seguras.
 
 Características:
 

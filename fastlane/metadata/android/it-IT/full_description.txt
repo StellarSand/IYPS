@@ -1,4 +1,4 @@
-Un'app di prova della sicurezza della password che visualizza la robustezza, tempo di decifratura stimato e fornisce avvertenze e suggerimenti per aiutare a creare password migliori.
+Un'applicazione che valuta la robustezza della password, stima il tempo di cracking e fornisce avvisi e suggerimenti utili per password più forti.
 
 Caratteristiche:
 

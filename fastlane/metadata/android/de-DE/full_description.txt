@@ -1,4 +1,4 @@
-Eine Passwortstärke-Test-App, die Stärke, geschätzte Risszeit anzeigt, und bietet Warnungen und Vorschläge, um bessere Kennwörter zu ermöglichen. 
+Eine App zur Bewertung der Passwortstärke, die die Robustheit Ihres Passworts beurteilt und bewertet, die Knackzeit schätzt und hilfreiche Warnungen und Vorschläge für stärkere Passwörter liefert.
 
 Merkmale:
 

@@ -1,1 +1,1 @@
-Un'app per la sicurezza della password con tempi di crack e suggerimenti.
+Valutate le password e ottenete suggerimenti per renderle più forti.

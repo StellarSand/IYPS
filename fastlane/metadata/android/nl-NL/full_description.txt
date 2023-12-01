@@ -1,4 +1,4 @@
-Een wachtwoordsterkte-app die sterkte, geschatte scheurtijd weergeeft en waarschuwingen en suggesties biedt om betere wachtwoorden te maken. 
+Een app voor wachtwoordsterkte die de robuustheid van je wachtwoord evalueert en beoordeelt, de kraaktijd schat en handige waarschuwingen en suggesties geeft voor sterkere wachtwoorden.
 
 Kenmerken:
 

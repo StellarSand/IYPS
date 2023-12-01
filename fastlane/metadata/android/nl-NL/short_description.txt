@@ -1,1 +1,1 @@
-Een wachtwoordsterkte testapp met scheurtijden, waarschuwingen en suggesties.
+Evalueer wachtwoorden en krijg tips voor sterkere wachtwoorden.
