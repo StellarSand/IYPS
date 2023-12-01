@@ -20,26 +20,34 @@
 package com.iyps.fragments.main
 
 import android.annotation.SuppressLint
+import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.os.Build
 import android.os.Bundle
 import android.text.Editable
 import android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
 import android.text.TextWatcher
+import android.view.ActionMode
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.inputmethod.EditorInfoCompat.IME_FLAG_NO_PERSONALIZED_LEARNING
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.iyps.R
+import com.iyps.activities.MainActivity
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentPasswordBinding
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
+import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
+import com.iyps.utils.ClipboardUtils.Companion.showCopiedSnackbar
 import com.iyps.utils.ResultUtils
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -61,7 +69,8 @@ class PasswordFragment : Fragment() {
     
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        
+    
+        val mainActivity = requireActivity() as MainActivity
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         fragmentBinding.lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
@@ -110,10 +119,41 @@ class PasswordFragment : Fragment() {
                 
                 override fun afterTextChanged(editable: Editable) {}
             })
+            
+            // Detect if copied from this app
+            customSelectionActionModeCallback = object : ActionMode.Callback {
+                override fun onCreateActionMode(mode: ActionMode?, menu: Menu?): Boolean {
+                    return true
+                }
+                
+                override fun onPrepareActionMode(mode: ActionMode?, menu: Menu?): Boolean {
+                    return true
+                }
+                
+                override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
+                    when (item?.itemId) {
+                        android.R.id.copy -> {
+                            val clipData = ClipData.newPlainText("IYPS", text)
+                            hideSensitiveContent(clipData)
+                            clipboardManager.setPrimaryClip(clipData)
+                            // Only show snackbar in 12L or lower to avoid duplicate notifications
+                            // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
+                            if (Build.VERSION.SDK_INT <= 32) {
+                                showCopiedSnackbar(requireContext(),
+                                                   mainActivity.activityBinding.mainCoordLayout,
+                                                   mainActivity.activityBinding.mainBottomNav)
+                            }
+                        }
+                    }
+                    return true
+                }
+                
+                override fun onDestroyActionMode(mode: ActionMode?) {}
+            }
         }
         
         // Clipboard
-        manageClipboard(clipboardManager)
+        manageClipboard(clipboardManager, lifecycleScope)
     }
     
     // Reset details
@@ -168,7 +208,10 @@ class PasswordFragment : Fragment() {
     // Clear clipboard immediately when fragment destroyed
     override fun onDestroyView() {
         super.onDestroyView()
-        clearClipboard(clipboardManager)
+        if (clipboardManager.hasPrimaryClip()
+            && clipboardManager.primaryClipDescription?.label == "IYPS") {
+            clearClipboard(clipboardManager)
+        }
         _binding = null
     }
 }
