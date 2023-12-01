@@ -50,18 +50,45 @@ class ResultUtils(val context: Context) {
     private val weakPassWarning = context.getString(R.string.weak_pass_warning)
     private val mediumPassWarning = context.getString(R.string.medium_pass_warning)
     
+    private val replaceLessThanSecondString = context.getString(R.string.less_than_sec)
+    private val replaceSecondString = context.getString(R.string.second)
+    private val replaceMinuteString = context.getString(R.string.minute)
+    private val replaceHourString = context.getString(R.string.hour)
+    private val replaceDayString = context.getString(R.string.day)
+    private val replaceMonthString = context.getString(R.string.month)
+    private val replaceYearString = context.getString(R.string.year)
+    private val replaceCenturiesString = context.getString(R.string.centuries)
+    
+    private val patternString = context.getString(R.string.pattern)
+    private val orderMagnString = context.getString(R.string.order_of_magn)
+    private val dictNameString = context.getString(R.string.dict_name)
+    private val rankString = context.getString(R.string.rank)
+    private val reversedString = context.getString(R.string.reversed)
+    private val substitutionsString = context.getString(R.string.substitutions)
+    private val baseTokenString = context.getString(R.string.base_token)
+    private val seqNameString = context.getString(R.string.sequence_name)
+    private val seqSizeString = context.getString(R.string.sequence_size)
+    private val ascendingString = context.getString(R.string.ascending)
+    private val dayString = context.getString(R.string.Day)
+    private val monthString = context.getString(R.string.Month)
+    private val yearString = context.getString(R.string.Year)
+    private val separatorString = context.getString(R.string.separator)
+    private val graphString = context.getString(R.string.graph)
+    private val turnsString = context.getString(R.string.turns)
+    private val regexNameString = context.getString(R.string.regex_name)
+    
     // Replace hardcoded strings from the library for proper language support
-    fun replaceCrackTimeStrings(timeToCrackString: String): String{
+    fun replaceCrackTimeStrings(timeToCrackString: String): String {
         
         val replacementStringMap =
-            mapOf("less than a second" to context.getString(R.string.less_than_sec),
-                  "second" to context.getString(R.string.second),
-                  "minute" to context.getString(R.string.minute),
-                  "hour" to context.getString(R.string.hour),
-                  "day" to context.getString(R.string.day),
-                  "month" to context.getString(R.string.month),
-                  "year" to context.getString(R.string.year),
-                  "centuries" to context.getString(R.string.centuries))
+            mapOf("less than a second" to replaceLessThanSecondString,
+                  "second" to replaceSecondString,
+                  "minute" to replaceMinuteString,
+                  "hour" to replaceHourString,
+                  "day" to replaceDayString,
+                  "month" to replaceMonthString,
+                  "year" to replaceYearString,
+                  "centuries" to replaceCenturiesString)
         
         var replacedString = timeToCrackString
         for ((key, value) in replacementStringMap) {
@@ -76,28 +103,25 @@ class ResultUtils(val context: Context) {
         
         // Take days in:
         // Month = 31, Year = 365
-        val result: String =
-            when {
-                // Worst = less than/equal to 1 hour
-                crackTimeMilliSeconds <= TimeUnit.MINUTES.toMillis(60) -> "WORST"
-                
-                // Weak = more than 1 hour, less than/equal to 31 days
-                crackTimeMilliSeconds > TimeUnit.MINUTES.toMillis(60)
-                && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(31) -> "WEAK"
-                
-                // Medium = more than 31 days, less than/equal to 6 months
-                crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(31)
-                && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(186) -> "MEDIUM"
-                
-                // Strong = more than 6 months, less than/equal to 5 years
-                crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(186)
-                && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(1825) -> "STRONG"
-                
-                // Excellent = more than 5 years
-                else -> "EXCELLENT"
-            }
-        
-        return result
+        return when {
+            // Worst = less than/equal to 1 hour
+            crackTimeMilliSeconds <= TimeUnit.MINUTES.toMillis(60) -> "WORST"
+            
+            // Weak = more than 1 hour, less than/equal to 31 days
+            crackTimeMilliSeconds > TimeUnit.MINUTES.toMillis(60)
+            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(31) -> "WEAK"
+            
+            // Medium = more than 31 days, less than/equal to 6 months
+            crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(31)
+            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(186) -> "MEDIUM"
+            
+            // Strong = more than 6 months, less than/equal to 5 years
+            crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(186)
+            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(1825) -> "STRONG"
+            
+            // Excellent = more than 5 years
+            else -> "EXCELLENT"
+        }
     }
     
     fun setStrengthProgressAndText(timeToCrackResult: String,
@@ -123,51 +147,46 @@ class ResultUtils(val context: Context) {
     
     fun getWarningText(localizedFeedback: Feedback,
                        passwordCrackTimeResult: String): String {
-        val warningText =
-            localizedFeedback.warning
-                .ifEmpty { // If empty, set to custom warning message
-                    when (passwordCrackTimeResult) {
-                        "WORST" -> worstPassWarning // Worst warning
-                        "WEAK" -> weakPassWarning // Weak warning
-                        "MEDIUM" -> mediumPassWarning // Medium warning
-                        else -> notApplicableString // For strong & above
-                    }
+        return localizedFeedback.warning
+            .ifEmpty { // If empty, set to custom warning message
+                when (passwordCrackTimeResult) {
+                    "WORST" -> worstPassWarning // Worst warning
+                    "WEAK" -> weakPassWarning // Weak warning
+                    "MEDIUM" -> mediumPassWarning // Medium warning
+                    else -> notApplicableString // For strong & above
                 }
-        
-        return warningText
+            }
     }
     
     fun getSuggestionsText(localizedFeedback: Feedback): CharSequence {
-        val suggestions = localizedFeedback.suggestions
-        val suggestionText = buildString {
-            if (suggestions.isNotEmpty()) {
-                suggestions.forEachIndexed { index, suggestion ->
-                    append("\u2022 $suggestion")
-                    if (index != suggestions.lastIndex) {
-                        append("\n")
+        return buildString {
+            localizedFeedback.suggestions.apply {
+                if (isNotEmpty()) {
+                    forEachIndexed { index, suggestion ->
+                        append("\u2022 $suggestion")
+                        if (index != lastIndex) {
+                            append("\n")
+                        }
                     }
                 }
-            }
-            else {
-                notApplicableString
+                else {
+                    append(notApplicableString)
+                }
             }
         }
-        
-        return suggestionText
     }
     
     fun getGuessesText(guesses: Double): CharSequence {
-        val guessesString = guesses.toString()
-        val formattedGuessesString =
-            if (guessesString.contains("E")) {
-                val splitString = guessesString.split("E")
+        return guesses.toString().apply {
+            if (contains("E")) {
+                val splitString = split("E")
                 HtmlCompat.fromHtml("${splitString[0].toDouble().formatToTwoDecimalPlaces()} x 10<sup><small>${splitString[1]}</small></sup>",
                                     HtmlCompat.FROM_HTML_MODE_COMPACT)
             }
             else {
-                guessesString.toDouble().formatToTwoDecimalPlaces()
+                toDouble().formatToTwoDecimalPlaces()
             }
-        return formattedGuessesString
+        }
     }
     
     fun getMatchSequenceText(strength: Strength): CharSequence {
@@ -178,44 +197,44 @@ class ResultUtils(val context: Context) {
             
             matchesText.apply {
                 append("<b>${index + 1}) \"${match.token}\"</b>")
-                append("<br>${context.getString(R.string.pattern)}: $pattern")
+                append("<br>${patternString}: $pattern")
                 if (matchSequence.size > 1)
-                    append("<br>\u2022 ${context.getString(R.string.order_of_magn)}: ${match.guessesLog10.formatToTwoDecimalPlaces()}")
+                    append("<br>\u2022 ${orderMagnString}: ${match.guessesLog10.formatToTwoDecimalPlaces()}")
                 
                 when (pattern) {
                     Pattern.Dictionary -> {
-                        append("<br>${context.getString(R.string.dict_name)}: ${match.dictionaryName}")
-                        if (matchSequence.size > 1) append("<br>${context.getString(R.string.rank)}: ${match.rank}")
-                        append("<br>${context.getString(R.string.reversed)}: ${match.reversed}")
+                        append("<br>${dictNameString}: ${match.dictionaryName}")
+                        if (matchSequence.size > 1) append("<br>${rankString}: ${match.rank}")
+                        append("<br>${reversedString}: ${match.reversed}")
                         if (match.l33t)
-                            append("<br>${context.getString(R.string.substitutions)}: ${match.subDisplay.removeSurrounding("[", "]")}")
+                            append("<br>${substitutionsString}: ${match.subDisplay.removeSurrounding("[", "]")}")
                     }
                     
                     Pattern.Repeat -> {
-                        append("<br>${context.getString(R.string.base_token)}: ${match.baseToken}")
+                        append("<br>${baseTokenString}: ${match.baseToken}")
                         append("<br>${context.getString(R.string.repeat_times, match.repeatCount.toString())}")
                     }
                     
                     Pattern.Sequence -> {
-                        append("<br>${context.getString(R.string.sequence_name)}: ${match.sequenceName}")
-                        append("<br>${context.getString(R.string.sequence_size)}: ${match.sequenceSpace}")
-                        append("<br>${context.getString(R.string.ascending)}: ${match.ascending}")
+                        append("<br>${seqNameString}: ${match.sequenceName}")
+                        append("<br>${seqSizeString}: ${match.sequenceSpace}")
+                        append("<br>${ascendingString}: ${match.ascending}")
                     }
                     
                     Pattern.Date-> {
-                        append("<br>${context.getString(R.string.Day)}: ${match.day}")
-                        append("<br>${context.getString(R.string.Month)}: ${match.month}")
-                        append("<br>${context.getString(R.string.Year)}: ${match.year}")
-                        append("<br>${context.getString(R.string.separator)}: ${match.separator}")
+                        append("<br>${dayString}: ${match.day}")
+                        append("<br>${monthString}: ${match.month}")
+                        append("<br>${yearString}: ${match.year}")
+                        append("<br>${separatorString}: ${match.separator}")
                     }
                     
                     Pattern.Spatial -> {
-                        append("<br>${context.getString(R.string.graph)}: ${match.graph}")
-                        append("<br>${context.getString(R.string.turns)}: ${match.turns}")
+                        append("<br>${graphString}: ${match.graph}")
+                        append("<br>${turnsString}: ${match.turns}")
                         append("<br>${context.getString(R.string.shifted_times, match.shiftedCount.toString())}")
                     }
                     
-                    Pattern.Regex -> append("<br>${context.getString(R.string.regex_name)}: ${match.regexName}")
+                    Pattern.Regex -> append("<br>${regexNameString}: ${match.regexName}")
                     
                     else -> {}
                 }
