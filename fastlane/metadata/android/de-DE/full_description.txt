@@ -3,7 +3,7 @@ Eine App zur Bewertung der Passwortstärke, die die Robustheit Ihres Passworts b
 Merkmale:
 
 - Voll offene Quelle
-- Material design
+- Material design 3
 - Völlig offline
 - Unterstützt sowohl das licht als auch das dunkle thema 
 - Keine werbung

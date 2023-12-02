@@ -3,7 +3,7 @@ Parolanızın sağlamlığını değerlendiren ve derecelendiren, kırılma sür
 Özellikler
 
 - Tamamen açık kaynak
-- Materyal tasarım
+- Materyal tasarım 3
 - Tamamen çevrimdışı
 - Hem açık hem de koyu temayı destekler
 - Reklam yok

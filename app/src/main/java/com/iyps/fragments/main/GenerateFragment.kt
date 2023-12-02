@@ -246,14 +246,11 @@ class GenerateFragment : Fragment() {
         val password = buildString {
             val length = fragmentBinding.passwordLengthSlider.value.toInt()
             val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
-            val spacesToInsert =
-                if (includeSpaceSwitch.isChecked) maxSpaces
-                else 0
             
             for (i in 0 until length) {
                 if (includeSpaceSwitch.isChecked
                     && i in 1 until (length - 1) // Avoid spaces at the beginning & end
-                    && secureRandom.nextInt(length + 1) < spacesToInsert
+                    && secureRandom.nextInt(length + 1) < maxSpaces
                     && this[i - 1] != ' ') {
                     append(' ')
                 }

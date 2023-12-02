@@ -3,7 +3,7 @@ En app för lösenordsstyrka som utvärderar och betygsätter ditt lösenords ro
 Funktioner:
 
 - Helt öppen källkod
-- Material design
+- Material design 3
 - Helt offline
 - Stödjer både ljust och mörkt tema
 - Inga annonser

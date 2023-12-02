@@ -37,13 +37,24 @@ import com.nulabinc.zxcvbn.StandardKeyboards
 import com.nulabinc.zxcvbn.Zxcvbn
 import com.nulabinc.zxcvbn.ZxcvbnBuilder
 import com.nulabinc.zxcvbn.matchers.DictionaryLoader
+import java.io.ByteArrayInputStream
+import java.io.ByteArrayOutputStream
 
 class ApplicationManager : Application() {
     
-    private val passwordsResource by lazy {
-        val passwordsStream = resources.openRawResource(R.raw.passwords)
-        ResourceFromInputStream(passwordsStream)
+    private val combinedPasswordsResource by lazy {
+        val top200PasswordsStream = resources.openRawResource(R.raw.top_200_passwords)
+        val otherCommonPasswordsStream = resources.openRawResource(R.raw.other_common_passwords)
+        
+        val combinedStream =
+            ByteArrayOutputStream().apply {
+                top200PasswordsStream.copyTo(this)
+                otherCommonPasswordsStream.copyTo(this)
+            }.toByteArray()
+        
+        ResourceFromInputStream(ByteArrayInputStream(combinedStream))
     }
+    
     private val englishWordsResource by lazy {
         val englishWordsStream = resources.openRawResource(R.raw.english_words)
         ResourceFromInputStream(englishWordsStream)
@@ -56,7 +67,7 @@ class ApplicationManager : Application() {
     
     val zxcvbn: Zxcvbn by lazy {
         ZxcvbnBuilder()
-            .dictionaries(listOf(DictionaryLoader("passwords", passwordsResource).load(),
+            .dictionaries(listOf(DictionaryLoader("passwords", combinedPasswordsResource).load(),
                                  DictionaryLoader("english_words", englishWordsResource).load(),
                                  DictionaryLoader("EFF_unranked", effUnrankedResource).load(),
                                  StandardDictionaries.FEMALE_NAMES_LOADER.load(),

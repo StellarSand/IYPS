@@ -3,7 +3,7 @@ Un'applicazione che valuta la robustezza della password, stima il tempo di crack
 Caratteristiche:
 
 - Totalmente open source
-- Material design
+- Material design 3
 - Completamente offline
 - Supporta sia tema chiaro che scuro
 - Nessuna pubblicità
