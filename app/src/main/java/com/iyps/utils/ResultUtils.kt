@@ -177,15 +177,14 @@ class ResultUtils(val context: Context) {
     }
     
     fun getGuessesText(guesses: Double): CharSequence {
-        return guesses.toString().apply {
-            if (contains("E")) {
-                val splitString = split("E")
-                HtmlCompat.fromHtml("${splitString[0].toDouble().formatToTwoDecimalPlaces()} x 10<sup><small>${splitString[1]}</small></sup>",
-                                    HtmlCompat.FROM_HTML_MODE_COMPACT)
-            }
-            else {
-                toDouble().formatToTwoDecimalPlaces()
-            }
+        val guessesString = guesses.toString()
+        return if (guessesString.contains("E")) {
+            val splitString = guessesString.split("E")
+            HtmlCompat.fromHtml("${splitString[0].toDouble().formatToTwoDecimalPlaces()} x 10<sup><small>${splitString[1]}</small></sup>",
+                                HtmlCompat.FROM_HTML_MODE_COMPACT)
+        }
+        else {
+            guessesString.toDouble().formatToTwoDecimalPlaces()
         }
     }
     

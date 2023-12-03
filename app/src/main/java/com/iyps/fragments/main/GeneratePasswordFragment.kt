@@ -1,22 +1,3 @@
-/*
- * Copyright (c) 2022-present StellarSand
- *
- *  This file is part of IYPS.
- *
- *  IYPS is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
- *
- *  IYPS is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
- */
-
 package com.iyps.fragments.main
 
 import android.annotation.SuppressLint
@@ -24,35 +5,35 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context.CLIPBOARD_SERVICE
 import android.content.Intent
-import android.content.res.ColorStateList
 import android.os.Build
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.google.android.material.materialswitch.MaterialSwitch
 import com.google.android.material.slider.Slider
-import com.google.android.material.slider.Slider.OnSliderTouchListener
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
-import com.iyps.databinding.FragmentGenerateBinding
+import com.iyps.appmanager.ApplicationManager
+import com.iyps.databinding.FragmentGeneratePasswordBinding
 import com.iyps.preferences.PreferenceManager
-import com.iyps.preferences.PreferenceManager.Companion.AMB_CHARS
-import com.iyps.preferences.PreferenceManager.Companion.LOWERCASE
-import com.iyps.preferences.PreferenceManager.Companion.NUMBERS
-import com.iyps.preferences.PreferenceManager.Companion.PASS_LENGTH
-import com.iyps.preferences.PreferenceManager.Companion.SPACES
-import com.iyps.preferences.PreferenceManager.Companion.SPEC_CHARS
-import com.iyps.preferences.PreferenceManager.Companion.UPPERCASE
+import com.iyps.preferences.PreferenceManager.Companion.PWD_AMB_CHARS
+import com.iyps.preferences.PreferenceManager.Companion.PWD_LOWERCASE
+import com.iyps.preferences.PreferenceManager.Companion.PWD_NUMBERS
+import com.iyps.preferences.PreferenceManager.Companion.PWD_LENGTH
+import com.iyps.preferences.PreferenceManager.Companion.PWD_SPACES
+import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
+import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.ClipboardUtils.Companion.showCopiedSnackbar
+import com.iyps.utils.UiUtils.Companion.setSliderThumbColor
 import java.security.SecureRandom
 
-class GenerateFragment : Fragment() {
+class GeneratePasswordFragment : Fragment() {
     
-    private var _binding: FragmentGenerateBinding? = null
+    private var _binding: FragmentGeneratePasswordBinding? = null
     private val fragmentBinding get() = _binding!!
     private lateinit var preferenceManager: PreferenceManager
     private lateinit var uppercaseSwitch: MaterialSwitch
@@ -66,7 +47,7 @@ class GenerateFragment : Fragment() {
     private var uppercaseWithoutAmbChars = ""
     private var lowercaseWithoutAmbChars = ""
     private var numbersWithoutAmbChars = ""
-    private val secureRandom = SecureRandom()
+    private lateinit var secureRandom: SecureRandom
     
     companion object {
         val uppercaseChars = ('A'..'Z').joinToString("")
@@ -82,7 +63,7 @@ class GenerateFragment : Fragment() {
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
-        _binding = FragmentGenerateBinding.inflate(inflater, container, false)
+        _binding = FragmentGeneratePasswordBinding.inflate(inflater, container, false)
         return fragmentBinding.root
     }
     
@@ -91,6 +72,8 @@ class GenerateFragment : Fragment() {
         
         val mainActivity = requireActivity() as MainActivity
         preferenceManager = PreferenceManager(requireContext())
+        secureRandom = (requireContext().applicationContext as ApplicationManager).secureRandom
+        
         uppercaseSwitch = fragmentBinding.uppercaseSwitch
         lowercaseSwitch = fragmentBinding.lowercaseSwitch
         numbersSwitch = fragmentBinding.numbersSwitch
@@ -103,18 +86,18 @@ class GenerateFragment : Fragment() {
                                      numbersSwitch,
                                      specialCharsSwitch)
         
-        primarySwitchesPrefMap = mapOf(uppercaseSwitch to UPPERCASE,
-                                       lowercaseSwitch to LOWERCASE,
-                                       numbersSwitch to NUMBERS,
-                                       specialCharsSwitch to SPEC_CHARS)
+        primarySwitchesPrefMap = mapOf(uppercaseSwitch to PWD_UPPERCASE,
+                                       lowercaseSwitch to PWD_LOWERCASE,
+                                       numbersSwitch to PWD_NUMBERS,
+                                       specialCharsSwitch to PWD_SPEC_CHARS)
         
         // Password length slider
-        fragmentBinding.passwordLengthSlider.apply {
-            value = preferenceManager.getFloat(PASS_LENGTH)
+        fragmentBinding.pwdLengthSlider.apply {
+            value = preferenceManager.getFloatDefVal20(PWD_LENGTH)
             fragmentBinding.lengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
-            setSliderThumbColor(this, value)
+            setSliderThumbColor(requireContext(), this, 5f, value)
             
-            addOnSliderTouchListener(object : OnSliderTouchListener {
+            addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
                 
                 override fun onStopTrackingTouch(slider: Slider) {
@@ -125,7 +108,7 @@ class GenerateFragment : Fragment() {
             
             addOnChangeListener { slider, value, _ ->
                 fragmentBinding.lengthText.text = "${getString(R.string.length)}: ${slider.value.toInt()}"
-                setSliderThumbColor(slider, value)
+                setSliderThumbColor(requireContext(), slider, 5f, value)
             }
         }
         
@@ -147,13 +130,13 @@ class GenerateFragment : Fragment() {
             }
         }
         avoidAmbCharsSwitch.apply {
-            isChecked = preferenceManager.getBoolean(AMB_CHARS)
+            isChecked = preferenceManager.getBoolean(PWD_AMB_CHARS)
             setOnCheckedChangeListener { _, _ ->
                 generatePassword()
             }
         }
         includeSpaceSwitch.apply {
-            isChecked = preferenceManager.getBooleanDefValFalse(SPACES)
+            isChecked = preferenceManager.getBooleanDefValFalse(PWD_SPACES)
             setOnCheckedChangeListener { _, _ ->
                 generatePassword()
             }
@@ -162,14 +145,14 @@ class GenerateFragment : Fragment() {
         generatePassword()
         
         // Details
-        fragmentBinding.detailsBtn.setOnClickListener {
+        fragmentBinding.pwdDetailsBtn.setOnClickListener {
             startActivity(Intent(requireActivity(), DetailsActivity::class.java)
-                              .putExtra("PwdLine", fragmentBinding.generatedPasswordTextView.text))
+                              .putExtra("PwdLine", fragmentBinding.pwdGeneratedTextView.text))
         }
         
         // Copy
-        fragmentBinding.copyPasswordBtn.setOnClickListener {
-            val clipData = ClipData.newPlainText("", fragmentBinding.generatedPasswordTextView.text)
+        fragmentBinding.pwdCopyBtn.setOnClickListener {
+            val clipData = ClipData.newPlainText("", fragmentBinding.pwdGeneratedTextView.text)
             hideSensitiveContent(clipData)
             (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
             // Only show snackbar in 12L or lower to avoid duplicate notifications
@@ -182,30 +165,18 @@ class GenerateFragment : Fragment() {
         }
         
         // Regenerate
-        fragmentBinding.regenerateBtn.setOnClickListener {
+        fragmentBinding.pwdRegenerateBtn.setOnClickListener {
             generatePassword()
         }
         
         // Share
-        fragmentBinding.shareBtn.setOnClickListener {
+        fragmentBinding.pwdShareBtn.setOnClickListener {
             startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
                                                    .setType("text/plain")
-                                                   .putExtra(Intent.EXTRA_TEXT, fragmentBinding.generatedPasswordTextView.text),
+                                                   .putExtra(Intent.EXTRA_TEXT, fragmentBinding.pwdGeneratedTextView.text),
                                                getString(R.string.share)))
         }
         
-    }
-    
-    private fun setSliderThumbColor(slider: Slider, value: Float) {
-        val sliderThumbColor =
-            if (value == 5f) {
-                requireContext().getColor(R.color.color_primary)
-            }
-            else {
-                requireContext().getColor(R.color.color_onPrimary)
-            }
-        
-        slider.thumbTintList = ColorStateList.valueOf(sliderThumbColor)
     }
     
     private fun getNonAmbChars(allChars: String, ambChars: String): String {
@@ -244,7 +215,7 @@ class GenerateFragment : Fragment() {
         }
         
         val password = buildString {
-            val length = fragmentBinding.passwordLengthSlider.value.toInt()
+            val length = fragmentBinding.pwdLengthSlider.value.toInt()
             val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
             
             for (i in 0 until length) {
@@ -261,20 +232,20 @@ class GenerateFragment : Fragment() {
             }
         }
         
-        fragmentBinding.generatedPasswordTextView.text = password
+        fragmentBinding.pwdGeneratedTextView.text = password
     }
     
     override fun onPause() {
         super.onPause()
         preferenceManager.apply {
-            setFloat(PASS_LENGTH, fragmentBinding.passwordLengthSlider.value)
+            setFloat(PWD_LENGTH, fragmentBinding.pwdLengthSlider.value)
             primarySwitchesList.forEach { switch ->
                 primarySwitchesPrefMap[switch]?.let { preferenceKey ->
                     setBoolean(preferenceKey, switch.isChecked)
                 }
             }
-            setBoolean(AMB_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
-            setBoolean(SPACES, fragmentBinding.includeSpacesSwitch.isChecked)
+            setBoolean(PWD_AMB_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
+            setBoolean(PWD_SPACES, fragmentBinding.includeSpacesSwitch.isChecked)
         }
     }
     

@@ -1,4 +1,4 @@
-<img src="fastlane/metadata/android/en-US/images/icon.png" width="80"/> 
+<img src="fastlane/metadata/android/en-US/images/icon.png" width="80" alt="App icon"/> 
 
 # Is Your Password Secure?
 
@@ -36,7 +36,7 @@ In our digital age, where data breaches and hacks have skyrocketed, robust passw
 
 ## Features
 - Fully open source
-- Material design
+- Material design 3
 - Completely offline
 - Supports both light and dark theme
 - No ads
@@ -102,6 +102,7 @@ New pull requests can be submitted [here](https://github.com/StellarSand/IYPS/pu
 ## Credits
 - [parveshnarwal](https://github.com/parveshnarwal) for uploading the app on Google Play and previously co-leading the development.
 - [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) for making this app better.
+- [EFF](https://www.eff.org) for publishing their wordlist to generate random passphrases.
 
 
 

@@ -42,8 +42,13 @@
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
         <action
-            android:id="@+id/action_passwordFragment_to_generateFragment"
-            app:destination="@id/generateFragment"
+            android:id="@+id/action_passwordFragment_to_generatePasswordFragment"
+            app:destination="@id/generatePasswordFragment"
+            app:enterAnim="@anim/slide_from_end"
+            app:exitAnim="@anim/slide_to_start"/>
+        <action
+            android:id="@+id/action_passwordFragment_to_generatePassphraseFragment"
+            app:destination="@id/generatePassphraseFragment"
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
     </fragment>
@@ -64,32 +69,15 @@
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
         <action
-            android:id="@+id/action_fileFragment_to_generateFragment"
-            app:destination="@id/generateFragment"
-            app:enterAnim="@anim/slide_from_end"
-            app:exitAnim="@anim/slide_to_start"/>
-    </fragment>
-
-    <fragment
-        android:id="@+id/generateFragment"
-        android:name="com.iyps.fragments.main.GenerateFragment"
-        android:label="@string/generate"
-        tools:layout="@layout/fragment_generate">
-        <action
-            android:id="@+id/action_generateFragment_to_settingsFragment"
-            app:destination="@id/settingsFragment"
+            android:id="@+id/action_fileFragment_to_generatePasswordFragment"
+            app:destination="@id/generatePasswordFragment"
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
         <action
-            android:id="@+id/action_generateFragment_to_fileFragment"
-            app:destination="@id/fileFragment"
-            app:enterAnim="@anim/slide_from_start"
-            app:exitAnim="@anim/slide_to_end"/>
-        <action
-            android:id="@+id/action_generateFragment_to_passwordFragment"
-            app:destination="@id/passwordFragment"
-            app:enterAnim="@anim/slide_from_start"
-            app:exitAnim="@anim/slide_to_end"/>
+            android:id="@+id/action_fileFragment_to_generatePassphraseFragment"
+            app:destination="@id/generatePassphraseFragment"
+            app:enterAnim="@anim/slide_from_end"
+            app:exitAnim="@anim/slide_to_start"/>
     </fragment>
 
     <fragment
@@ -108,10 +96,69 @@
             app:enterAnim="@anim/slide_from_start"
             app:exitAnim="@anim/slide_to_end"/>
         <action
-            android:id="@+id/action_settingsFragment_to_generateFragment"
-            app:destination="@id/generateFragment"
+            android:id="@+id/action_settingsFragment_to_generatePasswordFragment"
+            app:destination="@id/generatePasswordFragment"
             app:enterAnim="@anim/slide_from_start"
             app:exitAnim="@anim/slide_to_end"/>
+        <action
+            android:id="@+id/action_settingsFragment_to_generatePassphraseFragment"
+            app:destination="@id/generatePassphraseFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/generatePasswordFragment"
+        android:name="com.iyps.fragments.main.GeneratePasswordFragment"
+        android:label="@string/password"
+        tools:layout="@layout/fragment_generate_password">
+        <action
+            android:id="@+id/action_generatePasswordFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_from_end"
+            app:exitAnim="@anim/slide_to_start"/>
+        <action
+            android:id="@+id/action_generatePasswordFragment_to_fileFragment"
+            app:destination="@id/fileFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+        <action
+            android:id="@+id/action_generatePasswordFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+        <action
+            android:id="@+id/action_generatePasswordFragment_to_generatePassphraseFragment"
+            app:destination="@id/generatePassphraseFragment"
+            app:enterAnim="@anim/slide_from_end"
+            app:exitAnim="@anim/slide_to_start"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/generatePassphraseFragment"
+        android:name="com.iyps.fragments.main.GeneratePassphraseFragment"
+        android:label="@string/passphrase"
+        tools:layout="@layout/fragment_generate_passphrase">
+        <action
+            android:id="@+id/action_generatePassphraseFragment_to_generatePasswordFragment"
+            app:destination="@id/generatePasswordFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+        <action
+            android:id="@+id/action_generatePassphraseFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+        <action
+            android:id="@+id/action_generatePassphraseFragment_to_fileFragment"
+            app:destination="@id/fileFragment"
+            app:enterAnim="@anim/slide_from_start"
+            app:exitAnim="@anim/slide_to_end"/>
+        <action
+            android:id="@+id/action_generatePassphraseFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_from_end"
+            app:exitAnim="@anim/slide_to_start"/>
     </fragment>
 
 </navigation>

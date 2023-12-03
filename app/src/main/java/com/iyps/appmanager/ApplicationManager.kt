@@ -37,8 +37,12 @@ import com.nulabinc.zxcvbn.StandardKeyboards
 import com.nulabinc.zxcvbn.Zxcvbn
 import com.nulabinc.zxcvbn.ZxcvbnBuilder
 import com.nulabinc.zxcvbn.matchers.DictionaryLoader
+import java.io.BufferedReader
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
+import java.io.InputStreamReader
+import java.security.NoSuchAlgorithmException
+import java.security.SecureRandom
 
 class ApplicationManager : Application() {
     
@@ -76,6 +80,33 @@ class ApplicationManager : Application() {
                                  StandardDictionaries.US_TV_AND_FILM_LOADER.load()))
             .keyboards(StandardKeyboards.loadAllKeyboards())
             .build()
+    }
+    
+    val passphraseWordsMap by lazy {
+        val wordMap = mutableMapOf<String, String>()
+        val effPassphraseWordsStream = resources.openRawResource(R.raw.eff_passphrase_words)
+        
+        BufferedReader(InputStreamReader(effPassphraseWordsStream))
+            .useLines { lines ->
+                lines.forEach { line ->
+                    val (id, word) = line.split("\t")
+                    wordMap[id] = word
+                }
+            }
+        
+        wordMap
+    }
+    
+    val secureRandom: SecureRandom by lazy {
+        try {
+            when {
+                Build.VERSION.SDK_INT >= 26 -> SecureRandom.getInstanceStrong()
+                else -> SecureRandom()
+            }
+        }
+        catch (e: NoSuchAlgorithmException) {
+            throw RuntimeException("SecureRandom algorithm not available", e)
+        }
     }
     
     override fun onCreate() {
