@@ -36,6 +36,7 @@
     <string name="password">Passwort</string>
     <string name="file">Datei</string>
     <string name="generate">Erzeugen Sie</string>
+    <string name="passphrase">Passphrase</string>
     <string name="settings">Einstellungen</string>
 
     <!--#########################################################################################-->
@@ -89,6 +90,7 @@
     <string name="lowercase">Kleinbuchstaben</string>
     <string name="numbers">Zahlen</string>
     <string name="special_char">Spezielle charaktere</string>
+    <string name="spaces">R\u00E4ume</string>
 
     <!--#########################################################################################-->
 
@@ -99,13 +101,17 @@
 
     <!--#########################################################################################-->
 
-    <!--Generate fragment-->
+    <!--Generate password fragment-->
     <string name="copy">Kopieren</string>
     <string name="regenerate">Regenerieren Sie</string>
     <string name="share">Teilen Sie</string>
     <string name="customize">Anpassen</string>
     <string name="avoid_amb_chars">Vermeiden Sie zweideutige Zeichen</string>
     <string name="include_spaces">R\u00E4ume einbeziehen</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">W\u00F6rter</string>
+    <string name="capitalize">Gro\u00DFschreiben</string>
 
     <!--#########################################################################################-->
 

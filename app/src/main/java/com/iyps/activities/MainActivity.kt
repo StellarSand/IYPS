@@ -151,10 +151,10 @@ class MainActivity : AppCompatActivity() {
     
     private fun showViewsWithAnimation() {
         val fadeInRadioGroup = ObjectAnimator.ofFloat(activityBinding.generateRadioGroup, "alpha", 0f, 1f)
-        fadeInRadioGroup.duration = 1500
+        fadeInRadioGroup.duration = 500
         
         val fadeInBottomAppBar = ObjectAnimator.ofFloat(activityBinding.generateBottomAppBar, "alpha", 0f, 1f)
-        fadeInBottomAppBar.duration = 1500
+        fadeInBottomAppBar.duration = 500
         
         activityBinding.generateRadioGroup.isVisible = true
         fadeInRadioGroup.start()
@@ -164,7 +164,7 @@ class MainActivity : AppCompatActivity() {
     
     private fun hideViewsWithAnimation() {
         val fadeOutRadioGroup = ObjectAnimator.ofFloat(activityBinding.generateRadioGroup, "alpha", 1f, 0f)
-        fadeOutRadioGroup.duration = 1000
+        fadeOutRadioGroup.duration = 300
         fadeOutRadioGroup.addListener(object : AnimatorListenerAdapter() {
             override fun onAnimationEnd(animation: Animator) {
                 if (activityBinding.generateRadioGroup.isVisible) {
@@ -175,7 +175,7 @@ class MainActivity : AppCompatActivity() {
         fadeOutRadioGroup.start()
         
         val fadeOutBottomAppBar = ObjectAnimator.ofFloat(activityBinding.generateBottomAppBar, "alpha", 1f, 0f)
-        fadeOutBottomAppBar.duration = 1000
+        fadeOutBottomAppBar.duration = 300
         fadeOutBottomAppBar.addListener(object : AnimatorListenerAdapter() {
             override fun onAnimationEnd(animation: Animator) {
                 if (activityBinding.generateBottomAppBar.isVisible) {

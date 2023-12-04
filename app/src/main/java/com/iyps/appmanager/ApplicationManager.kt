@@ -46,7 +46,7 @@ import java.security.SecureRandom
 
 class ApplicationManager : Application() {
     
-    private val combinedPasswordsResource by lazy {
+    private val commonPasswordsResource by lazy {
         val top200PasswordsStream = resources.openRawResource(R.raw.top_200_passwords)
         val otherCommonPasswordsStream = resources.openRawResource(R.raw.other_common_passwords)
         
@@ -61,25 +61,39 @@ class ApplicationManager : Application() {
     
     private val englishWordsResource by lazy {
         val englishWordsStream = resources.openRawResource(R.raw.english_words)
-        ResourceFromInputStream(englishWordsStream)
-    }
-    
-    private val effUnrankedResource by lazy {
         val effUnrankedStream = resources.openRawResource(R.raw.eff_unranked)
-        ResourceFromInputStream(effUnrankedStream)
+        
+        val combinedStream =
+            ByteArrayOutputStream().apply {
+                englishWordsStream.copyTo(this)
+                effUnrankedStream.copyTo(this)
+            }.toByteArray()
+        
+        ResourceFromInputStream(ByteArrayInputStream(combinedStream))
     }
     
     val zxcvbn: Zxcvbn by lazy {
         ZxcvbnBuilder()
-            .dictionaries(listOf(DictionaryLoader("passwords", combinedPasswordsResource).load(),
-                                 DictionaryLoader("english_words", englishWordsResource).load(),
-                                 DictionaryLoader("EFF_unranked", effUnrankedResource).load(),
+            .dictionaries(listOf(DictionaryLoader("passwords", commonPasswordsResource).load(),
+                                 DictionaryLoader("english_wikipedia", englishWordsResource).load(),
                                  StandardDictionaries.FEMALE_NAMES_LOADER.load(),
                                  StandardDictionaries.MALE_NAMES_LOADER.load(),
                                  StandardDictionaries.SURNAMES_LOADER.load(),
                                  StandardDictionaries.US_TV_AND_FILM_LOADER.load()))
             .keyboards(StandardKeyboards.loadAllKeyboards())
             .build()
+    }
+    
+    val secureRandom: SecureRandom by lazy {
+        try {
+            when {
+                Build.VERSION.SDK_INT >= 26 -> SecureRandom.getInstanceStrong()
+                else -> SecureRandom()
+            }
+        }
+        catch (e: NoSuchAlgorithmException) {
+            throw RuntimeException("SecureRandom algorithm not available", e)
+        }
     }
     
     val passphraseWordsMap by lazy {
@@ -95,18 +109,6 @@ class ApplicationManager : Application() {
             }
         
         wordMap
-    }
-    
-    val secureRandom: SecureRandom by lazy {
-        try {
-            when {
-                Build.VERSION.SDK_INT >= 26 -> SecureRandom.getInstanceStrong()
-                else -> SecureRandom()
-            }
-        }
-        catch (e: NoSuchAlgorithmException) {
-            throw RuntimeException("SecureRandom algorithm not available", e)
-        }
     }
     
     override fun onCreate() {

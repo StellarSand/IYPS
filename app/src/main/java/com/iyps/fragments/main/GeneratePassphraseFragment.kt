@@ -93,7 +93,7 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Separator dropdown
         fragmentBinding.separatorText.text = getString(R.string.separator).removeRange(0..1)
-        val allSeparatorsDropdownList = listOf("-", ".", ",", "Space")
+        val allSeparatorsDropdownList = listOf("-", ".", ",", getString(R.string.spaces))
         fragmentBinding.separatorDropdownMenu.apply {
             setText(preferenceManager.getString(PHRASE_SEPARATOR))
             
@@ -118,7 +118,7 @@ class GeneratePassphraseFragment : Fragment() {
         generatePassphrase()
         
         // Copy
-        fragmentBinding.phraseCopyPasswordBtn.setOnClickListener {
+        fragmentBinding.phraseCopyBtn.setOnClickListener {
             val clipData = ClipData.newPlainText("", fragmentBinding.phraseGeneratedTextView.text)
             hideSensitiveContent(clipData)
             (requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
@@ -163,7 +163,7 @@ class GeneratePassphraseFragment : Fragment() {
                 append(word)
                 if (i < numberOfWords - 1) {
                     append(
-                        if (fragmentBinding.separatorDropdownMenu.text.toString() == "Space") " "
+                        if (fragmentBinding.separatorDropdownMenu.text.toString() == getString(R.string.spaces)) " "
                         else fragmentBinding.separatorDropdownMenu.text.toString()
                     )
                 }

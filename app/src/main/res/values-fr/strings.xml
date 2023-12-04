@@ -37,6 +37,7 @@
     <string name="password">Mot de passe</string>
     <string name="file">Dossier</string>
     <string name="generate">G\u00E9n\u00E9rer</string>
+    <string name="passphrase">Phrase de passe</string>
     <string name="settings">Param\u00E8tres</string>
 
     <!--#########################################################################################-->
@@ -90,6 +91,7 @@
     <string name="lowercase">Minuscules</string>
     <string name="numbers">Chiffres</string> <!-- On compte le nombre de chiffres -->
     <string name="special_char">Caract\u00E8res sp\u00E9ciaux</string>
+    <string name="spaces">Espaces</string>
 
     <!--#########################################################################################-->
 
@@ -100,13 +102,17 @@
 
     <!--#########################################################################################-->
 
-    <!--Generate fragment-->
+    <!--Generate password fragment-->
     <string name="copy">Copie</string>
     <string name="regenerate">R\u00E9g\u00E9n\u00E9rer</string>
     <string name="share">Partager</string>
     <string name="customize">Personnaliser</string>
     <string name="avoid_amb_chars">\u00C9viter les caract\u00E8res ambigus</string>
     <string name="include_spaces">Inclure les espaces</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Mots</string>
+    <string name="capitalize">Capitaliser</string>
 
     <!--#########################################################################################-->
 

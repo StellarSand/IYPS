@@ -250,8 +250,9 @@ class ResultUtils(val context: Context) {
         val upperCaseCount = charSequence.count { it.isUpperCase() }
         val lowerCaseCount = charSequence.count { it.isLowerCase() }
         val numbersCount = charSequence.count { it.isDigit() }
-        val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount
-        return listOf(length, upperCaseCount, lowerCaseCount, numbersCount, specialCharsCount)
+        val spacesCount = charSequence.count { it.isWhitespace() }
+        val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount - spacesCount
+        return listOf(length, upperCaseCount, lowerCaseCount, numbersCount, specialCharsCount, spacesCount)
     }
     
 }

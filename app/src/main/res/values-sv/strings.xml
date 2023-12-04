@@ -35,6 +35,7 @@
     <string name="password">L\u00F6senord</string>
     <string name="file">Fil</string>
     <string name="generate">Generera</string>
+    <string name="passphrase">L\u00F6senord</string>
     <string name="settings">Inst\u00E4llningar</string>
 
     <!--#########################################################################################-->
@@ -88,6 +89,7 @@
     <string name="lowercase">L\u00E4gre fall</string>
     <string name="numbers">Siffror</string>
     <string name="special_char">S\u00E4rskilda tecken</string>
+    <string name="spaces">Utrymmen</string>
 
     <!--#########################################################################################-->
 
@@ -97,13 +99,17 @@
 
     <!--#########################################################################################-->
 
-    <!--Generate fragment-->
+    <!--Generate password fragment-->
     <string name="copy">Kopia</string>
     <string name="regenerate">Regenerera</string>
     <string name="share">Andel</string>
     <string name="customize">Anpassa</string>
     <string name="avoid_amb_chars">Undvik tvetydiga tecken</string>
     <string name="include_spaces">Inkludera utrymmen</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Ord</string>
+    <string name="capitalize">Kapitalisera</string>
 
     <!--#########################################################################################-->
 

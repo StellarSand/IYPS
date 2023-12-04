@@ -56,6 +56,7 @@ class DetailsFragment : Fragment() {
         fragmentBinding.lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
         fragmentBinding.numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
         fragmentBinding.specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
+        fragmentBinding.spacesSubtitle.text = "\u2022 ${getString(R.string.spaces)}"
         
         /*########################################################################################*/
         

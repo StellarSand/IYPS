@@ -33,6 +33,7 @@
     <string name="password">Password</string>
     <string name="file">File</string>
     <string name="generate">Generare</string>
+    <string name="passphrase">Passphrase</string>
     <string name="settings">Impostazioni</string>
 
     <!--#########################################################################################-->
@@ -86,6 +87,7 @@
     <string name="lowercase">Minuscole</string>
     <string name="numbers">Numeri</string>
     <string name="special_char">Caratteri speciali</string>
+    <string name="spaces">Spazi</string>
 
     <!--#########################################################################################-->
 
@@ -96,13 +98,17 @@
 
     <!--#########################################################################################-->
 
-    <!--Generate fragment-->
+    <!--Generate password fragment-->
     <string name="copy">Copia</string>
     <string name="regenerate">Rigenerare</string>
     <string name="share">Condividi</string>
     <string name="customize">Personalizzare</string>
     <string name="avoid_amb_chars">Evitare i caratteri ambigui</string>
     <string name="include_spaces">Includere spazi</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Parole</string>
+    <string name="capitalize">Maiuscolo</string>
 
     <!--#########################################################################################-->
 

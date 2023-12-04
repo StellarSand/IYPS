@@ -25,18 +25,15 @@
     Ensure proper encoding of characters
         ç = \u00E7
         Ç = \u00C7
-        ð = \u00F0
         ğ = \u011F
         ı = \u0131
         İ = \u0130
         ö = \u00F6
         Ö = \u00D6
-        þ = \u00FE
         ü = \u00FC
         Ü = \u00DC
         ş = \u015F
         Ş = \u015E
-        ý = \u00FD
     -->
 
     <string name="app_version">S\u00FCr\u00FCm</string>
@@ -45,6 +42,7 @@
     <string name="password">\u015Eifre</string>
     <string name="file">Dosya</string>
     <string name="generate">Olu\u015Fturmak</string>
+    <string name="passphrase">Parola</string>
     <string name="settings">Ayarlar</string>
 
     <!--#########################################################################################-->
@@ -98,6 +96,7 @@
     <string name="lowercase">K\u00FC\u00E7\u00FCk harf</string>
     <string name="numbers">Say\u0131lar</string>
     <string name="special_char">\u00D6zel karakterler</string>
+    <string name="spaces">Alanlar</string>
 
     <!--#########################################################################################-->
 
@@ -107,13 +106,17 @@
 
     <!--#########################################################################################-->
 
-    <!--Generate fragment-->
+    <!--Generate password fragment-->
     <string name="copy">Anla\u015F\u0131ld\u0131</string>
     <string name="regenerate">Yenilenme</string>
     <string name="share">Payla\u015F</string>
     <string name="customize">\u00D6zelle\u015Ftirme</string>
     <string name="avoid_amb_chars">Belirsiz karakterlerden ka\u00E7\u0131n\u0131n</string>
     <string name="include_spaces">Bo\u015Fluklar\u0131 dahil edin</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Kelimeler</string>
+    <string name="capitalize">B\u00FCy\u00FCk harf</string>
 
     <!--#########################################################################################-->
 

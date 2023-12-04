@@ -27,6 +27,7 @@
     <string name="password">パスワード</string>
     <string name="file">ファイル</string>
     <string name="generate">生成する</string>
+    <string name="passphrase">パスフレーズ</string>
     <string name="settings">設定</string>
 
     <!--#########################################################################################-->
@@ -80,6 +81,7 @@
     <string name="lowercase">小文字</string>
     <string name="numbers">数字</string>
     <string name="special_char">特殊文字</string>
+    <string name="spaces">スペース</string>
 
     <!--#########################################################################################-->
 
@@ -90,13 +92,17 @@
 
     <!--#########################################################################################-->
 
-    <!--Generate fragment-->
+    <!--Generate password fragment-->
     <string name="copy">コピー</string>
     <string name="regenerate">再生</string>
     <string name="share">シェア</string>
     <string name="customize">カスタマイズ</string>
     <string name="avoid_amb_chars">曖昧な文字は避ける</string>
     <string name="include_spaces">スペースを含む</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">言葉</string>
+    <string name="capitalize">資本金</string>
 
     <!--#########################################################################################-->
 

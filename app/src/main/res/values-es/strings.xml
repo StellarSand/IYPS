@@ -37,6 +37,7 @@
     <string name="password">Contrase\u00F1a</string>
     <string name="file">Archivo</string>
     <string name="generate">Genere</string>
+    <string name="passphrase">Frase de contrase\u00F1a</string>
     <string name="settings">Ajustes</string>
 
     <!--#########################################################################################-->
@@ -90,6 +91,7 @@
     <string name="lowercase">Min\u00FAsculas</string>
     <string name="numbers">N\u00FAmeros</string>
     <string name="special_char">Caracteres especiales</string>
+    <string name="spaces">Espacios</string>
 
     <!--#########################################################################################-->
 
@@ -99,13 +101,17 @@
 
     <!--#########################################################################################-->
 
-    <!--Generate fragment-->
+    <!--Generate password fragment-->
     <string name="copy">Copia</string>
     <string name="regenerate">Regenere</string>
     <string name="share">Compartir</string>
     <string name="customize">Personalice</string>
     <string name="avoid_amb_chars">Evite los caracteres ambiguos</string>
     <string name="include_spaces">Incluir espacios</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Palabras</string>
+    <string name="capitalize">Escriba en may\u00FAsculas</string>
 
     <!--#########################################################################################-->
 

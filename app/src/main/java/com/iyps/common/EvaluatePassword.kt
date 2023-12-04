@@ -78,8 +78,7 @@ class EvaluatePassword(zxcvbn: Zxcvbn,
         
         // Entropy
         @SuppressLint("SetTextI18n")
-        fragmentPasswordBinding.entropySubtitle.text =
-            "${log2(guesses).formatToTwoDecimalPlaces()} ${context.getString(R.string.bits)}"
+        fragmentPasswordBinding.entropySubtitle.text = "${log2(guesses).formatToTwoDecimalPlaces()} ${context.getString(R.string.bits)}"
         
         // Match sequence
         fragmentPasswordBinding.matchSequenceSubtitle.text = resultUtils.getMatchSequenceText(strength)
@@ -91,6 +90,7 @@ class EvaluatePassword(zxcvbn: Zxcvbn,
         fragmentPasswordBinding.lowercaseText.text = statsList[2].toString()
         fragmentPasswordBinding.numbersText.text = statsList[3].toString()
         fragmentPasswordBinding.specialCharsText.text = statsList[4].toString()
+        fragmentPasswordBinding.spacesText.text = statsList[5].toString()
     }
     
 }

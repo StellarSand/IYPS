@@ -32,6 +32,7 @@
     <string name="password">Wachtwoord</string>
     <string name="file">Bestand</string>
     <string name="generate">Genereren</string>
+    <string name="passphrase">Passphrase</string>
     <string name="settings">Instellingen</string>
 
     <!--#########################################################################################-->
@@ -85,6 +86,7 @@
     <string name="lowercase">Kleineletters</string>
     <string name="numbers">Cijfers</string>
     <string name="special_char">Speciale tekens</string>
+    <string name="spaces">Ruimtes</string>
 
     <!--#########################################################################################-->
 
@@ -95,13 +97,17 @@
 
     <!--#########################################################################################-->
 
-    <!--Generate fragment-->
+    <!--Generate password fragment-->
     <string name="copy">Kopie</string>
     <string name="regenerate">Regenereer</string>
     <string name="share">Deel</string>
     <string name="customize">Pas  aan</string>
     <string name="avoid_amb_chars">Vermijd dubbelzinnige tekens</string>
     <string name="include_spaces">Ruimtes opnemen</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Woorden</string>
+    <string name="capitalize">Hoofdletter</string>
 
     <!--#########################################################################################-->
 

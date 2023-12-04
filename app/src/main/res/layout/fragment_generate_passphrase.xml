@@ -51,7 +51,7 @@
             style="@style/MediumBoldText"/>
 
             <ImageButton
-                android:id="@+id/phraseCopyPasswordBtn"
+                android:id="@+id/phraseCopyBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -73,9 +73,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:layout_constraintTop_toTopOf="@id/phraseCopyPasswordBtn"
-                app:layout_constraintBottom_toBottomOf="@id/phraseCopyPasswordBtn"
-                app:layout_constraintStart_toEndOf="@id/phraseCopyPasswordBtn"
+                app:layout_constraintTop_toTopOf="@id/phraseCopyBtn"
+                app:layout_constraintBottom_toBottomOf="@id/phraseCopyBtn"
+                app:layout_constraintStart_toEndOf="@id/phraseCopyBtn"
                 app:layout_constraintEnd_toStartOf="@id/phraseShareBtn"
                 android:layout_marginHorizontal="@dimen/margin_8"
                 android:paddingVertical="@dimen/margin_12"
@@ -90,8 +90,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:layout_constraintTop_toTopOf="@id/phraseCopyPasswordBtn"
-                app:layout_constraintBottom_toBottomOf="@id/phraseCopyPasswordBtn"
+                app:layout_constraintTop_toTopOf="@id/phraseCopyBtn"
+                app:layout_constraintBottom_toBottomOf="@id/phraseCopyBtn"
                 app:layout_constraintStart_toEndOf="@id/phraseRegenerateBtn"
                 app:layout_constraintEnd_toEndOf="@id/phraseGeneratedTextView"
                 android:layout_marginStart="@dimen/margin_8"
@@ -108,14 +108,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
-            app:layout_constraintTop_toBottomOf="@id/phraseCopyPasswordBtn"
+            app:layout_constraintTop_toBottomOf="@id/phraseCopyBtn"
             android:layout_marginStart="@dimen/margin_8"
             android:layout_marginTop="@dimen/margin_30"
             android:drawableStart="@drawable/ic_customize"
             android:drawablePadding="@dimen/margin_12"
             android:text="@string/customize"
             android:textColor="@color/color_text_title"
-            android:textSize="@dimen/text_20"
+            android:textSize="@dimen/text_18"
             style="@style/MediumBoldText"/>
 
         <com.google.android.material.textview.MaterialTextView
@@ -136,8 +136,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/wordsText"
-            app:layout_constraintTop_toBottomOf="@id/wordsText"
             app:layout_constraintEnd_toEndOf="@id/phraseGeneratedTextView"
+            app:layout_constraintTop_toBottomOf="@id/wordsText"
             android:layout_marginHorizontal="@dimen/margin_12"
             android:layout_marginTop="@dimen/margin_8"
             android:valueFrom="3"
@@ -158,6 +158,7 @@
             android:layout_marginTop="@dimen/margin_25"
             android:paddingStart="@dimen/margin_8"
             android:paddingEnd="@dimen/margin_8"
+            android:text="@string/separator"
             android:textColor="@color/color_text_title"
             android:textSize="@dimen/text_16"/>
 
