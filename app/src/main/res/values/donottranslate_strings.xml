@@ -27,7 +27,7 @@
     <string name="ten_k_guesses_per_sec" translatable="false">10k guesses/second</string>
     <string name="ten_guesses_per_sec" translatable="false">10 guesses/second</string>
     <string name="hundred_guesses_per_hour" translatable="false">100 guesses/hour</string>
-    <string name="na" translatable="false">NA</string>
+    <string name="na" translatable="false">-</string>
 
     <string name="zero" translatable="false">0</string>
 

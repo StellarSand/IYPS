@@ -19,7 +19,7 @@ class LocaleUtils {
         
             // If locale is in zxcvbn4j, use default resource bundle
             // else use custom messages.properties from res/raw
-            return if (locale !in setOf("sv", "tr")) {
+            return if (locale !in setOf("sv", "tr", "zh")) {
                 ResourceBundle.getBundle("com/nulabinc/zxcvbn/messages")
             }
             else {
@@ -27,6 +27,7 @@ class LocaleUtils {
                     when(locale) {
                         "sv" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_sv), Charsets.UTF_8))
                         "tr" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_tr), Charsets.UTF_8))
+                        "zh" -> load(InputStreamReader(context.resources.openRawResource(R.raw.messages_zh), Charsets.UTF_8))
                     }
                 }
             

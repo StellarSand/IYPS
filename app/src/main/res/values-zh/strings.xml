@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2022-present StellarSand
+  ~
+  ~  This file is part of IYPS.
+  ~
+  ~  IYPS is free software: you can redistribute it and/or modify
+  ~  it under the terms of the GNU General Public License as published by
+  ~  the Free Software Foundation, either version 3 of the License, or
+  ~  (at your option) any later version.
+  ~
+  ~  IYPS is distributed in the hope that it will be useful,
+  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~  GNU General Public License for more details.
+  ~
+  ~  You should have received a copy of the GNU General Public License
+  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <!--
+    Ensure proper encoding of characters when translating to other languages.
+    example: ä as \u00E4, é as \u00E9 etc.
+    -->
+
+    <string name="app_version">版本</string>
+
+    <!--Bottom nav view-->
+    <string name="password">密码</string>
+    <string name="file">文件</string>
+    <string name="generate">生成</string>
+    <string name="passphrase">密码</string>
+    <string name="settings">设置</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
+    <string name="test_your_password">测试密码</string>
+    <string name="details">详细信息</string>
+    <string name="strength">实力</string>
+    <string name="worst">最差</string>
+    <string name="weak">弱</string>
+    <string name="medium">中型</string>
+    <string name="strong">强大</string>
+    <string name="excellent">优秀</string>
+    <string name="est_time_to_crack">预计破解时间</string>
+    <string name="less_than_sec">不到一秒</string>
+    <string name="second">附议</string>
+    <string name="minute">分钟</string>
+    <string name="hour">小时</string>
+    <string name="day">天</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="centuries">世纪</string>
+    <string name="warning">警告</string>
+    <string name="suggestions">建议</string>
+    <string name="est_guesses_to_crack">估计破解的猜测</string>
+    <string name="order_of_magn">猜测的数量级</string>
+    <string name="entropy">熵</string>
+    <string name="bits">钻头</string>
+    <string name="match_sequence">匹配序列</string>
+    <string name="pattern">\u2022 图案</string>
+    <string name="dict_name">\u2022 词典名称</string>
+    <string name="rank">\u2022 等级</string>
+    <string name="reversed">\u2022 逆转</string>
+    <string name="substitutions">\u2022 替换</string>
+    <string name="base_token">\u2022 基本令牌</string>
+    <string name="repeat_times">\u2022 重复 %1$s 次</string>
+    <string name="sequence_name">\u2022 序列名称</string>
+    <string name="sequence_size">\u2022 序列大小</string>
+    <string name="ascending">\u2022 上升</string>
+    <string name="Day">\u2022 日</string>
+    <string name="Month">\u2022 月份</string>
+    <string name="Year">\u2022 年份</string>
+    <string name="separator">\u2022 分离器</string>
+    <string name="graph">\u2022 图表</string>
+    <string name="turns">\u2022 转弯</string>
+    <string name="shifted_times">\u2022 移位 %1$s 次</string>
+    <string name="regex_name">\u2022 Regex 名称</string>
+    <string name="statistics">统计资料</string>
+    <string name="length">长度</string>
+    <string name="uppercase">大写</string>
+    <string name="lowercase">小写</string>
+    <string name="numbers">数字</string>
+    <string name="special_char">特殊字符</string>
+    <string name="spaces">空间</string>
+
+    <!--#########################################################################################-->
+
+    <!--File fragment-->
+    <string name="select_file_text">选择一个包含多个密码的文本文件。每个密码必须在文件中单独一行。</string>
+    <string name="select_file_btn">选择文件</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate password fragment-->
+    <string name="copy">复制</string>
+    <string name="regenerate">再生</string>
+    <string name="share">分享</string>
+    <string name="customize">定制</string>
+    <string name="avoid_amb_chars">避免使用模棱两可的字符</string>
+    <string name="include_spaces">包括空间</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">字数</string>
+    <string name="capitalize">大写</string>
+
+    <!--#########################################################################################-->
+
+    <!--Settings fragment-->
+    <string name="theme">主题</string>
+    <string name="privacy">隐私权</string>
+    <string name="block_screenshots">阻止应用程序中的屏幕截图</string>
+    <string name="incognito_keyboard">隐身键盘</string>
+    <string name="about">关于</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="third_party_licenses">第三方许可证</string>
+    <string name="contributors">贡献者</string>
+    <string name="report_issue">报告问题</string>
+    <string name="view_on_github">在 GitHub 上查看</string>
+
+    <!--#########################################################################################-->
+
+    <!--Custom warnings-->
+    <string name="worst_pass_warning">密码太简单，猜不出来。</string>
+    <string name="weak_pass_warning">密码很容易被破解。</string>
+    <string name="medium_pass_warning">密码不够强。</string>
+
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
+    <string name="cancel">取消</string>
+
+    <!--Theme-->
+    <string name="follow_system">遵循系统</string>
+    <string name="light">灯光</string>
+    <string name="dark">黑暗</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="no_browsers">此设备未安装浏览器</string>
+    <string name="copied_to_clipboard">复制到剪贴板</string>
+
+</resources>
