@@ -238,15 +238,14 @@ class GeneratePasswordFragment : Fragment() {
                 else {
                     val randomIndex = secureRandom.nextInt(allChars.length)
                     var generatedChar = allChars[randomIndex]
-                    when {
-                        !repeatCharsSwitch.isChecked && i > 0 -> {
-                            while (contains(generatedChar, true)) {
-                                val newIndex = secureRandom.nextInt(allChars.length)
-                                generatedChar = allChars[newIndex]
-                            }
+                    if(!repeatCharsSwitch.isChecked && i > 0) {
+                        while (contains(generatedChar, true)) {
+                            val newIndex = secureRandom.nextInt(allChars.length)
+                            generatedChar = allChars[newIndex]
                         }
-                        else -> append(generatedChar)
                     }
+                    
+                    append(generatedChar)
                 }
             }
         }
@@ -264,7 +263,7 @@ class GeneratePasswordFragment : Fragment() {
                 }
             }
             setBoolean(PWD_AMB_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
-            setBoolean(PWD_RPT_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
+            setBoolean(PWD_RPT_CHARS, fragmentBinding.repeatCharsSwitch.isChecked)
             setBoolean(PWD_SPACES, fragmentBinding.includeSpacesSwitch.isChecked)
         }
     }
