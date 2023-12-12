@@ -23,6 +23,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_AMB_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_LOWERCASE
 import com.iyps.preferences.PreferenceManager.Companion.PWD_NUMBERS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_LENGTH
+import com.iyps.preferences.PreferenceManager.Companion.PWD_RPT_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPACES
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
@@ -41,6 +42,7 @@ class GeneratePasswordFragment : Fragment() {
     private lateinit var numbersSwitch: MaterialSwitch
     private lateinit var specialCharsSwitch: MaterialSwitch
     private lateinit var avoidAmbCharsSwitch: MaterialSwitch
+    private lateinit var repeatCharsSwitch: MaterialSwitch
     private lateinit var includeSpaceSwitch: MaterialSwitch
     private lateinit var primarySwitchesList: List<MaterialSwitch>
     private lateinit var primarySwitchesPrefMap: Map<MaterialSwitch, String>
@@ -71,14 +73,16 @@ class GeneratePasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val mainActivity = requireActivity() as MainActivity
-        preferenceManager = PreferenceManager(requireContext())
-        secureRandom = (requireContext().applicationContext as ApplicationManager).secureRandom
+        val appManager = (requireContext().applicationContext as ApplicationManager)
+        preferenceManager = appManager.preferenceManager
+        secureRandom = appManager.secureRandom
         
         uppercaseSwitch = fragmentBinding.uppercaseSwitch
         lowercaseSwitch = fragmentBinding.lowercaseSwitch
         numbersSwitch = fragmentBinding.numbersSwitch
         specialCharsSwitch = fragmentBinding.specialCharsSwitch
         avoidAmbCharsSwitch = fragmentBinding.avoidAmbCharsSwitch
+        repeatCharsSwitch = fragmentBinding.repeatCharsSwitch
         includeSpaceSwitch = fragmentBinding.includeSpacesSwitch
         
         primarySwitchesList = listOf(uppercaseSwitch,
@@ -131,6 +135,12 @@ class GeneratePasswordFragment : Fragment() {
         }
         avoidAmbCharsSwitch.apply {
             isChecked = preferenceManager.getBoolean(PWD_AMB_CHARS)
+            setOnCheckedChangeListener { _, _ ->
+                generatePassword()
+            }
+        }
+        repeatCharsSwitch.apply {
+            isChecked = preferenceManager.getBoolean(PWD_RPT_CHARS)
             setOnCheckedChangeListener { _, _ ->
                 generatePassword()
             }
@@ -227,7 +237,16 @@ class GeneratePasswordFragment : Fragment() {
                 }
                 else {
                     val randomIndex = secureRandom.nextInt(allChars.length)
-                    append(allChars[randomIndex])
+                    var generatedChar = allChars[randomIndex]
+                    when {
+                        !repeatCharsSwitch.isChecked && i > 0 -> {
+                            while (contains(generatedChar, true)) {
+                                val newIndex = secureRandom.nextInt(allChars.length)
+                                generatedChar = allChars[newIndex]
+                            }
+                        }
+                        else -> append(generatedChar)
+                    }
                 }
             }
         }
@@ -245,6 +264,7 @@ class GeneratePasswordFragment : Fragment() {
                 }
             }
             setBoolean(PWD_AMB_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
+            setBoolean(PWD_RPT_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
             setBoolean(PWD_SPACES, fragmentBinding.includeSpacesSwitch.isChecked)
         }
     }

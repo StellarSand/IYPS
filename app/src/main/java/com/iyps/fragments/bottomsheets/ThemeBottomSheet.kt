@@ -12,7 +12,6 @@ import com.iyps.R
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetThemeBinding
-import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
 
 class ThemeBottomSheet : BottomSheetDialogFragment() {

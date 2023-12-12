@@ -33,7 +33,6 @@ import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentSettingsBinding
 import com.iyps.fragments.bottomsheets.LicensesBottomSheet
 import com.iyps.fragments.bottomsheets.ThemeBottomSheet
-import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.IntentUtils.Companion.openURL

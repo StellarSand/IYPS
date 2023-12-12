@@ -102,6 +102,7 @@
     <string name="share">Share</string>
     <string name="customize">Customize</string>
     <string name="avoid_amb_chars">Avoid ambiguous characters</string>
+    <string name="repeat_chars">Repeat characters</string>
     <string name="include_spaces">Include spaces</string>
 
     <!--Generate passphrase fragment-->
