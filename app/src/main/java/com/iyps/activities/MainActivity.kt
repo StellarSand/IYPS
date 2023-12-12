@@ -30,6 +30,7 @@ import androidx.core.view.isVisible
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.iyps.R
+import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.ActivityMainBinding
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
@@ -52,12 +53,12 @@ class MainActivity : AppCompatActivity() {
         
         navHostFragment = supportFragmentManager.findFragmentById(R.id.main_nav_host) as NavHostFragment
         navController = navHostFragment.navController
-        preferenceManager = PreferenceManager(this)
+        preferenceManager = (applicationContext as ApplicationManager).preferenceManager
         
         /*########################################################################################*/
         
         // Disable screenshots and screen recordings
-        if (PreferenceManager(this).getBoolean(BLOCK_SS)) {
+        if (preferenceManager.getBoolean(BLOCK_SS)) {
             window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,
                             WindowManager.LayoutParams.FLAG_SECURE)
         }

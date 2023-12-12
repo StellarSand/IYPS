@@ -101,8 +101,9 @@ New pull requests can be submitted [here](https://github.com/StellarSand/IYPS/pu
 
 ## Credits
 - [parveshnarwal](https://github.com/parveshnarwal) for uploading the app on Google Play and previously co-leading the development.
-- [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) for making this app better.
+- [SecLists](https://github.com/danielmiessler/SecLists) for some of the password dictionaries.
 - [EFF](https://www.eff.org) for publishing their wordlist to generate random passphrases.
+- [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) for making this app better.
 
 
 

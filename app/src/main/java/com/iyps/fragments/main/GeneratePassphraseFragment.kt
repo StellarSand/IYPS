@@ -66,7 +66,7 @@ class GeneratePassphraseFragment : Fragment() {
         
         val appManager = (requireContext().applicationContext as ApplicationManager)
         val mainActivity = requireActivity() as MainActivity
-        preferenceManager = PreferenceManager(requireContext())
+        preferenceManager = appManager.preferenceManager
         passphraseWordsMap = appManager.passphraseWordsMap
         secureRandom = appManager.secureRandom
         
@@ -92,7 +92,7 @@ class GeneratePassphraseFragment : Fragment() {
         }
         
         // Separator dropdown
-        fragmentBinding.separatorText.text = getString(R.string.separator).removeRange(0..1)
+        fragmentBinding.separatorText.text = getString(R.string.separator).removePrefix("\u2022 ")
         val allSeparatorsDropdownList = listOf("-", ".", ",", getString(R.string.spaces))
         fragmentBinding.separatorDropdownMenu.apply {
             setText(preferenceManager.getString(PHRASE_SEPARATOR))

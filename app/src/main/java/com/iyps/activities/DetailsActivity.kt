@@ -23,6 +23,7 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.iyps.R
+import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.ActivityDetailsBinding
 import com.iyps.fragments.details.DetailsFragment
 import com.iyps.preferences.PreferenceManager
@@ -42,7 +43,7 @@ class DetailsActivity : AppCompatActivity() {
         /*########################################################################################*/
 
         // Disable screenshots and screen recordings
-        if (PreferenceManager(this).getBoolean(PreferenceManager.BLOCK_SS)) {
+        if ((applicationContext as ApplicationManager).preferenceManager.getBoolean(PreferenceManager.BLOCK_SS)) {
             window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,
                             WindowManager.LayoutParams.FLAG_SECURE)
         }

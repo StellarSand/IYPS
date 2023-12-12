@@ -46,8 +46,12 @@ import java.security.SecureRandom
 
 class ApplicationManager : Application() {
     
+    val preferenceManager by lazy {
+        PreferenceManager(this)
+    }
+    
     private val commonPasswordsResource by lazy {
-        val top200PasswordsStream = resources.openRawResource(R.raw.top_200_passwords)
+        val top200PasswordsStream = resources.openRawResource(R.raw.top_200_2023_passwords)
         val otherCommonPasswordsStream = resources.openRawResource(R.raw.other_common_passwords)
         
         val combinedStream =
@@ -72,10 +76,28 @@ class ApplicationManager : Application() {
         ResourceFromInputStream(ByteArrayInputStream(combinedStream))
     }
     
+    private val darkwebPasswordsResource by lazy {
+        val darkwebPasswordsStream = resources.openRawResource(R.raw.darkweb)
+        ResourceFromInputStream(darkwebPasswordsStream)
+    }
+    
+    private val frenchPasswordsResource by lazy {
+        val frenchPasswordsStream = resources.openRawResource(R.raw.richelieu_french)
+        ResourceFromInputStream(frenchPasswordsStream)
+    }
+    
+    private val azulPasswordsResource by lazy {
+        val azulPasswordsStream = resources.openRawResource(R.raw.unkown_azul)
+        ResourceFromInputStream(azulPasswordsStream)
+    }
+    
     val zxcvbn: Zxcvbn by lazy {
         ZxcvbnBuilder()
             .dictionaries(listOf(DictionaryLoader("passwords", commonPasswordsResource).load(),
                                  DictionaryLoader("english_wikipedia", englishWordsResource).load(),
+                                 DictionaryLoader("darkweb", darkwebPasswordsResource).load(),
+                                 DictionaryLoader("richelieu_french", frenchPasswordsResource).load(),
+                                 DictionaryLoader("unkown_azul", azulPasswordsResource).load(),
                                  StandardDictionaries.FEMALE_NAMES_LOADER.load(),
                                  StandardDictionaries.MALE_NAMES_LOADER.load(),
                                  StandardDictionaries.SURNAMES_LOADER.load(),
@@ -113,8 +135,6 @@ class ApplicationManager : Application() {
     
     override fun onCreate() {
         super.onCreate()
-        
-        val preferenceManager = PreferenceManager(this)
         
         // Theme
         when(preferenceManager.getInt(THEME_PREF)) {

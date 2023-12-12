@@ -26,10 +26,10 @@
     <color name="color_onPrimary">#003913</color>
     <color name="color_primaryContainer">#00531F</color>
     <color name="color_onPrimaryContainer">#9BF7A5</color>
-    <color name="color_secondary">#9ECAFF</color>
-    <color name="color_onSecondary">#003258</color>
-    <color name="color_secondaryContainer">#00497D</color>
-    <color name="color_onSecondaryContainer">#D1E4FF</color>
+    <color name="color_secondary">#80DA8B</color>
+    <color name="color_onSecondary">#003913</color>
+    <color name="color_secondaryContainer">#00531F</color>
+    <color name="color_onSecondaryContainer">#9BF7A5</color>
     <color name="color_tertiary">#A1CED6</color>
     <color name="color_onTertiary">#00363D</color>
     <color name="color_tertiaryContainer">#1F4D54</color>
@@ -52,11 +52,8 @@
     <color name="color_surfaceTint">#80DA8B</color>
     <color name="color_outlineVariant">#424940</color>
     <color name="color_scrim">#000000</color>
-
-    <color name="color_bottom_nav_indicator">#49A25A</color>
-    <color name="color_fab_bg">#49A25A</color>
+    
     <color name="color_control_normal">#CAC4D0</color>
-    <color name="color_text_title">#FAFAFA</color>
     <color name="color_enabled">#B8B8BD</color>
     <color name="color_disabled">#3F3F47</color>
     <color name="color_hint">#9BA0A6</color>

@@ -52,7 +52,6 @@
 
         <item name="fontFamily">@font/roboto</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetTheme</item>
-        <item name="snackbarStyle">@style/SnackbarStyle</item>
         <item name="snackbarTextViewStyle">@style/SnackbarTextStyle</item>
     </style>
 
@@ -66,12 +65,8 @@
     <!--#########################################################################################-->
 
     <!--Bottom Nav-->
-    <style name="NavIndicatorStyle" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/color_bottom_nav_indicator</item>
-    </style>
-
     <style name="NavTextActive" parent="MediumBoldText">
-        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textSize">@dimen/text_15</item>
     </style>
 
     <!--#########################################################################################-->
@@ -80,17 +75,18 @@
     <style name="BaseThemeChipStyle" parent="Widget.Material3.Chip.Filter">
         <item name="chipBackgroundColor">@color/chip_bg_color</item>
         <item name="chipSurfaceColor">@android:color/transparent</item>
+        <item name="chipCornerRadius">@dimen/margin_12</item>
         <item name="chipStrokeColor">@color/chip_stroke_color</item>
         <item name="chipStrokeWidth">1dp</item>
-        <item name="checkedIcon">@drawable/ic_done</item>
         <item name="closeIconEndPadding">@dimen/margin_4</item>
         <item name="closeIconStartPadding">@dimen/margin_8</item>
-        <item name="closeIconTint">@color/color_text_title</item>
+        <item name="closeIconTint">@color/color_onSurface</item>
         <item name="closeIconSize">24dp</item>
         <item name="chipIconSize">24dp</item>
-        <item name="android:textColor">@color/color_text_title</item>
+        <item name="android:textColor">@color/color_onSurface</item>
         <item name="android:textSize">@dimen/text_16</item>
-        <item name="checkedIconTint">@color/color_text_title</item>
+        <item name="checkedIcon">@drawable/ic_done</item>
+        <item name="checkedIconTint">@color/color_onSurface</item>
     </style>
 
     <!--#########################################################################################-->
@@ -119,14 +115,9 @@
 
     <!--#########################################################################################-->
 
-    <!--Snackbar style-->
-    <style name="SnackbarStyle" parent="Widget.Material3.Snackbar">
-        <item name="android:backgroundTint">@color/color_snackbar_bg</item>
-    </style>
-
     <!--Snackbar text style-->
     <style name="SnackbarTextStyle" parent="Widget.Material3.Snackbar.TextView">
-        <item name="android:textColor">@color/color_snackbar_text</item>
+        <item name="android:textSize">@dimen/text_15</item>
     </style>
 
 </resources>

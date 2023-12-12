@@ -27,10 +27,10 @@
     <color name="color_onPrimary">#FFFFFF</color>
     <color name="color_primaryContainer">#9BF7A5</color>
     <color name="color_onPrimaryContainer">#002108</color>
-    <color name="color_secondary">#0061A4</color>
+    <color name="color_secondary">#046D2D</color>
     <color name="color_onSecondary">#FFFFFF</color>
-    <color name="color_secondaryContainer">#D1E4FF</color>
-    <color name="color_onSecondaryContainer">#001D36</color>
+    <color name="color_secondaryContainer">#9BF7A5</color>
+    <color name="color_onSecondaryContainer">#002108</color>
     <color name="color_tertiary">#39656C</color>
     <color name="color_onTertiary">#FFFFFF</color>
     <color name="color_tertiaryContainer">#BDEAF3</color>
@@ -54,10 +54,7 @@
     <color name="color_outlineVariant">#C1C9BE</color>
     <color name="color_scrim">#000000</color>
 
-    <color name="color_bottom_nav_indicator">#80DA8B</color>
-    <color name="color_fab_bg">@color/color_primary</color>
     <color name="color_control_normal">#5E5E5E</color>
-    <color name="color_text_title">#424242</color>
     <color name="color_enabled">#606163</color>
     <color name="color_disabled">#D4D3DD</color>
     <color name="color_hint">#B2B2B2</color>
@@ -72,9 +69,5 @@
     <color name="mediumMeterColor">#FFE084</color>
     <color name="strongMeterColor">#4ADC8C</color>
     <color name="excellentMeterColor">#4DCD68</color>
-
-    <!--Common colors-->
-    <color name="color_snackbar_text">#FAFAFA</color>
-    <color name="color_snackbar_bg">#3C3D40</color>
 
 </resources>

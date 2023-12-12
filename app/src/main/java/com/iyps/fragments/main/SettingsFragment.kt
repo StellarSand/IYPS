@@ -29,6 +29,7 @@ import androidx.fragment.app.Fragment
 import com.iyps.BuildConfig
 import com.iyps.R
 import com.iyps.activities.MainActivity
+import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentSettingsBinding
 import com.iyps.fragments.bottomsheets.LicensesBottomSheet
 import com.iyps.fragments.bottomsheets.ThemeBottomSheet
@@ -52,7 +53,7 @@ class SettingsFragment : Fragment() {
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
-        val preferenceManager = PreferenceManager(requireContext())
+        val preferenceManager = (requireContext().applicationContext as ApplicationManager).preferenceManager
         val mainActivity = requireActivity() as MainActivity
         
         // Version

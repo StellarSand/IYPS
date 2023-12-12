@@ -23,7 +23,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="@dimen/margin_12"
+    android:paddingVertical="@dimen/margin_12"
+    android:paddingStart="@dimen/margin_12"
+    android:paddingEnd="1dp"
     android:ellipsize="marquee"
     android:maxLines="1"
     android:textSize="@dimen/text_16"/>

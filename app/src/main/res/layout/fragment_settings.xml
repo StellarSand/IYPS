@@ -56,7 +56,7 @@
             android:paddingStart="@dimen/margin_8"
             android:paddingEnd="@dimen/margin_8"
             android:text="@string/app_name"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_20"
             style="@style/MediumBoldText"/>
 
@@ -91,7 +91,7 @@
             android:padding="@dimen/margin_16"
             android:text="@string/theme"
             android:textAlignment="viewStart"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
             android:drawableStart="@drawable/ic_theme"
             android:drawablePadding="@dimen/margin_16" />
@@ -103,7 +103,7 @@
             android:layout_marginStart="@dimen/margin_8"
             android:text="@string/privacy"
             android:layout_gravity="start"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_17"
             style="@style/MediumBoldText"/>
 
@@ -118,7 +118,7 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/block_screenshots"
             android:textAlignment="viewStart"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
             android:drawableStart="@drawable/ic_block_screenshots"
             android:drawablePadding="@dimen/margin_16"
@@ -135,7 +135,7 @@
             android:foreground="?android:attr/selectableItemBackground"
             android:text="@string/incognito_keyboard"
             android:textAlignment="viewStart"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
             android:drawableStart="@drawable/ic_incognito_keyboard"
             android:drawablePadding="@dimen/margin_16"
@@ -149,7 +149,7 @@
             android:layout_marginTop="@dimen/margin_16"
             android:layout_marginStart="@dimen/margin_8"
             android:text="@string/about"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_17"
             style="@style/MediumBoldText"/>
 
@@ -164,7 +164,7 @@
             android:padding="@dimen/margin_16"
             android:text="@string/privacy_policy"
             android:textAlignment="viewStart"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
             app:drawableStartCompat="@drawable/ic_privacy_policy"
             android:drawablePadding="@dimen/margin_16"/>
@@ -180,7 +180,7 @@
             android:padding="@dimen/margin_16"
             android:text="@string/third_party_licenses"
             android:textAlignment="viewStart"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
             app:drawableStartCompat="@drawable/ic_licenses"
             android:drawablePadding="@dimen/margin_16" />
@@ -196,7 +196,7 @@
             android:padding="@dimen/margin_16"
             android:text="@string/contributors"
             android:textAlignment="viewStart"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
             app:drawableStartCompat="@drawable/ic_contributors"
             android:drawablePadding="@dimen/margin_16" />
@@ -212,7 +212,7 @@
             android:padding="@dimen/margin_16"
             android:text="@string/report_issue"
             android:textAlignment="viewStart"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
             app:drawableStartCompat="@drawable/ic_report_issue"
             android:drawablePadding="@dimen/margin_16"/>
@@ -230,7 +230,7 @@
             android:padding="@dimen/margin_16"
             android:text="@string/view_on_github"
             android:textAlignment="viewStart"
-            android:textColor="@color/color_text_title"
+            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
             app:drawableStartCompat="@drawable/ic_github"
             android:drawablePadding="@dimen/margin_16" />

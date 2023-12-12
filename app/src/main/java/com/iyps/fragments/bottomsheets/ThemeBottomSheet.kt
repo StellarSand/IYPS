@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.isVisible
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.R
+import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetThemeBinding
 import com.iyps.preferences.PreferenceManager
@@ -30,7 +31,7 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.root)
-        val preferenceManager = PreferenceManager(requireContext())
+        val preferenceManager = (requireContext().applicationContext as ApplicationManager).preferenceManager
         
         headerBinding.bottomSheetTitle.setText(R.string.theme)
         

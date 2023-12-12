@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file.
 ## v1.4.6
 - Added random password generator.
 - Fixed estimated time to crack not translating.
-- Added Swedish and Turkish(by [mdksec](https://github.com/mdksec)) translations.
+- Added Turkish (by [Stablelover0](https://github.com/Stablelover0)) and Swedish translations.
 
 
 

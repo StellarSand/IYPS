@@ -61,13 +61,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="@dimen/margin_16"
-        android:layout_marginBottom="@dimen/margin_16"
-        app:backgroundTint="@color/color_fab_bg"
+        android:layout_marginBottom="@dimen/margin_20"
         app:icon="@drawable/ic_select_file"
-        app:iconTint="@color/color_snackbar_text"
         android:text="@string/select_file_btn"
-        android:textSize="@dimen/text_16"
-        android:textColor="@color/color_snackbar_text"
-        style="@style/MediumBoldText"/>
+        android:textSize="@dimen/text_16"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

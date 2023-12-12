@@ -57,6 +57,8 @@ class PasswordFragment : Fragment() {
     
     private var _binding: FragmentPasswordBinding? = null
     private val fragmentBinding get() = _binding!!
+    private lateinit var naString: String
+    private var emptyMeterColor = 0
     private lateinit var clipboardManager: ClipboardManager
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -73,6 +75,8 @@ class PasswordFragment : Fragment() {
         val mainActivity = requireActivity() as MainActivity
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        naString = getString(R.string.na)
+        emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
         fragmentBinding.lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
         fragmentBinding.uppercaseSubtitle.text = "\u2022 ${getString(R.string.uppercase)}"
         fragmentBinding.lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
@@ -159,31 +163,27 @@ class PasswordFragment : Fragment() {
     
     // Reset details
     private fun resetDetails() {
-        val notApplicableString = getString(R.string.na)
-        val zeroString = getString(R.string.zero)
-        val emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
-        
-        fragmentBinding.tenBGuessesStrength.text = notApplicableString
-        fragmentBinding.tenKGuessesStrength.text = notApplicableString
-        fragmentBinding.tenGuessesStrength.text = notApplicableString
-        fragmentBinding.hundredGuessesStrength.text = notApplicableString
-        fragmentBinding.tenBGuessesSubtitle.text = notApplicableString
-        fragmentBinding.tenKGuessesSubtitle.text = notApplicableString
-        fragmentBinding.tenGuessesSubtitle.text = notApplicableString
-        fragmentBinding.hundredGuessesSubtitle.text = notApplicableString
-        fragmentBinding.warningSubtitle.text = notApplicableString
-        fragmentBinding.suggestionsSubtitle.text = notApplicableString
-        fragmentBinding.guessesSubtitle.text = notApplicableString
-        fragmentBinding.orderMagnSubtitle.text = notApplicableString
-        fragmentBinding.orderMagnSubtitle.text = notApplicableString
-        fragmentBinding.entropySubtitle.text = notApplicableString
-        fragmentBinding.matchSequenceSubtitle.text = notApplicableString
-        fragmentBinding.lengthText.text = zeroString
-        fragmentBinding.uppercaseText.text = zeroString
-        fragmentBinding.lowercaseText.text = zeroString
-        fragmentBinding.numbersText.text = zeroString
-        fragmentBinding.specialCharsText.text = zeroString
-        fragmentBinding.spacesText.text = zeroString
+        fragmentBinding.tenBGuessesStrength.text = naString
+        fragmentBinding.tenKGuessesStrength.text = naString
+        fragmentBinding.tenGuessesStrength.text = naString
+        fragmentBinding.hundredGuessesStrength.text = naString
+        fragmentBinding.tenBGuessesSubtitle.text = naString
+        fragmentBinding.tenKGuessesSubtitle.text = naString
+        fragmentBinding.tenGuessesSubtitle.text = naString
+        fragmentBinding.hundredGuessesSubtitle.text = naString
+        fragmentBinding.warningSubtitle.text = naString
+        fragmentBinding.suggestionsSubtitle.text = naString
+        fragmentBinding.guessesSubtitle.text = naString
+        fragmentBinding.orderMagnSubtitle.text = naString
+        fragmentBinding.orderMagnSubtitle.text = naString
+        fragmentBinding.entropySubtitle.text = naString
+        fragmentBinding.matchSequenceSubtitle.text = naString
+        fragmentBinding.lengthText.text = naString
+        fragmentBinding.uppercaseText.text = naString
+        fragmentBinding.lowercaseText.text = naString
+        fragmentBinding.numbersText.text = naString
+        fragmentBinding.specialCharsText.text = naString
+        fragmentBinding.spacesText.text = naString
         
         fragmentBinding.tenBGuessesStrengthMeter.apply {
             setIndicatorColor(emptyMeterColor)

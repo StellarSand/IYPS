@@ -91,8 +91,6 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_gravity="bottom"
-        app:itemActiveIndicatorStyle="@style/NavIndicatorStyle"
-        app:itemIconTint="@color/color_text_title"
         app:itemTextAppearanceActive="@style/NavTextActive"
         app:menu="@menu/menu_bottom_nav"/>
 
