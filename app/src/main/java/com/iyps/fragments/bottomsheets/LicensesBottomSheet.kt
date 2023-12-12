@@ -47,7 +47,11 @@ class LicensesBottomSheet : BottomSheetDialogFragment() {
             add(License(getString(R.string.zxcvbn4j),
                         "${getString(R.string.copyright_zxcvbn4j)}\n\n${getString(R.string.mit_license)}",
                         getString(R.string.zxcvbn4j_license_url)))
-    
+            
+            // SecLists
+            add(License(getString(R.string.seclists),
+                        "${getString(R.string.copyright_seclists)}\n\n${getString(R.string.mit_license)}",
+                        getString(R.string.seclists_license_url)))
     
             // Material Design Icons
             add(License(getString(R.string.md_icons),

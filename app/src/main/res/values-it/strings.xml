@@ -40,7 +40,10 @@
 
     <!--Password fragment-->
     <string name="test_your_password">Prova la tua password</string>
-    <string name="details">Dettagli</string>
+    <string name="ten_b_guesses_per_sec">10B ipotesi/secondo</string>
+    <string name="ten_k_guesses_per_sec">10k ipotesi/secondo</string>
+    <string name="ten_guesses_per_sec">10 ipotesi/secondo</string>
+    <string name="hundred_guesses_per_hour">100 guesses/ora</string>
     <string name="strength">Sicurezza</string>
     <string name="worst">Peggiore</string>
     <string name="weak">Debole</string>
@@ -49,12 +52,12 @@
     <string name="excellent">Eccellente</string>
     <string name="est_time_to_crack">Tempo stimato per la decifratura</string>
     <string name="less_than_sec">Meno di un secondo</string>
-    <string name="second">second</string>
-    <string name="minute">secondi</string>
-    <string name="hour">ore</string>
-    <string name="day">giorni</string>
-    <string name="month">mesi</string>
-    <string name="year">anni</string>
+    <string name="second">secondo</string>
+    <string name="minute">minuto</string>
+    <string name="hour">ora</string>
+    <string name="day">giorno</string>
+    <string name="month">mese</string>
+    <string name="year">anno</string>
     <string name="centuries">Secoli</string>
     <string name="warning">Avvertimento</string>
     <string name="suggestions">Suggerimenti</string>
@@ -99,11 +102,13 @@
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
+    <string name="details">Dettagli</string>
     <string name="copy">Copia</string>
     <string name="regenerate">Rigenerare</string>
     <string name="share">Condividi</string>
     <string name="customize">Personalizzare</string>
     <string name="avoid_amb_chars">Evitare i caratteri ambigui</string>
+    <string name="repeat_chars">Caratteri ripetuti</string>
     <string name="include_spaces">Includere spazi</string>
 
     <!--Generate passphrase fragment-->

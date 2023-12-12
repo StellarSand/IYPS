@@ -43,7 +43,10 @@
 
     <!--Password fragment-->
     <string name="test_your_password">Testen sie ihr passwort</string>
-    <string name="details">Details</string>
+    <string name="ten_b_guesses_per_sec">10B vermutungen/sekunde</string>
+    <string name="ten_k_guesses_per_sec">10k vermutungen/sekunde</string>
+    <string name="ten_guesses_per_sec">10 vermutungen/sekunde</string>
+    <string name="hundred_guesses_per_hour">100 vermutungen/stunde</string>
     <string name="strength">St\u00E4rke</string>
     <string name="worst">Schw\u00E4chste </string>
     <string name="weak">Schwach </string>
@@ -61,7 +64,7 @@
     <string name="centuries">Jahrhunderte</string>
     <string name="warning">Warnung</string>
     <string name="suggestions">Empfehlungen</string>
-    <string name="est_guesses_to_crack">Gesch\u00E4tzte raten zum knacken</string>
+    <string name="est_guesses_to_crack">Gesch\u00E4tzte vermutungen zum knacken</string>
     <string name="order_of_magn">Gr\u00F6\u00DFenordnung der sch\u00E4tzungen</string>
     <string name="entropy">Entropie</string>
     <string name="bits">bits</string>
@@ -102,11 +105,13 @@
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
+    <string name="details">Details</string>
     <string name="copy">Kopieren</string>
     <string name="regenerate">Regenerieren Sie</string>
     <string name="share">Teilen Sie</string>
     <string name="customize">Anpassen</string>
     <string name="avoid_amb_chars">Vermeiden Sie zweideutige Zeichen</string>
+    <string name="repeat_chars">Wiederholung von Zeichen</string>
     <string name="include_spaces">R\u00E4ume einbeziehen</string>
 
     <!--Generate passphrase fragment-->

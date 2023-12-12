@@ -42,7 +42,10 @@
 
     <!--Password fragment-->
     <string name="test_your_password">Testa ditt l\u00F6senord</string>
-    <string name="details">Detaljer</string>
+    <string name="ten_b_guesses_per_sec">10B gissningar/sekund</string>
+    <string name="ten_k_guesses_per_sec">10k gissningar/sekund</string>
+    <string name="ten_guesses_per_sec">10 gissningar/sekund</string>
+    <string name="hundred_guesses_per_hour">100 gissningar/timme</string>
     <string name="strength">Styrka</string>
     <string name="worst">V\u00E4rsta</string>
     <string name="weak">Svag</string>
@@ -100,11 +103,13 @@
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
+    <string name="details">Detaljer</string>
     <string name="copy">Kopia</string>
     <string name="regenerate">Regenerera</string>
     <string name="share">Andel</string>
     <string name="customize">Anpassa</string>
     <string name="avoid_amb_chars">Undvik tvetydiga tecken</string>
+    <string name="repeat_chars">Upprepa tecken</string>
     <string name="include_spaces">Inkludera utrymmen</string>
 
     <!--Generate passphrase fragment-->

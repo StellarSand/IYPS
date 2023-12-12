@@ -36,7 +36,6 @@ import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.GEN_RADIO
 
-
 class MainActivity : AppCompatActivity() {
     
     lateinit var activityBinding: ActivityMainBinding

@@ -44,7 +44,10 @@
 
     <!--Password fragment-->
     <string name="test_your_password">Pruebe su contrase\u00F1a</string>
-    <string name="details">Detalles</string>
+    <string name="ten_b_guesses_per_sec">10B conjeturas/segundo</string>
+    <string name="ten_k_guesses_per_sec">10k conjeturas/segundo</string>
+    <string name="ten_guesses_per_sec">10 conjeturas/segundo</string>
+    <string name="hundred_guesses_per_hour">100 conjeturas/hora</string>
     <string name="strength">Fuerza</string>
     <string name="worst">Lo peor</string>
     <string name="weak">D\u00E9bil</string>
@@ -62,7 +65,7 @@
     <string name="centuries">Siglos</string>
     <string name="warning">Advertencia</string>
     <string name="suggestions">Sugerencias</string>
-    <string name="est_guesses_to_crack">Adivinanzas estimadas para descifrar</string>
+    <string name="est_guesses_to_crack">Conjeturas estimadas para descifrar</string>
     <string name="order_of_magn">Orden de magnitud de las conjeturas</string>
     <string name="entropy">Entrop\u00EDa</string>
     <string name="bits">bits</string>
@@ -102,11 +105,13 @@
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
+    <string name="details">Detalles</string>
     <string name="copy">Copia</string>
     <string name="regenerate">Regenere</string>
     <string name="share">Compartir</string>
     <string name="customize">Personalice</string>
     <string name="avoid_amb_chars">Evite los caracteres ambiguos</string>
+    <string name="repeat_chars">Repetir caracteres</string>
     <string name="include_spaces">Incluir espacios</string>
 
     <!--Generate passphrase fragment-->

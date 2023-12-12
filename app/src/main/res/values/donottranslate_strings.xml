@@ -23,17 +23,15 @@
 
     <string name="app_name" translatable="false">IYPS</string>
 
-    <string name="ten_b_guesses_per_sec" translatable="false">10B guesses/second</string>
-    <string name="ten_k_guesses_per_sec" translatable="false">10k guesses/second</string>
-    <string name="ten_guesses_per_sec" translatable="false">10 guesses/second</string>
-    <string name="hundred_guesses_per_hour" translatable="false">100 guesses/hour</string>
     <string name="na" translatable="false">-</string>
 
     <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
 
     <string name="zxcvbn4j" translatable="false">zxcvbn4j</string>
+    <string name="seclists" translatable="false">SecLists</string>
     <string name="md_icons" translatable="false">Material Design Icons</string>
 
     <string name="copyright_zxcvbn4j" translatable="false">Copyright © 2014 Nulab Inc</string>
+    <string name="copyright_seclists" translatable="false">Copyright (c) 2018 Daniel Miessler</string>
 
 </resources>

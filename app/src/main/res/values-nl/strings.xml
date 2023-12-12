@@ -39,7 +39,10 @@
 
     <!--Password fragment-->
     <string name="test_your_password">Test je wachtwoord</string>
-    <string name="details">Details</string>
+    <string name="ten_b_guesses_per_sec">10B gissingen/seconde</string>
+    <string name="ten_k_guesses_per_sec">10k gissingen/seconde</string>
+    <string name="ten_guesses_per_sec">10 gissingen/seconde</string>
+    <string name="hundred_guesses_per_hour">100 gissingen/uur</string>
     <string name="strength">Kracht</string>
     <string name="worst">Slechtst</string>
     <string name="weak">Zwak</string>
@@ -48,12 +51,12 @@
     <string name="excellent">Excellent</string>
     <string name="est_time_to_crack">Geschatte tijd om te kraken</string>
     <string name="less_than_sec">Minder dan een seconde</string>
-    <string name="second">seconden</string>
-    <string name="minute">minuten</string>
-    <string name="hour">uren</string>
-    <string name="day">dagen</string>
-    <string name="month">maanden</string>
-    <string name="year">jaren</string>
+    <string name="second">seconde</string>
+    <string name="minute">minuut</string>
+    <string name="hour">uur</string>
+    <string name="day">dag</string>
+    <string name="month">maand</string>
+    <string name="year">jaar</string>
     <string name="centuries">Eeuwenouder</string>
     <string name="warning">Waarschuwing</string>
     <string name="suggestions">Suggesties</string>
@@ -98,11 +101,13 @@
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
+    <string name="details">Details</string>
     <string name="copy">Kopie</string>
     <string name="regenerate">Regenereer</string>
     <string name="share">Deel</string>
     <string name="customize">Pas  aan</string>
     <string name="avoid_amb_chars">Vermijd dubbelzinnige tekens</string>
+    <string name="repeat_chars">Tekens herhalen</string>
     <string name="include_spaces">Ruimtes opnemen</string>
 
     <!--Generate passphrase fragment-->

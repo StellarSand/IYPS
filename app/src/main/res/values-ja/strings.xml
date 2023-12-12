@@ -34,7 +34,10 @@
 
     <!--Password fragment-->
     <string name="test_your_password">パスワードをテストしてください</string>
-    <string name="details">詳細</string>
+    <string name="ten_b_guesses_per_sec">10B 推測/秒</string>
+    <string name="ten_k_guesses_per_sec">10k 推測/秒</string>
+    <string name="ten_guesses_per_sec">10 推測/秒</string>
+    <string name="hundred_guesses_per_hour">100 推測/時間</string>
     <string name="strength">力</string>
     <string name="worst">最悪</string>
     <string name="weak">弱い</string>
@@ -93,11 +96,13 @@
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
+    <string name="details">詳細</string>
     <string name="copy">コピー</string>
     <string name="regenerate">再生</string>
     <string name="share">シェア</string>
     <string name="customize">カスタマイズ</string>
     <string name="avoid_amb_chars">曖昧な文字は避ける</string>
+    <string name="repeat_chars">リピート文字</string>
     <string name="include_spaces">スペースを含む</string>
 
     <!--Generate passphrase fragment-->

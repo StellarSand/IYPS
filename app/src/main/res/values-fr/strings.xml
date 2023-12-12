@@ -44,7 +44,10 @@
 
     <!--Password fragment-->
     <string name="test_your_password">Tester votre mot de passe</string>
-    <string name="details">Des d\u00E9tails</string>
+    <string name="ten_b_guesses_per_sec">10B suppositions/seconde</string>
+    <string name="ten_k_guesses_per_sec">10k suppositions/seconde</string>
+    <string name="ten_guesses_per_sec">10 suppositions/seconde</string>
+    <string name="hundred_guesses_per_hour">100 suppositions/heure</string>
     <string name="strength">Robustesse</string>
     <string name="worst">Mauvais</string>
     <string name="weak">Faible</string>
@@ -53,8 +56,8 @@
     <string name="excellent">Excellent</string>
     <string name="est_time_to_crack">Temps estim\u00E9 pour craquer</string>
     <string name="less_than_sec">Moins d\'une seconde</string>
-    <string name="second">secondes</string>
-    <string name="minute">minutes</string>
+    <string name="second">seconde</string>
+    <string name="minute">minute</string>
     <string name="hour">heure</string>
     <string name="day">jour</string>
     <string name="month">mois</string>
@@ -103,11 +106,13 @@
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
+    <string name="details">Des d\u00E9tails</string>
     <string name="copy">Copie</string>
     <string name="regenerate">R\u00E9g\u00E9n\u00E9rer</string>
     <string name="share">Partager</string>
     <string name="customize">Personnaliser</string>
     <string name="avoid_amb_chars">\u00C9viter les caract\u00E8res ambigus</string>
+    <string name="repeat_chars">R\u00E9p\u00E9ter les caract\u00E8res</string>
     <string name="include_spaces">Inclure les espaces</string>
 
     <!--Generate passphrase fragment-->

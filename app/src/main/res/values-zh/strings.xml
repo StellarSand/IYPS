@@ -39,7 +39,10 @@
 
     <!--Password fragment-->
     <string name="test_your_password">测试密码</string>
-    <string name="details">详细信息</string>
+    <string name="ten_b_guesses_per_sec">10B 猜测/秒</string>
+    <string name="ten_k_guesses_per_sec">10k 猜测/秒</string>
+    <string name="ten_guesses_per_sec">10 猜测/秒</string>
+    <string name="hundred_guesses_per_hour">100 猜测/小时</string>
     <string name="strength">实力</string>
     <string name="worst">最差</string>
     <string name="weak">弱</string>
@@ -97,11 +100,13 @@
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
+    <string name="details">详细信息</string>
     <string name="copy">复制</string>
     <string name="regenerate">再生</string>
     <string name="share">分享</string>
     <string name="customize">定制</string>
     <string name="avoid_amb_chars">避免使用模棱两可的字符</string>
+    <string name="repeat_chars">重复字符</string>
     <string name="include_spaces">包括空间</string>
 
     <!--Generate passphrase fragment-->
