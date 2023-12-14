@@ -52,18 +52,6 @@ class ClipboardUtils {
                 }
             }
         }
-    
-        // Only show snackbar in 12L or lower to avoid duplicate notifications
-        // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
-        fun showCopiedSnackbar(context: Context,
-                               coordinatorLayout: CoordinatorLayout,
-                               anchorView: View) {
-            Snackbar.make(coordinatorLayout,
-                          context.getString(R.string.copied_to_clipboard),
-                          BaseTransientBottomBar.LENGTH_SHORT)
-                .setAnchorView(anchorView) // Above FAB, bottom bar etc.
-                .show()
-        }
         
         // Clear password from clipboard
         fun clearClipboard(clipboardManager: ClipboardManager) {

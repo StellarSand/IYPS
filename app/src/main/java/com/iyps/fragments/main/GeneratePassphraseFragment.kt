@@ -41,7 +41,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
-import com.iyps.utils.ClipboardUtils.Companion.showCopiedSnackbar
+import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.UiUtils.Companion.setSliderThumbColor
 import java.security.SecureRandom
 
@@ -125,9 +125,9 @@ class GeneratePassphraseFragment : Fragment() {
             // Only show snackbar in 12L or lower to avoid duplicate notifications
             // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
             if (Build.VERSION.SDK_INT <= 32) {
-                showCopiedSnackbar(requireContext(),
-                                   mainActivity.activityBinding.mainCoordLayout,
-                                   mainActivity.activityBinding.mainBottomNav)
+                showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                             requireContext().getString(R.string.copied_to_clipboard),
+                             mainActivity.activityBinding.mainBottomNav)
             }
         }
         

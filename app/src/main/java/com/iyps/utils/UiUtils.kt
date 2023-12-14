@@ -21,7 +21,11 @@ package com.iyps.utils
 
 import android.content.Context
 import android.content.res.ColorStateList
+import android.view.View
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.slider.Slider
+import com.google.android.material.snackbar.BaseTransientBottomBar
+import com.google.android.material.snackbar.Snackbar
 import com.iyps.R
 
 class UiUtils {
@@ -41,6 +45,16 @@ class UiUtils {
                 }
             
             slider.thumbTintList = ColorStateList.valueOf(sliderThumbColor)
+        }
+        
+        fun showSnackbar(coordinatorLayout: CoordinatorLayout,
+                         message: String,
+                         anchorView: View?) {
+            Snackbar.make(coordinatorLayout,
+                          message,
+                          BaseTransientBottomBar.LENGTH_SHORT)
+                .setAnchorView(anchorView) // Above FAB, bottom bar etc.
+                .show()
         }
         
     }

@@ -186,22 +186,6 @@
             android:drawablePadding="@dimen/margin_16" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/contributors"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_4"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:padding="@dimen/margin_16"
-            android:text="@string/contributors"
-            android:textAlignment="viewStart"
-            android:textColor="@color/color_onSurface"
-            android:textSize="@dimen/text_16"
-            app:drawableStartCompat="@drawable/ic_contributors"
-            android:drawablePadding="@dimen/margin_16" />
-
-        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/report_issue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -232,7 +216,7 @@
             android:textAlignment="viewStart"
             android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_16"
-            app:drawableStartCompat="@drawable/ic_github"
+            app:drawableStartCompat="@drawable/ic_view_on_github"
             android:drawablePadding="@dimen/margin_16" />
 
     </LinearLayout>

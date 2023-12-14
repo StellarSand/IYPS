@@ -28,7 +28,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_SPACES
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
-import com.iyps.utils.ClipboardUtils.Companion.showCopiedSnackbar
+import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.UiUtils.Companion.setSliderThumbColor
 import java.security.SecureRandom
 
@@ -98,7 +98,7 @@ class GeneratePasswordFragment : Fragment() {
         // Password length slider
         fragmentBinding.pwdLengthSlider.apply {
             value = preferenceManager.getFloatDefVal20(PWD_LENGTH)
-            fragmentBinding.lengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
+            fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
             setSliderThumbColor(requireContext(), this, 5f, value)
             
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
@@ -111,7 +111,7 @@ class GeneratePasswordFragment : Fragment() {
             })
             
             addOnChangeListener { slider, value, _ ->
-                fragmentBinding.lengthText.text = "${getString(R.string.length)}: ${slider.value.toInt()}"
+                fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${slider.value.toInt()}"
                 setSliderThumbColor(requireContext(), slider, 5f, value)
             }
         }
@@ -168,9 +168,9 @@ class GeneratePasswordFragment : Fragment() {
             // Only show snackbar in 12L or lower to avoid duplicate notifications
             // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
             if (Build.VERSION.SDK_INT <= 32) {
-                showCopiedSnackbar(requireContext(),
-                                   mainActivity.activityBinding.mainCoordLayout,
-                                   mainActivity.activityBinding.mainBottomNav)
+                showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                             requireContext().getString(R.string.copied_to_clipboard),
+                             mainActivity.activityBinding.mainBottomNav)
             }
         }
         

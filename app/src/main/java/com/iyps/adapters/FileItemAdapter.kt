@@ -1,20 +1,20 @@
 /*
- * Copyright (c) 2022 StellarSand
+ *  Copyright (c) 2022-present StellarSand
  *
- *  This file is part of IYPS.
+ *    This file is part of IYPS.
  *
- *  IYPS is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
+ *    IYPS is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
  *
- *  IYPS is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
+ *    IYPS is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
  *
- *  You should have received a copy of the GNU General Public License
- *  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+ *    You should have received a copy of the GNU General Public License
+ *    along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
  */
 
 package com.iyps.adapters
@@ -27,9 +27,10 @@ import com.iyps.R
 import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.view.View
+import me.stellarsand.android.fastscroll.PopupTextProvider
 
 class FileItemAdapter(private val aListViewItems: List<FileItem>,
-                      private val clickListener: OnItemClickListener): RecyclerView.Adapter<ListViewHolder>() {
+                      private val clickListener: OnItemClickListener): RecyclerView.Adapter<ListViewHolder>(), PopupTextProvider {
     
     interface OnItemClickListener {
         fun onItemClick(position: Int)
@@ -45,7 +46,7 @@ class FileItemAdapter(private val aListViewItems: List<FileItem>,
         }
         
         override fun onClick(v: View?) {
-            val position = adapterPosition
+            val position = bindingAdapterPosition
             if (position != RecyclerView.NO_POSITION) {
                 clickListener.onItemClick(position)
             }
@@ -69,5 +70,9 @@ class FileItemAdapter(private val aListViewItems: List<FileItem>,
     
     override fun getItemViewType(position: Int): Int {
         return position
+    }
+    
+    override fun getPopupText(view: View, position: Int): CharSequence {
+        return aListViewItems[position].passwordLine.substring(0, 1)
     }
 }

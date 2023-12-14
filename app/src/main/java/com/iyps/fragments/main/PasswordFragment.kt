@@ -42,12 +42,11 @@ import com.iyps.activities.MainActivity
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentPasswordBinding
-import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
-import com.iyps.utils.ClipboardUtils.Companion.showCopiedSnackbar
+import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.ResultUtils
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -71,24 +70,25 @@ class PasswordFragment : Fragment() {
     
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    
+        
         val mainActivity = requireActivity() as MainActivity
-        val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
+        val appManager = (requireContext().applicationContext as ApplicationManager)
+        val zxcvbn = appManager.zxcvbn
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         naString = getString(R.string.na)
         emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
-        fragmentBinding.lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
-        fragmentBinding.uppercaseSubtitle.text = "\u2022 ${getString(R.string.uppercase)}"
-        fragmentBinding.lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
-        fragmentBinding.numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
-        fragmentBinding.specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
-        fragmentBinding.spacesSubtitle.text = "\u2022 ${getString(R.string.spaces)}"
-        
-        /*########################################################################################*/
+        fragmentBinding.apply {
+            lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
+            uppercaseSubtitle.text = "\u2022 ${getString(R.string.uppercase)}"
+            lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
+            numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
+            specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
+            spacesSubtitle.text = "\u2022 ${getString(R.string.spaces)}"
+        }
         
         fragmentBinding.passwordText.apply {
             
-            if (PreferenceManager(requireContext()).getBoolean(INCOG_KEYBOARD)) {
+            if (appManager.preferenceManager.getBoolean(INCOG_KEYBOARD)) {
                 imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
                 inputType = TYPE_TEXT_VARIATION_PASSWORD
             }
@@ -144,9 +144,9 @@ class PasswordFragment : Fragment() {
                             // Only show snackbar in 12L or lower to avoid duplicate notifications
                             // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
                             if (Build.VERSION.SDK_INT <= 32) {
-                                showCopiedSnackbar(requireContext(),
-                                                   mainActivity.activityBinding.mainCoordLayout,
-                                                   mainActivity.activityBinding.mainBottomNav)
+                                showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                                             requireContext().getString(R.string.copied_to_clipboard),
+                                             mainActivity.activityBinding.mainBottomNav)
                             }
                         }
                     }
@@ -163,46 +163,48 @@ class PasswordFragment : Fragment() {
     
     // Reset details
     private fun resetDetails() {
-        fragmentBinding.tenBGuessesStrength.text = naString
-        fragmentBinding.tenKGuessesStrength.text = naString
-        fragmentBinding.tenGuessesStrength.text = naString
-        fragmentBinding.hundredGuessesStrength.text = naString
-        fragmentBinding.tenBGuessesSubtitle.text = naString
-        fragmentBinding.tenKGuessesSubtitle.text = naString
-        fragmentBinding.tenGuessesSubtitle.text = naString
-        fragmentBinding.hundredGuessesSubtitle.text = naString
-        fragmentBinding.warningSubtitle.text = naString
-        fragmentBinding.suggestionsSubtitle.text = naString
-        fragmentBinding.guessesSubtitle.text = naString
-        fragmentBinding.orderMagnSubtitle.text = naString
-        fragmentBinding.orderMagnSubtitle.text = naString
-        fragmentBinding.entropySubtitle.text = naString
-        fragmentBinding.matchSequenceSubtitle.text = naString
-        fragmentBinding.lengthText.text = naString
-        fragmentBinding.uppercaseText.text = naString
-        fragmentBinding.lowercaseText.text = naString
-        fragmentBinding.numbersText.text = naString
-        fragmentBinding.specialCharsText.text = naString
-        fragmentBinding.spacesText.text = naString
-        
-        fragmentBinding.tenBGuessesStrengthMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.tenKGuessesStrengthMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.tenGuessesStrengthMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
-        }
-        
-        fragmentBinding.hundredGuessesStrengthMeter.apply {
-            setIndicatorColor(emptyMeterColor)
-            setProgressCompat(0, true)
+        fragmentBinding.apply {
+            tenBGuessesStrength.text = naString
+            tenKGuessesStrength.text = naString
+            tenGuessesStrength.text = naString
+            hundredGuessesStrength.text = naString
+            tenBGuessesSubtitle.text = naString
+            tenKGuessesSubtitle.text = naString
+            tenGuessesSubtitle.text = naString
+            hundredGuessesSubtitle.text = naString
+            warningSubtitle.text = naString
+            suggestionsSubtitle.text = naString
+            guessesSubtitle.text = naString
+            orderMagnSubtitle.text = naString
+            orderMagnSubtitle.text = naString
+            entropySubtitle.text = naString
+            matchSequenceSubtitle.text = naString
+            lengthText.text = naString
+            uppercaseText.text = naString
+            lowercaseText.text = naString
+            numbersText.text = naString
+            specialCharsText.text = naString
+            spacesText.text = naString
+            
+            tenBGuessesStrengthMeter.apply {
+                setIndicatorColor(emptyMeterColor)
+                setProgressCompat(0, true)
+            }
+            
+            tenKGuessesStrengthMeter.apply {
+                setIndicatorColor(emptyMeterColor)
+                setProgressCompat(0, true)
+            }
+            
+            tenGuessesStrengthMeter.apply {
+                setIndicatorColor(emptyMeterColor)
+                setProgressCompat(0, true)
+            }
+            
+            hundredGuessesStrengthMeter.apply {
+                setIndicatorColor(emptyMeterColor)
+                setProgressCompat(0, true)
+            }
         }
         
     }

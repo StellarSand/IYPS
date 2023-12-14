@@ -25,9 +25,8 @@ import android.content.Intent
 import android.net.Uri
 import android.view.View
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import com.google.android.material.snackbar.BaseTransientBottomBar
-import com.google.android.material.snackbar.Snackbar
 import com.iyps.R
+import com.iyps.utils.UiUtils.Companion.showSnackbar
 
 class IntentUtils {
 
@@ -42,11 +41,9 @@ class IntentUtils {
             }
             // If no browser installed, show snackbar
             catch (e: ActivityNotFoundException) {
-                Snackbar.make(coordinatorLayout,
-                              activity.getString(R.string.no_browsers),
-                              BaseTransientBottomBar.LENGTH_SHORT)
-                    .setAnchorView(anchorView) // Above FAB, bottom bar etc.
-                    .show()
+                showSnackbar(coordinatorLayout,
+                             activity.getString(R.string.no_browsers),
+                             anchorView)
             }
         }
 

@@ -40,8 +40,6 @@ class DetailsActivity : AppCompatActivity() {
 
         passwordLine = intent.getStringExtra("PwdLine")!!
 
-        /*########################################################################################*/
-
         // Disable screenshots and screen recordings
         if ((applicationContext as ApplicationManager).preferenceManager.getBoolean(PreferenceManager.BLOCK_SS)) {
             window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,

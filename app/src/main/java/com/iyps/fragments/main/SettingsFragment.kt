@@ -101,15 +101,6 @@ class SettingsFragment : Fragment() {
                 LicensesBottomSheet().show(parentFragmentManager, "LicensesBottomSheet")
             }
     
-        // Contributors
-        fragmentBinding.contributors
-            .setOnClickListener {
-                openURL(mainActivity,
-                        getString(R.string.iyps_contributors_url),
-                        mainActivity.activityBinding.mainCoordLayout,
-                        mainActivity.activityBinding.mainBottomNav)
-            }
-    
         // Report an issue
         fragmentBinding.reportIssue.setOnClickListener {
             openURL(mainActivity,

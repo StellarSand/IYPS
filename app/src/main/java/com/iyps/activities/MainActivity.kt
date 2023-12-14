@@ -23,7 +23,9 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.os.Bundle
+import android.view.ViewGroup
 import android.view.WindowManager
+import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
@@ -42,6 +44,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var navController: NavController
     private lateinit var preferenceManager: PreferenceManager
+    private lateinit var viewsToAnimate: List<ViewGroup>
     private var selectedItem = 0
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,8 +56,7 @@ class MainActivity : AppCompatActivity() {
         navHostFragment = supportFragmentManager.findFragmentById(R.id.main_nav_host) as NavHostFragment
         navController = navHostFragment.navController
         preferenceManager = (applicationContext as ApplicationManager).preferenceManager
-        
-        /*########################################################################################*/
+        viewsToAnimate = listOf(activityBinding.generateRadioGroup, activityBinding.generateBottomAppBar)
         
         // Disable screenshots and screen recordings
         if (preferenceManager.getBoolean(BLOCK_SS)) {
@@ -150,40 +152,31 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun showViewsWithAnimation() {
-        val fadeInRadioGroup = ObjectAnimator.ofFloat(activityBinding.generateRadioGroup, "alpha", 0f, 1f)
-        fadeInRadioGroup.duration = 500
-        
-        val fadeInBottomAppBar = ObjectAnimator.ofFloat(activityBinding.generateBottomAppBar, "alpha", 0f, 1f)
-        fadeInBottomAppBar.duration = 500
-        
-        activityBinding.generateRadioGroup.isVisible = true
-        fadeInRadioGroup.start()
-        activityBinding.generateBottomAppBar.isVisible = true
-        fadeInBottomAppBar.start()
+        viewsToAnimate.forEach { view ->
+            ObjectAnimator.ofFloat(view, "alpha", 0f, 1f).apply {
+                duration = 500
+                interpolator = AccelerateDecelerateInterpolator()
+                view.isVisible = true
+                start()
+            }
+        }
     }
     
     private fun hideViewsWithAnimation() {
-        val fadeOutRadioGroup = ObjectAnimator.ofFloat(activityBinding.generateRadioGroup, "alpha", 1f, 0f)
-        fadeOutRadioGroup.duration = 300
-        fadeOutRadioGroup.addListener(object : AnimatorListenerAdapter() {
-            override fun onAnimationEnd(animation: Animator) {
-                if (activityBinding.generateRadioGroup.isVisible) {
-                    activityBinding.generateRadioGroup.isVisible = false
-                }
+        viewsToAnimate.forEach { view ->
+            ObjectAnimator.ofFloat(view, "alpha", 1f, 0f).apply {
+                duration = 300
+                interpolator = AccelerateDecelerateInterpolator()
+                addListener(object : AnimatorListenerAdapter() {
+                    override fun onAnimationEnd(animation: Animator) {
+                        if (view.isVisible) {
+                            view.isVisible = false
+                        }
+                    }
+                })
+                start()
             }
-        })
-        fadeOutRadioGroup.start()
-        
-        val fadeOutBottomAppBar = ObjectAnimator.ofFloat(activityBinding.generateBottomAppBar, "alpha", 1f, 0f)
-        fadeOutBottomAppBar.duration = 300
-        fadeOutBottomAppBar.addListener(object : AnimatorListenerAdapter() {
-            override fun onAnimationEnd(animation: Animator) {
-                if (activityBinding.generateBottomAppBar.isVisible) {
-                    activityBinding.generateBottomAppBar.isVisible = false
-                }
-            }
-        })
-        fadeOutBottomAppBar.start()
+        }
     }
     
     
