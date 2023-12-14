@@ -53,11 +53,17 @@
     <string name="est_time_to_crack">Tempo stimato per la decifratura</string>
     <string name="less_than_sec">Meno di un secondo</string>
     <string name="second">secondo</string>
+    <string name="seconds">secondi</string>
     <string name="minute">minuto</string>
+    <string name="minutes">minuti</string>
     <string name="hour">ora</string>
+    <string name="hours">ore</string>
     <string name="day">giorno</string>
+    <string name="days">giorni</string>
     <string name="month">mese</string>
+    <string name="months">mesi</string>
     <string name="year">anno</string>
+    <string name="years">anni</string>
     <string name="centuries">Secoli</string>
     <string name="warning">Avvertimento</string>
     <string name="suggestions">Suggerimenti</string>
@@ -76,9 +82,6 @@
     <string name="sequence_name">\u2022 Nome della sequenza</string>
     <string name="sequence_size">\u2022 Dimensione della sequenza</string>
     <string name="ascending">\u2022 Ascendente</string>
-    <string name="Day">\u2022 Giorno</string>
-    <string name="Month">\u2022 Mese</string>
-    <string name="Year">\u2022 Anno</string>
     <string name="separator">\u2022 Separatore</string>
     <string name="graph">\u2022 Grafico</string>
     <string name="turns">\u2022 Giri</string>

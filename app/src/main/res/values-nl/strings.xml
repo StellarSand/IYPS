@@ -52,11 +52,17 @@
     <string name="est_time_to_crack">Geschatte tijd om te kraken</string>
     <string name="less_than_sec">Minder dan een seconde</string>
     <string name="second">seconde</string>
+    <string name="seconds">seconden</string>
     <string name="minute">minuut</string>
+    <string name="minutes">minuten</string>
     <string name="hour">uur</string>
+    <string name="hours">uren</string>
     <string name="day">dag</string>
+    <string name="days">dagen</string>
     <string name="month">maand</string>
+    <string name="months">maanden</string>
     <string name="year">jaar</string>
+    <string name="years">jaar</string>
     <string name="centuries">Eeuwenouder</string>
     <string name="warning">Waarschuwing</string>
     <string name="suggestions">Suggesties</string>
@@ -75,9 +81,6 @@
     <string name="sequence_name">\u2022 Sequentie naam</string>
     <string name="sequence_size">\u2022 Sequentiegrootte</string>
     <string name="ascending">\u2022 Oplopend</string>
-    <string name="Day">\u2022 Dag</string>
-    <string name="Month">\u2022 Maand</string>
-    <string name="Year">\u2022 Jaar</string>
     <string name="separator">\u2022 Scheidingsteken</string>
     <string name="graph">\u2022 Grafiek</string>
     <string name="turns">\u2022 Draait</string>

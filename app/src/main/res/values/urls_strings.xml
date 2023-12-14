@@ -21,14 +21,12 @@
 
 <resources>
 
-    <string name="iyps_contributors_url" translatable="false">https://github.com/StellarSand/IYPS/graphs/contributors</string>
     <string name="iyps_privacy_policy_url" translatable="false">https://github.com/StellarSand/IYPS/blob/master/PRIVACY.md</string>
     <string name="iyps_issues_url" translatable="false">https://github.com/StellarSand/IYPS/issues</string>
-    <string name="iyps_license_url" translatable="false">https://github.com/StellarSand/IYPS/blob/main/LICENSE</string>
     <string name="iyps_github_url" translatable="false">https://github.com/StellarSand/IYPS</string>
 
     <string name="zxcvbn4j_license_url" translatable="false">https://github.com/nulab/zxcvbn4j/blob/master/LICENSE.txt</string>
     <string name="seclists_license_url" translatable="false">https://github.com/danielmiessler/SecLists/blob/master/LICENSE</string>
-    <string name="md_icons_license_url" translatable="false">https://github.com/Templarian/MaterialDesign/blob/master/LICENSE</string>
+    <string name="fastscroll_license_url" translatable="false">https://github.com/StellarSand/AndroidFastScroll-kt/blob/master/LICENSE</string>
 
 </resources>

@@ -57,11 +57,17 @@
     <string name="est_time_to_crack">Temps estim\u00E9 pour craquer</string>
     <string name="less_than_sec">Moins d\'une seconde</string>
     <string name="second">seconde</string>
+    <string name="seconds">secondes</string>
     <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
     <string name="hour">heure</string>
+    <string name="hours">heures</string>
     <string name="day">jour</string>
+    <string name="days">jours</string>
     <string name="month">mois</string>
+    <string name="months">mois</string>
     <string name="year">an</string> <!-- un an / une année -->
+    <string name="years">ans</string>
     <string name="centuries">Des si\u00E8cles</string>
     <string name="warning">Avertissement</string>
     <string name="suggestions">Suggestions</string>
@@ -80,9 +86,6 @@
     <string name="sequence_name">\u2022 Nom de la s\u00E9quence</string>
     <string name="sequence_size">\u2022 Taille de la s\u00E9quence</string>
     <string name="ascending">\u2022 Ascendant</string>
-    <string name="Day">\u2022 Jour</string>
-    <string name="Month">\u2022 Mois</string>
-    <string name="Year">\u2022 Ann\u00E9e</string>
     <string name="separator">\u2022 S\u00E9parateur</string>
     <string name="graph">\u2022 Graphique</string>
     <string name="turns">\u2022 Tours</string> <!-- Tourne ? -->

@@ -29,9 +29,10 @@
 
     <string name="zxcvbn4j" translatable="false">zxcvbn4j</string>
     <string name="seclists" translatable="false">SecLists</string>
-    <string name="md_icons" translatable="false">Material Design Icons</string>
+    <string name="fastscroll" translatable="false">AndroidFastScroll-kt</string>
 
-    <string name="copyright_zxcvbn4j" translatable="false">Copyright © 2014 Nulab Inc</string>
-    <string name="copyright_seclists" translatable="false">Copyright (c) 2018 Daniel Miessler</string>
+    <string name="copyright_zxcvbn4j" translatable="false">Copyright \u00A9 2014 Nulab Inc</string>
+    <string name="copyright_seclists" translatable="false">Copyright \u00A9 2018 Daniel Miessler</string>
+    <string name="copyright_fastscroll" translatable="false">Copyright \u00A9 2023-present StellarSand</string>
 
 </resources>

@@ -52,11 +52,17 @@
     <string name="est_time_to_crack">Estimated time to crack</string>
     <string name="less_than_sec">Less than a second</string>
     <string name="second">second</string>
+    <string name="seconds">seconds</string>
     <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
     <string name="hour">hour</string>
+    <string name="hours">hours</string>
     <string name="day">day</string>
+    <string name="days">days</string>
     <string name="month">month</string>
+    <string name="months">months</string>
     <string name="year">year</string>
+    <string name="years">years</string>
     <string name="centuries">Centuries</string>
     <string name="warning">Warning</string>
     <string name="suggestions">Suggestions</string>
@@ -75,9 +81,6 @@
     <string name="sequence_name">\u2022 Sequence name</string>
     <string name="sequence_size">\u2022 Sequence size</string>
     <string name="ascending">\u2022 Ascending</string>
-    <string name="Day">\u2022 Day</string>
-    <string name="Month">\u2022 Month</string>
-    <string name="Year">\u2022 Year</string>
     <string name="separator">\u2022 Separator</string>
     <string name="graph">\u2022 Graph</string>
     <string name="turns">\u2022 Turns</string>

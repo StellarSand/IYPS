@@ -55,11 +55,17 @@
     <string name="est_time_to_crack">Ber\u00E4knad tid till sprickbildning</string>
     <string name="less_than_sec">Mindre \u00E4n en sekund</string>
     <string name="second">sekund</string>
+    <string name="seconds">sekunder</string>
     <string name="minute">minut</string>
+    <string name="minutes">minuter</string>
     <string name="hour">timme</string>
+    <string name="hours">timmar</string>
     <string name="day">dag</string>
+    <string name="days">dagar</string>
     <string name="month">m\u00E5nad</string>
+    <string name="months">m\u00E5nader</string>
     <string name="year">\u00E5r</string>
+    <string name="years">\u00E5r</string>
     <string name="centuries">\u00C5rhundraden</string>
     <string name="warning">Varning</string>
     <string name="suggestions">F\u00F6rslag</string>
@@ -78,9 +84,6 @@
     <string name="sequence_name">\u2022 Sekvensens namn</string>
     <string name="sequence_size">\u2022 Sekvensens storlek</string>
     <string name="ascending">\u2022 Stigande</string>
-    <string name="Day">\u2022 Dag</string>
-    <string name="Month">\u2022 M\u00E5nad</string>
-    <string name="Year">\u2022 \u00C5r</string>
     <string name="separator">\u2022 Separator</string>
     <string name="graph">\u2022 Graf</string>
     <string name="turns">\u2022 V\u00E4ndningar</string>

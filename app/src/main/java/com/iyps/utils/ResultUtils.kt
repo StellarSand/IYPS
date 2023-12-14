@@ -28,6 +28,7 @@ import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
 import com.nulabinc.zxcvbn.Feedback
 import com.nulabinc.zxcvbn.Pattern
 import com.nulabinc.zxcvbn.Strength
+import java.util.Locale
 import java.util.concurrent.TimeUnit
 
 class ResultUtils(val context: Context) {
@@ -50,14 +51,23 @@ class ResultUtils(val context: Context) {
     private val weakPassWarning = context.getString(R.string.weak_pass_warning)
     private val mediumPassWarning = context.getString(R.string.medium_pass_warning)
     
-    private val replaceLessThanSecondString = context.getString(R.string.less_than_sec)
-    private val replaceSecondString = context.getString(R.string.second)
-    private val replaceMinuteString = context.getString(R.string.minute)
-    private val replaceHourString = context.getString(R.string.hour)
-    private val replaceDayString = context.getString(R.string.day)
-    private val replaceMonthString = context.getString(R.string.month)
-    private val replaceYearString = context.getString(R.string.year)
-    private val replaceCenturiesString = context.getString(R.string.centuries)
+    private val dayStringResource = context.getString(R.string.day)
+    private val monthStringResource = context.getString(R.string.month)
+    private val yearStringResource = context.getString(R.string.year)
+    
+    private val timeUnitsReplacementMap =
+        mapOf("second" to Pair(context.getString(R.string.second), context.getString(R.string.seconds)),
+              "minute" to Pair(context.getString(R.string.minute), context.getString(R.string.minutes)),
+              "hour" to Pair(context.getString(R.string.hour), context.getString(R.string.hours)),
+              "day" to Pair(dayStringResource, context.getString(R.string.days)),
+              "month" to Pair(monthStringResource, context.getString(R.string.months)),
+              "year" to Pair(yearStringResource, context.getString(R.string.years)))
+    
+    private val timeStringsReplacementMap =
+        mapOf("less than a second" to context.getString(R.string.less_than_sec),
+              "centuries" to context.getString(R.string.centuries))
+    
+    private val timeStringsRegex = "(\\d+)\\s+(\\w+)".toRegex() // Insert regex meme here
     
     private val patternString = context.getString(R.string.pattern)
     private val orderMagnString = context.getString(R.string.order_of_magn)
@@ -69,9 +79,12 @@ class ResultUtils(val context: Context) {
     private val seqNameString = context.getString(R.string.sequence_name)
     private val seqSizeString = context.getString(R.string.sequence_size)
     private val ascendingString = context.getString(R.string.ascending)
-    private val dayString = context.getString(R.string.Day)
-    private val monthString = context.getString(R.string.Month)
-    private val yearString = context.getString(R.string.Year)
+    private val dayString =
+        "\u2022 ${dayStringResource.replaceFirstChar { it.titlecase(Locale.getDefault()) }}"
+    private val monthString =
+        "\u2022 ${monthStringResource.replaceFirstChar { it.titlecase(Locale.getDefault()) }}"
+    private val yearString =
+        "\u2022 ${yearStringResource.replaceFirstChar { it.titlecase(Locale.getDefault()) }}"
     private val separatorString = context.getString(R.string.separator)
     private val graphString = context.getString(R.string.graph)
     private val turnsString = context.getString(R.string.turns)
@@ -80,20 +93,22 @@ class ResultUtils(val context: Context) {
     // Replace hardcoded strings from the library for proper language support
     fun replaceCrackTimeStrings(timeToCrackString: String): String {
         
-        val replacementStringMap =
-            mapOf("less than a second" to replaceLessThanSecondString,
-                  "second" to replaceSecondString,
-                  "minute" to replaceMinuteString,
-                  "hour" to replaceHourString,
-                  "day" to replaceDayString,
-                  "month" to replaceMonthString,
-                  "year" to replaceYearString,
-                  "centuries" to replaceCenturiesString)
-        
         var replacedString = timeToCrackString
-        for ((key, value) in replacementStringMap) {
-            replacedString = replacedString.replace(key, value)
+        
+        for ((key, value) in timeStringsReplacementMap) {
+            if (replacedString.contains(key)) {
+                return replacedString.replace(key, value)
+            }
         }
+        
+        replacedString =
+            timeStringsRegex.replace(replacedString) { matchResult ->
+                val quantity = matchResult.groupValues[1]
+                val unit = matchResult.groupValues[2]
+                val baseUnit = if (unit.endsWith("s")) unit.dropLast(1) else unit
+                val replacementPair = timeUnitsReplacementMap[baseUnit] ?: Pair(unit, "${unit}s")
+                "$quantity ${if (quantity == "1") replacementPair.first else replacementPair.second}"
+            }
         
         return replacedString
     }

@@ -62,11 +62,17 @@
     <string name="est_time_to_crack">Tahmini k\u0131r\u0131lma s\u00FCresi</string>
     <string name="less_than_sec">Bir saniyeden az</string>
     <string name="second">saniye</string>
+    <string name="seconds">saniye</string>
     <string name="minute">dakika</string>
+    <string name="minutes">dakika</string>
     <string name="hour">saat</string>
+    <string name="hours">saat</string>
     <string name="day">g\u00FCn</string>
+    <string name="days">g\u00FCn</string>
     <string name="month">ay</string>
+    <string name="months">ay</string>
     <string name="year">y\u0131l</string>
+    <string name="years">y\u0131l</string>
     <string name="centuries">Y\u00FCzy\u0131l</string>
     <string name="warning">Uyar\u0131</string>
     <string name="suggestions">\u00D6neriler</string>
@@ -85,9 +91,6 @@
     <string name="sequence_name">\u2022 S\u0131ra ad\u0131</string>
     <string name="sequence_size">\u2022 S\u0131ra boyutu</string>
     <string name="ascending">\u2022 Artan</string>
-    <string name="Day">\u2022 G\u00FCn</string>
-    <string name="Month">\u2022 Ay</string>
-    <string name="Year">\u2022 Y\u0131l</string>
     <string name="separator">\u2022 Ay\u0131r\u0131c\u0131</string>
     <string name="graph">\u2022 Grafik</string>
     <string name="turns">\u2022 D\u00F6n\u00FC\u015Fler</string>
