@@ -51,7 +51,7 @@ class GeneratePasswordFragment : Fragment() {
     private var numbersWithoutAmbChars = ""
     private lateinit var secureRandom: SecureRandom
     
-    companion object {
+    private companion object {
         val uppercaseChars = ('A'..'Z').joinToString("")
         val lowercaseChars = ('a'..'z').joinToString("")
         val numbers = ('0'..'9').joinToString("")

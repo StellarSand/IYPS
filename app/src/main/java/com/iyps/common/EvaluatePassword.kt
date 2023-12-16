@@ -5,7 +5,7 @@ import android.content.Context
 import com.iyps.R
 import com.iyps.databinding.FragmentPasswordBinding
 import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
-import com.iyps.utils.LocaleUtils
+import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.ResultUtils
 import com.nulabinc.zxcvbn.Zxcvbn
 import kotlin.math.log2
@@ -19,52 +19,50 @@ class EvaluatePassword(zxcvbn: Zxcvbn,
     init {
         
         val strength = zxcvbn.measure(password)
+        val crackTimesDisplay = strength.crackTimesDisplay
+        val crackTimeSeconds = strength.crackTimeSeconds
         
-        val tenBCrackTimeString = strength.crackTimesDisplay.offlineFastHashing1e10PerSecond
-        val tenKCrackTimeString = strength.crackTimesDisplay.offlineSlowHashing1e4perSecond
-        val tenCrackTimeString = strength.crackTimesDisplay.onlineNoThrottling10perSecond
-        val hundredCrackTimeString = strength.crackTimesDisplay.onlineThrottling100perHour
+        val tenBCrackTimeString = crackTimesDisplay.offlineFastHashing1e10PerSecond
+        val tenKCrackTimeString = crackTimesDisplay.offlineSlowHashing1e4perSecond
+        val tenCrackTimeString = crackTimesDisplay.onlineNoThrottling10perSecond
+        val hundredCrackTimeString = crackTimesDisplay.onlineThrottling100perHour
         
-        val tenBCrackTimeMilliSeconds =
-            (strength.crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
-        val tenKCrackTimeMilliSeconds =
-            (strength.crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
-        val tenCrackTimeMilliSeconds =
-            (strength.crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
-        val hundredCrackTimeMilliSeconds =
-            (strength.crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
+        val tenBCrackTimeMillis = (crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
+        val tenKCrackTimeMillis = (crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
+        val tenCrackTimeMillis = (crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
+        val hundredCrackTimeMillis = (crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
         
         // Estimated time to crack
         fragmentPasswordBinding.tenBGuessesSubtitle.text =
             resultUtils.replaceCrackTimeStrings(tenBCrackTimeString)
-        val tenBCrackTimeResult = resultUtils.crackTimeResult(tenBCrackTimeMilliSeconds)
-        resultUtils.setStrengthProgressAndText(tenBCrackTimeResult,
+        val tenBCrackTimeScore = resultUtils.crackTimeScore(tenBCrackTimeMillis)
+        resultUtils.setStrengthProgressAndText(tenBCrackTimeScore,
                                                fragmentPasswordBinding.tenBGuessesStrengthMeter,
                                                fragmentPasswordBinding.tenBGuessesStrength)
         
         fragmentPasswordBinding.tenKGuessesSubtitle.text =
             resultUtils.replaceCrackTimeStrings(tenKCrackTimeString)
-        resultUtils.setStrengthProgressAndText(resultUtils.crackTimeResult(tenKCrackTimeMilliSeconds),
+        resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(tenKCrackTimeMillis),
                                                fragmentPasswordBinding.tenKGuessesStrengthMeter,
                                                fragmentPasswordBinding.tenKGuessesStrength)
         
         fragmentPasswordBinding.tenGuessesSubtitle.text =
             resultUtils.replaceCrackTimeStrings(tenCrackTimeString)
-        resultUtils.setStrengthProgressAndText(resultUtils.crackTimeResult(tenCrackTimeMilliSeconds),
+        resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(tenCrackTimeMillis),
                                                fragmentPasswordBinding.tenGuessesStrengthMeter,
                                                fragmentPasswordBinding.tenGuessesStrength)
         
         fragmentPasswordBinding.hundredGuessesSubtitle.text =
             resultUtils.replaceCrackTimeStrings(hundredCrackTimeString)
-        resultUtils.setStrengthProgressAndText(resultUtils.crackTimeResult(hundredCrackTimeMilliSeconds),
+        resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(hundredCrackTimeMillis),
                                                fragmentPasswordBinding.hundredGuessesStrengthMeter,
                                                fragmentPasswordBinding.hundredGuessesStrength)
         
         // Warning
         val localizedFeedback =
-            strength.feedback.withResourceBundle(LocaleUtils.localizedFeedbackResourceBundle(context))
+            strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(context))
         fragmentPasswordBinding.warningSubtitle.text = resultUtils.getWarningText(localizedFeedback,
-                                                                                  tenBCrackTimeResult)
+                                                                                  tenBCrackTimeScore)
         
         // Suggestions
         fragmentPasswordBinding.suggestionsSubtitle.text = resultUtils.getSuggestionsText(localizedFeedback)

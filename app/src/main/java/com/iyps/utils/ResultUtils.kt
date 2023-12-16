@@ -33,24 +33,6 @@ import java.util.concurrent.TimeUnit
 
 class ResultUtils(val context: Context) {
     
-    private val emptyMeterColor = context.resources.getColor(android.R.color.transparent, context.theme)
-    private val worstMeterColor = context.resources.getColor(R.color.worstMeterColor, context.theme)
-    private val weakMeterColor = context.resources.getColor(R.color.weakMeterColor, context.theme)
-    private val mediumMeterColor = context.resources.getColor(R.color.mediumMeterColor, context.theme)
-    private val strongMeterColor = context.resources.getColor(R.color.strongMeterColor, context.theme)
-    private val excellentMeterColor = context.resources.getColor(R.color.excellentMeterColor, context.theme)
-    
-    private val worstString = context.getString(R.string.worst)
-    private val weakString = context.getString(R.string.weak)
-    private val mediumString = context.getString(R.string.medium)
-    private val strongString = context.getString(R.string.strong)
-    private val excellentString = context.getString(R.string.excellent)
-    private val notApplicableString = context.getString(R.string.na)
-    
-    private val worstPassWarning = context.getString(R.string.worst_pass_warning)
-    private val weakPassWarning = context.getString(R.string.weak_pass_warning)
-    private val mediumPassWarning = context.getString(R.string.medium_pass_warning)
-    
     private val dayStringResource = context.getString(R.string.day)
     private val monthStringResource = context.getString(R.string.month)
     private val yearStringResource = context.getString(R.string.year)
@@ -68,6 +50,31 @@ class ResultUtils(val context: Context) {
               "centuries" to context.getString(R.string.centuries))
     
     private val timeStringsRegex = "(\\d+)\\s+(\\w+)".toRegex() // Insert regex meme here
+    
+    // Take days in:
+    // Month = 31, Year = 365
+    private val threeHrsInMillis = TimeUnit.HOURS.toMillis(3)
+    private val oneMonthInMillis = TimeUnit.DAYS.toMillis(31)
+    private val sixMonthsInMillis = TimeUnit.DAYS.toMillis(186)
+    private val fiveYrsInMillis = TimeUnit.DAYS.toMillis(1825)
+    
+    private val emptyMeterColor = context.resources.getColor(android.R.color.transparent, context.theme)
+    private val worstMeterColor = context.resources.getColor(R.color.worstMeterColor, context.theme)
+    private val weakMeterColor = context.resources.getColor(R.color.weakMeterColor, context.theme)
+    private val mediumMeterColor = context.resources.getColor(R.color.mediumMeterColor, context.theme)
+    private val strongMeterColor = context.resources.getColor(R.color.strongMeterColor, context.theme)
+    private val excellentMeterColor = context.resources.getColor(R.color.excellentMeterColor, context.theme)
+    
+    private val worstString = context.getString(R.string.worst)
+    private val weakString = context.getString(R.string.weak)
+    private val mediumString = context.getString(R.string.medium)
+    private val strongString = context.getString(R.string.strong)
+    private val excellentString = context.getString(R.string.excellent)
+    private val naString = context.getString(R.string.na)
+    
+    private val worstPassWarning = context.getString(R.string.worst_pass_warning)
+    private val weakPassWarning = context.getString(R.string.weak_pass_warning)
+    private val mediumPassWarning = context.getString(R.string.medium_pass_warning)
     
     private val patternString = context.getString(R.string.pattern)
     private val orderMagnString = context.getString(R.string.order_of_magn)
@@ -90,12 +97,20 @@ class ResultUtils(val context: Context) {
     private val turnsString = context.getString(R.string.turns)
     private val regexNameString = context.getString(R.string.regex_name)
     
+    private companion object {
+        const val WORST_SCORE = 1
+        const val WEAK_SCORE = 2
+        const val MEDIUM_SCORE = 3
+        const val STRONG_SCORE = 4
+        const val EXCELLENT_SCORE = 5
+    }
+    
     // Replace hardcoded strings from the library for proper language support
     fun replaceCrackTimeStrings(timeToCrackString: String): String {
         
         var replacedString = timeToCrackString
         
-        for ((key, value) in timeStringsReplacementMap) {
+        timeStringsReplacementMap.forEach { (key, value) ->
             if (replacedString.contains(key)) {
                 return replacedString.replace(key, value)
             }
@@ -104,54 +119,37 @@ class ResultUtils(val context: Context) {
         replacedString =
             timeStringsRegex.replace(replacedString) { matchResult ->
                 val quantity = matchResult.groupValues[1]
-                val unit = matchResult.groupValues[2]
-                val baseUnit = if (unit.endsWith("s")) unit.dropLast(1) else unit
-                val replacementPair = timeUnitsReplacementMap[baseUnit] ?: Pair(unit, "${unit}s")
+                val timeUnit = matchResult.groupValues[2]
+                val baseUnit = if (timeUnit.endsWith("s")) timeUnit.dropLast(1) else timeUnit
+                val replacementPair = timeUnitsReplacementMap[baseUnit] ?: Pair(timeUnit, "${timeUnit}s")
                 "$quantity ${if (quantity == "1") replacementPair.first else replacementPair.second}"
             }
         
         return replacedString
     }
     
-    // Check password crack time (custom result)
-    fun crackTimeResult(crackTimeMilliSeconds: Long): String {
-        
-        // Take days in:
-        // Month = 31, Year = 365
-        return when {
-            // Worst = less than/equal to 1 hour
-            crackTimeMilliSeconds <= TimeUnit.MINUTES.toMillis(60) -> "WORST"
-            
-            // Weak = more than 1 hour, less than/equal to 31 days
-            crackTimeMilliSeconds > TimeUnit.MINUTES.toMillis(60)
-            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(31) -> "WEAK"
-            
-            // Medium = more than 31 days, less than/equal to 6 months
-            crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(31)
-            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(186) -> "MEDIUM"
-            
-            // Strong = more than 6 months, less than/equal to 5 years
-            crackTimeMilliSeconds > TimeUnit.DAYS.toMillis(186)
-            && crackTimeMilliSeconds <= TimeUnit.DAYS.toMillis(1825) -> "STRONG"
-            
-            // Excellent = more than 5 years
-            else -> "EXCELLENT"
+    // Custom score
+    fun crackTimeScore(crackTimeMilliSeconds: Long): Int {
+        return when (crackTimeMilliSeconds) {
+            in 0..threeHrsInMillis -> WORST_SCORE
+            in (threeHrsInMillis + 1)..oneMonthInMillis -> WEAK_SCORE
+            in (oneMonthInMillis + 1)..sixMonthsInMillis -> MEDIUM_SCORE
+            in (sixMonthsInMillis + 1)..fiveYrsInMillis -> STRONG_SCORE
+            else -> EXCELLENT_SCORE
         }
     }
     
-    fun setStrengthProgressAndText(timeToCrackResult: String,
+    fun setStrengthProgressAndText(crackTimeScore: Int,
                                    strengthMeter: LinearProgressIndicator,
                                    strengthTextView: MaterialTextView) {
-        val strengthProgTextMap = mapOf("WORST" to Triple(20, worstMeterColor, worstString),
-                                        "WEAK" to Triple(40, weakMeterColor, weakString),
-                                        "MEDIUM" to Triple(60, mediumMeterColor, mediumString),
-                                        "STRONG" to Triple(80, strongMeterColor, strongString),
-                                        "EXCELLENT" to Triple(100, excellentMeterColor, excellentString))
+        val strengthProgTextMap = mapOf(WORST_SCORE to Triple(20, worstMeterColor, worstString),
+                                        WEAK_SCORE to Triple(40, weakMeterColor, weakString),
+                                        MEDIUM_SCORE to Triple(60, mediumMeterColor, mediumString),
+                                        STRONG_SCORE to Triple(80, strongMeterColor, strongString),
+                                        EXCELLENT_SCORE to Triple(100, excellentMeterColor, excellentString))
         
         val (progress, indicatorColor, strengthText) =
-            strengthProgTextMap[timeToCrackResult] ?: Triple(0,
-                                                             emptyMeterColor,
-                                                             notApplicableString)
+            strengthProgTextMap[crackTimeScore] ?: Triple(0, emptyMeterColor, naString)
         
         strengthMeter.apply {
             setIndicatorColor(indicatorColor)
@@ -161,33 +159,22 @@ class ResultUtils(val context: Context) {
     }
     
     fun getWarningText(localizedFeedback: Feedback,
-                       passwordCrackTimeResult: String): String {
+                       crackTimeScore: Int): String {
         return localizedFeedback.warning
             .ifEmpty { // If empty, set to custom warning message
-                when (passwordCrackTimeResult) {
-                    "WORST" -> worstPassWarning // Worst warning
-                    "WEAK" -> weakPassWarning // Weak warning
-                    "MEDIUM" -> mediumPassWarning // Medium warning
-                    else -> notApplicableString // For strong & above
+                when (crackTimeScore) {
+                    WORST_SCORE -> worstPassWarning
+                    WEAK_SCORE -> weakPassWarning
+                    MEDIUM_SCORE -> mediumPassWarning
+                    else -> naString
                 }
             }
     }
     
     fun getSuggestionsText(localizedFeedback: Feedback): CharSequence {
         return buildString {
-            localizedFeedback.suggestions.apply {
-                if (isNotEmpty()) {
-                    forEachIndexed { index, suggestion ->
-                        append("\u2022 $suggestion")
-                        if (index != lastIndex) {
-                            append("\n")
-                        }
-                    }
-                }
-                else {
-                    append(notApplicableString)
-                }
-            }
+            localizedFeedback.suggestions.joinTo(this, "\n") { "\u2022 $it" }
+                    .ifEmpty { append(naString) }
         }
     }
     
@@ -205,11 +192,11 @@ class ResultUtils(val context: Context) {
     
     fun getMatchSequenceText(strength: Strength): CharSequence {
         val matchSequence = strength.sequence
-        val matchesText = StringBuilder()
-        matchSequence.forEachIndexed { index, match ->
-            val pattern = match.pattern
-            
-            matchesText.apply {
+        
+        val matchesText = buildString {
+            matchSequence.forEachIndexed { index, match ->
+                val pattern = match.pattern
+                
                 append("<b>${index + 1}) \"${match.token}\"</b>")
                 append("<br>${patternString}: $pattern")
                 if (matchSequence.size > 1)
@@ -239,7 +226,9 @@ class ResultUtils(val context: Context) {
                         append("<br>${dayString}: ${match.day}")
                         append("<br>${monthString}: ${match.month}")
                         append("<br>${yearString}: ${match.year}")
-                        append("<br>${separatorString}: ${match.separator}")
+                        match.separator.takeIf { it.isNotEmpty() }?.let {
+                            append("<br>$separatorString: $it")
+                        }
                     }
                     
                     Pattern.Spatial -> {
@@ -257,7 +246,7 @@ class ResultUtils(val context: Context) {
             }
         }
         
-        return HtmlCompat.fromHtml(matchesText.toString(), HtmlCompat.FROM_HTML_MODE_COMPACT)
+        return HtmlCompat.fromHtml(matchesText, HtmlCompat.FROM_HTML_MODE_COMPACT)
     }
     
     fun getStatisticsCounts(charSequence: CharSequence): List<Int> {

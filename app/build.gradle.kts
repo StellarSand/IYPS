@@ -72,9 +72,9 @@ dependencies {
     implementation("com.nulab-inc:zxcvbn:1.8.2")
     
     // Navigation components
-    implementation("androidx.navigation:navigation-runtime-ktx:2.7.5")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.5")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.5")
+    implementation("androidx.navigation:navigation-runtime-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
     
     // Fastscroll-kt
     implementation("com.github.StellarSand:AndroidFastScroll-kt:v1.0.3")
