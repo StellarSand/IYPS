@@ -11,6 +11,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.adapters.LicenseItemAdapter
+import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetLicensesBinding
 import com.iyps.models.License
@@ -35,11 +36,9 @@ class LicensesBottomSheet : BottomSheetDialogFragment() {
     }
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        
-        val headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.root)
     
         // Title
-        headerBinding.bottomSheetTitle.setText(R.string.third_party_licenses)
+        BottomSheetHeaderBinding.bind(bottomSheetBinding.root).bottomSheetTitle.text = getString(R.string.third_party_licenses)
     
         licenseList = ArrayList<License>().apply {
     
@@ -64,11 +63,11 @@ class LicensesBottomSheet : BottomSheetDialogFragment() {
                                                                              requireActivity() as MainActivity)
     
         // Cancel
-        bottomSheetBinding.cancelButton.setOnClickListener { dismiss() }
+        BottomSheetFooterBinding.bind(bottomSheetBinding.root).cancelButton.setOnClickListener { dismiss() }
     }
     
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 }

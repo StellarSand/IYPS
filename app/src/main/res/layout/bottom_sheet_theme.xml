@@ -71,19 +71,6 @@
 
     </com.google.android.material.chip.ChipGroup>
 
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/cancel_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:layout_marginEnd="@dimen/margin_16"
-        android:layout_marginTop="@dimen/margin_8"
-        android:layout_marginBottom="@dimen/margin_4"
-        android:paddingBottom="@dimen/margin_8"
-        android:text="@string/cancel"
-        android:clickable="true"
-        android:focusable="true"
-        android:textSize="@dimen/text_17"
-        style="@style/NegativeButtonStyle" />
+    <include layout="@layout/bottom_sheet_footer"/>
 
 </LinearLayout>

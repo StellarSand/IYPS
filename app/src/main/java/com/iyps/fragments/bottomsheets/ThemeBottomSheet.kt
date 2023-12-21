@@ -10,6 +10,7 @@ import androidx.core.view.isVisible
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.R
 import com.iyps.appmanager.ApplicationManager
+import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetThemeBinding
 import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
@@ -29,10 +30,10 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
-        val headerBinding = BottomSheetHeaderBinding.bind(bottomSheetBinding.root)
         val preferenceManager = (requireContext().applicationContext as ApplicationManager).preferenceManager
         
-        headerBinding.bottomSheetTitle.setText(R.string.theme)
+        // Title
+        BottomSheetHeaderBinding.bind(bottomSheetBinding.root).bottomSheetTitle.text = getString(R.string.theme)
         
         // Show "follow system" option only on SDK 29 and above
         bottomSheetBinding.followSystem.isVisible = Build.VERSION.SDK_INT >= 29
@@ -69,12 +70,13 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
             
             }
         }
-    
-        bottomSheetBinding.cancelButton.setOnClickListener { dismiss() }
+        
+        // Cancel
+        BottomSheetFooterBinding.bind(bottomSheetBinding.root).cancelButton.setOnClickListener { dismiss() }
     }
     
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 }
