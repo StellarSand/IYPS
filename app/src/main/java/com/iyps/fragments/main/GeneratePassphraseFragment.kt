@@ -78,7 +78,7 @@ class GeneratePassphraseFragment : Fragment() {
         fragmentBinding.phraseWordsSlider.apply {
             value = preferenceManager.getFloatDefVal5(PHRASE_WORDS)
             fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${value.toInt()}"
-            setSliderThumbColor(requireContext(), this, 3f, value)
+            setSliderThumbColor(this, 3f, value)
             
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
@@ -91,7 +91,7 @@ class GeneratePassphraseFragment : Fragment() {
             
             addOnChangeListener { slider, value, _ ->
                 fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${slider.value.toInt()}"
-                setSliderThumbColor(requireContext(), slider, 3f, value)
+                setSliderThumbColor(slider, 3f, value)
             }
         }
         

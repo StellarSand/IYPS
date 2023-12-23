@@ -100,7 +100,7 @@ class GeneratePasswordFragment : Fragment() {
         fragmentBinding.pwdLengthSlider.apply {
             value = preferenceManager.getFloatDefVal20(PWD_LENGTH)
             fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
-            setSliderThumbColor(requireContext(), this, 5f, value)
+            setSliderThumbColor(this, 5f, value)
             
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
@@ -113,7 +113,7 @@ class GeneratePasswordFragment : Fragment() {
             
             addOnChangeListener { slider, value, _ ->
                 fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${slider.value.toInt()}"
-                setSliderThumbColor(requireContext(), slider, 5f, value)
+                setSliderThumbColor(slider, 5f, value)
             }
         }
         
