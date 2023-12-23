@@ -27,10 +27,10 @@
     <color name="color_onPrimary">#FFFFFF</color>
     <color name="color_primaryContainer">#B7F1B9</color>
     <color name="color_onPrimaryContainer">#002108</color>
-    <color name="color_secondary">#36693E</color>
+    <color name="color_secondary">#516351</color>
     <color name="color_onSecondary">#FFFFFF</color>
-    <color name="color_secondaryContainer">#B7F1B9</color>
-    <color name="color_onSecondaryContainer">#002108</color>
+    <color name="color_secondaryContainer">#D4E8D1</color>
+    <color name="color_onSecondaryContainer">#0F1F11</color>
     <color name="color_tertiary">#39656C</color>
     <color name="color_onTertiary">#FFFFFF</color>
     <color name="color_tertiaryContainer">#BDEAF3</color>
@@ -55,10 +55,10 @@
     <color name="color_onPrimaryFixed">#002108</color>
     <color name="color_primaryFixedDim">#9CD49F</color>
     <color name="color_onPrimaryFixedVariant">#1D5128</color>
-    <color name="color_secondaryFixed">#B7F1B9</color>
-    <color name="color_onSecondaryFixed">#002108</color>
-    <color name="color_secondaryFixedDim">#9CD49F</color>
-    <color name="color_onSecondaryFixedVariant">#1D5128</color>
+    <color name="color_secondaryFixed">#D4E8D1</color>
+    <color name="color_onSecondaryFixed">#0F1F11</color>
+    <color name="color_secondaryFixedDim">#B8CCB5</color>
+    <color name="color_onSecondaryFixedVariant">#3A4B3A</color>
     <color name="color_tertiaryFixed">#BDEAF3</color>
     <color name="color_onTertiaryFixed">#001F24</color>
     <color name="color_tertiaryFixedDim">#A1CED6</color>
@@ -74,9 +74,9 @@
     <color name="color_onPrimary_mediumContrast">#FFFFFF</color>
     <color name="color_primaryContainer_mediumContrast">#4C8052</color>
     <color name="color_onPrimaryContainer_mediumContrast">#FFFFFF</color>
-    <color name="color_secondary_mediumContrast">#194C24</color>
+    <color name="color_secondary_mediumContrast">#364736</color>
     <color name="color_onSecondary_mediumContrast">#FFFFFF</color>
-    <color name="color_secondaryContainer_mediumContrast">#4C8052</color>
+    <color name="color_secondaryContainer_mediumContrast">#677966</color>
     <color name="color_onSecondaryContainer_mediumContrast">#FFFFFF</color>
     <color name="color_tertiary_mediumContrast">#1A4950</color>
     <color name="color_onTertiary_mediumContrast">#FFFFFF</color>
@@ -102,9 +102,9 @@
     <color name="color_onPrimaryFixed_mediumContrast">#FFFFFF</color>
     <color name="color_primaryFixedDim_mediumContrast">#34673B</color>
     <color name="color_onPrimaryFixedVariant_mediumContrast">#FFFFFF</color>
-    <color name="color_secondaryFixed_mediumContrast">#4C8052</color>
+    <color name="color_secondaryFixed_mediumContrast">#677966</color>
     <color name="color_onSecondaryFixed_mediumContrast">#FFFFFF</color>
-    <color name="color_secondaryFixedDim_mediumContrast">#34673B</color>
+    <color name="color_secondaryFixedDim_mediumContrast">#4F614E</color>
     <color name="color_onSecondaryFixedVariant_mediumContrast">#FFFFFF</color>
     <color name="color_tertiaryFixed_mediumContrast">#507B83</color>
     <color name="color_onTertiaryFixed_mediumContrast">#FFFFFF</color>
@@ -121,9 +121,9 @@
     <color name="color_onPrimary_highContrast">#FFFFFF</color>
     <color name="color_primaryContainer_highContrast">#194C24</color>
     <color name="color_onPrimaryContainer_highContrast">#FFFFFF</color>
-    <color name="color_secondary_highContrast">#00290C</color>
+    <color name="color_secondary_highContrast">#162617</color>
     <color name="color_onSecondary_highContrast">#FFFFFF</color>
-    <color name="color_secondaryContainer_highContrast">#194C24</color>
+    <color name="color_secondaryContainer_highContrast">#364736</color>
     <color name="color_onSecondaryContainer_highContrast">#FFFFFF</color>
     <color name="color_tertiary_highContrast">#00272C</color>
     <color name="color_onTertiary_highContrast">#FFFFFF</color>
@@ -149,9 +149,9 @@
     <color name="color_onPrimaryFixed_highContrast">#FFFFFF</color>
     <color name="color_primaryFixedDim_highContrast">#003511</color>
     <color name="color_onPrimaryFixedVariant_highContrast">#FFFFFF</color>
-    <color name="color_secondaryFixed_highContrast">#194C24</color>
+    <color name="color_secondaryFixed_highContrast">#364736</color>
     <color name="color_onSecondaryFixed_highContrast">#FFFFFF</color>
-    <color name="color_secondaryFixedDim_highContrast">#003511</color>
+    <color name="color_secondaryFixedDim_highContrast">#203121</color>
     <color name="color_onSecondaryFixedVariant_highContrast">#FFFFFF</color>
     <color name="color_tertiaryFixed_highContrast">#1A4950</color>
     <color name="color_onTertiaryFixed_highContrast">#FFFFFF</color>
@@ -165,13 +165,7 @@
     <color name="color_surfaceContainerHigh_highContrast">#E5E9E1</color>
     <color name="color_surfaceContainerHighest_highContrast">#E0E4DB</color>
 
-    <color name="color_control_normal">#5E5E5E</color>
-    <color name="color_enabled">#606163</color>
-    <color name="color_disabled">#D4D3DD</color>
-    <color name="color_hint">#B2B2B2</color>
-    <color name="color_card_stroke">#D6D6D6</color>
     <color name="color_scrollbar">#B8B8B8</color>
-    <color name="color_drag_handle">#C0C1C3</color>
     <color name="color_url">#1976D2</color>
 
     <!--Strength meter colors-->

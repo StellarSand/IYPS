@@ -11,6 +11,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.materialswitch.MaterialSwitch
 import com.google.android.material.slider.Slider
 import com.iyps.R
@@ -23,13 +24,15 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_AMB_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_LOWERCASE
 import com.iyps.preferences.PreferenceManager.Companion.PWD_NUMBERS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_LENGTH
-import com.iyps.preferences.PreferenceManager.Companion.PWD_RPT_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPACES
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.UiUtils.Companion.setSliderThumbColor
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.security.SecureRandom
 
 class GeneratePasswordFragment : Fragment() {
@@ -42,7 +45,6 @@ class GeneratePasswordFragment : Fragment() {
     private lateinit var numbersSwitch: MaterialSwitch
     private lateinit var specialCharsSwitch: MaterialSwitch
     private lateinit var avoidAmbCharsSwitch: MaterialSwitch
-    private lateinit var repeatCharsSwitch: MaterialSwitch
     private lateinit var includeSpaceSwitch: MaterialSwitch
     private lateinit var primarySwitchesList: List<MaterialSwitch>
     private lateinit var primarySwitchesPrefMap: Map<MaterialSwitch, String>
@@ -82,7 +84,6 @@ class GeneratePasswordFragment : Fragment() {
         numbersSwitch = fragmentBinding.numbersSwitch
         specialCharsSwitch = fragmentBinding.specialCharsSwitch
         avoidAmbCharsSwitch = fragmentBinding.avoidAmbCharsSwitch
-        repeatCharsSwitch = fragmentBinding.repeatCharsSwitch
         includeSpaceSwitch = fragmentBinding.includeSpacesSwitch
         
         primarySwitchesList = listOf(uppercaseSwitch,
@@ -133,18 +134,14 @@ class GeneratePasswordFragment : Fragment() {
                 }
             }
         }
+        
         avoidAmbCharsSwitch.apply {
             isChecked = preferenceManager.getBoolean(PWD_AMB_CHARS)
             setOnCheckedChangeListener { _, _ ->
                 generatePassword()
             }
         }
-        repeatCharsSwitch.apply {
-            isChecked = preferenceManager.getBoolean(PWD_RPT_CHARS)
-            setOnCheckedChangeListener { _, _ ->
-                generatePassword()
-            }
-        }
+        
         includeSpaceSwitch.apply {
             isChecked = preferenceManager.getBooleanDefValFalse(PWD_SPACES)
             setOnCheckedChangeListener { _, _ ->
@@ -194,63 +191,63 @@ class GeneratePasswordFragment : Fragment() {
     }
     
     private fun generatePassword() {
-        val allChars = buildString {
-            if (uppercaseSwitch.isChecked) {
-                append(
-                    if (avoidAmbCharsSwitch.isChecked) uppercaseWithoutAmbChars.ifEmpty {
-                        // Only generate non-ambiguous chars if not done already.
-                        // This would avoid unnecessary generations everytime this function is called.
-                        getNonAmbChars(uppercaseChars, uppercaseAmbChars).also { uppercaseWithoutAmbChars = it }
-                    }
-                    else uppercaseChars
-                )
-            }
-            if (lowercaseSwitch.isChecked) {
-                append(
-                    if (avoidAmbCharsSwitch.isChecked) lowercaseWithoutAmbChars.ifEmpty {
-                        getNonAmbChars(lowercaseChars, lowercaseAmbChars).also { lowercaseWithoutAmbChars = it }
-                    }
-                    else lowercaseChars
-                )
-            }
-            if (numbersSwitch.isChecked) {
-                append(
-                    if (avoidAmbCharsSwitch.isChecked) numbersWithoutAmbChars.ifEmpty {
-                        getNonAmbChars(numbers, numbersAmbChars).also { numbersWithoutAmbChars = it }
-                    }
-                    else numbers
-                )
-            }
-            if (specialCharsSwitch.isChecked) append(specialChars)
-        }
-        
-        val password = buildString {
-            val length = fragmentBinding.pwdLengthSlider.value.toInt()
-            val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
-            
-            for (i in 0 until length) {
-                if (includeSpaceSwitch.isChecked
-                    && i in 1 until (length - 1) // Avoid spaces at the beginning & end
-                    && secureRandom.nextInt(length + 1) < maxSpaces
-                    && this[i - 1] != ' ') {
-                    append(' ')
-                }
-                else {
-                    val randomIndex = secureRandom.nextInt(allChars.length)
-                    var generatedChar = allChars[randomIndex]
-                    if(!repeatCharsSwitch.isChecked && i > 0) {
-                        while (contains(generatedChar, true)) {
-                            val newIndex = secureRandom.nextInt(allChars.length)
-                            generatedChar = allChars[newIndex]
+        lifecycleScope.launch(Dispatchers.Default) {
+            val allChars = buildString {
+                if (uppercaseSwitch.isChecked) {
+                    append(
+                        if (avoidAmbCharsSwitch.isChecked) uppercaseWithoutAmbChars.ifEmpty {
+                            // Only generate non-ambiguous chars if not done already.
+                            // This would avoid unnecessary generations everytime this function is called.
+                            getNonAmbChars(uppercaseChars,
+                                           uppercaseAmbChars).also { uppercaseWithoutAmbChars = it }
                         }
+                        else uppercaseChars
+                    )
+                }
+                if (lowercaseSwitch.isChecked) {
+                    append(
+                        if (avoidAmbCharsSwitch.isChecked) lowercaseWithoutAmbChars.ifEmpty {
+                            getNonAmbChars(lowercaseChars,
+                                           lowercaseAmbChars).also { lowercaseWithoutAmbChars = it }
+                        }
+                        else lowercaseChars
+                    )
+                }
+                if (numbersSwitch.isChecked) {
+                    append(
+                        if (avoidAmbCharsSwitch.isChecked) numbersWithoutAmbChars.ifEmpty {
+                            getNonAmbChars(numbers, numbersAmbChars).also {
+                                numbersWithoutAmbChars = it
+                            }
+                        }
+                        else numbers
+                    )
+                }
+                if (specialCharsSwitch.isChecked) append(specialChars)
+            }
+            
+            val password = buildString {
+                val length = fragmentBinding.pwdLengthSlider.value.toInt()
+                val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
+                
+                for (i in 0 until length) {
+                    if (includeSpaceSwitch.isChecked
+                        && i in 1 until (length - 1) // Avoid spaces at the beginning & end
+                        && secureRandom.nextInt(length + 1) < maxSpaces
+                        && this[i - 1] != ' ') {
+                        append(' ')
                     }
-                    
-                    append(generatedChar)
+                    else {
+                        val randomIndex = secureRandom.nextInt(allChars.length)
+                        append(allChars[randomIndex])
+                    }
                 }
             }
+            
+            withContext(Dispatchers.Main) {
+                fragmentBinding.pwdGeneratedTextView.text = password
+            }
         }
-        
-        fragmentBinding.pwdGeneratedTextView.text = password
     }
     
     override fun onPause() {
@@ -263,7 +260,6 @@ class GeneratePasswordFragment : Fragment() {
                 }
             }
             setBoolean(PWD_AMB_CHARS, fragmentBinding.avoidAmbCharsSwitch.isChecked)
-            setBoolean(PWD_RPT_CHARS, fragmentBinding.repeatCharsSwitch.isChecked)
             setBoolean(PWD_SPACES, fragmentBinding.includeSpacesSwitch.isChecked)
         }
     }

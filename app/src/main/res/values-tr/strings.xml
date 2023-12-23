@@ -119,7 +119,6 @@
     <string name="share">Payla\u015F</string>
     <string name="customize">\u00D6zelle\u015Ftirme</string>
     <string name="avoid_amb_chars">Belirsiz karakterlerden ka\u00E7\u0131n\u0131n</string>
-    <string name="repeat_chars">Karakterleri tekrarla</string>
     <string name="include_spaces">Bo\u015Fluklar\u0131 dahil edin</string>
 
     <!--Generate passphrase fragment-->
@@ -129,7 +128,9 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="appearance">G\u00F6r\u00FCn\u00FC\u015F</string>
     <string name="theme">Tema</string>
+    <string name="material_you">Material You\n(uygulaman\u0131n yeniden ba\u015Flat\u0131lmas\u0131n\u0131 gerektirir)</string>
     <string name="privacy">Gizlilik</string>
     <string name="block_screenshots">Ekran g\u00F6r\u00FCnt\u00FCs\u00FCn\u00FC engelle</string>
     <string name="incognito_keyboard">Gizli klavye</string>

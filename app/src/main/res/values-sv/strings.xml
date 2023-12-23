@@ -112,7 +112,6 @@
     <string name="share">Andel</string>
     <string name="customize">Anpassa</string>
     <string name="avoid_amb_chars">Undvik tvetydiga tecken</string>
-    <string name="repeat_chars">Upprepa tecken</string>
     <string name="include_spaces">Inkludera utrymmen</string>
 
     <!--Generate passphrase fragment-->
@@ -122,7 +121,9 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="appearance">Utseende</string>
     <string name="theme">Tema</string>
+    <string name="material_you">Material You\n(kr\u00E4ver omstart av app)</string>
     <string name="privacy">Integritet</string>
     <string name="block_screenshots">Blockera sk\u00E4rmdumpar i appen</string>
     <string name="incognito_keyboard">Inkognito tangentbord</string>

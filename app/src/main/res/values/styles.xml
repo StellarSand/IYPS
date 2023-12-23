@@ -70,8 +70,8 @@
         <item name="colorSurfaceContainerHigh">@color/color_surfaceContainerHigh</item>
         <item name="colorSurfaceContainerHighest">@color/color_surfaceContainerHighest</item>
 
-        <item name="android:statusBarColor">@color/color_background</item>
-        <item name="android:navigationBarColor">@color/color_surfaceContainer</item>
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+        <item name="android:navigationBarColor">?attr/colorSurfaceContainer</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetTheme</item>
         <item name="snackbarTextViewStyle">@style/SnackbarTextStyle</item>
     </style>
@@ -79,7 +79,9 @@
     <!--#########################################################################################-->
 
     <!--Medium bold text style-->
-    <style name="MediumBoldText" parent="TextAppearance.Material3.LabelLarge"/>
+    <style name="MediumBoldText" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
 
     <!--#########################################################################################-->
 
@@ -99,13 +101,11 @@
         <item name="chipStrokeWidth">1dp</item>
         <item name="closeIconEndPadding">@dimen/margin_4</item>
         <item name="closeIconStartPadding">@dimen/margin_8</item>
-        <item name="closeIconTint">@color/color_onSurface</item>
         <item name="closeIconSize">24dp</item>
         <item name="chipIconSize">24dp</item>
-        <item name="android:textColor">@color/color_onSurface</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="android:textSize">@dimen/text_16</item>
         <item name="checkedIcon">@drawable/ic_done</item>
-        <item name="checkedIconTint">@color/color_onSurface</item>
     </style>
 
     <!--#########################################################################################-->

@@ -22,7 +22,6 @@
 <resources>
 
     <!--App dark theme-->
-    <style name="AppTheme" parent="BaseAppStyle">
-    </style>
+    <style name="AppTheme" parent="BaseAppStyle"/>
 
 </resources>

@@ -105,7 +105,6 @@
     <string name="share">シェア</string>
     <string name="customize">カスタマイズ</string>
     <string name="avoid_amb_chars">曖昧な文字は避ける</string>
-    <string name="repeat_chars">リピート文字</string>
     <string name="include_spaces">スペースを含む</string>
 
     <!--Generate passphrase fragment-->
@@ -115,7 +114,9 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="appearance">外観</string>
     <string name="theme">テーマ</string>
+    <string name="material_you">マテリアルユー\n(アプリの再起動が必要)</string>
     <string name="privacy">プライバシー</string>
     <string name="block_screenshots">アプリでスクリーンショットをブロック</string>
     <string name="incognito_keyboard">インコグニートキーボード</string>

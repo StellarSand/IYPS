@@ -26,6 +26,7 @@ class PreferenceManager(context: Context) {
     companion object {
         // Shared pref keys
         const val THEME_PREF = "theme"
+        const val MATERIAL_YOU = "material_you"
         const val BLOCK_SS = "block_ss"
         const val INCOG_KEYBOARD = "incog_keyboard"
         const val GEN_RADIO = "gen_radio"
@@ -35,7 +36,6 @@ class PreferenceManager(context: Context) {
         const val PWD_NUMBERS = "pwd_numbers"
         const val PWD_SPEC_CHARS = "pwd_spec_chars"
         const val PWD_AMB_CHARS = "pwd_amb_chars"
-        const val PWD_RPT_CHARS = "pwd_rpt_chars"
         const val PWD_SPACES = "pwd_spaces"
         const val PHRASE_WORDS = "phrase_words"
         const val PHRASE_SEPARATOR = "phrase_separator"

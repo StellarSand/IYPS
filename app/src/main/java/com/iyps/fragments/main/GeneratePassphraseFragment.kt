@@ -31,6 +31,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.slider.Slider
 import com.iyps.R
 import com.iyps.activities.MainActivity
@@ -43,6 +44,9 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.UiUtils.Companion.setSliderThumbColor
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.security.SecureRandom
 
 class GeneratePassphraseFragment : Fragment() {
@@ -147,30 +151,36 @@ class GeneratePassphraseFragment : Fragment() {
     
     fun generatePassphrase() {
         val numberOfWords = fragmentBinding.phraseWordsSlider.value.toInt()
-        val passphrase = buildString {
-            for (i in 0 until numberOfWords) {
-                val dieRollsValues = IntArray(5) { secureRandom.nextInt(6) + 1 } // Rolling a six-sided die five times.
-                val wordKey = dieRollsValues.joinToString("") // Form a string key
-                var word = passphraseWordsMap[wordKey] // Find the word from words list with corresponding key
-                
-                if (fragmentBinding.capitalizeSwitch.isChecked) {
-                    word =
-                        word?.replaceFirstChar { char ->
-                            char.titlecase()
-                        }
-                }
-                
-                append(word)
-                if (i < numberOfWords - 1) {
-                    append(
-                        if (fragmentBinding.separatorDropdownMenu.text.toString() == getString(R.string.spaces)) " "
-                        else fragmentBinding.separatorDropdownMenu.text.toString()
-                    )
+        lifecycleScope.launch(Dispatchers.Default) {
+            val passphrase = buildString {
+                for (i in 0 until numberOfWords) {
+                    val dieRollsValues =
+                        IntArray(5) { secureRandom.nextInt(6) + 1 } // Rolling a six-sided die five times.
+                    val wordKey = dieRollsValues.joinToString("") // Form a string key
+                    var word =
+                        passphraseWordsMap[wordKey] // Find the word from words list with corresponding key
+                    
+                    if (fragmentBinding.capitalizeSwitch.isChecked) {
+                        word =
+                            word?.replaceFirstChar { char ->
+                                char.titlecase()
+                            }
+                    }
+                    
+                    append(word)
+                    if (i < numberOfWords - 1) {
+                        append(
+                            if (fragmentBinding.separatorDropdownMenu.text.toString() == getString(R.string.spaces)) " "
+                            else fragmentBinding.separatorDropdownMenu.text.toString()
+                        )
+                    }
                 }
             }
+            
+            withContext(Dispatchers.Main) {
+                fragmentBinding.phraseGeneratedTextView.text = passphrase
+            }
         }
-        
-        fragmentBinding.phraseGeneratedTextView.text = passphrase
         
     }
     

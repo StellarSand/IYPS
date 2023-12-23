@@ -23,6 +23,6 @@
     android:height="24dp"
     android:viewportWidth="960"
     android:viewportHeight="960"
-    android:tint="@color/color_enabled">
+    android:tint="?attr/colorControlNormal">
     <path android:fillColor="@android:color/white" android:pathData="M160 760q-33 0-56.5-23.5T80 680V280q0-33 23.5-56.5T160 200h640q33 0 56.5 23.5T880 280v400q0 33-23.5 56.5T800 760H160zm0-80h640V280H160v400zm200-40h240q17 0 28.5-11.5T640 600q0-17-11.5-28.5T600 560H360q-17 0-28.5 11.5T320 600q0 17 11.5 28.5T360 640zm-200 40V280v400zm40-160h80v-80h-80v80zm120 0h80v-80h-80v80zm120 0h80v-80h-80v80zm120 0h80v-80h-80v80zm120 0h80v-80h-80v80zM200 400h80v-80h-80v80zm120 0h80v-80h-80v80zm120 0h80v-80h-80v80zm120 0h80v-80h-80v80zm120 0h80v-80h-80v80z"/>
 </vector>

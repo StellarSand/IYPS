@@ -26,10 +26,10 @@
     <color name="color_onPrimary">#003913</color>
     <color name="color_primaryContainer">#1D5128</color>
     <color name="color_onPrimaryContainer">#B7F1B9</color>
-    <color name="color_secondary">#9CD49F</color>
-    <color name="color_onSecondary">#003913</color>
-    <color name="color_secondaryContainer">#1D5128</color>
-    <color name="color_onSecondaryContainer">#B7F1B9</color>
+    <color name="color_secondary">#B8CCB5</color>
+    <color name="color_onSecondary">#243425</color>
+    <color name="color_secondaryContainer">#3A4B3A</color>
+    <color name="color_onSecondaryContainer">#D4E8D1</color>
     <color name="color_tertiary">#A1CED6</color>
     <color name="color_onTertiary">#00363D</color>
     <color name="color_tertiaryContainer">#1F4D54</color>
@@ -54,10 +54,10 @@
     <color name="color_onPrimaryFixed">#002108</color>
     <color name="color_primaryFixedDim">#9CD49F</color>
     <color name="color_onPrimaryFixedVariant">#1D5128</color>
-    <color name="color_secondaryFixed">#B7F1B9</color>
-    <color name="color_onSecondaryFixed">#002108</color>
-    <color name="color_secondaryFixedDim">#9CD49F</color>
-    <color name="color_onSecondaryFixedVariant">#1D5128</color>
+    <color name="color_secondaryFixed">#D4E8D1</color>
+    <color name="color_onSecondaryFixed">#0F1F11</color>
+    <color name="color_secondaryFixedDim">#B8CCB5</color>
+    <color name="color_onSecondaryFixedVariant">#3A4B3A</color>
     <color name="color_tertiaryFixed">#BDEAF3</color>
     <color name="color_onTertiaryFixed">#001F24</color>
     <color name="color_tertiaryFixedDim">#A1CED6</color>
@@ -73,9 +73,9 @@
     <color name="color_onPrimary_mediumContrast">#001B06</color>
     <color name="color_primaryContainer_mediumContrast">#689D6C</color>
     <color name="color_onPrimaryContainer_mediumContrast">#000000</color>
-    <color name="color_secondary_mediumContrast">#A0D8A3</color>
-    <color name="color_onSecondary_mediumContrast">#001B06</color>
-    <color name="color_secondaryContainer_mediumContrast">#689D6C</color>
+    <color name="color_secondary_mediumContrast">#BCD0BA</color>
+    <color name="color_onSecondary_mediumContrast">#0A1A0C</color>
+    <color name="color_secondaryContainer_mediumContrast">#839681</color>
     <color name="color_onSecondaryContainer_mediumContrast">#000000</color>
     <color name="color_tertiary_mediumContrast">#A5D2DB</color>
     <color name="color_onTertiary_mediumContrast">#001A1E</color>
@@ -101,10 +101,10 @@
     <color name="color_onPrimaryFixed_mediumContrast">#001504</color>
     <color name="color_primaryFixedDim_mediumContrast">#9CD49F</color>
     <color name="color_onPrimaryFixedVariant_mediumContrast">#083F19</color>
-    <color name="color_secondaryFixed_mediumContrast">#B7F1B9</color>
-    <color name="color_onSecondaryFixed_mediumContrast">#001504</color>
-    <color name="color_secondaryFixedDim_mediumContrast">#9CD49F</color>
-    <color name="color_onSecondaryFixedVariant_mediumContrast">#083F19</color>
+    <color name="color_secondaryFixed_mediumContrast">#D4E8D1</color>
+    <color name="color_onSecondaryFixed_mediumContrast">#051407</color>
+    <color name="color_secondaryFixedDim_mediumContrast">#B8CCB5</color>
+    <color name="color_onSecondaryFixedVariant_mediumContrast">#293A2A</color>
     <color name="color_tertiaryFixed_mediumContrast">#BDEAF3</color>
     <color name="color_onTertiaryFixed_mediumContrast">#001417</color>
     <color name="color_tertiaryFixedDim_mediumContrast">#A1CED6</color>
@@ -122,7 +122,7 @@
     <color name="color_onPrimaryContainer_highContrast">#000000</color>
     <color name="color_secondary_highContrast">#F0FFEC</color>
     <color name="color_onSecondary_highContrast">#000000</color>
-    <color name="color_secondaryContainer_highContrast">#A0D8A3</color>
+    <color name="color_secondaryContainer_highContrast">#BCD0BA</color>
     <color name="color_onSecondaryContainer_highContrast">#000000</color>
     <color name="color_tertiary_highContrast">#F1FDFF</color>
     <color name="color_onTertiary_highContrast">#000000</color>
@@ -148,10 +148,10 @@
     <color name="color_onPrimaryFixed_highContrast">#000000</color>
     <color name="color_primaryFixedDim_highContrast">#A0D8A3</color>
     <color name="color_onPrimaryFixedVariant_highContrast">#001B06</color>
-    <color name="color_secondaryFixed_highContrast">#BCF5BD</color>
+    <color name="color_secondaryFixed_highContrast">#D8ECD5</color>
     <color name="color_onSecondaryFixed_highContrast">#000000</color>
-    <color name="color_secondaryFixedDim_highContrast">#A0D8A3</color>
-    <color name="color_onSecondaryFixedVariant_highContrast">#001B06</color>
+    <color name="color_secondaryFixedDim_highContrast">#BCD0BA</color>
+    <color name="color_onSecondaryFixedVariant_highContrast">#0A1A0C</color>
     <color name="color_tertiaryFixed_highContrast">#C1EFF7</color>
     <color name="color_onTertiaryFixed_highContrast">#000000</color>
     <color name="color_tertiaryFixedDim_highContrast">#A5D2DB</color>
@@ -163,14 +163,8 @@
     <color name="color_surfaceContainer_highContrast">#1C211C</color>
     <color name="color_surfaceContainerHigh_highContrast">#272B26</color>
     <color name="color_surfaceContainerHighest_highContrast">#313630</color>
-    
-    <color name="color_control_normal">#CAC4D0</color>
-    <color name="color_enabled">#B8B8BD</color>
-    <color name="color_disabled">#3F3F47</color>
-    <color name="color_hint">#9BA0A6</color>
-    <color name="color_card_stroke">#5F6267</color>
+
     <color name="color_scrollbar">#717274</color>
-    <color name="color_drag_handle">#606165</color>
     <color name="color_url">#42A5F5</color>
 
     <!--Strength meter colors-->

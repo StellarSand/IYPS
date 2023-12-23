@@ -25,9 +25,11 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
+import com.google.android.material.color.DynamicColors
 import com.iyps.R
 import com.iyps.inputstream.ResourceFromInputStream
 import com.iyps.preferences.PreferenceManager
+import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
 import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
 import com.nulabinc.zxcvbn.StandardDictionaries
 import com.nulabinc.zxcvbn.StandardKeyboards
@@ -48,44 +50,33 @@ class ApplicationManager : Application() {
     }
     
     private val commonPasswordsResource by lazy {
-        val top200PasswordsStream = resources.openRawResource(R.raw.top_200_2023_passwords)
-        val otherCommonPasswordsStream = resources.openRawResource(R.raw.other_common_passwords)
-        
-        val combinedStream =
-            ByteArrayOutputStream().apply {
-                top200PasswordsStream.copyTo(this)
-                otherCommonPasswordsStream.copyTo(this)
-            }.toByteArray()
-        
-        ResourceFromInputStream(ByteArrayInputStream(combinedStream))
+        ResourceFromInputStream(
+            ByteArrayInputStream(ByteArrayOutputStream().apply {
+                resources.openRawResource(R.raw.top_200_2023_passwords).copyTo(this)
+                resources.openRawResource(R.raw.other_common_passwords).copyTo(this)
+            }.toByteArray())
+        )
     }
     
     private val englishWordsResource by lazy {
-        val englishWordsStream = resources.openRawResource(R.raw.english_words)
-        val effUnrankedStream = resources.openRawResource(R.raw.eff_unranked)
-        
-        val combinedStream =
-            ByteArrayOutputStream().apply {
-                englishWordsStream.copyTo(this)
-                effUnrankedStream.copyTo(this)
-            }.toByteArray()
-        
-        ResourceFromInputStream(ByteArrayInputStream(combinedStream))
+        ResourceFromInputStream(
+            ByteArrayInputStream(ByteArrayOutputStream().apply {
+                resources.openRawResource(R.raw.english_words).copyTo(this)
+                resources.openRawResource(R.raw.eff_unranked).copyTo(this)
+            }.toByteArray())
+        )
     }
     
     private val darkwebPasswordsResource by lazy {
-        val darkwebPasswordsStream = resources.openRawResource(R.raw.darkweb)
-        ResourceFromInputStream(darkwebPasswordsStream)
+        ResourceFromInputStream(resources.openRawResource(R.raw.darkweb))
     }
     
     private val frenchPasswordsResource by lazy {
-        val frenchPasswordsStream = resources.openRawResource(R.raw.richelieu_french)
-        ResourceFromInputStream(frenchPasswordsStream)
+        ResourceFromInputStream(resources.openRawResource(R.raw.richelieu_french))
     }
     
     private val azulPasswordsResource by lazy {
-        val azulPasswordsStream = resources.openRawResource(R.raw.unkown_azul)
-        ResourceFromInputStream(azulPasswordsStream)
+        ResourceFromInputStream(resources.openRawResource(R.raw.unkown_azul))
     }
     
     val zxcvbn: Zxcvbn by lazy {
@@ -117,9 +108,8 @@ class ApplicationManager : Application() {
     
     val passphraseWordsMap by lazy {
         val wordMap = mutableMapOf<String, String>()
-        val effPassphraseWordsStream = resources.openRawResource(R.raw.eff_passphrase_words)
         
-        BufferedReader(InputStreamReader(effPassphraseWordsStream))
+        BufferedReader(InputStreamReader(resources.openRawResource(R.raw.eff_passphrase_words)))
             .useLines { lines ->
                 lines.forEach { line ->
                     val (id, word) = line.split("\t")
@@ -147,6 +137,11 @@ class ApplicationManager : Application() {
             R.id.follow_system -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
             R.id.light -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
             R.id.dark -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
+        }
+        
+        // Material you
+        if (preferenceManager.getBooleanDefValFalse(MATERIAL_YOU)) {
+            DynamicColors.applyToActivitiesIfAvailable(this)
         }
         
     }

@@ -109,7 +109,6 @@
     <string name="share">分享</string>
     <string name="customize">定制</string>
     <string name="avoid_amb_chars">避免使用模棱两可的字符</string>
-    <string name="repeat_chars">重复字符</string>
     <string name="include_spaces">包括空间</string>
 
     <!--Generate passphrase fragment-->
@@ -119,7 +118,9 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="appearance">外观</string>
     <string name="theme">主题</string>
+    <string name="material_you">您的素材\n(需要重新启动应用程序)</string>
     <string name="privacy">隐私权</string>
     <string name="block_screenshots">阻止应用程序中的屏幕截图</string>
     <string name="incognito_keyboard">隐身键盘</string>

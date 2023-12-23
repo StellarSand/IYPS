@@ -21,12 +21,12 @@ package com.iyps.utils
 
 import android.content.Context
 import android.content.res.ColorStateList
+import android.util.TypedValue
 import android.view.View
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.google.android.material.slider.Slider
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
-import com.iyps.R
 
 class UiUtils {
     
@@ -36,12 +36,16 @@ class UiUtils {
                                 slider: Slider,
                                 minValue: Float,
                                 currentValue: Float) {
+            val typedValue = TypedValue()
+            
             val sliderThumbColor =
                 if (currentValue == minValue) {
-                    context.getColor(R.color.color_primary)
+                    context.theme.resolveAttribute(com.google.android.material.R.attr.colorPrimary, typedValue, true)
+                    typedValue.data
                 }
                 else {
-                    context.getColor(R.color.color_onPrimary)
+                    context.theme.resolveAttribute(com.google.android.material.R.attr.colorOnPrimary, typedValue, true)
+                    typedValue.data
                 }
             
             slider.thumbTintList = ColorStateList.valueOf(sliderThumbColor)

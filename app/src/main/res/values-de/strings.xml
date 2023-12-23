@@ -114,7 +114,6 @@
     <string name="share">Teilen Sie</string>
     <string name="customize">Anpassen</string>
     <string name="avoid_amb_chars">Vermeiden Sie zweideutige Zeichen</string>
-    <string name="repeat_chars">Wiederholung von Zeichen</string>
     <string name="include_spaces">R\u00E4ume einbeziehen</string>
 
     <!--Generate passphrase fragment-->
@@ -124,7 +123,9 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="appearance">Aussehen</string>
     <string name="theme">Thema</string>
+    <string name="material_you">Material You\n(app neustart erforderlich)</string>
     <string name="privacy">Datenschutz</string>
     <string name="block_screenshots">Screenshots in der app blockieren</string>
     <string name="incognito_keyboard">Inkognito tastatur</string>

@@ -20,11 +20,13 @@
 package com.iyps.fragments.main
 
 import android.annotation.SuppressLint
+import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.iyps.BuildConfig
 import com.iyps.R
@@ -35,6 +37,7 @@ import com.iyps.fragments.bottomsheets.LicensesBottomSheet
 import com.iyps.fragments.bottomsheets.ThemeBottomSheet
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
+import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
 import com.iyps.utils.IntentUtils.Companion.openURL
 
 class SettingsFragment : Fragment() {
@@ -64,6 +67,17 @@ class SettingsFragment : Fragment() {
             .setOnClickListener {
                 ThemeBottomSheet().show(parentFragmentManager, "ThemeBottomSheet")
             }
+        
+        // Material You
+        fragmentBinding.materialYouSwitch.apply {
+            if (Build.VERSION.SDK_INT >= 31) {
+                isVisible = true
+                isChecked = preferenceManager.getBooleanDefValFalse(MATERIAL_YOU)
+                setOnCheckedChangeListener { _, isChecked ->
+                    preferenceManager.setBoolean(MATERIAL_YOU, isChecked)
+                }
+            }
+        }
         
         // Block screenshots
         fragmentBinding.blockScreenshotsSwitch.apply {

@@ -25,7 +25,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="75dp">
+    android:layout_marginBottom="75dp"
+    android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -43,10 +44,9 @@
             android:layout_marginTop="@dimen/margin_16"
             android:padding="@dimen/margin_20"
             android:background="@drawable/shape_outline"
-            android:backgroundTint="@color/color_surfaceVariant"
+            android:backgroundTint="?attr/colorSurfaceContainerHighest"
             android:gravity="center"
             android:minHeight="50dp"
-            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_20"
             style="@style/MediumBoldText"/>
 
@@ -63,9 +63,9 @@
                 android:layout_marginEnd="@dimen/margin_8"
                 android:paddingVertical="@dimen/margin_12"
                 android:background="@drawable/shape_card_with_ripple"
-                android:backgroundTint="@color/color_primaryContainer"
+                android:backgroundTint="?attr/colorPrimaryContainer"
                 android:src="@drawable/ic_copy"
-                app:tint="@color/color_onPrimaryContainer"
+                app:tint="?attr/colorOnPrimaryContainer"
                 android:contentDescription="@string/copy"/>
 
             <ImageButton
@@ -80,9 +80,9 @@
                 android:layout_marginHorizontal="@dimen/margin_8"
                 android:paddingVertical="@dimen/margin_12"
                 android:background="@drawable/shape_card_with_ripple"
-                android:backgroundTint="@color/color_primaryContainer"
+                android:backgroundTint="?attr/colorPrimaryContainer"
                 android:src="@drawable/ic_regenerate"
-                app:tint="@color/color_onPrimaryContainer"
+                app:tint="?attr/colorOnPrimaryContainer"
                 android:contentDescription="@string/regenerate"/>
 
             <ImageButton
@@ -98,9 +98,9 @@
                 android:layout_marginEnd="@dimen/margin_12"
                 android:paddingVertical="@dimen/margin_12"
                 android:background="@drawable/shape_card_with_ripple"
-                android:backgroundTint="@color/color_primaryContainer"
+                android:backgroundTint="?attr/colorPrimaryContainer"
                 android:src="@drawable/ic_share"
-                app:tint="@color/color_onPrimaryContainer"
+                app:tint="?attr/colorOnPrimaryContainer"
                 android:contentDescription="@string/share"/>
 
         <com.google.android.material.textview.MaterialTextView
@@ -114,7 +114,6 @@
             android:drawableStart="@drawable/ic_customize"
             android:drawablePadding="@dimen/margin_12"
             android:text="@string/customize"
-            android:textColor="@color/color_onSurface"
             android:textSize="@dimen/text_18"
             style="@style/MediumBoldText"/>
 
@@ -128,7 +127,7 @@
             android:paddingStart="@dimen/margin_8"
             android:paddingEnd="@dimen/margin_8"
             android:text="@string/words"
-            android:textColor="@color/color_onSurface"
+            android:textColor="?attr/colorOnSurface"
             android:textSize="@dimen/text_16"/>
 
         <com.google.android.material.slider.Slider
@@ -159,7 +158,7 @@
             android:paddingStart="@dimen/margin_8"
             android:paddingEnd="@dimen/margin_8"
             android:text="@string/separator"
-            android:textColor="@color/color_onSurface"
+            android:textColor="?attr/colorOnSurface"
             android:textSize="@dimen/text_16"/>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -193,7 +192,7 @@
             android:checked="true"
             android:text="@string/capitalize"
             android:textSize="@dimen/text_16"
-            android:textColor="@color/color_onSurface"/>
+            android:textColor="?attr/colorOnSurface"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

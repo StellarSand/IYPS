@@ -35,7 +35,6 @@
         android:text="@string/bottom_sheet_title"
         android:textSize="@dimen/text_18"
         android:layout_gravity="start"
-        android:textColor="@color/color_onSurface"
         style="@style/MediumBoldText"/>
 
 </merge>

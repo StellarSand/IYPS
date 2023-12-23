@@ -110,7 +110,6 @@
     <string name="share">Deel</string>
     <string name="customize">Pas  aan</string>
     <string name="avoid_amb_chars">Vermijd dubbelzinnige tekens</string>
-    <string name="repeat_chars">Tekens herhalen</string>
     <string name="include_spaces">Ruimtes opnemen</string>
 
     <!--Generate passphrase fragment-->
@@ -120,7 +119,9 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="appearance">Uiterlijk</string>
     <string name="theme">Thema</string>
+    <string name="material_you">Materiaal Jij\n(app opnieuw opstarten vereist)</string>
     <string name="privacy">Privacy</string>
     <string name="block_screenshots">Screenshots blokkeren in app</string>
     <string name="incognito_keyboard">Incognito toetsenbord</string>

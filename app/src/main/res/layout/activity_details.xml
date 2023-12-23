@@ -25,7 +25,7 @@
     android:id="@+id/help_coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_background">
+    android:background="?attr/colorSurface">
 
     <include
         layout="@layout/activity_host_fragment"
