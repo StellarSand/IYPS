@@ -45,9 +45,6 @@
     <!--Bottom sheet theme-->
     <style name="BottomSheetTheme" parent="@style/ThemeOverlay.Material3.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
-        <item name="android:backgroundDimAmount">0.50</item>
-        <item name="android:windowEnterAnimation">@anim/fade_in_slide_from_bottom</item>
-        <item name="android:windowExitAnimation">@anim/fade_out_slide_to_bottom</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
     </style>
 

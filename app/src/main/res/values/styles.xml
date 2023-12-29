@@ -92,6 +92,14 @@
 
     <!--#########################################################################################-->
 
+    <!--Base linear progress indicator style-->
+    <style name="ProgressIndicatorStyle" parent="Widget.Material3.LinearProgressIndicator">
+        <item name="trackCornerRadius">@dimen/margin_12</item>
+        <item name="trackThickness">@dimen/margin_65</item>
+    </style>
+
+    <!--#########################################################################################-->
+
     <!--Base theme chip style-->
     <style name="BaseThemeChipStyle" parent="Widget.Material3.Chip.Filter">
         <item name="chipBackgroundColor">@color/chip_bg_color</item>
