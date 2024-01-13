@@ -1,36 +1,32 @@
 /*
- * Copyright (c) 2022-present StellarSand
+ *     Copyright (C) 2022-present StellarSand
  *
- *  This file is part of IYPS.
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
  *
- *  IYPS is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
  *
- *  IYPS is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
 package com.iyps.appmanager
 
 import android.app.Application
 import android.os.Build
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
-import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
-import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import com.google.android.material.color.DynamicColors
 import com.iyps.R
 import com.iyps.inputstream.ResourceFromInputStream
+import com.iyps.models.MultiPwdItem
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
 import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
+import com.iyps.utils.UiUtils.Companion.setAppTheme
 import com.nulabinc.zxcvbn.StandardDictionaries
 import com.nulabinc.zxcvbn.StandardKeyboards
 import com.nulabinc.zxcvbn.Zxcvbn
@@ -120,24 +116,13 @@ class ApplicationManager : Application() {
         wordMap
     }
     
+    var multiPasswordsList = mutableListOf<MultiPwdItem>()
+    
     override fun onCreate() {
         super.onCreate()
         
         // Theme
-        when(preferenceManager.getInt(THEME_PREF)) {
-            
-            0 -> {
-                if (Build.VERSION.SDK_INT >= 29){
-                    AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
-                }
-                else {
-                    AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
-                }
-            }
-            R.id.follow_system -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_FOLLOW_SYSTEM)
-            R.id.light -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
-            R.id.dark -> AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_YES)
-        }
+        setAppTheme(preferenceManager.getInt(THEME_PREF))
         
         // Material you
         if (preferenceManager.getBooleanDefValFalse(MATERIAL_YOU)) {

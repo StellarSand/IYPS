@@ -1,20 +1,18 @@
 /*
- * Copyright (c) 2022-present StellarSand
+ *     Copyright (C) 2022-present StellarSand
  *
- *  This file is part of IYPS.
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
  *
- *  IYPS is free software: you can redistribute it and/or modify
- *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, either version 3 of the License, or
- *  (at your option) any later version.
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
  *
- *  IYPS is distributed in the hope that it will be useful,
- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *  GNU General Public License for more details.
- *
- *  You should have received a copy of the GNU General Public License
- *  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
 package com.iyps.activities
@@ -24,7 +22,6 @@ import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.ViewGroup
-import android.view.WindowManager
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
@@ -37,6 +34,7 @@ import com.iyps.databinding.ActivityMainBinding
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.GEN_RADIO
+import com.iyps.utils.UiUtils.Companion.blockScreenshots
 
 class MainActivity : AppCompatActivity() {
     
@@ -59,13 +57,7 @@ class MainActivity : AppCompatActivity() {
         viewsToAnimate = listOf(activityBinding.generateRadioGroup, activityBinding.generateBottomAppBar)
         
         // Disable screenshots and screen recordings
-        if (preferenceManager.getBoolean(BLOCK_SS)) {
-            window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,
-                            WindowManager.LayoutParams.FLAG_SECURE)
-        }
-        else {
-            window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
-        }
+        blockScreenshots(this, preferenceManager.getBoolean(BLOCK_SS))
         
         selectedItem = savedInstanceState?.getInt("selectedItem") ?: R.id.nav_password
         
@@ -111,25 +103,17 @@ class MainActivity : AppCompatActivity() {
         val currentFragment = navController.currentDestination!!
         
         val navActionsMap =
-            mapOf(Pair(R.id.fileFragment, R.id.nav_password) to R.id.action_fileFragment_to_passwordFragment,
-                  Pair(R.id.generatePasswordFragment, R.id.nav_password) to R.id.action_generatePasswordFragment_to_passwordFragment,
+            mapOf(Pair(R.id.generatePasswordFragment, R.id.nav_password) to R.id.action_generatePasswordFragment_to_passwordFragment,
                   Pair(R.id.generatePassphraseFragment, R.id.nav_password) to R.id.action_generatePassphraseFragment_to_passwordFragment,
                   Pair(R.id.settingsFragment, R.id.nav_password) to R.id.action_settingsFragment_to_passwordFragment,
-                  Pair(R.id.passwordFragment, R.id.nav_file) to R.id.action_passwordFragment_to_fileFragment,
-                  Pair(R.id.generatePasswordFragment, R.id.nav_file) to R.id.action_generatePasswordFragment_to_fileFragment,
-                  Pair(R.id.generatePassphraseFragment, R.id.nav_file) to R.id.action_generatePassphraseFragment_to_fileFragment,
-                  Pair(R.id.settingsFragment, R.id.nav_file) to R.id.action_settingsFragment_to_fileFragment,
                   Pair(R.id.passwordFragment, R.id.nav_settings) to R.id.action_passwordFragment_to_settingsFragment,
-                  Pair(R.id.fileFragment, R.id.nav_settings) to R.id.action_fileFragment_to_settingsFragment,
                   Pair(R.id.generatePasswordFragment, R.id.nav_settings) to R.id.action_generatePasswordFragment_to_settingsFragment,
                   Pair(R.id.generatePassphraseFragment, R.id.nav_settings) to R.id.action_generatePassphraseFragment_to_settingsFragment)
         
         val radioActionsMap =
             mapOf(Pair(R.id.passwordFragment, R.id.radioPassword) to R.id.action_passwordFragment_to_generatePasswordFragment,
-                  Pair(R.id.fileFragment, R.id.radioPassword) to R.id.action_fileFragment_to_generatePasswordFragment,
                   Pair(R.id.settingsFragment, R.id.radioPassword) to R.id.action_settingsFragment_to_generatePasswordFragment,
                   Pair(R.id.passwordFragment, R.id.radioPassphrase) to R.id.action_passwordFragment_to_generatePassphraseFragment,
-                  Pair(R.id.fileFragment, R.id.radioPassphrase) to R.id.action_fileFragment_to_generatePassphraseFragment,
                   Pair(R.id.settingsFragment, R.id.radioPassphrase) to R.id.action_settingsFragment_to_generatePassphraseFragment,
                   Pair(R.id.generatePasswordFragment, R.id.radioPassphrase) to R.id.action_generatePasswordFragment_to_generatePassphraseFragment,
                   Pair(R.id.generatePassphraseFragment, R.id.radioPassword) to R.id.action_generatePassphraseFragment_to_generatePasswordFragment)
@@ -178,7 +162,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-    
     
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)

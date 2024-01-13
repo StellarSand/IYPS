@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present StellarSand
+  ~     Copyright (C) 2022-present StellarSand
   ~
-  ~  This file is part of IYPS.
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
   ~
-  ~  IYPS is free software: you can redistribute it and/or modify
-  ~  it under the terms of the GNU General Public License as published by
-  ~  the Free Software Foundation, either version 3 of the License, or
-  ~  (at your option) any later version.
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
   ~
-  ~  IYPS is distributed in the hope that it will be useful,
-  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~  GNU General Public License for more details.
-  ~
-  ~  You should have received a copy of the GNU General Public License
-  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
 <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -40,9 +38,9 @@
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/generateBottomAppBar"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="@dimen/margin_75"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="@dimen/margin_80"
         android:visibility="gone"
         tools:visibility="visible"/>
 
@@ -51,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="@dimen/margin_100"
         android:background="@drawable/shape_radio_group"
         android:orientation="horizontal"
         android:visibility="gone"
@@ -89,9 +87,10 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_bottom_nav"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="@dimen/margin_80"
         android:layout_gravity="bottom"
         app:itemTextAppearanceActive="@style/NavTextActive"
+        app:labelVisibilityMode="selected"
         app:menu="@menu/menu_bottom_nav"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

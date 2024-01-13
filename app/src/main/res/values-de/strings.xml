@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present StellarSand
+  ~     Copyright (C) 2022-present StellarSand
   ~
-  ~  This file is part of IYPS.
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
   ~
-  ~  IYPS is free software: you can redistribute it and/or modify
-  ~  it under the terms of the GNU General Public License as published by
-  ~  the Free Software Foundation, either version 3 of the License, or
-  ~  (at your option) any later version.
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
   ~
-  ~  IYPS is distributed in the hope that it will be useful,
-  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~  GNU General Public License for more details.
-  ~
-  ~  You should have received a copy of the GNU General Public License
-  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
 <resources>
@@ -34,7 +32,6 @@
 
     <!--Bottom nav view-->
     <string name="password">Passwort</string>
-    <string name="file">Datei</string>
     <string name="generate">Erzeugen Sie</string>
     <string name="passphrase">Passphrase</string>
     <string name="settings">Einstellungen</string>
@@ -100,13 +97,6 @@
 
     <!--#########################################################################################-->
 
-    <!--File fragment-->
-    <string name="select_file_text">
-        W\u00E4hlen Sie eine Textdatei mit mehreren Passw\u00F6rtern aus. Jedes Passwort muss in einer separaten Zeile in der Datei sein.</string>
-    <string name="select_file_btn">Datei aussuchen</string>
-
-    <!--#########################################################################################-->
-
     <!--Generate password fragment-->
     <string name="details">Details</string>
     <string name="copy">Kopieren</string>
@@ -146,6 +136,15 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Abbrechen</string>
+    <string name="done">Erledigt</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">Testen Sie mehrere Passw\u00F6rter</string>
+    <string name="add">Hinzuf\u00FCgen</string>
+    <string name="select_file">Datei aussuchen</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">Mehrere Passw\u00F6rter hinzuf\u00FCgen</string>
 
     <!--Theme-->
     <string name="follow_system">System verfolgen</string>

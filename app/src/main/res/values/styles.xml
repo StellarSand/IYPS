@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present StellarSand
+  ~     Copyright (C) 2022-present StellarSand
   ~
-  ~  This file is part of IYPS.
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
   ~
-  ~  IYPS is free software: you can redistribute it and/or modify
-  ~  it under the terms of the GNU General Public License as published by
-  ~  the Free Software Foundation, either version 3 of the License, or
-  ~  (at your option) any later version.
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
   ~
-  ~  IYPS is distributed in the hope that it will be useful,
-  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~  GNU General Public License for more details.
-  ~
-  ~  You should have received a copy of the GNU General Public License
-  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
 <resources>
@@ -94,7 +92,7 @@
 
     <!--Base linear progress indicator style-->
     <style name="ProgressIndicatorStyle" parent="Widget.Material3.LinearProgressIndicator">
-        <item name="trackCornerRadius">@dimen/margin_12</item>
+        <item name="trackCornerRadius">@dimen/margin_8</item>
         <item name="trackThickness">@dimen/margin_65</item>
     </style>
 
@@ -128,11 +126,22 @@
         <item name="cornerSize">@dimen/margin_16</item>
     </style>
 
+    <!--Bottom sheet buttons-->
     <style name="NegativeButtonStyle" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:paddingStart">@dimen/margin_16</item>
         <item name="android:paddingEnd">@dimen/margin_20</item>
         <item name="android:gravity">center</item>
         <item name="icon">@drawable/ic_cancel</item>
+        <item name="iconSize">18dp</item>
+        <item name="iconPadding">@dimen/margin_4</item>
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:paddingStart">@dimen/margin_16</item>
+        <item name="android:paddingEnd">@dimen/margin_20</item>
+        <item name="android:gravity">center</item>
+        <item name="icon">@drawable/ic_done</item>
         <item name="iconSize">18dp</item>
         <item name="iconPadding">@dimen/margin_4</item>
         <item name="android:textSize">@dimen/text_16</item>

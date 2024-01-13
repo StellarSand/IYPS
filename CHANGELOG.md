@@ -1,14 +1,22 @@
 # CHANGELOG
 
-All notable changes to this project will be documented in this file.
 
+## v1.5.0
+- Added random passphrase generator.
+- Improved spaces inclusion in password generation.
+- Enhanced password dictionaries.
+- Added Material You theme for Android 12 and above.
+- Prevent duplicate notifications on copy for Android 13 and above.
+- Fixed some strings not translating.
+- Improved time unit translations to fix pluralization errors.
+- Fixed wrong characters in Turkish translation.
+- Added Chinese translation.
 
 
 ## v1.4.6
 - Added random password generator.
 - Fixed estimated time to crack not translating.
-- Added Turkish (by [Stablelover0](https://github.com/Stablelover0)) and Swedish translations.
-
+- Added Turkish (by [thestablelover](https://github.com/thestablelover)) and Swedish translations.
 
 
 ## v1.4.3
@@ -17,13 +25,11 @@ All notable changes to this project will be documented in this file.
 - Improved French translations (by [Amiralgaby](https://github.com/Amiralgaby)).
 
 
-
 ## v1.4.2
 - Show more details for passwords.
 - Fixed back navigation.
 - Added option to prevent screenshots in app.
 - Added option for incognito keyboard.
-
 
 
 ## v1.4.0
@@ -35,10 +41,8 @@ All notable changes to this project will be documented in this file.
 - Improved Italian (by [gdonisi](https://github.com/gdonisi)) and French (by [Amiralgaby](https://github.com/Amiralgaby)) translations.
 
 
-
 ## v1.2.0
 - Test multiple passwords from a text file
-
 
 
 ## v1.1.0
@@ -46,17 +50,14 @@ All notable changes to this project will be documented in this file.
 - Time to crack now has proper language support
 
 
-
 ## v1.0.2
 - Implemented scoring system
-
 
 
 ## v1.0.1
 - Fixed incorrect information displayed in some cases
 - Clear clipboard
 - Improved German translation (by [toXel](https://github.com/toXel))
-
 
 
 ## v1.0.0

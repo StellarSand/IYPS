@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present StellarSand
+  ~     Copyright (C) 2022-present StellarSand
   ~
-  ~  This file is part of IYPS.
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
   ~
-  ~  IYPS is free software: you can redistribute it and/or modify
-  ~  it under the terms of the GNU General Public License as published by
-  ~  the Free Software Foundation, either version 3 of the License, or
-  ~  (at your option) any later version.
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
   ~
-  ~  IYPS is distributed in the hope that it will be useful,
-  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~  GNU General Public License for more details.
-  ~
-  ~  You should have received a copy of the GNU General Public License
-  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
 <resources>
@@ -30,7 +28,6 @@
 
     <!--Bottom nav view-->
     <string name="password">Wachtwoord</string>
-    <string name="file">Bestand</string>
     <string name="generate">Genereren</string>
     <string name="passphrase">Passphrase</string>
     <string name="settings">Instellingen</string>
@@ -96,13 +93,6 @@
 
     <!--#########################################################################################-->
 
-    <!--File fragment-->
-    <string name="select_file_text">
-        Selecteer een tekstbestand met meerdere wachtwoorden. Elk wachtwoord moet op een afzonderlijke regel in het bestand staan.</string>
-    <string name="select_file_btn">Selecteer bestand</string>
-
-    <!--#########################################################################################-->
-
     <!--Generate password fragment-->
     <string name="details">Details</string>
     <string name="copy">Kopie</string>
@@ -142,6 +132,15 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Annuleren</string>
+    <string name="done">Gedaan</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">Meerdere wachtwoorden testen</string>
+    <string name="add">Voeg toe</string>
+    <string name="select_file">Selecteer bestand</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">Meerdere wachtwoorden toevoegen</string>
 
     <!--Theme-->
     <string name="follow_system">Systeem volgen</string>

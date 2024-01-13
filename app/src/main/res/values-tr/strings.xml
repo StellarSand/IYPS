@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present StellarSand
+  ~     Copyright (C) 2022-present StellarSand
   ~
-  ~  This file is part of IYPS.
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
   ~
-  ~  IYPS is free software: you can redistribute it and/or modify
-  ~  it under the terms of the GNU General Public License as published by
-  ~  the Free Software Foundation, either version 3 of the License, or
-  ~  (at your option) any later version.
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
   ~
-  ~  IYPS is distributed in the hope that it will be useful,
-  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~  GNU General Public License for more details.
-  ~
-  ~  You should have received a copy of the GNU General Public License
-  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
 <resources>
@@ -40,7 +38,6 @@
 
     <!--Bottom nav view-->
     <string name="password">\u015Eifre</string>
-    <string name="file">Dosya</string>
     <string name="generate">Olu\u015Fturmak</string>
     <string name="passphrase">Parola</string>
     <string name="settings">Ayarlar</string>
@@ -106,12 +103,6 @@
 
     <!--#########################################################################################-->
 
-    <!--File fragment-->
-    <string name="select_file_text">Bir metin dosyas\u0131 se\u00E7in, bu dosyada birden fazla \u015Fifre olmal\u0131d\u0131r. Her \u015Fifre dosyada ayr\u0131 bir sat\u0131rda olmal\u0131d\u0131r.</string>
-    <string name="select_file_btn">Dosya se\u00E7</string>
-
-    <!--#########################################################################################-->
-
     <!--Generate password fragment-->
     <string name="details">Detaylar</string>
     <string name="copy">Anla\u015F\u0131ld\u0131</string>
@@ -151,6 +142,15 @@
 
     <!--Bottom sheet-->
     <string name="cancel">\u0130ptal et</string>
+    <string name="done">Bitti</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">Birden fazla parolay\u0131 test edin</string>
+    <string name="add">Ekle</string>
+    <string name="select_file">Dosya se\u00E7</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">Birden fazla parola ekleme</string>
 
     <!--Theme-->
     <string name="follow_system">Sistemi takip et</string>

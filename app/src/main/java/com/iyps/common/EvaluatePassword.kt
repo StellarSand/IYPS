@@ -1,9 +1,26 @@
+/*
+ *     Copyright (C) 2022-present StellarSand
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 package com.iyps.common
 
 import android.annotation.SuppressLint
 import android.content.Context
 import com.iyps.R
-import com.iyps.databinding.FragmentPasswordBinding
+import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
 import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.ResultUtils
@@ -12,7 +29,7 @@ import kotlin.math.log2
 
 class EvaluatePassword(zxcvbn: Zxcvbn,
                        password: CharSequence,
-                       fragmentPasswordBinding: FragmentPasswordBinding,
+                       fragmentBinding: FragmentTestPasswordBinding,
                        context: Context,
                        resultUtils: ResultUtils) {
     
@@ -33,62 +50,62 @@ class EvaluatePassword(zxcvbn: Zxcvbn,
         val hundredCrackTimeMillis = (crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
         
         // Estimated time to crack
-        fragmentPasswordBinding.tenBGuessesSubtitle.text =
+        fragmentBinding.tenBGuessesSubtitle.text =
             resultUtils.replaceCrackTimeStrings(tenBCrackTimeString)
         val tenBCrackTimeScore = resultUtils.crackTimeScore(tenBCrackTimeMillis)
         resultUtils.setStrengthProgressAndText(tenBCrackTimeScore,
-                                               fragmentPasswordBinding.tenBGuessesStrengthMeter,
-                                               fragmentPasswordBinding.tenBGuessesStrength)
+                                               fragmentBinding.tenBGuessesStrengthMeter,
+                                               fragmentBinding.tenBGuessesStrength)
         
-        fragmentPasswordBinding.tenKGuessesSubtitle.text =
+        fragmentBinding.tenKGuessesSubtitle.text =
             resultUtils.replaceCrackTimeStrings(tenKCrackTimeString)
         resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(tenKCrackTimeMillis),
-                                               fragmentPasswordBinding.tenKGuessesStrengthMeter,
-                                               fragmentPasswordBinding.tenKGuessesStrength)
+                                               fragmentBinding.tenKGuessesStrengthMeter,
+                                               fragmentBinding.tenKGuessesStrength)
         
-        fragmentPasswordBinding.tenGuessesSubtitle.text =
+        fragmentBinding.tenGuessesSubtitle.text =
             resultUtils.replaceCrackTimeStrings(tenCrackTimeString)
         resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(tenCrackTimeMillis),
-                                               fragmentPasswordBinding.tenGuessesStrengthMeter,
-                                               fragmentPasswordBinding.tenGuessesStrength)
+                                               fragmentBinding.tenGuessesStrengthMeter,
+                                               fragmentBinding.tenGuessesStrength)
         
-        fragmentPasswordBinding.hundredGuessesSubtitle.text =
+        fragmentBinding.hundredGuessesSubtitle.text =
             resultUtils.replaceCrackTimeStrings(hundredCrackTimeString)
         resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(hundredCrackTimeMillis),
-                                               fragmentPasswordBinding.hundredGuessesStrengthMeter,
-                                               fragmentPasswordBinding.hundredGuessesStrength)
+                                               fragmentBinding.hundredGuessesStrengthMeter,
+                                               fragmentBinding.hundredGuessesStrength)
         
         // Warning
         val localizedFeedback =
             strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(context))
-        fragmentPasswordBinding.warningSubtitle.text = resultUtils.getWarningText(localizedFeedback,
-                                                                                  tenBCrackTimeScore)
+        fragmentBinding.warningSubtitle.text = resultUtils.getWarningText(localizedFeedback,
+                                                                          tenBCrackTimeScore)
         
         // Suggestions
-        fragmentPasswordBinding.suggestionsSubtitle.text = resultUtils.getSuggestionsText(localizedFeedback)
+        fragmentBinding.suggestionsSubtitle.text = resultUtils.getSuggestionsText(localizedFeedback)
         
         // Guesses
         val guesses = strength.guesses
-        fragmentPasswordBinding.guessesSubtitle.text = resultUtils.getGuessesText(guesses)
+        fragmentBinding.guessesSubtitle.text = resultUtils.getGuessesText(guesses)
         
         // Order of magnitude of guesses
-        fragmentPasswordBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
+        fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
         
         // Entropy
         @SuppressLint("SetTextI18n")
-        fragmentPasswordBinding.entropySubtitle.text = "${log2(guesses).formatToTwoDecimalPlaces()} ${context.getString(R.string.bits)}"
+        fragmentBinding.entropySubtitle.text = "${log2(guesses).formatToTwoDecimalPlaces()} ${context.getString(R.string.bits)}"
         
         // Match sequence
-        fragmentPasswordBinding.matchSequenceSubtitle.text = resultUtils.getMatchSequenceText(strength)
+        fragmentBinding.matchSequenceSubtitle.text = resultUtils.getMatchSequenceText(strength)
         
         // Statistics
         val statsList = resultUtils.getStatisticsCounts(password)
-        fragmentPasswordBinding.lengthText.text = statsList[0].toString()
-        fragmentPasswordBinding.uppercaseText.text = statsList[1].toString()
-        fragmentPasswordBinding.lowercaseText.text = statsList[2].toString()
-        fragmentPasswordBinding.numbersText.text = statsList[3].toString()
-        fragmentPasswordBinding.specialCharsText.text = statsList[4].toString()
-        fragmentPasswordBinding.spacesText.text = statsList[5].toString()
+        fragmentBinding.lengthText.text = statsList[0].toString()
+        fragmentBinding.uppercaseText.text = statsList[1].toString()
+        fragmentBinding.lowercaseText.text = statsList[2].toString()
+        fragmentBinding.numbersText.text = statsList[3].toString()
+        fragmentBinding.specialCharsText.text = statsList[4].toString()
+        fragmentBinding.spacesText.text = statsList[5].toString()
     }
     
 }

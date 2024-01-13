@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present StellarSand
+  ~     Copyright (C) 2022-present StellarSand
   ~
-  ~  This file is part of IYPS.
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
   ~
-  ~  IYPS is free software: you can redistribute it and/or modify
-  ~  it under the terms of the GNU General Public License as published by
-  ~  the Free Software Foundation, either version 3 of the License, or
-  ~  (at your option) any later version.
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
   ~
-  ~  IYPS is distributed in the hope that it will be useful,
-  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~  GNU General Public License for more details.
-  ~
-  ~  You should have received a copy of the GNU General Public License
-  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
 <resources>
@@ -35,7 +33,6 @@
 
     <!--Bottom nav view-->
     <string name="password">Mot de passe</string>
-    <string name="file">Dossier</string>
     <string name="generate">G\u00E9n\u00E9rer</string>
     <string name="passphrase">Phrase de passe</string>
     <string name="settings">Param\u00E8tres</string>
@@ -101,13 +98,6 @@
 
     <!--#########################################################################################-->
 
-    <!--File fragment-->
-    <string name="select_file_text">
-        S\u00E9lectionnez un fichier texte avec plusieurs mots de passe. Chaque mot de passe doit \u00EAtre sur une ligne distincte dans le fichier.</string>
-    <string name="select_file_btn">Choisir le dossier</string>
-
-    <!--#########################################################################################-->
-
     <!--Generate password fragment-->
     <string name="details">Des d\u00E9tails</string>
     <string name="copy">Copie</string>
@@ -147,6 +137,15 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Annuler</string>
+    <string name="done">Termin\u00E9</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">Tester plusieurs mots de passe</string>
+    <string name="add">Ajouter</string>
+    <string name="select_file">Choisir le dossier</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">Ajouter plusieurs mots de passe</string>
 
     <!--Theme-->
     <string name="follow_system">Th\u00E8me du syst\u00E8me</string>

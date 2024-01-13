@@ -1,3 +1,20 @@
+/*
+ *     Copyright (C) 2022-present StellarSand
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, either version 3 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 package com.iyps.fragments.bottomsheets
 
 import android.os.Build
@@ -5,7 +22,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.isVisible
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.R
@@ -14,6 +30,7 @@ import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetThemeBinding
 import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
+import com.iyps.utils.UiUtils.Companion.setAppTheme
 
 class ThemeBottomSheet : BottomSheetDialogFragment() {
     
@@ -44,7 +61,7 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
             // Default checked chip
             if (preferenceManager.getInt(THEME_PREF) == 0) {
                 if (Build.VERSION.SDK_INT >= 29) {
-                    preferenceManager.setInt(THEME_PREF, R.id.follow_system)
+                    preferenceManager.setInt(THEME_PREF, R.id.followSystem)
                 }
                 else {
                     preferenceManager.setInt(THEME_PREF, R.id.light)
@@ -56,23 +73,14 @@ class ThemeBottomSheet : BottomSheetDialogFragment() {
             setOnCheckedStateChangeListener { _, checkedIds ->
                 val checkedChip = checkedIds.first()
                 preferenceManager.setInt(THEME_PREF, checkedChip)
-                when (checkedChip) {
-                    R.id.follow_system ->
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-                
-                    R.id.light ->
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                
-                    R.id.dark ->
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                }
+                setAppTheme(checkedChip)
                 dismiss()
             
             }
         }
         
         // Cancel
-        BottomSheetFooterBinding.bind(bottomSheetBinding.root).cancelButton.setOnClickListener { dismiss() }
+        BottomSheetFooterBinding.bind(bottomSheetBinding.root).cancelBtn.setOnClickListener { dismiss() }
     }
     
     override fun onDestroyView() {

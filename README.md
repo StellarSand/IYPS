@@ -30,7 +30,7 @@ Two things that should always be strong: Coffee ☕ and Passwords 🔑.
 In our digital age, where data breaches and hacks have skyrocketed, robust passwords are vital for safeguarding our online accounts. Using a password manager like [Bitwarden](https://bitwarden.com/) or [KeePass](https://keepass.info/) is strongly recommended for storing and generating unique, strong passwords.
 <br>However, if you choose not to use a password manager (seriously though, consider using one), validating the strength of your passwords is crucial. 
  
- This app analyzes password patterns, predicts potential cracking times, and offers helpful suggestions for maximizing security. Additionally, it features a random password generator that is configurable. Being entirely offline ensures that your passwords remain exclusively yours.
+ This app analyzes password patterns, predicts potential cracking times, and offers helpful suggestions for maximizing security. Additionally, it features a random password & passphrase generator that is configurable. Being entirely offline ensures that your passwords remain exclusively yours.
 
 
 
@@ -41,7 +41,7 @@ In our digital age, where data breaches and hacks have skyrocketed, robust passw
 - Supports both light and dark theme
 - No ads
 - No collection of personal data
-- Supported languages: English, Dutch, French, German, Italian, Japanese, Spanish, Swedish, Turkish
+- Supported languages: English, Chinese, Dutch, French, German, Italian, Japanese, Spanish, Swedish, Turkish
 
 
 
@@ -66,10 +66,12 @@ height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 alt="Get it on GitHub"
 height="80">](https://github.com/StellarSand/IYPS/releases/latest)
 
+**NOTE**: The Google Play account is not owned by me.
+
 
 
 ## Changelog
-All notable changes to this project will be documented in the [changelog](https://github.com/StellarSand/IYPS/blob/master/CHANGELOG.md).
+All notable changes are documented in the [changelog](https://github.com/StellarSand/IYPS/blob/master/CHANGELOG.md).
 
 
 
@@ -100,7 +102,7 @@ New pull requests can be submitted [here](https://github.com/StellarSand/IYPS/pu
 
 
 ## Credits
-- [parveshnarwal](https://github.com/parveshnarwal) for uploading the app on Google Play and previously co-leading the development.
+- [parveshnarwal](https://github.com/parveshnarwal) for publishing the app on Google Play and previously co-leading the development.
 - [SecLists](https://github.com/danielmiessler/SecLists) for some of the password dictionaries.
 - [EFF](https://www.eff.org) for publishing their wordlist to generate random passphrases.
 - [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) for making this app better.

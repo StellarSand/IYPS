@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present StellarSand
+  ~     Copyright (C) 2022-present StellarSand
   ~
-  ~  This file is part of IYPS.
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
   ~
-  ~  IYPS is free software: you can redistribute it and/or modify
-  ~  it under the terms of the GNU General Public License as published by
-  ~  the Free Software Foundation, either version 3 of the License, or
-  ~  (at your option) any later version.
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
   ~
-  ~  IYPS is distributed in the hope that it will be useful,
-  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~  GNU General Public License for more details.
-  ~
-  ~  You should have received a copy of the GNU General Public License
-  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
 <resources>
@@ -33,7 +31,6 @@
 
     <!--Bottom nav view-->
     <string name="password">L\u00F6senord</string>
-    <string name="file">Fil</string>
     <string name="generate">Generera</string>
     <string name="passphrase">L\u00F6senfras</string>
     <string name="settings">Inst\u00E4llningar</string>
@@ -99,12 +96,6 @@
 
     <!--#########################################################################################-->
 
-    <!--File fragment-->
-    <string name="select_file_text">V\u00E4lj en textfil med flera l\u00F6senord. Varje l\u00F6senord m\u00E5ste finnas p\u00E5 en separat rad i filen.</string>
-    <string name="select_file_btn">V\u00E4lj fil</string>
-
-    <!--#########################################################################################-->
-
     <!--Generate password fragment-->
     <string name="details">Detaljer</string>
     <string name="copy">Kopia</string>
@@ -144,6 +135,15 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Avbryt</string>
+    <string name="done">Klar</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">Testa flera l\u00F6senord</string>
+    <string name="add">L\u00E4gg till</string>
+    <string name="select_file">V\u00E4lj fil</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">L\u00E4gg till flera l\u00F6senord</string>
 
     <!--Theme-->
     <string name="follow_system">F\u00F6lj systemet</string>

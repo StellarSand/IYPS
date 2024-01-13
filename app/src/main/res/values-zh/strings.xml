@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--
-  ~ Copyright (c) 2022-present StellarSand
+  ~     Copyright (C) 2022-present StellarSand
   ~
-  ~  This file is part of IYPS.
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
   ~
-  ~  IYPS is free software: you can redistribute it and/or modify
-  ~  it under the terms of the GNU General Public License as published by
-  ~  the Free Software Foundation, either version 3 of the License, or
-  ~  (at your option) any later version.
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
   ~
-  ~  IYPS is distributed in the hope that it will be useful,
-  ~  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~  GNU General Public License for more details.
-  ~
-  ~  You should have received a copy of the GNU General Public License
-  ~  along with IYPS.  If not, see <https://www.gnu.org/licenses/>.
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
 <resources>
@@ -30,7 +28,6 @@
 
     <!--Bottom nav view-->
     <string name="password">密码</string>
-    <string name="file">文件</string>
     <string name="generate">生成</string>
     <string name="passphrase">密码</string>
     <string name="settings">设置</string>
@@ -96,12 +93,6 @@
 
     <!--#########################################################################################-->
 
-    <!--File fragment-->
-    <string name="select_file_text">选择一个包含多个密码的文本文件。每个密码必须在文件中单独一行。</string>
-    <string name="select_file_btn">选择文件</string>
-
-    <!--#########################################################################################-->
-
     <!--Generate password fragment-->
     <string name="details">详细信息</string>
     <string name="copy">复制</string>
@@ -141,6 +132,15 @@
 
     <!--Bottom sheet-->
     <string name="cancel">取消</string>
+    <string name="done">已完成</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">测试多个密码</string>
+    <string name="add">添加</string>
+    <string name="select_file">选择文件</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">添加多个密码</string>
 
     <!--Theme-->
     <string name="follow_system">遵循系统</string>
