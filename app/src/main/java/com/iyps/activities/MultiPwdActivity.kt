@@ -17,31 +17,45 @@
 
 package com.iyps.activities
 
-import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
-import com.iyps.adapters.MultiPwdAdapter
+import androidx.core.view.MenuProvider
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import com.iyps.R
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.ActivityMultiPwdBinding
-import com.iyps.models.MultiPwdItem
 import com.iyps.preferences.PreferenceManager
+import com.iyps.preferences.PreferenceManager.Companion.GRID_VIEW
+import com.iyps.preferences.PreferenceManager.Companion.SORT_ASC
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
-import me.stellarsand.android.fastscroll.FastScrollerBuilder
 
-class MultiPwdActivity : AppCompatActivity(), MultiPwdAdapter.OnItemClickListener {
+class MultiPwdActivity : AppCompatActivity(), MenuProvider {
     
     private lateinit var activityBinding: ActivityMultiPwdBinding
-    private lateinit var multiplePwdList: List<MultiPwdItem>
     private lateinit var appManager: ApplicationManager
+    private lateinit var navController: NavController
+    private lateinit var preferenceManager: PreferenceManager
+    var isGridView = false
+    var isAscSort = false
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        addMenuProvider(this)
+        onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
         activityBinding = ActivityMultiPwdBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
         
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.multi_pwd_nav_host) as NavHostFragment
+        navController = navHostFragment.navController
         appManager = applicationContext as ApplicationManager
-        multiplePwdList = appManager.multiPasswordsList.sortedBy { it.passwordLine }
-        val preferenceManager = appManager.preferenceManager
+        preferenceManager = appManager.preferenceManager
+        isGridView = preferenceManager.getBoolean(GRID_VIEW, defValue = false)
+        isAscSort = preferenceManager.getBoolean(SORT_ASC)
         
         // Disable screenshots and screen recordings
         blockScreenshots(this, preferenceManager.getBoolean(PreferenceManager.BLOCK_SS))
@@ -52,21 +66,51 @@ class MultiPwdActivity : AppCompatActivity(), MultiPwdAdapter.OnItemClickListene
         }
         
         supportActionBar?.setDisplayShowTitleEnabled(false)
-        
-        activityBinding.recyclerView.apply {
-            adapter = MultiPwdAdapter(multiplePwdList, this@MultiPwdActivity)
-            FastScrollerBuilder(this).build()
+    }
+    
+    override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.menu_multi_pwd, menu)
+        menu.findItem(R.id.menu_view).apply {
+            if (!isGridView) setIcon(R.drawable.ic_view_grid)
+            else setIcon(R.drawable.ic_view_list)
         }
     }
     
-    // On click
-    override fun onItemClick(position: Int) {
-        startActivity(Intent(this, DetailsActivity::class.java)
-                          .putExtra("PwdLine", multiplePwdList[position].passwordLine))
+    override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+        
+        when (menuItem.itemId) {
+            
+            R.id.menu_view -> {
+                isGridView = !isGridView
+                if (!isGridView) menuItem.setIcon(R.drawable.ic_view_grid)
+                else menuItem.setIcon(R.drawable.ic_view_list)
+                navController.navigate(R.id.action_multiPwdFragment_self)
+            }
+            
+            R.id.menu_sort -> {
+                isAscSort = !isAscSort
+                navController.navigate(R.id.action_multiPwdFragment_self)
+            }
+            
+        }
+        
+        return true
+    }
+    
+    // On back pressed
+    private val onBackPressedCallback = object : OnBackPressedCallback(true) {
+        override fun handleOnBackPressed() {
+            finish()
+        }
     }
     
     override fun onDestroy() {
         super.onDestroy()
+        preferenceManager.apply {
+            setBoolean(GRID_VIEW, isGridView)
+            setBoolean(SORT_ASC, isAscSort)
+        }
         appManager.multiPasswordsList.clear()
     }
 }

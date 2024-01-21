@@ -94,6 +94,12 @@
 
     <!--#########################################################################################-->
 
+    <!--Multi password activity-->
+    <string name="view">Vista</string>
+    <string name="sort">Ordinamento</string>
+
+    <!--#########################################################################################-->
+
     <!--Generate password fragment-->
     <string name="details">Dettagli</string>
     <string name="copy">Copia</string>

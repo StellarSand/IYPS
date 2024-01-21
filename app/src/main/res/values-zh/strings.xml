@@ -93,6 +93,12 @@
 
     <!--#########################################################################################-->
 
+    <!--Multi password activity-->
+    <string name="view">查看</string>
+    <string name="sort">分类</string>
+
+    <!--#########################################################################################-->
+
     <!--Generate password fragment-->
     <string name="details">详细信息</string>
     <string name="copy">复制</string>

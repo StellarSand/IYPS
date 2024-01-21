@@ -88,6 +88,12 @@
 
     <!--#########################################################################################-->
 
+    <!--Multi password activity-->
+    <string name="view">表示</string>
+    <string name="sort">ソート</string>
+
+    <!--#########################################################################################-->
+
     <!--Generate password fragment-->
     <string name="details">詳細</string>
     <string name="copy">コピー</string>

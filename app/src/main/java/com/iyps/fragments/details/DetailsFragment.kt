@@ -73,7 +73,6 @@ class DetailsFragment : Fragment() {
                          resultUtils = ResultUtils(requireContext()))
     }
     
-    // Clear clipboard immediately when fragment destroyed
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

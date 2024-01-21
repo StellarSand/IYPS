@@ -74,7 +74,7 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Password length slider
         fragmentBinding.phraseWordsSlider.apply {
-            value = preferenceManager.getFloatDefVal5(PHRASE_WORDS)
+            value = preferenceManager.getFloat(PHRASE_WORDS, defValue = 5f)
             fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${value.toInt()}"
             setSliderThumbColor(this, 3f, value)
             

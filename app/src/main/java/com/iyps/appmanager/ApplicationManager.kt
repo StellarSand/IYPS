@@ -125,7 +125,7 @@ class ApplicationManager : Application() {
         setAppTheme(preferenceManager.getInt(THEME_PREF))
         
         // Material you
-        if (preferenceManager.getBooleanDefValFalse(MATERIAL_YOU)) {
+        if (preferenceManager.getBoolean(MATERIAL_YOU, defValue = false)) {
             DynamicColors.applyToActivitiesIfAvailable(this)
         }
         

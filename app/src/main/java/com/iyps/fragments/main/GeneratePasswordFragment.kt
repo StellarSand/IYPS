@@ -115,7 +115,7 @@ class GeneratePasswordFragment : Fragment() {
         
         // Password length slider
         fragmentBinding.pwdLengthSlider.apply {
-            value = preferenceManager.getFloatDefVal20(PWD_LENGTH)
+            value = preferenceManager.getFloat(PWD_LENGTH)
             fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
             setSliderThumbColor(this, 5f, value)
             
@@ -160,7 +160,7 @@ class GeneratePasswordFragment : Fragment() {
         }
         
         includeSpaceSwitch.apply {
-            isChecked = preferenceManager.getBooleanDefValFalse(PWD_SPACES)
+            isChecked = preferenceManager.getBoolean(PWD_SPACES, defValue = false)
             setOnCheckedChangeListener { _, _ ->
                 generatePassword()
             }

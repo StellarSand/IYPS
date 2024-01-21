@@ -70,7 +70,7 @@ class SettingsFragment : Fragment() {
         fragmentBinding.materialYouSwitch.apply {
             if (Build.VERSION.SDK_INT >= 31) {
                 isVisible = true
-                isChecked = preferenceManager.getBooleanDefValFalse(MATERIAL_YOU)
+                isChecked = preferenceManager.getBoolean(MATERIAL_YOU, defValue = false)
                 setOnCheckedChangeListener { _, isChecked ->
                     preferenceManager.setBoolean(MATERIAL_YOU, isChecked)
                 }

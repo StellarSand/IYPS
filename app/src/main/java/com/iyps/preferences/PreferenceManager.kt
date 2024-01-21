@@ -20,13 +20,12 @@ package com.iyps.preferences
 import android.content.Context
 
 class PreferenceManager(context: Context) {
-
+    
     companion object {
         // Shared pref keys
         const val THEME_PREF = "theme"
-        const val MATERIAL_YOU = "material_you"
-        const val BLOCK_SS = "block_ss"
-        const val INCOG_KEYBOARD = "incog_keyboard"
+        const val GRID_VIEW = "grid_view"
+        const val SORT_ASC = "sort_asc"
         const val GEN_RADIO = "gen_radio"
         const val PWD_LENGTH = "pwd_length"
         const val PWD_UPPERCASE = "pwd_uppercase"
@@ -38,47 +37,45 @@ class PreferenceManager(context: Context) {
         const val PHRASE_WORDS = "phrase_words"
         const val PHRASE_SEPARATOR = "phrase_separator"
         const val PHRASE_CAPITALIZE = "phrase_capitalize"
+        const val MATERIAL_YOU = "material_you"
+        const val BLOCK_SS = "block_ss"
+        const val INCOG_KEYBOARD = "incog_keyboard"
     }
     
     private val sharedPreferences =
         context.getSharedPreferences("com.iyps_preferences", Context.MODE_PRIVATE)
-
+    
     fun getInt(key: String): Int {
         return sharedPreferences.getInt(key, 0)
     }
-
+    
     fun setInt(key: String, integer: Int) {
-        val editor = sharedPreferences.edit()
-        editor.putInt(key, integer)
-        editor.apply()
+        sharedPreferences.edit().apply {
+            putInt(key, integer)
+            apply()
+        }
     }
     
-    fun getFloatDefVal20(key: String): Float {
-        return sharedPreferences.getFloat(key, 20f)
-    }
-    
-    fun getFloatDefVal5(key: String): Float {
-        return sharedPreferences.getFloat(key, 5f)
+    fun getFloat(key: String, defValue: Float = 20f): Float {
+        return sharedPreferences.getFloat(key, defValue)
     }
     
     fun setFloat(key: String, float: Float) {
-        val editor = sharedPreferences.edit()
-        editor.putFloat(key, float)
-        editor.apply()
+        sharedPreferences.edit().apply {
+            putFloat(key, float)
+            apply()
+        }
     }
     
-    fun getBoolean(key: String): Boolean {
-        return sharedPreferences.getBoolean(key, true)
-    }
-    
-    fun getBooleanDefValFalse(key: String): Boolean {
-        return sharedPreferences.getBoolean(key, false)
+    fun getBoolean(key: String, defValue: Boolean = true): Boolean {
+        return sharedPreferences.getBoolean(key, defValue)
     }
     
     fun setBoolean(key: String, boolean: Boolean) {
-        val editor = sharedPreferences.edit()
-        editor.putBoolean(key, boolean)
-        editor.apply()
+        sharedPreferences.edit().apply {
+            putBoolean(key, boolean)
+            apply()
+        }
     }
     
     fun getString(key: String): String? {
@@ -86,9 +83,10 @@ class PreferenceManager(context: Context) {
     }
     
     fun setString(key: String, string: String) {
-        val editor = sharedPreferences.edit()
-        editor.putString(key, string)
-        editor.apply()
+        sharedPreferences.edit().apply {
+            putString(key, string)
+            apply()
+        }
     }
-
+    
 }
