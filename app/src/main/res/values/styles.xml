@@ -94,6 +94,17 @@
     <style name="ProgressIndicatorStyle" parent="Widget.Material3.LinearProgressIndicator">
         <item name="trackCornerRadius">@dimen/margin_8</item>
         <item name="trackThickness">@dimen/margin_65</item>
+        <item name="trackColor">?attr/colorSecondaryContainer</item>
+        <item name="trackStopIndicatorSize">0dp</item>
+    </style>
+
+    <!--#########################################################################################-->
+
+    <!--Base slider style-->
+    <style name="SliderStyle" parent="Widget.Material3.Slider">
+        <item name="android:stepSize">1.0</item>
+        <item name="tickVisible">false</item>
+        <item name="labelBehavior">gone</item>
     </style>
 
     <!--#########################################################################################-->

@@ -46,7 +46,6 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.UiUtils.Companion.showSnackbar
-import com.iyps.utils.UiUtils.Companion.setSliderThumbColor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -117,7 +116,6 @@ class GeneratePasswordFragment : Fragment() {
         fragmentBinding.pwdLengthSlider.apply {
             value = preferenceManager.getFloat(PWD_LENGTH)
             fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
-            setSliderThumbColor(this, 5f, value)
             
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
@@ -128,9 +126,8 @@ class GeneratePasswordFragment : Fragment() {
                 
             })
             
-            addOnChangeListener { slider, value, _ ->
-                fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${slider.value.toInt()}"
-                setSliderThumbColor(slider, 5f, value)
+            addOnChangeListener { _, value, _ ->
+                fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
             }
         }
         

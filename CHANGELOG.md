@@ -1,7 +1,7 @@
 # CHANGELOG
 
 
-## v1.5.0
+## v1.5.0 (upcoming release)
 - Added random passphrase generator.
 - Improved spaces inclusion in password generation.
 - Enhanced password dictionaries.

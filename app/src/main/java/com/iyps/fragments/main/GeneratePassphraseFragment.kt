@@ -41,7 +41,6 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.UiUtils.Companion.showSnackbar
-import com.iyps.utils.UiUtils.Companion.setSliderThumbColor
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -76,7 +75,6 @@ class GeneratePassphraseFragment : Fragment() {
         fragmentBinding.phraseWordsSlider.apply {
             value = preferenceManager.getFloat(PHRASE_WORDS, defValue = 5f)
             fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${value.toInt()}"
-            setSliderThumbColor(this, 3f, value)
             
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
@@ -87,9 +85,8 @@ class GeneratePassphraseFragment : Fragment() {
                 
             })
             
-            addOnChangeListener { slider, value, _ ->
-                fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${slider.value.toInt()}"
-                setSliderThumbColor(slider, 3f, value)
+            addOnChangeListener { _, value, _ ->
+                fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${value.toInt()}"
             }
         }
         
@@ -155,8 +152,7 @@ class GeneratePassphraseFragment : Fragment() {
                     val dieRollsValues =
                         IntArray(5) { secureRandom.nextInt(6) + 1 } // Rolling a six-sided die five times.
                     val wordKey = dieRollsValues.joinToString("") // Form a string key
-                    var word =
-                        passphraseWordsMap[wordKey] // Find the word from words list with corresponding key
+                    var word = passphraseWordsMap[wordKey] // Find the word from words list with corresponding key
                     
                     if (fragmentBinding.capitalizeSwitch.isChecked) {
                         word =

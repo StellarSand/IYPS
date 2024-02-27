@@ -38,7 +38,6 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     private var _binding: FragmentMultiPwdBinding? = null
     private val fragmentBinding get() = _binding!!
     private lateinit var multiplePwdList: List<MultiPwdItem>
-    private lateinit var appManager: ApplicationManager
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -49,11 +48,11 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     }
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        appManager = requireContext().applicationContext as ApplicationManager
+        val appManager = requireContext().applicationContext as ApplicationManager
         val multiPwdActivity = requireActivity() as MultiPwdActivity
         multiplePwdList =
-            if (multiPwdActivity.isAscSort) appManager.multiPasswordsList.sortedBy { it.passwordLine }
-            else appManager.multiPasswordsList.sortedByDescending { it.passwordLine }
+            if (multiPwdActivity.isAscSort) appManager.multiPasswordsList.sortedBy { it.passwordLine.lowercase() }
+            else appManager.multiPasswordsList.sortedByDescending { it.passwordLine.lowercase() }
         
         fragmentBinding.recyclerView.apply {
             adapter = MultiPwdAdapter(multiplePwdList, this@MultiPwdFragment)

@@ -18,14 +18,11 @@
 package com.iyps.utils
 
 import android.app.Activity
-import android.content.res.ColorStateList
 import android.os.Build
 import android.view.View
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import com.google.android.material.color.MaterialColors
-import com.google.android.material.slider.Slider
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import com.iyps.R
@@ -59,20 +56,6 @@ class UiUtils {
             else {
                 activity.window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
             }
-        }
-        
-        fun setSliderThumbColor(slider: Slider,
-                                minValue: Float,
-                                currentValue: Float) {
-            val sliderThumbColor =
-                if (currentValue == minValue) {
-                    MaterialColors.getColor(slider, com.google.android.material.R.attr.colorPrimary)
-                }
-                else {
-                    MaterialColors.getColor(slider, com.google.android.material.R.attr.colorOnPrimary)
-                }
-            
-            slider.thumbTintList = ColorStateList.valueOf(sliderThumbColor)
         }
         
         fun showSnackbar(coordinatorLayout: CoordinatorLayout,
