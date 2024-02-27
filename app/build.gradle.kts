@@ -57,16 +57,16 @@ android {
 
 dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
+    implementation("com.google.android.material:material:1.12.0-alpha03")
     implementation("androidx.core:core-ktx:1.12.0")
     
     // zxcvbn4j
     implementation("com.nulab-inc:zxcvbn:1.8.2")
     
     // Navigation components
-    implementation("androidx.navigation:navigation-runtime-ktx:2.7.6")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.6")
+    implementation("androidx.navigation:navigation-runtime-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     
     // Fastscroll-kt
     implementation("com.github.StellarSand:AndroidFastScroll-kt:v1.0.3")
