@@ -1,0 +1,31 @@
+[versions]
+androidGradle = "8.3.0"
+androidKotlin = "1.9.22"
+compileSdk = "34"
+minSdk = "23"
+targetSdk = "34"
+versionCode = "150"
+versionName = "1.5.0"
+appcompat = "1.6.1"
+coreKtx = "1.12.0"
+material = "1.12.0-alpha03"
+navigationKtx = "2.7.7"
+zxcvbn = "1.8.2"
+androidfastscrollKt = "v1.0.3"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+androidx-navigation-runtime-ktx = { module = "androidx.navigation:navigation-runtime-ktx", version.ref = "navigationKtx" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationKtx" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationKtx" }
+zxcvbn = { module = "com.nulab-inc:zxcvbn", version.ref = "zxcvbn" }
+androidFastScrollKt = { module = "com.github.StellarSand:AndroidFastScroll-kt", version.ref = "androidfastscrollKt" }
+
+[bundles]
+navigation = ["androidx-navigation-runtime-ktx", "androidx-navigation-fragment-ktx", "androidx-navigation-ui-ktx"]
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradle" }
+android-kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "androidKotlin" }

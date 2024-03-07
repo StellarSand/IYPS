@@ -16,8 +16,8 @@
  */
 
 plugins {
-    id("com.android.application")
-    id("kotlin-android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.kotlin)
 }
 
 kotlin {
@@ -26,14 +26,14 @@ kotlin {
 
 android {
     namespace = "com.iyps"
-    compileSdk = 34
+    compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {
         applicationId = "com.iyps"
-        minSdk = 23
-        targetSdk = 34
-        versionCode = 150
-        versionName = "1.5.0"
+        minSdk = libs.versions.minSdk.get().toInt()
+        targetSdk = libs.versions.targetSdk.get().toInt()
+        versionCode = libs.versions.versionCode.get().toInt()
+        versionName = libs.versions.versionName.get()
     }
     
     buildTypes {
@@ -56,18 +56,16 @@ android {
 }
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.12.0-alpha03")
-    implementation("androidx.core:core-ktx:1.12.0")
-    
-    // zxcvbn4j
-    implementation("com.nulab-inc:zxcvbn:1.8.2")
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.material)
     
     // Navigation components
-    implementation("androidx.navigation:navigation-runtime-ktx:2.7.7")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
-    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation(libs.bundles.navigation)
+    
+    // zxcvbn4j
+    implementation(libs.zxcvbn)
     
     // Fastscroll-kt
-    implementation("com.github.StellarSand:AndroidFastScroll-kt:v1.0.3")
+    implementation(libs.androidFastScrollKt)
 }
