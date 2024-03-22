@@ -94,7 +94,6 @@
     <style name="ProgressIndicatorStyle" parent="Widget.Material3.LinearProgressIndicator">
         <item name="trackCornerRadius">@dimen/margin_8</item>
         <item name="trackThickness">@dimen/margin_65</item>
-        <item name="trackColor">?attr/colorSecondaryContainer</item>
         <item name="trackStopIndicatorSize">0dp</item>
     </style>
 
