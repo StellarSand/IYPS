@@ -1,12 +1,13 @@
 # CHANGELOG
 
 
-## v1.5.0 (upcoming release)
+## v1.5.0
 - Added random passphrase generator.
 - Improved spaces inclusion in password generation.
 - Enhanced password dictionaries.
 - Added Material You theme for Android 12 and above.
 - Prevent duplicate notifications on copy for Android 13 and above.
+- Added view & sort options in lists.
 - Fixed some strings not translating.
 - Improved time unit translations to fix pluralization errors.
 - Fixed wrong characters in Turkish translation.
@@ -16,7 +17,7 @@
 ## v1.4.6
 - Added random password generator.
 - Fixed estimated time to crack not translating.
-- Added Turkish (by [thestablelover](https://github.com/thestablelover)) and Swedish translations.
+- Added Turkish (by [mikropsoft](https://github.com/mikropsoft)) and Swedish translations.
 
 
 ## v1.4.3

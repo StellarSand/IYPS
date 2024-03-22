@@ -1,0 +1,10 @@
+- Aggiunto generatore di passphrase casuali.
+- Migliorata l'inclusione degli spazi nella generazione delle password.
+- Dizionari delle password migliorati.
+- Aggiunto il tema Material You per Android 12 e versioni successive.
+- Prevenzione delle notifiche duplicate sulla copia per Android 13 e versioni successive.
+- Aggiunte opzioni di visualizzazione e ordinamento negli elenchi.
+- Corrette alcune stringhe che non venivano tradotte.
+- Migliorate le traduzioni delle unità di tempo per correggere gli errori di pluralizzazione.
+- Corretti i caratteri errati nella traduzione in turco.
+- Aggiunta la traduzione in cinese.

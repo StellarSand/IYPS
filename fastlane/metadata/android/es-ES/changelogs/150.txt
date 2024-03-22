@@ -1,0 +1,10 @@
+- Se ha añadido un generador aleatorio de frases de contraseña.
+- Mejora de la inclusión de espacios en la generación de contraseñas.
+- Diccionarios de contraseñas mejorados.
+- Añadido el tema Material You para Android 12 y superiores.
+- Prevención de notificaciones duplicadas en la copia para Android 13 y superiores.
+- Añadidas opciones de vista y ordenación en listas.
+- Corregidas algunas cadenas que no se traducían.
+- Mejoradas las traducciones de unidades de tiempo para corregir errores de pluralización.
+- Corregidos caracteres erróneos en la traducción al turco.
+- Añadida traducción al chino.
