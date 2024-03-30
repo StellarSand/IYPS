@@ -3,7 +3,8 @@
 
 
 ## v1.5.1 (F-Droid only)
-- Nothing changed. Fix for F-Droid automated builds.
+- Absolutely nothing has changed. Just a fix for F-Droid automated builds.
+- Check out [v1.5.0](#v150) for the actual changes since v1.4.6
 
 
 
