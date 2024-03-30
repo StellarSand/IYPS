@@ -26,14 +26,14 @@ kotlin {
 
 android {
     namespace = "com.iyps"
-    compileSdk = libs.versions.compileSdk.get().toInt()
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.iyps"
-        minSdk = libs.versions.minSdk.get().toInt()
-        targetSdk = libs.versions.targetSdk.get().toInt()
-        versionCode = libs.versions.versionCode.get().toInt()
-        versionName = libs.versions.versionName.get()
+        minSdk = 23
+        targetSdk = 34
+        versionCode = 151
+        versionName = "1.5.1"
     }
     
     buildTypes {

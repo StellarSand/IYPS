@@ -1,6 +1,12 @@
 # CHANGELOG
 
 
+
+## v1.5.1 (F-Droid only)
+- Nothing changed. Fix for F-Droid automated builds.
+
+
+
 ## v1.5.0
 - Added random passphrase generator.
 - Improved spaces inclusion in password generation.

@@ -36,7 +36,7 @@ In our digital age, where data breaches and hacks have skyrocketed, robust passw
 
 ## Features
 - Fully open source
-- Material design 3
+- Material design 3 & Material You
 - Completely offline
 - Supports both light and dark theme
 - No ads
