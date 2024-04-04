@@ -37,12 +37,12 @@
 
     <!--Password fragment-->
     <string name="test_your_password">Prova la tua password</string>
-    <string name="ten_b_guesses_per_sec">10B ipotesi/secondo</string>
-    <string name="ten_k_guesses_per_sec">10k ipotesi/secondo</string>
-    <string name="ten_guesses_per_sec">10 ipotesi/secondo</string>
-    <string name="hundred_guesses_per_hour">100 guesses/ora</string>
+    <string name="ten_b_guesses_per_sec">10B tentativi/secondo</string>
+    <string name="ten_k_guesses_per_sec">10k tentativi/secondo</string>
+    <string name="ten_guesses_per_sec">10 tentativi/secondo</string>
+    <string name="hundred_guesses_per_hour">100 tentativi/ora</string>
     <string name="strength">Sicurezza</string>
-    <string name="worst">Peggiore</string>
+    <string name="worst">Pessima</string>
     <string name="weak">Debole</string>
     <string name="medium">Media</string>
     <string name="strong">Forte</string>
@@ -62,12 +62,12 @@
     <string name="year">anno</string>
     <string name="years">anni</string>
     <string name="centuries">Secoli</string>
-    <string name="warning">Avvertimento</string>
+    <string name="warning">Attenzione</string>
     <string name="suggestions">Suggerimenti</string>
-    <string name="est_guesses_to_crack">Stime di indovinelli da decifrare</string>
-    <string name="order_of_magn">Ordine di grandezza delle ipotesi</string>
+    <string name="est_guesses_to_crack">Stima del numero di tentativi per decifrare</string>
+    <string name="order_of_magn">Ordine di grandezza dei tentativi</string>
     <string name="entropy">Entropia</string>
-    <string name="bits">bits</string>
+    <string name="bits">bit</string>
     <string name="match_sequence">Sequenza di corrispondenza</string>
     <string name="pattern">\u2022 Schema</string>
     <string name="dict_name">\u2022 Nome del dizionario</string>
@@ -103,11 +103,11 @@
     <!--Generate password fragment-->
     <string name="details">Dettagli</string>
     <string name="copy">Copia</string>
-    <string name="regenerate">Rigenerare</string>
+    <string name="regenerate">Rigenera</string>
     <string name="share">Condividi</string>
-    <string name="customize">Personalizzare</string>
-    <string name="avoid_amb_chars">Evitare i caratteri ambigui</string>
-    <string name="include_spaces">Includere spazi</string>
+    <string name="customize">Personalizza</string>
+    <string name="avoid_amb_chars">Evita i caratteri ambigui</string>
+    <string name="include_spaces">Includi spazi</string>
 
     <!--Generate passphrase fragment-->
     <string name="words">Parole</string>
@@ -118,9 +118,9 @@
     <!--Settings fragment-->
     <string name="appearance">Aspetto</string>
     <string name="theme">Tema</string>
-    <string name="material_you">Materiale Tu\n(richiede il riavvio dell\'app)</string>
+    <string name="material_you">Material You\n(richiede il riavvio dell\'app)</string>
     <string name="privacy">Privacy</string>
-    <string name="block_screenshots">Bloccare gli screenshot nelle app</string>
+    <string name="block_screenshots">Blocca gli screenshot nell'app</string>
     <string name="incognito_keyboard">Tastiera in incognito</string>
     <string name="about">Info</string>
     <string name="privacy_policy">Politica sulla Riservatezza</string>
@@ -132,8 +132,8 @@
 
     <!--Custom warnings-->
     <string name="worst_pass_warning">La password \u00E8 troppo semplice da indovinare.</string>
-    <string name="weak_pass_warning">La password può essere facilmente decifrata.</string>
-    <string name="medium_pass_warning">La password non \u00E8 abbastanza sicura.</string>
+    <string name="weak_pass_warning">La password pu\u00F3 essere facilmente indovinata.</string>
+    <string name="medium_pass_warning">La password pu\u00F3 essere pi\u00F9 sicura.</string>
 
     <!--#########################################################################################-->
 
