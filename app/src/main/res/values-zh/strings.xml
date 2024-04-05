@@ -27,7 +27,7 @@
     <string name="app_version">版本</string>
 
     <!--Bottom nav view-->
-    <string name="password">密码</string>
+    <string name="password">测试</string>
     <string name="generate">生成</string>
     <string name="passphrase">密码</string>
     <string name="settings">设置</string>
@@ -36,19 +36,19 @@
 
     <!--Password fragment-->
     <string name="test_your_password">测试密码</string>
-    <string name="ten_b_guesses_per_sec">10B 猜测/秒</string>
-    <string name="ten_k_guesses_per_sec">10k 猜测/秒</string>
-    <string name="ten_guesses_per_sec">10 猜测/秒</string>
-    <string name="hundred_guesses_per_hour">100 猜测/小时</string>
-    <string name="strength">实力</string>
-    <string name="worst">最差</string>
-    <string name="weak">弱</string>
-    <string name="medium">中型</string>
-    <string name="strong">强大</string>
-    <string name="excellent">优秀</string>
+    <string name="ten_b_guesses_per_sec">每秒 󠁅10 󠁅亿次猜测</string>
+    <string name="ten_k_guesses_per_sec">每秒 󠁅1 万次猜测</string>
+    <string name="ten_guesses_per_sec">每秒 󠁅10 次猜测</string>
+    <string name="hundred_guesses_per_hour">每秒 󠁅100 次猜测</string>
+    <string name="strength">强度</string>
+    <string name="worst">不堪一击</string>
+    <string name="weak">孱弱平庸</string>
+    <string name="medium">中规中矩</string>
+    <string name="strong">固若金汤</string>
+    <string name="excellent">无懈可击</string>
     <string name="est_time_to_crack">预计破解时间</string>
-    <string name="less_than_sec">不到一秒</string>
-    <string name="second">附议</string>
+    <string name="less_than_sec">不到 󠁅1 秒</string>
+    <string name="second">秒</string>
     <string name="seconds">秒钟</string>
     <string name="minute">分钟</string>
     <string name="minutes">分钟</string>
@@ -60,56 +60,56 @@
     <string name="months">个月</string>
     <string name="year">年</string>
     <string name="years">年</string>
-    <string name="centuries">世纪</string>
+    <string name="centuries">超过 1 百年</string>
     <string name="warning">警告</string>
     <string name="suggestions">建议</string>
-    <string name="est_guesses_to_crack">估计破解的猜测</string>
-    <string name="order_of_magn">猜测的数量级</string>
+    <string name="est_guesses_to_crack">猜测次数（估计）</string>
+    <string name="order_of_magn">猜测次数的数量级（估计）</string>
     <string name="entropy">熵</string>
-    <string name="bits">钻头</string>
+    <string name="bits">比特</string>
     <string name="match_sequence">匹配序列</string>
-    <string name="pattern">\u2022 图案</string>
-    <string name="dict_name">\u2022 词典名称</string>
+    <string name="pattern">\u2022 模式</string>
+    <string name="dict_name">\u2022 字典名称</string>
     <string name="rank">\u2022 等级</string>
-    <string name="reversed">\u2022 逆转</string>
+    <string name="reversed">\u2022 是否反转</string>
     <string name="substitutions">\u2022 替换</string>
-    <string name="base_token">\u2022 基本令牌</string>
+    <string name="base_token">\u2022 基本字元</string>
     <string name="repeat_times">\u2022 重复 %1$s 次</string>
     <string name="sequence_name">\u2022 序列名称</string>
     <string name="sequence_size">\u2022 序列大小</string>
-    <string name="ascending">\u2022 上升</string>
-    <string name="separator">\u2022 分离器</string>
-    <string name="graph">\u2022 图表</string>
+    <string name="ascending">\u2022 是否递增</string>
+    <string name="separator">\u2022 分隔字符串</string>
+    <string name="graph">\u2022 键盘类型</string>
     <string name="turns">\u2022 转弯</string>
-    <string name="shifted_times">\u2022 移位 %1$s 次</string>
-    <string name="regex_name">\u2022 Regex 名称</string>
-    <string name="statistics">统计资料</string>
+    <string name="shifted_times">\u2022 切换字母类型 %1$s 次</string>
+    <string name="regex_name">\u2022 正则表达式类型</string>
+    <string name="statistics">统计</string>
     <string name="length">长度</string>
     <string name="uppercase">大写</string>
     <string name="lowercase">小写</string>
     <string name="numbers">数字</string>
     <string name="special_char">特殊字符</string>
-    <string name="spaces">空间</string>
+    <string name="spaces">空格</string>
 
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
     <string name="view">查看</string>
-    <string name="sort">分类</string>
+    <string name="sort">排序</string>
 
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
     <string name="details">详细信息</string>
     <string name="copy">复制</string>
-    <string name="regenerate">再生</string>
+    <string name="regenerate">再次生成</string>
     <string name="share">分享</string>
-    <string name="customize">定制</string>
+    <string name="customize">自定义</string>
     <string name="avoid_amb_chars">避免使用模棱两可的字符</string>
-    <string name="include_spaces">包括空间</string>
+    <string name="include_spaces">包括空格</string>
 
     <!--Generate passphrase fragment-->
-    <string name="words">字数</string>
+    <string name="words">单词数</string>
     <string name="capitalize">大写</string>
 
     <!--#########################################################################################-->
@@ -117,10 +117,10 @@
     <!--Settings fragment-->
     <string name="appearance">外观</string>
     <string name="theme">主题</string>
-    <string name="material_you">您的素材\n(需要重新启动应用程序)</string>
+    <string name="material_you">莫奈取色\n（需重启本应用）</string>
     <string name="privacy">隐私权</string>
     <string name="block_screenshots">阻止应用程序中的屏幕截图</string>
-    <string name="incognito_keyboard">隐身键盘</string>
+    <string name="incognito_keyboard">启用密码键盘</string>
     <string name="about">关于</string>
     <string name="privacy_policy">隐私政策</string>
     <string name="third_party_licenses">第三方许可证</string>
@@ -130,9 +130,9 @@
     <!--#########################################################################################-->
 
     <!--Custom warnings-->
-    <string name="worst_pass_warning">密码太简单，猜不出来。</string>
-    <string name="weak_pass_warning">密码很容易被破解。</string>
-    <string name="medium_pass_warning">密码不够强。</string>
+    <string name="worst_pass_warning">密码太简单，很容易猜出来。</string>
+    <string name="weak_pass_warning">密码容易被破解。</string>
+    <string name="medium_pass_warning">密码还可以更强。</string>
 
     <!--#########################################################################################-->
 
@@ -149,14 +149,14 @@
     <string name="add_multi_pwds">添加多个密码</string>
 
     <!--Theme-->
-    <string name="follow_system">遵循系统</string>
-    <string name="light">灯光</string>
+    <string name="follow_system">跟随系统</string>
+    <string name="light">明亮</string>
     <string name="dark">黑暗</string>
 
     <!--#########################################################################################-->
 
     <!--Snackbars-->
     <string name="no_browsers">此设备未安装浏览器</string>
-    <string name="copied_to_clipboard">复制到剪贴板</string>
+    <string name="copied_to_clipboard">已复制到剪贴板</string>
 
 </resources>
