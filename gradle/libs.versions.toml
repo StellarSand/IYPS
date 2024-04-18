@@ -16,13 +16,13 @@
 #
 
 [versions]
-androidGradle = "8.3.1"
+androidGradle = "8.3.2"
 androidKotlin = "1.9.23"
 appcompat = "1.6.1"
-coreKtx = "1.12.0"
+coreKtx = "1.13.0"
 material3 = "1.12.0-beta01"
 navigationKtx = "2.7.7"
-zxcvbn = "1.8.2"
+zxcvbn = "1.9.0"
 androidfastscrollKt = "v1.0.3"
 
 [libraries]
