@@ -1,0 +1,1 @@
+Avalie as palavras-passe e obtenha sugestões para palavras-passe mais fortes.

@@ -3,7 +3,7 @@ Een app voor wachtwoordsterkte die de robuustheid van je wachtwoord evalueert en
 Kenmerken:
 
 - Volledig open source
-- Materiaal ontwerp 3
+- Material design 3 & Material You
 - Volledig offline
 - Ondersteunt zowel licht als donker thema
 - Geen advertenties

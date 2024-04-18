@@ -3,7 +3,7 @@ Une application qui évalue et note la robustesse de votre mot de passe, estime 
 Caractéristiques:
 
 - Source entièrement ouverte
-- Conception matérielle 3
+- Material design 3 & Material You
 - Complètement hors ligne
 - Soutient le thème léger et sombre
 - Pas de pubs

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~     Copyright (C) 2022-present StellarSand
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <!--
+    Ensure proper encoding of characters
+        ã = \u00E3
+        á = \u00E1
+        ç = \u00E7
+        é = \u00E9
+        ê = \u00EA
+        õ = \u00F5
+        ú = \u00FA
+    -->
+
+    <string name="app_version">Vers\u00E3o</string>
+
+    <!--Bottom nav view-->
+    <string name="password">Palavra-passe</string>
+    <string name="generate">Gerar</string>
+    <string name="passphrase">Frase secreta</string>
+    <string name="settings">Defini\u00E7\u00F5es</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
+    <string name="test_your_password">Teste a sua palavra-passe</string>
+    <string name="ten_b_guesses_per_sec">10B palpites/segundo</string>
+    <string name="ten_k_guesses_per_sec">10k palpites/segundo</string>
+    <string name="ten_guesses_per_sec">10 palpites/segundo</string>
+    <string name="hundred_guesses_per_hour">100 palpites/hora</string>
+    <string name="strength">For\u00E7a</string>
+    <string name="worst">Pior</string>
+    <string name="weak">Fraco</string>
+    <string name="medium">M\u00E9dio</string>
+    <string name="strong">Forte</string>
+    <string name="excellent">Excelente</string>
+    <string name="est_time_to_crack">Tempo estimado de fissura\u00E7\u00E3o</string>
+    <string name="less_than_sec">Menos de um segundo</string>
+    <string name="second">segundo</string>
+    <string name="seconds">segundos</string>
+    <string name="minute">minuto</string>
+    <string name="minutes">minutos</string>
+    <string name="hour">hora</string>
+    <string name="hours">horas</string>
+    <string name="day">dia</string>
+    <string name="days">dias</string>
+    <string name="month">m\u00EAs</string>
+    <string name="months">meses</string>
+    <string name="year">ano</string>
+    <string name="years">anos</string>
+    <string name="centuries">S\u00E9culos</string>
+    <string name="warning">Aviso</string>
+    <string name="suggestions">Sugest\u00F5es</string>
+    <string name="est_guesses_to_crack">Estimativa de palpites para decifrar</string>
+    <string name="order_of_magn">Ordem de grandeza dos palpites</string>
+    <string name="entropy">Entropia</string>
+    <string name="bits">bits</string>
+    <string name="match_sequence">Sequ\u00EAncia de correspond\u00EAncia</string>
+    <string name="pattern">\u2022 Padr\u00E3o</string>
+    <string name="dict_name">\u2022 Nome do dicion\u00E1rio</string>
+    <string name="rank">\u2022 Classifica\u00E7\u00E3o</string>
+    <string name="reversed">\u2022 Invertida</string>
+    <string name="substitutions">\u2022 Substitui\u00E7\u00F5es</string>
+    <string name="base_token">\u2022 Ficha de base</string>
+    <string name="repeat_times">\u2022 Repetido %1$s vezes</string>
+    <string name="sequence_name">\u2022 Nome da sequ\u00EAncia</string>
+    <string name="sequence_size">\u2022 Tamanho da sequ\u00EAncia</string>
+    <string name="ascending">\u2022 Ascendente</string>
+    <string name="separator">\u2022 Separador</string>
+    <string name="graph">\u2022 Gr\u00E1fico</string>
+    <string name="turns">\u2022 Viragens</string>
+    <string name="shifted_times">\u2022 Mudou %1$s vezes</string>
+    <string name="regex_name">\u2022 Nome do regex</string>
+    <string name="statistics">Estatísticas</string>
+    <string name="length">Comprimento</string>
+    <string name="uppercase">Mai\u00FAsculas</string>
+    <string name="lowercase">Min\u00FAsculas</string>
+    <string name="numbers">N\u00FAmeros</string>
+    <string name="special_char">Caracteres especiais</string>
+    <string name="spaces">Espa\u00E7os</string>
+
+    <!--#########################################################################################-->
+
+    <!--Multi password activity-->
+    <string name="view">Ver</string>
+    <string name="sort">Ordenar</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate password fragment-->
+    <string name="details">Detalhes</string>
+    <string name="copy">Cópia</string>
+    <string name="regenerate">Regenerar</string>
+    <string name="share">Partilhar</string>
+    <string name="customize">Personalizar</string>
+    <string name="avoid_amb_chars">Evitar caracteres ambíguos</string>
+    <string name="include_spaces">Incluir espa\u00E7os</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Palavras</string>
+    <string name="capitalize">Capitalizar</string>
+
+    <!--#########################################################################################-->
+
+    <!--Settings fragment-->
+    <string name="appearance">Apar\u00EAncia</string>
+    <string name="theme">Tema</string>
+    <string name="material_you">Material You\n(requer reiniciar a app)</string>
+    <string name="privacy">Privacidade</string>
+    <string name="block_screenshots">Bloquear capturas de ecr\u00E3 na app</string>
+    <string name="incognito_keyboard">Teclado anónimo</string>
+    <string name="about">Sobre</string>
+    <string name="privacy_policy">Política de privacidade</string>
+    <string name="third_party_licenses">Licen\u00E7as de terceiros</string>
+    <string name="report_issue">Comunicar um problema</string>
+    <string name="view_on_github">Ver no GitHub</string>
+
+    <!--#########################################################################################-->
+
+    <!--Custom warnings-->
+    <string name="worst_pass_warning">A palavra-passe \u00E9 demasiado simples de adivinhar.</string>
+    <string name="weak_pass_warning">A palavra-passe pode ser facilmente decifrada.</string>
+    <string name="medium_pass_warning">A palavra-passe n\u00E3o \u00E9 suficientemente forte.</string>
+
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
+    <string name="cancel">Cancelar</string>
+    <string name="done">Feito</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">Testar v\u00E1rias palavras-passe</string>
+    <string name="add">Adicionar</string>
+    <string name="select_file">Selecionar ficheiro</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">Adicionar v\u00E1rias palavras-passe</string>
+
+    <!--Theme-->
+    <string name="follow_system">Seguir o sistema</string>
+    <string name="light">Luz</string>
+    <string name="dark">Escuro</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="no_browsers">Nenhum navegador instalado neste dispositivo</string>
+    <string name="copied_to_clipboard">Copiado para a \u00E1rea de transfer\u00EAncia</string>
+
+</resources>

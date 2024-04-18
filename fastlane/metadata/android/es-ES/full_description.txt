@@ -3,7 +3,7 @@ Una aplicación de seguridad de contraseñas que evalúa y clasifica la solidez 
 Características:
 
 - Totalmente de código abierto
-- Diseño material 3
+- Material design 3 & Material You
 - Completamente offline
 - Soporta temas claros y oscuros
 - Sin anuncios

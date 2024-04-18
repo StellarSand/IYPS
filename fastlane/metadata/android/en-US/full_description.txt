@@ -3,7 +3,7 @@ A password strength app that evaluates and rates your password's robustness, est
 Features:
 
 - Fully open source
-- Material design 3
+- Material design 3 & Material You
 - Completely offline
 - Supports both light and dark theme
 - No ads

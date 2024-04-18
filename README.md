@@ -56,6 +56,8 @@ In our digital age, where data breaches and hacks have skyrocketed, robust passw
 
 
 ## Download
+**Disclaimer**: The Google Play account is not owned by me.
+
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
 alt="Get it on F-Droid"
 height="80">](https://f-droid.org/packages/com.iyps)
@@ -65,8 +67,6 @@ height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 [<img src="https://raw.githubusercontent.com/Kunzisoft/Github-badge/main/get-it-on-github.png"
 alt="Get it on GitHub"
 height="80">](https://github.com/StellarSand/IYPS/releases/latest)
-
-**NOTE**: The Google Play account is not owned by me.
 
 
 
