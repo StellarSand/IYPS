@@ -68,6 +68,54 @@ height="80">](https://play.google.com/store/apps/details?id=com.iyps)
 alt="Get it on GitHub"
 height="80">](https://github.com/StellarSand/IYPS/releases/latest)
 
+### Verify integrity if downloaded from GitHub
+To verify the integrity of the `.apk`/`.aab` files, if downloaded from GitHub, perform the following steps:
+
+<details>
+  <summary><b>Windows</b></summary>
+ 
+1. Open Powershell by searching for it in the `Start menu` OR by pressing `Win + R` and typing `powershell`
+2. Change directory to the downloaded path
+   ```
+   cd "C:\path\to\downloaded\file"
+   ```
+   Example:
+   ```
+   cd "C:\Users\JohnDoe\Downloads"
+   ```
+3. Compute the SHA-256 Hash
+   ```
+   Get-FileHash -Algorithm SHA256 -Path "filename"
+   ```
+   Example:
+   ```
+   Get-FileHash -Algorithm SHA256 -Path "IYPS_v1.5.0.apk"
+   ```
+4. Match the computed hash value with the one provided in the `.sha256` file on GitHub.
+</details>
+
+<details>
+  <summary><b>Linux & macOS</b></summary>
+ 
+1. Open terminal
+2. Change directory to the downloaded path
+   ```
+   cd /path/to/downloaded/file
+   ```
+   Example:
+   ```
+   cd /home/JohnDoe/Downloads/
+   ```
+3. Compute the SHA-256 Hash
+   ```
+   sha256sum filename
+   ```
+   Example:
+   ```
+   sha256sum IYPS_v1.5.0.apk
+   ```
+4. Match the computed hash value with the one provided in the `.sha256` file on GitHub.
+</details>
 
 
 ## Changelog
