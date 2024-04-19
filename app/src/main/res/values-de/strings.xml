@@ -31,8 +31,9 @@
     <string name="app_version">Version</string>
 
     <!--Bottom nav view-->
-    <string name="password">Passwort</string>
+    <string name="test">Pr\u00FCfen</string>
     <string name="generate">Erzeugen Sie</string>
+    <string name="password">Passwort</string>
     <string name="passphrase">Passphrase</string>
     <string name="settings">Einstellungen</string>
 

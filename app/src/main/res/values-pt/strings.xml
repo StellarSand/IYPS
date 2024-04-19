@@ -33,8 +33,9 @@
     <string name="app_version">Vers\u00E3o</string>
 
     <!--Bottom nav view-->
-    <string name="password">Palavra-passe</string>
+    <string name="test">Teste</string>
     <string name="generate">Gerar</string>
+    <string name="password">Palavra-passe</string>
     <string name="passphrase">Frase secreta</string>
     <string name="settings">Defini\u00E7\u00F5es</string>
 

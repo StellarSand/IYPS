@@ -32,8 +32,9 @@
     <string name="app_version">Version</string>
 
     <!--Bottom nav view-->
-    <string name="password">Mot de passe</string>
+    <string name="test">Test</string>
     <string name="generate">G\u00E9n\u00E9rer</string>
+    <string name="password">Mot de passe</string>
     <string name="passphrase">Phrase de passe</string>
     <string name="settings">Param\u00E8tres</string>
 

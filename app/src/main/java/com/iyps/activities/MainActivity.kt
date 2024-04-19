@@ -25,6 +25,8 @@ import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import androidx.core.view.forEach
 import androidx.core.view.isVisible
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var preferenceManager: PreferenceManager
     private lateinit var viewsToAnimate: List<ViewGroup>
+    private lateinit var navIconsMap: Map<Int, Pair<Int, Int>>
     private var selectedItem = 0
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,18 +58,23 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         preferenceManager = (applicationContext as ApplicationManager).preferenceManager
         viewsToAnimate = listOf(activityBinding.generateRadioGroup, activityBinding.generateBottomAppBar)
+        navIconsMap =
+            mapOf(R.id.nav_test to Pair(R.drawable.ic_test_filled, R.drawable.ic_test_outlined),
+                  R.id.nav_generate to Pair(R.drawable.ic_generate_filled, R.drawable.ic_generate_outlined),
+                  R.id.nav_settings to Pair(R.drawable.ic_settings_filled, R.drawable.ic_settings_outlined))
         
         // Disable screenshots and screen recordings
         blockScreenshots(this, preferenceManager.getBoolean(BLOCK_SS))
         
-        selectedItem = savedInstanceState?.getInt("selectedItem") ?: R.id.nav_password
+        selectedItem = savedInstanceState?.getInt("selectedItem") ?: R.id.nav_test
         
         // Bottom nav
         activityBinding.mainBottomNav.apply {
-            menu.findItem(selectedItemId).isChecked = true
+            setNavIconsOnItemSelected(selectedItem)
             
             setOnItemSelectedListener { item ->
                 selectedItem = item.itemId
+                setNavIconsOnItemSelected(selectedItem)
                 displayFragment(selectedItem)
                 if (selectedItem == R.id.nav_generate) {
                     showViewsWithAnimation()
@@ -103,9 +111,9 @@ class MainActivity : AppCompatActivity() {
         val currentFragment = navController.currentDestination!!
         
         val navActionsMap =
-            mapOf(Pair(R.id.generatePasswordFragment, R.id.nav_password) to R.id.action_generatePasswordFragment_to_passwordFragment,
-                  Pair(R.id.generatePassphraseFragment, R.id.nav_password) to R.id.action_generatePassphraseFragment_to_passwordFragment,
-                  Pair(R.id.settingsFragment, R.id.nav_password) to R.id.action_settingsFragment_to_passwordFragment,
+            mapOf(Pair(R.id.generatePasswordFragment, R.id.nav_test) to R.id.action_generatePasswordFragment_to_passwordFragment,
+                  Pair(R.id.generatePassphraseFragment, R.id.nav_test) to R.id.action_generatePassphraseFragment_to_passwordFragment,
+                  Pair(R.id.settingsFragment, R.id.nav_test) to R.id.action_settingsFragment_to_passwordFragment,
                   Pair(R.id.passwordFragment, R.id.nav_settings) to R.id.action_passwordFragment_to_settingsFragment,
                   Pair(R.id.generatePasswordFragment, R.id.nav_settings) to R.id.action_generatePasswordFragment_to_settingsFragment,
                   Pair(R.id.generatePassphraseFragment, R.id.nav_settings) to R.id.action_generatePassphraseFragment_to_settingsFragment)
@@ -135,6 +143,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
     
+    private fun setNavIconsOnItemSelected(selectedItemId: Int) {
+        activityBinding.mainBottomNav.menu.forEach { menuItem ->
+            navIconsMap[menuItem.itemId]?.let { (filledIcon, outlinedIcon) ->
+                menuItem.icon =
+                    ContextCompat.getDrawable(this@MainActivity,
+                                              if (menuItem.itemId == selectedItemId) filledIcon
+                                              else outlinedIcon)
+            }
+        }
+    }
+    
     private fun showViewsWithAnimation() {
         viewsToAnimate.forEach { view ->
             ObjectAnimator.ofFloat(view, "alpha", 0f, 1f).apply {
@@ -148,17 +167,17 @@ class MainActivity : AppCompatActivity() {
     
     private fun hideViewsWithAnimation() {
         viewsToAnimate.forEach { view ->
-            ObjectAnimator.ofFloat(view, "alpha", 1f, 0f).apply {
-                duration = 300
-                interpolator = AccelerateDecelerateInterpolator()
-                addListener(object : AnimatorListenerAdapter() {
-                    override fun onAnimationEnd(animation: Animator) {
-                        if (view.isVisible) {
+            if (view.isVisible) {
+                ObjectAnimator.ofFloat(view, "alpha", 1f, 0f).apply {
+                    duration = 300
+                    interpolator = AccelerateDecelerateInterpolator()
+                    addListener(object : AnimatorListenerAdapter() {
+                        override fun onAnimationEnd(animation: Animator) {
                             view.isVisible = false
                         }
-                    }
-                })
-                start()
+                    })
+                    start()
+                }
             }
         }
     }
@@ -172,8 +191,9 @@ class MainActivity : AppCompatActivity() {
     private val onBackPressedCallback = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
             if (navController.currentDestination !!.id != navController.graph.startDestinationId) {
-                selectedItem = R.id.nav_password
+                selectedItem = R.id.nav_test
                 displayFragment(selectedItem)
+                setNavIconsOnItemSelected(selectedItem)
                 hideViewsWithAnimation()
             }
             else {

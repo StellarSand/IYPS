@@ -19,16 +19,12 @@
 
 <resources>
 
-    <!--
-    Ensure proper encoding of characters when translating to other languages.
-    example: ä as \u00E4, é as \u00E9 etc.
-    -->
-
     <string name="app_version">版本</string>
 
     <!--Bottom nav view-->
-    <string name="password">测试</string>
+    <string name="test">测试</string>
     <string name="generate">生成</string>
+    <string name="password">密码</string>
     <string name="passphrase">密码</string>
     <string name="settings">设置</string>
 

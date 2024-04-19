@@ -32,8 +32,9 @@
     <string name="app_version">Versi\u00F3n</string>
 
     <!--Bottom nav view-->
-    <string name="password">Contrase\u00F1a</string>
+    <string name="test">Prueba</string>
     <string name="generate">Genere</string>
+    <string name="password">Contrase\u00F1a</string>
     <string name="passphrase">Frase de contrase\u00F1a</string>
     <string name="settings">Ajustes</string>
 

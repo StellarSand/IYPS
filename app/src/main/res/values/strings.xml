@@ -27,8 +27,9 @@
     <string name="app_version">Version</string>
 
     <!--Bottom nav view-->
-    <string name="password">Password</string>
+    <string name="test">Test</string>
     <string name="generate">Generate</string>
+    <string name="password">Password</string>
     <string name="passphrase">Passphrase</string>
     <string name="settings">Settings</string>
 

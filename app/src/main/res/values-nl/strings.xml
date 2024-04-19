@@ -27,8 +27,9 @@
     <string name="app_version">Versie</string>
 
     <!--Bottom nav view-->
-    <string name="password">Wachtwoord</string>
+    <string name="test">Test</string>
     <string name="generate">Genereren</string>
+    <string name="password">Wachtwoord</string>
     <string name="passphrase">Passphrase</string>
     <string name="settings">Instellingen</string>
 

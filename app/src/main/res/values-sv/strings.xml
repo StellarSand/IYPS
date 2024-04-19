@@ -30,8 +30,9 @@
     <string name="app_version">Version</string>
 
     <!--Bottom nav view-->
-    <string name="password">L\u00F6senord</string>
+    <string name="test">Testa</string>
     <string name="generate">Generera</string>
+    <string name="password">L\u00F6senord</string>
     <string name="passphrase">L\u00F6senfras</string>
     <string name="settings">Inst\u00E4llningar</string>
 

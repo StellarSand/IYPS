@@ -37,8 +37,9 @@
     <string name="app_version">S\u00FCr\u00FCm</string>
 
     <!--Bottom nav view-->
-    <string name="password">\u015Eifre</string>
+    <string name="test">\u00D6l\u00E7ek</string>
     <string name="generate">Olu\u015Fturmak</string>
+    <string name="password">\u015Eifre</string>
     <string name="passphrase">Parola</string>
     <string name="settings">Ayarlar</string>
 

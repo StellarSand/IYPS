@@ -22,8 +22,9 @@
     <string name="app_version">バージョン</string>
 
     <!--Bottom nav view-->
-    <string name="password">パスワード</string>
+    <string name="test">テスト</string>
     <string name="generate">生成する</string>
+    <string name="password">パスワード</string>
     <string name="passphrase">パスフレーズ</string>
     <string name="settings">設定</string>
 
