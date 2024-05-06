@@ -35,14 +35,14 @@
     <!--Bottom nav view-->
     <string name="test">Teste</string>
     <string name="generate">Gerar</string>
-    <string name="password">Palavra-passe</string>
+    <string name="password">Senha</string>
     <string name="passphrase">Frase secreta</string>
     <string name="settings">Defini\u00E7\u00F5es</string>
 
     <!--#########################################################################################-->
 
     <!--Password fragment-->
-    <string name="test_your_password">Teste a sua palavra-passe</string>
+    <string name="test_your_password">Teste a sua senha</string>
     <string name="ten_b_guesses_per_sec">10B palpites/segundo</string>
     <string name="ten_k_guesses_per_sec">10k palpites/segundo</string>
     <string name="ten_guesses_per_sec">10 palpites/segundo</string>
@@ -137,9 +137,9 @@
     <!--#########################################################################################-->
 
     <!--Custom warnings-->
-    <string name="worst_pass_warning">A palavra-passe \u00E9 demasiado simples de adivinhar.</string>
-    <string name="weak_pass_warning">A palavra-passe pode ser facilmente decifrada.</string>
-    <string name="medium_pass_warning">A palavra-passe n\u00E3o \u00E9 suficientemente forte.</string>
+    <string name="worst_pass_warning">A senha \u00E9 demasiado simples de adivinhar.</string>
+    <string name="weak_pass_warning">A senha pode ser facilmente decifrada.</string>
+    <string name="medium_pass_warning">A senha n\u00E3o \u00E9 suficientemente forte.</string>
 
     <!--#########################################################################################-->
 
