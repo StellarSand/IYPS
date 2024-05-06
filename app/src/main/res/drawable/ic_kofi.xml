@@ -1,0 +1,38 @@
+<!--
+  ~     Copyright (C) 2022-present StellarSand
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportHeight="1000"
+    android:viewportWidth="1000">
+
+    <path android:fillColor="#fff" android:pathData="M684 523.8c-23.9 2.7-43.8 1.3-43.8 1.3V375.5h30.5c19.9 0 38.4 8 51.6 23.9 9.2 10.6 15.9 25.2 15.9 46.4 0 49-25.2 68.8-54.3 78.1zm128.5-104.6c-9.2-46.4-33.1-75.5-59.6-92.7-26.5-18.6-58.3-27.8-90.1-27.8H207c-15.9 0-22.5 15.9-22.5 23.9v5.3s-1.3 201.4 1.3 310c3.9 63.6 67.5 63.6 67.5 63.6s207.9 0 308.6-1.3c5.3 0 9.2 0 14.6-1.3 56.9-14.6 62.2-67.5 62.2-96.7 114.1 5.1 194.9-75.7 173.7-183z"/>
+    <path android:fillColor="#FF000000" android:pathData="M828.9 416v-0.2c-11.3-56.7-42.5-87.5-66.6-103.3-28.3-19.8-63.6-30.7-99.5-30.7H207c-25.6 0-39.3 23.6-39.3 40.7v5.2c0 2-1.3 202.8 1.3 310.5v0.6c2.5 40.9 25.7 60.5 44.7 69.7 19.6 9.5 38.8 9.6 39.6 9.6h0.1c8.5 0 209.9 0 308.6-1.3 5.7 0 11.1 0 18.4-1.7l0.3-0.1c30-7.7 51.4-25.3 63.6-52.2 5.8-12.8 9.2-27.1 10.6-43.8 27.5-0.7 53.5-6.1 77.1-16.2 24.9-10.6 45.9-25.8 62.6-45.1 32.7-38 44.9-88.3 34.5-141.7zM202.5 637.1c-2.5-105.8-1.3-301-1.3-309.3v-5.2c0.1-0.5 1.3-7.2 5.7-7.2h455.8c29.1 0 57.7 8.8 80.4 24.8 0.2 0.1 0.3 0.2 0.5 0.3 27.4 17.8 45 45.4 52.3 81.9 8.5 43.1-1.1 83.4-27 113.4-29.1 33.9-76.4 51.9-129.6 49.5-4.6-0.2-9.1 1.5-12.4 4.6-3.3 3.2-5.2 7.6-5.2 12.1 0 45.6-16.2 71.9-49.5 80.4-3.3 0.8-5.7 0.8-10.4 0.8h-0.3c-87.6 1.1-256.8 1.2-306.6 1.3h-1.8c-0.1 0-12.6-0.2-25-6.3-15.8-7.7-24.5-21.6-25.8-41.3z"/>
+    <path android:fillColor="#FF000000" android:pathData="M639 541.8c0.6 0 6 0.4 14.5 0.4 11 0 21.8-0.6 32.2-1.7 1.1-0.1 2.2-0.3 3.2-0.7 43.8-13.9 66-45.5 66-94.1 0-22.8-6.7-42-19.9-57.2-16-19.3-38.9-29.9-64.4-29.9h-30.5c-9.3 0-16.8 7.5-16.8 16.8V525c0 8.8 6.8 16.1 15.6 16.7zm18-33.2V392.2h13.7c15.4 0 29.2 6.3 38.7 17.8l0.3 0.3c7.9 9.1 11.8 20.7 11.8 35.4 0 33.5-12.3 51.9-41 61.6-7.5 0.8-15.4 1.2-23.4 1.3z"/>
+    <path android:fillColor="#ff5e5b" android:pathData="M408.4 616.5c5.3 2.7 8 0 8 0s72.9-66.3 106-104.6c29.1-34.4 30.5-91.4-18.6-112.6-50.3-21.2-91.4 25.2-91.4 25.2-35.8-39.7-90.1-37.1-115.2-10.6-25.2 26.5-15.9 71.6 2.7 98 17.2 23.9 94.1 92.7 106 103.3 0-1.4 1.4 0 2.7 1.3z"/>
+    <path android:pathData="M410.8 618.4c3 0.6 5.5-2 5.5-2s72.9-66.3 106-104.6c29.1-34.4 30.5-91.4-18.6-112.6-50.3-21.2-91.4 25.2-91.4 25.2-35.8-39.7-90.1-37.1-115.2-10.6-25.2 26.5-15.9 71.6 2.7 98 16.2 22.5 97.5 95.7 107.7 104.8 1 0.9 2.2 1.6 3.4 1.8z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="425.8" android:endY="501" android:startX="340.1" android:startY="237.9" android:type="linear">
+                <item android:color="#FFFF4EA3" android:offset="0"/>
+                <item android:color="#FFFF5E5B" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

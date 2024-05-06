@@ -24,9 +24,18 @@
     <string name="na" translatable="false">-</string>
     <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
 
+    <!--Support methods-->
+    <string name="liberapay" translatable="false">Liberapay</string>
+    <string name="paypal" translatable="false">PayPal</string>
+    <string name="kofi" translatable="false">Ko-fi</string>
+
+    <!--Licenses title-->
     <string name="zxcvbn4j" translatable="false">zxcvbn4j</string>
     <string name="seclists" translatable="false">SecLists</string>
     <string name="fastscroll" translatable="false">AndroidFastScroll-kt</string>
+    <string name="liberapay_icon" translatable="false">Liberapay icon</string>
+    <string name="paypal_icon" translatable="false">PayPal icon</string>
+    <string name="kofi_icon" translatable="false">Ko-fi icon</string>
 
     <string name="copyright_zxcvbn4j" translatable="false">Copyright \u00A9 2014 Nulab Inc</string>
     <string name="copyright_seclists" translatable="false">Copyright \u00A9 2018 Daniel Miessler</string>

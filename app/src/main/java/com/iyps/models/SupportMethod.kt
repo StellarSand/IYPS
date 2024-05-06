@@ -17,8 +17,11 @@
 
 package com.iyps.models
 
-data class License(
+import android.graphics.drawable.Drawable
+
+data class SupportMethod(
     val title: String,
-    val desc: String,
+    val titleIcon: Int,
+    val qr: Int,
     val url: String
 )

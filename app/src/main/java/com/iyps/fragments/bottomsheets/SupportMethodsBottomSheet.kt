@@ -27,17 +27,17 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.R
 import com.iyps.activities.MainActivity
-import com.iyps.adapters.LicenseItemAdapter
+import com.iyps.adapters.SupportMethodItemAdapter
 import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
-import com.iyps.databinding.BottomSheetLicensesBinding
-import com.iyps.models.License
+import com.iyps.databinding.BottomSheetSupportMethodsBinding
+import com.iyps.models.SupportMethod
 
-class LicensesBottomSheet : BottomSheetDialogFragment() {
+class SupportMethodsBottomSheet : BottomSheetDialogFragment() {
     
-    private var _binding: BottomSheetLicensesBinding? = null
+    private var _binding: BottomSheetSupportMethodsBinding? = null
     private val bottomSheetBinding get() = _binding!!
-    private lateinit var licensesList: ArrayList<License>
+    private lateinit var supportMethodsList: ArrayList<SupportMethod>
     
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return (super.onCreateDialog(savedInstanceState) as BottomSheetDialog).apply {
@@ -48,52 +48,40 @@ class LicensesBottomSheet : BottomSheetDialogFragment() {
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        _binding = BottomSheetLicensesBinding.inflate(inflater, container, false)
+        _binding = BottomSheetSupportMethodsBinding.inflate(inflater, container, false)
         return bottomSheetBinding.root
     }
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    
+        
         // Title
-        BottomSheetHeaderBinding.bind(bottomSheetBinding.root).bottomSheetTitle.text = getString(R.string.third_party_licenses)
-    
-        licensesList = ArrayList<License>().apply {
-    
-            // zxcvbn4j
-            add(License(title = getString(R.string.zxcvbn4j),
-                        desc = "${getString(R.string.copyright_zxcvbn4j)}\n\n${getString(R.string.mit_license)}",
-                        url = getString(R.string.zxcvbn4j_license_url)))
-            
-            // SecLists
-            add(License(title = getString(R.string.seclists),
-                        desc = "${getString(R.string.copyright_seclists)}\n\n${getString(R.string.mit_license)}",
-                        url = getString(R.string.seclists_license_url)))
-            
-            // Fastscroll
-            add(License(title = getString(R.string.fastscroll),
-                        desc = "${getString(R.string.copyright_fastscroll)}\n\n${getString(R.string.apache_2_0_license)}",
-                        url = getString(R.string.fastscroll_license_url)))
+        BottomSheetHeaderBinding.bind(bottomSheetBinding.root).bottomSheetTitle.text = getString(R.string.support)
+        
+        supportMethodsList = ArrayList<SupportMethod>().apply {
             
             // Liberapay
-            add(License(title = getString(R.string.liberapay_icon),
-                        desc = getString(R.string.cc0_1_0_universal_public_domain_license),
-                        url = getString(R.string.liberapay_icon_license_url)))
+            add(SupportMethod(title = getString(R.string.liberapay),
+                              titleIcon = R.drawable.ic_liberapay,
+                              qr = R.drawable.ic_liberapay_qr,
+                              url = getString(R.string.liberapay_url)))
             
             // PayPal
-            add(License(title = getString(R.string.paypal_icon),
-                        desc = "",
-                        url = getString(R.string.paypal_icon_license_url)))
+            add(SupportMethod(title = getString(R.string.paypal),
+                              titleIcon = R.drawable.ic_paypal,
+                              qr = R.drawable.ic_paypal_qr,
+                              url = getString(R.string.paypal_url)))
             
             // Ko-fi
-            add(License(title = getString(R.string.kofi_icon),
-                        desc = "",
-                        url = getString(R.string.kofi_icon_license_url)))
+            add(SupportMethod(title = getString(R.string.kofi),
+                              titleIcon = R.drawable.ic_kofi,
+                              qr = R.drawable.ic_kofi_qr,
+                              url = getString(R.string.kofi_url)))
             
         }
-    
-        bottomSheetBinding.licensesRecyclerView.adapter = LicenseItemAdapter(licensesList,
-                                                                             requireActivity() as MainActivity)
-    
+        
+        bottomSheetBinding.licensesRecyclerView.adapter = SupportMethodItemAdapter(supportMethodsList,
+                                                                                   requireActivity() as MainActivity)
+        
         // Cancel
         BottomSheetFooterBinding.bind(bottomSheetBinding.root).cancelBtn.setOnClickListener { dismiss() }
     }

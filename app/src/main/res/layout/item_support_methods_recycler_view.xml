@@ -19,6 +19,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -33,28 +34,37 @@
     android:background="@drawable/shape_outline">
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/licenseTitle"
+        android:id="@+id/supportMethodTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginStart="@dimen/margin_16"
         android:layout_marginBottom="@dimen/margin_4"
-        android:clickable="true"
-        android:focusable="true"
-        android:text="@string/zxcvbn4j"
-        android:textAlignment="viewStart"
-        android:textColor="@color/color_url"
-        android:textSize="@dimen/text_20" />
+        android:drawableStart="@drawable/ic_liberapay"
+        android:drawablePadding="@dimen/margin_12"
+        android:text="@string/liberapay"
+        android:textSize="@dimen/text_18"
+        style="@style/MediumBoldText"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/supportMethodQr"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_liberapay_qr"
+        android:contentDescription="@string/liberapay_url"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"/>
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/licenseDesc"
-        android:layout_width="match_parent"
+        android:id="@+id/supportMethodUrl"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_8"
-        android:layout_marginBottom="@dimen/margin_4"
-        android:paddingStart="@dimen/margin_10"
-        android:paddingEnd="@dimen/margin_8"
-        android:text="@string/mit_license"
-        android:textColor="?attr/colorOnSurface"
-        android:textSize="@dimen/text_16" />
+        android:padding="@dimen/margin_16"
+        android:layout_gravity="center"
+        android:text="@string/liberapay_url"
+        android:textColor="@color/color_url"
+        android:textSize="@dimen/text_17"
+        android:textIsSelectable="true"/>
 
 </LinearLayout>

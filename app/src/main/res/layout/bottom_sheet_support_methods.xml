@@ -17,11 +17,12 @@
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:paddingTop="@dimen/margin_12"
     android:paddingBottom="@dimen/margin_8"
     android:orientation="vertical"
@@ -51,7 +52,7 @@
             android:clipToPadding="false"
             android:paddingTop="@dimen/margin_10"
             android:paddingBottom="10dp"
-            tools:listitem="@layout/item_licenses_recycler_view"/>
+            tools:listitem="@layout/item_support_methods_recycler_view"/>
 
     </androidx.core.widget.NestedScrollView>
 

@@ -32,6 +32,7 @@ import com.iyps.activities.MainActivity
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentSettingsBinding
 import com.iyps.fragments.bottomsheets.LicensesBottomSheet
+import com.iyps.fragments.bottomsheets.SupportMethodsBottomSheet
 import com.iyps.fragments.bottomsheets.ThemeBottomSheet
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
@@ -61,8 +62,7 @@ class SettingsFragment : Fragment() {
         fragmentBinding.version.text = "${getString(R.string.app_version)}: ${BuildConfig.VERSION_NAME}"
         
         // Theme
-        fragmentBinding.theme
-            .setOnClickListener {
+        fragmentBinding.theme.setOnClickListener {
                 ThemeBottomSheet().show(parentFragmentManager, "ThemeBottomSheet")
             }
         
@@ -99,8 +99,7 @@ class SettingsFragment : Fragment() {
         }
     
         // Privacy policy
-        fragmentBinding.privacyPolicy
-            .setOnClickListener {
+        fragmentBinding.privacyPolicy.setOnClickListener {
                 openURL(mainActivity,
                         getString(R.string.iyps_privacy_policy_url),
                         mainActivity.activityBinding.mainCoordLayout,
@@ -108,8 +107,7 @@ class SettingsFragment : Fragment() {
             }
     
         // Licenses
-        fragmentBinding.licenses
-            .setOnClickListener {
+        fragmentBinding.licenses.setOnClickListener {
                 LicensesBottomSheet().show(parentFragmentManager, "LicensesBottomSheet")
             }
     
@@ -119,6 +117,11 @@ class SettingsFragment : Fragment() {
                     getString(R.string.iyps_issues_url),
                     mainActivity.activityBinding.mainCoordLayout,
                     mainActivity.activityBinding.mainBottomNav)
+        }
+        
+        // Support
+        fragmentBinding.support.setOnClickListener {
+            SupportMethodsBottomSheet().show(parentFragmentManager, "SupportBottomSheet")
         }
     
         // View on GitHub

@@ -50,36 +50,30 @@ class EvaluatePassword(zxcvbn: Zxcvbn,
         val hundredCrackTimeMillis = (crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
         
         // Estimated time to crack
-        fragmentBinding.tenBGuessesSubtitle.text =
-            resultUtils.replaceCrackTimeStrings(tenBCrackTimeString)
+        fragmentBinding.tenBGuessesSubtitle.text = resultUtils.replaceCrackTimeStrings(tenBCrackTimeString)
         val tenBCrackTimeScore = resultUtils.crackTimeScore(tenBCrackTimeMillis)
         resultUtils.setStrengthProgressAndText(tenBCrackTimeScore,
                                                fragmentBinding.tenBGuessesStrengthMeter,
                                                fragmentBinding.tenBGuessesStrength)
         
-        fragmentBinding.tenKGuessesSubtitle.text =
-            resultUtils.replaceCrackTimeStrings(tenKCrackTimeString)
+        fragmentBinding.tenKGuessesSubtitle.text = resultUtils.replaceCrackTimeStrings(tenKCrackTimeString)
         resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(tenKCrackTimeMillis),
                                                fragmentBinding.tenKGuessesStrengthMeter,
                                                fragmentBinding.tenKGuessesStrength)
         
-        fragmentBinding.tenGuessesSubtitle.text =
-            resultUtils.replaceCrackTimeStrings(tenCrackTimeString)
+        fragmentBinding.tenGuessesSubtitle.text = resultUtils.replaceCrackTimeStrings(tenCrackTimeString)
         resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(tenCrackTimeMillis),
                                                fragmentBinding.tenGuessesStrengthMeter,
                                                fragmentBinding.tenGuessesStrength)
         
-        fragmentBinding.hundredGuessesSubtitle.text =
-            resultUtils.replaceCrackTimeStrings(hundredCrackTimeString)
+        fragmentBinding.hundredGuessesSubtitle.text = resultUtils.replaceCrackTimeStrings(hundredCrackTimeString)
         resultUtils.setStrengthProgressAndText(resultUtils.crackTimeScore(hundredCrackTimeMillis),
                                                fragmentBinding.hundredGuessesStrengthMeter,
                                                fragmentBinding.hundredGuessesStrength)
         
         // Warning
-        val localizedFeedback =
-            strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(context))
-        fragmentBinding.warningSubtitle.text = resultUtils.getWarningText(localizedFeedback,
-                                                                          tenBCrackTimeScore)
+        val localizedFeedback = strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(context))
+        fragmentBinding.warningSubtitle.text = resultUtils.getWarningText(localizedFeedback, tenBCrackTimeScore)
         
         // Suggestions
         fragmentBinding.suggestionsSubtitle.text = resultUtils.getSuggestionsText(localizedFeedback)

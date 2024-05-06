@@ -41,7 +41,18 @@ In our digital age, where data breaches and hacks have skyrocketed, robust passw
 - Supports both light and dark theme
 - No ads
 - No collection of personal data
-- Supported languages: English, Chinese, Dutch, French, German, Italian, Japanese, Spanish, Swedish, Turkish
+- Supported languages: 
+  - English
+  - Chinese
+  - Dutch
+  - French
+  - German
+  - Italian
+  - Japanese
+  - Portuguese
+  - Spanish
+  - Swedish
+  - Turkish
 
 
 
@@ -91,7 +102,7 @@ To verify the integrity of the `.apk`/`.aab` files, if downloaded from GitHub, p
    ```
    Get-FileHash -Algorithm SHA256 -Path "IYPS_v1.5.0.apk"
    ```
-4. Match the computed hash value with the one provided in the `.sha256` file on GitHub.
+4. The computed hash value should be exactly the same as the one provided in the `.sha256` file on GitHub.
 </details>
 
 <details>
@@ -114,7 +125,7 @@ To verify the integrity of the `.apk`/`.aab` files, if downloaded from GitHub, p
    ```
    sha256sum IYPS_v1.5.0.apk
    ```
-4. Match the computed hash value with the one provided in the `.sha256` file on GitHub.
+4. The computed hash value should be exactly the same as the one provided in the `.sha256` file on GitHub.
 </details>
 
 

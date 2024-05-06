@@ -23,8 +23,17 @@
     <string name="iyps_issues_url" translatable="false">https://github.com/StellarSand/IYPS/issues</string>
     <string name="iyps_github_url" translatable="false">https://github.com/StellarSand/IYPS</string>
 
+    <!--Support bottom sheet-->
+    <string name="liberapay_url" translatable="false">https://liberapay.com/stellarsand</string>
+    <string name="paypal_url" translatable="false">https://www.paypal.com/paypalme/stellarsand</string>
+    <string name="kofi_url" translatable="false">https://ko-fi.com/stellarsand</string>
+
+    <!--Licenses bottom sheet-->
     <string name="zxcvbn4j_license_url" translatable="false">https://github.com/nulab/zxcvbn4j/blob/master/LICENSE.txt</string>
     <string name="seclists_license_url" translatable="false">https://github.com/danielmiessler/SecLists/blob/master/LICENSE</string>
     <string name="fastscroll_license_url" translatable="false">https://github.com/StellarSand/AndroidFastScroll-kt/blob/master/LICENSE</string>
+    <string name="liberapay_icon_license_url" translatable="false">https://liberapay.com/about/logos</string>
+    <string name="paypal_icon_license_url" translatable="false">https://commons.wikimedia.org/wiki/Category:SVG_PayPal_logos</string>
+    <string name="kofi_icon_license_url" translatable="false">https://more.ko-fi.com/brand-assets</string>
 
 </resources>

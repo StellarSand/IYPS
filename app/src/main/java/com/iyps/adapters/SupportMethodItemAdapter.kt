@@ -21,44 +21,53 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.models.License
+import com.iyps.models.SupportMethod
+import com.iyps.utils.IntentUtils
 import com.iyps.utils.IntentUtils.Companion.openURL
 
-class LicenseItemAdapter(private val aListViewItems: ArrayList<License>,
-                         private val mainActivity: MainActivity) : RecyclerView.Adapter<LicenseItemAdapter.ListViewHolder>() {
+class SupportMethodItemAdapter (private val aListViewItems: ArrayList<SupportMethod>,
+                                private val mainActivity: MainActivity) : RecyclerView.Adapter<SupportMethodItemAdapter.ListViewHolder>() {
     
     inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         
-        val licenseTitle: MaterialTextView = itemView.findViewById(R.id.licenseTitle)
-        val licenseDesc: MaterialTextView = itemView.findViewById(R.id.licenseDesc)
+        val supportMethodTitle: MaterialTextView = itemView.findViewById(R.id.supportMethodTitle)
+        val supportMethodQr: ShapeableImageView = itemView.findViewById(R.id.supportMethodQr)
+        val supportMethodUrl: MaterialTextView = itemView.findViewById(R.id.supportMethodUrl)
         
     }
     
     override fun onCreateViewHolder(parent: ViewGroup,
                                     viewType: Int): ListViewHolder {
-        return ListViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.item_licenses_recycler_view, parent, false)
+        return ListViewHolder(LayoutInflater.from(parent.context)
+                                  .inflate(R.layout.item_support_methods_recycler_view, parent, false)
         )
     }
     
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         
-        val license = aListViewItems[position]
+        val supportMethod = aListViewItems[position]
         
-        holder.licenseTitle.apply {
-            text = license.title
+        holder.supportMethodTitle.apply {
+            text = supportMethod.title
+            setCompoundDrawablesWithIntrinsicBounds(supportMethod.titleIcon, 0, 0, 0)
+        }
+        
+        holder.supportMethodQr.setImageResource(supportMethod.qr)
+        
+        holder.supportMethodUrl.apply {
+            text = supportMethod.url
             setOnClickListener{
                 openURL(mainActivity,
-                        license.url,
+                        supportMethod.url,
                         mainActivity.activityBinding.mainCoordLayout,
                         null)
             }
         }
-        
-        holder.licenseDesc.text = license.desc
     }
     
     override fun getItemCount(): Int {
