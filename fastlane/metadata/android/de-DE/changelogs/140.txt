@@ -1,6 +1,0 @@
-- Umgestaltung für bessere Zugänglichkeit.
-- Mehr Details für Passwörter anzeigen.
-- Unterstützung für ausgewählte Dateien für Android 13 und höher.
-- Adaptives App-Symbol.
-- Enthaltene thematische Symbole für Android 13 und höher.
-- Verbesserte italienische und französische Übersetzungen.

@@ -1,3 +1,0 @@
-- Added random password generator.
-- Fixed estimated time to crack not translating.
-- Added Swedish and Turkish translations.

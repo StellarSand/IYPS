@@ -1,3 +1,0 @@
-- Fixed incorrect information displayed in some cases
-- Clear clipboard
-- Improved German translation

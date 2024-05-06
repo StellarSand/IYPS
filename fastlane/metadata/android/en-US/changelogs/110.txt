@@ -1,2 +1,0 @@
-- Added Italian translation
-- Time to crack now has proper language support

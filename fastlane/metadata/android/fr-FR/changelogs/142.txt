@@ -1,4 +1,0 @@
-- Afficher plus de détails pour les mots de passe.
-- Correction de la navigation arrière.
-- Ajout d'une option pour empêcher les captures d'écran dans l'application.
-- Ajout d'une option pour le clavier incognito.

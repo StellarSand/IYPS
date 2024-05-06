@@ -1,6 +1,0 @@
-- Herontwerp voor betere toegankelijkheid.
-- Toon meer details voor wachtwoorden.
-- Ondersteuning voor geselecteerde bestanden voor Android 13 en hoger.
-- Adaptief app-pictogram.
-- Inclusief themapictogrammen voor Android 13 en hoger.
-- Verbeterde Italiaanse en Franse vertalingen.

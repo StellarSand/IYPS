@@ -1,3 +1,0 @@
-- Ondersteuning voor Android 14 toegevoegd.
-- Spaanse vertalingen toegevoegd.
-- Franse vertalingen verbeterd.

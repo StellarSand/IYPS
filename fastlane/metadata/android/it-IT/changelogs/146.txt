@@ -1,3 +1,0 @@
-- Aggiunto generatore di password casuali.
-- Corretto il tempo stimato per il cracking che non viene tradotto.
-- Aggiunte le traduzioni in svedese e turco.

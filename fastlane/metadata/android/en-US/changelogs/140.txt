@@ -1,6 +1,0 @@
-- Redesign for better accessibility.
-- Show more details for passwords.
-- Select file support for Android 13 and above.
-- Adaptive app icon.
-- Included themed icons for Android 13 and above.
-- Improved Italian and French translations.

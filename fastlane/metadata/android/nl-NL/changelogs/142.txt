@@ -1,4 +1,0 @@
-- Toon meer details voor wachtwoorden.
-- Navigatie terug hersteld.
-- Optie toegevoegd om screenshots in app te voorkomen.
-- Optie voor incognito toetsenbord toegevoegd.

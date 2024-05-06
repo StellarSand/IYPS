@@ -1,3 +1,0 @@
-- In einigen Fällen wurden falsche Informationen angezeigt
-- Zwischenablage löschen
-- Verbesserte deutsche Übersetzung

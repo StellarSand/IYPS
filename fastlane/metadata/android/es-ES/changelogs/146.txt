@@ -1,3 +1,0 @@
-- Añadido generador de contraseñas aleatorias.
-- Corregido el tiempo estimado para crackear que no se traducía.
-- Añadidas traducciones al sueco y al turco.

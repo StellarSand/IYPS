@@ -1,4 +1,0 @@
-- Show more details for passwords.
-- Fixed back navigation.
-- Added option to prevent screenshots in app.
-- Added option for incognito keyboard.

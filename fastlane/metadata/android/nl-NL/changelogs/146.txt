@@ -1,3 +1,0 @@
-- Generator voor willekeurige wachtwoorden toegevoegd.
-- Geschatte tijd om te kraken niet vertaald.
-- Zweedse en Turkse vertalingen toegevoegd.

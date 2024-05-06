@@ -1,3 +1,0 @@
-- Ajout de la prise en charge d'Android 14.
-- Ajout de traductions en espagnol.
-- Amélioration des traductions en français.

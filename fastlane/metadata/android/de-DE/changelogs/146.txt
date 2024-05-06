@@ -1,3 +1,0 @@
-- Zufallsgenerator für Passwörter hinzugefügt.
-- Die geschätzte Zeit bis zum Knacken wurde nicht übersetzt.
-- Schwedische und türkische Übersetzungen hinzugefügt.

@@ -1,1 +1,0 @@
-- Testen Sie mehrere Passwörter aus einer Textdatei
