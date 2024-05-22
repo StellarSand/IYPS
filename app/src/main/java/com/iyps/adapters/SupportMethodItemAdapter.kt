@@ -25,9 +25,7 @@ import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
 import com.iyps.activities.MainActivity
-import com.iyps.models.License
 import com.iyps.models.SupportMethod
-import com.iyps.utils.IntentUtils
 import com.iyps.utils.IntentUtils.Companion.openURL
 
 class SupportMethodItemAdapter (private val aListViewItems: ArrayList<SupportMethod>,

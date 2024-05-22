@@ -17,8 +17,6 @@
 
 package com.iyps.models
 
-import android.graphics.drawable.Drawable
-
 data class SupportMethod(
     val title: String,
     val titleIcon: Int,

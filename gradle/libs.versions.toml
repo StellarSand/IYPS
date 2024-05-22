@@ -16,7 +16,7 @@
 #
 
 [versions]
-androidGradle = "8.4.0"
+androidGradle = "8.4.1"
 androidKotlin = "1.9.23"
 appcompat = "1.6.1"
 coreKtx = "1.13.1"

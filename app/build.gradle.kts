@@ -34,6 +34,7 @@ android {
         targetSdk = 34
         versionCode = 151
         versionName = "1.5.1"
+        setProperty("archivesBaseName", "IYPS_v$versionName")
     }
     
     buildTypes {

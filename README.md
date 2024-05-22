@@ -75,6 +75,10 @@ height="80">](https://f-droid.org/packages/com.iyps)
 [<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"
 alt="Get it on Google Play"
 height="80">](https://play.google.com/store/apps/details?id=com.iyps)
+
+[<img src="https://gitlab.com/IzzyOnDroid/repo/-/raw/master/assets/IzzyOnDroid.png"
+alt="Get it on IzzyOnDroid"
+height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.iyps?repo=main)
 [<img src="https://raw.githubusercontent.com/Kunzisoft/Github-badge/main/get-it-on-github.png"
 alt="Get it on GitHub"
 height="80">](https://github.com/StellarSand/IYPS/releases/latest)

@@ -49,9 +49,9 @@ class PreferenceManager(context: Context) {
         return sharedPreferences.getInt(key, 0)
     }
     
-    fun setInt(key: String, integer: Int) {
+    fun setInt(key: String, value: Int) {
         sharedPreferences.edit().apply {
-            putInt(key, integer)
+            putInt(key, value)
             apply()
         }
     }
@@ -60,9 +60,9 @@ class PreferenceManager(context: Context) {
         return sharedPreferences.getFloat(key, defValue)
     }
     
-    fun setFloat(key: String, float: Float) {
+    fun setFloat(key: String, value: Float) {
         sharedPreferences.edit().apply {
-            putFloat(key, float)
+            putFloat(key, value)
             apply()
         }
     }
@@ -71,9 +71,9 @@ class PreferenceManager(context: Context) {
         return sharedPreferences.getBoolean(key, defValue)
     }
     
-    fun setBoolean(key: String, boolean: Boolean) {
+    fun setBoolean(key: String, value: Boolean) {
         sharedPreferences.edit().apply {
-            putBoolean(key, boolean)
+            putBoolean(key, value)
             apply()
         }
     }
@@ -82,9 +82,9 @@ class PreferenceManager(context: Context) {
         return sharedPreferences.getString(key, "-")
     }
     
-    fun setString(key: String, string: String) {
+    fun setString(key: String, value: String) {
         sharedPreferences.edit().apply {
-            putString(key, string)
+            putString(key, value)
             apply()
         }
     }
