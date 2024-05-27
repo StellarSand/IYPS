@@ -166,4 +166,9 @@
     <string name="no_browsers">Nenhum navegador instalado neste dispositivo</string>
     <string name="copied_to_clipboard">Copiado para a \u00E1rea de transfer\u00EAncia</string>
 
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">IYPS em utiliza\u00E7\u00E3o</string>
+
 </resources>

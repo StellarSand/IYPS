@@ -20,6 +20,7 @@ package com.iyps.activities
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
+import android.net.Uri
 import android.os.Bundle
 import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
@@ -43,9 +44,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var activityBinding: ActivityMainBinding
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var navController: NavController
+    private lateinit var appManager: ApplicationManager
     private lateinit var preferenceManager: PreferenceManager
     private lateinit var viewsToAnimate: List<ViewGroup>
-    private lateinit var navIconsMap: Map<Int, Pair<Int, Int>>
     private var selectedItem = 0
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,25 +57,32 @@ class MainActivity : AppCompatActivity() {
         
         navHostFragment = supportFragmentManager.findFragmentById(R.id.main_nav_host) as NavHostFragment
         navController = navHostFragment.navController
-        preferenceManager = (applicationContext as ApplicationManager).preferenceManager
+        appManager = applicationContext as ApplicationManager
+        appManager.isAppOpen = true
+        preferenceManager = appManager.preferenceManager
         viewsToAnimate = listOf(activityBinding.generateRadioGroup, activityBinding.generateBottomAppBar)
-        navIconsMap =
-            mapOf(R.id.nav_test to Pair(R.drawable.ic_test_filled, R.drawable.ic_test_outlined),
-                  R.id.nav_generate to Pair(R.drawable.ic_generate_filled, R.drawable.ic_generate_outlined),
-                  R.id.nav_settings to Pair(R.drawable.ic_settings_filled, R.drawable.ic_settings_outlined))
         
         // Disable screenshots and screen recordings
         blockScreenshots(this, preferenceManager.getBoolean(BLOCK_SS))
         
-        selectedItem = savedInstanceState?.getInt("selectedItem") ?: R.id.nav_test
+        selectedItem =
+                savedInstanceState?.getInt("selectedItem") ?:
+                if (intent.extras?.getString("shortcut") == "shortcutGenerate") {
+                    R.id.nav_generate
+                }
+                else R.id.nav_test
+        
+        // Opened from shortcut or quick settings toggle
+        if (savedInstanceState == null && selectedItem == R.id.nav_generate) {
+            displayFragment(selectedItem)
+            showViewsWithAnimation()
+        }
         
         // Bottom nav
         activityBinding.mainBottomNav.apply {
-            setNavIconsOnItemSelected(selectedItem)
             
             setOnItemSelectedListener { item ->
                 selectedItem = item.itemId
-                setNavIconsOnItemSelected(selectedItem)
                 displayFragment(selectedItem)
                 if (selectedItem == R.id.nav_generate) {
                     showViewsWithAnimation()
@@ -143,17 +151,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
     
-    private fun setNavIconsOnItemSelected(selectedItemId: Int) {
-        activityBinding.mainBottomNav.menu.forEach { menuItem ->
-            navIconsMap[menuItem.itemId]?.let { (filledIcon, outlinedIcon) ->
-                menuItem.icon =
-                    ContextCompat.getDrawable(this@MainActivity,
-                                              if (menuItem.itemId == selectedItemId) filledIcon
-                                              else outlinedIcon)
-            }
-        }
-    }
-    
     private fun showViewsWithAnimation() {
         viewsToAnimate.forEach { view ->
             ObjectAnimator.ofFloat(view, "alpha", 0f, 1f).apply {
@@ -193,7 +190,6 @@ class MainActivity : AppCompatActivity() {
             if (navController.currentDestination !!.id != navController.graph.startDestinationId) {
                 selectedItem = R.id.nav_test
                 displayFragment(selectedItem)
-                setNavIconsOnItemSelected(selectedItem)
                 hideViewsWithAnimation()
             }
             else {
@@ -202,4 +198,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
     
+    override fun onDestroy() {
+        super.onDestroy()
+        appManager.isAppOpen = false
+    }
 }

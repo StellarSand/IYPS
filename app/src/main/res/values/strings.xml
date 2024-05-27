@@ -161,4 +161,9 @@
     <string name="no_browsers">No browsers installed on this device</string>
     <string name="copied_to_clipboard">Copied to clipboard</string>
 
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">IYPS in use</string>
+
 </resources>

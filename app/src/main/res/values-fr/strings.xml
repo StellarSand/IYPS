@@ -165,4 +165,9 @@
     <string name="no_browsers">Aucun navigateur n\'est install\u00E9 sur cet appareil</string>
     <string name="copied_to_clipboard">Copi\u00E9 dans le presse-papiers</string>
 
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">IYPS en cours d\'utilisation</string>
+
 </resources>

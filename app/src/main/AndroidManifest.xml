@@ -31,6 +31,18 @@
         android:enableOnBackInvokedCallback="true"
         tools:targetApi="tiramisu">
 
+        <!--Quick settings toggle-->
+        <service
+            android:name=".services.QsTileService"
+            android:exported="true"
+            android:label="@string/generate"
+            android:icon="@drawable/ic_generate_outlined"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
         <!--Main activity-->
         <activity
             android:name=".activities.MainActivity"
@@ -41,6 +53,11 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!--Shortcut-->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts">
+            </meta-data>
         </activity>
 
         <!--Multiple passwords activity-->

@@ -163,4 +163,9 @@
     <string name="no_browsers">Inga webbl\u00E4sare installerade p\u00E5 den h\u00E4r enheten</string>
     <string name="copied_to_clipboard">Kopierad till urklipp</string>
 
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">IYPS i bruk</string>
+
 </resources>

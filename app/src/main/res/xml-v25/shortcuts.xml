@@ -17,21 +17,21 @@
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/nav_test"
-        android:icon="@drawable/ic_test"
-        android:title="@string/test"/>
+    <shortcut
+        android:shortcutId="generateShortcut"
+        android:shortcutShortLabel="@string/generate"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_generate">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.iyps"
+            android:targetClass="com.iyps.activities.MainActivity">
+            <extra
+                android:name="shortcut"
+                android:value="shortcutGenerate" />
+        </intent>
+    </shortcut>
 
-    <item
-        android:id="@+id/nav_generate"
-        android:icon="@drawable/ic_generate"
-        android:title="@string/generate"/>
-
-    <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/ic_settings"
-        android:title="@string/settings"/>
-</menu>
+</shortcuts>

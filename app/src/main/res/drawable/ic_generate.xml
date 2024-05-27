@@ -17,21 +17,7 @@
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item
-        android:id="@+id/nav_test"
-        android:icon="@drawable/ic_test"
-        android:title="@string/test"/>
-
-    <item
-        android:id="@+id/nav_generate"
-        android:icon="@drawable/ic_generate"
-        android:title="@string/generate"/>
-
-    <item
-        android:id="@+id/nav_settings"
-        android:icon="@drawable/ic_settings"
-        android:title="@string/settings"/>
-</menu>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_generate_filled" android:state_checked="true" />
+    <item android:drawable="@drawable/ic_generate_outlined" android:state_checked="false" />
+</selector>

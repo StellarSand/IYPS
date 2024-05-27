@@ -155,4 +155,9 @@
     <string name="no_browsers">此设备未安装浏览器</string>
     <string name="copied_to_clipboard">已复制到剪贴板</string>
 
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">使用中的 IYPS</string>
+
 </resources>

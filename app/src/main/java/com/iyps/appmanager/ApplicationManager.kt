@@ -117,6 +117,7 @@ class ApplicationManager : Application() {
     }
     
     var multiPasswordsList = mutableListOf<MultiPwdItem>()
+    var isAppOpen = false
     
     override fun onCreate() {
         super.onCreate()

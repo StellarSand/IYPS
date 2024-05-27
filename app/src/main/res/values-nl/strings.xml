@@ -160,4 +160,9 @@
     <string name="no_browsers">Geen browsers ge\u00EFnstalleerd op dit apparaat</string>
     <string name="copied_to_clipboard">Gekopieerd naar klembord</string>
 
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">IYPS in gebruik</string>
+
 </resources>

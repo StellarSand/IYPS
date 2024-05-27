@@ -170,4 +170,9 @@
     <string name="no_browsers">Bu cihazda y\u00FCkl\u00FC taray\u0131c\u0131 yok</string>
     <string name="copied_to_clipboard">Panoya kopyaland\u0131</string>
 
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">IYPS kullan\u0131mda</string>
+
 </resources>
