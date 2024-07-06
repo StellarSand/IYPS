@@ -172,7 +172,7 @@ class ResultUtils(val context: Context) {
     fun getSuggestionsText(localizedFeedback: Feedback): CharSequence {
         return buildString {
             localizedFeedback.suggestions.joinTo(this, "\n") { "\u2022 $it" }
-                    .ifEmpty { append(naString) }
+                .ifEmpty { append(naString) }
         }
     }
     
@@ -202,7 +202,13 @@ class ResultUtils(val context: Context) {
                 
                 when (pattern) {
                     Pattern.Dictionary -> {
-                        append("<br>${dictNameString}: ${match.dictionaryName}")
+                        val dictionaryName =
+                            when (match.dictionaryName) {
+                                "english_wikipedia" -> "wikipedia"
+                                "female_names" -> "names"
+                                else -> match.dictionaryName
+                            }
+                        append("<br>${dictNameString}: ${dictionaryName}")
                         if (matchSequence.size > 1) append("<br>${rankString}: ${match.rank}")
                         append("<br>${reversedString}: ${match.reversed}")
                         if (match.l33t)

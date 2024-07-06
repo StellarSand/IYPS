@@ -54,11 +54,12 @@ class ApplicationManager : Application() {
         )
     }
     
-    private val englishWordsResource by lazy {
+    private val wordsResource by lazy {
         ResourceFromInputStream(
             ByteArrayInputStream(ByteArrayOutputStream().apply {
                 resources.openRawResource(R.raw.english_words).copyTo(this)
                 resources.openRawResource(R.raw.eff_unranked).copyTo(this)
+                resources.openRawResource(R.raw.italian_words).copyTo(this)
             }.toByteArray())
         )
     }
@@ -75,16 +76,40 @@ class ApplicationManager : Application() {
         ResourceFromInputStream(resources.openRawResource(R.raw.unkown_azul))
     }
     
+    private val namesResource by lazy {
+        ResourceFromInputStream(
+            ByteArrayInputStream(ByteArrayOutputStream().apply {
+                resources.openRawResource(R.raw.english_female_names).copyTo(this)
+                resources.openRawResource(R.raw.english_male_names).copyTo(this)
+                resources.openRawResource(R.raw.italian_names).copyTo(this)
+            }.toByteArray())
+        )
+    }
+    
+    private val surnamesResource by lazy {
+        ResourceFromInputStream(
+            ByteArrayInputStream(ByteArrayOutputStream().apply {
+                resources.openRawResource(R.raw.english_surnames).copyTo(this)
+                resources.openRawResource(R.raw.italian_surnames).copyTo(this)
+                resources.openRawResource(R.raw.spanish_surnames).copyTo(this)
+            }.toByteArray())
+        )
+    }
+    
+    // "english_wikipedia" contains english_words, eff_unranked & italian_words.
+    // "female_names" contains english_female_names, english_male_names & italian_names.
+    // The default dictionary names like "english_wikipedia" & "female_names" are used
+    // so that default warnings matching those names can be displayed.
+    // The names are later changed to "wikipedia" & "names" in ResultUtils.getMatchSequenceText()
     val zxcvbn: Zxcvbn by lazy {
         ZxcvbnBuilder()
             .dictionaries(listOf(DictionaryLoader("passwords", commonPasswordsResource).load(),
-                                 DictionaryLoader("english_wikipedia", englishWordsResource).load(),
+                                 DictionaryLoader("english_wikipedia", wordsResource).load(),
                                  DictionaryLoader("darkweb", darkwebPasswordsResource).load(),
                                  DictionaryLoader("richelieu_french", frenchPasswordsResource).load(),
                                  DictionaryLoader("unkown_azul", azulPasswordsResource).load(),
-                                 StandardDictionaries.FEMALE_NAMES_LOADER.load(),
-                                 StandardDictionaries.MALE_NAMES_LOADER.load(),
-                                 StandardDictionaries.SURNAMES_LOADER.load(),
+                                 DictionaryLoader("female_names", namesResource).load(),
+                                 DictionaryLoader("surnames", surnamesResource).load(),
                                  StandardDictionaries.US_TV_AND_FILM_LOADER.load()))
             .keyboards(StandardKeyboards.loadAllKeyboards())
             .build()
