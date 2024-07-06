@@ -129,9 +129,10 @@
     <string name="incognito_keyboard">Clavier inconnu</string>
     <string name="about">\u00C0 propos</string>
     <string name="privacy_policy">Politique de confidentialit\u00E9</string>
-    <string name="third_party_licenses">Licences de code tiers</string>
     <string name="report_issue">Signaler un probl\u00E8me</string>
+    <string name="support">Soutien</string>
     <string name="view_on_github">voir le projet sur GitHub</string>
+    <string name="third_party_licenses">Licences de code tiers</string>
 
     <!--#########################################################################################-->
 

@@ -50,9 +50,9 @@ class ClipboardUtils {
         
         // Hide from revealing on copy
         // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#SensitiveContent
+        @RequiresApi(Build.VERSION_CODES.N)
         fun hideSensitiveContent(clipData: ClipData) {
             clipData.apply {
-                @RequiresApi(Build.VERSION_CODES.N)
                 description.extras = PersistableBundle().apply {
                     if (Build.VERSION.SDK_INT >= 33) {
                         putBoolean(ClipDescription.EXTRA_IS_SENSITIVE, true)

@@ -32,6 +32,7 @@
     <!--Licenses title-->
     <string name="zxcvbn4j" translatable="false">zxcvbn4j</string>
     <string name="seclists" translatable="false">SecLists</string>
+    <string name="eff_diceware" translatable="false">EFF Diceware</string>
     <string name="fastscroll" translatable="false">AndroidFastScroll-kt</string>
     <string name="liberapay_icon" translatable="false">Liberapay icon</string>
     <string name="paypal_icon" translatable="false">PayPal icon</string>

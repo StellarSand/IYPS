@@ -42,7 +42,7 @@
             android:src="@drawable/ic_launcher_foreground"
             android:scaleType="center"
             android:background="@color/seed"
-            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"/>
+            app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Medium"/>
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/app_name"
@@ -231,27 +231,10 @@
             android:drawablePadding="@dimen/margin_16" />
 
         <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/licenses"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingHorizontal="@dimen/margin_30"
-            android:paddingVertical="@dimen/margin_16"
-            android:clickable="true"
-            android:focusable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:text="@string/third_party_licenses"
-            android:textAlignment="viewStart"
-            android:textColor="?attr/colorOnSurface"
-            android:textSize="@dimen/text_16"
-            app:drawableStartCompat="@drawable/ic_licenses"
-            android:drawablePadding="@dimen/margin_16" />
-
-        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/viewOnGit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="@dimen/margin_10"
             android:paddingHorizontal="@dimen/margin_30"
             android:paddingVertical="@dimen/margin_16"
             android:clickable="true"
@@ -262,6 +245,23 @@
             android:textColor="?attr/colorOnSurface"
             android:textSize="@dimen/text_16"
             app:drawableStartCompat="@drawable/ic_view_on_github"
+            android:drawablePadding="@dimen/margin_16" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/licenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:paddingHorizontal="@dimen/margin_30"
+            android:paddingVertical="@dimen/margin_16"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="@string/third_party_licenses"
+            android:textAlignment="viewStart"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="@dimen/text_16"
+            app:drawableStartCompat="@drawable/ic_licenses"
             android:drawablePadding="@dimen/margin_16" />
 
     </LinearLayout>

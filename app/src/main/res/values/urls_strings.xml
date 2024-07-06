@@ -31,6 +31,7 @@
     <!--Licenses bottom sheet-->
     <string name="zxcvbn4j_license_url" translatable="false">https://github.com/nulab/zxcvbn4j/blob/master/LICENSE.txt</string>
     <string name="seclists_license_url" translatable="false">https://github.com/danielmiessler/SecLists/blob/master/LICENSE</string>
+    <string name="eff_diceware_license_url" translatable="false">https://www.eff.org/dice</string>
     <string name="fastscroll_license_url" translatable="false">https://github.com/StellarSand/AndroidFastScroll-kt/blob/master/LICENSE</string>
     <string name="liberapay_icon_license_url" translatable="false">https://liberapay.com/about/logos</string>
     <string name="paypal_icon_license_url" translatable="false">https://commons.wikimedia.org/wiki/Category:SVG_PayPal_logos</string>

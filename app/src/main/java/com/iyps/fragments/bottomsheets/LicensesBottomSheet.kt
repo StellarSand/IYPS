@@ -69,6 +69,11 @@ class LicensesBottomSheet : BottomSheetDialogFragment() {
                         desc = "${getString(R.string.copyright_seclists)}\n\n${getString(R.string.mit_license)}",
                         url = getString(R.string.seclists_license_url)))
             
+            // EFF Diceware
+            add(License(title = getString(R.string.eff_diceware),
+                        desc = getString(R.string.cc_3_0_license),
+                        url = getString(R.string.eff_diceware_license_url)))
+            
             // Fastscroll
             add(License(title = getString(R.string.fastscroll),
                         desc = "${getString(R.string.copyright_fastscroll)}\n\n${getString(R.string.apache_2_0_license)}",
