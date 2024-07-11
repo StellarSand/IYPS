@@ -29,7 +29,7 @@ import com.iyps.utils.UiUtils.Companion.blockScreenshots
 class DetailsActivity : AppCompatActivity() {
     
     private lateinit var activityBinding: ActivityDetailsBinding
-    lateinit var passwordLine: String
+    lateinit var passwordLine: CharSequence
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

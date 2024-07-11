@@ -75,8 +75,7 @@ class TestPasswordFragment : Fragment() {
         val zxcvbn = appManager.zxcvbn
         var job: Job? = null
         val resultUtils = ResultUtils(requireContext())
-        clipboardManager =
-            requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         naString = getString(R.string.na)
         emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
         
@@ -129,7 +128,7 @@ class TestPasswordFragment : Fragment() {
                     when (item?.itemId) {
                         android.R.id.copy -> {
                             val clipData = ClipData.newPlainText("IYPS", text)
-                            hideSensitiveContent(clipData)
+                            if (Build.VERSION.SDK_INT >= 24) hideSensitiveContent(clipData)
                             clipboardManager.setPrimaryClip(clipData)
                             // Only show snackbar in 12L or lower to avoid duplicate notifications
                             // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications

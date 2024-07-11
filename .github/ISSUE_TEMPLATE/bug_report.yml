@@ -38,6 +38,8 @@ body:
   - type: checkboxes
     id: terms
     attributes:
+      label: Terms
+      description: By reporting this issue, you acknowledge the following
       options:
         - label: This issue occurs on the [latest version](https://github.com/StellarSand/IYPS/releases/latest).
           required: true

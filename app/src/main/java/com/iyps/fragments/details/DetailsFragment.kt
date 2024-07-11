@@ -35,7 +35,7 @@ class DetailsFragment : Fragment() {
     
     private var _binding: FragmentTestPasswordBinding? = null
     private val fragmentBinding get() = _binding!!
-    private lateinit var passwordString: String
+    private lateinit var password: CharSequence
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -49,7 +49,7 @@ class DetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
-        passwordString = (requireActivity() as DetailsActivity).passwordLine
+        password = (requireActivity() as DetailsActivity).passwordLine
         
         fragmentBinding.apply {
             lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
@@ -60,14 +60,14 @@ class DetailsFragment : Fragment() {
             spacesSubtitle.text = "\u2022 ${getString(R.string.spaces)}"
             testMultipleFab.isVisible = false
             passwordText.apply {
-                setText(passwordString)
+                setText(password)
                 isFocusable = false
                 isCursorVisible = false
             }
         }
         
         EvaluatePassword(zxcvbn = zxcvbn,
-                         password = passwordString,
+                         password = password,
                          fragmentBinding = fragmentBinding,
                          context = requireContext(),
                          resultUtils = ResultUtils(requireContext()))

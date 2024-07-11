@@ -174,7 +174,7 @@ class GeneratePasswordFragment : Fragment() {
         // Copy
         fragmentBinding.pwdCopyBtn.setOnClickListener {
             val clipData = ClipData.newPlainText("", fragmentBinding.pwdGeneratedTextView.text)
-            hideSensitiveContent(clipData)
+            if (Build.VERSION.SDK_INT >= 24) hideSensitiveContent(clipData)
             (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
             // Only show snackbar in 12L or lower to avoid duplicate notifications
             // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications

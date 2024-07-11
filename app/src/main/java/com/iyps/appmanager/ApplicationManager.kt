@@ -29,7 +29,6 @@ import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
 import com.iyps.utils.UiUtils.Companion.setAppTheme
 import com.nulabinc.zxcvbn.StandardDictionaries
 import com.nulabinc.zxcvbn.StandardKeyboards
-import com.nulabinc.zxcvbn.Zxcvbn
 import com.nulabinc.zxcvbn.ZxcvbnBuilder
 import com.nulabinc.zxcvbn.matchers.DictionaryLoader
 import java.io.BufferedReader
@@ -99,9 +98,9 @@ class ApplicationManager : Application() {
     // "english_wikipedia" contains english_words, eff_unranked & italian_words.
     // "female_names" contains english_female_names, english_male_names & italian_names.
     // The default dictionary names like "english_wikipedia" & "female_names" are used
-    // so that default warnings matching those names can be displayed.
-    // The names are later changed to "wikipedia" & "names" in ResultUtils.getMatchSequenceText()
-    val zxcvbn: Zxcvbn by lazy {
+    // so that default warnings matching those dictionary names can be displayed.
+    // The dictionary names are later changed while displaying, in ResultUtils.getMatchSequenceText()
+    val zxcvbn by lazy {
         ZxcvbnBuilder()
             .dictionaries(listOf(DictionaryLoader("passwords", commonPasswordsResource).load(),
                                  DictionaryLoader("english_wikipedia", wordsResource).load(),
@@ -115,7 +114,7 @@ class ApplicationManager : Application() {
             .build()
     }
     
-    val secureRandom: SecureRandom by lazy {
+    val secureRandom by lazy {
         try {
             when {
                 Build.VERSION.SDK_INT >= 26 -> SecureRandom.getInstanceStrong()
@@ -141,7 +140,7 @@ class ApplicationManager : Application() {
         wordMap
     }
     
-    var multiPasswordsList = mutableListOf<MultiPwdItem>()
+    val multiPasswordsList by lazy { mutableListOf<MultiPwdItem>() }
     var isAppOpen = false
     
     override fun onCreate() {

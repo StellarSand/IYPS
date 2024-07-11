@@ -65,7 +65,7 @@ dependencies {
     implementation(libs.bundles.navigation)
     
     // zxcvbn4j
-    implementation(libs.zxcvbn)
+    implementation(libs.zxcvbn4j)
     
     // Fastscroll-kt
     implementation(libs.androidFastScrollKt)
