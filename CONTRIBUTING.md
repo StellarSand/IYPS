@@ -1,6 +1,6 @@
 # CONTRIBUTING
-- Do not submit pull requests to update gradle, dependencies or SDK.
-- Try not to use any deprecated libraries, dependencies or methods, if other alternatives are available.
+
+### Translations
 - Make sure the characters are properly encoded when translating strings (example: `ä` as `\u00E4`, `é` as `\u00E9` etc).
   <br>You can use websites like [Compart](https://www.compart.com/en/unicode), [Symbl](https://symbl.cc/en/unicode/table/) or something else.
   <br>Example: `é` would be shown as `U+00E9` on these websites, so just convert it to `\u00E9` for the android strings.
@@ -20,3 +20,8 @@
   1. Translate the [primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values/strings.xml) strings.
   2. Create a new file named `messages_<language code>.properties` in [res/raw](https://github.com/StellarSand/IYPS/tree/main/app/src/main/res/raw) and translate the [feedback strings](https://github.com/nulab/zxcvbn4j/blob/main/src/main/resources/com/nulabinc/zxcvbn/messages.properties).
     <br>Example: for adding `Finnish (fi)` language, create `messages_fi.properties`.
+
+### Code
+- Do not submit pull requests to update gradle, dependencies or SDK.
+- Try not to use any deprecated libraries, dependencies or methods, if other alternatives are available.
+- Please test your changes before submitting a pull request.
