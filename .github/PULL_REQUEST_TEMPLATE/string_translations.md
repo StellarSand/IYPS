@@ -9,6 +9,6 @@ English, German, French etc.
 
 
 
-### Checklist
+### Terms
 - [ ] I have read the [contributing guidelines](https://github.com/StellarSand/IYPS/blob/main/CONTRIBUTING.md).
 - [ ] Proper encoding has been used for characters (example: ä as \u00E4, é as \u00E9 etc).
