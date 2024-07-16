@@ -16,7 +16,7 @@
 #
 
 [versions]
-androidGradle = "8.5.0"
+androidGradle = "8.5.1"
 androidKotlin = "2.0.0" # https://github.com/JetBrains/kotlin/releases/latest (latest version is not always auto picked up)
 appcompat = "1.7.0"
 coreKtx = "1.13.1"
