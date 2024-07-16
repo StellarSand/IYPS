@@ -1,0 +1,5 @@
+- Aggiunte le impostazioni rapide e la scorciatoia per generare password/passphrase.
+- Inclusi alcuni dizionari aggiuntivi.
+- Aggiunta la traduzione in portoghese.
+- Migliorata la traduzione in italiano (da @Martinligabue).
+- Migliorata la traduzione in cinese (da @LatticeLadder).

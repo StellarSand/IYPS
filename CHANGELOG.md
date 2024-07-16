@@ -1,11 +1,17 @@
 # CHANGELOG
 
 
+## v1.5.2
+- Added quick settings toggle & shortcut to generate password/passphrase.
+- Included some additional dictionaries.
+- Added Portuguese translation.
+- Improved Italian translation (by [@Martinligabue](https://github.com/Martinligabue)).
+- Improved Chinese translation (by [@LatticeLadder](https://github.com/LatticeLadder)).
+
 
 ## v1.5.1 (F-Droid only)
 - Absolutely nothing has changed. Just a fix for F-Droid automated builds.
 - Check out [v1.5.0](#v150) for the actual changes since v1.4.6
-
 
 
 ## v1.5.0

@@ -1,0 +1,5 @@
+- Schnelleinstellungen und Verknüpfung zum Erzeugen von Passwörtern/Passphrasen hinzugefügt.
+- Einige zusätzliche Wörterbücher wurden hinzugefügt.
+- Portugiesische Übersetzung hinzugefügt.
+- Verbesserte italienische Übersetzung (von @Martinligabue).
+- Verbesserte chinesische Übersetzung (von @LatticeLadder).

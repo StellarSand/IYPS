@@ -1,0 +1,5 @@
+- Parola/şifre oluşturmak için hızlı ayar geçişi ve kısayol eklendi.
+- Bazı ek sözlükler eklendi.
+- Portekizce çeviri eklendi.
+- Geliştirilmiş İtalyanca çeviri (@Martinligabue tarafından).
+- Geliştirilmiş Çince çeviri (@LatticeLadder tarafından).
