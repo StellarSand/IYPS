@@ -44,45 +44,35 @@
         android:visibility="gone"
         tools:visibility="visible"/>
 
-    <RadioGroup
-        android:id="@+id/generateRadioGroup"
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/generateToggleGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
         android:layout_marginBottom="@dimen/margin_100"
-        android:background="@drawable/shape_radio_group"
-        android:orientation="horizontal"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:checkedButton="@id/togglePassword"
         android:visibility="gone"
         tools:visibility="visible">
 
-        <com.google.android.material.radiobutton.MaterialRadioButton
-            android:id="@+id/radioPassword"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/togglePassword"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/margin_40"
-            android:layout_margin="@dimen/margin_4"
-            android:background="@drawable/shape_radio_btn_bg"
-            android:checked="true"
-            android:button="@android:color/transparent"
-            android:paddingStart="@dimen/margin_16"
-            android:paddingEnd="@dimen/margin_16"
+            android:layout_height="wrap_content"
             android:text="@string/password"
             android:textSize="@dimen/text_16"
-            android:textColor="@color/radio_btn_text_color"/>
+            style="?attr/materialButtonOutlinedStyle"/>
 
-        <com.google.android.material.radiobutton.MaterialRadioButton
-            android:id="@+id/radioPassphrase"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/togglePassphrase"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/margin_40"
-            android:layout_margin="@dimen/margin_4"
-            android:background="@drawable/shape_radio_btn_bg"
-            android:button="@android:color/transparent"
-            android:paddingStart="@dimen/margin_16"
-            android:paddingEnd="@dimen/margin_16"
+            android:layout_height="wrap_content"
             android:text="@string/passphrase"
             android:textSize="@dimen/text_16"
-            android:textColor="@color/radio_btn_text_color"/>
+            style="?attr/materialButtonOutlinedStyle"/>
 
-    </RadioGroup>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_bottom_nav"

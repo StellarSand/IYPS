@@ -26,7 +26,7 @@ class PreferenceManager(context: Context) {
         const val THEME_PREF = "theme"
         const val GRID_VIEW = "grid_view"
         const val SORT_ASC = "sort_asc"
-        const val GEN_RADIO = "gen_radio"
+        const val GEN_TOGGLE = "gen_toggle"
         const val PWD_LENGTH = "pwd_length"
         const val PWD_UPPERCASE = "pwd_uppercase"
         const val PWD_LOWERCASE = "pwd_lowercase"

@@ -20,14 +20,11 @@ package com.iyps.activities
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
-import android.net.Uri
 import android.os.Bundle
 import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.view.forEach
 import androidx.core.view.isVisible
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -36,7 +33,7 @@ import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.ActivityMainBinding
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
-import com.iyps.preferences.PreferenceManager.Companion.GEN_RADIO
+import com.iyps.preferences.PreferenceManager.Companion.GEN_TOGGLE
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
 
 class MainActivity : AppCompatActivity() {
@@ -60,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         appManager = applicationContext as ApplicationManager
         appManager.isAppOpen = true
         preferenceManager = appManager.preferenceManager
-        viewsToAnimate = listOf(activityBinding.generateRadioGroup, activityBinding.generateBottomAppBar)
+        viewsToAnimate = listOf(activityBinding.generateToggleGroup, activityBinding.generateBottomAppBar)
         
         // Disable screenshots and screen recordings
         blockScreenshots(this, preferenceManager.getBoolean(BLOCK_SS))
@@ -97,25 +94,26 @@ class MainActivity : AppCompatActivity() {
             setOnItemReselectedListener {}
         }
         
-        // Radio group
-        activityBinding.generateRadioGroup.apply {
+        // Toggle button group
+        activityBinding.generateToggleGroup.apply {
             preferenceManager.apply {
-                if (getInt(GEN_RADIO) == 0) {
-                    setInt(GEN_RADIO, R.id.radioPassword)
+                if (getInt(GEN_TOGGLE) == 0) {
+                    setInt(GEN_TOGGLE, R.id.togglePassword)
                 }
-                check(getInt(GEN_RADIO))
+                check(getInt(GEN_TOGGLE))
             }
-            
-            setOnCheckedChangeListener { _, checkedId ->
-                displayFragment(R.id.nav_generate, checkedId)
-                preferenceManager.setInt(GEN_RADIO, checkedId)
+            addOnButtonCheckedListener { _, checkedId, isChecked ->
+                if (isChecked) {
+                    displayFragment(R.id.nav_generate, checkedId)
+                    preferenceManager.setInt(GEN_TOGGLE, checkedId)
+                }
             }
         }
         
     }
     
     // Setup fragments
-    private fun displayFragment(clickedNavItem: Int, clickedRadioItem: Int = preferenceManager.getInt(GEN_RADIO)) {
+    private fun displayFragment(clickedNavItem: Int, clickedToggleItem: Int = preferenceManager.getInt(GEN_TOGGLE)) {
         val currentFragment = navController.currentDestination!!
         
         val navActionsMap =
@@ -126,17 +124,17 @@ class MainActivity : AppCompatActivity() {
                   Pair(R.id.generatePasswordFragment, R.id.nav_settings) to R.id.action_generatePasswordFragment_to_settingsFragment,
                   Pair(R.id.generatePassphraseFragment, R.id.nav_settings) to R.id.action_generatePassphraseFragment_to_settingsFragment)
         
-        val radioActionsMap =
-            mapOf(Pair(R.id.passwordFragment, R.id.radioPassword) to R.id.action_passwordFragment_to_generatePasswordFragment,
-                  Pair(R.id.settingsFragment, R.id.radioPassword) to R.id.action_settingsFragment_to_generatePasswordFragment,
-                  Pair(R.id.passwordFragment, R.id.radioPassphrase) to R.id.action_passwordFragment_to_generatePassphraseFragment,
-                  Pair(R.id.settingsFragment, R.id.radioPassphrase) to R.id.action_settingsFragment_to_generatePassphraseFragment,
-                  Pair(R.id.generatePasswordFragment, R.id.radioPassphrase) to R.id.action_generatePasswordFragment_to_generatePassphraseFragment,
-                  Pair(R.id.generatePassphraseFragment, R.id.radioPassword) to R.id.action_generatePassphraseFragment_to_generatePasswordFragment)
+        val toggleActionsMap =
+            mapOf(Pair(R.id.passwordFragment, R.id.togglePassword) to R.id.action_passwordFragment_to_generatePasswordFragment,
+                  Pair(R.id.settingsFragment, R.id.togglePassword) to R.id.action_settingsFragment_to_generatePasswordFragment,
+                  Pair(R.id.passwordFragment, R.id.togglePassphrase) to R.id.action_passwordFragment_to_generatePassphraseFragment,
+                  Pair(R.id.settingsFragment, R.id.togglePassphrase) to R.id.action_settingsFragment_to_generatePassphraseFragment,
+                  Pair(R.id.generatePasswordFragment, R.id.togglePassphrase) to R.id.action_generatePasswordFragment_to_generatePassphraseFragment,
+                  Pair(R.id.generatePassphraseFragment, R.id.togglePassword) to R.id.action_generatePassphraseFragment_to_generatePasswordFragment)
         
         val action =
             if (clickedNavItem == R.id.nav_generate) {
-                radioActionsMap[Pair(currentFragment.id, clickedRadioItem)] ?: 0
+                toggleActionsMap[Pair(currentFragment.id, clickedToggleItem)] ?: 0
             }
             else {
                 navActionsMap[Pair(currentFragment.id, clickedNavItem)] ?: 0
