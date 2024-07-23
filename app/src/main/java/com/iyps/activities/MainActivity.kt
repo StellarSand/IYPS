@@ -25,9 +25,11 @@ import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.google.android.material.button.MaterialButton
 import com.iyps.R
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.ActivityMainBinding
@@ -57,6 +59,7 @@ class MainActivity : AppCompatActivity() {
         appManager = applicationContext as ApplicationManager
         appManager.isAppOpen = true
         preferenceManager = appManager.preferenceManager
+        val checkIcon = ContextCompat.getDrawable(this, R.drawable.ic_done)
         viewsToAnimate = listOf(activityBinding.generateToggleGroup, activityBinding.generateBottomAppBar)
         
         // Disable screenshots and screen recordings
@@ -96,16 +99,23 @@ class MainActivity : AppCompatActivity() {
         
         // Toggle button group
         activityBinding.generateToggleGroup.apply {
+            val selectedToggle: Int
             preferenceManager.apply {
                 if (getInt(GEN_TOGGLE) == 0) {
                     setInt(GEN_TOGGLE, R.id.togglePassword)
                 }
-                check(getInt(GEN_TOGGLE))
+                selectedToggle = getInt(GEN_TOGGLE)
+                check(selectedToggle)
             }
+            findViewById<MaterialButton>(selectedToggle).icon = checkIcon
             addOnButtonCheckedListener { _, checkedId, isChecked ->
                 if (isChecked) {
+                    findViewById<MaterialButton>(checkedId).icon = checkIcon // Add check icon
                     displayFragment(R.id.nav_generate, checkedId)
                     preferenceManager.setInt(GEN_TOGGLE, checkedId)
+                }
+                else {
+                    findViewById<MaterialButton>(checkedId).icon = null // Remove check icon
                 }
             }
         }
