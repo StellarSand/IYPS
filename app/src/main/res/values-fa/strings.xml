@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~     Copyright (C) 2022-present StellarSand
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+<resources>
+
+    <!--
+    اطمینان حاصل کنید که کاراکترها به درستی هنگام ترجمه به زبان‌های دیگر کدگذاری شده‌اند.
+    به عنوان مثال: ä به \u00E4، é به \u00E9 و غیره.
+    -->
+
+    <string name="app_version">نگارش</string>
+
+    <!--نمای پایین ناوبری-->
+    <string name="test">آزمایش</string>
+    <string name="generate">ساخت</string>
+    <string name="password">گذرواژه</string>
+    <string name="passphrase">عبارت عبور</string>
+    <string name="settings">تنظیمات</string>
+
+    <!--#########################################################################################-->
+
+    <!--بخش گذرواژه-->
+    <string name="test_your_password">گذرواژه‌تان را آزمایش کنید</string>
+    <string name="ten_b_guesses_per_sec">10B حدس/ثانیه</string>
+    <string name="ten_k_guesses_per_sec">10k حدس/ثانیه</string>
+    <string name="ten_guesses_per_sec">10 حدس/ثانیه</string>
+    <string name="hundred_guesses_per_hour">100 حدس/ساعت</string>
+    <string name="strength">قدرت</string>
+    <string name="worst">بدترین</string>
+    <string name="weak">ضعیف</string>
+    <string name="medium">متوسط</string>
+    <string name="strong">قوی</string>
+    <string name="excellent">عالی</string>
+    <string name="est_time_to_crack">زمان تخمینی برای شکستن</string>
+    <string name="less_than_sec">کمتر از یک ثانیه</string>
+    <string name="second">ثانیه</string>
+    <string name="seconds">ثانیه</string>
+    <string name="minute">دقیقه</string>
+    <string name="minutes">دقیقه</string>
+    <string name="hour">ساعت</string>
+    <string name="hours">ساعت</string>
+    <string name="day">روز</string>
+    <string name="days">روز</string>
+    <string name="month">ماه</string>
+    <string name="months">ماه</string>
+    <string name="year">سال</string>
+    <string name="years">سال</string>
+    <string name="centuries">قرن</string>
+    <string name="warning">هشدار</string>
+    <string name="suggestions">پیشنهادات</string>
+    <string name="est_guesses_to_crack">حدس‌های تخمینی برای شکستن</string>
+    <string name="order_of_magn">ترتیب بزرگی حدس‌ها</string>
+    <string name="entropy">آنتروپی</string>
+    <string name="bits">بیت‌ها</string>
+    <string name="match_sequence">ترتیب تطابق</string>
+    <string name="pattern">\u2022 الگو</string>
+    <string name="dict_name">\u2022 نام واژه‌نامه</string>
+    <string name="rank">\u2022 رتبه</string>
+    <string name="reversed">\u2022 معکوس</string>
+    <string name="substitutions">\u2022 جانشینی‌ها</string>
+    <string name="base_token">\u2022 توکن پایه</string>
+    <string name="repeat_times">\u2022 تکرار شده %1$s بار</string>
+    <string name="sequence_name">\u2022 نام توالی</string>
+    <string name="sequence_size">\u2022 اندازه توالی</string>
+    <string name="ascending">\u2022 صعودی</string>
+    <string name="separator">\u2022 جداکننده</string>
+    <string name="graph">\u2022 نمودار</string>
+    <string name="turns">\u2022 چرخش‌ها</string>
+    <string name="shifted_times">\u2022 جابجا شده %1$s بار</string>
+    <string name="regex_name">\u2022 نام regex</string>
+    <string name="statistics">آمار</string>
+    <string name="length">طول</string>
+    <string name="uppercase">حروف بزرگ</string>
+    <string name="lowercase">حروف کوچک</string>
+    <string name="numbers">اعداد</string>
+    <string name="special_char">کاراکترهای ویژه</string>
+    <string name="spaces">فاصله‌ها</string>
+
+    <!--#########################################################################################-->
+
+    <!--فعالیت چند گذرواژه-->
+    <string name="view">مشاهده</string>
+    <string name="sort">مرتب‌سازی</string>
+
+    <!--#########################################################################################-->
+
+    <!--بخش تولید گذرواژه-->
+    <string name="details">جزئیات</string>
+    <string name="copy">رونوشت</string>
+    <string name="regenerate">تولید مجدد</string>
+    <string name="share">هم‌رسانی</string>
+    <string name="customize">سفارشی‌سازی</string>
+    <string name="avoid_amb_chars">اجتناب از کاراکترهای مبهم</string>
+    <string name="include_spaces">شامل فاصله‌ها</string>
+
+    <!--بخش تولید عبارت عبور-->
+    <string name="words">کلمات</string>
+    <string name="capitalize">حروف بزرگ</string>
+
+    <!--#########################################################################################-->
+
+    <!--بخش تنظیمات-->
+    <string name="appearance">نما</string>
+    <string name="theme">پوسته</string>
+    <string name="material_you">Material You\n(نیاز به باز راه‌اندازی برنامه دارد)</string>
+    <string name="privacy">حریم خصوصی</string>
+    <string name="block_screenshots">مسدود کردن نماگرفت‌ها در برنامه</string>
+    <string name="incognito_keyboard">صفحه‌کلید ناشناس</string>
+    <string name="about">درباره</string>
+    <string name="privacy_policy">سیاست حریم خصوصی</string>
+    <string name="report_issue">گزارش مشکل</string>
+    <string name="support">پشتیبانی</string>
+    <string name="view_on_github">مشاهده در GitHub</string>
+    <string name="third_party_licenses">مجوزهای شخص ثالث</string>
+
+    <!--#########################################################################################-->
+
+    <!--هشدارهای سفارشی-->
+    <string name="worst_pass_warning">گذرواژه خیلی ساده است و قابل حدس زدن است.</string>
+    <string name="weak_pass_warning">گذرواژه به راحتی قابل شکستن است.</string>
+    <string name="medium_pass_warning">گذرواژه به اندازه کافی قوی نیست.</string>
+
+    <!--#########################################################################################-->
+
+    <!--پایین برگه-->
+    <string name="cancel">رد کردن</string>
+    <string name="done">انجام شد</string>
+
+    <!--آزمایش چندین گذرواژه-->
+    <string name="test_multi_pwds">آزمایش چندین گذرواژه</string>
+    <string name="add">افزودن</string>
+    <string name="select_file">انتخاب پرونده</string>
+
+    <!--افزودن چندین گذرواژه-->
+    <string name="add_multi_pwds">افزودن چندین گذرواژه</string>
+
+    <!--پوسته-->
+    <string name="follow_system">پیروی از سامانه</string>
+    <string name="light">روشن</string>
+    <string name="dark">تاریک</string>
+
+    <!--#########################################################################################-->
+
+    <!--اسنکبارها-->
+    <string name="no_browsers">هیچ مرورگری بر روی این دستگاه نصب نشده است</string>
+    <string name="copied_to_clipboard">در بریده‌دان رونوشت شد</string>
+
+    <!--#########################################################################################-->
+
+    <!--کاشی تنظیمات سریع-->
+    <string name="app_in_use">IYPS به کار گرفته شده</string>
+
+</resources>
