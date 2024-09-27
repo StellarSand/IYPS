@@ -17,21 +17,22 @@
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginStart="@dimen/margin_10"
-    android:layout_marginEnd="@dimen/margin_10"
     android:layout_marginTop="@dimen/margin_4"
     android:layout_marginBottom="@dimen/margin_12"
-    android:paddingStart="@dimen/margin_8"
-    android:paddingEnd="@dimen/margin_8"
-    android:paddingTop="@dimen/margin_10"
-    android:paddingBottom="@dimen/margin_8"
-    android:background="@drawable/shape_outline">
+    android:layout_marginHorizontal="@dimen/margin_12"
+    android:backgroundTint="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_4"
+        android:paddingVertical="@dimen/margin_4">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/supportMethodTitle"
@@ -41,7 +42,7 @@
         android:layout_marginStart="@dimen/margin_16"
         android:layout_marginBottom="@dimen/margin_4"
         android:drawableStart="@drawable/ic_liberapay"
-        android:drawablePadding="@dimen/margin_12"
+        android:drawablePadding="@dimen/margin_8"
         android:text="@string/liberapay"
         android:textSize="@dimen/text_18"
         style="@style/MediumBoldText"/>
@@ -58,13 +59,15 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/supportMethodUrl"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/margin_16"
-        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:paddingVertical="@dimen/margin_16"
+        android:gravity="center"
         android:text="@string/liberapay_url"
         android:textColor="@color/color_url"
-        android:textSize="@dimen/text_17"
-        android:textIsSelectable="true"/>
+        android:textSize="@dimen/text_17"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

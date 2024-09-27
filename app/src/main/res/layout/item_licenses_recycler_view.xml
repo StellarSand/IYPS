@@ -17,20 +17,22 @@
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginStart="@dimen/margin_10"
-    android:layout_marginEnd="@dimen/margin_10"
+    android:layout_marginHorizontal="@dimen/margin_12"
     android:layout_marginTop="@dimen/margin_4"
     android:layout_marginBottom="@dimen/margin_12"
-    android:paddingStart="@dimen/margin_8"
-    android:paddingEnd="@dimen/margin_8"
-    android:paddingTop="@dimen/margin_10"
-    android:paddingBottom="@dimen/margin_8"
-    android:background="@drawable/shape_outline">
+    android:backgroundTint="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margin_8"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_8">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/licenseTitle"
@@ -38,18 +40,22 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin_8"
         android:layout_marginBottom="@dimen/margin_4"
+        android:paddingVertical="@dimen/margin_8"
         android:clickable="true"
         android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
         android:text="@string/zxcvbn4j"
         android:textAlignment="viewStart"
         android:textColor="@color/color_url"
-        android:textSize="@dimen/text_20" />
+        android:textSize="@dimen/text_18"
+        android:drawableEnd="@drawable/ic_open_in_browser"
+        android:drawablePadding="@dimen/margin_4"/>
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/licenseDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_4"
         android:layout_marginBottom="@dimen/margin_4"
         android:paddingStart="@dimen/margin_10"
         android:paddingEnd="@dimen/margin_8"
@@ -58,3 +64,5 @@
         android:textSize="@dimen/text_16" />
 
 </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

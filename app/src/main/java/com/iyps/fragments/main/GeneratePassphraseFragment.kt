@@ -28,6 +28,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updateLayoutParams
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.slider.Slider
@@ -40,6 +44,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -70,6 +75,17 @@ class GeneratePassphraseFragment : Fragment() {
         preferenceManager = appManager.preferenceManager
         passphraseWordsMap = appManager.passphraseWordsMap
         secureRandom = appManager.secureRandom
+        
+        // Adjust scrollview for edge to edge
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.phraseScrollView) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
+                                                        or WindowInsetsCompat.Type.displayCutout())
+            v.updatePadding(left = insets.left, top = insets.top, right = insets.right)
+            v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                bottomMargin = insets.bottom + convertDpToPx(requireContext(), 64f)
+            }
+            WindowInsetsCompat.CONSUMED
+        }
         
         // Password length slider
         fragmentBinding.phraseWordsSlider.apply {

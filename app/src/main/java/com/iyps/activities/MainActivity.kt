@@ -20,13 +20,18 @@ package com.iyps.activities
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
+import android.os.Build
 import android.os.Bundle
 import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
+import androidx.core.view.updateLayoutParams
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.button.MaterialButton
@@ -37,6 +42,7 @@ import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.GEN_TOGGLE
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
+import com.iyps.utils.UiUtils.Companion.convertDpToPx
 
 class MainActivity : AppCompatActivity() {
     
@@ -49,6 +55,10 @@ class MainActivity : AppCompatActivity() {
     private var selectedItem = 0
     
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
+        if (Build.VERSION.SDK_INT >= 29) {
+            window.isNavigationBarContrastEnforced = false
+        }
         super.onCreate(savedInstanceState)
         onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
         activityBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -61,6 +71,19 @@ class MainActivity : AppCompatActivity() {
         preferenceManager = appManager.preferenceManager
         val checkIcon = ContextCompat.getDrawable(this, R.drawable.ic_done)
         viewsToAnimate = listOf(activityBinding.generateToggleGroup, activityBinding.generateBottomAppBar)
+        
+        // Adjust UI components for edge to edge
+        mapOf(activityBinding.generateBottomAppBar to 80f,
+              activityBinding.generateToggleGroup to 95f).forEach { (view, margin) ->
+            ViewCompat.setOnApplyWindowInsetsListener(view) { v, windowInsets ->
+                v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                    bottomMargin =
+                        windowInsets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom +
+                        convertDpToPx(this@MainActivity, margin)
+                }
+                WindowInsetsCompat.CONSUMED
+            }
+        }
         
         // Disable screenshots and screen recordings
         blockScreenshots(this, preferenceManager.getBoolean(BLOCK_SS))

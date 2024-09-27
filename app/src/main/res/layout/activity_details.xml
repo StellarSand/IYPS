@@ -31,23 +31,23 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="?attr/actionBarSize"/>
 
-    <com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/detailsBottomAppBar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="?attr/colorSurfaceContainer"
-        app:elevation="0dp">
+        app:navigationIcon="@drawable/ic_back"
+        app:contentInsetStartWithNavigation="0dp">
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/details_toolbar"
-            android:layout_width="match_parent"
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/settingsBottomAppBarTitle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_2.5"
-            app:contentInsetStartWithNavigation="0dp"
-            app:navigationIcon="@drawable/ic_back"
-            android:paddingStart="@dimen/margin_2.5"
-            android:paddingEnd="@dimen/margin_2.5"/>
+            android:layout_marginStart="@dimen/margin_8"
+            android:text="@string/details"
+            android:textColor="?attr/colorOnSurface"
+            style="@style/TextAppearance.Material3.TitleLarge"/>
 
-    </com.google.android.material.appbar.AppBarLayout>
+    </com.google.android.material.bottomappbar.BottomAppBar>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

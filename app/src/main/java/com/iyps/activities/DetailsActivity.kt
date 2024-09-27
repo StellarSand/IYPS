@@ -17,7 +17,9 @@
 
 package com.iyps.activities
 
+import android.os.Build
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.iyps.R
 import com.iyps.appmanager.ApplicationManager
@@ -32,6 +34,10 @@ class DetailsActivity : AppCompatActivity() {
     lateinit var passwordLine: CharSequence
     
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
+        if (Build.VERSION.SDK_INT >= 29) {
+            window.isNavigationBarContrastEnforced = false
+        }
         super.onCreate(savedInstanceState)
         activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
@@ -42,12 +48,10 @@ class DetailsActivity : AppCompatActivity() {
         blockScreenshots(this,
                                 (applicationContext as ApplicationManager).preferenceManager.getBoolean(PreferenceManager.BLOCK_SS))
         
-        activityBinding.detailsToolbar.apply {
+        activityBinding.detailsBottomAppBar.apply {
             setSupportActionBar(this)
             setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
         }
-        
-        supportActionBar?.title = getString(R.string.details)
         
         supportFragmentManager.beginTransaction()
             .replace(R.id.activity_host_fragment, DetailsFragment())

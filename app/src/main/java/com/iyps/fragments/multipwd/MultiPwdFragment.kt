@@ -22,6 +22,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
@@ -31,6 +34,7 @@ import com.iyps.adapters.MultiPwdAdapter
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentMultiPwdBinding
 import com.iyps.models.MultiPwdItem
+import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import me.stellarsand.android.fastscroll.FastScrollerBuilder
 
 class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
@@ -55,6 +59,17 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
             else appManager.multiPasswordsList.sortedByDescending { it.passwordLine.lowercase() }
         
         fragmentBinding.recyclerView.apply {
+            // Adjust recyclerview for edge to edge
+            ViewCompat.setOnApplyWindowInsetsListener(this) { v, windowInsets ->
+                val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
+                                                            or WindowInsetsCompat.Type.displayCutout())
+                v.updatePadding(left = insets.left,
+                                top = insets.top + convertDpToPx(requireContext(), 10f),
+                                right = insets.right,
+                                bottom = insets.bottom + convertDpToPx(requireContext(), 10f))
+                WindowInsetsCompat.CONSUMED
+            }
+            
             adapter = MultiPwdAdapter(multiplePwdList, this@MultiPwdFragment)
             layoutManager =
                 if (!multiPwdActivity.isGridView) LinearLayoutManager(requireContext())

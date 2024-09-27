@@ -18,6 +18,7 @@
 package com.iyps.utils
 
 import android.app.Activity
+import android.content.Context
 import android.os.Build
 import android.view.View
 import android.view.WindowManager
@@ -45,6 +46,10 @@ class UiUtils {
                 R.id.light -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 R.id.dark -> AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             }
+        }
+        
+        fun convertDpToPx(context: Context, dp: Float): Int {
+            return (dp * context.resources.displayMetrics.density).toInt()
         }
         
         fun blockScreenshots(activity: Activity,

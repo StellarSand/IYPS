@@ -29,27 +29,16 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="?attr/actionBarSize"
+        android:layout_marginBottom="@dimen/margin_80"
         app:navGraph="@navigation/multi_pwd_fragments_nav_graph"
         app:defaultNavHost="true"/>
 
-    <com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/multiPwdBottomAppBar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:background="?attr/colorSurfaceContainer"
-        app:elevation="0dp">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/multiPwdToolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_2.5"
-            app:contentInsetStartWithNavigation="0dp"
-            app:navigationIcon="@drawable/ic_back"
-            android:paddingStart="@dimen/margin_2.5"
-            android:paddingEnd="@dimen/margin_2.5"/>
-
-    </com.google.android.material.appbar.AppBarLayout>
+        app:navigationIcon="@drawable/ic_back"
+        app:contentInsetStartWithNavigation="0dp"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

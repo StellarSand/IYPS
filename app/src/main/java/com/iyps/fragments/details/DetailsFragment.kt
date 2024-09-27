@@ -22,7 +22,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
+import androidx.core.view.updateLayoutParams
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
@@ -30,6 +34,7 @@ import com.iyps.appmanager.ApplicationManager
 import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.utils.ResultUtils
+import com.iyps.utils.UiUtils.Companion.convertDpToPx
 
 class DetailsFragment : Fragment() {
     
@@ -50,6 +55,23 @@ class DetailsFragment : Fragment() {
         
         val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         password = (requireActivity() as DetailsActivity).passwordLine
+        
+        // Adjust UI components for edge to edge
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.scrollView) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
+                                                        or WindowInsetsCompat.Type.displayCutout())
+            v.updatePadding(left = insets.left, right = insets.right, bottom = insets.bottom)
+            WindowInsetsCompat.CONSUMED
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.passwordBox) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
+                                                        or WindowInsetsCompat.Type.displayCutout())
+            v.updatePadding(left = insets.left, right = insets.right)
+            v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                topMargin = insets.top + convertDpToPx(requireContext(), 12f)
+            }
+            WindowInsetsCompat.CONSUMED
+        }
         
         fragmentBinding.apply {
             lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"

@@ -20,5 +20,5 @@
     <stroke
         android:color="@color/color_outlineVariant"
         android:width="1dp"/>
-    <corners android:radius="@dimen/margin_12"/>
+    <corners android:radius="@dimen/margin_8"/>
 </shape>

@@ -16,23 +16,24 @@
   ~     You should have received a copy of the GNU General Public License
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
-
-<com.google.android.material.textview.MaterialTextView
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/password_line"
+    android:id="@+id/password_card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    android:background="@drawable/shape_card_with_ripple"
-    android:layout_marginStart="@dimen/margin_12"
-    android:layout_marginEnd="@dimen/margin_12"
+    android:layout_marginHorizontal="@dimen/margin_12"
     android:layout_marginTop="@dimen/margin_4"
-    android:layout_marginBottom="@dimen/margin_12"
-    android:padding="@dimen/margin_25"
-    android:ellipsize="marquee"
-    android:text="@string/password"
-    android:textAlignment="viewStart"
-    android:textColor="?attr/colorOnSurface"
-    android:textSize="@dimen/text_17" />
+    android:layout_marginBottom="@dimen/margin_12">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/password_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_25"
+        android:ellipsize="marquee"
+        android:text="@string/password"
+        android:textAlignment="viewStart"
+        android:textColor="?attr/colorOnSurface"
+        android:textSize="@dimen/text_17" />
+
+</com.google.android.material.card.MaterialCardView>

@@ -30,7 +30,11 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.inputmethod.EditorInfoCompat.IME_FLAG_NO_PERSONALIZED_LEARNING
+import androidx.core.view.updateLayoutParams
+import androidx.core.view.updatePadding
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
@@ -46,6 +50,7 @@ import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.ResultUtils
+import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -78,6 +83,32 @@ class TestPasswordFragment : Fragment() {
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         naString = getString(R.string.na)
         emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
+        
+        // Adjust UI components for edge to edge
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.scrollView) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
+                                                        or WindowInsetsCompat.Type.displayCutout())
+            v.updatePadding(left = insets.left, right = insets.right, bottom = insets.bottom)
+            WindowInsetsCompat.CONSUMED
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.passwordBox) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
+                                                        or WindowInsetsCompat.Type.displayCutout())
+            v.updatePadding(left = insets.left, right = insets.right)
+            v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                topMargin = insets.top + convertDpToPx(requireContext(), 12f)
+            }
+            WindowInsetsCompat.CONSUMED
+        }
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.testMultipleFab) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
+                                                        or WindowInsetsCompat.Type.displayCutout())
+            v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                rightMargin = insets.right + convertDpToPx(requireContext(), 16f)
+                bottomMargin = insets.bottom + convertDpToPx(requireContext(), 25f)
+            }
+            WindowInsetsCompat.CONSUMED
+        }
         
         fragmentBinding.apply {
             lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"

@@ -27,6 +27,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.updateLayoutParams
+import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.materialswitch.MaterialSwitch
@@ -45,6 +49,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_SPACES
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -111,6 +116,17 @@ class GeneratePasswordFragment : Fragment() {
                                        lowercaseSwitch to PWD_LOWERCASE,
                                        numbersSwitch to PWD_NUMBERS,
                                        specialCharsSwitch to PWD_SPEC_CHARS)
+        
+        // Adjust scrollview for edge to edge
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.pwdScrollView) { v, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
+                                                        or WindowInsetsCompat.Type.displayCutout())
+            v.updatePadding(left = insets.left, top = insets.top, right = insets.right)
+            v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                bottomMargin = insets.bottom + convertDpToPx(requireContext(), 64f)
+            }
+            WindowInsetsCompat.CONSUMED
+        }
         
         // Password length slider
         fragmentBinding.pwdLengthSlider.apply {

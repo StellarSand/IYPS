@@ -23,8 +23,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="@dimen/margin_12"
-    android:paddingBottom="@dimen/margin_8"
+    android:paddingTop="@dimen/margin_8"
+    android:paddingBottom="@dimen/margin_4"
     android:orientation="vertical"
     android:layout_gravity="center">
 
@@ -41,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:scrollbars="vertical"
         android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb">
 
         <androidx.recyclerview.widget.RecyclerView

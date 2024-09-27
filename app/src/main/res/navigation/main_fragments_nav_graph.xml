@@ -86,8 +86,8 @@
         <action
             android:id="@+id/action_generatePasswordFragment_to_generatePassphraseFragment"
             app:destination="@id/generatePassphraseFragment"
-            app:enterAnim="@anim/slide_from_end"
-            app:exitAnim="@anim/slide_to_start"/>
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
     </fragment>
 
     <fragment
@@ -98,8 +98,8 @@
         <action
             android:id="@+id/action_generatePassphraseFragment_to_generatePasswordFragment"
             app:destination="@id/generatePasswordFragment"
-            app:enterAnim="@anim/slide_from_start"
-            app:exitAnim="@anim/slide_to_end"/>
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"/>
         <action
             android:id="@+id/action_generatePassphraseFragment_to_passwordFragment"
             app:destination="@id/passwordFragment"

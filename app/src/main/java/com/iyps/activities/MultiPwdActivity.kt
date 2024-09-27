@@ -17,11 +17,13 @@
 
 package com.iyps.activities
 
+import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.activity.OnBackPressedCallback
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.MenuProvider
 import androidx.navigation.NavController
@@ -44,6 +46,10 @@ class MultiPwdActivity : AppCompatActivity(), MenuProvider {
     var isAscSort = false
     
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
+        if (Build.VERSION.SDK_INT >= 29) {
+            window.isNavigationBarContrastEnforced = false
+        }
         super.onCreate(savedInstanceState)
         addMenuProvider(this)
         onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
@@ -60,12 +66,10 @@ class MultiPwdActivity : AppCompatActivity(), MenuProvider {
         // Disable screenshots and screen recordings
         blockScreenshots(this, preferenceManager.getBoolean(PreferenceManager.BLOCK_SS))
         
-        activityBinding.multiPwdToolbar.apply {
+        activityBinding.multiPwdBottomAppBar.apply {
             setSupportActionBar(this)
             setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
         }
-        
-        supportActionBar?.setDisplayShowTitleEnabled(false)
     }
     
     override fun onCreateMenu(menu: Menu, menuInflater: MenuInflater) {
