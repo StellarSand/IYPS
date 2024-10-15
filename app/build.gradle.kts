@@ -21,7 +21,7 @@ plugins {
 }
 
 kotlin {
-    jvmToolchain(17)
+    jvmToolchain(21)
 }
 
 android {
@@ -60,13 +60,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material3)
-    
-    // Navigation components
     implementation(libs.bundles.navigation)
-    
-    // zxcvbn4j
     implementation(libs.zxcvbn4j)
-    
-    // Fastscroll-kt
     implementation(libs.androidFastScrollKt)
 }
