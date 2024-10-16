@@ -19,12 +19,10 @@ package com.iyps.appmanager
 
 import android.app.Application
 import android.os.Build
-import com.google.android.material.color.DynamicColors
 import com.iyps.R
 import com.iyps.inputstream.ResourceFromInputStream
 import com.iyps.models.MultiPwdItem
 import com.iyps.preferences.PreferenceManager
-import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
 import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
 import com.iyps.utils.UiUtils.Companion.setAppTheme
 import com.nulabinc.zxcvbn.StandardDictionaries
@@ -148,11 +146,6 @@ class ApplicationManager : Application() {
         
         // Theme
         setAppTheme(preferenceManager.getInt(THEME_PREF))
-        
-        // Material you
-        if (preferenceManager.getBoolean(MATERIAL_YOU, defValue = false)) {
-            DynamicColors.applyToActivitiesIfAvailable(this)
-        }
         
     }
     

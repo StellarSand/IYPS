@@ -48,7 +48,8 @@
             android:name=".activities.MainActivity"
             android:configChanges="orientation|screenSize"
             android:windowSoftInputMode="adjustNothing"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

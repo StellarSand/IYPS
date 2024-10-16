@@ -57,8 +57,7 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.core.ktx)
+    implementation(libs.bundles.androidxCoreComponents)
     implementation(libs.material3)
     implementation(libs.bundles.navigation)
     implementation(libs.zxcvbn4j)

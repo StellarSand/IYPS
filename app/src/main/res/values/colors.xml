@@ -163,7 +163,7 @@
     <color name="color_surfaceContainerHigh_highContrast">#E5E9E1</color>
     <color name="color_surfaceContainerHighest_highContrast">#E0E4DB</color>
 
-    <color name="color_scrollbar">#B8B8B8</color>
+    <color name="color_scrollbar">#A19CA0</color>
     <color name="color_url">#1976D2</color>
 
     <!--Strength meter colors-->
