@@ -59,6 +59,7 @@ android {
 dependencies {
     implementation(libs.bundles.androidxCoreComponents)
     implementation(libs.material3)
+    implementation(libs.koin.android)
     implementation(libs.bundles.navigation)
     implementation(libs.zxcvbn4j)
     implementation(libs.androidFastScrollKt)

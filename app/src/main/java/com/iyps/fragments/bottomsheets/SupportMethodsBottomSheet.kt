@@ -57,7 +57,7 @@ class SupportMethodsBottomSheet : BottomSheetDialogFragment() {
         // Title
         BottomSheetHeaderBinding.bind(bottomSheetBinding.root).bottomSheetTitle.text = getString(R.string.support)
         
-        supportMethodsList = ArrayList<SupportMethod>().apply {
+        supportMethodsList = arrayListOf<SupportMethod>().apply {
             
             // Liberapay
             add(SupportMethod(title = getString(R.string.liberapay),

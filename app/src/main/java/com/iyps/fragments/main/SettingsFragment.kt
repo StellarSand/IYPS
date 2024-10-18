@@ -32,15 +32,16 @@ import androidx.fragment.app.Fragment
 import com.iyps.BuildConfig
 import com.iyps.R
 import com.iyps.activities.MainActivity
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentSettingsBinding
 import com.iyps.fragments.bottomsheets.LicensesBottomSheet
 import com.iyps.fragments.bottomsheets.SupportMethodsBottomSheet
 import com.iyps.fragments.bottomsheets.ThemeBottomSheet
+import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
 import com.iyps.utils.IntentUtils.Companion.openURL
+import org.koin.android.ext.android.inject
 
 class SettingsFragment : Fragment() {
     
@@ -57,7 +58,7 @@ class SettingsFragment : Fragment() {
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
-        val preferenceManager = (requireContext().applicationContext as ApplicationManager).preferenceManager
+        val prefManager by inject<PreferenceManager>()
         val mainActivity = requireActivity() as MainActivity
         
         // Adjust scrollview for edge to edge
@@ -74,28 +75,28 @@ class SettingsFragment : Fragment() {
         
         // Theme
         fragmentBinding.theme.setOnClickListener {
-                ThemeBottomSheet().show(parentFragmentManager, "ThemeBottomSheet")
-            }
+            ThemeBottomSheet().show(parentFragmentManager, "ThemeBottomSheet")
+        }
         
         // Material You
         fragmentBinding.materialYouSwitch.apply {
             if (Build.VERSION.SDK_INT >= 31) {
                 isVisible = true
-                isChecked = preferenceManager.getBoolean(MATERIAL_YOU, defValue = false)
+                isChecked = prefManager.getBoolean(MATERIAL_YOU, defValue = false)
                 setOnCheckedChangeListener { _, isChecked ->
-                    preferenceManager.setBoolean(MATERIAL_YOU, isChecked)
+                    prefManager.setBoolean(MATERIAL_YOU, isChecked)
                 }
             }
         }
         
         // Block screenshots
         fragmentBinding.blockScreenshotsSwitch.apply {
-            isChecked = preferenceManager.getBoolean(BLOCK_SS)
+            isChecked = prefManager.getBoolean(BLOCK_SS)
             setOnCheckedChangeListener { _, isChecked ->
-                preferenceManager.setBoolean(BLOCK_SS, isChecked)
+                prefManager.setBoolean(BLOCK_SS, isChecked)
                 when (isChecked) {
                     true -> mainActivity.window.setFlags(WindowManager.LayoutParams.FLAG_SECURE,
-                                                              WindowManager.LayoutParams.FLAG_SECURE)
+                                                         WindowManager.LayoutParams.FLAG_SECURE)
                     false -> mainActivity.window.clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
                 }
             }
@@ -103,20 +104,20 @@ class SettingsFragment : Fragment() {
         
         // Incognito keyboard
         fragmentBinding.incognitoKeyboardSwitch.apply {
-            isChecked = preferenceManager.getBoolean(INCOG_KEYBOARD)
+            isChecked = prefManager.getBoolean(INCOG_KEYBOARD)
             setOnCheckedChangeListener { _, isChecked ->
-                preferenceManager.setBoolean(INCOG_KEYBOARD, isChecked)
+                prefManager.setBoolean(INCOG_KEYBOARD, isChecked)
             }
         }
-    
+        
         // Privacy policy
         fragmentBinding.privacyPolicy.setOnClickListener {
-                openURL(mainActivity,
-                        getString(R.string.iyps_privacy_policy_url),
-                        mainActivity.activityBinding.mainCoordLayout,
-                        mainActivity.activityBinding.mainBottomNav)
-            }
-    
+            openURL(mainActivity,
+                    getString(R.string.iyps_privacy_policy_url),
+                    mainActivity.activityBinding.mainCoordLayout,
+                    mainActivity.activityBinding.mainBottomNav)
+        }
+        
         // Report an issue
         fragmentBinding.reportIssue.setOnClickListener {
             openURL(mainActivity,
@@ -129,7 +130,7 @@ class SettingsFragment : Fragment() {
         fragmentBinding.support.setOnClickListener {
             SupportMethodsBottomSheet().show(parentFragmentManager, "SupportBottomSheet")
         }
-    
+        
         // View on GitHub
         fragmentBinding.viewOnGit
             .setOnClickListener {

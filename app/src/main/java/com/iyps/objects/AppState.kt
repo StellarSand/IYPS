@@ -15,30 +15,9 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.iyps.appmanager
+package com.iyps.objects
 
-import android.app.Application
-import com.iyps.koin_di.appModule
-import com.iyps.preferences.PreferenceManager
-import com.iyps.preferences.PreferenceManager.Companion.THEME_PREF
-import com.iyps.utils.UiUtils.Companion.setAppTheme
-import org.koin.android.ext.android.get
-import org.koin.android.ext.koin.androidContext
-import org.koin.core.context.startKoin
-
-class ApplicationManager : Application() {
+object AppState {
     
-    override fun onCreate() {
-        super.onCreate()
-        
-        startKoin {
-            androidContext(this@ApplicationManager)
-            modules(appModule)
-        }
-        
-        // Theme
-        setAppTheme(get<PreferenceManager>().getInt(THEME_PREF))
-        
-    }
-    
+    var isAppOpen = false
 }

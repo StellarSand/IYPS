@@ -57,7 +57,7 @@ class LicensesBottomSheet : BottomSheetDialogFragment() {
         // Title
         BottomSheetHeaderBinding.bind(bottomSheetBinding.root).bottomSheetTitle.text = getString(R.string.third_party_licenses)
     
-        licensesList = ArrayList<License>().apply {
+        licensesList = arrayListOf<License>().apply {
     
             // zxcvbn4j
             add(License(title = getString(R.string.zxcvbn4j),

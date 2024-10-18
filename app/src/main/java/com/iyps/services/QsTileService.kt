@@ -26,7 +26,7 @@ import android.service.quicksettings.TileService
 import androidx.annotation.RequiresApi
 import com.iyps.R
 import com.iyps.activities.MainActivity
-import com.iyps.appmanager.ApplicationManager
+import com.iyps.objects.AppState
 
 @RequiresApi(Build.VERSION_CODES.N)
 class QsTileService : TileService() {
@@ -35,7 +35,7 @@ class QsTileService : TileService() {
         super.onStartListening()
         
         // Update tile state based on app status
-        val isAppOpen = (applicationContext as ApplicationManager).isAppOpen
+        val isAppOpen = AppState.isAppOpen
         
         qsTile.apply {
             state = if (isAppOpen) Tile.STATE_UNAVAILABLE else Tile.STATE_INACTIVE

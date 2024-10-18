@@ -22,7 +22,8 @@ appcompat = "1.7.0"
 coreKtx = "1.13.1"
 splashscreen = "1.0.1"
 material3 = "1.13.0-alpha06"
-navigationKtx = "2.8.2"
+koin = "4.0.0"
+navigationKtx = "2.8.3"
 zxcvbn4j = "1.8.2" # Don't update to 1.9.0
 # with 1.9.0, time to crack calculations are wrong, sometimes giving 0 months/years
 # ex: try with the passwords "hsdsjlll", "jdfhasfqwui1"
@@ -33,6 +34,7 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "coreKtx" }
 androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "splashscreen" }
 material3 = { module = "com.google.android.material:material", version.ref = "material3" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 androidx-navigation-runtime-ktx = { module = "androidx.navigation:navigation-runtime-ktx", version.ref = "navigationKtx" }
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationKtx" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationKtx" }

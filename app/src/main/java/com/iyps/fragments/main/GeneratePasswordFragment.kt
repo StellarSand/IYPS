@@ -38,7 +38,6 @@ import com.google.android.material.slider.Slider
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentGeneratePasswordBinding
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PWD_AMB_CHARS
@@ -54,13 +53,14 @@ import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.koin.android.ext.android.inject
 import java.security.SecureRandom
 
 class GeneratePasswordFragment : Fragment() {
     
     private var _binding: FragmentGeneratePasswordBinding? = null
     private val fragmentBinding get() = _binding!!
-    private lateinit var preferenceManager: PreferenceManager
+    private val prefManager by inject<PreferenceManager>()
     private lateinit var uppercaseSwitch: MaterialSwitch
     private lateinit var lowercaseSwitch: MaterialSwitch
     private lateinit var numbersSwitch: MaterialSwitch
@@ -72,16 +72,16 @@ class GeneratePasswordFragment : Fragment() {
     private var uppercaseWithoutAmbChars = ""
     private var lowercaseWithoutAmbChars = ""
     private var numbersWithoutAmbChars = ""
-    private lateinit var secureRandom: SecureRandom
+    private val secureRandom by inject<SecureRandom>()
     
     private companion object {
-        val uppercaseChars = ('A'..'Z').joinToString("")
-        val lowercaseChars = ('a'..'z').joinToString("")
-        val numbers = ('0'..'9').joinToString("")
-        const val specialChars = "!@#$%^&*+_-.="
-        const val uppercaseAmbChars = "ILOSB"
-        const val lowercaseAmbChars = "ilo"
-        const val numbersAmbChars = "058"
+        private val uppercaseChars = ('A'..'Z').joinToString("")
+        private val lowercaseChars = ('a'..'z').joinToString("")
+        private val numbers = ('0'..'9').joinToString("")
+        private const val specialChars = "!@#$%^&*+_-.="
+        private const val uppercaseAmbChars = "ILOSB"
+        private const val lowercaseAmbChars = "ilo"
+        private const val numbersAmbChars = "058"
     }
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -96,10 +96,6 @@ class GeneratePasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val mainActivity = requireActivity() as MainActivity
-        val appManager = (requireContext().applicationContext as ApplicationManager)
-        preferenceManager = appManager.preferenceManager
-        secureRandom = appManager.secureRandom
-        
         uppercaseSwitch = fragmentBinding.uppercaseSwitch
         lowercaseSwitch = fragmentBinding.lowercaseSwitch
         numbersSwitch = fragmentBinding.numbersSwitch
@@ -130,7 +126,7 @@ class GeneratePasswordFragment : Fragment() {
         
         // Password length slider
         fragmentBinding.pwdLengthSlider.apply {
-            value = preferenceManager.getFloat(PWD_LENGTH)
+            value = prefManager.getFloat(PWD_LENGTH)
             fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
             
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
@@ -151,7 +147,7 @@ class GeneratePasswordFragment : Fragment() {
         // At least one switch must be enabled at all times (excluding ambiguous chars switch)
         primarySwitchesList.forEach { switch ->
             primarySwitchesPrefMap[switch]?.let { preferenceKey ->
-                switch.isChecked = preferenceManager.getBoolean(preferenceKey)
+                switch.isChecked = prefManager.getBoolean(preferenceKey)
             }
             switch.setOnCheckedChangeListener { _, _ ->
                 val otherSwitches = primarySwitchesList.filter { it != switch }
@@ -166,14 +162,14 @@ class GeneratePasswordFragment : Fragment() {
         }
         
         avoidAmbCharsSwitch.apply {
-            isChecked = preferenceManager.getBoolean(PWD_AMB_CHARS)
+            isChecked = prefManager.getBoolean(PWD_AMB_CHARS)
             setOnCheckedChangeListener { _, _ ->
                 generatePassword()
             }
         }
         
         includeSpaceSwitch.apply {
-            isChecked = preferenceManager.getBoolean(PWD_SPACES, defValue = false)
+            isChecked = prefManager.getBoolean(PWD_SPACES, defValue = false)
             setOnCheckedChangeListener { _, _ ->
                 generatePassword()
             }
@@ -282,7 +278,7 @@ class GeneratePasswordFragment : Fragment() {
     
     override fun onPause() {
         super.onPause()
-        preferenceManager.apply {
+        prefManager.apply {
             setFloat(PWD_LENGTH, fragmentBinding.pwdLengthSlider.value)
             primarySwitchesList.forEach { switch ->
                 primarySwitchesPrefMap[switch]?.let { preferenceKey ->

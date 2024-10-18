@@ -17,7 +17,6 @@
 
 package com.iyps.activities
 
-import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
@@ -29,27 +28,28 @@ import androidx.core.view.MenuProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.iyps.R
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.ActivityMultiPwdBinding
+import com.iyps.objects.MultiPwdList
 import com.iyps.preferences.PreferenceManager
+import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.GRID_VIEW
 import com.iyps.preferences.PreferenceManager.Companion.SORT_ASC
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
+import com.iyps.utils.UiUtils.Companion.setNavBarContrastEnforced
+import org.koin.android.ext.android.inject
+import kotlin.getValue
 
 class MultiPwdActivity : AppCompatActivity(), MenuProvider {
     
     private lateinit var activityBinding: ActivityMultiPwdBinding
-    private lateinit var appManager: ApplicationManager
     private lateinit var navController: NavController
-    private lateinit var preferenceManager: PreferenceManager
+    private val prefManager by inject<PreferenceManager>()
     var isGridView = false
     var isAscSort = false
     
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
-        if (Build.VERSION.SDK_INT >= 29) {
-            window.isNavigationBarContrastEnforced = false
-        }
+        setNavBarContrastEnforced(window)
         super.onCreate(savedInstanceState)
         addMenuProvider(this)
         onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
@@ -58,13 +58,11 @@ class MultiPwdActivity : AppCompatActivity(), MenuProvider {
         
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.multi_pwd_nav_host) as NavHostFragment
         navController = navHostFragment.navController
-        appManager = applicationContext as ApplicationManager
-        preferenceManager = appManager.preferenceManager
-        isGridView = preferenceManager.getBoolean(GRID_VIEW, defValue = false)
-        isAscSort = preferenceManager.getBoolean(SORT_ASC)
+        isGridView = prefManager.getBoolean(GRID_VIEW, defValue = false)
+        isAscSort = prefManager.getBoolean(SORT_ASC)
         
         // Disable screenshots and screen recordings
-        blockScreenshots(this, preferenceManager.getBoolean(PreferenceManager.BLOCK_SS))
+        blockScreenshots(this, prefManager.getBoolean(BLOCK_SS))
         
         activityBinding.multiPwdBottomAppBar.apply {
             setSupportActionBar(this)
@@ -111,10 +109,10 @@ class MultiPwdActivity : AppCompatActivity(), MenuProvider {
     
     override fun onDestroy() {
         super.onDestroy()
-        preferenceManager.apply {
+        prefManager.apply {
             setBoolean(GRID_VIEW, isGridView)
             setBoolean(SORT_ASC, isAscSort)
         }
-        appManager.multiPasswordsList.clear()
+        MultiPwdList.pwdList.clear()
     }
 }

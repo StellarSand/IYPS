@@ -30,11 +30,12 @@ import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.utils.ResultUtils
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
+import com.nulabinc.zxcvbn.Zxcvbn
+import org.koin.android.ext.android.get
 
 class DetailsFragment : Fragment() {
     
@@ -53,7 +54,6 @@ class DetailsFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
-        val zxcvbn = (requireContext().applicationContext as ApplicationManager).zxcvbn
         password = (requireActivity() as DetailsActivity).passwordLine
         
         // Adjust UI components for edge to edge
@@ -88,7 +88,7 @@ class DetailsFragment : Fragment() {
             }
         }
         
-        EvaluatePassword(zxcvbn = zxcvbn,
+        EvaluatePassword(zxcvbn = get<Zxcvbn>(),
                          password = password,
                          fragmentBinding = fragmentBinding,
                          context = requireContext(),

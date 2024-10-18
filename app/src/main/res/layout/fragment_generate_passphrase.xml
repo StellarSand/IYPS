@@ -65,7 +65,8 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/margin_20"
                 app:icon="@drawable/ic_copy"
-                style="?attr/materialIconButtonFilledTonalStyle"/>
+                style="?attr/materialIconButtonFilledTonalStyle"
+                android:contentDescription="@string/copy"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseRegenerateBtn"
@@ -73,7 +74,8 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/margin_20"
                 app:icon="@drawable/ic_regenerate"
-                style="?attr/materialIconButtonFilledTonalStyle"/>
+                style="?attr/materialIconButtonFilledTonalStyle"
+                android:contentDescription="@string/regenerate"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseShareBtn"
@@ -81,7 +83,8 @@
                 android:layout_height="wrap_content"
                 android:padding="@dimen/margin_20"
                 app:icon="@drawable/ic_share"
-                style="?attr/materialIconButtonFilledTonalStyle"/>
+                style="?attr/materialIconButtonFilledTonalStyle"
+                android:contentDescription="@string/share"/>
 
         </com.google.android.material.button.MaterialButtonGroup>
 

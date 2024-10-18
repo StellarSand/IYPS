@@ -26,11 +26,11 @@ import androidx.core.view.isVisible
 import androidx.core.widget.doOnTextChanged
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.activities.MultiPwdActivity
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.BottomSheetAddMultiPwdBinding
 import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.models.MultiPwdItem
+import com.iyps.objects.MultiPwdList
 
 class AddMultiPwdBottomSheet : BottomSheetDialogFragment() {
     
@@ -66,7 +66,7 @@ class AddMultiPwdBottomSheet : BottomSheetDialogFragment() {
                     bottomSheetBinding.multiPwdText.text!!.split("\n")
                         .filter { it.isNotEmpty() }
                         .map { MultiPwdItem(it) }
-                (requireContext().applicationContext as ApplicationManager).multiPasswordsList.addAll(itemList)
+                MultiPwdList.pwdList.addAll(itemList)
                 dismiss()
                 startActivity(Intent(requireActivity(), MultiPwdActivity::class.java))
             }

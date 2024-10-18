@@ -29,11 +29,11 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.R
 import com.iyps.activities.MultiPwdActivity
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetTestMultiPwdBinding
 import com.iyps.models.MultiPwdItem
+import com.iyps.objects.MultiPwdList
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -92,7 +92,7 @@ class TestMultiPwdBottomSheet : BottomSheetDialogFragment() {
                         val bufferedReader = BufferedReader(InputStreamReader(inputStream))
                         var lineList: List<String>
                         
-                        (requireContext().applicationContext as ApplicationManager).multiPasswordsList.apply {
+                        MultiPwdList.pwdList.apply {
                             if (isNotEmpty()) clear()
                             // Read file line by line
                             while (bufferedReader.readLine().also { lineList = listOf(it) } != null) {

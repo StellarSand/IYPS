@@ -40,10 +40,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.iyps.R
 import com.iyps.activities.MainActivity
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.fragments.bottomsheets.TestMultiPwdBottomSheet
+import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
@@ -51,9 +51,11 @@ import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.ResultUtils
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
+import com.nulabinc.zxcvbn.Zxcvbn
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import org.koin.android.ext.android.get
 
 class TestPasswordFragment : Fragment() {
     
@@ -76,8 +78,6 @@ class TestPasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         mainActivity = requireActivity() as MainActivity
-        val appManager = (requireContext().applicationContext as ApplicationManager)
-        val zxcvbn = appManager.zxcvbn
         var job: Job? = null
         val resultUtils = ResultUtils(requireContext())
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
@@ -120,7 +120,7 @@ class TestPasswordFragment : Fragment() {
         }
         
         fragmentBinding.passwordText.apply {
-            if (appManager.preferenceManager.getBoolean(INCOG_KEYBOARD)) {
+            if (get<PreferenceManager>().getBoolean(INCOG_KEYBOARD)) {
                 imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
                 inputType = TYPE_TEXT_VARIATION_PASSWORD
             }
@@ -132,7 +132,7 @@ class TestPasswordFragment : Fragment() {
                     lifecycleScope.launch {
                         delay(300)
                         if (charSequence!!.isNotEmpty()) {
-                            EvaluatePassword(zxcvbn = zxcvbn,
+                            EvaluatePassword(zxcvbn = get<Zxcvbn>(),
                                              password = charSequence,
                                              fragmentBinding = fragmentBinding,
                                              context = requireContext(),

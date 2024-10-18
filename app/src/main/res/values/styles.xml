@@ -59,6 +59,7 @@
         <item name="closeIconSize">24dp</item>
         <item name="chipIconSize">24dp</item>
         <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
         <item name="checkedIcon">@drawable/ic_done</item>
     </style>
 

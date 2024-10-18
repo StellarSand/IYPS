@@ -31,9 +31,9 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MultiPwdActivity
 import com.iyps.adapters.MultiPwdAdapter
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentMultiPwdBinding
 import com.iyps.models.MultiPwdItem
+import com.iyps.objects.MultiPwdList
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import me.stellarsand.android.fastscroll.FastScrollerBuilder
 
@@ -52,11 +52,10 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     }
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val appManager = requireContext().applicationContext as ApplicationManager
         val multiPwdActivity = requireActivity() as MultiPwdActivity
         multiplePwdList =
-            if (multiPwdActivity.isAscSort) appManager.multiPasswordsList.sortedBy { it.passwordLine.lowercase() }
-            else appManager.multiPasswordsList.sortedByDescending { it.passwordLine.lowercase() }
+            if (multiPwdActivity.isAscSort) MultiPwdList.pwdList.sortedBy { it.passwordLine.lowercase() }
+            else MultiPwdList.pwdList.sortedByDescending { it.passwordLine.lowercase() }
         
         fragmentBinding.recyclerView.apply {
             // Adjust recyclerview for edge to edge

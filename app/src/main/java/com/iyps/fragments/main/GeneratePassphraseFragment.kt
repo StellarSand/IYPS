@@ -37,7 +37,6 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.slider.Slider
 import com.iyps.R
 import com.iyps.activities.MainActivity
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.FragmentGeneratePassphraseBinding
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
@@ -49,15 +48,15 @@ import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.koin.android.ext.android.get
+import org.koin.android.ext.android.inject
 import java.security.SecureRandom
 
 class GeneratePassphraseFragment : Fragment() {
     
     private var _binding: FragmentGeneratePassphraseBinding? = null
     private val fragmentBinding get() = _binding!!
-    private lateinit var preferenceManager: PreferenceManager
-    private lateinit var passphraseWordsMap: Map<String, String>
-    private lateinit var secureRandom: SecureRandom
+    private val prefManager by inject<PreferenceManager>()
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -70,11 +69,7 @@ class GeneratePassphraseFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
-        val appManager = (requireContext().applicationContext as ApplicationManager)
         val mainActivity = requireActivity() as MainActivity
-        preferenceManager = appManager.preferenceManager
-        passphraseWordsMap = appManager.passphraseWordsMap
-        secureRandom = appManager.secureRandom
         
         // Adjust scrollview for edge to edge
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.phraseScrollView) { v, windowInsets ->
@@ -89,7 +84,7 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Password length slider
         fragmentBinding.phraseWordsSlider.apply {
-            value = preferenceManager.getFloat(PHRASE_WORDS, defValue = 5f)
+            value = prefManager.getFloat(PHRASE_WORDS, defValue = 5f)
             fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${value.toInt()}"
             
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
@@ -110,7 +105,7 @@ class GeneratePassphraseFragment : Fragment() {
         fragmentBinding.separatorText.text = getString(R.string.separator).removePrefix("\u2022 ")
         val allSeparatorsDropdownList = listOf("-", ".", ",", getString(R.string.spaces))
         fragmentBinding.separatorDropdownMenu.apply {
-            setText(preferenceManager.getString(PHRASE_SEPARATOR))
+            setText(prefManager.getString(PHRASE_SEPARATOR))
             
             val adapter = ArrayAdapter(requireContext(),
                                        R.layout.item_dropdown_menu,
@@ -124,7 +119,7 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Capitalize
         fragmentBinding.capitalizeSwitch.apply {
-            isChecked = preferenceManager.getBoolean(PHRASE_CAPITALIZE)
+            isChecked = prefManager.getBoolean(PHRASE_CAPITALIZE)
             setOnCheckedChangeListener { _, _ ->
                 generatePassphrase()
             }
@@ -166,9 +161,9 @@ class GeneratePassphraseFragment : Fragment() {
             val passphrase = buildString {
                 for (i in 0 until numberOfWords) {
                     val dieRollsValues =
-                        IntArray(5) { secureRandom.nextInt(6) + 1 } // Rolling a six-sided die five times.
+                        IntArray(5) { get<SecureRandom>().nextInt(6) + 1 } // Rolling a six-sided die five times.
                     val wordKey = dieRollsValues.joinToString("") // Form a string key
-                    var word = passphraseWordsMap[wordKey] // Find the word from words list with corresponding key
+                    var word = get<Map<String, String>>()[wordKey] // Find the word from words list with corresponding key
                     
                     if (fragmentBinding.capitalizeSwitch.isChecked) {
                         word =
@@ -196,7 +191,7 @@ class GeneratePassphraseFragment : Fragment() {
     
     override fun onPause() {
         super.onPause()
-        preferenceManager.apply {
+        prefManager.apply {
             setFloat(PHRASE_WORDS, fragmentBinding.phraseWordsSlider.value)
             setBoolean(PHRASE_CAPITALIZE, fragmentBinding.capitalizeSwitch.isChecked)
             setString(PHRASE_SEPARATOR, fragmentBinding.separatorDropdownMenu.text.toString())

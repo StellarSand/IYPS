@@ -17,16 +17,17 @@
 
 package com.iyps.activities
 
-import android.os.Build
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.iyps.R
-import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.ActivityDetailsBinding
 import com.iyps.fragments.details.DetailsFragment
 import com.iyps.preferences.PreferenceManager
+import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
+import com.iyps.utils.UiUtils.Companion.setNavBarContrastEnforced
+import org.koin.android.ext.android.get
 
 class DetailsActivity : AppCompatActivity() {
     
@@ -35,9 +36,7 @@ class DetailsActivity : AppCompatActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
-        if (Build.VERSION.SDK_INT >= 29) {
-            window.isNavigationBarContrastEnforced = false
-        }
+        setNavBarContrastEnforced(window)
         super.onCreate(savedInstanceState)
         activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
@@ -45,8 +44,7 @@ class DetailsActivity : AppCompatActivity() {
         passwordLine = intent.getStringExtra("PwdLine")!!
         
         // Disable screenshots and screen recordings
-        blockScreenshots(this,
-                                (applicationContext as ApplicationManager).preferenceManager.getBoolean(PreferenceManager.BLOCK_SS))
+        blockScreenshots(this, get<PreferenceManager>().getBoolean(BLOCK_SS))
         
         activityBinding.detailsBottomAppBar.apply {
             setSupportActionBar(this)

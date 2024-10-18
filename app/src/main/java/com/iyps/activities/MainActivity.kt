@@ -20,10 +20,10 @@ package com.iyps.activities
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
-import android.os.Build
 import android.os.Bundle
 import android.view.ViewGroup
-import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.animation.AccelerateInterpolator
+import android.view.animation.DecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -40,35 +40,41 @@ import com.google.android.material.color.DynamicColors
 import com.iyps.R
 import com.iyps.appmanager.ApplicationManager
 import com.iyps.databinding.ActivityMainBinding
+import com.iyps.objects.AppState
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.GEN_TOGGLE
+import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
+import com.iyps.utils.UiUtils.Companion.setNavBarContrastEnforced
+import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
     
     lateinit var activityBinding: ActivityMainBinding
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var navController: NavController
-    private lateinit var appManager: ApplicationManager
-    private lateinit var preferenceManager: PreferenceManager
+    private val prefManager by inject<PreferenceManager>()
     private lateinit var viewsToAnimate: List<ViewGroup>
     private var selectedItem = 0
+    
+    private companion object {
+        private val SHOW_ANIM_INTERPOLATOR = DecelerateInterpolator()
+        private val HIDE_ANIM_INTERPOLATOR = AccelerateInterpolator()
+    }
     
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
         // Material you
         // set this here instead of in Application class,
         // or else Dynamic Colors will not be applied to this activity
-        /*if (prefManager.getBoolean (MATERIAL_YOU, defValue = false)) {
+        if (prefManager.getBoolean (MATERIAL_YOU, defValue = false)) {
             DynamicColors.applyToActivityIfAvailable(this)
             DynamicColors.applyToActivitiesIfAvailable(applicationContext as ApplicationManager) // For other activities
-        }*/
-        enableEdgeToEdge()
-        if (Build.VERSION.SDK_INT >= 29) {
-            window.isNavigationBarContrastEnforced = false
         }
+        enableEdgeToEdge()
+        setNavBarContrastEnforced(window)
         super.onCreate(savedInstanceState)
         onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
         activityBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -76,9 +82,7 @@ class MainActivity : AppCompatActivity() {
         
         navHostFragment = supportFragmentManager.findFragmentById(R.id.main_nav_host) as NavHostFragment
         navController = navHostFragment.navController
-        appManager = applicationContext as ApplicationManager
-        appManager.isAppOpen = true
-        preferenceManager = appManager.preferenceManager
+        AppState.isAppOpen = true
         val checkIcon = ContextCompat.getDrawable(this, R.drawable.ic_done)
         viewsToAnimate = listOf(activityBinding.generateToggleGroup, activityBinding.generateBottomAppBar)
         
@@ -96,7 +100,7 @@ class MainActivity : AppCompatActivity() {
         }
         
         // Disable screenshots and screen recordings
-        blockScreenshots(this, preferenceManager.getBoolean(BLOCK_SS))
+        blockScreenshots(this, prefManager.getBoolean(BLOCK_SS))
         
         selectedItem =
                 savedInstanceState?.getInt("selectedItem") ?:
@@ -133,7 +137,7 @@ class MainActivity : AppCompatActivity() {
         // Toggle button group
         activityBinding.generateToggleGroup.apply {
             val selectedToggle: Int
-            preferenceManager.apply {
+            prefManager.apply {
                 if (getInt(GEN_TOGGLE) == 0) {
                     setInt(GEN_TOGGLE, R.id.togglePassword)
                 }
@@ -145,7 +149,7 @@ class MainActivity : AppCompatActivity() {
                 if (isChecked) {
                     findViewById<MaterialButton>(checkedId).icon = checkIcon // Add check icon
                     displayFragment(R.id.nav_generate, checkedId)
-                    preferenceManager.setInt(GEN_TOGGLE, checkedId)
+                    prefManager.setInt(GEN_TOGGLE, checkedId)
                 }
                 else {
                     findViewById<MaterialButton>(checkedId).icon = null // Remove check icon
@@ -156,7 +160,7 @@ class MainActivity : AppCompatActivity() {
     }
     
     // Setup fragments
-    private fun displayFragment(clickedNavItem: Int, clickedToggleItem: Int = preferenceManager.getInt(GEN_TOGGLE)) {
+    private fun displayFragment(clickedNavItem: Int, clickedToggleItem: Int = prefManager.getInt(GEN_TOGGLE)) {
         val currentFragment = navController.currentDestination!!
         
         val navActionsMap =
@@ -195,8 +199,8 @@ class MainActivity : AppCompatActivity() {
     private fun showViewsWithAnimation() {
         viewsToAnimate.forEach { view ->
             ObjectAnimator.ofFloat(view, "alpha", 0f, 1f).apply {
-                duration = 500
-                interpolator = AccelerateDecelerateInterpolator()
+                duration = 500L
+                interpolator = SHOW_ANIM_INTERPOLATOR
                 view.isVisible = true
                 start()
             }
@@ -207,8 +211,8 @@ class MainActivity : AppCompatActivity() {
         viewsToAnimate.forEach { view ->
             if (view.isVisible) {
                 ObjectAnimator.ofFloat(view, "alpha", 1f, 0f).apply {
-                    duration = 300
-                    interpolator = AccelerateDecelerateInterpolator()
+                    duration = 300L
+                    interpolator = HIDE_ANIM_INTERPOLATOR
                     addListener(object : AnimatorListenerAdapter() {
                         override fun onAnimationEnd(animation: Animator) {
                             view.isVisible = false
@@ -241,6 +245,6 @@ class MainActivity : AppCompatActivity() {
     
     override fun onDestroy() {
         super.onDestroy()
-        appManager.isAppOpen = false
+        AppState.isAppOpen = false
     }
 }
