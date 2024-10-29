@@ -1,0 +1,10 @@
+A password strength app that evaluates and rates your password's robustness, estimates crack time, and provides helpful warnings and suggestions for stronger passwords.
+
+Features:
+
+- Fully open source
+- Material design 3 & Material You
+- Completely offline
+- Supports both light and dark theme
+- No ads
+- No collection of personal data

@@ -49,6 +49,7 @@ In our digital age, where data breaches and hacks have skyrocketed, robust passw
   - German
   - Italian
   - Japanese
+  - Persian
   - Portuguese
   - Spanish
   - Swedish
