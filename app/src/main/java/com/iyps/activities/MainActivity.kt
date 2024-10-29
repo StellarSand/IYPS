@@ -17,8 +17,6 @@
 
 package com.iyps.activities
 
-import android.animation.Animator
-import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.ViewGroup
@@ -27,6 +25,7 @@ import android.view.animation.DecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.animation.doOnEnd
 import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
@@ -53,10 +52,10 @@ import org.koin.android.ext.android.inject
 class MainActivity : AppCompatActivity() {
     
     lateinit var activityBinding: ActivityMainBinding
+    private val prefManager by inject<PreferenceManager>()
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var navController: NavController
-    private val prefManager by inject<PreferenceManager>()
-    private lateinit var viewsToAnimate: List<ViewGroup>
+    private lateinit var viewsToAnimate: Array<ViewGroup>
     private var selectedItem = 0
     
     private companion object {
@@ -84,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         AppState.isAppOpen = true
         val checkIcon = ContextCompat.getDrawable(this, R.drawable.ic_done)
-        viewsToAnimate = listOf(activityBinding.generateToggleGroup, activityBinding.generateBottomAppBar)
+        viewsToAnimate = arrayOf(activityBinding.generateToggleGroup, activityBinding.generateBottomAppBar)
         
         // Adjust UI components for edge to edge
         mapOf(activityBinding.generateBottomAppBar to 80f,
@@ -213,13 +212,8 @@ class MainActivity : AppCompatActivity() {
                 ObjectAnimator.ofFloat(view, "alpha", 1f, 0f).apply {
                     duration = 300L
                     interpolator = HIDE_ANIM_INTERPOLATOR
-                    addListener(object : AnimatorListenerAdapter() {
-                        override fun onAnimationEnd(animation: Animator) {
-                            view.isVisible = false
-                        }
-                    })
                     start()
-                }
+                }.doOnEnd { view.isVisible = false }
             }
         }
     }

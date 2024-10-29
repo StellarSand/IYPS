@@ -37,7 +37,6 @@ class SupportMethodsBottomSheet : BottomSheetDialogFragment() {
     
     private var _binding: BottomSheetSupportMethodsBinding? = null
     private val bottomSheetBinding get() = _binding!!
-    private lateinit var supportMethodsList: ArrayList<SupportMethod>
     
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         return (super.onCreateDialog(savedInstanceState) as BottomSheetDialog).apply {
@@ -57,27 +56,28 @@ class SupportMethodsBottomSheet : BottomSheetDialogFragment() {
         // Title
         BottomSheetHeaderBinding.bind(bottomSheetBinding.root).bottomSheetTitle.text = getString(R.string.support)
         
-        supportMethodsList = arrayListOf<SupportMethod>().apply {
-            
-            // Liberapay
-            add(SupportMethod(title = getString(R.string.liberapay),
-                              titleIcon = R.drawable.ic_liberapay,
-                              qr = R.drawable.ic_liberapay_qr,
-                              url = getString(R.string.liberapay_url)))
-            
-            // PayPal
-            add(SupportMethod(title = getString(R.string.paypal),
-                              titleIcon = R.drawable.ic_paypal,
-                              qr = R.drawable.ic_paypal_qr,
-                              url = getString(R.string.paypal_url)))
-            
-            // Ko-fi
-            add(SupportMethod(title = getString(R.string.kofi),
-                              titleIcon = R.drawable.ic_kofi,
-                              qr = R.drawable.ic_kofi_qr,
-                              url = getString(R.string.kofi_url)))
-            
-        }
+        val supportMethodsList =
+            arrayListOf<SupportMethod>().apply {
+                
+                // Liberapay
+                add(SupportMethod(title = getString(R.string.liberapay),
+                                  titleIcon = R.drawable.ic_liberapay,
+                                  qr = R.drawable.ic_liberapay_qr,
+                                  url = getString(R.string.liberapay_url)))
+                
+                // PayPal
+                add(SupportMethod(title = getString(R.string.paypal),
+                                  titleIcon = R.drawable.ic_paypal,
+                                  qr = R.drawable.ic_paypal_qr,
+                                  url = getString(R.string.paypal_url)))
+                
+                // Ko-fi
+                add(SupportMethod(title = getString(R.string.kofi),
+                                  titleIcon = R.drawable.ic_kofi,
+                                  qr = R.drawable.ic_kofi_qr,
+                                  url = getString(R.string.kofi_url)))
+                
+            }
         
         bottomSheetBinding.licensesRecyclerView.adapter = SupportMethodItemAdapter(supportMethodsList,
                                                                                    requireActivity() as MainActivity)

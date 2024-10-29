@@ -24,6 +24,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.core.widget.doOnTextChanged
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.iyps.activities.MultiPwdActivity
 import com.iyps.databinding.BottomSheetAddMultiPwdBinding
@@ -31,6 +32,9 @@ import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.models.MultiPwdItem
 import com.iyps.objects.MultiPwdList
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class AddMultiPwdBottomSheet : BottomSheetDialogFragment() {
     
@@ -46,6 +50,7 @@ class AddMultiPwdBottomSheet : BottomSheetDialogFragment() {
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
+        var job: Job? = null
         val footerBinding = BottomSheetFooterBinding.bind(bottomSheetBinding.root)
         
         // Title
@@ -53,9 +58,14 @@ class AddMultiPwdBottomSheet : BottomSheetDialogFragment() {
         
         // Edit text
         bottomSheetBinding.multiPwdText.doOnTextChanged { charSequence, _, _, _ ->
-            footerBinding.doneBtn.apply {
-               if (!isEnabled && charSequence!!.isNotEmpty()) isEnabled = true
-            }
+            job?.cancel()
+            job =
+                lifecycleScope.launch {
+                    delay(300)
+                    footerBinding.doneBtn.apply {
+                        isEnabled = charSequence!!.isNotEmpty()
+                    }
+                }
         }
         
         // Done

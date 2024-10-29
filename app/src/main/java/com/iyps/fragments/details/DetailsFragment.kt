@@ -41,7 +41,6 @@ class DetailsFragment : Fragment() {
     
     private var _binding: FragmentTestPasswordBinding? = null
     private val fragmentBinding get() = _binding!!
-    private lateinit var password: CharSequence
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -54,7 +53,7 @@ class DetailsFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
-        password = (requireActivity() as DetailsActivity).passwordLine
+       val password = (requireActivity() as DetailsActivity).passwordLine
         
         // Adjust UI components for edge to edge
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.scrollView) { v, windowInsets ->

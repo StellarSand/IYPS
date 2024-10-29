@@ -31,14 +31,13 @@ import org.koin.android.ext.android.get
 
 class DetailsActivity : AppCompatActivity() {
     
-    private lateinit var activityBinding: ActivityDetailsBinding
     lateinit var passwordLine: CharSequence
     
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         setNavBarContrastEnforced(window)
         super.onCreate(savedInstanceState)
-        activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
+        val activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
         
         passwordLine = intent.getStringExtra("PwdLine")!!

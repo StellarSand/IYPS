@@ -90,12 +90,12 @@ class TestMultiPwdBottomSheet : BottomSheetDialogFragment() {
                     try {
                         val inputStream = requireActivity().contentResolver.openInputStream(fileUri!!)
                         val bufferedReader = BufferedReader(InputStreamReader(inputStream))
-                        var lineList: List<String>
+                        var lineList: Array<String>
                         
                         MultiPwdList.pwdList.apply {
                             if (isNotEmpty()) clear()
                             // Read file line by line
-                            while (bufferedReader.readLine().also { lineList = listOf(it) } != null) {
+                            while (bufferedReader.readLine().also { lineList = arrayOf(it) } != null) {
                                 for (line in lineList) {
                                     if (line.isNotEmpty()) add(MultiPwdItem(passwordLine = line))
                                 }

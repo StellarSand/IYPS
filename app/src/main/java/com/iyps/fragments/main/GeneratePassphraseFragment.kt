@@ -103,14 +103,11 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Separator dropdown
         fragmentBinding.separatorText.text = getString(R.string.separator).removePrefix("\u2022 ")
-        val allSeparatorsDropdownList = listOf("-", ".", ",", getString(R.string.spaces))
         fragmentBinding.separatorDropdownMenu.apply {
             setText(prefManager.getString(PHRASE_SEPARATOR))
-            
-            val adapter = ArrayAdapter(requireContext(),
-                                       R.layout.item_dropdown_menu,
-                                       allSeparatorsDropdownList)
-            setAdapter(adapter)
+            setAdapter(ArrayAdapter(requireContext(),
+                                    R.layout.item_dropdown_menu,
+                                    arrayOf("-", ".", ",", getString(R.string.spaces))))
             
             setOnItemClickListener { _, _, _, _ ->
                 generatePassphrase()

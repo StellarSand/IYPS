@@ -96,11 +96,11 @@ class ResultUtils(val context: Context) {
     private val regexNameString = context.getString(R.string.regex_name)
     
     private companion object {
-        const val WORST_SCORE = 1
-        const val WEAK_SCORE = 2
-        const val MEDIUM_SCORE = 3
-        const val STRONG_SCORE = 4
-        const val EXCELLENT_SCORE = 5
+        private const val WORST_SCORE = 1
+        private const val WEAK_SCORE = 2
+        private const val MEDIUM_SCORE = 3
+        private const val STRONG_SCORE = 4
+        private const val EXCELLENT_SCORE = 5
     }
     
     // Replace hardcoded strings from the library for proper language support
@@ -208,7 +208,7 @@ class ResultUtils(val context: Context) {
                                 "female_names" -> "names"
                                 else -> match.dictionaryName
                             }
-                        append("<br>${dictNameString}: ${dictionaryName}")
+                        append("<br>${dictNameString}: $dictionaryName")
                         if (matchSequence.size > 1) append("<br>${rankString}: ${match.rank}")
                         append("<br>${reversedString}: ${match.reversed}")
                         if (match.l33t)
@@ -253,14 +253,14 @@ class ResultUtils(val context: Context) {
         return HtmlCompat.fromHtml(matchesText, HtmlCompat.FROM_HTML_MODE_COMPACT)
     }
     
-    fun getStatisticsCounts(charSequence: CharSequence): List<Int> {
+    fun getStatisticsCounts(charSequence: CharSequence): Array<Int> {
         val length = charSequence.length
         val upperCaseCount = charSequence.count { it.isUpperCase() }
         val lowerCaseCount = charSequence.count { it.isLowerCase() }
         val numbersCount = charSequence.count { it.isDigit() }
         val spacesCount = charSequence.count { it.isWhitespace() }
         val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount - spacesCount
-        return listOf(length, upperCaseCount, lowerCaseCount, numbersCount, specialCharsCount, spacesCount)
+        return arrayOf(length, upperCaseCount, lowerCaseCount, numbersCount, specialCharsCount, spacesCount)
     }
     
 }

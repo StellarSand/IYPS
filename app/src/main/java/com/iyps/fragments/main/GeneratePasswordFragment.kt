@@ -67,7 +67,7 @@ class GeneratePasswordFragment : Fragment() {
     private lateinit var specialCharsSwitch: MaterialSwitch
     private lateinit var avoidAmbCharsSwitch: MaterialSwitch
     private lateinit var includeSpaceSwitch: MaterialSwitch
-    private lateinit var primarySwitchesList: List<MaterialSwitch>
+    private lateinit var primarySwitchesList: Array<MaterialSwitch>
     private lateinit var primarySwitchesPrefMap: Map<MaterialSwitch, String>
     private var uppercaseWithoutAmbChars = ""
     private var lowercaseWithoutAmbChars = ""
@@ -79,9 +79,9 @@ class GeneratePasswordFragment : Fragment() {
         private val lowercaseChars = ('a'..'z').joinToString("")
         private val numbers = ('0'..'9').joinToString("")
         private const val specialChars = "!@#$%^&*+_-.="
-        private const val uppercaseAmbChars = "ILOSB"
-        private const val lowercaseAmbChars = "ilo"
-        private const val numbersAmbChars = "058"
+        private const val uppercaseAmbChars = "ILOSBZ" // 0Oo, 1IlL, 2Z, 5S, 8B
+        private const val lowercaseAmbChars = "loz"
+        private const val numbersAmbChars = "01258"
     }
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -103,7 +103,7 @@ class GeneratePasswordFragment : Fragment() {
         avoidAmbCharsSwitch = fragmentBinding.avoidAmbCharsSwitch
         includeSpaceSwitch = fragmentBinding.includeSpacesSwitch
         
-        primarySwitchesList = listOf(uppercaseSwitch,
+        primarySwitchesList = arrayOf(uppercaseSwitch,
                                      lowercaseSwitch,
                                      numbersSwitch,
                                      specialCharsSwitch)

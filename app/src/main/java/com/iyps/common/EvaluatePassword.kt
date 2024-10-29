@@ -25,6 +25,7 @@ import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
 import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.ResultUtils
 import com.nulabinc.zxcvbn.Zxcvbn
+import java.util.Locale
 import kotlin.math.log2
 
 class EvaluatePassword(zxcvbn: Zxcvbn,
@@ -94,12 +95,12 @@ class EvaluatePassword(zxcvbn: Zxcvbn,
         
         // Statistics
         val statsList = resultUtils.getStatisticsCounts(password)
-        fragmentBinding.lengthText.text = statsList[0].toString()
-        fragmentBinding.uppercaseText.text = statsList[1].toString()
-        fragmentBinding.lowercaseText.text = statsList[2].toString()
-        fragmentBinding.numbersText.text = statsList[3].toString()
-        fragmentBinding.specialCharsText.text = statsList[4].toString()
-        fragmentBinding.spacesText.text = statsList[5].toString()
+        fragmentBinding.lengthText.text = String.format(Locale.getDefault(), "%d", statsList[0])
+        fragmentBinding.uppercaseText.text = String.format(Locale.getDefault(), "%d", statsList[1])
+        fragmentBinding.lowercaseText.text = String.format(Locale.getDefault(), "%d", statsList[2])
+        fragmentBinding.numbersText.text = String.format(Locale.getDefault(), "%d", statsList[3])
+        fragmentBinding.specialCharsText.text = String.format(Locale.getDefault(), "%d", statsList[4])
+        fragmentBinding.spacesText.text = String.format(Locale.getDefault(), "%d", statsList[5])
     }
     
 }
