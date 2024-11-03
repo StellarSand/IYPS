@@ -32,7 +32,7 @@
 
     <!--Bottom nav view-->
     <string name="test">Pr\u00FCfen</string>
-    <string name="generate">Erzeugen Sie</string>
+    <string name="generate">Erzeugen</string>
     <string name="password">Passwort</string>
     <string name="passphrase">Passphrase</string>
     <string name="settings">Einstellungen</string>
@@ -40,78 +40,78 @@
     <!--#########################################################################################-->
 
     <!--Password fragment-->
-    <string name="test_your_password">Testen sie ihr passwort</string>
-    <string name="ten_b_guesses_per_sec">10B vermutungen/sekunde</string>
-    <string name="ten_k_guesses_per_sec">10k vermutungen/sekunde</string>
-    <string name="ten_guesses_per_sec">10 vermutungen/sekunde</string>
-    <string name="hundred_guesses_per_hour">100 vermutungen/stunde</string>
+    <string name="test_your_password">Testen sie ihr Passwort</string>
+    <string name="ten_b_guesses_per_sec">10B Vermutungen/Sekunde</string>
+    <string name="ten_k_guesses_per_sec">10k Vermutungen/Sekunde</string>
+    <string name="ten_guesses_per_sec">10 Vermutungen/Sekunde</string>
+    <string name="hundred_guesses_per_hour">100 Vermutungen/Stunde</string>
     <string name="strength">St\u00E4rke</string>
-    <string name="worst">Schw\u00E4chste </string>
-    <string name="weak">Schwach </string>
+    <string name="worst">Sehr schwach</string>
+    <string name="weak">Schwach</string>
     <string name="medium">Mittel</string>
     <string name="strong">Stark</string>
     <string name="excellent">Exzellent</string>
-    <string name="est_time_to_crack">Gesch\u00E4tzte zeit zum knacken</string>
-    <string name="less_than_sec">Weniger als eine sekunde</string>
-    <string name="second">sekunde</string>
-    <string name="seconds">sekunden</string>
-    <string name="minute">minute</string>
-    <string name="minutes">minuten</string>
-    <string name="hour">stunde</string>
-    <string name="hours">stunden</string>
-    <string name="day">tag</string>
-    <string name="days">tage</string>
-    <string name="month">monat</string>
-    <string name="months">monate</string>
-    <string name="year">jahr</string>
-    <string name="years">jahre</string>
+    <string name="est_time_to_crack">Gesch\u00E4tzte Zeit zum Knacken</string>
+    <string name="less_than_sec">Weniger als eine Sekunde</string>
+    <string name="second">Sekunde</string>
+    <string name="seconds">Sekunden</string>
+    <string name="minute">Minute</string>
+    <string name="minutes">Minuten</string>
+    <string name="hour">Stunde</string>
+    <string name="hours">Stunden</string>
+    <string name="day">Tag</string>
+    <string name="days">Tage</string>
+    <string name="month">Monat</string>
+    <string name="months">Monate</string>
+    <string name="year">Jahr</string>
+    <string name="years">Jahre</string>
     <string name="centuries">Jahrhunderte</string>
     <string name="warning">Warnung</string>
     <string name="suggestions">Empfehlungen</string>
-    <string name="est_guesses_to_crack">Gesch\u00E4tzte vermutungen zum knacken</string>
-    <string name="order_of_magn">Gr\u00F6\u00DFenordnung der sch\u00E4tzungen</string>
+    <string name="est_guesses_to_crack">Gesch\u00E4tzte Vermutungen zum Knacken</string>
+    <string name="order_of_magn">Gr\u00F6\u00DFenordnung der Sch\u00E4tzungen</string>
     <string name="entropy">Entropie</string>
     <string name="bits">bits</string>
-    <string name="match_sequence">Match sequenz</string>
+    <string name="match_sequence">Vergleich der Sequenz</string>
     <string name="pattern">\u2022 Muster</string>
-    <string name="dict_name">\u2022 Name im w\u00F6rterbuch</string>
+    <string name="dict_name">\u2022 Name des W\u00F6rterbuchs</string>
     <string name="rank">\u2022 Rang</string>
     <string name="reversed">\u2022 Umgekehrt</string>
     <string name="substitutions">\u2022 Ersetzungen</string>
-    <string name="base_token">\u2022 Basis token</string>
-    <string name="repeat_times">\u2022 Wiederholt %1$s mal</string>
-    <string name="sequence_name">\u2022 Name der sequenz</string>
+    <string name="base_token">\u2022 Basismerkmal</string>
+    <string name="repeat_times">\u2022 %1$s mal wiederholt</string>
+    <string name="sequence_name">\u2022 Name der Sequenz</string>
     <string name="sequence_size">\u2022 Gr\u00F6\u00DFe der Sequenz</string>
     <string name="ascending">\u2022 Aufsteigend</string>
     <string name="separator">\u2022 Trennzeichen</string>
     <string name="graph">\u2022 Grafik</string>
     <string name="turns">\u2022 Bl\u00E4ttert</string>
     <string name="shifted_times">\u2022 %1$s mal verschoben</string>
-    <string name="regex_name">\u2022 Regex name</string>
+    <string name="regex_name">\u2022 Regex-Name</string>
     <string name="statistics">Statistik</string>
     <string name="length">L\u00E4nge</string>
     <string name="uppercase">Gro\u00DFbuchstaben</string>
     <string name="lowercase">Kleinbuchstaben</string>
     <string name="numbers">Zahlen</string>
-    <string name="special_char">Spezielle charaktere</string>
-    <string name="spaces">R\u00E4ume</string>
+    <string name="special_char">Sonderzeichen</string>
+    <string name="spaces">Leerzeichen</string>
 
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
-    <string name="view">Siehe</string>
-    <string name="sort">Sortieren</string>
+    <string name="view">Ansicht</string>
+    <string name="sort">Sortierung</string>
 
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
     <string name="details">Details</string>
     <string name="copy">Kopieren</string>
-    <string name="regenerate">Regenerieren Sie</string>
-    <string name="share">Teilen Sie</string>
+    <string name="regenerate">Regenerieren</string>
+    <string name="share">Teilen</string>
     <string name="customize">Anpassen</string>
-    <string name="avoid_amb_chars">Vermeiden Sie zweideutige Zeichen</string>
-    <string name="include_spaces">R\u00E4ume einbeziehen</string>
+    <string name="avoid_amb_chars">Zweideutige Zeichen vermeiden</string>
+    <string name="include_spaces">Leerzeichen einbeziehen</string>
 
     <!--Generate passphrase fragment-->
     <string name="words">W\u00F6rter</string>
@@ -122,16 +122,16 @@
     <!--Settings fragment-->
     <string name="appearance">Aussehen</string>
     <string name="theme">Thema</string>
-    <string name="material_you">Material You\n(app neustart erforderlich)</string>
+    <string name="material_you">Material You\n(erfordert Neustart der App)</string>
     <string name="privacy">Datenschutz</string>
-    <string name="block_screenshots">Screenshots in der app blockieren</string>
-    <string name="incognito_keyboard">Inkognito tastatur</string>
+    <string name="block_screenshots">Screenshots in der App blockieren</string>
+    <string name="incognito_keyboard">Inkognito-Tastatur</string>
     <string name="about">\u00DCber</string>
     <string name="privacy_policy">Datenschutzbestimmungen</string>
     <string name="report_issue">Ein Problem melden</string>
     <string name="support">Unterst\u00FCtzung</string>
     <string name="view_on_github">Auf GitHub anschauen</string>
-    <string name="third_party_licenses">Lizenzen von drittanbietern</string>
+    <string name="third_party_licenses">Lizenzen von Drittanbietern</string>
 
     <!--#########################################################################################-->
 
@@ -147,27 +147,27 @@
     <string name="done">Erledigt</string>
 
     <!--Test multiple passwords-->
-    <string name="test_multi_pwds">Testen Sie mehrere Passw\u00F6rter</string>
+    <string name="test_multi_pwds">Teste mehrere Passw\u00F6rter</string>
     <string name="add">Hinzuf\u00FCgen</string>
-    <string name="select_file">Datei aussuchen</string>
+    <string name="select_file">Datei ausw\u00E4hlen</string>
 
     <!--Add multiple passwords-->
     <string name="add_multi_pwds">Mehrere Passw\u00F6rter hinzuf\u00FCgen</string>
 
     <!--Theme-->
-    <string name="follow_system">System verfolgen</string>
+    <string name="follow_system">Systemeinstellung folgen</string>
     <string name="light">Hell</string>
     <string name="dark">Dunkel</string>
 
     <!--#########################################################################################-->
 
     <!--Snackbars-->
-    <string name="no_browsers">Es ist kein browser auf diesem ger\u00E4t installiert</string>
+    <string name="no_browsers">Es ist kein Browser auf diesem Ger\u00E4t installiert.</string>
     <string name="copied_to_clipboard">In die Zwischenablage kopiert</string>
 
     <!--#########################################################################################-->
 
     <!--Quick settings tile-->
-    <string name="app_in_use">IYPS im einsatz</string>
+    <string name="app_in_use">IYPS in Verwendung</string>
 
 </resources>
