@@ -16,18 +16,18 @@
 #
 
 [versions]
-androidGradle = "8.7.1"
-androidKotlin = "2.0.21" # https://github.com/JetBrains/kotlin/releases/latest (latest version is not always auto detected)
+androidGradle = "8.7.2"
+androidKotlin = "2.1.0" # https://github.com/JetBrains/kotlin/releases/latest (latest version is not auto detected)
 appcompat = "1.7.0"
-coreKtx = "1.13.1"
+coreKtx = "1.15.0"
 splashscreen = "1.0.1"
-material3 = "1.13.0-alpha07"
+material3 = "1.13.0-alpha08"
 koin = "4.0.0"
-navigationKtx = "2.8.3"
+navigationKtx = "2.8.4"
 zxcvbn4j = "1.8.2" # Don't update to 1.9.0
 # with 1.9.0, time to crack calculations are wrong, sometimes giving 0 months/years
 # ex: try with the passwords "hsdsjlll", "jdfhasfqwui1"
-androidfastscrollKt = "v1.0.3"
+androidFastscrollKt = "v1.0.8"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
@@ -39,7 +39,7 @@ androidx-navigation-runtime-ktx = { module = "androidx.navigation:navigation-run
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationKtx" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationKtx" }
 zxcvbn4j = { module = "com.nulab-inc:zxcvbn", version.ref = "zxcvbn4j" }
-androidFastScrollKt = { module = "com.github.StellarSand:AndroidFastScroll-kt", version.ref = "androidfastscrollKt" }
+androidFastScrollKt = { module = "com.github.StellarSand:AndroidFastScroll-kt", version.ref = "androidFastscrollKt" }
 
 [bundles]
 androidxCoreComponents = ["androidx-appcompat", "androidx-core-ktx", "androidx-core-splashscreen"]
