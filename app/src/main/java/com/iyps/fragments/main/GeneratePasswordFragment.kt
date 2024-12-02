@@ -75,13 +75,13 @@ class GeneratePasswordFragment : Fragment() {
     private val secureRandom by inject<SecureRandom>()
     
     private companion object {
-        private val uppercaseChars = ('A'..'Z').joinToString("")
-        private val lowercaseChars = ('a'..'z').joinToString("")
-        private val numbers = ('0'..'9').joinToString("")
-        private const val specialChars = "!@#$%^&*+_-.="
-        private const val uppercaseAmbChars = "ILOSBZ" // 0Oo, 1IlL, 2Z, 5S, 8B
-        private const val lowercaseAmbChars = "loz"
-        private const val numbersAmbChars = "01258"
+        private const val UPPERCASE_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        private const val LOWERCASE_CHARS = "abcdefghijklmnopqrstuvwxyz"
+        private const val NUMBERS = "0123456789"
+        private const val SPECIAL_CHARS = "!@#$%^&*+_-.="
+        private const val UPPERCASE_AMB_CHARS = "ILOSBZ" // 0Oo, 1IlL, 2Z, 5S, 8B
+        private const val LOWERCASE_AMB_CHARS = "loz"
+        private const val NUM_AMB_CHARS = "01258"
     }
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -224,32 +224,32 @@ class GeneratePasswordFragment : Fragment() {
                         if (avoidAmbCharsSwitch.isChecked) uppercaseWithoutAmbChars.ifEmpty {
                             // Only generate non-ambiguous chars if not done already.
                             // This would avoid unnecessary generations everytime this function is called.
-                            getNonAmbChars(uppercaseChars,
-                                           uppercaseAmbChars).also { uppercaseWithoutAmbChars = it }
+                            getNonAmbChars(UPPERCASE_CHARS,
+                                           UPPERCASE_AMB_CHARS).also { uppercaseWithoutAmbChars = it }
                         }
-                        else uppercaseChars
+                        else UPPERCASE_CHARS
                     )
                 }
                 if (lowercaseSwitch.isChecked) {
                     append(
                         if (avoidAmbCharsSwitch.isChecked) lowercaseWithoutAmbChars.ifEmpty {
-                            getNonAmbChars(lowercaseChars,
-                                           lowercaseAmbChars).also { lowercaseWithoutAmbChars = it }
+                            getNonAmbChars(LOWERCASE_CHARS,
+                                           LOWERCASE_AMB_CHARS).also { lowercaseWithoutAmbChars = it }
                         }
-                        else lowercaseChars
+                        else LOWERCASE_CHARS
                     )
                 }
                 if (numbersSwitch.isChecked) {
                     append(
                         if (avoidAmbCharsSwitch.isChecked) numbersWithoutAmbChars.ifEmpty {
-                            getNonAmbChars(numbers, numbersAmbChars).also {
+                            getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also {
                                 numbersWithoutAmbChars = it
                             }
                         }
-                        else numbers
+                        else NUMBERS
                     )
                 }
-                if (specialCharsSwitch.isChecked) append(specialChars)
+                if (specialCharsSwitch.isChecked) append(SPECIAL_CHARS)
             }
             
             val password = buildString {

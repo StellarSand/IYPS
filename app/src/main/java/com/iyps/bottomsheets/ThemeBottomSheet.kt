@@ -15,7 +15,7 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.iyps.fragments.bottomsheets
+package com.iyps.bottomsheets
 
 import android.os.Build
 import android.os.Bundle

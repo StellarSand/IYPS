@@ -34,10 +34,8 @@
         android:id="@+id/theme_chip_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/margin_8"
-        android:layout_marginBottom="@dimen/margin_8"
-        android:paddingStart="@dimen/margin_22"
-        android:paddingEnd="@dimen/margin_22"
+        android:layout_marginVertical="@dimen/margin_8"
+        android:paddingHorizontal="@dimen/margin_22"
         app:chipSpacingVertical="@dimen/margin_2.5"
         app:singleSelection="true"
         app:selectionRequired="true">

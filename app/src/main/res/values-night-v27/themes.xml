@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~     Copyright (C) 2022-present StellarSand
   ~
@@ -18,7 +19,7 @@
 
 <resources>
 
-    <style name="BottomSheetTheme" parent="@style/ThemeOverlay.Material3.BottomSheetDialog">
+    <style name="BottomSheetTheme" parent="ThemeOverlay.Material3.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
         <item name="android:windowLightNavigationBar">false</item>

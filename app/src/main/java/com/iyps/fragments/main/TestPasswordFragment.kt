@@ -42,7 +42,7 @@ import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentTestPasswordBinding
-import com.iyps.fragments.bottomsheets.TestMultiPwdBottomSheet
+import com.iyps.bottomsheets.TestMultiPwdBottomSheet
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard

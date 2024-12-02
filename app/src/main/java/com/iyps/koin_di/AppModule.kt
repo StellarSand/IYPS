@@ -39,6 +39,7 @@ import kotlin.sequences.forEach
 val appModule =
     module {
         single { PreferenceManager(get()) }
+        
         single(named("commonPasswordsResource")) {
             ResourceFromInputStream(
                 ByteArrayInputStream(ByteArrayOutputStream().apply {
@@ -47,6 +48,7 @@ val appModule =
                 }.toByteArray())
             ) as com.nulabinc.zxcvbn.io.Resource
         }
+        
         single(named("wordsResource")) {
             ResourceFromInputStream(
                 ByteArrayInputStream(ByteArrayOutputStream().apply {
@@ -56,21 +58,25 @@ val appModule =
                 }.toByteArray())
             ) as com.nulabinc.zxcvbn.io.Resource
         }
+        
         single(named("darkwebPasswordsResource")) {
             ResourceFromInputStream(
                 get<Application>().resources.openRawResource(R.raw.darkweb)
             ) as com.nulabinc.zxcvbn.io.Resource
         }
+        
         single(named("frenchPasswordsResource")) {
             ResourceFromInputStream(
                 get<Application>().resources.openRawResource(R.raw.richelieu_french)
             ) as com.nulabinc.zxcvbn.io.Resource
         }
+        
         single(named("azulPasswordsResource")) {
             ResourceFromInputStream(
                 get<Application>().resources.openRawResource(R.raw.unkown_azul)
             ) as com.nulabinc.zxcvbn.io.Resource
         }
+        
         single(named("namesResource")) {
             ResourceFromInputStream(
                 ByteArrayInputStream(ByteArrayOutputStream().apply {
@@ -80,6 +86,7 @@ val appModule =
                 }.toByteArray())
             ) as com.nulabinc.zxcvbn.io.Resource
         }
+        
         single(named("surnamesResource")) {
             ResourceFromInputStream(
                 ByteArrayInputStream(ByteArrayOutputStream().apply {
@@ -89,6 +96,7 @@ val appModule =
                 }.toByteArray())
             ) as com.nulabinc.zxcvbn.io.Resource
         }
+        
         single {
             // "english_wikipedia" contains english_words, eff_unranked & italian_words.
             // "female_names" contains english_female_names, english_male_names & italian_names.
@@ -107,6 +115,7 @@ val appModule =
                 .keyboards(StandardKeyboards.loadAllKeyboards())
                 .build()
         }
+        
         single {
             try {
                 when {
@@ -118,6 +127,7 @@ val appModule =
                 throw RuntimeException("SecureRandom algorithm not available", e)
             }
         }
+        
         single {
             val wordMap = mutableMapOf<String, String>()
             BufferedReader(InputStreamReader(get<Application>().resources.openRawResource(R.raw.eff_passphrase_words)))

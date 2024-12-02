@@ -60,10 +60,7 @@ class SupportMethodItemAdapter (private val aListViewItems: ArrayList<SupportMet
         holder.supportMethodUrl.apply {
             text = supportMethod.url
             setOnClickListener{
-                openURL(mainActivity,
-                        supportMethod.url,
-                        mainActivity.activityBinding.mainCoordLayout,
-                        null)
+                openURL(mainActivity, supportMethod.url)
             }
         }
     }

@@ -33,9 +33,9 @@ import com.iyps.BuildConfig
 import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.databinding.FragmentSettingsBinding
-import com.iyps.fragments.bottomsheets.LicensesBottomSheet
-import com.iyps.fragments.bottomsheets.SupportMethodsBottomSheet
-import com.iyps.fragments.bottomsheets.ThemeBottomSheet
+import com.iyps.bottomsheets.LicensesBottomSheet
+import com.iyps.bottomsheets.SupportMethodsBottomSheet
+import com.iyps.bottomsheets.ThemeBottomSheet
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD

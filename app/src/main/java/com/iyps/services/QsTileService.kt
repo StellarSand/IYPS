@@ -50,11 +50,10 @@ class QsTileService : TileService() {
         super.onClick()
         
         val intent =
-            Intent(this, MainActivity::class.java)
-                .apply {
-                    putExtra("shortcut", "shortcutGenerate")
-                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                }
+            Intent(this, MainActivity::class.java).apply {
+                putExtra("shortcut", "shortcutGenerate")
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
         
         if (Build.VERSION.SDK_INT >= 34) {
             startActivityAndCollapse(PendingIntent.getActivity(this,

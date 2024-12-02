@@ -22,6 +22,7 @@ import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.view.View
+import android.widget.Toast
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.iyps.R
 import com.iyps.utils.UiUtils.Companion.showSnackbar
@@ -38,10 +39,21 @@ class IntentUtils {
                 activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
             }
             // If no browser installed, show snackbar
-            catch (e: ActivityNotFoundException) {
+            catch (_: ActivityNotFoundException) {
                 showSnackbar(coordinatorLayout,
                              activity.getString(R.string.no_browsers),
                              anchorView)
+            }
+        }
+        
+        fun openURL(activity: Activity,
+                    url: String) {
+            try {
+                activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+            }
+            // If no browser installed, show toast
+            catch (_: ActivityNotFoundException) {
+                Toast.makeText(activity, activity.getString(R.string.no_browsers), Toast.LENGTH_SHORT).show()
             }
         }
 
