@@ -35,7 +35,7 @@
     <string name="ten_b_guesses_per_sec">每秒 󠁅10 󠁅亿次猜测</string>
     <string name="ten_k_guesses_per_sec">每秒 󠁅1 万次猜测</string>
     <string name="ten_guesses_per_sec">每秒 󠁅10 次猜测</string>
-    <string name="hundred_guesses_per_hour">每秒 󠁅100 次猜测</string>
+    <string name="hundred_guesses_per_hour">󠁅每小时 100 次猜测</string>
     <string name="strength">强度</string>
     <string name="worst">不堪一击</string>
     <string name="weak">孱弱平庸</string>
