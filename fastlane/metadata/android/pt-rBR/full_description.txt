@@ -1,0 +1,10 @@
+Um aplicativo de força de senha que avalia e classifica a robustez da sua senha, estima o tempo para quebrar e fornece avisos e sugestões úteis para senhas mais fortes.
+
+Funcionalidades:
+
+- Totalmente de código aberto
+- Material Design 3 e Material You
+- Completamente offline
+- Suporta tema claro e escuro
+- Sem anúncios
+- Nenhuma coleta de dados pessoais
