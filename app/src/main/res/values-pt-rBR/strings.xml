@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~     Copyright (C) 2022-present StellarSand
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+
+    <!--
+    Ensure proper encoding of characters
+        á = \u00E1
+        ã = \u00E3
+        ç = \u00E7
+        é = \u00E9
+        ê = \u00EA
+        í = \u00ED
+        ô = \u00F4
+        õ = \u00F5
+        ú = \u00FA
+    -->
+
+    <string name="app_version">Vers\u00E3o</string>
+
+    <!--Bottom nav view-->
+    <string name="test">Testar</string>
+    <string name="generate">Gerador</string>
+    <string name="password">Senha</string>
+    <string name="passphrase">Frase-senha</string>
+    <string name="settings">Configura\u00E7\u00F5es</string>
+
+    <!--#########################################################################################-->
+
+    <!--Password fragment-->
+    <string name="test_your_password">Teste sua senha</string>
+    <string name="ten_b_guesses_per_sec">10B tentativas/segundo</string>
+    <string name="ten_k_guesses_per_sec">10K tentativas/segundo</string>
+    <string name="ten_guesses_per_sec">10 tentativas/segundo</string>
+    <string name="hundred_guesses_per_hour">100 tentativas/hora</string>
+    <string name="strength">For\u00E7a</string>
+    <string name="worst">Pior</string>
+    <string name="weak">Fraca</string>
+    <string name="medium">M\u00E9dia</string>
+    <string name="strong">Forte</string>
+    <string name="excellent">Excelente</string>
+    <string name="est_time_to_crack">Tempo estimado para quebrar</string>
+    <string name="less_than_sec">Menos de um segundo</string>
+    <string name="second">segundo</string>
+    <string name="seconds">segundos</string>
+    <string name="minute">minuto</string>
+    <string name="minutes">minutos</string>
+    <string name="hour">hora</string>
+    <string name="hours">horas</string>
+    <string name="day">dia</string>
+    <string name="days">dias</string>
+    <string name="month">m\u00EAs</string>
+    <string name="months">meses</string>
+    <string name="year">ano</string>
+    <string name="years">anos</string>
+    <string name="centuries">S\u00E9culos</string>
+    <string name="warning">Aviso</string>
+    <string name="suggestions">Sugest\u00F5es</string>
+    <string name="est_guesses_to_crack">Tentativas estimadas para quebrar</string>
+    <string name="order_of_magn">Ordem de grandeza das tentativas</string>
+    <string name="entropy">Entropia</string>
+    <string name="bits">bits</string>
+    <string name="match_sequence">Sequ\u00EAncia de correspond\u00EAncia</string>
+    <string name="pattern">\u2022 Padr\u00E3o</string>
+    <string name="dict_name">\u2022 Nome do dicion\u00E1rio</string>
+    <string name="rank">\u2022 Rank</string>
+    <string name="reversed">\u2022 Invertido</string>
+    <string name="substitutions">\u2022 Substitui\u00E7\u00F5es</string>
+    <string name="base_token">\u2022 Token base</string>
+    <string name="repeat_times">\u2022 Repetido %1$s vezes</string>
+    <string name="sequence_name">\u2022 Nome da sequ\u00EAncia</string>
+    <string name="sequence_size">\u2022 Tamanho da sequ\u00EAncia</string>
+    <string name="ascending">\u2022 Crescente</string>
+    <string name="separator">\u2022 Separador</string>
+    <string name="graph">\u2022 Gr\u00E1fico</string>
+    <string name="turns">\u2022 Voltas</string>
+    <string name="shifted_times">\u2022 Tecla Shift usada %1$s vezes</string>
+    <string name="regex_name">\u2022 Nome do Regex </string>
+    <string name="statistics">Estat\u00EDsticas</string>
+    <string name="length">Comprimento</string>
+    <string name="uppercase">Mai\u00FAsculas</string>
+    <string name="lowercase">Min\u00FAsculas</string>
+    <string name="numbers">N\u00FAmeros</string>
+    <string name="special_char">Caracteres especiais</string>
+    <string name="spaces">Espa\u00E7os</string>
+
+    <!--#########################################################################################-->
+
+    <!--Multi password activity-->
+    <string name="view">Visualiza\u00E7\u00E3o</string>
+    <string name="sort">Ordena\u00E7\u00E3o</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate password fragment-->
+    <string name="details">Detalhes</string>
+    <string name="copy">Copiar</string>
+    <string name="regenerate">Regerar</string>
+    <string name="share">Compartilhar</string>
+    <string name="customize">Personalizar</string>
+    <string name="avoid_amb_chars">Evitar caracteres amb\u00EDguos</string>
+    <string name="include_spaces">Incluir espa\u00E7os</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Palavras</string>
+    <string name="capitalize">Iniciais mai\u00FAsculas</string>
+
+    <!--#########################################################################################-->
+
+    <!--Settings fragment-->
+    <string name="appearance">Apar\u00EAncia</string>
+    <string name="theme">Tema</string>
+    <string name="material_you">Material You\n(requer reinicializa\u00E7\u00E3o do app)</string>
+    <string name="privacy">Privacidade</string>
+    <string name="block_screenshots">Bloquear capturas de tela no app</string>
+    <string name="incognito_keyboard">Teclado an\u00F4nimo</string>
+    <string name="about">Sobre</string>
+    <string name="privacy_policy">Pol\u00EDtica de Privacidade</string>
+    <string name="report_issue">Reportar um problema</string>
+    <string name="support">Apoie</string>
+    <string name="view_on_github">Ver no GitHub</string>
+    <string name="third_party_licenses">Licen\u00E7as de terceiros</string>
+
+    <!--#########################################################################################-->
+
+    <!--Custom warnings-->
+    <string name="worst_pass_warning">A senha \u00E9 muito f\u00E1cil de adivinhar.</string>
+    <string name="weak_pass_warning">A senha pode ser facilmente quebrada.</string>
+    <string name="medium_pass_warning">A senha n\u00E3o \u00E9 forte o suficiente.</string>
+
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
+    <string name="cancel">Cancelar</string>
+    <string name="done">Feito</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">Testar v\u00E1rias senhas</string>
+    <string name="add">Adicionar</string>
+    <string name="select_file">Selecionar arquivo</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">Adicionar v\u00E1rias senhas</string>
+
+    <!--Theme-->
+    <string name="follow_system">Padr\u00E3o do sistema</string>
+    <string name="light">Claro</string>
+    <string name="dark">Escuro</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="no_browsers">Nenhum navegador instalado neste dispositivo</string>
+    <string name="copied_to_clipboard">Copiado para \u00E1rea de transfer\u00EAncia</string>
+
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">IYPS em uso</string>
+
+</resources>
