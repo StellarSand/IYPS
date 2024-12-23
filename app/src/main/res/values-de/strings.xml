@@ -28,8 +28,6 @@
         ö = \u00F6
     -->
 
-    <string name="app_version">Version</string>
-
     <!--Bottom nav view-->
     <string name="test">Pr\u00FCfen</string>
     <string name="generate">Erzeugen</string>
@@ -39,7 +37,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">Testen sie ihr Passwort</string>
     <string name="ten_b_guesses_per_sec">10B Vermutungen/Sekunde</string>
     <string name="ten_k_guesses_per_sec">10k Vermutungen/Sekunde</string>
@@ -120,6 +118,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">Version</string>
     <string name="appearance">Aussehen</string>
     <string name="theme">Thema</string>
     <string name="material_you">Material You\n(erfordert Neustart der App)</string>

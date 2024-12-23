@@ -29,8 +29,6 @@
         À = \u00C0
     -->
 
-    <string name="app_version">Version</string>
-
     <!--Bottom nav view-->
     <string name="test">Test</string>
     <string name="generate">G\u00E9n\u00E9rer</string>
@@ -40,7 +38,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">Tester votre mot de passe</string>
     <string name="ten_b_guesses_per_sec">10B suppositions/seconde</string>
     <string name="ten_k_guesses_per_sec">10k suppositions/seconde</string>
@@ -121,6 +119,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">Version</string>
     <string name="appearance">Apparence</string>
     <string name="theme">Th\u00E8me</string>
     <string name="material_you">Material You\n(n\u00E9cessite le red\u00E9marrage de l\'app)</string>

@@ -32,8 +32,6 @@
         ú = \u00FA
     -->
 
-    <string name="app_version">Vers\u00E3o</string>
-
     <!--Bottom nav view-->
     <string name="test">Testar</string>
     <string name="generate">Gerador</string>
@@ -43,7 +41,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">Teste sua senha</string>
     <string name="ten_b_guesses_per_sec">10B tentativas/segundo</string>
     <string name="ten_k_guesses_per_sec">10K tentativas/segundo</string>
@@ -124,6 +122,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">Vers\u00E3o</string>
     <string name="appearance">Apar\u00EAncia</string>
     <string name="theme">Tema</string>
     <string name="material_you">Material You\n(requer reinicializa\u00E7\u00E3o do app)</string>

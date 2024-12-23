@@ -40,7 +40,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">Pruebe su contrase\u00F1a</string>
     <string name="ten_b_guesses_per_sec">10B conjeturas/segundo</string>
     <string name="ten_k_guesses_per_sec">10k conjeturas/segundo</string>

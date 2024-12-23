@@ -27,8 +27,6 @@
         ù = \u00F9
     -->
 
-    <string name="app_version">Versione</string>
-
     <!--Bottom nav view-->
     <string name="test">Test</string>
     <string name="generate">Generare</string>
@@ -38,7 +36,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">Prova la tua password</string>
     <string name="ten_b_guesses_per_sec">10B tentativi/secondo</string>
     <string name="ten_k_guesses_per_sec">10k tentativi/secondo</string>
@@ -119,6 +117,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">Versione</string>
     <string name="appearance">Aspetto</string>
     <string name="theme">Tema</string>
     <string name="material_you">Material You\n(richiede il riavvio dell\'app)</string>

@@ -24,8 +24,6 @@
     example: ä as \u00E4, é as \u00E9 etc.
     -->
 
-    <string name="app_version">Version</string>
-
     <!--Bottom nav view-->
     <string name="test">Test</string>
     <string name="generate">Generate</string>
@@ -35,7 +33,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">Test your password</string>
     <string name="ten_b_guesses_per_sec">10B guesses/second</string>
     <string name="ten_k_guesses_per_sec">10k guesses/second</string>
@@ -116,6 +114,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">Version</string>
     <string name="appearance">Appearance</string>
     <string name="theme">Theme</string>
     <string name="material_you">Material You\n(requires app restart)</string>

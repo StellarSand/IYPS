@@ -34,8 +34,6 @@
         Ş = \u015E
     -->
 
-    <string name="app_version">S\u00FCr\u00FCm</string>
-
     <!--Bottom nav view-->
     <string name="test">\u00D6l\u00E7ek</string>
     <string name="generate">Olu\u015Fturmak</string>
@@ -45,7 +43,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">\u015Eifrenizi test edin</string>
     <string name="ten_b_guesses_per_sec">10B tahmin/saniye</string>
     <string name="ten_k_guesses_per_sec">10k tahmin/saniye</string>
@@ -126,6 +124,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">S\u00FCr\u00FCm</string>
     <string name="appearance">G\u00F6r\u00FCn\u00FC\u015F</string>
     <string name="theme">Tema</string>
     <string name="material_you">Material You\n(uygulaman\u0131n yeniden ba\u015Flat\u0131lmas\u0131n\u0131 gerektirir)</string>

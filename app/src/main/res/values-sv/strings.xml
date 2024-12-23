@@ -27,8 +27,6 @@
         ö = \u00F6
     -->
 
-    <string name="app_version">Version</string>
-
     <!--Bottom nav view-->
     <string name="test">Testa</string>
     <string name="generate">Generera</string>
@@ -38,7 +36,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">Testa ditt l\u00F6senord</string>
     <string name="ten_b_guesses_per_sec">10B gissningar/sekund</string>
     <string name="ten_k_guesses_per_sec">10k gissningar/sekund</string>
@@ -119,6 +117,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">Version</string>
     <string name="appearance">Utseende</string>
     <string name="theme">Tema</string>
     <string name="material_you">Material You\n(kr\u00E4ver omstart av app)</string>

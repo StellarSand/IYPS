@@ -19,8 +19,6 @@
 
 <resources>
 
-    <string name="app_version">版本</string>
-
     <!--Bottom nav view-->
     <string name="test">测试</string>
     <string name="generate">生成</string>
@@ -30,7 +28,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">测试密码</string>
     <string name="ten_b_guesses_per_sec">每秒 󠁅10 󠁅亿次猜测</string>
     <string name="ten_k_guesses_per_sec">每秒 󠁅1 万次猜测</string>
@@ -111,6 +109,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">版本</string>
     <string name="appearance">外观</string>
     <string name="theme">主题</string>
     <string name="material_you">莫奈取色\n（需重启本应用）</string>

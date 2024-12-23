@@ -24,8 +24,6 @@
         ï = \u00EF
     -->
 
-    <string name="app_version">Versie</string>
-
     <!--Bottom nav view-->
     <string name="test">Test</string>
     <string name="generate">Genereren</string>
@@ -35,7 +33,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">Test je wachtwoord</string>
     <string name="ten_b_guesses_per_sec">10B gissingen/seconde</string>
     <string name="ten_k_guesses_per_sec">10k gissingen/seconde</string>
@@ -116,6 +114,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">Versie</string>
     <string name="appearance">Uiterlijk</string>
     <string name="theme">Thema</string>
     <string name="material_you">Materiaal Jij\n(app opnieuw opstarten vereist)</string>

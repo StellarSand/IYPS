@@ -19,8 +19,6 @@
 
 <resources>
 
-    <string name="app_version">バージョン</string>
-
     <!--Bottom nav view-->
     <string name="test">テスト</string>
     <string name="generate">生成する</string>
@@ -30,7 +28,7 @@
 
     <!--#########################################################################################-->
 
-    <!--Password fragment-->
+    <!--Test fragment-->
     <string name="test_your_password">パスワードをテストしてください</string>
     <string name="ten_b_guesses_per_sec">10B 推測/秒</string>
     <string name="ten_k_guesses_per_sec">10k 推測/秒</string>
@@ -111,6 +109,7 @@
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
+    <string name="app_version">バージョン</string>
     <string name="appearance">外観</string>
     <string name="theme">テーマ</string>
     <string name="material_you">マテリアルユー\n(アプリの再起動が必要)</string>

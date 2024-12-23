@@ -25,7 +25,7 @@
 
     <string name="app_version">نگارش</string>
 
-    <!--نمای پایین ناوبری-->
+    <!--Bottom nav view-->
     <string name="test">آزمایش</string>
     <string name="generate">ساخت</string>
     <string name="password">گذرواژه</string>
@@ -34,7 +34,7 @@
 
     <!--#########################################################################################-->
 
-    <!--بخش گذرواژه-->
+    <!--Test fragment-->
     <string name="test_your_password">گذرواژه‌تان را آزمایش کنید</string>
     <string name="ten_b_guesses_per_sec">10B حدس/ثانیه</string>
     <string name="ten_k_guesses_per_sec">10k حدس/ثانیه</string>
@@ -93,13 +93,13 @@
 
     <!--#########################################################################################-->
 
-    <!--فعالیت چند گذرواژه-->
+    <!--Multi password activity-->
     <string name="view">مشاهده</string>
     <string name="sort">مرتب‌سازی</string>
 
     <!--#########################################################################################-->
 
-    <!--بخش تولید گذرواژه-->
+    <!--Generate password fragment-->
     <string name="details">جزئیات</string>
     <string name="copy">رونوشت</string>
     <string name="regenerate">تولید مجدد</string>
@@ -108,13 +108,13 @@
     <string name="avoid_amb_chars">اجتناب از کاراکترهای مبهم</string>
     <string name="include_spaces">شامل فاصله‌ها</string>
 
-    <!--بخش تولید عبارت عبور-->
+    <!--Generate passphrase fragment-->
     <string name="words">کلمات</string>
     <string name="capitalize">حروف بزرگ</string>
 
     <!--#########################################################################################-->
 
-    <!--بخش تنظیمات-->
+    <!--Settings fragment-->
     <string name="appearance">نما</string>
     <string name="theme">پوسته</string>
     <string name="material_you">Material You\n(نیاز به باز راه‌اندازی برنامه دارد)</string>
@@ -130,39 +130,39 @@
 
     <!--#########################################################################################-->
 
-    <!--هشدارهای سفارشی-->
+    <!--Custom warnings-->
     <string name="worst_pass_warning">گذرواژه خیلی ساده است و قابل حدس زدن است.</string>
     <string name="weak_pass_warning">گذرواژه به راحتی قابل شکستن است.</string>
     <string name="medium_pass_warning">گذرواژه به اندازه کافی قوی نیست.</string>
 
     <!--#########################################################################################-->
 
-    <!--پایین برگه-->
+    <!--Bottom sheet-->
     <string name="cancel">رد کردن</string>
     <string name="done">انجام شد</string>
 
-    <!--آزمایش چندین گذرواژه-->
+    <!--Test multiple passwords-->
     <string name="test_multi_pwds">آزمایش چندین گذرواژه</string>
     <string name="add">افزودن</string>
     <string name="select_file">انتخاب پرونده</string>
 
-    <!--افزودن چندین گذرواژه-->
+    <!--Add multiple passwords-->
     <string name="add_multi_pwds">افزودن چندین گذرواژه</string>
 
-    <!--پوسته-->
+    <!--Theme-->
     <string name="follow_system">پیروی از سامانه</string>
     <string name="light">روشن</string>
     <string name="dark">تاریک</string>
 
     <!--#########################################################################################-->
 
-    <!--اسنکبارها-->
+    <!--Snackbars-->
     <string name="no_browsers">هیچ مرورگری بر روی این دستگاه نصب نشده است</string>
     <string name="copied_to_clipboard">در بریده‌دان رونوشت شد</string>
 
     <!--#########################################################################################-->
 
-    <!--کاشی تنظیمات سریع-->
+    <!--Quick settings tile-->
     <string name="app_in_use">IYPS به کار گرفته شده</string>
 
 </resources>
