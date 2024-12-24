@@ -1,5 +1,0 @@
-- Ajout d'un bouton de réglage rapide et d'un raccourci pour générer un mot de passe/une phrase de passe.
-- Ajout de quelques dictionnaires supplémentaires.
-- Ajout de la traduction en portugais.
-- Amélioration de la traduction italienne (par @Martinligabue).
-- Amélioration de la traduction en chinois (par @LatticeLadder).

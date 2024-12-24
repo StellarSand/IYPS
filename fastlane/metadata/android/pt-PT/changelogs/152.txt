@@ -1,5 +1,0 @@
-- Adicionada uma opção de definições rápidas e um atalho para gerar uma palavra-passe/frase.
-- Incluídos alguns dicionários adicionais.
-- Adicionada tradução para português.
-- Tradução para italiano melhorada (por @Martinligabue).
-- Tradução para chinês melhorada (por @LatticeLadder).

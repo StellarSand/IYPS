@@ -1,0 +1,6 @@
+- Ondersteuning voor Android 15.
+- Top 200 wachtwoorden bijgewerkt.
+- Vast "100 keer raden/uur" ten onrechte weergegeven als "100 keer raden/seconde" in Chinese vertaling.
+- Duitse vertaling bijgewerkt (door brassel-it).
+- Perzische vertaling toegevoegd (door alr86).
+- Braziliaans Portugese vertaling toegevoegd (door luxdev01).

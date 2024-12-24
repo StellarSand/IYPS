@@ -1,0 +1,6 @@
+- Suporte para Android 15.
+- Atualizadas as 200 principais senhas.
+- Corrigido "100 palpites/hora" exibido incorretamente como "100 palpites/segundo" na tradução para chinês.
+- Atualizada a tradução para alemão (por brassel-it).
+- Adicionada a tradução para persa (por alr86).
+- Adicionada a tradução para português do Brasil (por luxdev01).

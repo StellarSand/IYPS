@@ -1,12 +1,21 @@
 # CHANGELOG
 
 
+## v1.5.3
+- Support for Android 15.
+- Updated top 200 passwords.
+- Fixed "100 guesses/hour" incorrectly shown as "100 guesses/second" in Chinese translation.
+- Updated German translation (by [brassel-it](https://github.com/brassel-it)).
+- Added Persian translation (by [alr86](https://github.com/alr86)).
+- Added Brazilian Portuguese translation (by [luxdev01](https://github.com/luxdev01)).
+
+
 ## v1.5.2
 - Added quick settings toggle & shortcut to generate password/passphrase.
 - Included some additional dictionaries.
 - Added Portuguese translation.
-- Improved Italian translation (by [@Martinligabue](https://github.com/Martinligabue)).
-- Improved Chinese translation (by [@LatticeLadder](https://github.com/LatticeLadder)).
+- Improved Italian translation (by [Martinligabue](https://github.com/Martinligabue)).
+- Improved Chinese translation (by [LatticeLadder](https://github.com/LatticeLadder)).
 
 
 ## v1.5.1 (F-Droid only)

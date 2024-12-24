@@ -1,5 +1,0 @@
-- Added quick settings toggle & shortcut to generate password/passphrase.
-- Included some additional dictionaries.
-- Added Portuguese translation.
-- Improved Italian translation (by @Martinligabue).
-- Improved Chinese translation (by @LatticeLadder).

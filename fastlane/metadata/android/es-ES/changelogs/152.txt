@@ -1,5 +1,0 @@
-- Se ha añadido un atajo para generar la contraseña/frase de paso.
-- Se han incluido algunos diccionarios adicionales.
-- Añadida traducción al portugués.
-- Mejorada la traducción al italiano (por @Martinligabue).
-- Mejorada la traducción al chino (por @LatticeLadder).

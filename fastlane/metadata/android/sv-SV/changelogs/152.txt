@@ -1,5 +1,0 @@
-- Lagt till snabbinställningar och genväg för att generera lösenord/passphrase.
-- Inkluderade några ytterligare ordböcker.
-- Lagt till portugisisk översättning.
-- Förbättrad italiensk översättning (av @Martinligabue).
-- Förbättrad kinesisk översättning (av @LatticeLadder).

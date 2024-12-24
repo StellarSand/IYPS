@@ -1,10 +1,10 @@
-A password strength app that evaluates and rates your password's robustness, estimates crack time, and provides helpful warnings and suggestions for stronger passwords.
+یک برنامه تقویت رمز عبور که استحکام رمز عبور شما را ارزیابی و رتبه بندی می کند، زمان کرک را تخمین می زند، و هشدارها و پیشنهادات مفیدی برای رمزهای عبور قوی تر ارائه می دهد.
 
-Features:
+ویژگی ها:
 
-- Fully open source
-- Material design 3 & Material You
-- Completely offline
-- Supports both light and dark theme
-- No ads
-- No collection of personal data
+- کاملا متن باز
+- طراحی متریال 3 و متریال شما
+- کاملا آفلاین
+- از تم روشن و تاریک پشتیبانی می کند
+- بدون تبلیغات
+- عدم جمع آوری اطلاعات شخصی

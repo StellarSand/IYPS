@@ -1,0 +1,6 @@
+- Soporte para Android 15.
+- Actualizadas las 200 mejores contraseñas.
+- Corregido el error "100 intentos/hora" mostrado como "100 intentos/segundo" en la traducción al chino.
+- Actualizada la traducción al alemán (por brassel-it).
+- Añadida traducción al persa (por alr86).
+- Añadida traducción al portugués de Brasil (por luxdev01).
