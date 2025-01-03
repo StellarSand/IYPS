@@ -22,25 +22,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_fragments_nav_graph"
-    app:startDestination="@id/passwordFragment">
+    app:startDestination="@id/testPasswordFragment">
 
     <fragment
-        android:id="@+id/passwordFragment"
+        android:id="@+id/testPasswordFragment"
         android:name="com.iyps.fragments.main.TestPasswordFragment"
-        android:label="fragment_password"
+        android:label="fragment_test_password"
         tools:layout="@layout/fragment_test_password" >
         <action
-            android:id="@+id/action_passwordFragment_to_settingsFragment"
+            android:id="@+id/action_testPasswordFragment_to_settingsFragment"
             app:destination="@id/settingsFragment"
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
         <action
-            android:id="@+id/action_passwordFragment_to_generatePasswordFragment"
+            android:id="@+id/action_testPasswordFragment_to_generatePasswordFragment"
             app:destination="@id/generatePasswordFragment"
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
         <action
-            android:id="@+id/action_passwordFragment_to_generatePassphraseFragment"
+            android:id="@+id/action_testPasswordFragment_to_generatePassphraseFragment"
             app:destination="@id/generatePassphraseFragment"
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
@@ -52,8 +52,8 @@
         android:label="fragment_about"
         tools:layout="@layout/fragment_settings" >
         <action
-            android:id="@+id/action_settingsFragment_to_passwordFragment"
-            app:destination="@id/passwordFragment"
+            android:id="@+id/action_settingsFragment_to_testPasswordFragment"
+            app:destination="@id/testPasswordFragment"
             app:enterAnim="@anim/slide_from_start"
             app:exitAnim="@anim/slide_to_end"/>
         <action
@@ -79,8 +79,8 @@
             app:enterAnim="@anim/slide_from_end"
             app:exitAnim="@anim/slide_to_start"/>
         <action
-            android:id="@+id/action_generatePasswordFragment_to_passwordFragment"
-            app:destination="@id/passwordFragment"
+            android:id="@+id/action_generatePasswordFragment_to_testPasswordFragment"
+            app:destination="@id/testPasswordFragment"
             app:enterAnim="@anim/slide_from_start"
             app:exitAnim="@anim/slide_to_end"/>
         <action
@@ -101,8 +101,8 @@
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out"/>
         <action
-            android:id="@+id/action_generatePassphraseFragment_to_passwordFragment"
-            app:destination="@id/passwordFragment"
+            android:id="@+id/action_generatePassphraseFragment_to_testPasswordFragment"
+            app:destination="@id/testPasswordFragment"
             app:enterAnim="@anim/slide_from_start"
             app:exitAnim="@anim/slide_to_end"/>
         <action

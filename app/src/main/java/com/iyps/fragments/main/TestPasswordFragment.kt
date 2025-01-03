@@ -159,7 +159,7 @@ class TestPasswordFragment : Fragment() {
                     when (item?.itemId) {
                         android.R.id.copy -> {
                             val clipData = ClipData.newPlainText("IYPS", text)
-                            if (Build.VERSION.SDK_INT >= 24) hideSensitiveContent(clipData)
+                            if (Build.VERSION.SDK_INT >= 24) clipData.hideSensitiveContent()
                             clipboardManager.setPrimaryClip(clipData)
                             // Only show snackbar in 12L or lower to avoid duplicate notifications
                             // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
@@ -237,9 +237,8 @@ class TestPasswordFragment : Fragment() {
     // Clear clipboard immediately when fragment destroyed
     override fun onDestroyView() {
         super.onDestroyView()
-        if (clipboardManager.hasPrimaryClip()
-            && clipboardManager.primaryClipDescription?.label == "IYPS") {
-            clearClipboard(clipboardManager)
+        clipboardManager.apply {
+            if (hasPrimaryClip() && primaryClipDescription?.label == "IYPS") clearClipboard()
         }
         _binding = null
     }

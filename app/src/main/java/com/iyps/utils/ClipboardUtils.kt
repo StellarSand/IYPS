@@ -42,7 +42,7 @@ class ClipboardUtils {
                     job?.cancel()
                     job = lifecycleScope.launch {
                         delay(60000)
-                        clearClipboard(clipboardManager)
+                        clipboardManager.clearClipboard()
                     }
                 }
             }
@@ -51,20 +51,18 @@ class ClipboardUtils {
         // Hide from revealing on copy
         // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#SensitiveContent
         @RequiresApi(Build.VERSION_CODES.N)
-        fun hideSensitiveContent(clipData: ClipData) {
-            clipData.apply {
-                description.extras = PersistableBundle().apply {
-                    if (Build.VERSION.SDK_INT >= 33) putBoolean(ClipDescription.EXTRA_IS_SENSITIVE, true)
-                    else putBoolean("android.content.extra.IS_SENSITIVE", true)
-                }
+        fun ClipData.hideSensitiveContent() {
+            description.extras = PersistableBundle().apply {
+                if (Build.VERSION.SDK_INT >= 33) putBoolean(ClipDescription.EXTRA_IS_SENSITIVE, true)
+                else putBoolean("android.content.extra.IS_SENSITIVE", true)
             }
         }
         
         // Clear password from clipboard
-        fun clearClipboard(clipboardManager: ClipboardManager) {
+        fun ClipboardManager.clearClipboard() {
             when {
-                Build.VERSION.SDK_INT >= 28 -> clipboardManager.clearPrimaryClip()
-                else -> clipboardManager.setPrimaryClip(ClipData.newPlainText(null, null))
+                Build.VERSION.SDK_INT >= 28 -> clearPrimaryClip()
+                else -> setPrimaryClip(ClipData.newPlainText(null, null))
             }
             
         }

@@ -52,7 +52,6 @@
         android:layout_marginBottom="95dp"
         app:singleSelection="true"
         app:selectionRequired="true"
-        app:checkedButton="@id/togglePassword"
         android:visibility="gone"
         tools:visibility="visible">
 

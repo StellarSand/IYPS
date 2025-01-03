@@ -35,7 +35,7 @@ class DetailsActivity : AppCompatActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
-        setNavBarContrastEnforced(window)
+        window.setNavBarContrastEnforced()
         super.onCreate(savedInstanceState)
         val activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
@@ -43,7 +43,7 @@ class DetailsActivity : AppCompatActivity() {
         passwordLine = intent.getStringExtra("PwdLine")!!
         
         // Disable screenshots and screen recordings
-        blockScreenshots(this, get<PreferenceManager>().getBoolean(BLOCK_SS))
+        window.blockScreenshots(get<PreferenceManager>().getBoolean(BLOCK_SS))
         
         activityBinding.detailsBottomAppBar.apply {
             setSupportActionBar(this)

@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
             DynamicColors.applyToActivitiesIfAvailable(applicationContext as ApplicationManager) // For other activities
         }
         enableEdgeToEdge()
-        setNavBarContrastEnforced(window)
+        window.setNavBarContrastEnforced()
         super.onCreate(savedInstanceState)
         onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
         activityBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -99,14 +99,14 @@ class MainActivity : AppCompatActivity() {
         }
         
         // Disable screenshots and screen recordings
-        blockScreenshots(this, prefManager.getBoolean(BLOCK_SS))
+        window.blockScreenshots(prefManager.getBoolean(BLOCK_SS))
         
         selectedItem =
-                savedInstanceState?.getInt("selectedItem") ?:
-                if (intent.extras?.getString("shortcut") == "shortcutGenerate") {
-                    R.id.nav_generate
-                }
-                else R.id.nav_test
+            savedInstanceState?.getInt("selectedItem") ?:
+            if (intent.extras?.getString("shortcut") == "shortcutGenerate") {
+                R.id.nav_generate
+            }
+            else R.id.nav_test
         
         // Opened from shortcut or quick settings toggle
         if (savedInstanceState == null && selectedItem == R.id.nav_generate) {
@@ -116,7 +116,6 @@ class MainActivity : AppCompatActivity() {
         
         // Bottom nav
         activityBinding.mainBottomNav.apply {
-            
             setOnItemSelectedListener { item ->
                 selectedItem = item.itemId
                 displayFragment(selectedItem)
@@ -129,7 +128,6 @@ class MainActivity : AppCompatActivity() {
                 true
                 
             }
-            
             setOnItemReselectedListener {}
         }
         
@@ -137,12 +135,13 @@ class MainActivity : AppCompatActivity() {
         activityBinding.generateToggleGroup.apply {
             val selectedToggle: Int
             prefManager.apply {
-                if (getInt(GEN_TOGGLE) == 0) {
+                if (getInt(GEN_TOGGLE) != R.id.togglePassword
+                    && getInt(GEN_TOGGLE) != R.id.togglePassphrase) {
                     setInt(GEN_TOGGLE, R.id.togglePassword)
                 }
                 selectedToggle = getInt(GEN_TOGGLE)
-                check(selectedToggle)
             }
+            check(selectedToggle)
             findViewById<MaterialButton>(selectedToggle).icon = checkIcon
             addOnButtonCheckedListener { _, checkedId, isChecked ->
                 if (isChecked) {
@@ -163,17 +162,17 @@ class MainActivity : AppCompatActivity() {
         val currentFragment = navController.currentDestination!!
         
         val navActionsMap =
-            mapOf(Pair(R.id.generatePasswordFragment, R.id.nav_test) to R.id.action_generatePasswordFragment_to_passwordFragment,
-                  Pair(R.id.generatePassphraseFragment, R.id.nav_test) to R.id.action_generatePassphraseFragment_to_passwordFragment,
-                  Pair(R.id.settingsFragment, R.id.nav_test) to R.id.action_settingsFragment_to_passwordFragment,
-                  Pair(R.id.passwordFragment, R.id.nav_settings) to R.id.action_passwordFragment_to_settingsFragment,
+            mapOf(Pair(R.id.generatePasswordFragment, R.id.nav_test) to R.id.action_generatePasswordFragment_to_testPasswordFragment,
+                  Pair(R.id.generatePassphraseFragment, R.id.nav_test) to R.id.action_generatePassphraseFragment_to_testPasswordFragment,
+                  Pair(R.id.settingsFragment, R.id.nav_test) to R.id.action_settingsFragment_to_testPasswordFragment,
+                  Pair(R.id.testPasswordFragment, R.id.nav_settings) to R.id.action_testPasswordFragment_to_settingsFragment,
                   Pair(R.id.generatePasswordFragment, R.id.nav_settings) to R.id.action_generatePasswordFragment_to_settingsFragment,
                   Pair(R.id.generatePassphraseFragment, R.id.nav_settings) to R.id.action_generatePassphraseFragment_to_settingsFragment)
         
         val toggleActionsMap =
-            mapOf(Pair(R.id.passwordFragment, R.id.togglePassword) to R.id.action_passwordFragment_to_generatePasswordFragment,
+            mapOf(Pair(R.id.testPasswordFragment, R.id.togglePassword) to R.id.action_testPasswordFragment_to_generatePasswordFragment,
                   Pair(R.id.settingsFragment, R.id.togglePassword) to R.id.action_settingsFragment_to_generatePasswordFragment,
-                  Pair(R.id.passwordFragment, R.id.togglePassphrase) to R.id.action_passwordFragment_to_generatePassphraseFragment,
+                  Pair(R.id.testPasswordFragment, R.id.togglePassphrase) to R.id.action_testPasswordFragment_to_generatePassphraseFragment,
                   Pair(R.id.settingsFragment, R.id.togglePassphrase) to R.id.action_settingsFragment_to_generatePassphraseFragment,
                   Pair(R.id.generatePasswordFragment, R.id.togglePassphrase) to R.id.action_generatePasswordFragment_to_generatePassphraseFragment,
                   Pair(R.id.generatePassphraseFragment, R.id.togglePassword) to R.id.action_generatePassphraseFragment_to_generatePasswordFragment)
