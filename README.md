@@ -50,7 +50,7 @@ In our digital age, where data breaches and hacks have skyrocketed, robust passw
   - Italian
   - Japanese
   - Persian
-  - Portuguese & Portuguese (Brazil)
+  - Portuguese & Brazilian Portuguese
   - Spanish
   - Swedish
   - Turkish

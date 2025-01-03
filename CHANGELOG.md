@@ -1,6 +1,11 @@
 # CHANGELOG
 
 
+## v1.5.4
+- Fixed crash on launch.
+- Removed duplicate passwords from top 200 list.
+
+
 ## v1.5.3
 - Support for Android 15.
 - Updated top 200 passwords.

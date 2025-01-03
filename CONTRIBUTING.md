@@ -16,7 +16,7 @@
   - [Spanish](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-es/strings.xml)
   - Chinese: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-zh/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_zh.properties)
   - Persian: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-fa/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_fa.properties)
-  - Portuguese (Brazil): [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-pt-rBR/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_pt_rbr.properties)
+  - Brazilian Portuguese: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-pt-rBR/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_pt_rbr.properties)
   - Swedish: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-sv/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_sv.properties)
   - Turkish: [Primary](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/values-tr/strings.xml), [Feedback](https://github.com/StellarSand/IYPS/blob/main/app/src/main/res/raw/messages_tr.properties)
 - When adding a new language:

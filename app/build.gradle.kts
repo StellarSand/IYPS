@@ -32,8 +32,8 @@ android {
         applicationId = "com.iyps"
         minSdk = 23
         targetSdk = 35
-        versionCode = 153
-        versionName = "1.5.3"
+        versionCode = 154
+        versionName = "1.5.4"
         setProperty("archivesBaseName", "IYPS_v$versionName")
     }
     
