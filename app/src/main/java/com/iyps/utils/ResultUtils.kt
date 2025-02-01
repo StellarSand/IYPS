@@ -28,6 +28,7 @@ import com.nulabinc.zxcvbn.Pattern
 import com.nulabinc.zxcvbn.Strength
 import java.util.Locale
 import java.util.concurrent.TimeUnit
+import kotlin.math.log2
 
 class ResultUtils(val context: Context) {
     
@@ -261,6 +262,23 @@ class ResultUtils(val context: Context) {
         val spacesCount = charSequence.count { it.isWhitespace() }
         val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount - spacesCount
         return arrayOf(length, upperCaseCount, lowerCaseCount, numbersCount, specialCharsCount, spacesCount)
+    }
+    
+    fun getEntropyText(statsCountsList: Array<Int>): String {
+        var poolSize = 0.0
+        
+        // Pool size
+        // A-Z -> 26
+        // a-z -> 26
+        // 0-9 -> 10
+        // Special characters -> 32 on a standard US keyboard
+        if (statsCountsList[1] > 0) poolSize += 26.0 // Uppercase
+        if (statsCountsList[2] > 0) poolSize += 26.0 // Lowercase
+        if (statsCountsList[3] > 0) poolSize += 10.0 // Digits
+        if (statsCountsList[4] > 0) poolSize += 32.0 // Special characters
+        
+        // Entropy = Length * log2(pool size)
+        return (statsCountsList[0] * log2(poolSize)).formatToTwoDecimalPlaces()
     }
     
 }

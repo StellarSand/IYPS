@@ -26,7 +26,6 @@ import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.ResultUtils
 import com.nulabinc.zxcvbn.Zxcvbn
 import java.util.Locale
-import kotlin.math.log2
 
 class EvaluatePassword(zxcvbn: Zxcvbn,
                        password: CharSequence,
@@ -87,14 +86,14 @@ class EvaluatePassword(zxcvbn: Zxcvbn,
         fragmentBinding.orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
         
         // Entropy
+        val statsList = resultUtils.getStatisticsCounts(password)
         @SuppressLint("SetTextI18n")
-        fragmentBinding.entropySubtitle.text = "${log2(guesses).formatToTwoDecimalPlaces()} ${context.getString(R.string.bits)}"
+        fragmentBinding.entropySubtitle.text = "${resultUtils.getEntropyText(statsList)} ${context.getString(R.string.bits)}"
         
         // Match sequence
         fragmentBinding.matchSequenceSubtitle.text = resultUtils.getMatchSequenceText(strength)
         
         // Statistics
-        val statsList = resultUtils.getStatisticsCounts(password)
         fragmentBinding.lengthText.text = String.format(Locale.getDefault(), "%d", statsList[0])
         fragmentBinding.uppercaseText.text = String.format(Locale.getDefault(), "%d", statsList[1])
         fragmentBinding.lowercaseText.text = String.format(Locale.getDefault(), "%d", statsList[2])
