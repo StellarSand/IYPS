@@ -109,7 +109,7 @@
     <!--Generate password fragment-->
     <string name="details">Detalhes</string>
     <string name="copy">Copiar</string>
-    <string name="regenerate">Regerar</string>
+    <string name="regenerate">Gerar novamente</string>
     <string name="share">Compartilhar</string>
     <string name="customize">Personalizar</string>
     <string name="avoid_amb_chars">Evitar caracteres amb\u00EDguos</string>
@@ -132,7 +132,7 @@
     <string name="about">Sobre</string>
     <string name="privacy_policy">Pol\u00EDtica de Privacidade</string>
     <string name="report_issue">Reportar um problema</string>
-    <string name="support">Apoie</string>
+    <string name="support">Apoie-nos</string>
     <string name="view_on_github">Ver no GitHub</string>
     <string name="third_party_licenses">Licen\u00E7as de terceiros</string>
 
@@ -147,7 +147,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Cancelar</string>
-    <string name="done">Feito</string>
+    <string name="done">Pronto</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testar v\u00E1rias senhas</string>
