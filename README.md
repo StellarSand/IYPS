@@ -9,6 +9,8 @@ A password strength app that evaluates and rates your password's robustness, est
 
 [![Google Play Version Version](https://img.shields.io/endpoint?url=https://play.cuzi.workers.dev/play?i=com.iyps&m=$version&logo=GooglePlay&color=blue&label=Google%20Play&style=for-the-badge)](#download) [![GitHub Version](https://img.shields.io/github/v/release/StellarSand/IYPS?logo=GitHub&color=212121&label=GitHub&style=for-the-badge)](#download)
 
+[![Translation status](https://hosted.weblate.org/widget/iyps/287x66-grey.png)](https://hosted.weblate.org/engage/iyps/)
+
 
 
 ## Contents
@@ -171,6 +173,7 @@ New pull requests can be submitted [here](https://github.com/StellarSand/IYPS/pu
 - [parveshnarwal](https://github.com/parveshnarwal) for publishing the app on Google Play and previously co-leading the development.
 - [SecLists](https://github.com/danielmiessler/SecLists) for some of the password dictionaries.
 - [EFF](https://www.eff.org) for publishing their wordlist to generate random passphrases.
+- [Weblate](https://hosted.weblate.org/) for providing free hosting to support translations.
 - [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) for making this app better.
 
 
