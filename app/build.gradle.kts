@@ -26,12 +26,12 @@ kotlin {
 
 android {
     namespace = "com.iyps"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.iyps"
         minSdk = 23
-        targetSdk = 35
+        targetSdk = 36
         versionCode = 154
         versionName = "1.5.4"
         setProperty("archivesBaseName", "IYPS_v$versionName")
