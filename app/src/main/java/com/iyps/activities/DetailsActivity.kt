@@ -26,6 +26,7 @@ import com.iyps.fragments.details.DetailsFragment
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
+import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setNavBarContrastEnforced
 import org.koin.android.ext.android.get
 
@@ -45,9 +46,10 @@ class DetailsActivity : AppCompatActivity() {
         // Disable screenshots and screen recordings
         window.blockScreenshots(get<PreferenceManager>().getBoolean(BLOCK_SS))
         
-        activityBinding.detailsBottomAppBar.apply {
-            setSupportActionBar(this)
-            setNavigationOnClickListener { onBackPressedDispatcher.onBackPressed() }
+        // Back
+        activityBinding.detailsBackBtn.apply {
+            setButtonTooltipText(getString(R.string.back))
+            setOnClickListener { onBackPressedDispatcher.onBackPressed() }
         }
         
         supportFragmentManager.beginTransaction()

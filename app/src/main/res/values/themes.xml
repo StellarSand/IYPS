@@ -21,7 +21,7 @@
 
     <!--Splash theme-->
     <style name="SplashTheme" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/color_primary</item>
+        <item name="windowSplashScreenBackground">@color/color_splash_bg</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
         <item name="postSplashScreenTheme">@style/AppTheme</item>
     </style>
@@ -77,6 +77,8 @@
         <item name="colorSurfaceContainerHigh">@color/color_surfaceContainerHigh</item>
         <item name="colorSurfaceContainerHighest">@color/color_surfaceContainerHighest</item>
 
+        <item name="materialSwitchStyle">@style/SwitchStyle</item>
+        <item name="sliderStyle">@style/SliderStyle</item>
         <item name="bottomSheetDialogTheme">@style/BottomSheetTheme</item>
         <item name="snackbarTextViewStyle">@style/SnackbarTextStyle</item>
     </style>

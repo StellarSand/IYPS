@@ -83,10 +83,10 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         AppState.isAppOpen = true
         val checkIcon = ContextCompat.getDrawable(this, R.drawable.ic_done)
-        viewsToAnimate = arrayOf(activityBinding.generateToggleGroup, activityBinding.generateBottomAppBar)
+        viewsToAnimate = arrayOf(activityBinding.generateToggleGroup, activityBinding.generateDockedToolbar)
         
         // Adjust UI components for edge to edge
-        mapOf(activityBinding.generateBottomAppBar to 80f,
+        mapOf(activityBinding.generateDockedToolbar to 80f,
               activityBinding.generateToggleGroup to 95f).forEach { (view, margin) ->
             ViewCompat.setOnApplyWindowInsetsListener(view) { v, windowInsets ->
                 v.updateLayoutParams<ViewGroup.MarginLayoutParams> {

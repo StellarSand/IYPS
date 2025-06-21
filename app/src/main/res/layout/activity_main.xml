@@ -35,10 +35,10 @@
         app:navGraph="@navigation/main_fragments_nav_graph"
         app:defaultNavHost="true"/>
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/generateBottomAppBar"
+    <com.google.android.material.dockedtoolbar.DockedToolbarLayout
+        android:id="@+id/generateDockedToolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginBottom="@dimen/margin_80"
         android:visibility="gone"
@@ -46,14 +46,17 @@
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/generateToggleGroup"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center|bottom"
+        android:gravity="center"
+        android:layout_marginHorizontal="@dimen/margin_4"
         android:layout_marginBottom="95dp"
         app:singleSelection="true"
         app:selectionRequired="true"
         android:visibility="gone"
-        tools:visibility="visible">
+        tools:visibility="visible"
+        style="@style/Widget.Material3.MaterialButtonGroup.Connected">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/togglePassword"

@@ -24,6 +24,7 @@ import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import com.iyps.R
@@ -66,6 +67,10 @@ class UiUtils {
         
         fun convertDpToPx(context: Context, dp: Float): Int {
             return (dp * context.resources.displayMetrics.density).toInt()
+        }
+        
+        fun MaterialButton.setButtonTooltipText(text: String) {
+            if (Build.VERSION.SDK_INT >= 26) tooltipText = text
         }
         
         fun showSnackbar(coordinatorLayout: CoordinatorLayout,

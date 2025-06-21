@@ -22,7 +22,6 @@ import android.content.ClipDescription
 import android.content.ClipboardManager
 import android.os.Build
 import android.os.PersistableBundle
-import androidx.annotation.RequiresApi
 import androidx.lifecycle.LifecycleCoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -50,11 +49,13 @@ class ClipboardUtils {
         
         // Hide from revealing on copy
         // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#SensitiveContent
-        @RequiresApi(Build.VERSION_CODES.N)
         fun ClipData.hideSensitiveContent() {
-            description.extras = PersistableBundle().apply {
-                if (Build.VERSION.SDK_INT >= 33) putBoolean(ClipDescription.EXTRA_IS_SENSITIVE, true)
-                else putBoolean("android.content.extra.IS_SENSITIVE", true)
+            if (Build.VERSION.SDK_INT >= 24) {
+                description.extras = PersistableBundle().apply {
+                    if (Build.VERSION.SDK_INT >= 33) putBoolean(ClipDescription.EXTRA_IS_SENSITIVE,
+                                                                true)
+                    else putBoolean("android.content.extra.IS_SENSITIVE", true)
+                }
             }
         }
         

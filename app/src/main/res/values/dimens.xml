@@ -18,7 +18,6 @@
 <resources>
 
     <!--Margins & paddings-->
-    <dimen name="margin_100">100dp</dimen>
     <dimen name="margin_80">80dp</dimen>
     <dimen name="margin_75">75dp</dimen>
     <dimen name="margin_65">65dp</dimen>
@@ -32,7 +31,7 @@
     <dimen name="margin_12">12dp</dimen>
     <dimen name="margin_10">10dp</dimen>
     <dimen name="margin_8">8dp</dimen>
-    <dimen name="margin_6.5">6.5dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
     <dimen name="margin_4">4dp</dimen>
     <dimen name="margin_2.5">2.5dp</dimen>
 

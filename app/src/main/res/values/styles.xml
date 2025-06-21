@@ -44,9 +44,17 @@
 
     <!--Base slider style-->
     <style name="SliderStyle" parent="Widget.Material3.Slider">
+        <item name="trackHeight">@dimen/margin_32</item>
+        <item name="trackCornerSize">@dimen/margin_10</item>
         <item name="android:stepSize">1.0</item>
         <item name="tickVisible">false</item>
         <item name="labelBehavior">gone</item>
+    </style>
+
+    <!--#########################################################################################-->
+
+    <style name="SwitchStyle" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="thumbIcon">@drawable/ic_switch_thumb</item>
     </style>
 
     <!--#########################################################################################-->

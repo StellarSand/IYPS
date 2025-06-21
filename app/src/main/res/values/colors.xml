@@ -173,4 +173,6 @@
     <color name="strongMeterColor">#4ADC8C</color>
     <color name="excellentMeterColor">#4DCD68</color>
 
+    <color name="color_splash_bg">#36693E</color>
+
 </resources>
