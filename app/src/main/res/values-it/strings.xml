@@ -96,6 +96,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">Vista</string>
     <string name="sort">Ordinamento</string>
 
@@ -107,6 +108,7 @@
     <string name="regenerate">Rigenera</string>
     <string name="share">Condividi</string>
     <string name="customize">Personalizza</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Evita i caratteri ambigui</string>
     <string name="include_spaces">Includi spazi</string>
 

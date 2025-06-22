@@ -88,6 +88,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">查看</string>
     <string name="sort">排序</string>
 
@@ -99,6 +100,7 @@
     <string name="regenerate">再次生成</string>
     <string name="share">分享</string>
     <string name="customize">自定义</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">避免使用模棱两可的字符</string>
     <string name="include_spaces">包括空格</string>
 

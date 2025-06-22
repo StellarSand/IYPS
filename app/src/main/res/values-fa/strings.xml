@@ -94,6 +94,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">مشاهده</string>
     <string name="sort">مرتب‌سازی</string>
 
@@ -105,6 +106,7 @@
     <string name="regenerate">تولید مجدد</string>
     <string name="share">هم‌رسانی</string>
     <string name="customize">سفارشی‌سازی</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">اجتناب از کاراکترهای مبهم</string>
     <string name="include_spaces">شامل فاصله‌ها</string>
 

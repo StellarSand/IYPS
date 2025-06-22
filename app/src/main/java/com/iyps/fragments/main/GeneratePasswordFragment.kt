@@ -41,6 +41,7 @@ import com.iyps.activities.MainActivity
 import com.iyps.databinding.FragmentGeneratePasswordBinding
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PWD_AMB_CHARS
+import com.iyps.preferences.PreferenceManager.Companion.PWD_EXT_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_LOWERCASE
 import com.iyps.preferences.PreferenceManager.Companion.PWD_NUMBERS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_LENGTH
@@ -63,6 +64,7 @@ class GeneratePasswordFragment : Fragment() {
     private val prefManager by inject<PreferenceManager>()
     private lateinit var uppercaseSwitch: MaterialSwitch
     private lateinit var lowercaseSwitch: MaterialSwitch
+    private lateinit var extCharsSwitch: MaterialSwitch
     private lateinit var numbersSwitch: MaterialSwitch
     private lateinit var specialCharsSwitch: MaterialSwitch
     private lateinit var avoidAmbCharsSwitch: MaterialSwitch
@@ -76,9 +78,11 @@ class GeneratePasswordFragment : Fragment() {
     
     private companion object {
         private const val UPPERCASE_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        private const val UPPERCASE_EXT_CHARS = "ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÑÒÓÔÕÖØÙÚÛÜÝß"
         private const val LOWERCASE_CHARS = "abcdefghijklmnopqrstuvwxyz"
+        private const val LOWERCASE_EXT_CHARS = "àáâãäåæçèéêëìíîïñòóôõöøùúûüýÿ"
         private const val NUMBERS = "0123456789"
-        private const val SPECIAL_CHARS = "!@#$%^&*+_-.="
+        private const val SPECIAL_CHARS = "!@#$%^&*+_-.=:%"
         private const val UPPERCASE_AMB_CHARS = "ILOSBZ" // 0Oo, 1IlL, 2Z, 5S, 8B
         private const val LOWERCASE_AMB_CHARS = "loz"
         private const val NUM_AMB_CHARS = "01258"
@@ -98,18 +102,21 @@ class GeneratePasswordFragment : Fragment() {
         val mainActivity = requireActivity() as MainActivity
         uppercaseSwitch = fragmentBinding.uppercaseSwitch
         lowercaseSwitch = fragmentBinding.lowercaseSwitch
+        extCharsSwitch = fragmentBinding.extCharsSwitch
         numbersSwitch = fragmentBinding.numbersSwitch
         specialCharsSwitch = fragmentBinding.specialCharsSwitch
         avoidAmbCharsSwitch = fragmentBinding.avoidAmbCharsSwitch
         includeSpaceSwitch = fragmentBinding.includeSpacesSwitch
         
         primarySwitchesList = arrayOf(uppercaseSwitch,
-                                     lowercaseSwitch,
-                                     numbersSwitch,
-                                     specialCharsSwitch)
+                                      lowercaseSwitch,
+                                      extCharsSwitch,
+                                      numbersSwitch,
+                                      specialCharsSwitch)
         
         primarySwitchesPrefMap = mapOf(uppercaseSwitch to PWD_UPPERCASE,
                                        lowercaseSwitch to PWD_LOWERCASE,
+                                       extCharsSwitch to PWD_EXT_CHARS,
                                        numbersSwitch to PWD_NUMBERS,
                                        specialCharsSwitch to PWD_SPEC_CHARS)
         
@@ -128,16 +135,12 @@ class GeneratePasswordFragment : Fragment() {
         fragmentBinding.pwdLengthSlider.apply {
             value = prefManager.getFloat(PWD_LENGTH)
             fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
-            
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
-                
                 override fun onStopTrackingTouch(slider: Slider) {
                     generatePassword()
                 }
-                
             })
-            
             addOnChangeListener { _, value, _ ->
                 fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
             }
@@ -145,9 +148,9 @@ class GeneratePasswordFragment : Fragment() {
         
         // Switches
         // At least one switch must be enabled at all times (excluding ambiguous chars switch)
-        primarySwitchesList.forEach { switch ->
+        primarySwitchesList.forEachIndexed { index, switch ->
             primarySwitchesPrefMap[switch]?.let { preferenceKey ->
-                switch.isChecked = prefManager.getBoolean(preferenceKey)
+                switch.isChecked = prefManager.getBoolean(preferenceKey, defValue = index != 2) // Ext chars off by default
             }
             switch.setOnCheckedChangeListener { _, _ ->
                 val otherSwitches = primarySwitchesList.filter { it != switch }
@@ -186,7 +189,7 @@ class GeneratePasswordFragment : Fragment() {
         // Copy
         fragmentBinding.pwdCopyBtn.setOnClickListener {
             val clipData = ClipData.newPlainText("", fragmentBinding.pwdGeneratedTextView.text)
-            if (Build.VERSION.SDK_INT >= 24) clipData.hideSensitiveContent()
+            clipData.hideSensitiveContent()
             (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
             // Only show snackbar in 12L or lower to avoid duplicate notifications
             // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
@@ -239,12 +242,19 @@ class GeneratePasswordFragment : Fragment() {
                         else LOWERCASE_CHARS
                     )
                 }
+                if (extCharsSwitch.isChecked) {
+                    append(
+                        when {
+                            uppercaseSwitch.isChecked -> UPPERCASE_EXT_CHARS
+                            lowercaseSwitch.isChecked -> LOWERCASE_EXT_CHARS
+                            else -> UPPERCASE_EXT_CHARS + LOWERCASE_EXT_CHARS
+                        }
+                    )
+                }
                 if (numbersSwitch.isChecked) {
                     append(
                         if (avoidAmbCharsSwitch.isChecked) numbersWithoutAmbChars.ifEmpty {
-                            getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also {
-                                numbersWithoutAmbChars = it
-                            }
+                            getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also { numbersWithoutAmbChars = it }
                         }
                         else NUMBERS
                     )

@@ -88,6 +88,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">表示</string>
     <string name="sort">ソート</string>
 
@@ -99,6 +100,7 @@
     <string name="regenerate">再生</string>
     <string name="share">シェア</string>
     <string name="customize">カスタマイズ</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">曖昧な文字は避ける</string>
     <string name="include_spaces">スペースを含む</string>
 

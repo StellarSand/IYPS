@@ -101,6 +101,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">Visualiza\u00E7\u00E3o</string>
     <string name="sort">Ordena\u00E7\u00E3o</string>
 
@@ -112,6 +113,7 @@
     <string name="regenerate">Gerar novamente</string>
     <string name="share">Compartilhar</string>
     <string name="customize">Personalizar</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Evitar caracteres amb\u00EDguos</string>
     <string name="include_spaces">Incluir espa\u00E7os</string>
 

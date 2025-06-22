@@ -96,6 +96,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">Utsikt</string>
     <string name="sort">Sortera</string>
 
@@ -107,6 +108,7 @@
     <string name="regenerate">Regenerera</string>
     <string name="share">Andel</string>
     <string name="customize">Anpassa</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Undvik tvetydiga tecken</string>
     <string name="include_spaces">Inkludera utrymmen</string>
 

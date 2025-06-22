@@ -97,6 +97,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">Ansicht</string>
     <string name="sort">Sortierung</string>
 
@@ -108,6 +109,7 @@
     <string name="regenerate">Regenerieren</string>
     <string name="share">Teilen</string>
     <string name="customize">Anpassen</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Zweideutige Zeichen vermeiden</string>
     <string name="include_spaces">Leerzeichen einbeziehen</string>
 

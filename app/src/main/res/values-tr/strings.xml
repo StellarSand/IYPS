@@ -103,6 +103,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">G\u00F6r\u00FCn\u00FCm</string>
     <string name="sort">S\u0131rala</string>
 
@@ -114,6 +115,7 @@
     <string name="regenerate">Yenilenme</string>
     <string name="share">Payla\u015F</string>
     <string name="customize">\u00D6zelle\u015Ftirme</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Belirsiz karakterlerden ka\u00E7\u0131n\u0131n</string>
     <string name="include_spaces">Bo\u015Fluklar\u0131 dahil edin</string>
 

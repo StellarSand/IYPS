@@ -93,6 +93,7 @@
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
+    <string name="back">Back</string>
     <string name="view">Bekijk</string>
     <string name="sort">Sorteer</string>
 
@@ -104,6 +105,7 @@
     <string name="regenerate">Regenereer</string>
     <string name="share">Deel</string>
     <string name="customize">Pas  aan</string>
+    <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Vermijd dubbelzinnige tekens</string>
     <string name="include_spaces">Ruimtes opnemen</string>
 

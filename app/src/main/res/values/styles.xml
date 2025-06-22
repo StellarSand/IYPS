@@ -53,6 +53,7 @@
 
     <!--#########################################################################################-->
 
+    <!--Switch style-->
     <style name="SwitchStyle" parent="Widget.Material3.CompoundButton.MaterialSwitch">
         <item name="thumbIcon">@drawable/ic_switch_thumb</item>
     </style>
