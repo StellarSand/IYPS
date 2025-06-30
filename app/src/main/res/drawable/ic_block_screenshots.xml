@@ -15,12 +15,7 @@
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<vector
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="24dp"
-    android:height="24dp"
-    android:viewportWidth="960"
-    android:viewportHeight="960"
-    android:tint="?attr/colorControlNormal">
-    <path android:fillColor="@android:color/white" android:pathData="M200 280V160q0-33 23.5-56.5T280 80h120v80H280v120h-80zm80 600q-33 0-56.5-23.5T200 800V680h80v120h120v80H280zm400-600V160H560V80h120q33 0 56.5 23.5T760 160v120h-80zM560 880v-80h120V680h80v120q0 33-23.5 56.5T680 880H560z"/>
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="24dp" android:height="24dp" android:viewportWidth="960" android:viewportHeight="960" android:tint="?attr/colorControlNormal">
+    <path android:fillColor="@android:color/white" android:pathData="M560 720h-80q-17 0-28.5 11.5T440 760q0 17 11.5 28.5T480 800h120q17 0 28.5-11.5T640 760V640q0-17-11.5-28.5T600 600q-17 0-28.5 11.5T560 640v80zM280 920q-33 0-56.5-23.5T200 840V120q0-33 23.5-56.5T280 40h400q33 0 56.5 23.5T760 120v124q18 7 29 22t11 34v80q0 19-11 34t-29 22v404q0 33-23.5 56.5T680 920H280zm0-80h400V120H280v720zm0 0V120v720zm120-600h80q17 0 28.5-11.5T520 200q0-17-11.5-28.5T480 160H360q-17 0-28.5 11.5T320 200v120q0 17 11.5 28.5T360 360q17 0 28.5-11.5T400 320v-80z"/>
 </vector>
+

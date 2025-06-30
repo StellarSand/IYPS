@@ -44,6 +44,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
+import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -125,30 +126,39 @@ class GeneratePassphraseFragment : Fragment() {
         generatePassphrase()
         
         // Copy
-        fragmentBinding.phraseCopyBtn.setOnClickListener {
-            val clipData = ClipData.newPlainText("", fragmentBinding.phraseGeneratedTextView.text)
-            clipData.hideSensitiveContent()
-            (requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
-            // Only show snackbar in 12L or lower to avoid duplicate notifications
-            // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
-            if (Build.VERSION.SDK_INT <= 32) {
-                showSnackbar(mainActivity.activityBinding.mainCoordLayout,
-                             requireContext().getString(R.string.copied_to_clipboard),
-                             mainActivity.activityBinding.mainBottomNav)
+        fragmentBinding.phraseCopyBtn.apply {
+            setButtonTooltipText(getString(R.string.copy))
+            setOnClickListener {
+                val clipData = ClipData.newPlainText("", fragmentBinding.phraseGeneratedTextView.text)
+                clipData.hideSensitiveContent()
+                (requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
+                // Only show snackbar in 12L or lower to avoid duplicate notifications
+                // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
+                if (Build.VERSION.SDK_INT <= 32) {
+                    showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                                 requireContext().getString(R.string.copied_to_clipboard),
+                                 mainActivity.activityBinding.mainBottomNav)
+                }
             }
         }
         
         // Regenerate
-        fragmentBinding.phraseRegenerateBtn.setOnClickListener {
-            generatePassphrase()
+        fragmentBinding.phraseRegenerateBtn.apply {
+            setButtonTooltipText(getString(R.string.regenerate))
+            setOnClickListener {
+                generatePassphrase()
+            }
         }
         
         // Share
-        fragmentBinding.phraseShareBtn.setOnClickListener {
-            startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
-                                                   .setType("text/plain")
-                                                   .putExtra(Intent.EXTRA_TEXT, fragmentBinding.phraseGeneratedTextView.text),
-                                               getString(R.string.share)))
+        fragmentBinding.phraseShareBtn.apply {
+            setButtonTooltipText(getString(R.string.share))
+            setOnClickListener {
+                startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
+                                                       .setType("text/plain")
+                                                       .putExtra(Intent.EXTRA_TEXT, fragmentBinding.phraseGeneratedTextView.text),
+                                                   getString(R.string.share)))
+            }
         }
     }
     

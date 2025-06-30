@@ -62,7 +62,7 @@
             android:id="@+id/version"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_2.5"
+            android:layout_marginTop="@dimen/margin_2"
             android:paddingStart="@dimen/margin_8"
             android:paddingEnd="@dimen/margin_8"
             android:text="@string/app_version"
@@ -84,7 +84,7 @@
             android:layout_marginStart="@dimen/margin_20"
             android:text="@string/appearance"
             android:layout_gravity="start"
-            android:textColor="?attr/colorOnSurface"
+            android:textColor="?attr/colorSecondary"
             android:textSize="@dimen/text_17"
             style="@style/MediumBoldText"/>
 
@@ -92,7 +92,7 @@
             android:id="@+id/theme"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_2.5"
+            android:layout_marginTop="@dimen/margin_2"
             android:paddingHorizontal="@dimen/margin_25"
             android:paddingVertical="@dimen/margin_16"
             android:clickable="true"
@@ -131,7 +131,7 @@
             android:layout_marginStart="@dimen/margin_20"
             android:text="@string/privacy"
             android:layout_gravity="start"
-            android:textColor="?attr/colorOnSurface"
+            android:textColor="?attr/colorSecondary"
             android:textSize="@dimen/text_17"
             style="@style/MediumBoldText"/>
 
@@ -139,7 +139,7 @@
             android:id="@+id/blockScreenshotsSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_2.5"
+            android:layout_marginTop="@dimen/margin_2"
             android:paddingHorizontal="@dimen/margin_25"
             android:paddingVertical="@dimen/margin_16"
             android:clickable="true"
@@ -179,7 +179,7 @@
             android:layout_marginTop="@dimen/margin_16"
             android:layout_marginStart="@dimen/margin_20"
             android:text="@string/about"
-            android:textColor="?attr/colorOnSurface"
+            android:textColor="?attr/colorSecondary"
             android:textSize="@dimen/text_17"
             style="@style/MediumBoldText"/>
 
@@ -187,7 +187,7 @@
             android:id="@+id/privacyPolicy"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_2.5"
+            android:layout_marginTop="@dimen/margin_2"
             android:paddingHorizontal="@dimen/margin_25"
             android:paddingVertical="@dimen/margin_16"
             android:clickable="true"

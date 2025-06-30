@@ -27,6 +27,7 @@ import com.iyps.utils.ResultUtils
 import com.nulabinc.zxcvbn.Zxcvbn
 import java.util.Locale
 
+@SuppressLint("SetTextI18n")
 class EvaluatePassword(zxcvbn: Zxcvbn,
                        password: CharSequence,
                        fragmentBinding: FragmentTestPasswordBinding,
@@ -87,19 +88,23 @@ class EvaluatePassword(zxcvbn: Zxcvbn,
         
         // Entropy
         val statsList = resultUtils.getStatisticsCounts(password)
-        @SuppressLint("SetTextI18n")
         fragmentBinding.entropySubtitle.text = "${resultUtils.getEntropyText(statsList)} ${context.getString(R.string.bits)}"
         
         // Match sequence
         fragmentBinding.matchSequenceSubtitle.text = resultUtils.getMatchSequenceText(strength)
         
         // Statistics
-        fragmentBinding.lengthText.text = String.format(Locale.getDefault(), "%d", statsList[0])
-        fragmentBinding.uppercaseText.text = String.format(Locale.getDefault(), "%d", statsList[1])
-        fragmentBinding.lowercaseText.text = String.format(Locale.getDefault(), "%d", statsList[2])
-        fragmentBinding.numbersText.text = String.format(Locale.getDefault(), "%d", statsList[3])
-        fragmentBinding.specialCharsText.text = String.format(Locale.getDefault(), "%d", statsList[4])
-        fragmentBinding.spacesText.text = String.format(Locale.getDefault(), "%d", statsList[5])
+        fragmentBinding.statsSubtitle.text =
+            buildString {
+                append(
+                    "\u2022 ${context.getString(R.string.length)}: ${String.format(Locale.getDefault(), "%d", statsList[0])}",
+                    "\n\u2022 ${context.getString(R.string.uppercase)}: ${String.format(Locale.getDefault(), "%d", statsList[1])}",
+                    "\n\u2022 ${context.getString(R.string.lowercase)}: ${String.format(Locale.getDefault(), "%d", statsList[2])}",
+                    "\n\u2022 ${context.getString(R.string.numbers)}: ${String.format(Locale.getDefault(), "%d", statsList[3])}",
+                    "\n\u2022 ${context.getString(R.string.special_char)}: ${String.format(Locale.getDefault(), "%d", statsList[4])}",
+                    "\n\u2022 ${context.getString(R.string.spaces)}: ${String.format(Locale.getDefault(), "%d", statsList[5])}"
+                )
+            }
     }
     
 }

@@ -110,15 +110,6 @@ class TestPasswordFragment : Fragment() {
             WindowInsetsCompat.CONSUMED
         }
         
-        fragmentBinding.apply {
-            lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
-            uppercaseSubtitle.text = "\u2022 ${getString(R.string.uppercase)}"
-            lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
-            numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
-            specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
-            spacesSubtitle.text = "\u2022 ${getString(R.string.spaces)}"
-        }
-        
         fragmentBinding.passwordText.apply {
             if (get<PreferenceManager>().getBoolean(INCOG_KEYBOARD)) {
                 imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
@@ -204,12 +195,7 @@ class TestPasswordFragment : Fragment() {
             orderMagnSubtitle.text = naString
             entropySubtitle.text = naString
             matchSequenceSubtitle.text = naString
-            lengthText.text = naString
-            uppercaseText.text = naString
-            lowercaseText.text = naString
-            numbersText.text = naString
-            specialCharsText.text = naString
-            spacesText.text = naString
+            statsSubtitle.text = naString
             
             tenBGuessesStrengthMeter.apply {
                 setIndicatorColor(emptyMeterColor)

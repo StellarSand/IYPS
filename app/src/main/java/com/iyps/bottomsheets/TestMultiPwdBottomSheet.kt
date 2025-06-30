@@ -18,6 +18,7 @@
 package com.iyps.bottomsheets
 
 import android.app.Activity
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -124,7 +125,8 @@ class TestMultiPwdBottomSheet : BottomSheetDialogFragment() {
                     
                     withContext(Dispatchers.Main) {
                         dismiss()
-                        startActivity(Intent(requireActivity(), MultiPwdActivity::class.java))
+                        startActivity(Intent(requireActivity(), MultiPwdActivity::class.java),
+                                      ActivityOptions.makeSceneTransitionAnimation(requireActivity()).toBundle())
                     }
                 }
             }

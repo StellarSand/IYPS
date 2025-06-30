@@ -23,7 +23,8 @@
     android:id="@+id/help_coordinator_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorSurface">
+    android:background="?attr/colorSurface"
+    android:transitionGroup="true">
 
     <include
         layout="@layout/activity_host_fragment"

@@ -28,7 +28,6 @@ import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
-import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentTestPasswordBinding
@@ -73,12 +72,6 @@ class DetailsFragment : Fragment() {
         }
         
         fragmentBinding.apply {
-            lengthSubtitle.text = "\u2022 ${getString(R.string.length)}"
-            uppercaseSubtitle.text = "\u2022 ${getString(R.string.uppercase)}"
-            lowercaseSubtitle.text = "\u2022 ${getString(R.string.lowercase)}"
-            numbersSubtitle.text = "\u2022 ${getString(R.string.numbers)}"
-            specialCharsSubtitle.text = "\u2022 ${getString(R.string.special_char)}"
-            spacesSubtitle.text = "\u2022 ${getString(R.string.spaces)}"
             testMultipleFab.isVisible = false
             passwordText.apply {
                 setText(password)

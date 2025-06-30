@@ -18,6 +18,7 @@
 package com.iyps.activities
 
 import android.os.Bundle
+import android.view.Window
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,7 @@ import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.transition.platform.MaterialSharedAxis
 import com.iyps.R
 import com.iyps.databinding.ActivityMultiPwdBinding
 import com.iyps.objects.MultiPwdList
@@ -47,7 +49,13 @@ class MultiPwdActivity : AppCompatActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
-        window.setNavBarContrastEnforced()
+        window.apply {
+            setNavBarContrastEnforced()
+            requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
+            enterTransition = MaterialSharedAxis(MaterialSharedAxis.Y, true)
+            returnTransition = MaterialSharedAxis(MaterialSharedAxis.Y, false)
+        }
+        
         super.onCreate(savedInstanceState)
         onBackPressedDispatcher.addCallback(this, onBackPressedCallback)
         val activityBinding = ActivityMultiPwdBinding.inflate(layoutInflater)
@@ -99,7 +107,7 @@ class MultiPwdActivity : AppCompatActivity() {
     // On back pressed
     private val onBackPressedCallback = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
-            finish()
+            finishAfterTransition()
         }
     }
     

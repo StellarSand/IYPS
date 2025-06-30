@@ -18,8 +18,10 @@
 package com.iyps.activities
 
 import android.os.Bundle
+import android.view.Window
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.transition.platform.MaterialSharedAxis
 import com.iyps.R
 import com.iyps.databinding.ActivityDetailsBinding
 import com.iyps.fragments.details.DetailsFragment
@@ -36,7 +38,12 @@ class DetailsActivity : AppCompatActivity() {
     
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
-        window.setNavBarContrastEnforced()
+        window.apply {
+            setNavBarContrastEnforced()
+            requestFeature(Window.FEATURE_CONTENT_TRANSITIONS)
+            enterTransition = MaterialSharedAxis(MaterialSharedAxis.Z, true)
+            returnTransition = MaterialSharedAxis(MaterialSharedAxis.Z, false)
+        }
         super.onCreate(savedInstanceState)
         val activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)

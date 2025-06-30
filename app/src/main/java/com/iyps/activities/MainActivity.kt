@@ -20,18 +20,18 @@ package com.iyps.activities
 import android.animation.ObjectAnimator
 import android.os.Bundle
 import android.view.ViewGroup
-import android.view.animation.AccelerateInterpolator
-import android.view.animation.DecelerateInterpolator
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.animation.doOnEnd
+import androidx.core.animation.doOnStart
 import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.google.android.material.button.MaterialButton
@@ -59,8 +59,8 @@ class MainActivity : AppCompatActivity() {
     private var selectedItem = 0
     
     private companion object {
-        private val SHOW_ANIM_INTERPOLATOR = DecelerateInterpolator()
-        private val HIDE_ANIM_INTERPOLATOR = AccelerateInterpolator()
+        private const val ANIM_DURATION = 300L
+        private val ANIM_INTERPOLATOR = FastOutSlowInInterpolator()
     }
     
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -159,36 +159,22 @@ class MainActivity : AppCompatActivity() {
     
     // Setup fragments
     private fun displayFragment(clickedNavItem: Int, clickedToggleItem: Int = prefManager.getInt(GEN_TOGGLE)) {
-        val currentFragment = navController.currentDestination!!
-        
         val navActionsMap =
-            mapOf(Pair(R.id.generatePasswordFragment, R.id.nav_test) to R.id.action_generatePasswordFragment_to_testPasswordFragment,
-                  Pair(R.id.generatePassphraseFragment, R.id.nav_test) to R.id.action_generatePassphraseFragment_to_testPasswordFragment,
-                  Pair(R.id.settingsFragment, R.id.nav_test) to R.id.action_settingsFragment_to_testPasswordFragment,
-                  Pair(R.id.testPasswordFragment, R.id.nav_settings) to R.id.action_testPasswordFragment_to_settingsFragment,
-                  Pair(R.id.generatePasswordFragment, R.id.nav_settings) to R.id.action_generatePasswordFragment_to_settingsFragment,
-                  Pair(R.id.generatePassphraseFragment, R.id.nav_settings) to R.id.action_generatePassphraseFragment_to_settingsFragment)
+            mapOf(R.id.nav_test to R.id.action_global_to_testPasswordFragment,
+                  R.id.nav_settings to R.id.action_global_to_settingsFragment)
         
         val toggleActionsMap =
-            mapOf(Pair(R.id.testPasswordFragment, R.id.togglePassword) to R.id.action_testPasswordFragment_to_generatePasswordFragment,
-                  Pair(R.id.settingsFragment, R.id.togglePassword) to R.id.action_settingsFragment_to_generatePasswordFragment,
-                  Pair(R.id.testPasswordFragment, R.id.togglePassphrase) to R.id.action_testPasswordFragment_to_generatePassphraseFragment,
-                  Pair(R.id.settingsFragment, R.id.togglePassphrase) to R.id.action_settingsFragment_to_generatePassphraseFragment,
-                  Pair(R.id.generatePasswordFragment, R.id.togglePassphrase) to R.id.action_generatePasswordFragment_to_generatePassphraseFragment,
-                  Pair(R.id.generatePassphraseFragment, R.id.togglePassword) to R.id.action_generatePassphraseFragment_to_generatePasswordFragment)
+            mapOf(R.id.togglePassword to R.id.action_global_to_generatePasswordFragment,
+                  R.id.togglePassphrase to R.id.action_global_to_generatePassphraseFragment)
         
         val action =
-            if (clickedNavItem == R.id.nav_generate) {
-                toggleActionsMap[Pair(currentFragment.id, clickedToggleItem)] ?: 0
-            }
-            else {
-                navActionsMap[Pair(currentFragment.id, clickedNavItem)] ?: 0
-            }
+            if (clickedNavItem == R.id.nav_generate) toggleActionsMap[clickedToggleItem] ?: 0
+            else navActionsMap[clickedNavItem] ?: 0
         
         // java.lang.IllegalArgumentException:
         // Destination id == 0 can only be used in conjunction with a valid navOptions.popUpTo
         // Hence the second check
-        if (clickedNavItem != currentFragment.id && action != 0) {
+        if (clickedNavItem != navController.currentDestination?.id && action != 0) {
             activityBinding.mainBottomNav.menu.findItem(clickedNavItem).isChecked = true
             navController.navigate(action)
         }
@@ -197,9 +183,9 @@ class MainActivity : AppCompatActivity() {
     private fun showViewsWithAnimation() {
         viewsToAnimate.forEach { view ->
             ObjectAnimator.ofFloat(view, "alpha", 0f, 1f).apply {
-                duration = 500L
-                interpolator = SHOW_ANIM_INTERPOLATOR
-                view.isVisible = true
+                duration = ANIM_DURATION
+                interpolator = ANIM_INTERPOLATOR
+                doOnStart { view.isVisible = true }
                 start()
             }
         }
@@ -209,10 +195,11 @@ class MainActivity : AppCompatActivity() {
         viewsToAnimate.forEach { view ->
             if (view.isVisible) {
                 ObjectAnimator.ofFloat(view, "alpha", 1f, 0f).apply {
-                    duration = 300L
-                    interpolator = HIDE_ANIM_INTERPOLATOR
+                    duration = ANIM_DURATION
+                    interpolator = ANIM_INTERPOLATOR
                     start()
-                }.doOnEnd { view.isVisible = false }
+                    doOnEnd { view.isVisible = false }
+                }
             }
         }
     }
@@ -225,7 +212,7 @@ class MainActivity : AppCompatActivity() {
     // On back pressed
     private val onBackPressedCallback = object : OnBackPressedCallback(true) {
         override fun handleOnBackPressed() {
-            if (navController.currentDestination !!.id != navController.graph.startDestinationId) {
+            if (navController.currentDestination?.id != navController.graph.startDestinationId) {
                 selectedItem = R.id.nav_test
                 displayFragment(selectedItem)
                 hideViewsWithAnimation()

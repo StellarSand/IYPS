@@ -32,10 +32,10 @@
         <action
             android:id="@+id/action_multiPwdFragment_self"
             app:destination="@id/multiPwdFragment"
-            app:enterAnim="@android:anim/fade_in"
-            app:exitAnim="@android:anim/fade_out"
-            app:popEnterAnim="@android:anim/fade_in"
-            app:popExitAnim="@android:anim/fade_out"/>
+            app:enterAnim="@anim/material_fade_through_enter"
+            app:exitAnim="@anim/material_fade_through_exit"
+            app:popEnterAnim="@anim/material_fade_through_enter"
+            app:popExitAnim="@anim/material_fade_through_exit"/>
     </fragment>
 
 </navigation>

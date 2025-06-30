@@ -17,6 +17,7 @@
 
 package com.iyps.fragments.multipwd
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -41,6 +42,7 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     
     private var _binding: FragmentMultiPwdBinding? = null
     private val fragmentBinding get() = _binding!!
+    private lateinit var multiPwdActivity: MultiPwdActivity
     private lateinit var multiplePwdList: List<MultiPwdItem>
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -52,7 +54,7 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     }
     
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val multiPwdActivity = requireActivity() as MultiPwdActivity
+        multiPwdActivity = requireActivity() as MultiPwdActivity
         multiplePwdList =
             if (multiPwdActivity.isAscSort) MultiPwdList.pwdList.sortedBy { it.passwordLine.lowercase() }
             else MultiPwdList.pwdList.sortedByDescending { it.passwordLine.lowercase() }
@@ -79,8 +81,9 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     
     // On click
     override fun onItemClick(position: Int) {
-        startActivity(Intent(requireContext(), DetailsActivity::class.java)
-                          .putExtra("PwdLine", multiplePwdList[position].passwordLine))
+        startActivity(Intent(multiPwdActivity, DetailsActivity::class.java)
+                          .putExtra("PwdLine", multiplePwdList[position].passwordLine),
+                      ActivityOptions.makeSceneTransitionAnimation(multiPwdActivity).toBundle())
     }
     
     override fun onDestroyView() {

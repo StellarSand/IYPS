@@ -18,6 +18,7 @@
 package com.iyps.fragments.main
 
 import android.annotation.SuppressLint
+import android.app.ActivityOptions
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context.CLIPBOARD_SERVICE
@@ -50,6 +51,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
+import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -181,36 +183,49 @@ class GeneratePasswordFragment : Fragment() {
         generatePassword()
         
         // Details
-        fragmentBinding.pwdDetailsBtn.setOnClickListener {
-            startActivity(Intent(requireActivity(), DetailsActivity::class.java)
-                              .putExtra("PwdLine", fragmentBinding.pwdGeneratedTextView.text))
+        fragmentBinding.pwdDetailsBtn.apply {
+            setButtonTooltipText(getString(R.string.details))
+            setOnClickListener {
+                startActivity(Intent(requireActivity(), DetailsActivity::class.java)
+                                  .putExtra("PwdLine", fragmentBinding.pwdGeneratedTextView.text),
+                              ActivityOptions.makeSceneTransitionAnimation(requireActivity()).toBundle())
+            }
         }
         
         // Copy
-        fragmentBinding.pwdCopyBtn.setOnClickListener {
-            val clipData = ClipData.newPlainText("", fragmentBinding.pwdGeneratedTextView.text)
-            clipData.hideSensitiveContent()
-            (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
-            // Only show snackbar in 12L or lower to avoid duplicate notifications
-            // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
-            if (Build.VERSION.SDK_INT <= 32) {
-                showSnackbar(mainActivity.activityBinding.mainCoordLayout,
-                             requireContext().getString(R.string.copied_to_clipboard),
-                             mainActivity.activityBinding.mainBottomNav)
+        fragmentBinding.pwdCopyBtn.apply {
+            setButtonTooltipText(getString(R.string.copy))
+            setOnClickListener {
+                val clipData = ClipData.newPlainText("", fragmentBinding.pwdGeneratedTextView.text)
+                clipData.hideSensitiveContent()
+                (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
+                // Only show snackbar in 12L or lower to avoid duplicate notifications
+                // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
+                if (Build.VERSION.SDK_INT <= 32) {
+                    showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                                 requireContext().getString(R.string.copied_to_clipboard),
+                                 mainActivity.activityBinding.mainBottomNav)
+                }
             }
         }
         
         // Regenerate
-        fragmentBinding.pwdRegenerateBtn.setOnClickListener {
-            generatePassword()
+        fragmentBinding.pwdRegenerateBtn.apply {
+            setButtonTooltipText(getString(R.string.regenerate))
+            setOnClickListener {
+                generatePassword()
+            }
         }
         
         // Share
-        fragmentBinding.pwdShareBtn.setOnClickListener {
-            startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
-                                                   .setType("text/plain")
-                                                   .putExtra(Intent.EXTRA_TEXT, fragmentBinding.pwdGeneratedTextView.text),
-                                               getString(R.string.share)))
+        fragmentBinding.pwdShareBtn.apply {
+            setButtonTooltipText(getString(R.string.share))
+            setOnClickListener {
+                startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
+                                                       .setType("text/plain")
+                                                       .putExtra(Intent.EXTRA_TEXT, fragmentBinding.pwdGeneratedTextView.text),
+                                                   getString(R.string.share)))
+            }
         }
         
     }

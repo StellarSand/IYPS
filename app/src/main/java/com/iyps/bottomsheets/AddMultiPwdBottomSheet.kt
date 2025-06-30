@@ -17,6 +17,7 @@
 
 package com.iyps.bottomsheets
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -78,7 +79,8 @@ class AddMultiPwdBottomSheet : BottomSheetDialogFragment() {
                         .map { MultiPwdItem(it) }
                 MultiPwdList.pwdList.addAll(itemList)
                 dismiss()
-                startActivity(Intent(requireActivity(), MultiPwdActivity::class.java))
+                startActivity(Intent(requireActivity(), MultiPwdActivity::class.java),
+                              ActivityOptions.makeSceneTransitionAnimation(requireActivity()).toBundle())
             }
         }
         

@@ -16,13 +16,13 @@
 #
 
 [versions]
-androidGradle = "8.10.1"
-androidKotlin = "2.1.21" # https://github.com/JetBrains/kotlin/releases/latest (latest version is not auto detected)
+androidGradle = "8.11.0"
+androidKotlin = "2.2.0" # https://github.com/JetBrains/kotlin/releases/latest (latest version is not auto detected)
 appcompat = "1.7.1"
 coreKtx = "1.16.0"
 splashscreen = "1.0.1"
 material3 = "1.14.0-alpha02"
-koin = "4.0.2"
+koin = "4.1.0"
 navigationKtx = "2.9.0"
 zxcvbn4j = "1.8.2" # Don't update to 1.9.0
 # with 1.9.0, time to crack calculations are wrong, sometimes giving 0 months/years
