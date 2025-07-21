@@ -182,8 +182,11 @@ class GeneratePassphraseFragment : Fragment() {
                     append(word)
                     if (i < numberOfWords - 1) {
                         append(
-                            if (fragmentBinding.separatorDropdownMenu.text.toString() == getString(R.string.spaces)) " "
-                            else fragmentBinding.separatorDropdownMenu.text.toString()
+                            // Append \u200B (zero width space) to the separator
+                            // This will break/wrap the line after the separator,
+                            // instead of in the middle of the word
+                            if (fragmentBinding.separatorDropdownMenu.text.toString() == getString(R.string.spaces)) " \u200B"
+                            else "${fragmentBinding.separatorDropdownMenu.text}\u200B"
                         )
                     }
                 }
