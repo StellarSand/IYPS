@@ -62,28 +62,28 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseCopyBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/margin_16"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="@dimen/margin_60"
                 app:icon="@drawable/ic_copy"
+                app:iconGravity="textStart"
                 style="?attr/materialIconButtonFilledTonalStyle"
                 android:contentDescription="@string/copy"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseRegenerateBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/margin_16"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="@dimen/margin_60"
                 app:icon="@drawable/ic_regenerate"
+                app:iconGravity="textStart"
                 style="?attr/materialIconButtonFilledTonalStyle"
                 android:contentDescription="@string/regenerate"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseShareBtn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/margin_16"
+                android:layout_width="@dimen/margin_60"
+                android:layout_height="@dimen/margin_60"
                 app:icon="@drawable/ic_share"
+                app:iconGravity="textStart"
                 style="?attr/materialIconButtonFilledTonalStyle"
                 android:contentDescription="@string/share"/>
 

@@ -29,7 +29,7 @@
     <!--#########################################################################################-->
 
     <!--App theme-->
-    <style name="AppTheme" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="AppTheme" parent="Theme.Material3Expressive.DayNight.NoActionBar">
         <item name="colorPrimary">@color/color_primary</item>
         <item name="colorOnPrimary">@color/color_onPrimary</item>
         <item name="colorPrimaryContainer">@color/color_primaryContainer</item>

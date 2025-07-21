@@ -86,8 +86,8 @@ class MainActivity : AppCompatActivity() {
         viewsToAnimate = arrayOf(activityBinding.generateToggleGroup, activityBinding.generateDockedToolbar)
         
         // Adjust UI components for edge to edge
-        mapOf(activityBinding.generateDockedToolbar to 80f,
-              activityBinding.generateToggleGroup to 95f).forEach { (view, margin) ->
+        mapOf(activityBinding.generateDockedToolbar to 64f,
+              activityBinding.generateToggleGroup to 78f).forEach { (view, margin) ->
             ViewCompat.setOnApplyWindowInsetsListener(view) { v, windowInsets ->
                 v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                     bottomMargin =
@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
         
         selectedItem =
             savedInstanceState?.getInt("selectedItem") ?:
-            if (intent.extras?.getString("shortcut") == "shortcutGenerate") {
+            if (intent?.getStringExtra("shortcut") == "shortcutGenerate") {
                 R.id.nav_generate
             }
             else R.id.nav_test

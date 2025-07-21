@@ -52,8 +52,7 @@ class ClipboardUtils {
         fun ClipData.hideSensitiveContent() {
             if (Build.VERSION.SDK_INT >= 24) {
                 description.extras = PersistableBundle().apply {
-                    if (Build.VERSION.SDK_INT >= 33) putBoolean(ClipDescription.EXTRA_IS_SENSITIVE,
-                                                                true)
+                    if (Build.VERSION.SDK_INT >= 33) putBoolean(ClipDescription.EXTRA_IS_SENSITIVE, true)
                     else putBoolean("android.content.extra.IS_SENSITIVE", true)
                 }
             }

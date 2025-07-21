@@ -91,15 +91,6 @@ class TestPasswordFragment : Fragment() {
             v.updatePadding(left = insets.left, right = insets.right, bottom = insets.bottom)
             WindowInsetsCompat.CONSUMED
         }
-        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.passwordBox) { v, windowInsets ->
-            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
-                                                        or WindowInsetsCompat.Type.displayCutout())
-            v.updatePadding(left = insets.left, right = insets.right)
-            v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
-                topMargin = insets.top + convertDpToPx(requireContext(), 12f)
-            }
-            WindowInsetsCompat.CONSUMED
-        }
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.testMultipleFab) { v, windowInsets ->
             val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
                                                         or WindowInsetsCompat.Type.displayCutout())
