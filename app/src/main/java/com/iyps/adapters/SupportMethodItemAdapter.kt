@@ -68,4 +68,8 @@ class SupportMethodItemAdapter (private val aListViewItems: ArrayList<SupportMet
     override fun getItemCount(): Int {
         return aListViewItems.size
     }
+    
+    override fun getItemViewType(position: Int): Int {
+        return position
+    }
 }

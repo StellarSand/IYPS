@@ -58,11 +58,11 @@ class ResultUtils(val context: Context) {
     private val fiveYrsInMillis = TimeUnit.DAYS.toMillis(1825)
     
     private val emptyMeterColor = context.resources.getColor(android.R.color.transparent, context.theme)
-    private val worstMeterColor = context.resources.getColor(R.color.worstMeterColor, context.theme)
-    private val weakMeterColor = context.resources.getColor(R.color.weakMeterColor, context.theme)
-    private val mediumMeterColor = context.resources.getColor(R.color.mediumMeterColor, context.theme)
-    private val strongMeterColor = context.resources.getColor(R.color.strongMeterColor, context.theme)
-    private val excellentMeterColor = context.resources.getColor(R.color.excellentMeterColor, context.theme)
+    private val worstMeterColor = context.resources.getColor(R.color.color_worstMeter, context.theme)
+    private val weakMeterColor = context.resources.getColor(R.color.color_weakMeter, context.theme)
+    private val mediumMeterColor = context.resources.getColor(R.color.color_mediumMeter, context.theme)
+    private val strongMeterColor = context.resources.getColor(R.color.color_strongMeter, context.theme)
+    private val excellentMeterColor = context.resources.getColor(R.color.color_excellentMeter, context.theme)
     
     private val worstString = context.getString(R.string.worst)
     private val weakString = context.getString(R.string.weak)
