@@ -21,23 +21,30 @@ import android.annotation.SuppressLint
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.res.Resources
 import android.os.Build
 import android.os.Bundle
 import android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
+import android.util.TypedValue
 import android.view.ActionMode
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.content.getSystemService
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.inputmethod.EditorInfoCompat.IME_FLAG_NO_PERSONALIZED_LEARNING
+import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import com.google.android.material.appbar.AppBarLayout
 import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.common.EvaluatePassword
@@ -80,6 +87,7 @@ class TestPasswordFragment : Fragment() {
         mainActivity = requireActivity() as MainActivity
         var job: Job? = null
         val resultUtils = ResultUtils(requireContext())
+        var isInitialLaunch = true
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         naString = getString(R.string.na)
         emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
@@ -101,6 +109,57 @@ class TestPasswordFragment : Fragment() {
             WindowInsetsCompat.CONSUMED
         }
         
+        // Set collapsing toolbar height
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.collapsingToolbar) { view, windowInsets ->
+            val insets =
+                windowInsets.getInsets(
+                    WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
+                )
+            
+            val heightInPx =
+                if (isInitialLaunch) {
+                    val usableHeight =
+                        if (Build.VERSION.SDK_INT >= 30)
+                            requireContext().getSystemService<WindowManager>()!!.currentWindowMetrics.bounds.height()
+                        else
+                            Resources.getSystem().displayMetrics.heightPixels
+                    
+                    (insets.top + usableHeight) / 2 // Center of screen
+                }
+                else {
+                    // ?attr/collapsingToolbarLayoutLargeSize
+                    val typedValue = TypedValue()
+                    requireContext().theme.resolveAttribute(
+                        com.google.android.material.R.attr.collapsingToolbarLayoutLargeSize,
+                        typedValue,
+                        true
+                    )
+                    insets.top + TypedValue.complexToDimensionPixelSize(typedValue.data, resources.displayMetrics)
+                }
+            
+            view.apply {
+                val params = layoutParams
+                params.height = heightInPx
+                layoutParams = params
+                requestLayout()
+            }
+            
+            WindowInsetsCompat.CONSUMED
+        }
+        
+        // Prevent dragging of appbar when scrollview is not visible
+        val appBarLayoutBehavior =
+            AppBarLayout.Behavior().also {
+                (fragmentBinding.appBar.layoutParams as CoordinatorLayout.LayoutParams).behavior = it
+            }
+        appBarLayoutBehavior.setDragCallback(object : AppBarLayout.Behavior.DragCallback() {
+            override fun canDrag(appBarLayout: AppBarLayout): Boolean {
+                return !isInitialLaunch
+            }
+        })
+        
+        fragmentBinding.scrollView.isVisible = false
+        
         fragmentBinding.passwordText.apply {
             if (get<PreferenceManager>().getBoolean(INCOG_KEYBOARD)) {
                 imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
@@ -119,6 +178,11 @@ class TestPasswordFragment : Fragment() {
                                              fragmentBinding = fragmentBinding,
                                              context = requireContext(),
                                              resultUtils = resultUtils)
+                            if (isInitialLaunch) {
+                                isInitialLaunch = false
+                                fragmentBinding.appBar.setExpanded(false, true)
+                                fragmentBinding.scrollView.isVisible = true
+                            }
                         }
                         // If edit text is empty or cleared, reset everything
                         else {
