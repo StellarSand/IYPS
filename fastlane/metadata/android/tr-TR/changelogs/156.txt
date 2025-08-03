@@ -1,0 +1,5 @@
+- Android 16 desteği.
+- Kullanıcı arayüzü (UI) geliştirmeleri.
+- Entropi hesaplamaları düzeltildi.
+- Şifre oluşturma için genişletilmiş karakter seti eklendi (à, é, ü vb.)
+- Yeni çeviriler ve mevcut çeviriler güncellendi (topluluk tarafından katkıda bulunuldu).

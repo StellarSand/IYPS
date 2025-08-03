@@ -1,6 +1,0 @@
-- Suporte para Android 15.
-- Atualização das 200 melhores palavras-passe.
-- Corrigido "100 tentativas/hora" incorretamente mostrado como "100 tentativas/segundo" na tradução chinesa.
-- Tradução alemã actualizada (por brassel-it).
-- Adicionada a tradução para persa (por alr86).
-- Adicionada a tradução para português do Brasil (por luxdev01).

@@ -1,0 +1,5 @@
+- Compatibilidad con Android 16.
+- Mejoras en la interfaz de usuario.
+- Corrección de cálculos de entropía.
+- Se añadió un conjunto de caracteres extendido para la generación de contraseñas (à, é, ü, etc.).
+- Nuevas traducciones y actualización de las existentes (contribuidas por la comunidad).

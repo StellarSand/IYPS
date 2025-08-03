@@ -1,6 +1,0 @@
-- Android 15 için destek.
-- En iyi 200 şifre güncellendi.
-- Çince çeviride "100 tahmin/saat" ifadesinin yanlışlıkla "100 tahmin/saniye" olarak gösterilmesi düzeltildi.
-- Almanca çeviri güncellendi (brassel-it tarafından).
-- Farsça çeviri eklendi (alr86 tarafından).
-- Brezilya Portekizcesi çevirisi eklendi (luxdev01 tarafından).

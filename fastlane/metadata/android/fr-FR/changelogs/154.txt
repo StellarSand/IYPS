@@ -1,6 +1,0 @@
-- Prise en charge d'Android 15.
-- Mise à jour du top 200 des mots de passe.
-- Correction de "100 devinettes/heure" incorrectement affiché comme "100 devinettes/seconde" dans la traduction chinoise.
-- Mise à jour de la traduction allemande (par brassel-it).
-- Ajout de la traduction en persan (par alr86).
-- Ajout de la traduction en portugais brésilien (par luxdev01).

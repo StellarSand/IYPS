@@ -1,6 +1,0 @@
-- Stöd för Android 15.
-- Uppdaterade topp 200 lösenord.
-- Fixat "100 gissningar/timme" som felaktigt visades som "100 gissningar/sekund" i kinesisk översättning.
-- Uppdaterad tysk översättning (av brassel-it).
-- Lagt till persisk översättning (av alr86).
-- Lagt till brasiliansk portugisisk översättning (av luxdev01).

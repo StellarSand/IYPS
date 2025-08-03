@@ -1,6 +1,0 @@
-- Unterstützung für Android 15.
-- Top 200 Passwörter aktualisiert.
-- Behoben: "100 Versuche/Stunde" wurde in der chinesischen Übersetzung fälschlicherweise als "100 Versuche/Sekunde" angezeigt.
-- Deutsche Übersetzung aktualisiert (von brassel-it).
-- Persische Übersetzung hinzugefügt (von alr86).
-- Brasilianisch-portugiesische Übersetzung hinzugefügt (von luxdev01).

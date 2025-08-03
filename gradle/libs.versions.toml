@@ -23,7 +23,7 @@ coreKtx = "1.16.0"
 splashscreen = "1.0.1"
 material3 = "1.14.0-alpha03"
 koin = "4.1.0"
-navigationKtx = "2.9.2"
+navigationKtx = "2.9.3"
 zxcvbn4j = "1.8.2" # Don't update to 1.9.0
 # with 1.9.0, time to crack calculations are wrong, sometimes giving 0 months/years
 # ex: try with the passwords "hsdsjlll", "jdfhasfqwui1"

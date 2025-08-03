@@ -1,0 +1,5 @@
+- Supporto per Android 16.
+- Miglioramenti dell'interfaccia utente.
+- Corretti i calcoli dell'entropia.
+- Aggiunto set di caratteri esteso per la generazione di password (à, é, ü, ecc.)
+- Nuove traduzioni e aggiornamento di quelle esistenti (contributo della community).

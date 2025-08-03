@@ -1,0 +1,5 @@
+- Stöd för Android 16.
+- Förbättringar av användargränssnittet.
+- Åtgärdade entropiberäkningar.
+- Lade till utökad teckenuppsättning för lösenordsgenerering (à, é, ü, etc.).
+- Nya översättningar och uppdaterade befintliga (bidragna av communityn).

@@ -1,6 +1,15 @@
 # CHANGELOG
 
 
+
+## v1.5.6
+- Support for Android 16.
+- User interface (UI) enhancements.
+- Fixed entropy calculations.
+- Added extended character set for password generation (à, é, ü, etc.)
+- New translations & updated existing ones (contributed by the community).
+
+
 ## v1.5.4
 - Fixed crash on launch.
 - Removed duplicate passwords from top 200 list.

@@ -1,0 +1,5 @@
+- Suporte para Android 16.
+- Melhorias na interface do utilizador.
+- Correção de cálculos de entropia.
+- Adição de conjunto de caracteres alargado para geração de passwords (à, é, ü, etc.)
+- Novas traduções e atualização das existentes (contributo da comunidade).

@@ -1,0 +1,5 @@
+- Ondersteuning voor Android 16.
+- Verbeteringen aan de gebruikersinterface.
+- Verbeterde entropieberekeningen.
+- Uitgebreide tekenset toegevoegd voor wachtwoordgeneratie (à, é, ü, enz.)
+- Nieuwe vertalingen en bijgewerkte bestaande vertalingen (bijdrage van de community).

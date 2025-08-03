@@ -1,0 +1,5 @@
+- Prise en charge d'Android 16.
+- Améliorations de l'interface utilisateur.
+- Correction des calculs d'entropie.
+- Ajout d'un jeu de caractères étendu pour la génération de mots de passe (à, é, ü, etc.).
+- Nouvelles traductions et mises à jour des traductions existantes (contribution de la communauté).

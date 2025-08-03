@@ -1,5 +1,0 @@
-- Snelle instellingen toggle & snelkoppeling toegevoegd om wachtwoord/wachtzin te genereren.
-- Extra woordenboeken toegevoegd.
-- Portugese vertaling toegevoegd.
-- Italiaanse vertaling verbeterd (door @Martinligabue).
-- Chinese vertaling verbeterd (door @LatticeLadder).
