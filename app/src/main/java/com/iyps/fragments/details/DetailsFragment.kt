@@ -28,7 +28,7 @@ import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import com.iyps.activities.DetailsActivity
-import com.iyps.common.EvaluatePassword
+import com.iyps.common.evaluatePassword
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.utils.ResultUtils
 import com.nulabinc.zxcvbn.Zxcvbn
@@ -50,7 +50,7 @@ class DetailsFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
-       val password = (requireActivity() as DetailsActivity).passwordLine
+        val password = (requireActivity() as DetailsActivity).passwordLine
         
         // Adjust UI components for edge to edge
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.scrollView) { v, windowInsets ->
@@ -69,11 +69,12 @@ class DetailsFragment : Fragment() {
             }
         }
         
-        EvaluatePassword(zxcvbn = get<Zxcvbn>(),
-                         password = password,
-                         fragmentBinding = fragmentBinding,
-                         context = requireContext(),
-                         resultUtils = ResultUtils(requireContext()))
+        fragmentBinding.evaluatePassword(
+            zxcvbn = get<Zxcvbn>(),
+            password = password,
+            context = requireContext(),
+            resultUtils = ResultUtils(requireContext())
+        )
     }
     
     override fun onDestroyView() {

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <!--
   ~     Copyright (C) 2022-present StellarSand
   ~
@@ -14,5 +15,156 @@
   ~
   ~     You should have received a copy of the GNU General Public License
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-  --><resources>
-    </resources>
+  -->
+
+<resources>
+
+    <!--
+    Ensure proper encoding of characters when translating to other languages.
+    example: ä as \u00E4, é as \u00E9 etc.
+    -->
+
+    <!--Bottom nav view-->
+    <string name="test">Test</string>
+    <string name="generate">Generate</string>
+    <string name="password">Password</string>
+    <string name="passphrase">Passphrase</string>
+    <string name="settings">Settings</string>
+
+    <!--#########################################################################################-->
+
+    <!--Test fragment-->
+    <string name="test_your_password">Test your password</string>
+    <string name="ten_b_guesses_per_sec">10B guesses/second</string>
+    <string name="ten_k_guesses_per_sec">10k guesses/second</string>
+    <string name="ten_guesses_per_sec">10 guesses/second</string>
+    <string name="hundred_guesses_per_hour">100 guesses/hour</string>
+    <string name="strength">Strength</string>
+    <string name="worst">Worst</string>
+    <string name="weak">Weak</string>
+    <string name="medium">Medium</string>
+    <string name="strong">Strong</string>
+    <string name="excellent">Excellent</string>
+    <string name="est_time_to_crack">Estimated time to crack</string>
+    <string name="less_than_sec">Less than a second</string>
+    <string name="second">second</string>
+    <string name="seconds">seconds</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+    <string name="day">day</string>
+    <string name="days">days</string>
+    <string name="month">month</string>
+    <string name="months">months</string>
+    <string name="year">year</string>
+    <string name="years">years</string>
+    <string name="centuries">Centuries</string>
+    <string name="warning">Warning</string>
+    <string name="suggestions">Suggestions</string>
+    <string name="est_guesses_to_crack">Estimated guesses to crack</string>
+    <string name="order_of_magn">Order of magnitude of guesses</string>
+    <string name="entropy">Entropy</string>
+    <string name="bits">bits</string>
+    <string name="match_sequence">Match sequence</string>
+    <string name="pattern">\u2022 Pattern</string>
+    <string name="dict_name">\u2022 Dictionary name</string>
+    <string name="rank">\u2022 Rank</string>
+    <string name="reversed">\u2022 Reversed</string>
+    <string name="substitutions">\u2022 Substitutions</string>
+    <string name="base_token">\u2022 Base token</string>
+    <string name="repeat_times">\u2022 Repeated %1$s times</string>
+    <string name="sequence_name">\u2022 Sequence name</string>
+    <string name="sequence_size">\u2022 Sequence size</string>
+    <string name="ascending">\u2022 Ascending</string>
+    <string name="separator">\u2022 Separator</string>
+    <string name="graph">\u2022 Graph</string>
+    <string name="turns">\u2022 Turns</string>
+    <string name="shifted_times">\u2022 Shifted %1$s times</string>
+    <string name="regex_name">\u2022 Regex name</string>
+    <string name="statistics">Statistics</string>
+    <string name="length">Length</string>
+    <string name="uppercase">Uppercase</string>
+    <string name="lowercase">Lowercase</string>
+    <string name="numbers">Numbers</string>
+    <string name="special_char">Special characters</string>
+    <string name="spaces">Spaces</string>
+
+    <!--#########################################################################################-->
+
+    <!--Multi password activity-->
+    <string name="back">Back</string>
+    <string name="view">View</string>
+    <string name="sort">Sort</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate password fragment-->
+    <string name="details">Details</string>
+    <string name="copy">Copy</string>
+    <string name="regenerate">Regenerate</string>
+    <string name="share">Share</string>
+    <string name="customize">Customize</string>
+    <string name="ext_chars">Extended characters</string>
+    <string name="avoid_amb_chars">Avoid ambiguous characters</string>
+    <string name="include_spaces">Include spaces</string>
+
+    <!--Generate passphrase fragment-->
+    <string name="words">Words</string>
+    <string name="capitalize">Capitalize</string>
+
+    <!--#########################################################################################-->
+
+    <!--Settings fragment-->
+    <string name="app_version">Version</string>
+    <string name="appearance">Appearance</string>
+    <string name="theme">Theme</string>
+    <string name="material_you">Material You\n(requires app restart)</string>
+    <string name="privacy">Privacy</string>
+    <string name="block_screenshots">Block screenshots in app</string>
+    <string name="incognito_keyboard">Incognito keyboard</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="report_issue">Report an issue</string>
+    <string name="support">Support</string>
+    <string name="view_on_github">View on GitHub</string>
+    <string name="third_party_licenses">Third party licenses</string>
+
+    <!--#########################################################################################-->
+
+    <!--Custom warnings-->
+    <string name="worst_pass_warning">Password is too simple to guess.</string>
+    <string name="weak_pass_warning">Password can be easily cracked.</string>
+    <string name="medium_pass_warning">Password is not strong enough.</string>
+
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+
+    <!--Test multiple passwords-->
+    <string name="test_multi_pwds">Test multiple passwords</string>
+    <string name="add">Add</string>
+    <string name="select_file">Select file</string>
+
+    <!--Add multiple passwords-->
+    <string name="add_multi_pwds">Add multiple passwords</string>
+
+    <!--Theme-->
+    <string name="follow_system">Follow system</string>
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="no_browsers">No browsers installed on this device</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
+    <string name="app_in_use">IYPS in use</string>
+
+</resources>

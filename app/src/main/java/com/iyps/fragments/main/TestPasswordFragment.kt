@@ -21,7 +21,6 @@ import android.annotation.SuppressLint
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
-import android.content.res.Resources
 import android.os.Build
 import android.os.Bundle
 import android.text.InputType.TYPE_TEXT_VARIATION_PASSWORD
@@ -32,9 +31,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.view.WindowManager
 import androidx.coordinatorlayout.widget.CoordinatorLayout
-import androidx.core.content.getSystemService
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.inputmethod.EditorInfoCompat.IME_FLAG_NO_PERSONALIZED_LEARNING
@@ -47,9 +44,9 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.AppBarLayout
 import com.iyps.R
 import com.iyps.activities.MainActivity
-import com.iyps.common.EvaluatePassword
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.bottomsheets.TestMultiPwdBottomSheet
+import com.iyps.common.evaluatePassword
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
@@ -88,6 +85,15 @@ class TestPasswordFragment : Fragment() {
         var job: Job? = null
         val resultUtils = ResultUtils(requireContext())
         var isInitialLaunch = true
+        val displayMetrics = resources.displayMetrics
+        val typedValue = TypedValue()
+        requireContext().theme.resolveAttribute(
+            com.google.android.material.R.attr.collapsingToolbarLayoutLargeSize,
+            typedValue,
+            true
+        )
+        val collapsingToolbarLargeHeightInPx = TypedValue.complexToDimensionPixelSize(typedValue.data, displayMetrics)
+        var collapsingToolbarTopInsets = -1
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         naString = getString(R.string.na)
         emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
@@ -109,43 +115,20 @@ class TestPasswordFragment : Fragment() {
             WindowInsetsCompat.CONSUMED
         }
         
-        // Set collapsing toolbar height
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.collapsingToolbar) { view, windowInsets ->
-            val insets =
-                windowInsets.getInsets(
-                    WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
-                )
-            
-            val heightInPx =
-                if (isInitialLaunch) {
-                    val usableHeight =
-                        if (Build.VERSION.SDK_INT >= 30)
-                            requireContext().getSystemService<WindowManager>()!!.currentWindowMetrics.bounds.height()
-                        else
-                            Resources.getSystem().displayMetrics.heightPixels
-                    
-                    (insets.top + usableHeight) / 2 // Center of screen
-                }
-                else {
-                    // ?attr/collapsingToolbarLayoutLargeSize
-                    val typedValue = TypedValue()
-                    requireContext().theme.resolveAttribute(
-                        com.google.android.material.R.attr.collapsingToolbarLayoutLargeSize,
-                        typedValue,
-                        true
+            if (collapsingToolbarTopInsets == -1) {
+                val insets =
+                    windowInsets.getInsets(
+                        WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
                     )
-                    insets.top + TypedValue.complexToDimensionPixelSize(typedValue.data, resources.displayMetrics)
-                }
-            
-            view.apply {
-                val params = layoutParams
-                params.height = heightInPx
-                layoutParams = params
-                requestLayout()
+                collapsingToolbarTopInsets = insets.top
             }
-            
             WindowInsetsCompat.CONSUMED
         }
+        
+        // Set collapsing toolbar to center of screen for first time
+        // Don't move this within setOnApplyWindowInsetsListener() above
+        setCollapsingToolbarHeight((collapsingToolbarTopInsets + displayMetrics.heightPixels) / 2)
         
         // Prevent dragging of appbar when scrollview is not visible
         val appBarLayoutBehavior =
@@ -173,15 +156,17 @@ class TestPasswordFragment : Fragment() {
                     lifecycleScope.launch {
                         delay(300)
                         if (charSequence!!.isNotEmpty()) {
-                            EvaluatePassword(zxcvbn = get<Zxcvbn>(),
-                                             password = charSequence,
-                                             fragmentBinding = fragmentBinding,
-                                             context = requireContext(),
-                                             resultUtils = resultUtils)
+                            fragmentBinding.evaluatePassword(
+                                zxcvbn = get<Zxcvbn>(),
+                                password = charSequence,
+                                context = requireContext(),
+                                resultUtils = resultUtils
+                            )
                             if (isInitialLaunch) {
                                 isInitialLaunch = false
                                 fragmentBinding.appBar.setExpanded(false, true)
                                 fragmentBinding.scrollView.isVisible = true
+                                setCollapsingToolbarHeight(collapsingToolbarTopInsets + collapsingToolbarLargeHeightInPx)
                             }
                         }
                         // If edit text is empty or cleared, reset everything
@@ -229,6 +214,15 @@ class TestPasswordFragment : Fragment() {
         // Fab
         fragmentBinding.testMultipleFab.setOnClickListener {
             TestMultiPwdBottomSheet().show(parentFragmentManager, "TestMultiplePwdBottomSheet")
+        }
+    }
+    
+    private fun setCollapsingToolbarHeight(height: Int) {
+        fragmentBinding.collapsingToolbar.apply {
+            val params = layoutParams
+            params.height = height
+            layoutParams = params
+            requestLayout()
         }
     }
     

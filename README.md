@@ -45,19 +45,6 @@ In our digital age, where data breaches and hacks have skyrocketed, robust passw
 - Supports both light and dark theme
 - No ads
 - No collection of personal data
-- Supported languages: 
-  - English
-  - Chinese
-  - Dutch
-  - French
-  - German
-  - Italian
-  - Japanese
-  - Persian
-  - Portuguese & Brazilian Portuguese
-  - Spanish
-  - Swedish
-  - Turkish
 
 
 
@@ -174,7 +161,7 @@ New pull requests can be submitted [here](https://github.com/StellarSand/IYPS/pu
 - [EFF](https://www.eff.org) for publishing their wordlist to generate random passphrases.
 - [Weblate](https://hosted.weblate.org/) for providing free hosting to support translations.
 - [parveshnarwal](https://github.com/parveshnarwal) for publishing the app on Google Play & previously co-leading the development.
-- [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) for making this app better.
+- [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) & translators for making this app better.
 
 
 

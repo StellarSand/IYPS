@@ -106,9 +106,23 @@ class GeneratePassphraseFragment : Fragment() {
         fragmentBinding.separatorText.text = getString(R.string.separator).removePrefix("\u2022 ")
         fragmentBinding.separatorDropdownMenu.apply {
             setText(prefManager.getString(PHRASE_SEPARATOR))
-            setAdapter(ArrayAdapter(requireContext(),
-                                    R.layout.item_dropdown_menu,
-                                    arrayOf("-", ".", ",", getString(R.string.spaces))))
+            setAdapter(
+                ArrayAdapter(
+                    requireContext(),
+                    R.layout.item_dropdown_menu,
+                    arrayOf(
+                        "-",
+                        ".",
+                        ",",
+                        "|",
+                        "_",
+                        "+",
+                        ";",
+                        ":",
+                        getString(R.string.spaces)
+                    )
+                )
+            )
             
             setOnItemClickListener { _, _, _, _ ->
                 generatePassphrase()
