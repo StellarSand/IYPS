@@ -4,7 +4,7 @@
 
 ## v1.5.6
 - Support for Android 16.
-- User interface (UI) enhancements.
+- UI enhancements.
 - Fixed entropy calculations.
 - Added extended character set for password generation (à, é, ü, etc.)
 - New translations & updated existing ones (contributed by the community).
