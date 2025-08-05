@@ -15,4 +15,20 @@
   ~     You should have received a copy of the GNU General Public License
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   --><resources>
-    </resources>
+    <string name="test">Testi</string>
+    <string name="generate">Loo</string>
+    <string name="password">Salasõna</string>
+    <string name="passphrase">Salafraas</string>
+    <string name="settings">Seadistused</string>
+    <string name="test_your_password">Testi oma salasõna</string>
+    <string name="ten_b_guesses_per_sec">10 mld oletamist/sekundis</string>
+    <string name="ten_k_guesses_per_sec">10 tuh oletamist sekundis</string>
+    <string name="ten_guesses_per_sec">10 oletamist sekundis</string>
+    <string name="hundred_guesses_per_hour">100 oletamist tunnis</string>
+    <string name="strength">Tugevus</string>
+    <string name="worst">Kõige kehvem</string>
+    <string name="weak">Nõrk</string>
+    <string name="medium">Keskmine</string>
+    <string name="strong">Tugev</string>
+    <string name="excellent">Suurepärane</string>
+</resources>
