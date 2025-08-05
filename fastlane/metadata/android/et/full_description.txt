@@ -1,0 +1,10 @@
+Rakendus, mis hindab ja näitab salasõna või salafraasi tugevust, hindab võimalikku lahtimuukimise aega, näitab paremate salasõnade tegemiseks vajalikke hoiatusi ja soovitusi.
+
+Funktsionaalsused:
+
+- Täies mahus avatud lähtekoodiga
+- „Material design 3“ ja „Material You“ kujunduskeeled
+- Ei vaja võrguühendust
+- Hele ja tume kujundus
+- Pole reklaame
+- Ei kogu vähemalgi määral isiklikke andmeid
