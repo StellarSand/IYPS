@@ -1,0 +1,10 @@
+Aplikace, která vyhodnotí robustnost vašeho hesla, odhaduje čas prolomení a poskytne užitečné upozornění a návrhy pro silnější hesla.
+
+Funkce:
+
+- Celý zdrojový kód otevřen
+- Podpora Material design 3 a Material You
+- Komplétně offline
+- Podporuje světlé a tmavé téma
+- Žádné reklamy
+- Žádné sběrání osobních dat
