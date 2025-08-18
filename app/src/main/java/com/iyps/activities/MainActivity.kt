@@ -55,6 +55,8 @@ class MainActivity : AppCompatActivity() {
     private val prefManager by inject<PreferenceManager>()
     private lateinit var navHostFragment: NavHostFragment
     private lateinit var navController: NavController
+    private lateinit var navActionsMap: Map<Int, Int>
+    private lateinit var toggleActionsMap: Map<Int, Int>
     private lateinit var viewsToAnimate: Array<ViewGroup>
     private var selectedItem = 0
     
@@ -79,9 +81,22 @@ class MainActivity : AppCompatActivity() {
         activityBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
         
+        AppState.isAppOpen = true
         navHostFragment = supportFragmentManager.findFragmentById(R.id.main_nav_host) as NavHostFragment
         navController = navHostFragment.navController
-        AppState.isAppOpen = true
+        
+        navActionsMap =
+            mapOf(
+                R.id.nav_test to R.id.action_global_to_testPasswordFragment,
+                R.id.nav_settings to R.id.action_global_to_settingsFragment
+            )
+        
+        toggleActionsMap =
+            mapOf(
+                R.id.togglePassword to R.id.action_global_to_generatePasswordFragment,
+                R.id.togglePassphrase to R.id.action_global_to_generatePassphraseFragment
+            )
+        
         val checkIcon = ContextCompat.getDrawable(this, R.drawable.ic_done)
         viewsToAnimate = arrayOf(activityBinding.generateToggleGroup, activityBinding.generateDockedToolbar)
         
@@ -159,14 +174,6 @@ class MainActivity : AppCompatActivity() {
     
     // Setup fragments
     private fun displayFragment(clickedNavItem: Int, clickedToggleItem: Int = prefManager.getInt(GEN_TOGGLE)) {
-        val navActionsMap =
-            mapOf(R.id.nav_test to R.id.action_global_to_testPasswordFragment,
-                  R.id.nav_settings to R.id.action_global_to_settingsFragment)
-        
-        val toggleActionsMap =
-            mapOf(R.id.togglePassword to R.id.action_global_to_generatePasswordFragment,
-                  R.id.togglePassphrase to R.id.action_global_to_generatePassphraseFragment)
-        
         val action =
             if (clickedNavItem == R.id.nav_generate) toggleActionsMap[clickedToggleItem] ?: 0
             else navActionsMap[clickedNavItem] ?: 0
@@ -223,8 +230,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
     
-    override fun onDestroy() {
-        super.onDestroy()
-        AppState.isAppOpen = false
-    }
 }

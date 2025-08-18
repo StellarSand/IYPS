@@ -27,6 +27,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
+import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.common.evaluatePassword
 import com.iyps.databinding.FragmentTestPasswordBinding
@@ -62,10 +63,12 @@ class DetailsFragment : Fragment() {
         
         fragmentBinding.apply {
             testMultipleFab.isVisible = false
+            passwordBox.hint = getString(R.string.password)
             passwordText.apply {
                 setText(password)
                 isFocusable = false
                 isCursorVisible = false
+                isSingleLine = true
             }
         }
         

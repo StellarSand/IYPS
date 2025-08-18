@@ -27,7 +27,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
@@ -35,6 +34,7 @@ import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.slider.Slider
+import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.databinding.FragmentGeneratePassphraseBinding
@@ -104,26 +104,21 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Separator dropdown
         fragmentBinding.separatorText.text = getString(R.string.separator).removePrefix("\u2022 ")
-        fragmentBinding.separatorDropdownMenu.apply {
+        (fragmentBinding.separatorDropdownMenu as MaterialAutoCompleteTextView).apply {
             setText(prefManager.getString(PHRASE_SEPARATOR))
-            setAdapter(
-                ArrayAdapter(
-                    requireContext(),
-                    R.layout.item_dropdown_menu,
-                    arrayOf(
-                        "-",
-                        ".",
-                        ",",
-                        "|",
-                        "_",
-                        "+",
-                        ";",
-                        ":",
-                        getString(R.string.spaces)
-                    )
+            setSimpleItems(
+                arrayOf(
+                    "-",
+                    ".",
+                    ",",
+                    "|",
+                    "_",
+                    "+",
+                    ";",
+                    ":",
+                    getString(R.string.spaces)
                 )
             )
-            
             setOnItemClickListener { _, _, _, _ ->
                 generatePassphrase()
             }
