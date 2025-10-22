@@ -36,12 +36,14 @@ class LocaleUtils {
             
             // If locale is in zxcvbn4j, use default resource bundle
             // else use custom messages.properties from res/raw
-            return if (locale !in setOf("fa", "pt-rBR", "sv", "tr", "zh")) {
+            return if (locale !in setOf("cs", "et", "fa", "pt-rBR", "sv", "tr", "zh")) {
                 ResourceBundle.getBundle("com/nulabinc/zxcvbn/messages")
             }
             else {
                 val properties =
                     when(locale) {
+                        "cs" -> loadTranslations(context, R.raw.messages_cs)
+                        "et" -> loadTranslations(context, R.raw.messages_et)
                         "fa" -> loadTranslations(context, R.raw.messages_fa)
                         "pt-rBR" -> loadTranslations(context, R.raw.messages_pt_rbr)
                         "sv" -> loadTranslations(context, R.raw.messages_sv)
