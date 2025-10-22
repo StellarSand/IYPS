@@ -16,14 +16,14 @@
 #
 
 [versions]
-androidGradle = "8.12.0"
-androidKotlin = "2.2.0" # https://github.com/JetBrains/kotlin/releases/latest (latest version is not auto detected)
+androidGradle = "8.13.0"
+androidKotlin = "2.2.20" # https://github.com/JetBrains/kotlin/releases/latest (latest version is not auto detected)
 appcompat = "1.7.1"
-coreKtx = "1.16.0"
+coreKtx = "1.17.0"
 splashscreen = "1.0.1"
-material3 = "1.14.0-alpha03"
-koin = "4.1.0"
-navigationKtx = "2.9.3"
+material3 = "1.14.0-alpha06"
+koin = "4.1.1"
+navigationKtx = "2.9.5"
 zxcvbn4j = "1.8.2" # Don't update to 1.9.0
 # with 1.9.0, time to crack calculations are wrong, sometimes giving 0 months/years
 # ex: try with the passwords "hsdsjlll", "jdfhasfqwui1"
