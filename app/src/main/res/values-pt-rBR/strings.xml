@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
   ~     Copyright (C) 2022-present StellarSand
   ~
@@ -15,10 +14,7 @@
   ~
   ~     You should have received a copy of the GNU General Public License
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-  -->
-
-<resources>
-
+  --><resources>
     <!--
     Ensure proper encoding of characters
         á = \u00E1
@@ -38,7 +34,6 @@
     <string name="password">Senha</string>
     <string name="passphrase">Frase-senha</string>
     <string name="settings">Configura\u00E7\u00F5es</string>
-
     <!--#########################################################################################-->
 
     <!--Test fragment-->
@@ -97,14 +92,12 @@
     <string name="numbers">N\u00FAmeros</string>
     <string name="special_char">Caracteres especiais</string>
     <string name="spaces">Espa\u00E7os</string>
-
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
-    <string name="back">Back</string>
+    <string name="back">Voltar</string>
     <string name="view">Visualiza\u00E7\u00E3o</string>
     <string name="sort">Ordena\u00E7\u00E3o</string>
-
     <!--#########################################################################################-->
 
     <!--Generate password fragment-->
@@ -113,14 +106,12 @@
     <string name="regenerate">Gerar novamente</string>
     <string name="share">Compartilhar</string>
     <string name="customize">Personalizar</string>
-    <string name="ext_chars">Extended characters</string>
+    <string name="ext_chars">Caracteres extendidos</string>
     <string name="avoid_amb_chars">Evitar caracteres amb\u00EDguos</string>
     <string name="include_spaces">Incluir espa\u00E7os</string>
-
     <!--Generate passphrase fragment-->
     <string name="words">Palavras</string>
     <string name="capitalize">Iniciais mai\u00FAsculas</string>
-
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
@@ -137,42 +128,34 @@
     <string name="support">Apoie-nos</string>
     <string name="view_on_github">Ver no GitHub</string>
     <string name="third_party_licenses">Licen\u00E7as de terceiros</string>
-
     <!--#########################################################################################-->
 
     <!--Custom warnings-->
     <string name="worst_pass_warning">A senha \u00E9 muito f\u00E1cil de adivinhar.</string>
     <string name="weak_pass_warning">A senha pode ser facilmente quebrada.</string>
     <string name="medium_pass_warning">A senha n\u00E3o \u00E9 forte o suficiente.</string>
-
     <!--#########################################################################################-->
 
     <!--Bottom sheet-->
     <string name="cancel">Cancelar</string>
     <string name="done">Pronto</string>
-
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testar v\u00E1rias senhas</string>
     <string name="add">Adicionar</string>
     <string name="select_file">Selecionar arquivo</string>
-
     <!--Add multiple passwords-->
     <string name="add_multi_pwds">Adicionar v\u00E1rias senhas</string>
-
     <!--Theme-->
     <string name="follow_system">Padr\u00E3o do sistema</string>
     <string name="light">Claro</string>
     <string name="dark">Escuro</string>
-
     <!--#########################################################################################-->
 
     <!--Snackbars-->
     <string name="no_browsers">Nenhum navegador instalado neste dispositivo</string>
     <string name="copied_to_clipboard">Copiado para \u00E1rea de transfer\u00EAncia</string>
-
     <!--#########################################################################################-->
 
     <!--Quick settings tile-->
     <string name="app_in_use">IYPS em uso</string>
-
 </resources>
