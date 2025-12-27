@@ -114,6 +114,6 @@
     <string name="light">Světlé</string>
     <string name="dark">Tmavé</string>
     <string name="no_browsers">Žádné prohlížeče nainstalované na tomto zařízení</string>
-    <string name="copied_to_clipboard">Zkopírované do schránky</string>
+    <string name="copied_to_clipboard">Zkopírováno do schránky</string>
     <string name="app_in_use">IYPS v provozu</string>
 </resources>
