@@ -24,15 +24,19 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.text.buildSpannedString
+import androidx.core.text.inSpans
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import com.google.android.material.color.MaterialColors
 import com.google.android.material.slider.Slider
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.iyps.R
@@ -52,6 +56,7 @@ import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.get
 import org.koin.android.ext.android.inject
 import java.security.SecureRandom
+import kotlin.text.forEach
 
 class GeneratePassphraseFragment : Fragment() {
     
@@ -174,7 +179,7 @@ class GeneratePassphraseFragment : Fragment() {
     fun generatePassphrase() {
         val numberOfWords = fragmentBinding.phraseWordsSlider.value.toInt()
         lifecycleScope.launch(Dispatchers.Default) {
-            val passphrase = buildString {
+            val generatedPhraseString = buildString {
                 for (i in 0 until numberOfWords) {
                     val dieRollsValues =
                         IntArray(5) { get<SecureRandom>().nextInt(6) + 1 } // Rolling a six-sided die five times.
@@ -202,7 +207,24 @@ class GeneratePassphraseFragment : Fragment() {
             }
             
             withContext(Dispatchers.Main) {
-                fragmentBinding.phraseGeneratedTextView.text = passphrase
+                fragmentBinding.phraseGeneratedTextView.text =
+                    buildSpannedString {
+                        generatedPhraseString.forEach { char ->
+                            val color =
+                                when {
+                                    char in "-.,|_+;:"-> R.color.color_specChars
+                                    else -> null
+                                }
+                            inSpans(ForegroundColorSpan(
+                                color?.let {
+                                    requireContext().resources.getColor(it, requireContext().theme)
+                                }
+                                ?: MaterialColors.getColor(requireView(), com.google.android.material.R.attr.colorOnSurface)
+                            )) {
+                                append(char)
+                            }
+                        }
+                    }
             }
         }
         
