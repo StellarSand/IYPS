@@ -95,6 +95,9 @@
     <string name="sort">Sortera</string>
     <!--#########################################################################################-->
 
+    <!--Generate fragments-->
+    <string name="generate_multiple">Generate multiple</string>
+
     <!--Generate password fragment-->
     <string name="details">Detaljer</string>
     <string name="copy">Kopia</string>

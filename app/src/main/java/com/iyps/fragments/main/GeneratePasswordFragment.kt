@@ -25,25 +25,24 @@ import android.content.Context.CLIPBOARD_SERVICE
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.text.buildSpannedString
-import androidx.core.text.inSpans
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.google.android.material.color.MaterialColors
 import com.google.android.material.materialswitch.MaterialSwitch
 import com.google.android.material.slider.Slider
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
+import com.iyps.bottomsheets.GenerateMultipleBottomSheet
 import com.iyps.databinding.FragmentGeneratePasswordBinding
+import com.iyps.models.MultiPwdItem
+import com.iyps.objects.GenerateMultiPwdList
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PWD_AMB_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_EXT_CHARS
@@ -54,10 +53,14 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_SPACES
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
+import com.iyps.utils.UiUtils.Companion.setGenPwdTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.inject
@@ -89,7 +92,6 @@ class GeneratePasswordFragment : Fragment() {
         private const val LOWERCASE_CHARS = "abcdefghijklmnopqrstuvwxyz"
         private const val LOWERCASE_EXT_CHARS = "àáâãäåæçèéêëìíîïñòóôõöøùúûüýÿ"
         private const val NUMBERS = "0123456789"
-        private const val SPECIAL_CHARS = "!@#$%^&*+_-.=:%"
         private const val UPPERCASE_AMB_CHARS = "ILOSBZ" // 0Oo, 1IlL, 2Z, 5S, 8B
         private const val LOWERCASE_AMB_CHARS = "loz"
         private const val NUM_AMB_CHARS = "01258"
@@ -143,7 +145,7 @@ class GeneratePasswordFragment : Fragment() {
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
                 override fun onStopTrackingTouch(slider: Slider) {
-                    generatePassword()
+                    showGeneratedPassword()
                 }
             })
             addOnChangeListener { _, value, _ ->
@@ -161,14 +163,14 @@ class GeneratePasswordFragment : Fragment() {
                 val otherSwitches = primarySwitchesList.filter { it != switch }
                 val otherSwitchesChecked = otherSwitches.any { it.isChecked }
                 if (checkedSwitch == uppercaseSwitch || checkedSwitch == lowercaseSwitch) extCharsSwitch.enableOrDisableExtCharsSwitch()
-                if (otherSwitchesChecked) generatePassword() else switch.isChecked = true
+                if (otherSwitchesChecked) showGeneratedPassword() else switch.isChecked = true
             }
         }
         
         avoidAmbCharsSwitch.apply {
             isChecked = prefManager.getBoolean(PWD_AMB_CHARS)
             setOnCheckedChangeListener { _, _ ->
-                generatePassword()
+                showGeneratedPassword()
             }
         }
         
@@ -176,18 +178,18 @@ class GeneratePasswordFragment : Fragment() {
             enableOrDisableExtCharsSwitch()
             isChecked = prefManager.getBoolean(PWD_EXT_CHARS, defValue = false)
             setOnCheckedChangeListener { _, _ ->
-                generatePassword()
+                showGeneratedPassword()
             }
         }
         
         includeSpaceSwitch.apply {
             isChecked = prefManager.getBoolean(PWD_SPACES, defValue = false)
             setOnCheckedChangeListener { _, _ ->
-                generatePassword()
+                showGeneratedPassword()
             }
         }
         
-        generatePassword()
+        showGeneratedPassword()
         
         // Details
         fragmentBinding.pwdDetailsBtn.apply {
@@ -220,7 +222,7 @@ class GeneratePasswordFragment : Fragment() {
         fragmentBinding.pwdRegenerateBtn.apply {
             setButtonTooltipText(getString(R.string.regenerate))
             setOnClickListener {
-                generatePassword()
+                showGeneratedPassword()
             }
         }
         
@@ -235,6 +237,21 @@ class GeneratePasswordFragment : Fragment() {
             }
         }
         
+        // Generate multiple
+        fragmentBinding.pwdMultiGenBtn.apply {
+            setButtonTooltipText(getString(R.string.generate_multiple))
+            setOnClickListener {
+                lifecycleScope.launch {
+                    val generatedMultiPwdsList =
+                        (1..7).map {
+                            async { MultiPwdItem(generatePassword()) }
+                        }.awaitAll()
+                    GenerateMultiPwdList.pwdList.addAll(generatedMultiPwdsList)
+                }
+                GenerateMultipleBottomSheet().show(parentFragmentManager, "GenerateMultipleBottomSheet")
+            }
+        }
+        
     }
     
     private fun MaterialSwitch.enableOrDisableExtCharsSwitch() {
@@ -245,8 +262,8 @@ class GeneratePasswordFragment : Fragment() {
         return allChars.filterNot { it in ambChars }
     }
     
-    private fun generatePassword() {
-        lifecycleScope.launch(Dispatchers.Default) {
+    private suspend fun generatePassword(): String {
+        return withContext(Dispatchers.Default) {
             val allChars = buildString {
                 if (uppercaseSwitch.isChecked) {
                     append(
@@ -255,7 +272,9 @@ class GeneratePasswordFragment : Fragment() {
                             // Only generate non-ambiguous chars if not done already.
                             // This would avoid unnecessary generations everytime this function is called.
                             getNonAmbChars(UPPERCASE_CHARS,
-                                           UPPERCASE_AMB_CHARS).also { uppercaseWithoutAmbChars = it }
+                                           UPPERCASE_AMB_CHARS).also {
+                                uppercaseWithoutAmbChars = it
+                            }
                         }
                         else UPPERCASE_CHARS
                     )
@@ -265,7 +284,9 @@ class GeneratePasswordFragment : Fragment() {
                         if (extCharsSwitch.isChecked) LOWERCASE_EXT_CHARS else "",
                         if (avoidAmbCharsSwitch.isChecked) lowercaseWithoutAmbChars.ifEmpty {
                             getNonAmbChars(LOWERCASE_CHARS,
-                                           LOWERCASE_AMB_CHARS).also { lowercaseWithoutAmbChars = it }
+                                           LOWERCASE_AMB_CHARS).also {
+                                lowercaseWithoutAmbChars = it
+                            }
                         }
                         else LOWERCASE_CHARS
                     )
@@ -273,7 +294,9 @@ class GeneratePasswordFragment : Fragment() {
                 if (numbersSwitch.isChecked) {
                     append(
                         if (avoidAmbCharsSwitch.isChecked) numbersWithoutAmbChars.ifEmpty {
-                            getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also { numbersWithoutAmbChars = it }
+                            getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also {
+                                numbersWithoutAmbChars = it
+                            }
                         }
                         else NUMBERS
                     )
@@ -281,7 +304,7 @@ class GeneratePasswordFragment : Fragment() {
                 if (specialCharsSwitch.isChecked) append(SPECIAL_CHARS)
             }
             
-            generatedPwdString = buildString {
+            buildString {
                 val length = fragmentBinding.pwdLengthSlider.value.toInt()
                 val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
                 
@@ -298,28 +321,13 @@ class GeneratePasswordFragment : Fragment() {
                     }
                 }
             }
-            
-            withContext(Dispatchers.Main) {
-                fragmentBinding.pwdGeneratedTextView.text =
-                    buildSpannedString {
-                        generatedPwdString.forEach { char ->
-                            val color =
-                                when {
-                                    char.isDigit() -> R.color.color_number
-                                    char in SPECIAL_CHARS -> R.color.color_specChars
-                                    else -> null
-                                }
-                            inSpans(ForegroundColorSpan(
-                                color?.let {
-                                    requireContext().resources.getColor(it, requireContext().theme)
-                                }
-                                ?: MaterialColors.getColor(requireView(), com.google.android.material.R.attr.colorOnSurface)
-                            )) {
-                                append(char)
-                            }
-                        }
-                    }
-            }
+        }
+    }
+    
+    private fun showGeneratedPassword() {
+        lifecycleScope.launch {
+            generatedPwdString = generatePassword()
+            fragmentBinding.pwdGeneratedTextView.setGenPwdTextWithColor(generatedPwdString)
         }
     }
     

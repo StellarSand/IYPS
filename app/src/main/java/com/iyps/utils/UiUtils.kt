@@ -19,15 +19,22 @@ package com.iyps.utils
 
 import android.content.Context
 import android.os.Build
+import android.text.style.ForegroundColorSpan
 import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.text.buildSpannedString
+import androidx.core.text.inSpans
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.color.MaterialColors
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
+import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
+import kotlin.text.forEach
 
 class UiUtils {
     
@@ -58,7 +65,7 @@ class UiUtils {
         fun Window.blockScreenshots(shouldBlock: Boolean) {
             if (shouldBlock) {
                 setFlags(WindowManager.LayoutParams.FLAG_SECURE,
-                                         WindowManager.LayoutParams.FLAG_SECURE)
+                         WindowManager.LayoutParams.FLAG_SECURE)
             }
             else {
                 clearFlags(WindowManager.LayoutParams.FLAG_SECURE)
@@ -67,6 +74,29 @@ class UiUtils {
         
         fun convertDpToPx(context: Context, dp: Float): Int {
             return (dp * context.resources.displayMetrics.density).toInt()
+        }
+        
+        fun MaterialTextView.setGenPwdTextWithColor(genPwdString: String) {
+            text =
+                buildSpannedString {
+                    genPwdString.forEach { char ->
+                        val color =
+                            when {
+                                char.isDigit() -> R.color.color_number
+                                char in SPECIAL_CHARS -> R.color.color_specChars
+                                else -> null
+                            }
+                        inSpans(ForegroundColorSpan(
+                            color?.let {
+                                context.resources.getColor(it, context.theme)
+                            }
+                            ?: MaterialColors.getColor(this@setGenPwdTextWithColor,
+                                                       com.google.android.material.R.attr.colorOnSurface)
+                        )) {
+                            append(char)
+                        }
+                    }
+                }
         }
         
         fun MaterialButton.setButtonTooltipText(text: String) {

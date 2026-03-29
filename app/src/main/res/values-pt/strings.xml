@@ -98,6 +98,9 @@
     <string name="sort">Ordenar</string>
     <!--#########################################################################################-->
 
+    <!--Generate fragments-->
+    <string name="generate_multiple">Generate multiple</string>
+
     <!--Generate password fragment-->
     <string name="details">Detalhes</string>
     <string name="copy">Cópia</string>

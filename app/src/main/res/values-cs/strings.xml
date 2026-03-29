@@ -78,6 +78,7 @@
     <string name="back">Zpět</string>
     <string name="view">Vidět</string>
     <string name="sort">Seřadit</string>
+    <string name="generate_multiple">Generate multiple</string>
     <string name="details">Podrobnosti</string>
     <string name="copy">Kopírovat</string>
     <string name="regenerate">Znovu generovat</string>

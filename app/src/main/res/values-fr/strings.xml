@@ -104,6 +104,9 @@
 
     <!--#########################################################################################-->
 
+    <!--Generate fragments-->
+    <string name="generate_multiple">Generate multiple</string>
+
     <!--Generate password fragment-->
     <string name="details">Des d\u00E9tails</string>
     <string name="copy">Copie</string>

@@ -69,6 +69,7 @@
     <string name="order_of_magn">Oletamise suurusjärk</string>
     <string name="worst_pass_warning">Salasõna on äraarvamise mõttes liiga lihtne.</string>
     <string name="sort">Järjestus</string>
+    <string name="generate_multiple">Generate multiple</string>
     <string name="details">Üksikasjad</string>
     <string name="copy">Kopeeri</string>
     <string name="regenerate">Loo uuesti</string>

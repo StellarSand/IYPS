@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~     Copyright (C) 2022-present StellarSand
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/password_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_4"
+    android:layout_marginBottom="@dimen/margin_12"
+    android:backgroundTint="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_4">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/genMultiItemLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingVertical="@dimen/margin_16"
+            android:paddingHorizontal="@dimen/margin_12"
+            android:background="@drawable/shape_top_corners_rounded"
+            android:backgroundTint="?attr/colorSurfaceContainerHighest"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:textSize="@dimen/text_20"
+            style="@style/MediumBoldText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/genMultiItemDetailsBtn"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            app:layout_constraintTop_toBottomOf="@id/genMultiItemLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/genMultiItemCopyBtn"
+            android:layout_marginTop="@dimen/margin_4"
+            app:icon="@drawable/ic_details"
+            app:iconSize="@dimen/margin_20"
+            app:iconGravity="textStart"
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:contentDescription="@string/details"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/genMultiItemCopyBtn"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            app:layout_constraintTop_toTopOf="@id/genMultiItemDetailsBtn"
+            app:layout_constraintBottom_toBottomOf="@id/genMultiItemDetailsBtn"
+            app:layout_constraintStart_toEndOf="@id/genMultiItemDetailsBtn"
+            app:layout_constraintEnd_toStartOf="@+id/genMultiItemShareBtn"
+            app:icon="@drawable/ic_copy"
+            app:iconSize="@dimen/margin_20"
+            app:iconGravity="textStart"
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:contentDescription="@string/copy"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/genMultiItemShareBtn"
+            android:layout_width="@dimen/margin_40"
+            android:layout_height="@dimen/margin_40"
+            app:layout_constraintTop_toTopOf="@id/genMultiItemDetailsBtn"
+            app:layout_constraintBottom_toBottomOf="@id/genMultiItemDetailsBtn"
+            app:layout_constraintStart_toEndOf="@id/genMultiItemCopyBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:icon="@drawable/ic_share"
+            app:iconSize="@dimen/margin_20"
+            app:iconGravity="textStart"
+            style="?attr/materialIconButtonFilledTonalStyle"
+            android:contentDescription="@string/share"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

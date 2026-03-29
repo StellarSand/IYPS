@@ -109,6 +109,9 @@
 
     <!--#########################################################################################-->
 
+    <!--Generate fragments-->
+    <string name="generate_multiple">Generate multiple</string>
+
     <!--Generate password fragment-->
     <string name="details">Detaylar</string>
     <string name="copy">Anla\u015F\u0131ld\u0131</string>

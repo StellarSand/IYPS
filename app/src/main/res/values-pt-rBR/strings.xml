@@ -100,6 +100,9 @@
     <string name="sort">Ordena\u00E7\u00E3o</string>
     <!--#########################################################################################-->
 
+    <!--Generate fragments-->
+    <string name="generate_multiple">Generate multiple</string>
+
     <!--Generate password fragment-->
     <string name="details">Detalhes</string>
     <string name="copy">Copiar</string>
