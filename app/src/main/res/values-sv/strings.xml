@@ -56,14 +56,14 @@
     <string name="month">m\u00E5nad</string>
     <string name="months">m\u00E5nader</string>
     <string name="year">\u00E5r</string>
-    <string name="years">\u00E5r</string>
+    <string name="years">flera år</string>
     <string name="centuries">\u00C5rhundraden</string>
     <string name="warning">Varning</string>
     <string name="suggestions">F\u00F6rslag</string>
     <string name="est_guesses_to_crack">Uppskattade gissningar f\u00F6r att kn\u00E4cka</string>
     <string name="order_of_magn">Storleksordning av gissningar</string>
     <string name="entropy">Entropi</string>
-    <string name="bits">bits</string>
+    <string name="bits">bitar</string>
     <string name="match_sequence">Matchningssekvens</string>
     <string name="pattern">\u2022 M\u00F6nster</string>
     <string name="dict_name">\u2022 Namn p\u00E5 ordbok</string>
