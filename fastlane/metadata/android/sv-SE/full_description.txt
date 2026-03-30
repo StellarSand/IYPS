@@ -1,0 +1,10 @@
+En app för lösenordsstyrka som utvärderar och betygsätter ditt lösenords robusthet, uppskattar knäckningstid och ger användbara varningar och förslag på starkare lösenord.
+
+Funktioner:
+
+- Helt öppen källkod
+- Material design 3 & Material You
+- Helt offline
+- Stöder både ljust och mörkt tema
+- Ingen reklam
+- Ingen insamling av personuppgifter
