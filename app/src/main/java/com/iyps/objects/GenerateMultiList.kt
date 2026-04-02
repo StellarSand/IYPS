@@ -15,6 +15,10 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.iyps.models
+package com.iyps.objects
 
-data class MultiPwdItem(val passwordLine: String)
+object GenerateMultiList {
+    
+    val multiList by lazy { arrayListOf<String>() }
+    
+}

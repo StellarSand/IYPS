@@ -41,8 +41,7 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
 import com.iyps.bottomsheets.GenerateMultipleBottomSheet
 import com.iyps.databinding.FragmentGeneratePasswordBinding
-import com.iyps.models.MultiPwdItem
-import com.iyps.objects.GenerateMultiPwdList
+import com.iyps.objects.GenerateMultiList
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PWD_AMB_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_EXT_CHARS
@@ -242,11 +241,9 @@ class GeneratePasswordFragment : Fragment() {
             setButtonTooltipText(getString(R.string.generate_multiple))
             setOnClickListener {
                 lifecycleScope.launch {
-                    val generatedMultiPwdsList =
-                        (1..7).map {
-                            async { MultiPwdItem(generatePassword()) }
-                        }.awaitAll()
-                    GenerateMultiPwdList.pwdList.addAll(generatedMultiPwdsList)
+                    (1..7).map {
+                        async { GenerateMultiList.multiList.add(generatePassword()) }
+                    }.awaitAll()
                 }
                 GenerateMultipleBottomSheet().show(parentFragmentManager, "GenerateMultipleBottomSheet")
             }

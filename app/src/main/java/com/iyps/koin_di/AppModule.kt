@@ -130,7 +130,7 @@ val appModule =
         
         single {
             val wordMap = mutableMapOf<String, String>()
-            BufferedReader(InputStreamReader(get<Application>().resources.openRawResource(R.raw.eff_passphrase_words)))
+            BufferedReader(InputStreamReader(get<Application>().resources.openRawResource(R.raw.eff_passphrase_long)))
                 .useLines { lines ->
                     lines.forEach { line ->
                         val (id, word) = line.split("\t")

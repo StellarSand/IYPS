@@ -33,7 +33,6 @@ import com.iyps.activities.MultiPwdActivity
 import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetTestMultiPwdBinding
-import com.iyps.models.MultiPwdItem
 import com.iyps.objects.MultiPwdList
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -98,7 +97,7 @@ class TestMultiPwdBottomSheet : BottomSheetDialogFragment() {
                             // Read file line by line
                             while (bufferedReader.readLine().also { lineList = arrayOf(it) } != null) {
                                 for (line in lineList) {
-                                    if (line.isNotEmpty()) add(MultiPwdItem(passwordLine = line))
+                                    if (line.isNotEmpty()) add(line)
                                 }
                             }
                         }

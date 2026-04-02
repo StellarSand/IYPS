@@ -17,9 +17,7 @@
 
 package com.iyps.objects
 
-import com.iyps.models.MultiPwdItem
-
 object MultiPwdList {
     
-    val pwdList by lazy { mutableListOf<MultiPwdItem>() }
+    val pwdList by lazy { arrayListOf<String>() }
 }

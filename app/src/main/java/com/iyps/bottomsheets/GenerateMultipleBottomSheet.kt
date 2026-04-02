@@ -31,10 +31,9 @@ import com.iyps.adapters.GenerateMultiAdapter
 import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
 import com.iyps.databinding.BottomSheetRecyclerViewBinding
-import com.iyps.models.MultiPwdItem
-import com.iyps.objects.GenerateMultiPwdList
+import com.iyps.objects.GenerateMultiList
 
-class GenerateMultipleBottomSheet : BottomSheetDialogFragment() {
+class GenerateMultipleBottomSheet(private val isPassphraseFragment: Boolean = false) : BottomSheetDialogFragment() {
     
     private var _binding: BottomSheetRecyclerViewBinding? = null
     private val bottomSheetBinding get() = _binding!!
@@ -61,8 +60,9 @@ class GenerateMultipleBottomSheet : BottomSheetDialogFragment() {
         
         bottomSheetBinding.licensesRecyclerView.adapter =
             GenerateMultiAdapter(
-                GenerateMultiPwdList.pwdList as ArrayList<MultiPwdItem>,
-                requireActivity() as MainActivity
+                GenerateMultiList.multiList,
+                requireActivity() as MainActivity,
+                isPassphrase = isPassphraseFragment
             )
         
         // Cancel
@@ -78,7 +78,7 @@ class GenerateMultipleBottomSheet : BottomSheetDialogFragment() {
     
     override fun onDestroyView() {
         super.onDestroyView()
-        GenerateMultiPwdList.pwdList.clear()
+        GenerateMultiList.multiList.clear()
         _binding = null
     }
 }

@@ -33,6 +33,7 @@ import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
+import com.iyps.utils.TextUtils.Companion.PHRASE_SEPARATORS
 import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
 import kotlin.text.forEach
 
@@ -91,6 +92,28 @@ class UiUtils {
                                 context.resources.getColor(it, context.theme)
                             }
                             ?: MaterialColors.getColor(this@setGenPwdTextWithColor,
+                                                       com.google.android.material.R.attr.colorOnSurface)
+                        )) {
+                            append(char)
+                        }
+                    }
+                }
+        }
+        
+        fun MaterialTextView.setGenPhraseTextWithColor(genPhraseString: String) {
+            text =
+                buildSpannedString {
+                    genPhraseString.forEach { char ->
+                        val color =
+                            when {
+                                char in PHRASE_SEPARATORS-> R.color.color_specChars
+                                else -> null
+                            }
+                        inSpans(ForegroundColorSpan(
+                            color?.let {
+                                context.resources.getColor(it, context.theme)
+                            }
+                            ?: MaterialColors.getColor(this@setGenPhraseTextWithColor,
                                                        com.google.android.material.R.attr.colorOnSurface)
                         )) {
                             append(char)

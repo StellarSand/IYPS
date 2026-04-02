@@ -24,24 +24,22 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.text.style.ForegroundColorSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.text.buildSpannedString
-import androidx.core.text.inSpans
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updateLayoutParams
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import com.google.android.material.color.MaterialColors
 import com.google.android.material.slider.Slider
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.iyps.R
 import com.iyps.activities.MainActivity
+import com.iyps.bottomsheets.GenerateMultipleBottomSheet
 import com.iyps.databinding.FragmentGeneratePassphraseBinding
+import com.iyps.objects.GenerateMultiList
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR
@@ -49,20 +47,23 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
+import com.iyps.utils.UiUtils.Companion.setGenPhraseTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.get
 import org.koin.android.ext.android.inject
 import java.security.SecureRandom
-import kotlin.text.forEach
 
 class GeneratePassphraseFragment : Fragment() {
     
     private var _binding: FragmentGeneratePassphraseBinding? = null
     private val fragmentBinding get() = _binding!!
     private val prefManager by inject<PreferenceManager>()
+    private var generatedPhraseString: String = ""
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -90,14 +91,14 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Password length slider
         fragmentBinding.phraseWordsSlider.apply {
-            value = prefManager.getFloat(PHRASE_WORDS, defValue = 5f)
+            value = prefManager.getFloat(PHRASE_WORDS, defValue = 6f)
             fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${value.toInt()}"
             
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
                 
                 override fun onStopTrackingTouch(slider: Slider) {
-                    generatePassphrase()
+                    showGeneratedPassphrase()
                 }
                 
             })
@@ -125,7 +126,7 @@ class GeneratePassphraseFragment : Fragment() {
                 )
             )
             setOnItemClickListener { _, _, _, _ ->
-                generatePassphrase()
+                showGeneratedPassphrase()
             }
         }
         
@@ -133,11 +134,11 @@ class GeneratePassphraseFragment : Fragment() {
         fragmentBinding.capitalizeSwitch.apply {
             isChecked = prefManager.getBoolean(PHRASE_CAPITALIZE)
             setOnCheckedChangeListener { _, _ ->
-                generatePassphrase()
+                showGeneratedPassphrase()
             }
         }
         
-        generatePassphrase()
+        showGeneratedPassphrase()
         
         // Copy
         fragmentBinding.phraseCopyBtn.apply {
@@ -160,7 +161,7 @@ class GeneratePassphraseFragment : Fragment() {
         fragmentBinding.phraseRegenerateBtn.apply {
             setButtonTooltipText(getString(R.string.regenerate))
             setOnClickListener {
-                generatePassphrase()
+                showGeneratedPassphrase()
             }
         }
         
@@ -174,12 +175,25 @@ class GeneratePassphraseFragment : Fragment() {
                                                    getString(R.string.share)))
             }
         }
+        
+        // Generate multiple
+        fragmentBinding.phraseMultiGenBtn.apply {
+            setButtonTooltipText(getString(R.string.generate_multiple))
+            setOnClickListener {
+                lifecycleScope.launch {
+                    (1..7).map {
+                        async { GenerateMultiList.multiList.add(generatePassphrase()) }
+                    }.awaitAll()
+                }
+                GenerateMultipleBottomSheet(isPassphraseFragment = true).show(parentFragmentManager, "GenerateMultipleBottomSheet")
+            }
+        }
     }
     
-    fun generatePassphrase() {
+    private suspend fun generatePassphrase(): String {
         val numberOfWords = fragmentBinding.phraseWordsSlider.value.toInt()
-        lifecycleScope.launch(Dispatchers.Default) {
-            val generatedPhraseString = buildString {
+        return withContext(Dispatchers.Default) {
+            buildString {
                 for (i in 0 until numberOfWords) {
                     val dieRollsValues =
                         IntArray(5) { get<SecureRandom>().nextInt(6) + 1 } // Rolling a six-sided die five times.
@@ -205,29 +219,15 @@ class GeneratePassphraseFragment : Fragment() {
                     }
                 }
             }
-            
-            withContext(Dispatchers.Main) {
-                fragmentBinding.phraseGeneratedTextView.text =
-                    buildSpannedString {
-                        generatedPhraseString.forEach { char ->
-                            val color =
-                                when {
-                                    char in "-.,|_+;:"-> R.color.color_specChars
-                                    else -> null
-                                }
-                            inSpans(ForegroundColorSpan(
-                                color?.let {
-                                    requireContext().resources.getColor(it, requireContext().theme)
-                                }
-                                ?: MaterialColors.getColor(requireView(), com.google.android.material.R.attr.colorOnSurface)
-                            )) {
-                                append(char)
-                            }
-                        }
-                    }
-            }
         }
         
+    }
+    
+    private fun showGeneratedPassphrase() {
+        lifecycleScope.launch {
+            generatedPhraseString = generatePassphrase()
+            fragmentBinding.phraseGeneratedTextView.setGenPhraseTextWithColor(generatedPhraseString)
+        }
     }
     
     override fun onPause() {

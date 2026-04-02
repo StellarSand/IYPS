@@ -17,7 +17,6 @@
 
 package com.iyps.adapters
 
-import com.iyps.models.MultiPwdItem
 import androidx.recyclerview.widget.RecyclerView
 import com.iyps.adapters.MultiPwdAdapter.ListViewHolder
 import android.widget.TextView
@@ -27,7 +26,7 @@ import android.view.LayoutInflater
 import android.view.View
 import me.stellarsand.android.fastscroll.PopupTextProvider
 
-class MultiPwdAdapter(private val aListViewItems: List<MultiPwdItem>,
+class MultiPwdAdapter(private val aListViewItems: List<String>,
                       private val clickListener: OnItemClickListener): RecyclerView.Adapter<ListViewHolder>(), PopupTextProvider {
     
     interface OnItemClickListener {
@@ -58,7 +57,7 @@ class MultiPwdAdapter(private val aListViewItems: List<MultiPwdItem>,
     }
     
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        holder.passwordLine.text = aListViewItems[position].passwordLine
+        holder.passwordLine.text = aListViewItems[position]
     }
     
     override fun getItemCount(): Int {
@@ -70,7 +69,7 @@ class MultiPwdAdapter(private val aListViewItems: List<MultiPwdItem>,
     }
     
     override fun getPopupText(view: View, position: Int): CharSequence {
-        return aListViewItems[position].passwordLine.first().let {
+        return aListViewItems[position].first().let {
             if (it.isLowerCase()) it.uppercase()
             else it
         }.toString()

@@ -31,7 +31,6 @@ import com.iyps.activities.MultiPwdActivity
 import com.iyps.databinding.BottomSheetAddMultiPwdBinding
 import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
-import com.iyps.models.MultiPwdItem
 import com.iyps.objects.MultiPwdList
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
@@ -73,11 +72,9 @@ class AddMultiPwdBottomSheet : BottomSheetDialogFragment() {
         footerBinding.doneBtn.apply {
             isVisible = true
             setOnClickListener {
-                val itemList =
-                    bottomSheetBinding.multiPwdText.text!!.split("\n")
-                        .filter { it.isNotEmpty() }
-                        .map { MultiPwdItem(it) }
-                MultiPwdList.pwdList.addAll(itemList)
+                bottomSheetBinding.multiPwdText.text!!.split("\n")
+                    .filter { it.isNotEmpty() }
+                    .forEach { MultiPwdList.pwdList.add(it) }
                 dismiss()
                 startActivity(Intent(requireActivity(), MultiPwdActivity::class.java),
                               ActivityOptions.makeSceneTransitionAnimation(requireActivity()).toBundle())

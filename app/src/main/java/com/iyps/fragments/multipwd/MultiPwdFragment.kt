@@ -33,7 +33,6 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MultiPwdActivity
 import com.iyps.adapters.MultiPwdAdapter
 import com.iyps.databinding.FragmentMultiPwdBinding
-import com.iyps.models.MultiPwdItem
 import com.iyps.objects.MultiPwdList
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import me.stellarsand.android.fastscroll.FastScrollerBuilder
@@ -43,7 +42,7 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     private var _binding: FragmentMultiPwdBinding? = null
     private val fragmentBinding get() = _binding!!
     private lateinit var multiPwdActivity: MultiPwdActivity
-    private lateinit var multiplePwdList: List<MultiPwdItem>
+    private lateinit var multiplePwdList: List<String>
     
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
@@ -56,8 +55,8 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         multiPwdActivity = requireActivity() as MultiPwdActivity
         multiplePwdList =
-            if (multiPwdActivity.isAscSort) MultiPwdList.pwdList.sortedBy { it.passwordLine.lowercase() }
-            else MultiPwdList.pwdList.sortedByDescending { it.passwordLine.lowercase() }
+            if (multiPwdActivity.isAscSort) MultiPwdList.pwdList.sortedBy { it.lowercase() }
+            else MultiPwdList.pwdList.sortedByDescending { it.lowercase() }
         
         fragmentBinding.recyclerView.apply {
             // Adjust recyclerview for edge to edge
@@ -82,7 +81,7 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     // On click
     override fun onItemClick(position: Int) {
         startActivity(Intent(multiPwdActivity, DetailsActivity::class.java)
-                          .putExtra("PwdLine", multiplePwdList[position].passwordLine),
+                          .putExtra("PwdLine", multiplePwdList[position]),
                       ActivityOptions.makeSceneTransitionAnimation(multiPwdActivity).toBundle())
     }
     

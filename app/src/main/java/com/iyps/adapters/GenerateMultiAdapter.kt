@@ -26,20 +26,21 @@ import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
-import com.iyps.models.MultiPwdItem
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setGenPwdTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 
-class GenerateMultiAdapter(private val aListViewItems: ArrayList<MultiPwdItem>,
-                           private val mainActivity: MainActivity) : RecyclerView.Adapter<GenerateMultiAdapter.ListViewHolder>() {
+class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
+                           private val mainActivity: MainActivity,
+                           private val isPassphrase: Boolean) : RecyclerView.Adapter<GenerateMultiAdapter.ListViewHolder>() {
     
     class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         
@@ -60,15 +61,21 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<MultiPwdItem>,
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         
         // Generated password
-        holder.pwdLine.setGenPwdTextWithColor(aListViewItems[position].passwordLine)
+        holder.pwdLine.setGenPwdTextWithColor(aListViewItems[position])
         
         // Details
         holder.detailsBtn.apply {
-            setButtonTooltipText(context.getString(R.string.details))
-            setOnClickListener {
-                context.startActivity(Intent(context, DetailsActivity::class.java)
-                                  .putExtra("PwdLine", holder.pwdLine.text.toString()),
-                              ActivityOptions.makeSceneTransitionAnimation(mainActivity).toBundle())
+            if (!isPassphrase) {
+                setButtonTooltipText(context.getString(R.string.details))
+                setOnClickListener {
+                    context.startActivity(Intent(context, DetailsActivity::class.java)
+                                              .putExtra("PwdLine", holder.pwdLine.text.toString()),
+                                          ActivityOptions.makeSceneTransitionAnimation(mainActivity)
+                                              .toBundle())
+                }
+            }
+            else {
+                isVisible = false
             }
         }
         
@@ -94,9 +101,9 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<MultiPwdItem>,
             setButtonTooltipText(context.getString(R.string.share))
             setOnClickListener {
                 context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
-                                                       .setType("text/plain")
-                                                       .putExtra(Intent.EXTRA_TEXT, holder.pwdLine.text.toString()),
-                                                   context.getString(R.string.share)))
+                                                               .setType("text/plain")
+                                                               .putExtra(Intent.EXTRA_TEXT, holder.pwdLine.text.toString()),
+                                                           context.getString(R.string.share)))
             }
         }
     }

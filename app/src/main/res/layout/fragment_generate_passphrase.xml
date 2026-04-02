@@ -87,6 +87,15 @@
                 style="?attr/materialIconButtonFilledTonalStyle"
                 android:contentDescription="@string/share"/>
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/phraseMultiGenBtn"
+                android:layout_width="@dimen/margin_55"
+                android:layout_height="@dimen/margin_55"
+                app:icon="@drawable/ic_multi_generate"
+                app:iconGravity="textStart"
+                style="?attr/materialIconButtonFilledTonalStyle"
+                android:contentDescription="@string/generate_multiple"/>
+
         </com.google.android.material.button.MaterialButtonGroup>
 
         <com.google.android.material.textview.MaterialTextView
