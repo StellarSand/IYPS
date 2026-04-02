@@ -96,8 +96,7 @@
     <!--#########################################################################################-->
 
     <!--Generate fragments-->
-    <string name="generate_multiple">Generate multiple</string>
-
+    <string name="generate_multiple">Generera multipla</string>
     <!--Generate password fragment-->
     <string name="details">Detaljer</string>
     <string name="copy">Kopia</string>
