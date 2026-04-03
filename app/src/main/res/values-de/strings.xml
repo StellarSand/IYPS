@@ -93,6 +93,9 @@
     <string name="numbers">Zahlen</string>
     <string name="special_char">Sonderzeichen</string>
     <string name="spaces">Leerzeichen</string>
+    <string name="export">Export</string>
+    <string name="export_success">Exported successfully</string>
+    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 

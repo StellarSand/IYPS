@@ -99,6 +99,9 @@
     <string name="numbers">Say\u0131lar</string>
     <string name="special_char">\u00D6zel karakterler</string>
     <string name="spaces">Alanlar</string>
+    <string name="export">Export</string>
+    <string name="export_success">Exported successfully</string>
+    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 

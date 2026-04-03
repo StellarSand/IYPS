@@ -20,7 +20,7 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/help_coordinator_layout"
+    android:id="@+id/details_coord_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorSurface"
@@ -33,6 +33,7 @@
         android:layout_marginBottom="?attr/actionBarSize"/>
 
     <com.google.android.material.dockedtoolbar.DockedToolbarLayout
+        android:id="@+id/detailsDockedToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom">

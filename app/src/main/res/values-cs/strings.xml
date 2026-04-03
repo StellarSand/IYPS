@@ -75,6 +75,9 @@
     <string name="numbers">Čísla</string>
     <string name="special_char">Speciální znaky</string>
     <string name="spaces">Mezery</string>
+    <string name="export">Export</string>
+    <string name="export_success">Exported successfully</string>
+    <string name="export_fail">Export failed</string>
     <string name="back">Zpět</string>
     <string name="view">Vidět</string>
     <string name="sort">Seřadit</string>

@@ -35,6 +35,7 @@ import org.koin.android.ext.android.get
 class DetailsActivity : AppCompatActivity() {
     
     lateinit var passwordLine: CharSequence
+    lateinit var activityBinding: ActivityDetailsBinding
     
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
@@ -45,7 +46,7 @@ class DetailsActivity : AppCompatActivity() {
             returnTransition = MaterialSharedAxis(MaterialSharedAxis.Z, false)
         }
         super.onCreate(savedInstanceState)
-        val activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
+        activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
         
         passwordLine = intent.getStringExtra("PwdLine")!!

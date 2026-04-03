@@ -92,6 +92,9 @@
     <string name="numbers">Numeri</string>
     <string name="special_char">Caratteri speciali</string>
     <string name="spaces">Spazi</string>
+    <string name="export">Export</string>
+    <string name="export_success">Exported successfully</string>
+    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 

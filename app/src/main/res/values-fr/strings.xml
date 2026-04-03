@@ -94,6 +94,9 @@
     <string name="numbers">Chiffres</string> <!-- On compte le nombre de chiffres -->
     <string name="special_char">Caract\u00E8res sp\u00E9ciaux</string>
     <string name="spaces">Espaces</string>
+    <string name="export">Export</string>
+    <string name="export_success">Exported successfully</string>
+    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 

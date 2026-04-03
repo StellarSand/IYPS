@@ -31,9 +31,11 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.forEach
 import androidx.core.view.inputmethod.EditorInfoCompat.IME_FLAG_NO_PERSONALIZED_LEARNING
 import androidx.core.view.isVisible
 import androidx.core.view.updateLayoutParams
@@ -42,16 +44,20 @@ import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.AppBarLayout
+import com.google.android.material.chip.Chip
 import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.bottomsheets.TestMultiPwdBottomSheet
 import com.iyps.common.evaluatePassword
+import com.iyps.common.getFormattedResultsText
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
+import com.iyps.utils.FormatUtils.Companion.generateNewFilename
+import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.ResultUtils
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
@@ -86,19 +92,31 @@ class TestPasswordFragment : Fragment() {
         val resultUtils = ResultUtils(requireContext())
         var isInitialLaunch = true
         val displayMetrics = resources.displayMetrics
-        val typedValue = TypedValue()
-        requireContext().theme.resolveAttribute(
-            com.google.android.material.R.attr.collapsingToolbarLayoutLargeSize,
-            typedValue,
-            true
-        )
-        val collapsingToolbarLargeHeightInPx = TypedValue.complexToDimensionPixelSize(typedValue.data, displayMetrics)
+        var collapsingToolbarLargeHeightInPx = 0
+        TypedValue().let {
+            requireContext().theme.resolveAttribute(
+                com.google.android.material.R.attr.collapsingToolbarLayoutLargeSize,
+                it,
+                true
+            )
+            collapsingToolbarLargeHeightInPx = TypedValue.complexToDimensionPixelSize(it.data, displayMetrics)
+        }
         var collapsingToolbarTopInsets = -1
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         naString = getString(R.string.na)
         emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
         
         // Adjust UI components for edge to edge
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.collapsingToolbar) { _, windowInsets ->
+            if (collapsingToolbarTopInsets == -1) {
+                val insets =
+                    windowInsets.getInsets(
+                        WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
+                    )
+                collapsingToolbarTopInsets = insets.top
+            }
+            WindowInsetsCompat.CONSUMED
+        }
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.scrollView) { v, windowInsets ->
             val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
                                                         or WindowInsetsCompat.Type.displayCutout())
@@ -111,17 +129,6 @@ class TestPasswordFragment : Fragment() {
             v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 rightMargin = insets.right + convertDpToPx(requireContext(), 16f)
                 bottomMargin = insets.bottom + convertDpToPx(requireContext(), 25f)
-            }
-            WindowInsetsCompat.CONSUMED
-        }
-        
-        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.collapsingToolbar) { view, windowInsets ->
-            if (collapsingToolbarTopInsets == -1) {
-                val insets =
-                    windowInsets.getInsets(
-                        WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
-                    )
-                collapsingToolbarTopInsets = insets.top
             }
             WindowInsetsCompat.CONSUMED
         }
@@ -156,6 +163,11 @@ class TestPasswordFragment : Fragment() {
                     lifecycleScope.launch {
                         delay(300)
                         if (charSequence!!.isNotEmpty()) {
+                            fragmentBinding.copyChipGroup.forEach {
+                                (it as? Chip)?.apply {
+                                    if (!isEnabled) isEnabled = true
+                                }
+                            }
                             fragmentBinding.evaluatePassword(
                                 zxcvbn = get<Zxcvbn>(),
                                 password = charSequence,
@@ -171,6 +183,9 @@ class TestPasswordFragment : Fragment() {
                         }
                         // If edit text is empty or cleared, reset everything
                         else {
+                            fragmentBinding.copyChipGroup.forEach {
+                                (it as? Chip)?.isEnabled = false
+                            }
                             resetDetails()
                         }
                     }
@@ -189,16 +204,7 @@ class TestPasswordFragment : Fragment() {
                 override fun onActionItemClicked(mode: ActionMode?, item: MenuItem?): Boolean {
                     when (item?.itemId) {
                         android.R.id.copy -> {
-                            val clipData = ClipData.newPlainText("IYPS", text)
-                            clipData.hideSensitiveContent()
-                            clipboardManager.setPrimaryClip(clipData)
-                            // Only show snackbar in 12L or lower to avoid duplicate notifications
-                            // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
-                            if (Build.VERSION.SDK_INT <= 32) {
-                                showSnackbar(mainActivity.activityBinding.mainCoordLayout,
-                                             requireContext().getString(R.string.copied_to_clipboard),
-                                             fragmentBinding.testMultipleFab)
-                            }
+                            copyToClipboard(text.toString())
                         }
                     }
                     return true
@@ -210,6 +216,21 @@ class TestPasswordFragment : Fragment() {
         
         // Clipboard
         manageClipboard(clipboardManager, lifecycleScope)
+        
+        // Copy
+        fragmentBinding.copyChip.setOnClickListener {
+            copyToClipboard(fragmentBinding.getFormattedResultsText(requireContext()))
+        }
+        
+        // Share
+        fragmentBinding.shareChip.setOnClickListener {
+            requireActivity().shareText(fragmentBinding.getFormattedResultsText(requireContext()))
+        }
+        
+        // Export
+        fragmentBinding.exportChip.setOnClickListener {
+            exportToFilePicker.launch(generateNewFilename())
+        }
         
         // Fab
         fragmentBinding.testMultipleFab.setOnClickListener {
@@ -223,6 +244,19 @@ class TestPasswordFragment : Fragment() {
             params.height = height
             layoutParams = params
             requestLayout()
+        }
+    }
+    
+    private fun copyToClipboard(copiedText: CharSequence) {
+        val clipData = ClipData.newPlainText("IYPS", copiedText)
+        clipData.hideSensitiveContent()
+        clipboardManager.setPrimaryClip(clipData)
+        // Show snackbar only if 12L or lower to avoid duplicate notifications
+        // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
+        if (Build.VERSION.SDK_INT <= 32) {
+            showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                         requireContext().getString(R.string.copied_to_clipboard),
+                         fragmentBinding.testMultipleFab)
         }
     }
     
@@ -268,6 +302,27 @@ class TestPasswordFragment : Fragment() {
         }
         
     }
+    
+    private val exportToFilePicker =
+        registerForActivityResult(
+            ActivityResultContracts.CreateDocument("text/plain")
+        ) { uri ->
+            uri?.let {
+                try {
+                    requireContext().contentResolver.openOutputStream(it)?.use { outputStream ->
+                        outputStream.write(fragmentBinding.getFormattedResultsText(requireContext()).toByteArray())
+                    }
+                    showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                                 getString(R.string.export_success),
+                                 fragmentBinding.testMultipleFab)
+                }
+                catch (_: Exception) {
+                    showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                                 getString(R.string.export_fail),
+                                 fragmentBinding.testMultipleFab)
+                }
+            }
+        }
     
     // Clear clipboard immediately when fragment destroyed
     override fun onDestroyView() {

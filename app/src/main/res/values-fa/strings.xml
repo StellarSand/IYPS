@@ -90,6 +90,9 @@
     <string name="numbers">اعداد</string>
     <string name="special_char">کاراکترهای ویژه</string>
     <string name="spaces">فاصله‌ها</string>
+    <string name="export">Export</string>
+    <string name="export_success">Exported successfully</string>
+    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 
