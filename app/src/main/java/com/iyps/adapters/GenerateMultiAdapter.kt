@@ -34,6 +34,7 @@ import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setGenPwdTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
@@ -86,7 +87,7 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
                 val clipData = ClipData.newPlainText("", holder.pwdLine.text.toString())
                 clipData.hideSensitiveContent()
                 (context.getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
-                // Only show snackbar in 12L or lower to avoid duplicate notifications
+                // Show snackbar only if 12L or lower to avoid duplicate notifications
                 // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
                 if (Build.VERSION.SDK_INT <= 32) {
                     showSnackbar(mainActivity.activityBinding.mainCoordLayout,
@@ -100,10 +101,7 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
         holder.shareBtn.apply {
             setButtonTooltipText(context.getString(R.string.share))
             setOnClickListener {
-                context.startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
-                                                               .setType("text/plain")
-                                                               .putExtra(Intent.EXTRA_TEXT, holder.pwdLine.text.toString()),
-                                                           context.getString(R.string.share)))
+                mainActivity.shareText(holder.pwdLine.text)
             }
         }
     }

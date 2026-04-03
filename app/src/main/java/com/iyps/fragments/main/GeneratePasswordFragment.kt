@@ -52,6 +52,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_SPACES
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
@@ -207,7 +208,7 @@ class GeneratePasswordFragment : Fragment() {
                 val clipData = ClipData.newPlainText("", generatedPwdString)
                 clipData.hideSensitiveContent()
                 (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
-                // Only show snackbar in 12L or lower to avoid duplicate notifications
+                // Show snackbar only if 12L or lower to avoid duplicate notifications
                 // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
                 if (Build.VERSION.SDK_INT <= 32) {
                     showSnackbar(mainActivity.activityBinding.mainCoordLayout,
@@ -229,10 +230,7 @@ class GeneratePasswordFragment : Fragment() {
         fragmentBinding.pwdShareBtn.apply {
             setButtonTooltipText(getString(R.string.share))
             setOnClickListener {
-                startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
-                                                       .setType("text/plain")
-                                                       .putExtra(Intent.EXTRA_TEXT, generatedPwdString),
-                                                   getString(R.string.share)))
+                requireActivity().shareText(generatedPwdString)
             }
         }
         
@@ -266,7 +264,7 @@ class GeneratePasswordFragment : Fragment() {
                     append(
                         if (extCharsSwitch.isChecked) UPPERCASE_EXT_CHARS else "",
                         if (avoidAmbCharsSwitch.isChecked) uppercaseWithoutAmbChars.ifEmpty {
-                            // Only generate non-ambiguous chars if not done already.
+                            // Generate non-ambiguous chars only if not done already.
                             // This would avoid unnecessary generations everytime this function is called.
                             getNonAmbChars(UPPERCASE_CHARS,
                                            UPPERCASE_AMB_CHARS).also {

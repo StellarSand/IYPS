@@ -167,11 +167,16 @@
     <color name="color_url">#1976D2</color>
 
     <!--Strength meter colors-->
-    <color name="color_worstMeter">#FF8980</color>
-    <color name="color_weakMeter">#FFB865</color>
-    <color name="color_mediumMeter">#FFE084</color>
-    <color name="color_strongMeter">#4ADC8C</color>
-    <color name="color_excellentMeter">#4DCD68</color>
+    <color name="color_worstMeter">#EF9A9A</color>
+    <color name="color_worstMeter_text">#6B2420</color>
+    <color name="color_weakMeter">#FFCC80</color>
+    <color name="color_weakMeter_text">#5B3A1F</color>
+    <color name="color_mediumMeter">#FFF59D</color>
+    <color name="color_mediumMeter_text">#4B4300</color>
+    <color name="color_strongMeter">#80DEEA</color>
+    <color name="color_strongMeter_text">#1A4D5A</color>
+    <color name="color_excellentMeter">#A5D6A7</color>
+    <color name="color_excellentMeter_text">#2A4D2A</color>
 
     <!--Generated password/passphrase text colors-->
     <color name="color_number">#36618E</color>

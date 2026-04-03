@@ -21,7 +21,6 @@ import android.annotation.SuppressLint
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
-import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -45,6 +44,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setGenPhraseTextWithColor
@@ -147,7 +147,7 @@ class GeneratePassphraseFragment : Fragment() {
                 val clipData = ClipData.newPlainText("", fragmentBinding.phraseGeneratedTextView.text)
                 clipData.hideSensitiveContent()
                 (requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
-                // Only show snackbar in 12L or lower to avoid duplicate notifications
+                // Show snackbar only if 12L or lower to avoid duplicate notifications
                 // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
                 if (Build.VERSION.SDK_INT <= 32) {
                     showSnackbar(mainActivity.activityBinding.mainCoordLayout,
@@ -169,10 +169,7 @@ class GeneratePassphraseFragment : Fragment() {
         fragmentBinding.phraseShareBtn.apply {
             setButtonTooltipText(getString(R.string.share))
             setOnClickListener {
-                startActivity(Intent.createChooser(Intent(Intent.ACTION_SEND)
-                                                       .setType("text/plain")
-                                                       .putExtra(Intent.EXTRA_TEXT, fragmentBinding.phraseGeneratedTextView.text),
-                                                   getString(R.string.share)))
+                requireActivity().shareText(fragmentBinding.phraseGeneratedTextView.text.toString())
             }
         }
         
