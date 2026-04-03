@@ -22,13 +22,16 @@ import androidx.core.text.HtmlCompat
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
-import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
 import com.nulabinc.zxcvbn.Feedback
 import com.nulabinc.zxcvbn.Pattern
 import com.nulabinc.zxcvbn.Strength
+import java.text.NumberFormat
 import java.util.Locale
 import java.util.concurrent.TimeUnit
+import kotlin.math.floor
+import kotlin.math.log10
 import kotlin.math.log2
+import kotlin.math.pow
 
 class ResultUtils(val context: Context) {
     
@@ -178,15 +181,16 @@ class ResultUtils(val context: Context) {
     }
     
     fun getGuessesText(guesses: Double): CharSequence {
-        val guessesString = guesses.toString()
-        return if (guessesString.contains("E")) {
-            val splitString = guessesString.split("E")
-            HtmlCompat.fromHtml("${splitString[0].toDouble().formatToTwoDecimalPlaces()} x 10<sup><small>${splitString[1]}</small></sup>",
-                                HtmlCompat.FROM_HTML_MODE_COMPACT)
+        return if (guesses >= 1000000) {
+            val exponent = floor(log10(guesses)).toInt()
+            val mantissa = guesses / 10.0.pow(exponent.toDouble())
+            val formattedMantissa = NumberFormat.getInstance().format(mantissa)
+            HtmlCompat.fromHtml(
+                "$formattedMantissa \u00D7 10<sup><small>$exponent</small></sup>",
+                HtmlCompat.FROM_HTML_MODE_COMPACT
+            )
         }
-        else {
-            guessesString.toDouble().formatToTwoDecimalPlaces()
-        }
+        else NumberFormat.getInstance().format(guesses)
     }
     
     fun getMatchSequenceText(strength: Strength): CharSequence {
@@ -199,7 +203,7 @@ class ResultUtils(val context: Context) {
                 append("<b>${index + 1}) \"${match.token}\"</b>")
                 append("<br>${patternString}: $pattern")
                 if (matchSequence.size > 1)
-                    append("<br>\u2022 ${orderMagnString}: ${match.guessesLog10.formatToTwoDecimalPlaces()}")
+                    append("<br>\u2022 ${orderMagnString}: ${NumberFormat.getInstance().format(match.guessesLog10)}")
                 
                 when (pattern) {
                     Pattern.Dictionary -> {
@@ -278,7 +282,9 @@ class ResultUtils(val context: Context) {
         if (statsCountsList[4] > 0) poolSize += 32.0 // Special characters
         
         // Entropy = Length * log2(pool size)
-        return (statsCountsList[0] * log2(poolSize)).formatToTwoDecimalPlaces()
+        return NumberFormat.getInstance().format(
+            (statsCountsList[0] * log2(poolSize))
+        )
     }
     
 }

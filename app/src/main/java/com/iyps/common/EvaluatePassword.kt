@@ -21,10 +21,10 @@ import android.annotation.SuppressLint
 import android.content.Context
 import com.iyps.R
 import com.iyps.databinding.FragmentTestPasswordBinding
-import com.iyps.utils.FormatUtils.Companion.formatToTwoDecimalPlaces
 import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.ResultUtils
 import com.nulabinc.zxcvbn.Zxcvbn
+import java.text.NumberFormat
 import java.util.Locale
 
 @SuppressLint("SetTextI18n")
@@ -83,7 +83,7 @@ fun FragmentTestPasswordBinding.evaluatePassword(
     guessesSubtitle.text = resultUtils.getGuessesText(guesses)
     
     // Order of magnitude of guesses
-    orderMagnSubtitle.text = strength.guessesLog10.formatToTwoDecimalPlaces()
+    orderMagnSubtitle.text = NumberFormat.getInstance().format(strength.guessesLog10)
     
     // Entropy
     val statsList = resultUtils.getStatisticsCounts(password)
