@@ -16,7 +16,7 @@
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
   --><resources>
     <string name="test">Vyzkoušet</string>
-    <string name="generate">Generovat</string>
+    <string name="generate">Vygenerovat</string>
     <string name="password">Heslo</string>
     <string name="passphrase">Heslo s slovama</string>
     <string name="settings">Nastavení</string>
@@ -65,7 +65,7 @@
     <string name="ascending">• Vzestupně</string>
     <string name="separator">• Oddělovač</string>
     <string name="graph">• Graf</string>
-    <string name="turns">• Kola</string>
+    <string name="turns">• Ohyby</string>
     <string name="shifted_times">• Posunuto %1$s krát</string>
     <string name="regex_name">• Jméno regexu</string>
     <string name="statistics">Statistika</string>
@@ -75,16 +75,16 @@
     <string name="numbers">Čísla</string>
     <string name="special_char">Speciální znaky</string>
     <string name="spaces">Mezery</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
+    <string name="export">Exportovat</string>
+    <string name="export_success">Export byl úspěšný</string>
+    <string name="export_fail">Export selhal</string>
     <string name="back">Zpět</string>
     <string name="view">Vidět</string>
     <string name="sort">Seřadit</string>
-    <string name="generate_multiple">Generate multiple</string>
+    <string name="generate_multiple">Vygenerovat několik</string>
     <string name="details">Podrobnosti</string>
     <string name="copy">Kopírovat</string>
-    <string name="regenerate">Znovu generovat</string>
+    <string name="regenerate">Znovu vygenerovat</string>
     <string name="share">Sdílet</string>
     <string name="customize">Přizpůsobit</string>
     <string name="ext_chars">Rozšířené znaky</string>
@@ -119,5 +119,5 @@
     <string name="dark">Tmavé</string>
     <string name="no_browsers">Žádné prohlížeče nainstalované na tomto zařízení</string>
     <string name="copied_to_clipboard">Zkopírováno do schránky</string>
-    <string name="app_in_use">IYPS v provozu</string>
+    <string name="app_in_use">IYPS se využívá</string>
 </resources>
