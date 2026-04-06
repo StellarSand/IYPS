@@ -30,6 +30,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">测试密码</string>
+    <string name="copy">复制</string>
+    <string name="share">分享</string>
+    <string name="export">导出</string>
     <string name="ten_b_guesses_per_sec">每秒 󠁅10 󠁅亿次猜测</string>
     <string name="ten_k_guesses_per_sec">每秒 󠁅1 万次猜测</string>
     <string name="ten_guesses_per_sec">每秒 󠁅10 次猜测</string>
@@ -84,14 +87,11 @@
     <string name="numbers">数字</string>
     <string name="special_char">特殊字符</string>
     <string name="spaces">空格</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
-    <string name="back">Back</string>
+    <string name="back">返回</string>
     <string name="view">查看</string>
     <string name="sort">排序</string>
 
@@ -102,9 +102,7 @@
 
     <!--Generate password fragment-->
     <string name="details">详细信息</string>
-    <string name="copy">复制</string>
     <string name="regenerate">再次生成</string>
-    <string name="share">分享</string>
     <string name="customize">自定义</string>
     <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">避免使用模棱两可的字符</string>
@@ -142,6 +140,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">取消</string>
+    <string name="dismiss">关闭</string>
     <string name="done">已完成</string>
 
     <!--Test multiple passwords-->
@@ -160,6 +159,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">已成功导出</string>
+    <string name="export_fail">导出失败</string>
     <string name="no_browsers">此设备未安装浏览器</string>
     <string name="copied_to_clipboard">已复制到剪贴板</string>
 

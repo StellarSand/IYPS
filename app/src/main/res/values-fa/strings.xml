@@ -36,6 +36,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">گذرواژه‌تان را آزمایش کنید</string>
+    <string name="copy">رونوشت</string>
+    <string name="share">هم‌رسانی</string>
+    <string name="export">صادرات</string>
     <string name="ten_b_guesses_per_sec">10B حدس/ثانیه</string>
     <string name="ten_k_guesses_per_sec">10k حدس/ثانیه</string>
     <string name="ten_guesses_per_sec">10 حدس/ثانیه</string>
@@ -90,14 +93,11 @@
     <string name="numbers">اعداد</string>
     <string name="special_char">کاراکترهای ویژه</string>
     <string name="spaces">فاصله‌ها</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
-    <string name="back">Back</string>
+    <string name="back">بازگشت</string>
     <string name="view">مشاهده</string>
     <string name="sort">مرتب‌سازی</string>
 
@@ -108,9 +108,7 @@
 
     <!--Generate password fragment-->
     <string name="details">جزئیات</string>
-    <string name="copy">رونوشت</string>
     <string name="regenerate">تولید مجدد</string>
-    <string name="share">هم‌رسانی</string>
     <string name="customize">سفارشی‌سازی</string>
     <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">اجتناب از کاراکترهای مبهم</string>
@@ -147,6 +145,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">رد کردن</string>
+    <string name="dismiss">لغو</string>
     <string name="done">انجام شد</string>
 
     <!--Test multiple passwords-->
@@ -165,6 +164,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">موفقیت‌آمیز صادر شد</string>
+    <string name="export_fail">صادرات ناموفق بود</string>
     <string name="no_browsers">هیچ مرورگری بر روی این دستگاه نصب نشده است</string>
     <string name="copied_to_clipboard">در بریده‌دان رونوشت شد</string>
 

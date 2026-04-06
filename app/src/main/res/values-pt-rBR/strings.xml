@@ -38,6 +38,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">Teste sua senha</string>
+    <string name="copy">Copiar</string>
+    <string name="share">Compartilhar</string>
+    <string name="export">Exportar</string>
     <string name="ten_b_guesses_per_sec">10B tentativas/segundo</string>
     <string name="ten_k_guesses_per_sec">10K tentativas/segundo</string>
     <string name="ten_guesses_per_sec">10 tentativas/segundo</string>
@@ -92,9 +95,6 @@
     <string name="numbers">N\u00FAmeros</string>
     <string name="special_char">Caracteres especiais</string>
     <string name="spaces">Espa\u00E7os</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
@@ -108,9 +108,7 @@
 
     <!--Generate password fragment-->
     <string name="details">Detalhes</string>
-    <string name="copy">Copiar</string>
     <string name="regenerate">Gerar novamente</string>
-    <string name="share">Compartilhar</string>
     <string name="customize">Personalizar</string>
     <string name="ext_chars">Caracteres extendidos</string>
     <string name="avoid_amb_chars">Evitar caracteres amb\u00EDguos</string>
@@ -144,6 +142,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Cancelar</string>
+    <string name="dismiss">Descartar</string>
     <string name="done">Pronto</string>
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testar v\u00E1rias senhas</string>
@@ -158,6 +157,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">Exportado com sucesso</string>
+    <string name="export_fail">Falha na exportação</string>
     <string name="no_browsers">Nenhum navegador instalado neste dispositivo</string>
     <string name="copied_to_clipboard">Copiado para \u00E1rea de transfer\u00EAncia</string>
     <!--#########################################################################################-->

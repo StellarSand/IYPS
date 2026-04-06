@@ -45,6 +45,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">\u015Eifrenizi test edin</string>
+    <string name="copy">Anla\u015F\u0131ld\u0131</string>
+    <string name="share">Payla\u015F</string>
+    <string name="export">Dı\u015Fa aktar</string>
     <string name="ten_b_guesses_per_sec">10B tahmin/saniye</string>
     <string name="ten_k_guesses_per_sec">10k tahmin/saniye</string>
     <string name="ten_guesses_per_sec">10 tahmin/saniye</string>
@@ -99,14 +102,11 @@
     <string name="numbers">Say\u0131lar</string>
     <string name="special_char">\u00D6zel karakterler</string>
     <string name="spaces">Alanlar</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
-    <string name="back">Back</string>
+    <string name="back">Geri</string>
     <string name="view">G\u00F6r\u00FCn\u00FCm</string>
     <string name="sort">S\u0131rala</string>
 
@@ -117,9 +117,7 @@
 
     <!--Generate password fragment-->
     <string name="details">Detaylar</string>
-    <string name="copy">Anla\u015F\u0131ld\u0131</string>
     <string name="regenerate">Yenilenme</string>
-    <string name="share">Payla\u015F</string>
     <string name="customize">\u00D6zelle\u015Ftirme</string>
     <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Belirsiz karakterlerden ka\u00E7\u0131n\u0131n</string>
@@ -157,6 +155,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">\u0130ptal et</string>
+    <string name="dismiss">Kapat</string>
     <string name="done">Bitti</string>
 
     <!--Test multiple passwords-->
@@ -175,6 +174,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">Ba\u015Far\u0131yla d\u0131\u015Fa aktar\u0131ld\u0131</string>
+    <string name="export_fail">D\u0131\u015Fa aktarma ba\u015Far\u0131s\u0131z oldu</string>
     <string name="no_browsers">Bu cihazda y\u00FCkl\u00FC taray\u0131c\u0131 yok</string>
     <string name="copied_to_clipboard">Panoya kopyaland\u0131</string>
 

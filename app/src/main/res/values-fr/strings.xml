@@ -40,6 +40,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">Tester votre mot de passe</string>
+    <string name="copy">Copie</string>
+    <string name="share">Partager</string>
+    <string name="export">Exporter</string>
     <string name="ten_b_guesses_per_sec">10B suppositions/seconde</string>
     <string name="ten_k_guesses_per_sec">10k suppositions/seconde</string>
     <string name="ten_guesses_per_sec">10 suppositions/seconde</string>
@@ -94,14 +97,11 @@
     <string name="numbers">Chiffres</string> <!-- On compte le nombre de chiffres -->
     <string name="special_char">Caract\u00E8res sp\u00E9ciaux</string>
     <string name="spaces">Espaces</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
-    <string name="back">Back</string>
+    <string name="back">Retour</string>
     <string name="view">Voir</string>
     <string name="sort">Trier</string>
 
@@ -112,9 +112,7 @@
 
     <!--Generate password fragment-->
     <string name="details">Des d\u00E9tails</string>
-    <string name="copy">Copie</string>
     <string name="regenerate">R\u00E9g\u00E9n\u00E9rer</string>
-    <string name="share">Partager</string>
     <string name="customize">Personnaliser</string>
     <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">\u00C9viter les caract\u00E8res ambigus</string>
@@ -152,6 +150,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Annuler</string>
+    <string name="dismiss">Fermer</string>
     <string name="done">Termin\u00E9</string>
 
     <!--Test multiple passwords-->
@@ -170,6 +169,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">Exportation réussie</string>
+    <string name="export_fail">L\'exportation a échoué</string>
     <string name="no_browsers">Aucun navigateur n\'est install\u00E9 sur cet appareil</string>
     <string name="copied_to_clipboard">Copi\u00E9 dans le presse-papiers</string>
 

@@ -14,13 +14,24 @@
   ~
   ~     You should have received a copy of the GNU General Public License
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-  --><resources>
+  -->
+
+<resources>
+
+    <!--Bottom nav view-->
     <string name="test">Testi</string>
     <string name="generate">Loo</string>
     <string name="password">Salasõna</string>
     <string name="passphrase">Salafraas</string>
     <string name="settings">Seadistused</string>
+
+    <!--#########################################################################################-->
+
+    <!--Test fragment-->
     <string name="test_your_password">Testi oma salasõna</string>
+    <string name="copy">Kopeeri</string>
+    <string name="share">Jaga</string>
+    <string name="export">Ekspordi</string>
     <string name="ten_b_guesses_per_sec">10 mld oletamist/sekundis</string>
     <string name="ten_k_guesses_per_sec">10 tuh oletamist sekundis</string>
     <string name="ten_guesses_per_sec">10 oletamist sekundis</string>
@@ -49,6 +60,7 @@
     <string name="suggestions">Soovitused</string>
     <string name="est_guesses_to_crack">Salasõna murdmise hinnanguline katsete arv</string>
     <string name="est_time_to_crack">Salasõna murdmise hinnanguline aeg</string>
+    <string name="order_of_magn">Oletamise suurusjärk</string>
     <string name="entropy">Entroopia (juhuslikkuse määr)</string>
     <string name="bits">bitti</string>
     <string name="match_sequence">Tuvastamise järjekord</string>
@@ -57,6 +69,16 @@
     <string name="rank">• Asukoht loendis</string>
     <string name="reversed">• Tagurpidi</string>
     <string name="substitutions">• Asendusi</string>
+    <string name="base_token">• Baaslekseem</string>
+    <string name="repeat_times">• Korratud %1$s korda</string>
+    <string name="sequence_name">• Järjestuse nimi</string>
+    <string name="sequence_size">• Järjestuse suurus</string>
+    <string name="ascending">• Kasvav</string>
+    <string name="separator">• Eraldaja</string>
+    <string name="graph">• Graaf</string>
+    <string name="turns">• Pöördeid</string>
+    <string name="regex_name">• Regulaaravaldise nimi</string>
+    <string name="shifted_times">• Vahetatud %1$s korda</string>
     <string name="statistics">Statistika</string>
     <string name="length">Pikkus</string>
     <string name="uppercase">Suurtähti</string>
@@ -64,25 +86,34 @@
     <string name="numbers">Numbreid</string>
     <string name="special_char">Erimärke</string>
     <string name="spaces">Tühikuid</string>
-    <string name="export">Ekspordi</string>
-    <string name="export_success">Eksportimine õnnestus</string>
-    <string name="export_fail">Eksportimine ei õnnestunud</string>
+
+    <!--#########################################################################################-->
+
+    <!--Multi password activity-->
     <string name="back">Tagasi</string>
     <string name="view">Vaata</string>
-    <string name="order_of_magn">Oletamise suurusjärk</string>
-    <string name="worst_pass_warning">Salasõna on äraarvamise mõttes liiga lihtne.</string>
     <string name="sort">Järjestus</string>
+
+    <!--#########################################################################################-->
+
+    <!--Generate fragments-->
     <string name="generate_multiple">Loo mitu</string>
+
+    <!--Generate password fragment-->
     <string name="details">Üksikasjad</string>
-    <string name="copy">Kopeeri</string>
     <string name="regenerate">Loo uuesti</string>
-    <string name="share">Jaga</string>
     <string name="customize">Kohanda</string>
     <string name="ext_chars">Täiendavad tähemärgid</string>
     <string name="avoid_amb_chars">Väldi mitmetähenduslikke tähemärke</string>
     <string name="include_spaces">Kasuta tühikuid</string>
+
+    <!--Generate passphrase fragment-->
     <string name="words">Sõnu</string>
     <string name="capitalize">Kasuta suurtähti</string>
+
+    <!--#########################################################################################-->
+
+    <!--Settings fragment-->
     <string name="app_version">Versioon</string>
     <string name="appearance">Välimus</string>
     <string name="theme">Kujundus</string>
@@ -96,28 +127,45 @@
     <string name="support">Kasutajatugi</string>
     <string name="view_on_github">Vaata GitHubis</string>
     <string name="third_party_licenses">Kolmandate osapoolte litsentsid</string>
+
+    <!--#########################################################################################-->
+
+    <!--Custom warnings-->
+    <string name="worst_pass_warning">Salasõna on äraarvamise mõttes liiga lihtne.</string>
     <string name="weak_pass_warning">Salasõna on lihtsalt murtav.</string>
-    <string name="regex_name">• Regulaaravaldise nimi</string>
-    <string name="shifted_times">• Vahetatud %1$s korda</string>
     <string name="medium_pass_warning">Salasõna pole piisavalt tugev.</string>
+
+    <!--#########################################################################################-->
+
+    <!--Bottom sheet-->
     <string name="cancel">Katkesta</string>
+    <string name="dismiss">Lõpeta</string>
     <string name="done">Valmis</string>
+
+    <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testi mitut salasõna korraga</string>
     <string name="add">Lisa</string>
     <string name="select_file">Vali fail</string>
+
+    <!--Add multiple passwords-->
     <string name="add_multi_pwds">Lisa mitu salasõna</string>
+
+    <!--Theme-->
     <string name="follow_system">Järgi süsteemi kujundust</string>
     <string name="light">Hele kujundus</string>
     <string name="dark">Tume kujundus</string>
+
+    <!--#########################################################################################-->
+
+    <!--Snackbars-->
+    <string name="export_success">Eksportimine õnnestus</string>
+    <string name="export_fail">Eksportimine ei õnnestunud</string>
     <string name="no_browsers">Selles nutiseadmes pole brausereid</string>
     <string name="copied_to_clipboard">Kopeerisin lõikelauale</string>
+
+    <!--#########################################################################################-->
+
+    <!--Quick settings tile-->
     <string name="app_in_use">IYPS on kasutusel</string>
-    <string name="base_token">• Baaslekseem</string>
-    <string name="repeat_times">• Korratud %1$s korda</string>
-    <string name="sequence_name">• Järjestuse nimi</string>
-    <string name="sequence_size">• Järjestuse suurus</string>
-    <string name="ascending">• Kasvav</string>
-    <string name="separator">• Eraldaja</string>
-    <string name="graph">• Graaf</string>
-    <string name="turns">• Pöördeid</string>
+
 </resources>

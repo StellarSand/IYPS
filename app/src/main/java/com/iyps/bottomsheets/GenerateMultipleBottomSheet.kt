@@ -66,7 +66,10 @@ class GenerateMultipleBottomSheet(private val isPassphraseFragment: Boolean = fa
             )
         
         // Cancel
-        footerBinding.cancelBtn.setOnClickListener { dismiss() }
+        footerBinding.cancelBtn.apply {
+            text = getString(R.string.dismiss)
+            setOnClickListener { dismiss() }
+        }
         
         // Regenerate
         /*footerBinding.doneBtn.apply {

@@ -39,6 +39,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">Testen sie ihr Passwort</string>
+    <string name="copy">Kopieren</string>
+    <string name="share">Teilen</string>
+    <string name="export">Exportieren</string>
     <string name="ten_b_guesses_per_sec">10B Vermutungen/Sekunde</string>
     <string name="ten_k_guesses_per_sec">10k Vermutungen/Sekunde</string>
     <string name="ten_guesses_per_sec">10 Vermutungen/Sekunde</string>
@@ -93,27 +96,22 @@
     <string name="numbers">Zahlen</string>
     <string name="special_char">Sonderzeichen</string>
     <string name="spaces">Leerzeichen</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
-    <string name="back">Back</string>
+    <string name="back">Zurück</string>
     <string name="view">Ansicht</string>
     <string name="sort">Sortierung</string>
 
     <!--#########################################################################################-->
 
     <!--Generate fragments-->
-    <string name="generate_multiple">Generate multiple</string>
+    <string name="generate_multiple">Mehrere generieren</string>
 
     <!--Generate password fragment-->
     <string name="details">Details</string>
-    <string name="copy">Kopieren</string>
     <string name="regenerate">Regenerieren</string>
-    <string name="share">Teilen</string>
     <string name="customize">Anpassen</string>
     <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Zweideutige Zeichen vermeiden</string>
@@ -151,6 +149,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Abbrechen</string>
+    <string name="dismiss">Schließen</string>
     <string name="done">Erledigt</string>
 
     <!--Test multiple passwords-->
@@ -169,6 +168,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">Erfolgreich exportiert</string>
+    <string name="export_fail">Der Export ist fehlgeschlagen</string>
     <string name="no_browsers">Es ist kein Browser auf diesem Ger\u00E4t installiert.</string>
     <string name="copied_to_clipboard">In die Zwischenablage kopiert</string>
 

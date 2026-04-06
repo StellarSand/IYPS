@@ -42,6 +42,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">Pruebe su contrase\u00F1a</string>
+    <string name="copy">Copia</string>
+    <string name="share">Compartir</string>
+    <string name="export">Exportar</string>
     <string name="ten_b_guesses_per_sec">10B conjeturas/segundo</string>
     <string name="ten_k_guesses_per_sec">10k conjeturas/segundo</string>
     <string name="ten_guesses_per_sec">10 conjeturas/segundo</string>
@@ -96,9 +99,6 @@
     <string name="numbers">N\u00FAmeros</string>
     <string name="special_char">Caracteres especiales</string>
     <string name="spaces">Espacios</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 
@@ -114,9 +114,7 @@
 
     <!--Generate password fragment-->
     <string name="details">Detalles</string>
-    <string name="copy">Copia</string>
     <string name="regenerate">Regenere</string>
-    <string name="share">Compartir</string>
     <string name="customize">Personalice</string>
     <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Evite los caracteres ambiguos</string>
@@ -153,6 +151,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Cancelar</string>
+    <string name="dismiss">Cerrar</string>
     <string name="done">Hecho</string>
 
     <!--Test multiple passwords-->
@@ -171,6 +170,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">Se ha exportado correctamente</string>
+    <string name="export_fail">Error al exportar</string>
     <string name="no_browsers">No hay navegadores instalados en este dispositivo</string>
     <string name="copied_to_clipboard">Copiado al portapapeles</string>
 

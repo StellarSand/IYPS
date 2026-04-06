@@ -33,6 +33,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">Testa ditt l\u00F6senord</string>
+    <string name="copy">Kopia</string>
+    <string name="share">Andel</string>
+    <string name="export">Exportera</string>
     <string name="ten_b_guesses_per_sec">10B gissningar/sekund</string>
     <string name="ten_k_guesses_per_sec">10k gissningar/sekund</string>
     <string name="ten_guesses_per_sec">10 gissningar/sekund</string>
@@ -87,9 +90,6 @@
     <string name="numbers">Siffror</string>
     <string name="special_char">S\u00E4rskilda tecken</string>
     <string name="spaces">Utrymmen</string>
-    <string name="export">Exportera</string>
-    <string name="export_success">Exporterad framgångsrikt</string>
-    <string name="export_fail">Exportering misslyckades</string>
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
@@ -102,9 +102,7 @@
     <string name="generate_multiple">Generera multipla</string>
     <!--Generate password fragment-->
     <string name="details">Detaljer</string>
-    <string name="copy">Kopia</string>
     <string name="regenerate">Regenerera</string>
-    <string name="share">Andel</string>
     <string name="customize">Anpassa</string>
     <string name="ext_chars">Utökade tecken</string>
     <string name="avoid_amb_chars">Undvik tvetydiga tecken</string>
@@ -138,6 +136,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Avbryt</string>
+    <string name="dismiss">Stäng</string>
     <string name="done">Klar</string>
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testa flera l\u00F6senord</string>
@@ -152,6 +151,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">Exporterad framgångsrikt</string>
+    <string name="export_fail">Exportering misslyckades</string>
     <string name="no_browsers">Inga webbl\u00E4sare installerade p\u00E5 den h\u00E4r enheten</string>
     <string name="copied_to_clipboard">Kopierad till urklipp</string>
     <!--#########################################################################################-->

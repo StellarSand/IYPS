@@ -35,6 +35,9 @@
 
     <!--Test fragment-->
     <string name="test_your_password">Test je wachtwoord</string>
+    <string name="copy">Kopie</string>
+    <string name="share">Deel</string>
+    <string name="export">Exporteren</string>
     <string name="ten_b_guesses_per_sec">10B gissingen/seconde</string>
     <string name="ten_k_guesses_per_sec">10k gissingen/seconde</string>
     <string name="ten_guesses_per_sec">10 gissingen/seconde</string>
@@ -89,14 +92,11 @@
     <string name="numbers">Cijfers</string>
     <string name="special_char">Speciale tekens</string>
     <string name="spaces">Ruimtes</string>
-    <string name="export">Export</string>
-    <string name="export_success">Exported successfully</string>
-    <string name="export_fail">Export failed</string>
 
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
-    <string name="back">Back</string>
+    <string name="back">Terug</string>
     <string name="view">Bekijk</string>
     <string name="sort">Sorteer</string>
 
@@ -107,9 +107,7 @@
 
     <!--Generate password fragment-->
     <string name="details">Details</string>
-    <string name="copy">Kopie</string>
     <string name="regenerate">Regenereer</string>
-    <string name="share">Deel</string>
     <string name="customize">Pas  aan</string>
     <string name="ext_chars">Extended characters</string>
     <string name="avoid_amb_chars">Vermijd dubbelzinnige tekens</string>
@@ -147,6 +145,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Annuleren</string>
+    <string name="dismiss">Ontsla</string>
     <string name="done">Gedaan</string>
 
     <!--Test multiple passwords-->
@@ -165,6 +164,8 @@
     <!--#########################################################################################-->
 
     <!--Snackbars-->
+    <string name="export_success">Succesvol geëxporteerd</string>
+    <string name="export_fail">Exporteren is mislukt</string>
     <string name="no_browsers">Geen browsers ge\u00EFnstalleerd op dit apparaat</string>
     <string name="copied_to_clipboard">Gekopieerd naar klembord</string>
 
