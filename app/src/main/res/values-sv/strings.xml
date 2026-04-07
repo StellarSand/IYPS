@@ -136,7 +136,7 @@
 
     <!--Bottom sheet-->
     <string name="cancel">Avbryt</string>
-    <string name="dismiss">Stäng</string>
+    <string name="dismiss">Avvisa</string>
     <string name="done">Klar</string>
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testa flera l\u00F6senord</string>
