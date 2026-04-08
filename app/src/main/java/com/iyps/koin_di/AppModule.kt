@@ -18,7 +18,6 @@
 package com.iyps.koin_di
 
 import android.app.Application
-import android.os.Build
 import com.iyps.R
 import com.iyps.inputstream.ResourceFromInputStream
 import com.iyps.preferences.PreferenceManager
@@ -28,10 +27,8 @@ import com.nulabinc.zxcvbn.ZxcvbnBuilder
 import com.nulabinc.zxcvbn.matchers.DictionaryLoader
 import org.koin.core.qualifier.named
 import org.koin.dsl.module
-import java.io.BufferedReader
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
-import java.io.InputStreamReader
 import java.security.NoSuchAlgorithmException
 import java.security.SecureRandom
 import kotlin.sequences.forEach
@@ -118,10 +115,7 @@ val appModule =
         
         single {
             try {
-                when {
-                    Build.VERSION.SDK_INT >= 26 -> SecureRandom.getInstanceStrong()
-                    else -> SecureRandom()
-                }
+                SecureRandom.getInstanceStrong()
             }
             catch (e: NoSuchAlgorithmException) {
                 throw RuntimeException("SecureRandom algorithm not available", e)
@@ -129,14 +123,15 @@ val appModule =
         }
         
         single {
-            val wordMap = mutableMapOf<String, String>()
-            BufferedReader(InputStreamReader(get<Application>().resources.openRawResource(R.raw.eff_passphrase_long)))
+            val wordMap = hashMapOf<String, String>()
+            get<Application>().resources.openRawResource(R.raw.eff_passphrase_long)
+                .bufferedReader()
                 .useLines { lines ->
                     lines.forEach { line ->
                         val (id, word) = line.split("\t")
                         wordMap[id] = word
                     }
                 }
-            wordMap
+            wordMap as Map<String, String>
         }
     }

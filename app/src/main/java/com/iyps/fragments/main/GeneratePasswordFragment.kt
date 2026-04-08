@@ -55,7 +55,6 @@ import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
-import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setGenPwdTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
@@ -192,59 +191,44 @@ class GeneratePasswordFragment : Fragment() {
         showGeneratedPassword()
         
         // Details
-        fragmentBinding.pwdDetailsBtn.apply {
-            setButtonTooltipText(getString(R.string.details))
-            setOnClickListener {
-                startActivity(Intent(requireActivity(), DetailsActivity::class.java)
-                                  .putExtra("PwdLine", generatedPwdString),
-                              ActivityOptions.makeSceneTransitionAnimation(requireActivity()).toBundle())
-            }
+        fragmentBinding.pwdDetailsBtn.setOnClickListener {
+            startActivity(Intent(requireActivity(), DetailsActivity::class.java)
+                              .putExtra("PwdLine", generatedPwdString),
+                          ActivityOptions.makeSceneTransitionAnimation(requireActivity()).toBundle())
         }
         
         // Copy
-        fragmentBinding.pwdCopyBtn.apply {
-            setButtonTooltipText(getString(R.string.copy))
-            setOnClickListener {
-                val clipData = ClipData.newPlainText("", generatedPwdString)
-                clipData.hideSensitiveContent()
-                (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
-                // Show snackbar only if 12L or lower to avoid duplicate notifications
-                // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
-                if (Build.VERSION.SDK_INT <= 32) {
-                    showSnackbar(mainActivity.activityBinding.mainCoordLayout,
-                                 requireContext().getString(R.string.copied_to_clipboard),
-                                 mainActivity.activityBinding.mainBottomNav)
-                }
+        fragmentBinding.pwdCopyBtn.setOnClickListener {
+            val clipData = ClipData.newPlainText("", generatedPwdString)
+            clipData.hideSensitiveContent()
+            (requireContext().getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
+            // Show snackbar only if 12L or lower to avoid duplicate notifications
+            // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
+            if (Build.VERSION.SDK_INT <= 32) {
+                showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                             requireContext().getString(R.string.copied_to_clipboard),
+                             mainActivity.activityBinding.mainBottomNav)
             }
         }
         
         // Regenerate
-        fragmentBinding.pwdRegenerateBtn.apply {
-            setButtonTooltipText(getString(R.string.regenerate))
-            setOnClickListener {
-                showGeneratedPassword()
-            }
+        fragmentBinding.pwdRegenerateBtn.setOnClickListener {
+            showGeneratedPassword()
         }
         
         // Share
-        fragmentBinding.pwdShareBtn.apply {
-            setButtonTooltipText(getString(R.string.share))
-            setOnClickListener {
-                requireActivity().shareText(generatedPwdString)
-            }
+        fragmentBinding.pwdShareBtn.setOnClickListener {
+            requireActivity().shareText(generatedPwdString)
         }
         
         // Generate multiple
-        fragmentBinding.pwdMultiGenBtn.apply {
-            setButtonTooltipText(getString(R.string.generate_multiple))
-            setOnClickListener {
-                lifecycleScope.launch {
-                    (1..7).map {
-                        async { GenerateMultiList.multiList.add(generatePassword()) }
-                    }.awaitAll()
-                }
-                GenerateMultipleBottomSheet().show(parentFragmentManager, "GenerateMultipleBottomSheet")
+        fragmentBinding.pwdMultiGenBtn.setOnClickListener {
+            lifecycleScope.launch {
+                (1..7).map {
+                    async { GenerateMultiList.multiList.add(generatePassword()) }
+                }.awaitAll()
             }
+            GenerateMultipleBottomSheet().show(parentFragmentManager, "GenerateMultipleBottomSheet")
         }
         
     }
@@ -259,50 +243,51 @@ class GeneratePasswordFragment : Fragment() {
     
     private suspend fun generatePassword(): String {
         return withContext(Dispatchers.Default) {
-            val allChars = buildString {
+            val allChars = buildList {
                 if (uppercaseSwitch.isChecked) {
-                    append(
-                        if (extCharsSwitch.isChecked) UPPERCASE_EXT_CHARS else "",
-                        if (avoidAmbCharsSwitch.isChecked) uppercaseWithoutAmbChars.ifEmpty {
-                            // Generate non-ambiguous chars only if not done already.
-                            // This would avoid unnecessary generations everytime this function is called.
-                            getNonAmbChars(UPPERCASE_CHARS,
-                                           UPPERCASE_AMB_CHARS).also {
-                                uppercaseWithoutAmbChars = it
-                            }
-                        }
-                        else UPPERCASE_CHARS
-                    )
+                    if (extCharsSwitch.isChecked) addAll(UPPERCASE_EXT_CHARS.asIterable())
+                    if (avoidAmbCharsSwitch.isChecked) {
+                        addAll(
+                            uppercaseWithoutAmbChars.ifEmpty {
+                                getNonAmbChars(UPPERCASE_CHARS, UPPERCASE_AMB_CHARS).also {
+                                    uppercaseWithoutAmbChars = it
+                                }
+                            }.asIterable()
+                        )
+                    }
+                    else addAll(UPPERCASE_CHARS.asIterable())
                 }
                 if (lowercaseSwitch.isChecked) {
-                    append(
-                        if (extCharsSwitch.isChecked) LOWERCASE_EXT_CHARS else "",
-                        if (avoidAmbCharsSwitch.isChecked) lowercaseWithoutAmbChars.ifEmpty {
-                            getNonAmbChars(LOWERCASE_CHARS,
-                                           LOWERCASE_AMB_CHARS).also {
-                                lowercaseWithoutAmbChars = it
-                            }
-                        }
-                        else LOWERCASE_CHARS
-                    )
+                    if (extCharsSwitch.isChecked) addAll(LOWERCASE_EXT_CHARS.asIterable())
+                    if (avoidAmbCharsSwitch.isChecked) {
+                        addAll(
+                            lowercaseWithoutAmbChars.ifEmpty {
+                                getNonAmbChars(LOWERCASE_CHARS, LOWERCASE_AMB_CHARS).also {
+                                    lowercaseWithoutAmbChars = it
+                                }
+                            }.asIterable()
+                        )
+                    }
+                    else addAll(LOWERCASE_CHARS.asIterable())
                 }
                 if (numbersSwitch.isChecked) {
-                    append(
-                        if (avoidAmbCharsSwitch.isChecked) numbersWithoutAmbChars.ifEmpty {
-                            getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also {
-                                numbersWithoutAmbChars = it
-                            }
-                        }
-                        else NUMBERS
-                    )
+                    if (avoidAmbCharsSwitch.isChecked) {
+                        addAll(
+                            numbersWithoutAmbChars.ifEmpty {
+                                getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also {
+                                    numbersWithoutAmbChars = it
+                                }
+                            }.asIterable()
+                        )
+                    }
+                    else addAll(NUMBERS.asIterable())
                 }
-                if (specialCharsSwitch.isChecked) append(SPECIAL_CHARS)
+                if (specialCharsSwitch.isChecked) addAll(SPECIAL_CHARS.asIterable())
             }
             
-            buildString {
-                val length = fragmentBinding.pwdLengthSlider.value.toInt()
-                val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
-                
+            val length = fragmentBinding.pwdLengthSlider.value.toInt()
+            val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
+            buildString(capacity = length) {
                 for (i in 0 until length) {
                     if (includeSpaceSwitch.isChecked
                         && i in 1 until (length - 1) // Avoid spaces at the beginning & end
@@ -311,7 +296,7 @@ class GeneratePasswordFragment : Fragment() {
                         append(' ')
                     }
                     else {
-                        val randomIndex = secureRandom.nextInt(allChars.length)
+                        val randomIndex = secureRandom.nextInt(allChars.size)
                         append(allChars[randomIndex])
                     }
                 }

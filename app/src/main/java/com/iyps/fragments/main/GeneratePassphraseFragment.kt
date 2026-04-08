@@ -46,7 +46,6 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
-import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setGenPhraseTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
@@ -54,7 +53,6 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.koin.android.ext.android.get
 import org.koin.android.ext.android.inject
 import java.security.SecureRandom
 
@@ -63,6 +61,8 @@ class GeneratePassphraseFragment : Fragment() {
     private var _binding: FragmentGeneratePassphraseBinding? = null
     private val fragmentBinding get() = _binding!!
     private val prefManager by inject<PreferenceManager>()
+    private val wordMap by inject<Map<String, String>>()
+    private val secureRandom by inject<SecureRandom>()
     private var generatedPhraseString: String = ""
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -142,7 +142,6 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Copy
         fragmentBinding.phraseCopyBtn.apply {
-            setButtonTooltipText(getString(R.string.copy))
             setOnClickListener {
                 val clipData = ClipData.newPlainText("", fragmentBinding.phraseGeneratedTextView.text)
                 clipData.hideSensitiveContent()
@@ -158,66 +157,59 @@ class GeneratePassphraseFragment : Fragment() {
         }
         
         // Regenerate
-        fragmentBinding.phraseRegenerateBtn.apply {
-            setButtonTooltipText(getString(R.string.regenerate))
-            setOnClickListener {
-                showGeneratedPassphrase()
-            }
+        fragmentBinding.phraseRegenerateBtn.setOnClickListener {
+            showGeneratedPassphrase()
         }
         
         // Share
-        fragmentBinding.phraseShareBtn.apply {
-            setButtonTooltipText(getString(R.string.share))
-            setOnClickListener {
-                requireActivity().shareText(fragmentBinding.phraseGeneratedTextView.text.toString())
-            }
+        fragmentBinding.phraseShareBtn.setOnClickListener {
+            requireActivity().shareText(fragmentBinding.phraseGeneratedTextView.text.toString())
         }
         
         // Generate multiple
-        fragmentBinding.phraseMultiGenBtn.apply {
-            setButtonTooltipText(getString(R.string.generate_multiple))
-            setOnClickListener {
-                lifecycleScope.launch {
-                    (1..7).map {
-                        async { GenerateMultiList.multiList.add(generatePassphrase()) }
-                    }.awaitAll()
-                }
-                GenerateMultipleBottomSheet(isPassphraseFragment = true).show(parentFragmentManager, "GenerateMultipleBottomSheet")
+        fragmentBinding.phraseMultiGenBtn.setOnClickListener {
+            lifecycleScope.launch {
+                (1..7).map {
+                    async { GenerateMultiList.multiList.add(generatePassphrase()) }
+                }.awaitAll()
             }
+            GenerateMultipleBottomSheet(isPassphraseFragment = true).show(parentFragmentManager, "GenerateMultipleBottomSheet")
         }
     }
     
     private suspend fun generatePassphrase(): String {
         val numberOfWords = fragmentBinding.phraseWordsSlider.value.toInt()
+        val shouldCapitalize = fragmentBinding.capitalizeSwitch.isChecked
+        
+        // Append zero width space (\u200B) to the separator
+        // This will break/wrap the line after the separator,
+        // instead of in the middle of a word
+        val separator =
+            if (fragmentBinding.separatorDropdownMenu.text.toString() == getString(R.string.spaces)) " \u200B"
+            else "${fragmentBinding.separatorDropdownMenu.text}\u200B"
+        
         return withContext(Dispatchers.Default) {
             buildString {
                 for (i in 0 until numberOfWords) {
-                    val dieRollsValues =
-                        IntArray(5) { get<SecureRandom>().nextInt(6) + 1 } // Rolling a six-sided die five times.
-                    val wordKey = dieRollsValues.joinToString("") // Form a string key
-                    var word = get<Map<String, String>>()[wordKey] // Find the word from words list with corresponding key
-                    
-                    if (fragmentBinding.capitalizeSwitch.isChecked) {
+                    val wordKey =
+                        buildString(capacity = 5) {
+                            // Rolling a six-sided die five times
+                            repeat(5) {
+                                append(secureRandom.nextInt(6) + 1)
+                            }
+                        }
+                    var word = wordMap[wordKey] // Find the word from words list with corresponding key
+                    if (shouldCapitalize) {
                         word =
                             word?.replaceFirstChar { char ->
                                 char.titlecase()
                             }
                     }
-                    
                     append(word)
-                    if (i < numberOfWords - 1) {
-                        append(
-                            // Append \u200B (zero width space) to the separator
-                            // This will break/wrap the line after the separator,
-                            // instead of in the middle of the word
-                            if (fragmentBinding.separatorDropdownMenu.text.toString() == getString(R.string.spaces)) " \u200B"
-                            else "${fragmentBinding.separatorDropdownMenu.text}\u200B"
-                        )
-                    }
+                    if (i < numberOfWords - 1) append(separator)
                 }
             }
         }
-        
     }
     
     private fun showGeneratedPassphrase() {

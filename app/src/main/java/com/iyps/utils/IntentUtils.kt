@@ -57,7 +57,7 @@ class IntentUtils {
             }
         }
         
-        fun Activity.shareText(text: CharSequence) {
+        fun Activity.shareText(text: String) {
             startActivity(
                 Intent.createChooser(
                     Intent(Intent.ACTION_SEND)
