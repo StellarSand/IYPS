@@ -67,7 +67,8 @@
                 app:icon="@drawable/ic_copy"
                 app:iconGravity="textStart"
                 style="?attr/materialIconButtonFilledTonalStyle"
-                android:contentDescription="@string/copy"/>
+                android:contentDescription="@string/copy"
+                android:tooltipText="@string/copy"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseRegenerateBtn"
@@ -76,7 +77,8 @@
                 app:icon="@drawable/ic_regenerate"
                 app:iconGravity="textStart"
                 style="?attr/materialIconButtonFilledTonalStyle"
-                android:contentDescription="@string/regenerate"/>
+                android:contentDescription="@string/regenerate"
+                android:tooltipText="@string/regenerate"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseShareBtn"
@@ -85,7 +87,8 @@
                 app:icon="@drawable/ic_share"
                 app:iconGravity="textStart"
                 style="?attr/materialIconButtonFilledTonalStyle"
-                android:contentDescription="@string/share"/>
+                android:contentDescription="@string/share"
+                android:tooltipText="@string/share"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseMultiGenBtn"
@@ -94,7 +97,8 @@
                 app:icon="@drawable/ic_multi_generate"
                 app:iconGravity="textStart"
                 style="?attr/materialIconButtonFilledTonalStyle"
-                android:contentDescription="@string/generate_multiple"/>
+                android:contentDescription="@string/generate_multiple"
+                android:tooltipText="@string/generate_multiple"/>
 
         </com.google.android.material.button.MaterialButtonGroup>
 

@@ -58,6 +58,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:icon="@drawable/ic_back"
                 android:contentDescription="@string/back"
+                android:tooltipText="@string/back"
                 style="?attr/materialIconButtonStyle"/>
 
             <com.google.android.material.button.MaterialButton
@@ -70,6 +71,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:icon="@drawable/ic_view_grid"
                 android:contentDescription="@string/view"
+                android:tooltipText="@string/view"
                 style="?attr/materialIconButtonStyle"/>
 
             <com.google.android.material.button.MaterialButton
@@ -82,6 +84,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:icon="@drawable/ic_sort"
                 android:contentDescription="@string/sort"
+                android:tooltipText="@string/sort"
                 style="?attr/materialIconButtonStyle"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

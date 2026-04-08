@@ -59,7 +59,8 @@
             app:iconSize="@dimen/margin_20"
             app:iconGravity="textStart"
             style="?attr/materialIconButtonFilledTonalStyle"
-            android:contentDescription="@string/details"/>
+            android:contentDescription="@string/details"
+            android:tooltipText="@string/details"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/genMultiItemCopyBtn"
@@ -73,7 +74,8 @@
             app:iconSize="@dimen/margin_20"
             app:iconGravity="textStart"
             style="?attr/materialIconButtonFilledTonalStyle"
-            android:contentDescription="@string/copy"/>
+            android:contentDescription="@string/copy"
+            android:tooltipText="@string/copy"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/genMultiItemShareBtn"
@@ -87,7 +89,8 @@
             app:iconSize="@dimen/margin_20"
             app:iconGravity="textStart"
             style="?attr/materialIconButtonFilledTonalStyle"
-            android:contentDescription="@string/share"/>
+            android:contentDescription="@string/share"
+            android:tooltipText="@string/share"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

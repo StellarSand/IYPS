@@ -28,7 +28,6 @@ import com.iyps.fragments.details.DetailsFragment
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
-import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setNavBarContrastEnforced
 import org.koin.android.ext.android.get
 
@@ -55,10 +54,7 @@ class DetailsActivity : AppCompatActivity() {
         window.blockScreenshots(get<PreferenceManager>().getBoolean(BLOCK_SS))
         
         // Back
-        activityBinding.detailsBackBtn.apply {
-            setButtonTooltipText(getString(R.string.back))
-            setOnClickListener { onBackPressedDispatcher.onBackPressed() }
-        }
+        activityBinding.detailsBackBtn.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
         
         supportFragmentManager.beginTransaction()
             .replace(R.id.activity_host_fragment, DetailsFragment())

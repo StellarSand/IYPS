@@ -30,10 +30,10 @@ android {
 
     defaultConfig {
         applicationId = "com.iyps"
-        minSdk = 23
+        minSdk = 26
         targetSdk = 36
-        versionCode = 156
-        versionName = "1.5.6"
+        versionCode = 158
+        versionName = "1.5.8"
         extensions.getByType<BasePluginExtension>().archivesName.set("${rootProject.name}_v$versionName")
     }
     

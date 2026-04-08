@@ -27,7 +27,6 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.text.buildSpannedString
 import androidx.core.text.inSpans
-import com.google.android.material.button.MaterialButton
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
@@ -120,10 +119,6 @@ class UiUtils {
                         }
                     }
                 }
-        }
-        
-        fun MaterialButton.setButtonTooltipText(text: String) {
-            if (Build.VERSION.SDK_INT >= 26) tooltipText = text
         }
         
         fun showSnackbar(coordinatorLayout: CoordinatorLayout,

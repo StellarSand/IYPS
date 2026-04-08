@@ -35,7 +35,6 @@ import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.GRID_VIEW
 import com.iyps.preferences.PreferenceManager.Companion.SORT_ASC
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
-import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setNavBarContrastEnforced
 import org.koin.android.ext.android.inject
 import kotlin.getValue
@@ -70,16 +69,12 @@ class MultiPwdActivity : AppCompatActivity() {
         window.blockScreenshots(prefManager.getBoolean(BLOCK_SS))
         
         // Back
-        activityBinding.backButton.apply {
-            setButtonTooltipText(getString(R.string.back))
-            setOnClickListener {
-                onBackPressedDispatcher.onBackPressed()
-            }
+        activityBinding.backButton.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
         }
         
         // View
         activityBinding.viewButton.apply {
-            setButtonTooltipText(getString(R.string.view))
             setViewButtonIcon()
             setOnClickListener {
                 isGridView = !isGridView
@@ -89,12 +84,9 @@ class MultiPwdActivity : AppCompatActivity() {
         }
         
         // Sort
-        activityBinding.sortButton.apply {
-            setButtonTooltipText(getString(R.string.sort))
-            setOnClickListener {
-                isAscSort = !isAscSort
-                navController.navigate(R.id.action_multiPwdFragment_self)
-            }
+        activityBinding.sortButton.setOnClickListener {
+            isAscSort = !isAscSort
+            navController.navigate(R.id.action_multiPwdFragment_self)
         }
     }
     

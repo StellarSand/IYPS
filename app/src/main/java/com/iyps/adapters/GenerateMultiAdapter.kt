@@ -35,7 +35,6 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
-import com.iyps.utils.UiUtils.Companion.setButtonTooltipText
 import com.iyps.utils.UiUtils.Companion.setGenPwdTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 
@@ -67,7 +66,6 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
         // Details
         holder.detailsBtn.apply {
             if (!isPassphrase) {
-                setButtonTooltipText(context.getString(R.string.details))
                 setOnClickListener {
                     context.startActivity(Intent(context, DetailsActivity::class.java)
                                               .putExtra("PwdLine", holder.pwdLine.text.toString()),
@@ -82,7 +80,6 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
         
         // Copy
         holder.copyBtn.apply {
-            setButtonTooltipText(context.getString(R.string.copy))
             setOnClickListener {
                 val clipData = ClipData.newPlainText("", holder.pwdLine.text.toString())
                 clipData.hideSensitiveContent()
@@ -98,11 +95,8 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
         }
         
         // Share
-        holder.shareBtn.apply {
-            setButtonTooltipText(context.getString(R.string.share))
-            setOnClickListener {
-                mainActivity.shareText(holder.pwdLine.text)
-            }
+        holder.shareBtn.setOnClickListener {
+            mainActivity.shareText(holder.pwdLine.text.toString())
         }
     }
     
