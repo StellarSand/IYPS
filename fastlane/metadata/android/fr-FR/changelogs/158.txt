@@ -1,0 +1,5 @@
+- Mise à jour du classement des 200 mots de passe les plus utilisés.
+- Copier, partager et exporter les résultats des tests de sécurité des mots de passe.
+- Générer plusieurs mots de passe et phrases de passe.
+- Formatage des nombres adapté à la région.
+- Nouvelles traductions et mise à jour des traductions existantes (fournies par la communauté).

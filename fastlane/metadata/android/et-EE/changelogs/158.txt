@@ -1,0 +1,5 @@
+- Uuendatud 200 populaarsemat parooli.
+- Paroolitesti tulemuste kopeerimine, jagamine ja eksportimine.
+- Mitme parooli ja paroolifraasi genereerimine.
+- Kohalik numbrite vorming.
+- Uued tõlked ja olemasolevate tõlgete uuendamine (kogukonna poolt lisatud).

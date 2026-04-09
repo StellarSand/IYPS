@@ -1,0 +1,5 @@
+- Aktualizovaný seznam 200 nejčastějších hesel.
+- Kopírování, sdílení a export výsledků testování hesel.
+- Generování více hesel a heslových frází.
+- Lokální formátování čísel.
+- Nové překlady a aktualizace stávajících (od komunity).

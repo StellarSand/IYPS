@@ -1,0 +1,5 @@
+- Aggiornamento della classifica delle 200 password più utilizzate.
+- Copia, condivisione ed esportazione dei risultati dei test sulle password.
+- Generazione di più password e frasi di accesso.
+- Formattazione dei numeri in base alle impostazioni locali.
+- Nuove traduzioni e aggiornamento di quelle esistenti (fornite dalla comunità).

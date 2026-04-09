@@ -1,0 +1,5 @@
+- De top 200 van wachtwoorden is bijgewerkt.
+- Resultaten van wachtwoordtests kopiëren, delen en exporteren.
+- Meerdere wachtwoorden en wachtzinnen genereren.
+- Aangepaste notatie voor getallen.
+- Nieuwe vertalingen en bijgewerkte bestaande vertalingen (aangeleverd door de community).

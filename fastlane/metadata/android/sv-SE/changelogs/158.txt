@@ -1,0 +1,5 @@
+- Uppdaterad lista över de 200 vanligaste lösenorden.
+- Kopiera, dela och exportera resultat från lösenordstester.
+- Skapa flera lösenord och lösenfraser.
+- Lokaliserad talformatering.
+- Nya översättningar och uppdaterade befintliga översättningar (bidrag från användargemenskapen).

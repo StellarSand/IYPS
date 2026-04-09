@@ -1,0 +1,5 @@
+- En popüler 200 şifre listesi güncellendi.
+- Şifre testi sonuçlarını kopyalayın, paylaşın ve dışa aktarın.
+- Birden fazla şifre ve şifre cümlesi oluşturun.
+- Yerelleştirilmiş sayı biçimlendirme.
+- Yeni çeviriler ve güncellenen mevcut çeviriler (topluluk tarafından sağlandı).

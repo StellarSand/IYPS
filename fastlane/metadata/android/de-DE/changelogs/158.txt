@@ -1,0 +1,5 @@
+- Die Liste der 200 häufigsten Passwörter wurde aktualisiert.
+- Passwort-Testergebnisse kopieren, teilen und exportieren.
+- Mehrere Passwörter und Passphrasen generieren.
+- Lokalisierte Zahlenformatierung.
+- Neue Übersetzungen und Aktualisierung bestehender Übersetzungen (von der Community beigesteuert).

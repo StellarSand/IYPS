@@ -1,0 +1,5 @@
+- Atualização das 200 senhas mais usadas.
+- Copiar, compartilhar e exportar os resultados dos testes de senhas.
+- Gerar várias senhas e frases-senha.
+- Formatação de números localizada.
+- Novas traduções e atualização das já existentes (contribuição da comunidade).

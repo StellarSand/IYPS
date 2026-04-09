@@ -1,0 +1,5 @@
+- Atualização das 200 palavras-passe mais utilizadas.
+- Copiar, partilhar e exportar os resultados dos testes de palavras-passe.
+- Gerar várias palavras-passe e frases-passe.
+- Formatação de números localizada.
+- Novas traduções e atualização das já existentes (contribuição da comunidade).

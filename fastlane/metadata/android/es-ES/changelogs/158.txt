@@ -1,0 +1,5 @@
+- Actualización de las 200 contraseñas más utilizadas.
+- Copiar, compartir y exportar los resultados de las pruebas de contraseñas.
+- Generar múltiples contraseñas y frases de contraseña.
+- Formato numérico adaptado a cada país.
+- Nuevas traducciones y actualización de las ya existentes (aportadas por la comunidad).

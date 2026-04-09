@@ -1,6 +1,13 @@
 # CHANGELOG
 
 
+## v1.5.8
+- Updated top 200 passwords.
+- Copy, share & export password test results.
+- Generate multiple passwords & passphrases.
+- Localized number formatting.
+- New translations & updated existing ones (contributed by the community).
+
 
 ## v1.5.6
 - Support for Android 16.
