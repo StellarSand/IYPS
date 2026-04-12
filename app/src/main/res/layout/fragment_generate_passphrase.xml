@@ -132,7 +132,7 @@
             android:id="@+id/phraseWordsSlider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/wordsText"
+            app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
             app:layout_constraintEnd_toEndOf="@id/phraseGeneratedTextView"
             app:layout_constraintTop_toBottomOf="@id/wordsText"
             android:layout_marginHorizontal="@dimen/margin_8"
@@ -140,25 +140,15 @@
             android:valueFrom="3.0"
             android:valueTo="20.0"/>
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/separatorText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/phraseCustomizeText"
-            app:layout_constraintTop_toBottomOf="@id/phraseWordsSlider"
-            android:layout_marginHorizontal="@dimen/margin_8"
-            android:layout_marginTop="@dimen/margin_25"
-            android:text="@string/separator"
-            android:textColor="?attr/colorOnSurface"
-            android:textSize="@dimen/text_16"/>
-
         <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/separatorTextInputLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
             app:layout_constraintEnd_toEndOf="@id/phraseGeneratedTextView"
-            app:layout_constraintTop_toTopOf="@id/separatorText"
-            app:layout_constraintBottom_toBottomOf="@id/separatorText"
-            android:layout_marginEnd="@dimen/margin_12"
+            app:layout_constraintTop_toBottomOf="@id/phraseWordsSlider"
+            android:layout_marginHorizontal="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_20"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
             <AutoCompleteTextView
@@ -166,6 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none"
+                android:hint="@string/separator"
                 tools:ignore="LabelFor" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -174,13 +165,26 @@
             android:id="@+id/capitalizeSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toStartOf="@id/phraseCustomizeText"
+            app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
             app:layout_constraintEnd_toEndOf="@id/phraseGeneratedTextView"
-            app:layout_constraintTop_toBottomOf="@id/separatorText"
+            app:layout_constraintTop_toBottomOf="@id/separatorTextInputLayout"
             android:layout_marginHorizontal="@dimen/margin_25"
-            android:layout_marginTop="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_12"
             android:checked="true"
             android:text="@string/capitalize"
+            android:textSize="@dimen/text_16"/>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/phraseNumbersSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
+            app:layout_constraintEnd_toEndOf="@id/phraseGeneratedTextView"
+            app:layout_constraintTop_toBottomOf="@id/capitalizeSwitch"
+            android:layout_marginHorizontal="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_8"
+            android:checked="true"
+            android:text="@string/numbers"
             android:textSize="@dimen/text_16"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

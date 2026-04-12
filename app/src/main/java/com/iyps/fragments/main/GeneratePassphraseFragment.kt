@@ -41,10 +41,12 @@ import com.iyps.databinding.FragmentGeneratePassphraseBinding
 import com.iyps.objects.GenerateMultiList
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
+import com.iyps.preferences.PreferenceManager.Companion.PHRASE_NUMBERS
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
+import com.iyps.utils.TextUtils.Companion.PHRASE_SEPARATORS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setGenPhraseTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
@@ -109,21 +111,12 @@ class GeneratePassphraseFragment : Fragment() {
         }
         
         // Separator dropdown
-        fragmentBinding.separatorText.text = getString(R.string.separator).removePrefix("\u2022 ")
+        fragmentBinding.separatorTextInputLayout.hint = getString(R.string.separator).removePrefix("\u2022 ")
         (fragmentBinding.separatorDropdownMenu as MaterialAutoCompleteTextView).apply {
             setText(prefManager.getString(PHRASE_SEPARATOR))
             setSimpleItems(
-                arrayOf(
-                    "-",
-                    ".",
-                    ",",
-                    "|",
-                    "_",
-                    "+",
-                    ";",
-                    ":",
-                    getString(R.string.spaces)
-                )
+                PHRASE_SEPARATORS.map { it.toString() }.toTypedArray() +
+                getString(R.string.spaces)
             )
             setOnItemClickListener { _, _, _, _ ->
                 showGeneratedPassphrase()
@@ -133,6 +126,14 @@ class GeneratePassphraseFragment : Fragment() {
         // Capitalize
         fragmentBinding.capitalizeSwitch.apply {
             isChecked = prefManager.getBoolean(PHRASE_CAPITALIZE)
+            setOnCheckedChangeListener { _, _ ->
+                showGeneratedPassphrase()
+            }
+        }
+        
+        // Numbers
+        fragmentBinding.phraseNumbersSwitch.apply {
+            isChecked = prefManager.getBoolean(PHRASE_NUMBERS)
             setOnCheckedChangeListener { _, _ ->
                 showGeneratedPassphrase()
             }
@@ -223,8 +224,9 @@ class GeneratePassphraseFragment : Fragment() {
         super.onPause()
         prefManager.apply {
             setFloat(PHRASE_WORDS, fragmentBinding.phraseWordsSlider.value)
-            setBoolean(PHRASE_CAPITALIZE, fragmentBinding.capitalizeSwitch.isChecked)
             setString(PHRASE_SEPARATOR, fragmentBinding.separatorDropdownMenu.text.toString())
+            setBoolean(PHRASE_CAPITALIZE, fragmentBinding.capitalizeSwitch.isChecked)
+            setBoolean(PHRASE_NUMBERS, fragmentBinding.phraseNumbersSwitch.isChecked)
         }
     }
     

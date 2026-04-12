@@ -21,7 +21,7 @@ class TextUtils {
     
     companion object {
         const val SPECIAL_CHARS = "!@#$%^&*+_-.=:%"
-        const val PHRASE_SEPARATORS="-.,|_+;:"
+        const val PHRASE_SEPARATORS="-.,|_+@#$&;:"
     }
     
 }

@@ -38,6 +38,7 @@ class PreferenceManager(context: Context) {
         const val PHRASE_WORDS = "phrase_words"
         const val PHRASE_SEPARATOR = "phrase_separator"
         const val PHRASE_CAPITALIZE = "phrase_capitalize"
+        const val PHRASE_NUMBERS = "phrase_numbers"
         const val MATERIAL_YOU = "material_you"
         const val BLOCK_SS = "block_ss"
         const val INCOG_KEYBOARD = "incog_keyboard"
