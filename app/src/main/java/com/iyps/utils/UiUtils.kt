@@ -105,6 +105,7 @@ class UiUtils {
                     genPhraseString.forEach { char ->
                         val color =
                             when {
+                                char.isDigit() -> R.color.color_number
                                 char in PHRASE_SEPARATORS-> R.color.color_specChars
                                 else -> null
                             }

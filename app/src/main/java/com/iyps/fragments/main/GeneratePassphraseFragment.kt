@@ -181,6 +181,11 @@ class GeneratePassphraseFragment : Fragment() {
     private suspend fun generatePassphrase(): String {
         val numberOfWords = fragmentBinding.phraseWordsSlider.value.toInt()
         val shouldCapitalize = fragmentBinding.capitalizeSwitch.isChecked
+        val shouldAddNumbers = fragmentBinding.phraseNumbersSwitch.isChecked
+        val maxNums = (numberOfWords * 0.4).coerceAtMost(8.0).toInt()
+        val numberPositions: Set<Int>? =
+            if (shouldAddNumbers) (0 until numberOfWords).shuffled().take(maxNums).toSet()
+            else null
         
         // Append zero width space (\u200B) to the separator
         // This will break/wrap the line after the separator,
@@ -191,7 +196,7 @@ class GeneratePassphraseFragment : Fragment() {
         
         return withContext(Dispatchers.Default) {
             buildString {
-                for (i in 0 until numberOfWords) {
+                (0 until numberOfWords).forEach {
                     val wordKey =
                         buildString(capacity = 5) {
                             // Rolling a six-sided die five times
@@ -207,7 +212,10 @@ class GeneratePassphraseFragment : Fragment() {
                             }
                     }
                     append(word)
-                    if (i < numberOfWords - 1) append(separator)
+                    if (shouldAddNumbers && numberPositions?.contains(it) == true) {
+                        append(secureRandom.nextInt(9) + 1) // Random number from 1-9
+                    }
+                    if (it < numberOfWords - 1) append(separator)
                 }
             }
         }
