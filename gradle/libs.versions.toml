@@ -22,7 +22,7 @@ appcompat = "1.7.1"
 coreKtx = "1.18.0"
 splashscreen = "1.2.0"
 material3 = "1.14.0-alpha09"
-koin = "4.1.1" # v4.2.0 causes issues with backstack
+koin = "4.1.1" # v4.2.0 & above causes issues with backstack
 navigationKtx = "2.9.7"
 zxcvbn4j = "1.8.2" # Don't update to 1.9.0
 # with 1.9.0, time to crack calculations are wrong, sometimes giving 0 months/years

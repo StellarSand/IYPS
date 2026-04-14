@@ -29,9 +29,7 @@ import org.koin.core.qualifier.named
 import org.koin.dsl.module
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
-import java.security.NoSuchAlgorithmException
 import java.security.SecureRandom
-import kotlin.sequences.forEach
 
 val appModule =
     module {
@@ -114,24 +112,6 @@ val appModule =
         }
         
         single {
-            try {
-                SecureRandom.getInstanceStrong()
-            }
-            catch (e: NoSuchAlgorithmException) {
-                throw RuntimeException("SecureRandom algorithm not available", e)
-            }
-        }
-        
-        single {
-            val wordMap = hashMapOf<String, String>()
-            get<Application>().resources.openRawResource(R.raw.eff_passphrase_long)
-                .bufferedReader()
-                .useLines { lines ->
-                    lines.forEach { line ->
-                        val (id, word) = line.split("\t")
-                        wordMap[id] = word
-                    }
-                }
-            wordMap as Map<String, String>
+            SecureRandom.getInstanceStrong()
         }
     }

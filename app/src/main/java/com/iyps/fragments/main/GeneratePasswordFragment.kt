@@ -108,6 +108,7 @@ class GeneratePasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val mainActivity = requireActivity() as MainActivity
+        var sliderOldValue = prefManager.getFloat(PWD_LENGTH)
         uppercaseSwitch = fragmentBinding.uppercaseSwitch
         lowercaseSwitch = fragmentBinding.lowercaseSwitch
         numbersSwitch = fragmentBinding.numbersSwitch
@@ -139,12 +140,15 @@ class GeneratePasswordFragment : Fragment() {
         
         // Password length slider
         fragmentBinding.pwdLengthSlider.apply {
-            value = prefManager.getFloat(PWD_LENGTH)
+            value = sliderOldValue
             fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
                 override fun onStopTrackingTouch(slider: Slider) {
-                    showGeneratedPassword()
+                    if (slider.value != sliderOldValue) {
+                        sliderOldValue = slider.value
+                        showGeneratedPassword()
+                    }
                 }
             })
             addOnChangeListener { _, value, _ ->

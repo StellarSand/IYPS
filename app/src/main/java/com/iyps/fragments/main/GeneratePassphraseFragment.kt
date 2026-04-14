@@ -43,7 +43,8 @@ import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_NUMBERS
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR
-import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS
+import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDLIST_POS
+import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS_COUNT
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.TextUtils.Companion.PHRASE_SEPARATORS
@@ -57,13 +58,15 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.inject
 import java.security.SecureRandom
+import kotlin.sequences.forEach
 
 class GeneratePassphraseFragment : Fragment() {
     
     private var _binding: FragmentGeneratePassphraseBinding? = null
     private val fragmentBinding get() = _binding!!
     private val prefManager by inject<PreferenceManager>()
-    private val wordMap by inject<Map<String, String>>()
+    private var wordListDropDownSelectedPos = 0
+    private var wordMap = mapOf<String, String>()
     private val secureRandom by inject<SecureRandom>()
     private var generatedPhraseString: String = ""
     
@@ -79,6 +82,9 @@ class GeneratePassphraseFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val mainActivity = requireActivity() as MainActivity
+        var sliderOldValue = prefManager.getFloat(PHRASE_WORDS_COUNT, defValue = 6f)
+        val wordlistDropdownArray = arrayOf("EFF long", "EFF short (memorable)", "EFF short (typo-tolerant)")
+        wordListDropDownSelectedPos = prefManager.getInt(PHRASE_WORDLIST_POS)
         
         // Adjust scrollview for edge to edge
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.phraseScrollView) { v, windowInsets ->
@@ -93,20 +99,35 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Password length slider
         fragmentBinding.phraseWordsSlider.apply {
-            value = prefManager.getFloat(PHRASE_WORDS, defValue = 6f)
+            value = sliderOldValue
             fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${value.toInt()}"
-            
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
-                
                 override fun onStopTrackingTouch(slider: Slider) {
-                    showGeneratedPassphrase()
+                    if (slider.value != sliderOldValue) {
+                        sliderOldValue = slider.value
+                        showGeneratedPassphrase()
+                    }
                 }
                 
             })
-            
             addOnChangeListener { _, value, _ ->
                 fragmentBinding.wordsText.text = "${getString(R.string.words)}: ${value.toInt()}"
+            }
+        }
+        
+        // Wordlist dropdown
+        (fragmentBinding.wordlistDropdownMenu as MaterialAutoCompleteTextView).apply {
+            setText(wordlistDropdownArray[wordListDropDownSelectedPos])
+            setSimpleItems(wordlistDropdownArray)
+            setOnItemClickListener { _, _, position, _ ->
+                if (position != wordListDropDownSelectedPos) {
+                    wordListDropDownSelectedPos = position
+                    lifecycleScope.launch {
+                        wordMap = getWordMapFromRes()
+                        showGeneratedPassphrase()
+                    }
+                }
             }
         }
         
@@ -133,13 +154,16 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Numbers
         fragmentBinding.phraseNumbersSwitch.apply {
-            isChecked = prefManager.getBoolean(PHRASE_NUMBERS)
+            isChecked = prefManager.getBoolean(PHRASE_NUMBERS, defValue = false)
             setOnCheckedChangeListener { _, _ ->
                 showGeneratedPassphrase()
             }
         }
         
-        showGeneratedPassphrase()
+        lifecycleScope.launch {
+            wordMap = getWordMapFromRes()
+            showGeneratedPassphrase()
+        }
         
         // Copy
         fragmentBinding.phraseCopyBtn.apply {
@@ -178,12 +202,36 @@ class GeneratePassphraseFragment : Fragment() {
         }
     }
     
+    private suspend fun getWordMapFromRes(): Map<String, String> {
+        return withContext(Dispatchers.IO) {
+            val wordlistWordMap = hashMapOf<String, String>()
+            val wordlistRawRes =
+                when (wordListDropDownSelectedPos) {
+                    0 -> resources.openRawResource(R.raw.eff_passphrase_long)
+                    1 -> resources.openRawResource(R.raw.eff_passphrase_short)
+                    else -> resources.openRawResource(R.raw.eff_passphrase_typo_tolerant)
+                }
+            
+            wordlistRawRes
+                .bufferedReader()
+                .useLines { lines ->
+                    lines.forEach { line ->
+                        val (id, word) = line.split("\t")
+                        wordlistWordMap[id] = word
+                    }
+                }
+            
+            wordlistWordMap as Map<String, String>
+        }
+    }
+    
     private suspend fun generatePassphrase(): String {
         val numberOfWords = fragmentBinding.phraseWordsSlider.value.toInt()
+        val repeatTimes = if (wordListDropDownSelectedPos == 0) 5 else 4
         val shouldCapitalize = fragmentBinding.capitalizeSwitch.isChecked
         val shouldAddNumbers = fragmentBinding.phraseNumbersSwitch.isChecked
         val maxNums = (numberOfWords * 0.4).coerceAtMost(8.0).toInt()
-        val numberPositions: Set<Int>? =
+        val numPositions: Set<Int>? =
             if (shouldAddNumbers) (0 until numberOfWords).shuffled().take(maxNums).toSet()
             else null
         
@@ -198,9 +246,9 @@ class GeneratePassphraseFragment : Fragment() {
             buildString {
                 (0 until numberOfWords).forEach {
                     val wordKey =
-                        buildString(capacity = 5) {
-                            // Rolling a six-sided die five times
-                            repeat(5) {
+                        buildString(capacity = repeatTimes) {
+                            // Rolling a six-sided die five (or four) times
+                            repeat(repeatTimes) {
                                 append(secureRandom.nextInt(6) + 1)
                             }
                         }
@@ -212,7 +260,7 @@ class GeneratePassphraseFragment : Fragment() {
                             }
                     }
                     append(word)
-                    if (shouldAddNumbers && numberPositions?.contains(it) == true) {
+                    if (shouldAddNumbers && numPositions?.contains(it) == true) {
                         append(secureRandom.nextInt(9) + 1) // Random number from 1-9
                     }
                     if (it < numberOfWords - 1) append(separator)
@@ -231,7 +279,8 @@ class GeneratePassphraseFragment : Fragment() {
     override fun onPause() {
         super.onPause()
         prefManager.apply {
-            setFloat(PHRASE_WORDS, fragmentBinding.phraseWordsSlider.value)
+            setFloat(PHRASE_WORDS_COUNT, fragmentBinding.phraseWordsSlider.value)
+            setInt(PHRASE_WORDLIST_POS, wordListDropDownSelectedPos)
             setString(PHRASE_SEPARATOR, fragmentBinding.separatorDropdownMenu.text.toString())
             setBoolean(PHRASE_CAPITALIZE, fragmentBinding.capitalizeSwitch.isChecked)
             setBoolean(PHRASE_NUMBERS, fragmentBinding.phraseNumbersSwitch.isChecked)

@@ -112,8 +112,10 @@
             android:layout_marginTop="@dimen/margin_30"
             android:drawableStart="@drawable/ic_customize"
             android:drawablePadding="@dimen/margin_12"
+            android:drawableTint="?attr/colorSecondary"
             android:text="@string/customize"
             android:textSize="@dimen/text_18"
+            android:textColor="?attr/colorSecondary"
             style="@style/MediumBoldText"/>
 
         <com.google.android.material.textview.MaterialTextView
@@ -141,7 +143,7 @@
             android:valueTo="20.0"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/separatorTextInputLayout"
+            android:id="@+id/wordlistTextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
@@ -149,6 +151,27 @@
             app:layout_constraintTop_toBottomOf="@id/phraseWordsSlider"
             android:layout_marginHorizontal="@dimen/margin_25"
             android:layout_marginTop="@dimen/margin_20"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+            <AutoCompleteTextView
+                android:id="@+id/wordlistDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:hint="Wordlist"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/separatorTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
+            app:layout_constraintEnd_toEndOf="@id/phraseGeneratedTextView"
+            app:layout_constraintTop_toBottomOf="@id/wordlistTextInputLayout"
+            android:layout_marginHorizontal="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_12"
             style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
             <AutoCompleteTextView
@@ -183,7 +206,7 @@
             app:layout_constraintTop_toBottomOf="@id/capitalizeSwitch"
             android:layout_marginHorizontal="@dimen/margin_25"
             android:layout_marginTop="@dimen/margin_8"
-            android:checked="true"
+            android:checked="false"
             android:text="@string/numbers"
             android:textSize="@dimen/text_16"/>
 
