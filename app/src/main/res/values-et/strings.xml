@@ -77,11 +77,11 @@
     <string name="shifted_times">• Vahetatud %1$s korda</string>
     <string name="statistics">Statistika</string>
     <string name="length">Pikkus</string>
-    <string name="uppercase">Suurtähti</string>
-    <string name="lowercase">Väiketähti</string>
-    <string name="numbers">Numbreid</string>
-    <string name="special_char">Erimärke</string>
-    <string name="spaces">Tühikuid</string>
+    <string name="uppercase">Suurtähed</string>
+    <string name="lowercase">Väiketähed</string>
+    <string name="numbers">Numbrid</string>
+    <string name="special_char">Erimärgid</string>
+    <string name="spaces">Tühikud</string>
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
@@ -91,7 +91,7 @@
     <!--#########################################################################################-->
 
     <!--Generate fragments-->
-    <string name="generate_multiple">Loo mitu</string>
+    <string name="generate_multiple">Mitu salasõna</string>
     <!--Generate password fragment-->
     <string name="details">Üksikasjad</string>
     <string name="regenerate">Loo uuesti</string>
@@ -101,10 +101,10 @@
     <string name="include_spaces">Kasuta tühikuid</string>
     <!--Generate passphrase fragment-->
     <string name="words">Sõnu</string>
-    <string name="wordlist">Wordlist</string>
-    <string name="eff_long">EFF long</string>
-    <string name="eff_short_1">EFF short (memorable)</string>
-    <string name="eff_short_2">EFF short (typo-tolerant)</string>
+    <string name="wordlist">Sõnade loend</string>
+    <string name="eff_long">EFF-i pikk loend</string>
+    <string name="eff_short_1">EFF-i lühike (meeldejäetav)</string>
+    <string name="eff_short_2">EFF-i lühike (trükiveakindel)</string>
     <string name="capitalize">Kasuta suurtähti</string>
     <!--#########################################################################################-->
 
