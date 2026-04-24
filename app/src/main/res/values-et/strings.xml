@@ -101,6 +101,10 @@
     <string name="include_spaces">Kasuta tühikuid</string>
     <!--Generate passphrase fragment-->
     <string name="words">Sõnu</string>
+    <string name="wordlist">Wordlist</string>
+    <string name="eff_long">EFF long</string>
+    <string name="eff_short_1">EFF short (memorable)</string>
+    <string name="eff_short_2">EFF short (typo-tolerant)</string>
     <string name="capitalize">Kasuta suurtähti</string>
     <!--#########################################################################################-->
 

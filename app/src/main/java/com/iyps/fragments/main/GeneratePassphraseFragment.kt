@@ -83,7 +83,12 @@ class GeneratePassphraseFragment : Fragment() {
         
         val mainActivity = requireActivity() as MainActivity
         var sliderOldValue = prefManager.getFloat(PHRASE_WORDS_COUNT, defValue = 6f)
-        val wordlistDropdownArray = arrayOf("EFF long", "EFF short (memorable)", "EFF short (typo-tolerant)")
+        val wordlistDropdownArray =
+            arrayOf(
+                getString(R.string.eff_long),
+                getString(R.string.eff_short_1),
+                getString(R.string.eff_short_2)
+            )
         wordListDropDownSelectedPos = prefManager.getInt(PHRASE_WORDLIST_POS)
         
         // Adjust scrollview for edge to edge

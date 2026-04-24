@@ -115,6 +115,10 @@
     <string name="include_spaces">Incluir espa\u00E7os</string>
     <!--Generate passphrase fragment-->
     <string name="words">Palavras</string>
+    <string name="wordlist">Wordlist</string>
+    <string name="eff_long">EFF long</string>
+    <string name="eff_short_1">EFF short (memorable)</string>
+    <string name="eff_short_2">EFF short (typo-tolerant)</string>
     <string name="capitalize">Iniciais mai\u00FAsculas</string>
     <!--#########################################################################################-->
 
