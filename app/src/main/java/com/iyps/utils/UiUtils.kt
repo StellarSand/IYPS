@@ -76,46 +76,20 @@ class UiUtils {
             return (dp * context.resources.displayMetrics.density).toInt()
         }
         
-        fun MaterialTextView.setGenPwdTextWithColor(genPwdString: String) {
+        fun MaterialTextView.setGenTextWithColor(generatedString: String, isPassphrase: Boolean = false) {
+            val digitColor = context.resources.getColor(R.color.color_number, context.theme)
+            val specCharsColor = context.resources.getColor(R.color.color_specChars, context.theme)
+            val defaultColor = MaterialColors.getColor(this, com.google.android.material.R.attr.colorOnSurface)
             text =
                 buildSpannedString {
-                    genPwdString.forEach { char ->
+                    generatedString.forEach { char ->
                         val color =
                             when {
-                                char.isDigit() -> R.color.color_number
-                                char in SPECIAL_CHARS -> R.color.color_specChars
-                                else -> null
+                                char.isDigit() -> digitColor
+                                char in (if (!isPassphrase) SPECIAL_CHARS else PHRASE_SEPARATORS) -> specCharsColor
+                                else -> defaultColor
                             }
-                        inSpans(ForegroundColorSpan(
-                            color?.let {
-                                context.resources.getColor(it, context.theme)
-                            }
-                            ?: MaterialColors.getColor(this@setGenPwdTextWithColor,
-                                                       com.google.android.material.R.attr.colorOnSurface)
-                        )) {
-                            append(char)
-                        }
-                    }
-                }
-        }
-        
-        fun MaterialTextView.setGenPhraseTextWithColor(genPhraseString: String) {
-            text =
-                buildSpannedString {
-                    genPhraseString.forEach { char ->
-                        val color =
-                            when {
-                                char.isDigit() -> R.color.color_number
-                                char in PHRASE_SEPARATORS-> R.color.color_specChars
-                                else -> null
-                            }
-                        inSpans(ForegroundColorSpan(
-                            color?.let {
-                                context.resources.getColor(it, context.theme)
-                            }
-                            ?: MaterialColors.getColor(this@setGenPhraseTextWithColor,
-                                                       com.google.android.material.R.attr.colorOnSurface)
-                        )) {
+                        inSpans(ForegroundColorSpan(color)) {
                             append(char)
                         }
                     }

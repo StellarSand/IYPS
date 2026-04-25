@@ -35,7 +35,7 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
-import com.iyps.utils.UiUtils.Companion.setGenPwdTextWithColor
+import com.iyps.utils.UiUtils.Companion.setGenTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 
 class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
@@ -61,7 +61,7 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         
         // Generated password
-        holder.pwdLine.setGenPwdTextWithColor(aListViewItems[position])
+        holder.pwdLine.setGenTextWithColor(aListViewItems[position], isPassphrase)
         
         // Details
         holder.detailsBtn.apply {

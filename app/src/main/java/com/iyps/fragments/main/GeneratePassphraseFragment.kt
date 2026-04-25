@@ -49,7 +49,7 @@ import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.TextUtils.Companion.PHRASE_SEPARATORS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
-import com.iyps.utils.UiUtils.Companion.setGenPhraseTextWithColor
+import com.iyps.utils.UiUtils.Companion.setGenTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -239,6 +239,8 @@ class GeneratePassphraseFragment : Fragment() {
         val repeatTimes = if (wordListDropdownSelectedPos == 0) 5 else 4
         val shouldCapitalize = fragmentBinding.capitalizeSwitch.isChecked
         val shouldAddNumbers = fragmentBinding.phraseNumbersSwitch.isChecked
+        val maxNums: Int
+        var numPositions: Set<Int>? = null
         
         // Append zero width space (\u200B) to the separator
         // This will break/wrap the line after the separator,
@@ -248,10 +250,10 @@ class GeneratePassphraseFragment : Fragment() {
             else "${fragmentBinding.separatorDropdownMenu.text}\u200B"
         
         return withContext(Dispatchers.Default) {
-            val maxNums = (wordsCount * 0.4).coerceAtMost(8.0).toInt()
-            val numPositions: Set<Int>? =
-                if (shouldAddNumbers) (0 until wordsCount).shuffled().take(maxNums).toSet()
-                else null
+            if (shouldAddNumbers) {
+                maxNums = (wordsCount * 0.4).coerceAtMost(8.0).toInt()
+                numPositions = (0 until wordsCount).shuffled().take(maxNums).toSet()
+            }
             
             buildString {
                 (0 until wordsCount).forEach {
@@ -282,7 +284,9 @@ class GeneratePassphraseFragment : Fragment() {
     private fun showGeneratedPassphrase() {
         lifecycleScope.launch {
             generatedPhraseString = generatePassphrase()
-            fragmentBinding.phraseGeneratedTextView.setGenPhraseTextWithColor(generatedPhraseString)
+            fragmentBinding.phraseGeneratedTextView.setGenTextWithColor(
+                generatedString = generatedPhraseString,
+                isPassphrase = true)
         }
     }
     
