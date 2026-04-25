@@ -37,7 +37,7 @@ class PreferenceManager(context: Context) {
         const val PWD_SPACES = "pwd_spaces"
         const val PHRASE_WORDS_COUNT = "phrase_words_count"
         const val PHRASE_WORDLIST_POS = "phrase_wordlist_pos"
-        const val PHRASE_SEPARATOR = "phrase_separator"
+        const val PHRASE_SEPARATOR_POS = "phrase_separator_pos"
         const val PHRASE_CAPITALIZE = "phrase_capitalize"
         const val PHRASE_NUMBERS = "phrase_numbers"
         const val MATERIAL_YOU = "material_you"

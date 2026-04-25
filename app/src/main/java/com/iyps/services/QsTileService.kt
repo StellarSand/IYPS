@@ -23,12 +23,10 @@ import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
-import androidx.annotation.RequiresApi
 import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.objects.AppState
 
-@RequiresApi(Build.VERSION_CODES.N)
 class QsTileService : TileService() {
     
     override fun onStartListening() {
@@ -56,14 +54,16 @@ class QsTileService : TileService() {
             }
         
         if (Build.VERSION.SDK_INT >= 34) {
-            startActivityAndCollapse(PendingIntent.getActivity(this,
-                                                               0,
-                                                               intent,
-                                                               PendingIntent.FLAG_IMMUTABLE))
+            startActivityAndCollapse(
+                PendingIntent.getActivity(
+                    this,
+                    0,
+                    intent,
+                    PendingIntent.FLAG_IMMUTABLE
+                )
+            )
         }
-        else {
-            startActivityAndCollapse(intent)
-        }
+        else startActivityAndCollapse(intent)
     }
     
 }
