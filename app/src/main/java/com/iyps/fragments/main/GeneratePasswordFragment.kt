@@ -55,7 +55,7 @@ import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
-import com.iyps.utils.UiUtils.Companion.setGenPwdTextWithColor
+import com.iyps.utils.UiUtils.Companion.setGenTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
@@ -82,6 +82,7 @@ class GeneratePasswordFragment : Fragment() {
     private var uppercaseWithoutAmbChars = ""
     private var lowercaseWithoutAmbChars = ""
     private var numbersWithoutAmbChars = ""
+    private var sliderValue = 0.0f
     private val secureRandom by inject<SecureRandom>()
     private var generatedPwdString: String = ""
     
@@ -108,7 +109,7 @@ class GeneratePasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         val mainActivity = requireActivity() as MainActivity
-        var sliderOldValue = prefManager.getFloat(PWD_LENGTH)
+        sliderValue = prefManager.getFloat(PWD_LENGTH)
         uppercaseSwitch = fragmentBinding.uppercaseSwitch
         lowercaseSwitch = fragmentBinding.lowercaseSwitch
         numbersSwitch = fragmentBinding.numbersSwitch
@@ -140,13 +141,13 @@ class GeneratePasswordFragment : Fragment() {
         
         // Password length slider
         fragmentBinding.pwdLengthSlider.apply {
-            value = sliderOldValue
+            value = sliderValue
             fragmentBinding.pwdLengthText.text = "${getString(R.string.length)}: ${value.toInt()}"
             addOnSliderTouchListener(object : Slider.OnSliderTouchListener {
                 override fun onStartTrackingTouch(slider: Slider) {}
                 override fun onStopTrackingTouch(slider: Slider) {
-                    if (slider.value != sliderOldValue) {
-                        sliderOldValue = slider.value
+                    if (slider.value != sliderValue) {
+                        sliderValue = slider.value
                         showGeneratedPassword()
                     }
                 }
@@ -289,14 +290,28 @@ class GeneratePasswordFragment : Fragment() {
                 if (specialCharsSwitch.isChecked) addAll(SPECIAL_CHARS.asIterable())
             }
             
-            val length = fragmentBinding.pwdLengthSlider.value.toInt()
-            val maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
+            val length = sliderValue.toInt()
+            val shouldAddSpaces = includeSpaceSwitch.isChecked
+            val maxSpaces: Int
+            val spacePositions = mutableSetOf<Int>()
+            if (shouldAddSpaces) {
+                maxSpaces = (length * 0.2).coerceAtMost(15.0).toInt()
+                
+                // To avoid spaces at the start & end,
+                // iterate from 1 < (length - 1)
+                for (index in (1 until (length - 1)).shuffled()) {
+                    if (spacePositions.size >= maxSpaces) break
+                    
+                    // Prevent consecutive indexes for spaces
+                    if (!spacePositions.contains(index - 1) && !spacePositions.contains(index + 1)) {
+                        spacePositions.add(index)
+                    }
+                }
+            }
+            
             buildString(capacity = length) {
                 (0 until length).forEach {
-                    if (includeSpaceSwitch.isChecked
-                        && it in 1 until (length - 1) // Avoid spaces at the beginning & end
-                        && secureRandom.nextInt(length + 1) < maxSpaces
-                        && this[it - 1] != ' ') {
+                    if (shouldAddSpaces && it in spacePositions) {
                         append(' ')
                     }
                     else {
@@ -311,14 +326,14 @@ class GeneratePasswordFragment : Fragment() {
     private fun showGeneratedPassword() {
         lifecycleScope.launch {
             generatedPwdString = generatePassword()
-            fragmentBinding.pwdGeneratedTextView.setGenPwdTextWithColor(generatedPwdString)
+            fragmentBinding.pwdGeneratedTextView.setGenTextWithColor(generatedPwdString)
         }
     }
     
     override fun onPause() {
         super.onPause()
         prefManager.apply {
-            setFloat(PWD_LENGTH, fragmentBinding.pwdLengthSlider.value)
+            setFloat(PWD_LENGTH, sliderValue)
             primarySwitchesList.forEach { switch ->
                 primarySwitchesPrefMap[switch]?.let { preferenceKey ->
                     setBoolean(preferenceKey, switch.isChecked)
