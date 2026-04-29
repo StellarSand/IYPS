@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
   ~     Copyright (C) 2022-present StellarSand
   ~
@@ -15,17 +14,13 @@
   ~
   ~     You should have received a copy of the GNU General Public License
   ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
-  -->
-
-<resources>
-
+  --><resources>
     <!--Bottom nav view-->
     <string name="test">Vyzkoušet</string>
     <string name="generate">Vygenerovat</string>
     <string name="password">Heslo</string>
     <string name="passphrase">Heslo s slovama</string>
     <string name="settings">Nastavení</string>
-
     <!--#########################################################################################-->
 
     <!--Test fragment-->
@@ -87,19 +82,16 @@
     <string name="numbers">Čísla</string>
     <string name="special_char">Speciální znaky</string>
     <string name="spaces">Mezery</string>
-
     <!--#########################################################################################-->
 
     <!--Multi password activity-->
     <string name="back">Zpět</string>
     <string name="view">Vidět</string>
     <string name="sort">Seřadit</string>
-
     <!--#########################################################################################-->
 
     <!--Generate fragments-->
     <string name="generate_multiple">Vygenerovat několik</string>
-
     <!--Generate password fragment-->
     <string name="details">Podrobnosti</string>
     <string name="regenerate">Znovu vygenerovat</string>
@@ -107,15 +99,13 @@
     <string name="ext_chars">Rozšířené znaky</string>
     <string name="avoid_amb_chars">Vyhýbat se dvojznačných znaků</string>
     <string name="include_spaces">Zahrnout mezery</string>
-
     <!--Generate passphrase fragment-->
     <string name="words">Slova</string>
-    <string name="wordlist">Wordlist</string>
-    <string name="eff_long">EFF long</string>
-    <string name="eff_short_1">EFF short (memorable)</string>
-    <string name="eff_short_2">EFF short (typo-tolerant)</string>
+    <string name="wordlist">Seznam slov</string>
+    <string name="eff_long">EFF delší/long</string>
+    <string name="eff_short_1">EFF kratší/short (zapamatovatelný)</string>
+    <string name="eff_short_2">EFF kratší/short (tolerantní k překlepům)</string>
     <string name="capitalize">Kapitalizovat</string>
-
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
@@ -132,34 +122,28 @@
     <string name="support">Podpořit</string>
     <string name="view_on_github">Zhlédnout na GitHubu</string>
     <string name="third_party_licenses">Licence třetí strany</string>
-
     <!--#########################################################################################-->
 
     <!--Custom warnings-->
     <string name="worst_pass_warning">Heslo je příliš lehké k odhadnutí.</string>
     <string name="weak_pass_warning">Heslo může být lehce prolomeno.</string>
     <string name="medium_pass_warning">Heslo není příliš silné.</string>
-
     <!--#########################################################################################-->
 
     <!--Bottom sheet-->
     <string name="cancel">Zrušit</string>
     <string name="dismiss">Zavřít</string>
     <string name="done">Hotovo</string>
-
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Vyzkoušet několik hesel</string>
     <string name="add">Přidat</string>
     <string name="select_file">Vybrat soubor</string>
-
     <!--Add multiple passwords-->
     <string name="add_multi_pwds">Přidat několik hesel</string>
-
     <!--Theme-->
     <string name="follow_system">Sledovat systémové</string>
     <string name="light">Světlé</string>
     <string name="dark">Tmavé</string>
-
     <!--#########################################################################################-->
 
     <!--Snackbars-->
@@ -167,10 +151,8 @@
     <string name="export_fail">Export selhal</string>
     <string name="no_browsers">Žádné prohlížeče nainstalované na tomto zařízení</string>
     <string name="copied_to_clipboard">Zkopírováno do schránky</string>
-
     <!--#########################################################################################-->
 
     <!--Quick settings tile-->
     <string name="app_in_use">IYPS se využívá</string>
-
 </resources>
