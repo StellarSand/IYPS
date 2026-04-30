@@ -49,7 +49,7 @@ import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.bottomsheets.TestMultiPwdBottomSheet
-import com.iyps.common.evaluatePassword
+import com.iyps.common.displayResults
 import com.iyps.common.getFormattedResultsText
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
@@ -168,7 +168,7 @@ class TestPasswordFragment : Fragment() {
                                     if (!isEnabled) isEnabled = true
                                 }
                             }
-                            fragmentBinding.evaluatePassword(
+                            fragmentBinding.displayResults(
                                 zxcvbn = get<Zxcvbn>(),
                                 password = charSequence,
                                 context = requireContext(),

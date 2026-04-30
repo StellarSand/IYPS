@@ -111,7 +111,5 @@ val appModule =
                 .build()
         }
         
-        single {
-            SecureRandom.getInstanceStrong()
-        }
+        single { SecureRandom.getInstanceStrong() }
     }

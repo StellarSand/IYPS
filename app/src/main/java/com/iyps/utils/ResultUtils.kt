@@ -55,10 +55,10 @@ class ResultUtils(val context: Context) {
     
     // Take days in:
     // Month = 31, Year = 365
-    private val threeHrsInMillis = TimeUnit.HOURS.toMillis(3)
+    private val fiveHrsInMillis = TimeUnit.HOURS.toMillis(5)
+    private val tenDaysInMillis = TimeUnit.DAYS.toMillis(10)
     private val oneMonthInMillis = TimeUnit.DAYS.toMillis(31)
     private val sixMonthsInMillis = TimeUnit.DAYS.toMillis(186)
-    private val fiveYrsInMillis = TimeUnit.DAYS.toMillis(1825)
     
     private val emptyMeterColor = context.resources.getColor(android.R.color.transparent, context.theme)
     private val worstMeterColor = context.resources.getColor(R.color.color_worstMeter, context.theme)
@@ -133,10 +133,10 @@ class ResultUtils(val context: Context) {
     // Custom score
     fun crackTimeScore(crackTimeMilliSeconds: Long): Int {
         return when (crackTimeMilliSeconds) {
-            in 0..threeHrsInMillis -> WORST_SCORE
-            in (threeHrsInMillis + 1)..oneMonthInMillis -> WEAK_SCORE
-            in (oneMonthInMillis + 1)..sixMonthsInMillis -> MEDIUM_SCORE
-            in (sixMonthsInMillis + 1)..fiveYrsInMillis -> STRONG_SCORE
+            in 0..fiveHrsInMillis -> WORST_SCORE
+            in (fiveHrsInMillis + 1)..tenDaysInMillis -> WEAK_SCORE
+            in (tenDaysInMillis + 1)..oneMonthInMillis -> MEDIUM_SCORE
+            in (oneMonthInMillis + 1)..sixMonthsInMillis -> STRONG_SCORE
             else -> EXCELLENT_SCORE
         }
     }

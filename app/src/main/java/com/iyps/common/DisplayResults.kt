@@ -25,10 +25,9 @@ import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.ResultUtils
 import com.nulabinc.zxcvbn.Zxcvbn
 import java.text.NumberFormat
-import java.util.Locale
 
 @SuppressLint("SetTextI18n")
-fun FragmentTestPasswordBinding.evaluatePassword(
+fun FragmentTestPasswordBinding.displayResults(
     zxcvbn: Zxcvbn,
     password: CharSequence,
     context: Context,
@@ -96,12 +95,12 @@ fun FragmentTestPasswordBinding.evaluatePassword(
     statsSubtitle.text =
         buildString {
             append(
-                "\u2022 ${context.getString(R.string.length)}: ${String.format(Locale.getDefault(), "%d", statsList[0])}",
-                "\n\u2022 ${context.getString(R.string.uppercase)}: ${String.format(Locale.getDefault(), "%d", statsList[1])}",
-                "\n\u2022 ${context.getString(R.string.lowercase)}: ${String.format(Locale.getDefault(), "%d", statsList[2])}",
-                "\n\u2022 ${context.getString(R.string.numbers)}: ${String.format(Locale.getDefault(), "%d", statsList[3])}",
-                "\n\u2022 ${context.getString(R.string.special_char)}: ${String.format(Locale.getDefault(), "%d", statsList[4])}",
-                "\n\u2022 ${context.getString(R.string.spaces)}: ${String.format(Locale.getDefault(), "%d", statsList[5])}"
+                "\u2022 ${context.getString(R.string.length)}: ${NumberFormat.getInstance().format(statsList[0])}",
+                "\n\u2022 ${context.getString(R.string.uppercase)}: ${NumberFormat.getInstance().format(statsList[1])}",
+                "\n\u2022 ${context.getString(R.string.lowercase)}: ${NumberFormat.getInstance().format(statsList[2])}",
+                "\n\u2022 ${context.getString(R.string.numbers)}: ${NumberFormat.getInstance().format(statsList[3])}",
+                "\n\u2022 ${context.getString(R.string.special_char)}: ${NumberFormat.getInstance().format(statsList[4])}",
+                "\n\u2022 ${context.getString(R.string.spaces)}: ${NumberFormat.getInstance().format(statsList[5])}"
             )
         }
     

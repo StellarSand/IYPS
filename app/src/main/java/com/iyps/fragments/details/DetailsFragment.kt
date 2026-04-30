@@ -34,7 +34,7 @@ import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
-import com.iyps.common.evaluatePassword
+import com.iyps.common.displayResults
 import com.iyps.common.getFormattedResultsText
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
@@ -85,7 +85,7 @@ class DetailsFragment : Fragment() {
             }
         }
         
-        fragmentBinding.evaluatePassword(
+        fragmentBinding.displayResults(
             zxcvbn = get<Zxcvbn>(),
             password = password,
             context = requireContext(),

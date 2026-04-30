@@ -111,7 +111,7 @@
             android:layout_marginStart="@dimen/margin_8"
             android:layout_marginTop="@dimen/margin_30"
             android:drawableStart="@drawable/ic_customize"
-            android:drawablePadding="@dimen/margin_12"
+            android:drawablePadding="@dimen/margin_8"
             android:drawableTint="?attr/colorSecondary"
             android:text="@string/customize"
             android:textSize="@dimen/text_18"
