@@ -153,7 +153,9 @@
     <!--Bottom sheet-->
     <string name="cancel">Annulla</string>
     <string name="dismiss">Chiudi</string>
+    <string name="not_now">Non ora</string>
     <string name="done">Fatto</string>
+    <string name="proceed">Procedi</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Test di pi\u00F9 password</string>

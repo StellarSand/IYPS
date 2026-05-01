@@ -155,7 +155,9 @@
     <!--Bottom sheet-->
     <string name="cancel">Annuler</string>
     <string name="dismiss">Fermer</string>
+    <string name="not_now">Plus tard</string>
     <string name="done">Termin\u00E9</string>
+    <string name="proceed">Continuer</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Tester plusieurs mots de passe</string>

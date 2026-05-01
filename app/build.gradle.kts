@@ -63,4 +63,5 @@ dependencies {
     implementation(libs.bundles.navigation)
     implementation(libs.zxcvbn4j)
     implementation(libs.androidFastScrollKt)
+    implementation(libs.lottie)
 }

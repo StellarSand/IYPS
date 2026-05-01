@@ -27,13 +27,20 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.text.buildSpannedString
 import androidx.core.text.inSpans
+import androidx.fragment.app.FragmentManager
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
+import com.iyps.bottomsheets.SupportAnimBottomSheet
+import com.iyps.objects.AppState
+import com.iyps.preferences.PreferenceManager
+import com.iyps.preferences.PreferenceManager.Companion.LAST_SUPPORT_SHOWN_TIME
+import com.iyps.preferences.PreferenceManager.Companion.ONE_MONTH_DONE
 import com.iyps.utils.TextUtils.Companion.PHRASE_SEPARATORS
 import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
+import kotlinx.coroutines.delay
 import kotlin.text.forEach
 
 class UiUtils {
@@ -104,6 +111,16 @@ class UiUtils {
                           BaseTransientBottomBar.LENGTH_SHORT)
                 .setAnchorView(anchorView) // Above FAB, bottom bar etc.
                 .show()
+        }
+        
+        suspend fun showSupportAnimBtmSheet(fragmentManager: FragmentManager, preferenceManager: PreferenceManager) {
+            delay(300)
+            SupportAnimBottomSheet().show(fragmentManager, "SupportAnimBottomSheet")
+            AppState.showSupportBtmSheet = false
+            preferenceManager.setLong(key = LAST_SUPPORT_SHOWN_TIME, value = System.currentTimeMillis())
+            if (!preferenceManager.getBoolean(ONE_MONTH_DONE, defValue = false)) {
+                preferenceManager.setBoolean(ONE_MONTH_DONE, value = true)
+            }
         }
         
     }

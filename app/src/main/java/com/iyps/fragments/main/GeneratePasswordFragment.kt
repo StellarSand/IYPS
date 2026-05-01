@@ -41,6 +41,7 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
 import com.iyps.bottomsheets.GenerateMultipleBottomSheet
 import com.iyps.databinding.FragmentGeneratePasswordBinding
+import com.iyps.objects.AppState
 import com.iyps.objects.GenerateMultiList
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PWD_AMB_CHARS
@@ -57,6 +58,7 @@ import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setGenTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
+import com.iyps.utils.UiUtils.Companion.showSupportAnimBtmSheet
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -327,6 +329,9 @@ class GeneratePasswordFragment : Fragment() {
         lifecycleScope.launch {
             generatedPwdString = generatePassword()
             fragmentBinding.pwdGeneratedTextView.setGenTextWithColor(generatedPwdString)
+            if (AppState.showSupportBtmSheet) {
+                showSupportAnimBtmSheet(parentFragmentManager, prefManager)
+            }
         }
     }
     

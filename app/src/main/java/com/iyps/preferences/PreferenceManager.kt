@@ -43,6 +43,8 @@ class PreferenceManager(context: Context) {
         const val MATERIAL_YOU = "material_you"
         const val BLOCK_SS = "block_ss"
         const val INCOG_KEYBOARD = "incog_keyboard"
+        const val LAST_SUPPORT_SHOWN_TIME = "last_support_shown_time"
+        const val ONE_MONTH_DONE = "one_month_done"
     }
     
     private val sharedPreferences =
@@ -70,6 +72,17 @@ class PreferenceManager(context: Context) {
         }
     }
     
+    fun getLong(key: String): Long {
+        return sharedPreferences.getLong(key, 0L)
+    }
+    
+    fun setLong(key: String, value: Long) {
+        sharedPreferences.edit().apply {
+            putLong(key, value)
+            apply()
+        }
+    }
+    
     fun getBoolean(key: String, defValue: Boolean = true): Boolean {
         return sharedPreferences.getBoolean(key, defValue)
     }
@@ -77,17 +90,6 @@ class PreferenceManager(context: Context) {
     fun setBoolean(key: String, value: Boolean) {
         sharedPreferences.edit().apply {
             putBoolean(key, value)
-            apply()
-        }
-    }
-    
-    fun getString(key: String): String? {
-        return sharedPreferences.getString(key, "-")
-    }
-    
-    fun setString(key: String, value: String) {
-        sharedPreferences.edit().apply {
-            putString(key, value)
             apply()
         }
     }

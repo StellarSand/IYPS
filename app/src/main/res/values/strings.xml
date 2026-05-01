@@ -150,7 +150,9 @@
     <!--Bottom sheet-->
     <string name="cancel">Cancel</string>
     <string name="dismiss">Dismiss</string>
+    <string name="not_now">Not now</string>
     <string name="done">Done</string>
+    <string name="proceed">Proceed</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Test multiple passwords</string>

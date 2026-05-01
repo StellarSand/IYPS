@@ -156,7 +156,9 @@
     <!--Bottom sheet-->
     <string name="cancel">Cancelar</string>
     <string name="dismiss">Cerrar</string>
+    <string name="not_now">Ahora no</string>
     <string name="done">Hecho</string>
+    <string name="proceed">Continuar</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Probar varias contrase\u00F1as</string>

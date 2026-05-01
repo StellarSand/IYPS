@@ -160,7 +160,9 @@
     <!--Bottom sheet-->
     <string name="cancel">\u0130ptal et</string>
     <string name="dismiss">Kapat</string>
+    <string name="not_now">Şimdi değil</string>
     <string name="done">Bitti</string>
+    <string name="proceed">Devam et</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Birden fazla parolay\u0131 test edin</string>

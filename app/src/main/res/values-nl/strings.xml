@@ -150,7 +150,9 @@
     <!--Bottom sheet-->
     <string name="cancel">Annuleren</string>
     <string name="dismiss">Ontsla</string>
+    <string name="not_now">Niet nu</string>
     <string name="done">Gedaan</string>
+    <string name="proceed">Doorgaan</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Meerdere wachtwoorden testen</string>

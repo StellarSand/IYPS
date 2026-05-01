@@ -141,7 +141,9 @@
     <!--Bottom sheet-->
     <string name="cancel">Avbryt</string>
     <string name="dismiss">Avvisa</string>
+    <string name="not_now">Inte nu</string>
     <string name="done">Klar</string>
+    <string name="proceed">Fortsätt</string>
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testa flera l\u00F6senord</string>
     <string name="add">L\u00E4gg till</string>

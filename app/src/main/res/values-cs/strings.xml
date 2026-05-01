@@ -133,7 +133,9 @@
     <!--Bottom sheet-->
     <string name="cancel">Zrušit</string>
     <string name="dismiss">Zavřít</string>
+    <string name="not_now">Teď ne</string>
     <string name="done">Hotovo</string>
+    <string name="proceed">Pokračovat</string>
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Vyzkoušet několik hesel</string>
     <string name="add">Přidat</string>

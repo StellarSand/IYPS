@@ -43,11 +43,15 @@ import com.iyps.objects.AppState
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.preferences.PreferenceManager.Companion.GEN_TOGGLE
+import com.iyps.preferences.PreferenceManager.Companion.LAST_SUPPORT_SHOWN_TIME
 import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
+import com.iyps.preferences.PreferenceManager.Companion.ONE_MONTH_DONE
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setNavBarContrastEnforced
 import org.koin.android.ext.android.inject
+import kotlin.time.DurationUnit
+import kotlin.time.toDuration
 
 class MainActivity : AppCompatActivity() {
     
@@ -82,6 +86,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(activityBinding.root)
         
         AppState.isAppOpen = true
+        val lastSavedTimestamp = prefManager.getLong(LAST_SUPPORT_SHOWN_TIME)
+        if (lastSavedTimestamp != 0L) {
+            // For the first time, show support bottom sheet after 1 month
+            // After that show every 3 months
+            val isOneMonthDone = prefManager.getBoolean(ONE_MONTH_DONE, defValue = false)
+            val elapsedTime = System.currentTimeMillis() - lastSavedTimestamp
+            AppState.showSupportBtmSheet =
+                savedInstanceState?.getBoolean("showSupportBtmSheet") ?:
+                if (isOneMonthDone) hasExceededDays(elapsedTime, 90L)
+                else hasExceededDays(elapsedTime, 30L)
+        }
+        else prefManager.setLong(key = LAST_SUPPORT_SHOWN_TIME, value = System.currentTimeMillis())
+        
         navHostFragment = supportFragmentManager.findFragmentById(R.id.main_nav_host) as NavHostFragment
         navController = navHostFragment.navController
         
@@ -118,9 +135,7 @@ class MainActivity : AppCompatActivity() {
         
         selectedItem =
             savedInstanceState?.getInt("selectedItem") ?:
-            if (intent?.getStringExtra("shortcut") == "shortcutGenerate") {
-                R.id.nav_generate
-            }
+            if (intent?.getStringExtra("shortcut") == "shortcutGenerate") R.id.nav_generate
             else R.id.nav_test
         
         // Opened from shortcut or quick settings toggle
@@ -187,6 +202,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
     
+    private fun hasExceededDays(elapsedTime: Long, days: Long): Boolean {
+        return elapsedTime.toDuration(DurationUnit.MILLISECONDS).inWholeDays > days
+    }
+    
     private fun showViewsWithAnimation() {
         viewsToAnimate.forEach { view ->
             ObjectAnimator.ofFloat(view, "alpha", 0f, 1f).apply {
@@ -214,6 +233,7 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt("selectedItem", selectedItem)
+        outState.putBoolean("showSupportBtmSheet", AppState.showSupportBtmSheet)
     }
     
     // On back pressed

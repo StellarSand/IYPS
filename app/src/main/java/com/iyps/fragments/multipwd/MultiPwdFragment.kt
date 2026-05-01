@@ -27,15 +27,21 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MultiPwdActivity
 import com.iyps.adapters.MultiPwdAdapter
 import com.iyps.databinding.FragmentMultiPwdBinding
+import com.iyps.objects.AppState
 import com.iyps.objects.MultiPwdList
+import com.iyps.preferences.PreferenceManager
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
+import com.iyps.utils.UiUtils.Companion.showSupportAnimBtmSheet
+import kotlinx.coroutines.launch
 import me.stellarsand.android.fastscroll.FastScrollerBuilder
+import org.koin.android.ext.android.get
 
 class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     
@@ -75,6 +81,12 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
                 if (!multiPwdActivity.isGridView) LinearLayoutManager(requireContext())
                 else StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
             FastScrollerBuilder(this).build()
+        }
+        
+        if (AppState.showSupportBtmSheet) {
+            lifecycleScope.launch {
+                showSupportAnimBtmSheet(parentFragmentManager, get<PreferenceManager>())
+            }
         }
     }
     

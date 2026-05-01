@@ -150,7 +150,9 @@
     <!--Bottom sheet-->
     <string name="cancel">رد کردن</string>
     <string name="dismiss">لغو</string>
+    <string name="not_now">حالا نه</string>
     <string name="done">انجام شد</string>
+    <string name="proceed">ادامه دادن</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">آزمایش چندین گذرواژه</string>

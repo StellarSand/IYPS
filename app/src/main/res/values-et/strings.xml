@@ -133,7 +133,9 @@
     <!--Bottom sheet-->
     <string name="cancel">Katkesta</string>
     <string name="dismiss">Loobu</string>
+    <string name="not_now">Mitte praegu</string>
     <string name="done">Valmis</string>
+    <string name="proceed">Jätka</string>
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testi mitut salasõna korraga</string>
     <string name="add">Lisa</string>

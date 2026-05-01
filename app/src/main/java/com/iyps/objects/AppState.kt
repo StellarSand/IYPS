@@ -20,4 +20,5 @@ package com.iyps.objects
 object AppState {
     
     var isAppOpen = false
+    var showSupportBtmSheet = false
 }

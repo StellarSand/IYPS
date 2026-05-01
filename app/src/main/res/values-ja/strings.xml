@@ -145,7 +145,9 @@
     <!--Bottom sheet-->
     <string name="cancel">キャンセル</string>
     <string name="dismiss">閉じる</string>
+    <string name="not_now">今はしない</string>
     <string name="done">完了</string>
+    <string name="proceed">進む</string>
 
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">複数のパスワードをテストする</string>

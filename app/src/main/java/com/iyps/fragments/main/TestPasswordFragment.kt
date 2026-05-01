@@ -51,6 +51,7 @@ import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.bottomsheets.TestMultiPwdBottomSheet
 import com.iyps.common.displayResults
 import com.iyps.common.getFormattedResultsText
+import com.iyps.objects.AppState
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
@@ -61,11 +62,14 @@ import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.iyps.utils.ResultUtils
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
+import com.iyps.utils.UiUtils.Companion.showSupportAnimBtmSheet
 import com.nulabinc.zxcvbn.Zxcvbn
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.get
+import org.koin.android.ext.android.inject
+import kotlin.getValue
 
 class TestPasswordFragment : Fragment() {
     
@@ -88,6 +92,7 @@ class TestPasswordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         
         mainActivity = requireActivity() as MainActivity
+        val prefManager by inject<PreferenceManager>()
         var job: Job? = null
         val resultUtils = ResultUtils(requireContext())
         var isInitialLaunch = true
@@ -151,7 +156,7 @@ class TestPasswordFragment : Fragment() {
         fragmentBinding.scrollView.isVisible = false
         
         fragmentBinding.passwordText.apply {
-            if (get<PreferenceManager>().getBoolean(INCOG_KEYBOARD)) {
+            if (prefManager.getBoolean(INCOG_KEYBOARD)) {
                 imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
                 inputType = TYPE_TEXT_VARIATION_PASSWORD
             }
@@ -174,6 +179,9 @@ class TestPasswordFragment : Fragment() {
                                 context = requireContext(),
                                 resultUtils = resultUtils
                             )
+                            if (!isInitialLaunch && AppState.showSupportBtmSheet) {
+                                showSupportAnimBtmSheet(parentFragmentManager, prefManager)
+                            }
                             if (isInitialLaunch) {
                                 isInitialLaunch = false
                                 fragmentBinding.appBar.setExpanded(false, true)

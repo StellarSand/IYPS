@@ -28,6 +28,7 @@ zxcvbn4j = "1.8.2" # Don't update to 1.9.0
 # with 1.9.0, time to crack calculations are wrong, sometimes giving 0 months/years
 # ex: try with the passwords "hsdsjlll", "jdfhasfqwui1"
 androidFastscrollKt = "v1.0.8"
+lottie = "6.7.1"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
@@ -40,6 +41,7 @@ androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fr
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationKtx" }
 zxcvbn4j = { module = "com.nulab-inc:zxcvbn", version.ref = "zxcvbn4j" }
 androidFastScrollKt = { module = "com.github.StellarSand:AndroidFastScroll-kt", version.ref = "androidFastscrollKt" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 
 [bundles]
 androidxCoreComponents = ["androidx-appcompat", "androidx-core-ktx", "androidx-core-splashscreen"]

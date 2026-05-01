@@ -38,6 +38,7 @@ import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.bottomsheets.GenerateMultipleBottomSheet
 import com.iyps.databinding.FragmentGeneratePassphraseBinding
+import com.iyps.objects.AppState
 import com.iyps.objects.GenerateMultiList
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
@@ -51,6 +52,7 @@ import com.iyps.utils.TextUtils.Companion.PHRASE_SEPARATORS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setGenTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
+import com.iyps.utils.UiUtils.Companion.showSupportAnimBtmSheet
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
@@ -286,7 +288,11 @@ class GeneratePassphraseFragment : Fragment() {
             generatedPhraseString = generatePassphrase()
             fragmentBinding.phraseGeneratedTextView.setGenTextWithColor(
                 generatedString = generatedPhraseString,
-                isPassphrase = true)
+                isPassphrase = true
+            )
+            if (AppState.showSupportBtmSheet) {
+                showSupportAnimBtmSheet(parentFragmentManager, prefManager)
+            }
         }
     }
     
