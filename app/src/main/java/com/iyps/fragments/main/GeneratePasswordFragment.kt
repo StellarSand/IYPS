@@ -86,6 +86,7 @@ class GeneratePasswordFragment : Fragment() {
     private var numbersWithoutAmbChars = ""
     private var sliderValue = 0.0f
     private val secureRandom by inject<SecureRandom>()
+    private var allCharsList = listOf<Char>()
     private var generatedPwdString: String = ""
     
     private companion object {
@@ -220,7 +221,7 @@ class GeneratePasswordFragment : Fragment() {
         
         // Regenerate
         fragmentBinding.pwdRegenerateBtn.setOnClickListener {
-            showGeneratedPassword()
+            showGeneratedPassword(shouldBuildAllCharsList = false)
         }
         
         // Share
@@ -232,7 +233,7 @@ class GeneratePasswordFragment : Fragment() {
         fragmentBinding.pwdMultiGenBtn.setOnClickListener {
             lifecycleScope.launch {
                 (1..7).map {
-                    async { GenerateMultiList.multiList.add(generatePassword()) }
+                    async { GenerateMultiList.multiList.add(generatePassword(shouldBuildAllCharsList = false)) }
                 }.awaitAll()
             }
             GenerateMultipleBottomSheet().show(parentFragmentManager, "GenerateMultipleBottomSheet")
@@ -248,48 +249,50 @@ class GeneratePasswordFragment : Fragment() {
         return allChars.filterNot { it in ambChars }
     }
     
-    private suspend fun generatePassword(): String {
+    private suspend fun generatePassword(shouldBuildAllCharsList: Boolean): String {
         return withContext(Dispatchers.Default) {
-            val allChars = buildList {
-                if (uppercaseSwitch.isChecked) {
-                    if (extCharsSwitch.isChecked) addAll(UPPERCASE_EXT_CHARS.asIterable())
-                    if (avoidAmbCharsSwitch.isChecked) {
-                        addAll(
-                            uppercaseWithoutAmbChars.ifEmpty {
-                                getNonAmbChars(UPPERCASE_CHARS, UPPERCASE_AMB_CHARS).also {
-                                    uppercaseWithoutAmbChars = it
-                                }
-                            }.asIterable()
-                        )
+            if (shouldBuildAllCharsList) {
+                allCharsList = buildList {
+                    if (uppercaseSwitch.isChecked) {
+                        if (extCharsSwitch.isChecked) addAll(UPPERCASE_EXT_CHARS.asIterable())
+                        if (avoidAmbCharsSwitch.isChecked) {
+                            addAll(
+                                uppercaseWithoutAmbChars.ifEmpty {
+                                    getNonAmbChars(UPPERCASE_CHARS, UPPERCASE_AMB_CHARS).also {
+                                        uppercaseWithoutAmbChars = it
+                                    }
+                                }.asIterable()
+                            )
+                        }
+                        else addAll(UPPERCASE_CHARS.asIterable())
                     }
-                    else addAll(UPPERCASE_CHARS.asIterable())
-                }
-                if (lowercaseSwitch.isChecked) {
-                    if (extCharsSwitch.isChecked) addAll(LOWERCASE_EXT_CHARS.asIterable())
-                    if (avoidAmbCharsSwitch.isChecked) {
-                        addAll(
-                            lowercaseWithoutAmbChars.ifEmpty {
-                                getNonAmbChars(LOWERCASE_CHARS, LOWERCASE_AMB_CHARS).also {
-                                    lowercaseWithoutAmbChars = it
-                                }
-                            }.asIterable()
-                        )
+                    if (lowercaseSwitch.isChecked) {
+                        if (extCharsSwitch.isChecked) addAll(LOWERCASE_EXT_CHARS.asIterable())
+                        if (avoidAmbCharsSwitch.isChecked) {
+                            addAll(
+                                lowercaseWithoutAmbChars.ifEmpty {
+                                    getNonAmbChars(LOWERCASE_CHARS, LOWERCASE_AMB_CHARS).also {
+                                        lowercaseWithoutAmbChars = it
+                                    }
+                                }.asIterable()
+                            )
+                        }
+                        else addAll(LOWERCASE_CHARS.asIterable())
                     }
-                    else addAll(LOWERCASE_CHARS.asIterable())
-                }
-                if (numbersSwitch.isChecked) {
-                    if (avoidAmbCharsSwitch.isChecked) {
-                        addAll(
-                            numbersWithoutAmbChars.ifEmpty {
-                                getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also {
-                                    numbersWithoutAmbChars = it
-                                }
-                            }.asIterable()
-                        )
+                    if (numbersSwitch.isChecked) {
+                        if (avoidAmbCharsSwitch.isChecked) {
+                            addAll(
+                                numbersWithoutAmbChars.ifEmpty {
+                                    getNonAmbChars(NUMBERS, NUM_AMB_CHARS).also {
+                                        numbersWithoutAmbChars = it
+                                    }
+                                }.asIterable()
+                            )
+                        }
+                        else addAll(NUMBERS.asIterable())
                     }
-                    else addAll(NUMBERS.asIterable())
+                    if (specialCharsSwitch.isChecked) addAll(SPECIAL_CHARS.asIterable())
                 }
-                if (specialCharsSwitch.isChecked) addAll(SPECIAL_CHARS.asIterable())
             }
             
             val length = sliderValue.toInt()
@@ -317,17 +320,17 @@ class GeneratePasswordFragment : Fragment() {
                         append(' ')
                     }
                     else {
-                        val randomIndex = secureRandom.nextInt(allChars.size)
-                        append(allChars[randomIndex])
+                        val randomIndex = secureRandom.nextInt(allCharsList.size)
+                        append(allCharsList[randomIndex])
                     }
                 }
             }
         }
     }
     
-    private fun showGeneratedPassword() {
+    private fun showGeneratedPassword(shouldBuildAllCharsList: Boolean = true) {
         lifecycleScope.launch {
-            generatedPwdString = generatePassword()
+            generatedPwdString = generatePassword(shouldBuildAllCharsList)
             fragmentBinding.pwdGeneratedTextView.setGenTextWithColor(generatedPwdString)
             if (AppState.showSupportBtmSheet) {
                 showSupportAnimBtmSheet(parentFragmentManager, prefManager)
