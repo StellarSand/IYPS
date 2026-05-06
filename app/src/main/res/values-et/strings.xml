@@ -136,6 +136,10 @@
     <string name="not_now">Mitte praegu</string>
     <string name="done">Valmis</string>
     <string name="proceed">Jätka</string>
+    <!--Developer verification warning-->
+    <string name="dev_verf_warn_desc">Google on teatanud, et alates 2026/2027, kõik sertifitseeritud Androidi seadmetesse paigaldatud rakendused peavad olema loodud vaid selliste arendajate poolt, kes peavad oma isiklikud andmed edastama Google\'le. \n \nKuna selle rakenduse arendajad pole sellise nõudmisega päri, siis sellest ajast alates meie rakendus <b>alates nimetatud ajast</b> ilmselt sertifitseeritud Androidi seadmetes enam ei toimi.</string>
+    <string name="solutions">Lahendused</string>
+    <string name="do_not_show_again">Ära enam näita seda uuesti</string>
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Testi mitut salasõna korraga</string>
     <string name="add">Lisa</string>

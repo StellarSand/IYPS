@@ -23,6 +23,10 @@
     <string name="iyps_issues_url" translatable="false">https://github.com/StellarSand/IYPS/issues</string>
     <string name="iyps_github_url" translatable="false">https://github.com/StellarSand/IYPS</string>
 
+    <!--Developer verification warning-->
+    <string name="dev_verf_warn_details_url" translatable="false">https://keepandroidopen.org</string>
+    <string name="dev_verf_warn_solutions_url" translatable="false">https://github.com/woheller69/FreeDroidWarn?tab=readme-ov-file#solutions</string>
+
     <!--Support bottom sheet-->
     <string name="liberapay_url" translatable="false">https://liberapay.com/stellarsand</string>
     <string name="paypal_url" translatable="false">https://www.paypal.com/paypalme/stellarsand</string>

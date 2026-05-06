@@ -38,6 +38,7 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.color.DynamicColors
 import com.iyps.R
 import com.iyps.appmanager.ApplicationManager
+import com.iyps.bottomsheets.DevVerfWarnBottomSheet
 import com.iyps.databinding.ActivityMainBinding
 import com.iyps.objects.AppState
 import com.iyps.preferences.PreferenceManager
@@ -46,6 +47,7 @@ import com.iyps.preferences.PreferenceManager.Companion.GEN_TOGGLE
 import com.iyps.preferences.PreferenceManager.Companion.LAST_SUPPORT_SHOWN_TIME
 import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
 import com.iyps.preferences.PreferenceManager.Companion.ONE_MONTH_DONE
+import com.iyps.preferences.PreferenceManager.Companion.SHOW_DEV_VERF_WARNING
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.setNavBarContrastEnforced
@@ -142,6 +144,11 @@ class MainActivity : AppCompatActivity() {
         if (savedInstanceState == null && selectedItem == R.id.nav_generate) {
             displayFragment(selectedItem)
             showViewsWithAnimation()
+        }
+        
+        if (selectedItem != R.id.nav_settings // Prevent showing when theme is changed from settings
+            && prefManager.getBoolean(SHOW_DEV_VERF_WARNING, defValue = true)) {
+            DevVerfWarnBottomSheet().show(supportFragmentManager, "DevVerfWarnBottomSheet" )
         }
         
         // Bottom nav

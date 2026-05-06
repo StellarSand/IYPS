@@ -159,6 +159,11 @@
     <string name="done">Termin\u00E9</string>
     <string name="proceed">Continuer</string>
 
+    <!--Developer verification warning-->
+    <string name="dev_verf_warn_desc">Google a annoncé qu\'à partir de 2026/2027, toutes les applications installées sur des appareils Android certifiés exigeront que les développeurs transmettent leurs informations d\'identité directement à Google.\n \nLes développeurs de cette application n\'ayant pas accepté cette exigence, celle-ci risque de ne plus fonctionner sur les appareils Android certifiés <b>après cette date</b>.</string>
+    <string name="solutions">Solutions</string>
+    <string name="do_not_show_again">Ne plus montrer</string>
+
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Tester plusieurs mots de passe</string>
     <string name="add">Ajouter</string>

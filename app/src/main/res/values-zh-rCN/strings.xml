@@ -149,6 +149,11 @@
     <string name="done">已完成</string>
     <string name="proceed">继续</string>
 
+    <!--Developer verification warning-->
+    <string name="dev_verf_warn_desc">Google 已宣布，从 2026/2027 年开始，所有在经过认证的安卓设备上运行的应用都将要求开发者直接向其提交个人身份信息详情。\n\n由于此应用的开发者不同意此项要求，因此该应用<b>在此时间点后</b>可能无法在经认证的安卓设备上运行。</string>
+    <string name="solutions">解决方案</string>
+    <string name="do_not_show_again">不再显示</string>
+
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">测试多个密码</string>
     <string name="add">添加</string>

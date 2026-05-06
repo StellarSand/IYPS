@@ -158,6 +158,11 @@
     <string name="done">Erledigt</string>
     <string name="proceed">Fortfahren</string>
 
+    <!--Developer verification warning-->
+    <string name="dev_verf_warn_desc">Google hat angekündigt, dass ab 2026/2027 alle Apps auf zertifizierten Android-Geräten von den Entwicklern verlangen, dass sie persönliche Identitätsdaten direkt an Google übermitteln. \n\nDa die Entwickler dieser App dieser Anforderung nicht zustimmen, funktioniert diese App <b>nach diesem Zeitpunkt</b> möglicherweise nicht mehr auf zertifizierten Android-Geräten.</string>
+    <string name="solutions">Lösungen</string>
+    <string name="do_not_show_again">Nicht wieder anzeigen</string>
+
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Teste mehrere Passw\u00F6rter</string>
     <string name="add">Hinzuf\u00FCgen</string>

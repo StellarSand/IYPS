@@ -24,6 +24,7 @@ class PreferenceManager(context: Context) {
     companion object {
         // Shared pref keys
         const val THEME_PREF = "theme"
+        const val SHOW_DEV_VERF_WARNING =  "show_dev_verf_warning"
         const val GRID_VIEW = "grid_view"
         const val SORT_ASC = "sort_asc"
         const val GEN_TOGGLE = "gen_toggle"
