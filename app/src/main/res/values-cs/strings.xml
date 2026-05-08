@@ -137,9 +137,9 @@
     <string name="done">Hotovo</string>
     <string name="proceed">Pokračovat</string>
     <!--Developer verification warning-->
-    <string name="dev_verf_warn_desc">Společnost Google oznámila, že od roku 2026/2027 budou všechny aplikace na certifikovaných zařízeních Android vyžadovat, aby vývojář odeslal své osobní identifikační údaje přímo společnosti Google. \n \nJelikož vývojáři této aplikace s tímto požadavkem nesouhlasí, aplikace <b>po tomto datu</b> přestane na certifikovaných zařízeních Android fungovat.</string>
+    <string name="dev_verf_warn_desc">Společnost Google oznámila, že od roku 2026/2027 budou všechny aplikace na certifikovaných zařízeních Android vyžadovat, aby jejich vývojáři odeslali své osobní identifikační údaje přímo společnosti Google. \n \nJelikož vývojáři této aplikace s tímto požadavkem nesouhlasí, aplikace <b>po tomto datu</b> možná přestane na certifikovaných zařízeních Android fungovat.</string>
     <string name="solutions">Řešení</string>
-    <string name="do_not_show_again">Již nezobrazovat</string>
+    <string name="do_not_show_again">Znovu nezobrazovat</string>
     <!--Test multiple passwords-->
     <string name="test_multi_pwds">Vyzkoušet několik hesel</string>
     <string name="add">Přidat</string>
