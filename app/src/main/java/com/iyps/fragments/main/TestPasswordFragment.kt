@@ -185,8 +185,10 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
             }
         }
         
+        // Clipboard
         manageClipboard(clipboardManager, lifecycleScope)
         
+        // Fab
         fragmentBinding.testMultipleFab.setOnClickListener {
             TestMultiPwdBottomSheet().show(parentFragmentManager, "TestMultiplePwdBottomSheet")
         }

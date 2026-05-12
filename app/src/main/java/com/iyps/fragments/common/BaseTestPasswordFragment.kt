@@ -32,7 +32,6 @@ import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
-import com.iyps.utils.FormatUtils.Companion.generateNewFilename
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.ResultUtils
@@ -40,6 +39,8 @@ import com.iyps.utils.UiUtils.Companion.showSnackbar
 import com.nulabinc.zxcvbn.Zxcvbn
 import org.koin.android.ext.android.get
 import java.text.NumberFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 abstract class BaseTestPasswordFragment : Fragment() {
     
@@ -80,20 +81,6 @@ abstract class BaseTestPasswordFragment : Fragment() {
     
     // Subclasses must override
     protected abstract fun setupFragmentContent()
-    
-    protected fun copyToClipboard(copiedText: CharSequence) {
-        val clipData = ClipData.newPlainText("IYPS", copiedText)
-        clipData.hideSensitiveContent()
-        clipboardManager.setPrimaryClip(clipData)
-        
-        if (Build.VERSION.SDK_INT <= 32) {
-            showSnackbar(
-                getCoordinatorLayout(),
-                requireContext().getString(R.string.copied_to_clipboard),
-                getSnackbarAnchorView()
-            )
-        }
-    }
     
     @SuppressLint("SetTextI18n")
     protected fun displayResults(password: CharSequence) {
@@ -173,6 +160,26 @@ abstract class BaseTestPasswordFragment : Fragment() {
         }
     }
     
+    protected fun copyToClipboard(copiedText: CharSequence) {
+        val clipData = ClipData.newPlainText("IYPS", copiedText)
+        clipData.hideSensitiveContent()
+        clipboardManager.setPrimaryClip(clipData)
+        // Show snackbar only if 12L or lower to avoid duplicate notifications
+        // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
+        if (Build.VERSION.SDK_INT <= 32) {
+            showSnackbar(
+                getCoordinatorLayout(),
+                requireContext().getString(R.string.copied_to_clipboard),
+                getSnackbarAnchorView()
+            )
+        }
+    }
+    
+    private fun generateNewFilename(): String {
+        val timestamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss"))
+        return "IYPS_export_${timestamp}.txt"
+    }
+    
     private fun getFormattedResultsText(): String {
         return buildString {
             append("# ${getString(R.string.password)}\n")
@@ -210,7 +217,7 @@ abstract class BaseTestPasswordFragment : Fragment() {
         }
     }
     
-    protected val exportToFilePicker =
+    private val exportToFilePicker =
         registerForActivityResult(ActivityResultContracts.CreateDocument("text/plain")) { uri ->
             uri?.let {
                 try {
@@ -235,6 +242,8 @@ abstract class BaseTestPasswordFragment : Fragment() {
     
     // Subclasses must override
     protected abstract fun getCoordinatorLayout(): CoordinatorLayout
+    
+    // Subclasses must override
     protected abstract fun getSnackbarAnchorView(): View
     
     override fun onDestroyView() {
