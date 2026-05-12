@@ -59,7 +59,7 @@
             app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
             app:layout_constraintEnd_toEndOf="@id/phraseGeneratedTextView"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/margin_16">
+            android:layout_marginTop="@dimen/margin_12">
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseCopyBtn"
@@ -113,7 +113,7 @@
             app:layout_constraintStart_toStartOf="@id/phraseGeneratedTextView"
             app:layout_constraintTop_toBottomOf="@id/phraseBtnsLayout"
             android:layout_marginStart="@dimen/margin_8"
-            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginTop="@dimen/margin_25"
             android:drawableStart="@drawable/ic_customize"
             android:drawablePadding="@dimen/margin_8"
             android:drawableTint="?attr/colorSecondary"
