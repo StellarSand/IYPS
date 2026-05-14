@@ -53,6 +53,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PWD_SPACES
 import com.iyps.preferences.PreferenceManager.Companion.PWD_SPEC_CHARS
 import com.iyps.preferences.PreferenceManager.Companion.PWD_UPPERCASE
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.ClipboardUtils.Companion.scheduleClipboardClear
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
@@ -217,6 +218,7 @@ class GeneratePasswordFragment : Fragment() {
                              requireContext().getString(R.string.copied_to_clipboard),
                              mainActivity.activityBinding.mainBottomNav)
             }
+            scheduleClipboardClear(requireContext())
         }
         
         // Regenerate

@@ -32,6 +32,7 @@ import androidx.fragment.app.Fragment
 import com.iyps.R
 import com.iyps.databinding.FragmentTestPasswordBinding
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.ClipboardUtils.Companion.scheduleClipboardClear
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.LocaleUtils.Companion.localizedFeedbackResourceBundle
 import com.iyps.utils.ResultUtils
@@ -66,6 +67,7 @@ abstract class BaseTestPasswordFragment : Fragment() {
         // Copy
         fragmentBinding.copyChip.setOnClickListener {
             copyToClipboard(getFormattedResultsText())
+            scheduleClipboardClear(requireContext())
         }
         
         // Share
@@ -161,7 +163,7 @@ abstract class BaseTestPasswordFragment : Fragment() {
     }
     
     protected fun copyToClipboard(copiedText: CharSequence) {
-        val clipData = ClipData.newPlainText("IYPS", copiedText)
+        val clipData = ClipData.newPlainText("", copiedText)
         clipData.hideSensitiveContent()
         clipboardManager.setPrimaryClip(clipData)
         // Show snackbar only if 12L or lower to avoid duplicate notifications

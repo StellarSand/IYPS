@@ -47,6 +47,7 @@ import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR_POS
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDLIST_POS
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS_COUNT
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
+import com.iyps.utils.ClipboardUtils.Companion.scheduleClipboardClear
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.TextUtils.Companion.PHRASE_SEPARATORS
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
@@ -189,6 +190,7 @@ class GeneratePassphraseFragment : Fragment() {
                                  requireContext().getString(R.string.copied_to_clipboard),
                                  mainActivity.activityBinding.mainBottomNav)
                 }
+                scheduleClipboardClear(requireContext())
             }
         }
         

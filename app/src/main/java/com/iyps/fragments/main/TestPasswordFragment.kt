@@ -43,8 +43,7 @@ import com.iyps.fragments.common.BaseTestPasswordFragment
 import com.iyps.objects.AppState
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
-import com.iyps.utils.ClipboardUtils.Companion.clearClipboard
-import com.iyps.utils.ClipboardUtils.Companion.manageClipboard
+import com.iyps.utils.ClipboardUtils.Companion.scheduleClipboardClear
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.showSupportAnimBtmSheet
 import kotlinx.coroutines.Job
@@ -176,6 +175,7 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
                     when (item?.itemId) {
                         android.R.id.copy -> {
                             copyToClipboard(text.toString())
+                            scheduleClipboardClear(requireContext())
                         }
                     }
                     return true
@@ -184,9 +184,6 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
                 override fun onDestroyActionMode(mode: ActionMode?) {}
             }
         }
-        
-        // Clipboard
-        manageClipboard(clipboardManager, lifecycleScope)
         
         // Fab
         fragmentBinding.testMultipleFab.setOnClickListener {
@@ -252,13 +249,5 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
     
     override fun getSnackbarAnchorView(): View {
         return fragmentBinding.testMultipleFab
-    }
-    
-    // Clear clipboard immediately when fragment destroyed
-    override fun onDestroyView() {
-        super.onDestroyView()
-        clipboardManager.apply {
-            if (hasPrimaryClip() && primaryClipDescription?.label == "IYPS") clearClipboard()
-        }
     }
 }

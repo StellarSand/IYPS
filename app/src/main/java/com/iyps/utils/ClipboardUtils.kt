@@ -19,33 +19,18 @@ package com.iyps.utils
 
 import android.content.ClipData
 import android.content.ClipDescription
-import android.content.ClipboardManager
+import android.content.Context
 import android.os.Build
 import android.os.PersistableBundle
-import androidx.lifecycle.LifecycleCoroutineScope
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import androidx.work.ExistingWorkPolicy
+import androidx.work.OneTimeWorkRequest
+import androidx.work.WorkManager
+import com.iyps.services.ClearClipboardWorker
+import java.util.concurrent.TimeUnit
 
 class ClipboardUtils {
     
     companion object {
-        
-        fun manageClipboard(clipboardManager: ClipboardManager, lifecycleScope: LifecycleCoroutineScope) {
-            var job: Job? = null
-            
-            // Clear clipboard after 1 minute if password is copied
-            clipboardManager.addPrimaryClipChangedListener {
-                if (clipboardManager.hasPrimaryClip()
-                    && clipboardManager.primaryClipDescription?.label == "IYPS") {
-                    job?.cancel()
-                    job = lifecycleScope.launch {
-                        delay(60000)
-                        clipboardManager.clearClipboard()
-                    }
-                }
-            }
-        }
         
         // Hide from revealing on copy
         // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#SensitiveContent
@@ -56,13 +41,19 @@ class ClipboardUtils {
             }
         }
         
-        // Clear password from clipboard
-        fun ClipboardManager.clearClipboard() {
-            when {
-                Build.VERSION.SDK_INT >= 28 -> clearPrimaryClip()
-                else -> setPrimaryClip(ClipData.newPlainText(null, null))
-            }
+        fun scheduleClipboardClear(context: Context) {
+            val clearClipboardRequest =
+                OneTimeWorkRequest
+                    .Builder(ClearClipboardWorker::class.java)
+                    .setInitialDelay(1L, TimeUnit.MINUTES)
+                    .build()
             
+            // Create a new work request with a 1 min delay
+            WorkManager.getInstance(context.applicationContext).enqueueUniqueWork(
+                "IYPS_clear_clipboard_work",
+                ExistingWorkPolicy.REPLACE,
+                clearClipboardRequest
+            )
         }
         
     }

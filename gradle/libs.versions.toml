@@ -21,12 +21,13 @@ androidKotlin = "2.3.21" # https://github.com/JetBrains/kotlin/releases/latest (
 appcompat = "1.7.1"
 coreKtx = "1.18.0"
 splashscreen = "1.2.0"
-material3 = "1.14.0-rc01"
+material3 = "1.14.0"
 koin = "4.1.1" # v4.2.0 & above causes issues with backstack
 navigationKtx = "2.9.8"
 zxcvbn4j = "1.8.2" # Don't update to 1.9.0
 # with 1.9.0, time to crack calculations are wrong, sometimes giving 0 months/years
 # ex: try with the passwords "hsdsjlll", "jdfhasfqwui1"
+workRuntime = "2.11.2"
 androidFastscrollKt = "v1.0.8"
 lottie = "6.7.1"
 
@@ -40,6 +41,7 @@ androidx-navigation-runtime-ktx = { module = "androidx.navigation:navigation-run
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationKtx" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationKtx" }
 zxcvbn4j = { module = "com.nulab-inc:zxcvbn", version.ref = "zxcvbn4j" }
+androidx-work-runtime = { module = "androidx.work:work-runtime", version.ref = "workRuntime" }
 androidFastScrollKt = { module = "com.github.StellarSand:AndroidFastScroll-kt", version.ref = "androidFastscrollKt" }
 lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 
