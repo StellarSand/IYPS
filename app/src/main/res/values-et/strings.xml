@@ -114,6 +114,13 @@
     <string name="theme">Kujundus</string>
     <string name="material_you">Material You\n(eeldab rakenduse uuesti käivitamist)</string>
     <string name="privacy">Privaatsus</string>
+    <string name="clear_copied_items_after">Clear copied items after</string>
+    <string name="time_15_sec">15 sekundit</string>
+    <string name="time_30_sec">30 sekundit</string>
+    <string name="time_45_sec">45 sekundit</string>
+    <string name="time_1_min">1 minut</string>
+    <string name="time_2_mins">2 minutit</string>
+    <string name="time_5_mins">5 minutit</string>
     <string name="block_screenshots">Keela rakendusest ekraanitõmmiste tegemine</string>
     <string name="incognito_keyboard">Privaatne klahvistik</string>
     <string name="about">Rakenduse teave</string>

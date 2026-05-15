@@ -19,10 +19,10 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:paddingTop="@dimen/margin_8"
     android:paddingBottom="@dimen/margin_4"
     android:orientation="vertical"
@@ -53,7 +53,7 @@
             android:clipToPadding="false"
             android:paddingTop="@dimen/margin_10"
             android:paddingBottom="10dp"
-            tools:listitem="@layout/item_licenses_recycler_view"/>
+            tools:listitem="@layout/item_licenses_rv"/>
 
     </androidx.core.widget.NestedScrollView>
 

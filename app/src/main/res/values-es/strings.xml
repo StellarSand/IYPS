@@ -135,6 +135,13 @@
     <string name="theme">Tem\u00E1tica</string>
     <string name="material_you">Material You\n(requiere reiniciar la app)</string>
     <string name="privacy">Privacidad</string>
+    <string name="clear_copied_items_after">Borrar los elementos copiados tras</string>
+    <string name="time_15_sec">15 segundos</string>
+    <string name="time_30_sec">30 segundos</string>
+    <string name="time_45_sec">45 segundos</string>
+    <string name="time_1_min">1 minuto</string>
+    <string name="time_2_mins">2 minutos</string>
+    <string name="time_5_mins">5 minutos</string>
     <string name="block_screenshots">Bloquear capturas de pantalla en la app</string>
     <string name="incognito_keyboard">Teclado de inc\u00F3gnito</string>
     <string name="about">Acerca de</string>

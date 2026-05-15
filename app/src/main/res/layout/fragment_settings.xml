@@ -135,11 +135,29 @@
             android:textSize="@dimen/text_17"
             style="@style/MediumBoldText"/>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/clearClipboardTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_25"
+            android:layout_marginTop="@dimen/margin_12"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/clearClipboardDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:hint="@string/clear_copied_items_after"
+            tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <com.google.android.material.materialswitch.MaterialSwitch
             android:id="@+id/blockScreenshotsSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_10"
             android:paddingHorizontal="@dimen/margin_25"
             android:paddingVertical="@dimen/margin_16"
             android:clickable="true"

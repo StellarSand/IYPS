@@ -124,6 +124,13 @@
     <string name="theme">主题</string>
     <string name="material_you">莫奈取色\n（需重启本应用）</string>
     <string name="privacy">隐私权</string>
+    <string name="clear_copied_items_after">在以下时间后清除已复制的项目</string>
+    <string name="time_15_sec">15 秒</string>
+    <string name="time_30_sec">30 秒</string>
+    <string name="time_45_sec">45 秒</string>
+    <string name="time_1_min">1 分钟</string>
+    <string name="time_2_mins">2 分钟</string>
+    <string name="time_5_mins">5 分钟</string>
     <string name="block_screenshots">阻止应用程序中的屏幕截图</string>
     <string name="incognito_keyboard">启用密码键盘</string>
     <string name="about">关于</string>

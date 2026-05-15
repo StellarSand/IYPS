@@ -129,6 +129,13 @@
     <string name="theme">پوسته</string>
     <string name="material_you">Material You\n(نیاز به باز راه‌اندازی برنامه دارد)</string>
     <string name="privacy">حریم خصوصی</string>
+    <string name="clear_copied_items_after">Clear copied items after</string>
+    <string name="time_15_sec">15 seconds</string>
+    <string name="time_30_sec">30 seconds</string>
+    <string name="time_45_sec">45 seconds</string>
+    <string name="time_1_min">1 minute</string>
+    <string name="time_2_mins">2 minutes</string>
+    <string name="time_5_mins">5 minutes</string>
     <string name="block_screenshots">مسدود کردن نماگرفت‌ها در برنامه</string>
     <string name="incognito_keyboard">صفحه‌کلید ناشناس</string>
     <string name="about">درباره</string>

@@ -26,4 +26,4 @@
     android:background="@android:color/transparent"
     android:paddingVertical="@dimen/margin_10"
     android:clipToPadding="false"
-    tools:listitem="@layout/item_file_recycler_view" />
+    tools:listitem="@layout/item_multi_pwd_rv" />

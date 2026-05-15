@@ -25,12 +25,16 @@ import android.os.PersistableBundle
 import androidx.work.ExistingWorkPolicy
 import androidx.work.OneTimeWorkRequest
 import androidx.work.WorkManager
-import com.iyps.services.ClearClipboardWorker
+import com.iyps.preferences.PreferenceManager
+import com.iyps.preferences.PreferenceManager.Companion.CLEAR_CLIPBOARD_TIME
+import com.iyps.workers.ClearClipboardWorker
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.get
 import java.util.concurrent.TimeUnit
 
 class ClipboardUtils {
     
-    companion object {
+    companion object : KoinComponent {
         
         // Hide from revealing on copy
         // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#SensitiveContent
@@ -41,14 +45,17 @@ class ClipboardUtils {
             }
         }
         
+        // Create work request to clear clipboard after specified delay
         fun scheduleClipboardClear(context: Context) {
             val clearClipboardRequest =
                 OneTimeWorkRequest
                     .Builder(ClearClipboardWorker::class.java)
-                    .setInitialDelay(1L, TimeUnit.MINUTES)
+                    .setInitialDelay(
+                        get<PreferenceManager>().getLong(CLEAR_CLIPBOARD_TIME, defVal = 60L),
+                        TimeUnit.SECONDS
+                    )
                     .build()
             
-            // Create a new work request with a 1 min delay
             WorkManager.getInstance(context.applicationContext).enqueueUniqueWork(
                 "IYPS_clear_clipboard_work",
                 ExistingWorkPolicy.REPLACE,

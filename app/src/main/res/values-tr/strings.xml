@@ -139,6 +139,13 @@
     <string name="theme">Tema</string>
     <string name="material_you">Material You\n(uygulaman\u0131n yeniden ba\u015Flat\u0131lmas\u0131n\u0131 gerektirir)</string>
     <string name="privacy">Gizlilik</string>
+    <string name="clear_copied_items_after">Kopyalanan öğeleri şu süre sonunda sil</string>
+    <string name="time_15_sec">15 saniye</string>
+    <string name="time_30_sec">30 saniye</string>
+    <string name="time_45_sec">45 saniye</string>
+    <string name="time_1_min">1 dakika</string>
+    <string name="time_2_mins">2 dakika</string>
+    <string name="time_5_mins">5 dakika</string>
     <string name="block_screenshots">Ekran g\u00F6r\u00FCnt\u00FCs\u00FCn\u00FC engelle</string>
     <string name="incognito_keyboard">Gizli klavye</string>
     <string name="about">Hakk\u0131m\u0131zda</string>

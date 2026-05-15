@@ -124,6 +124,13 @@
     <string name="theme">テーマ</string>
     <string name="material_you">マテリアルユー\n(アプリの再起動が必要)</string>
     <string name="privacy">プライバシー</string>
+    <string name="clear_copied_items_after">コピーした項目を消去するまでの時間</string>
+    <string name="time_15_sec">15 秒</string>
+    <string name="time_30_sec">30 秒</string>
+    <string name="time_45_sec">45 秒</string>
+    <string name="time_1_min">1 分</string>
+    <string name="time_2_mins">2 分</string>
+    <string name="time_5_mins">5 分</string>
     <string name="block_screenshots">アプリでスクリーンショットをブロック</string>
     <string name="incognito_keyboard">インコグニートキーボード</string>
     <string name="about">約</string>

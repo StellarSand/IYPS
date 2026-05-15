@@ -42,6 +42,8 @@ class PreferenceManager(context: Context) {
         const val PHRASE_CAPITALIZE = "phrase_capitalize"
         const val PHRASE_NUMBERS = "phrase_numbers"
         const val MATERIAL_YOU = "material_you"
+        const val CLEAR_CLIPBOARD_POS = "clear_clipboard_pos"
+        const val CLEAR_CLIPBOARD_TIME = "clear_clipboard_time"
         const val BLOCK_SS = "block_ss"
         const val INCOG_KEYBOARD = "incog_keyboard"
         const val LAST_SUPPORT_SHOWN_TIME = "last_support_shown_time"
@@ -51,8 +53,8 @@ class PreferenceManager(context: Context) {
     private val sharedPreferences =
         context.getSharedPreferences("com.iyps_preferences", Context.MODE_PRIVATE)
     
-    fun getInt(key: String): Int {
-        return sharedPreferences.getInt(key, 0)
+    fun getInt(key: String, defVal: Int = 0): Int {
+        return sharedPreferences.getInt(key, defVal)
     }
     
     fun setInt(key: String, value: Int) {
@@ -73,8 +75,8 @@ class PreferenceManager(context: Context) {
         }
     }
     
-    fun getLong(key: String): Long {
-        return sharedPreferences.getLong(key, 0L)
+    fun getLong(key: String, defVal: Long = 0L): Long {
+        return sharedPreferences.getLong(key, defVal)
     }
     
     fun setLong(key: String, value: Long) {

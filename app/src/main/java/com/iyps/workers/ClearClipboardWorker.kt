@@ -15,19 +15,18 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.iyps.services
+package com.iyps.workers
 
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
-import android.content.Context.CLIPBOARD_SERVICE
 import android.os.Build
 import androidx.work.Worker
 import androidx.work.WorkerParameters
 
 class ClearClipboardWorker(appContext: Context, params: WorkerParameters) : Worker(appContext, params) {
     
-    private val clipboardManager = appContext.getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
+    private val clipboardManager = appContext.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
     
     override fun doWork(): Result {
         return try {

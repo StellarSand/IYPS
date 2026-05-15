@@ -30,7 +30,7 @@ import com.iyps.utils.IntentUtils.Companion.openURL
 class LicenseItemAdapter(private val aListViewItems: ArrayList<License>,
                          private val mainActivity: MainActivity) : RecyclerView.Adapter<LicenseItemAdapter.ListViewHolder>() {
     
-    inner class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ListViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         
         val licenseTitle: MaterialTextView = itemView.findViewById(R.id.licenseTitle)
         val licenseDesc: MaterialTextView = itemView.findViewById(R.id.licenseDesc)
@@ -40,7 +40,7 @@ class LicenseItemAdapter(private val aListViewItems: ArrayList<License>,
     override fun onCreateViewHolder(parent: ViewGroup,
                                     viewType: Int): ListViewHolder {
         return ListViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.item_licenses_recycler_view, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_licenses_rv, parent, false)
         )
     }
     

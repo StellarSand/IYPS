@@ -30,12 +30,12 @@ import com.iyps.activities.MainActivity
 import com.iyps.adapters.SupportMethodItemAdapter
 import com.iyps.databinding.BottomSheetFooterBinding
 import com.iyps.databinding.BottomSheetHeaderBinding
-import com.iyps.databinding.BottomSheetRecyclerViewBinding
+import com.iyps.databinding.BottomSheetRvBinding
 import com.iyps.models.SupportMethod
 
 class SupportMethodsBottomSheet : BottomSheetDialogFragment() {
     
-    private var _binding: BottomSheetRecyclerViewBinding? = null
+    private var _binding: BottomSheetRvBinding? = null
     private val bottomSheetBinding get() = _binding!!
     
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -47,7 +47,7 @@ class SupportMethodsBottomSheet : BottomSheetDialogFragment() {
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
-        _binding = BottomSheetRecyclerViewBinding.inflate(inflater, container, false)
+        _binding = BottomSheetRvBinding.inflate(inflater, container, false)
         return bottomSheetBinding.root
     }
     

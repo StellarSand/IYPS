@@ -33,7 +33,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MultiPwdActivity
 import com.iyps.adapters.MultiPwdAdapter
-import com.iyps.databinding.FragmentMultiPwdBinding
+import com.iyps.databinding.RecyclerViewBinding
 import com.iyps.objects.AppState
 import com.iyps.objects.MultiPwdList
 import com.iyps.preferences.PreferenceManager
@@ -45,7 +45,7 @@ import org.koin.android.ext.android.get
 
 class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     
-    private var _binding: FragmentMultiPwdBinding? = null
+    private var _binding: RecyclerViewBinding? = null
     private val fragmentBinding get() = _binding!!
     private lateinit var multiPwdActivity: MultiPwdActivity
     
@@ -53,7 +53,7 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
                               container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
         // Inflate the layout for this fragment
-        _binding = FragmentMultiPwdBinding.inflate(inflater, container, false)
+        _binding = RecyclerViewBinding.inflate(inflater, container, false)
         return fragmentBinding.root
     }
     

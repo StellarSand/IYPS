@@ -29,6 +29,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import androidx.fragment.app.Fragment
+import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.iyps.BuildConfig
 import com.iyps.R
 import com.iyps.activities.MainActivity
@@ -38,6 +39,8 @@ import com.iyps.bottomsheets.SupportMethodsBottomSheet
 import com.iyps.bottomsheets.ThemeBottomSheet
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
+import com.iyps.preferences.PreferenceManager.Companion.CLEAR_CLIPBOARD_POS
+import com.iyps.preferences.PreferenceManager.Companion.CLEAR_CLIPBOARD_TIME
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
 import com.iyps.preferences.PreferenceManager.Companion.MATERIAL_YOU
 import com.iyps.utils.IntentUtils.Companion.openURL
@@ -60,6 +63,16 @@ class SettingsFragment : Fragment() {
         
         val prefManager by inject<PreferenceManager>()
         val mainActivity = requireActivity() as MainActivity
+        val clearClipboardDropdownArray =
+            arrayOf(
+                getString(R.string.time_15_sec),
+                getString(R.string.time_30_sec),
+                getString(R.string.time_45_sec),
+                getString(R.string.time_1_min),
+                getString(R.string.time_2_mins),
+                getString(R.string.time_5_mins)
+            )
+        var clearClipboardDropdownSelectedPos = prefManager.getInt(CLEAR_CLIPBOARD_POS, defVal = 3)
         
         // Adjust scrollview for edge to edge
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.settingsScrollView) { v, windowInsets ->
@@ -85,6 +98,30 @@ class SettingsFragment : Fragment() {
                 isChecked = prefManager.getBoolean(MATERIAL_YOU, defValue = false)
                 setOnCheckedChangeListener { _, isChecked ->
                     prefManager.setBoolean(MATERIAL_YOU, isChecked)
+                }
+            }
+        }
+        
+        // Clear clipboard
+        (fragmentBinding.clearClipboardDropdownMenu as MaterialAutoCompleteTextView).apply {
+            setText(clearClipboardDropdownArray[clearClipboardDropdownSelectedPos])
+            setSimpleItems(clearClipboardDropdownArray)
+            setOnItemClickListener { _, _, position, _ ->
+                if (position != clearClipboardDropdownSelectedPos) {
+                    clearClipboardDropdownSelectedPos = position
+                    prefManager.setInt(key = CLEAR_CLIPBOARD_POS, value = position)
+                    prefManager.setLong(
+                        key = CLEAR_CLIPBOARD_TIME,
+                        value =
+                            when(position) {
+                                0 -> 15L
+                                1 -> 30L
+                                2 -> 45L
+                                3 -> 60L
+                                4 -> 120L
+                                else -> 300L
+                            }
+                    )
                 }
             }
         }

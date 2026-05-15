@@ -122,6 +122,13 @@
     <string name="theme">Tema</string>
     <string name="material_you">Material You\n(kr\u00E4ver omstart av app)</string>
     <string name="privacy">Integritet</string>
+    <string name="clear_copied_items_after">Clear copied items after</string>
+    <string name="time_15_sec">15 sekunder</string>
+    <string name="time_30_sec">30 sekunder</string>
+    <string name="time_45_sec">45 sekunder</string>
+    <string name="time_1_min">1 minut</string>
+    <string name="time_2_mins">2 minuter</string>
+    <string name="time_5_mins">5 minuter</string>
     <string name="block_screenshots">Blockera sk\u00E4rmdumpar i appen</string>
     <string name="incognito_keyboard">Inkognito tangentbord</string>
     <string name="about">Om</string>

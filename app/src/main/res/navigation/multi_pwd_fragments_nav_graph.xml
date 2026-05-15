@@ -28,7 +28,7 @@
         android:id="@+id/multiPwdFragment"
         android:name="com.iyps.fragments.multipwd.MultiPwdFragment"
         android:label="MultiPwdFragment"
-        tools:layout="@layout/fragment_multi_pwd">
+        tools:layout="@layout/recycler_view">
         <action
             android:id="@+id/action_multiPwdFragment_self"
             app:destination="@id/multiPwdFragment"

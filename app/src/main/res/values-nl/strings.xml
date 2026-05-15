@@ -129,6 +129,13 @@
     <string name="theme">Thema</string>
     <string name="material_you">Materiaal Jij\n(app opnieuw opstarten vereist)</string>
     <string name="privacy">Privacy</string>
+    <string name="clear_copied_items_after">Gekopieerde items verwijderen na</string>
+    <string name="time_15_sec">15 seconden</string>
+    <string name="time_30_sec">30 seconden</string>
+    <string name="time_45_sec">45 seconden</string>
+    <string name="time_1_min">1 minuut</string>
+    <string name="time_2_mins">2 minuten</string>
+    <string name="time_5_mins">5 minuten</string>
     <string name="block_screenshots">Screenshots blokkeren in app</string>
     <string name="incognito_keyboard">Incognito toetsenbord</string>
     <string name="about">Over</string>
