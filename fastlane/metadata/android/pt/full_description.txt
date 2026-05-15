@@ -1,0 +1,10 @@
+Uma aplicação de força da palavra-passe que avalia e classifica a robustez da sua palavra-passe, estima o tempo de crack e fornece avisos e sugestões úteis para palavras-passe mais fortes.
+
+Características:
+
+- Totalmente open source
+- Material design 3 & Material You
+- Completamente offline
+- Suporta temas claros e escuros
+- Sem anúncios
+- Sem recolha de dados pessoais
