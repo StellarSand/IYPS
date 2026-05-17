@@ -77,7 +77,11 @@ val appModule =
                 ByteArrayInputStream(ByteArrayOutputStream().apply {
                     get<Application>().resources.openRawResource(R.raw.english_female_names).copyTo(this)
                     get<Application>().resources.openRawResource(R.raw.english_male_names).copyTo(this)
+                    get<Application>().resources.openRawResource(R.raw.french_male_names).copyTo(this)
+                    get<Application>().resources.openRawResource(R.raw.german_female_names).copyTo(this)
+                    get<Application>().resources.openRawResource(R.raw.german_male_names).copyTo(this)
                     get<Application>().resources.openRawResource(R.raw.italian_names).copyTo(this)
+                    get<Application>().resources.openRawResource(R.raw.turkish_male_names).copyTo(this)
                 }.toByteArray())
             ) as com.nulabinc.zxcvbn.io.Resource
         }
@@ -85,6 +89,7 @@ val appModule =
         single(named("surnamesResource")) {
             ResourceFromInputStream(
                 ByteArrayInputStream(ByteArrayOutputStream().apply {
+                    get<Application>().resources.openRawResource(R.raw.chinese_surnames).copyTo(this)
                     get<Application>().resources.openRawResource(R.raw.english_surnames).copyTo(this)
                     get<Application>().resources.openRawResource(R.raw.italian_surnames).copyTo(this)
                     get<Application>().resources.openRawResource(R.raw.spanish_surnames).copyTo(this)
@@ -94,10 +99,10 @@ val appModule =
         
         single {
             // "english_wikipedia" contains english_words, eff_unranked & italian_words.
-            // "female_names" contains english_female_names, english_male_names & italian_names.
-            // The default dictionary names like "english_wikipedia" & "female_names" are used
+            // "female_names" contains all female_names and_male_names.
+            // The default dictionary names like "english_wikipedia" & "female_names" are used,
             // so that default warnings matching those dictionary names can be displayed.
-            // The dictionary names are later changed while displaying, in ResultUtils.getMatchSequenceText()
+            // The dictionary names are later changed while displaying, in BaseTestPasswordFragment.getMatchSequenceText()
             ZxcvbnBuilder()
                 .dictionaries(listOf(DictionaryLoader("passwords", get(named("commonPasswordsResource"))).load(),
                                      DictionaryLoader("english_wikipedia", get(named("wordsResource"))).load(),
