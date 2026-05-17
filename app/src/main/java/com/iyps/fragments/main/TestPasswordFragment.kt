@@ -36,7 +36,6 @@ import androidx.core.widget.doOnTextChanged
 import androidx.lifecycle.lifecycleScope
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.chip.Chip
-import com.iyps.R
 import com.iyps.activities.MainActivity
 import com.iyps.bottomsheets.TestMultiPwdBottomSheet
 import com.iyps.fragments.common.BaseTestPasswordFragment
@@ -55,8 +54,6 @@ import kotlin.getValue
 class TestPasswordFragment : BaseTestPasswordFragment() {
     
     private lateinit var mainActivity: MainActivity
-    private lateinit var naString: String
-    private var emptyMeterColor = 0
     
     override fun setupFragmentContent() {
         mainActivity = requireActivity() as MainActivity
@@ -66,8 +63,6 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
         val displayMetrics = resources.displayMetrics
         var collapsingToolbarLargeHeightInPx = 0
         var collapsingToolbarTopInsets = -1
-        naString = getString(R.string.na)
-        emptyMeterColor = resources.getColor(android.R.color.transparent, requireContext().theme)
         
         TypedValue().let {
             requireContext().theme.resolveAttribute(
@@ -200,7 +195,6 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
         }
     }
     
-    // Reset details
     private fun resetDetails() {
         fragmentBinding.apply {
             tenBGuessesStrength.text = naString
