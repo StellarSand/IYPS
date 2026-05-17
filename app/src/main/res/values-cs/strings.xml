@@ -114,7 +114,7 @@
     <string name="theme">Téma</string>
     <string name="material_you">Material You\n(vyžaduje restart aplikace)</string>
     <string name="privacy">Soukromí</string>
-    <string name="clear_copied_items_after">Clear copied items after</string>
+    <string name="clear_copied_items_after">Vymazat zkopírované položky po</string>
     <string name="time_15_sec">15 sekund</string>
     <string name="time_30_sec">30 sekund</string>
     <string name="time_45_sec">45 sekund</string>
