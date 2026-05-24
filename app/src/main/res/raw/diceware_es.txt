@@ -1,5068 +1,5068 @@
-11111	abad
-11112	abajo
-11113	abar
-11114	abate
-11115	abedul
-11116	abeja
-11121	abeto
-11122	abisal
-11123	abismo
-11124	abogar
-11125	abolir
-11126	abonar
-11131	abono
-11132	abordo
-11133	abort
-11134	abra
-11135	abrazo
-11136	abrigo
-11141	abril
-11142	abrir
-11143	ABS
-11144	abuelo
-11145	abundo
-11146	abusar
-11151	abuso
-11152	acabar
-11153	acabo
-11154	acaso
-11155	acato
-11156	acebo
-11161	acecho
-11162	aceite
-11163	acelga
-11164	acento
-11165	acepto
-11166	acera
-11211	acerca
-11212	acero
-11213	aceta
-11214	aceto
-11215	acezo
-11216	aciano
-11221	acidez
-11222	acimut
-11223	acoger
-11224	acopio
-11225	acosar
-11226	acoso
-11231	acotar
-11232	acre
-11233	acta
-11234	actea
-11235	activo
-11236	acto
-11241	actor
-11242	actriz
-11243	actual
-11244	actuar
-11245	acudir
-11246	acunar
-11251	acure
-11252	acusar
-11253	acuse
-11254	acuto
-11255	adara
-11256	adelfa
-11261	adepto
-11262	adeudo
-11263	adobe
-11264	adobo
-11265	adonde
-11266	adoro
-11311	adrar
-11312	aduana
-11313	aduar
-11314	adula
-11315	adular
-11316	adulto
-11321	adur
-11322	AEG
-11323	afable
-11324	afear
-11325	afgano
-11326	afiar
-11331	afijo
-11332	afinar
-11333	afine
-11334	afino
-11335	aforo
-11336	afro
-11341	afta
-11342	afuera
-11343	agenda
-11344	agir
-11345	agosto
-11346	agote
-11351	agraz
-11352	agre
-11353	agriar
-11354	agrio
-11355	agro
-11356	agror
-11361	agua
-11362	aguar
-11363	agudo
-11364	aguja
-11365	aguoso
-11366	ahogar
-11411	ahogo
-11412	ahora
-11413	ahorro
-11414	air
-11415	airar
-11416	aire
-11421	airear
-11422	aja
-11423	ajar
-11424	Ajax
-11425	aje
-11426	ajea
-11431	ajear
-11432	ajebe
-11433	ajeno
-11434	ajeo
-11435	ajero
-11436	ajete
-11441	ajo
-11442	ajobo
-11443	ajote
-11444	ajuar
-11445	ajuste
-11446	ala
-11451	alabar
-11452	alado
-11453	alafa
-11454	alama
-11455	alano
-11456	alar
-11461	alazo
-11462	albano
-11463	albar
-11464	albo
-11465	albor
-11466	albur
-11511	alce
-11512	alcea
-11513	alcor
-11514	aldea
-11515	alea
-11516	alear
-11521	alece
-11522	aleda
-11523	alegar
-11524	alegre
-11525	alegro
-11526	aleja
-11531	alejar
-11532	alera
-11533	alero
-11534	aleto
-11535	aleya
-11536	alezo
-11541	alfa
-11542	alfar
-11543	alfil
-11544	alfiz
-11545	alfoz
-11546	alga
-11551	algar
-11552	algo
-11553	alguno
-11554	alhaja
-11555	alhoz
-11556	aliar
-11561	alias
-11562	Alicia
-11563	alifa
-11564	alijo
-11565	alioj
-11566	aliso
-11611	aljez
-11612	aljibe
-11613	almo
-11614	almud
-11615	alno
-11616	aloa
-11621	aloja
-11622	Alonso
-11623	alosa
-11624	aloya
-11625	Alpes
-11626	altar
-11631	Altea
-11632	alteza
-11633	alto
-11634	altura
-11635	alud
-11636	aludo
-11641	alza
-11642	alzar
-11643	amable
-11644	amago
-11645	amar
-11646	amaro
-11651	amarre
-11652	amate
-11653	ambas
-11654	ambos
-11655	ameba
-11656	amelo
-11661	ameno
-11662	ameos
-11663	amibo
-11664	amida
-11665	amigo
-11666	amito
-12111	amo
-12112	amole
-12113	amor
-12114	amoral
-12115	amplo
-12116	amuje
-12121	amura
-12122	amuso
-12123	Ana
-12124	anaco
-12125	anafe
-12126	anata
-12131	anca
-12132	ancho
-12133	anchoa
-12134	ancla
-12135	anda
-12136	andar
-12141	anea
-12142	anejo
-12143	anemia
-12144	aneto
-12145	anexo
-12146	angla
-12151	anglo
-12152	angra
-12153	anidar
-12154	animal
-12155	anime
-12156	anito
-12161	Ann
-12162	anoche
-12163	anotar
-12164	ansa
-12165	ANSI
-12166	ansia
-12211	ante
-12212	antena
-12213	antes
-12214	antia
-12215	antro
-12216	anual
-12221	anuo
-12222	anura
-12223	anuro
-12224	aojar
-12225	aorta
-12226	aovar
-12231	apea
-12232	apear
-12233	apego
-12234	apelo
-12235	apena
-12236	apenas
-12241	apeo
-12242	apero
-12243	apilar
-12244	apio
-12245	apnea
-12246	apodo
-12251	apoyar
-12252	apoyo
-12253	aptar
-12254	apto
-12255	apure
-12256	apuro
-12261	aquel
-12262	aqueo
-12263	Arabia
-12264	arabo
-12265	Aral
-12266	arana
-12311	arca
-12312	arcar
-12313	arcaz
-12314	arce
-12315	arcea
-12316	archa
-12321	arco
-12322	arda
-12323	arder
-12324	ardid
-12325	ardor
-12326	arduo
-12331	arena
-12332	arenal
-12333	ares
-12334	arete
-12335	Argel
-12336	argo
-12341	argos
-12342	argot
-12343	Aries
-12344	arillo
-12345	ario
-12346	arma
-12351	armar
-12352	armero
-12353	aro
-12354	aroma
-12355	arpa
-12356	arpar
-12361	arpeo
-12362	arra
-12363	arre
-12364	arreo
-12365	arria
-12366	arriba
-12411	arroz
-12412	artar
-12413	arte
-12414	Arturo
-12415	asa
-12416	asador
-12421	asar
-12422	asaz
-12423	asco
-12424	ascua
-12425	asear
-12426	aseo
-12431	asesor
-12432	asgo
-12433	Asia
-12434	asilo
-12435	asina
-12436	asir
-12441	asma
-12442	asmar
-12443	asnal
-12444	asno
-12445	asomo
-12446	aspa
-12451	asta
-12452	aster
-12453	asto
-12454	Astra
-12455	astro
-12456	asumir
-12461	asuso
-12462	ata
-12463	atabe
-12464	atajo
-12465	atal
-12466	ataque
-12511	atar
-12512	atasco
-12513	atear
-12514	ateneo
-12515	ateo
-12516	atino
-12521	atlas
-12522	atoar
-12523	atona
-12524	atora
-12525	atoro
-12526	atraer
-12531	atril
-12532	atrio
-12533	atroz
-12534	atufo
-12535	audaz
-12536	audio
-12541	auge
-12542	augur
-12543	aula
-12544	aun
-12545	aunar
-12546	aupar
-12551	aura
-12552	auto
-12553	autor
-12554	aval
-12555	avalar
-12556	avaro
-12561	ave
-12562	AVE
-12563	avena
-12564	aveza
-12565	aviar
-12566	avica
-12611	avieso
-12612	aviso
-12613	avizor
-12614	avo
-12615	avol
-12616	axe
-12621	axial
-12622	axila
-12623	axis
-12624	ayate
-12625	ayer
-12626	ayo
-12631	ayuda
-12632	ayudar
-12633	ayunar
-12634	ayuno
-12635	ayuso
-12636	azada
-12641	azar
-12642	azaro
-12643	azaya
-12644	azimut
-12645	Aznar
-12646	azoar
-12651	azogue
-12652	azor
-12653	azote
-12654	azua
-12655	azul
-12656	azur
-12661	azuzar
-12662	Babel
-12663	babia
-12664	bable
-12665	babor
-12666	baca
-13111	Bach
-13112	bache
-13113	bacilo
-13114	badal
-13115	badea
-13116	bag
-13121	baga
-13122	bagaje
-13123	bagar
-13124	bagazo
-13125	bago
-13126	bagre
-13131	bah
-13132	Baikal
-13133	baila
-13134	bailar
-13135	baile
-13136	bajar
-13141	bajel
-13142	bajez
-13143	bajeza
-13144	bajo
-13145	bajura
-13146	bala
-13151	balar
-13152	balda
-13153	balde
-13154	baldo
-13155	balea
-13156	baleo
-13161	baliza
-13162	ballet
-13163	balso
-13164	balto
-13165	bamba
-13166	Bambi
-13211	banal
-13212	banas
-13213	bance
-13214	banco
-13215	banda
-13216	bando
-13221	bang
-13222	baobab
-13223	baque
-13224	bar
-13225	baraja
-13226	barato
-13231	barba
-13232	barbo
-13233	barco
-13234	barda
-13235	bardo
-13236	bario
-13241	Barna
-13242	barra
-13243	barril
-13244	barrio
-13245	barro
-13246	Bart
-13251	barza
-13252	basa
-13253	basal
-13254	basar
-13255	basca
-13256	basco
-13261	base
-13262	BASF
-13263	basis
-13264	baso
-13265	baste
-13266	basto
-13311	basura
-13312	bata
-13313	batel
-13314	bateo
-13315	batir
-13316	bato
-13321	batuta
-13322	baudio
-13323	bauza
-13324	baya
-13325	bayal
-13326	Bayern
-13331	bayeta
-13332	bayo
-13333	baza
-13334	bazar
-13335	bazo
-13336	BBV
-13341	beato
-13342	bebdo
-13343	beca
-13344	becar
-13345	bedel
-13346	befa
-13351	befar
-13352	befre
-13353	beige
-13354	beis
-13355	belez
-13356	belfo
-13361	belga
-13362	belio
-13363	bello
-13364	bemol
-13365	Ben
-13366	benzol
-13411	beodo
-13412	berro
-13413	berta
-13414	berza
-13415	besar
-13416	beso
-13421	bestia
-13422	besugo
-13423	beta
-13424	Betis
-13425	beudo
-13426	bevra
-13431	bey
-13432	bezar
-13433	Bibi
-13434	biblia
-13435	BIC
-13436	bicho
-13441	bici
-13442	biela
-13443	bien
-13444	bienal
-13445	big
-13446	bigote
-13451	bija
-13452	bilao
-13453	Bilbao
-13454	bilis
-13455	billar
-13456	bimba
-13461	bina
-13462	binar
-13463	bingo
-13464	bio
-13465	biombo
-13466	BIOS
-13511	birla
-13512	birlo
-13513	bis
-13514	bisel
-13515	biso
-13516	bit
-13521	bizca
-13522	blago
-13523	blando
-13524	blavo
-13525	bleda
-13526	bledo
-13531	blezo
-13532	bloc
-13533	bloca
-13534	bloque
-13535	blusa
-13536	BMW
-13541	boa
-13542	boato
-13543	Bob
-13544	bobina
-13545	boca
-13546	bocado
-13551	bocal
-13552	bocar
-13553	bocha
-13554	boche
-13555	bocina
-13556	bocio
-13561	boda
-13562	bodega
-13563	BOE
-13564	bofa
-13565	bofe
-13566	boga
-13611	bogar
-13612	Bohr
-13613	boicot
-13614	boina
-13615	boj
-13616	bojar
-13621	bol
-13622	bolar
-13623	bolero
-13624	boleto
-13625	bolla
-13626	bollo
-13631	bolo
-13632	bolso
-13633	bomba
-13634	bombeo
-13635	bombo
-13636	bongo
-13641	bonito
-13642	Bonn
-13643	bono
-13644	bonzo
-13645	borato
-13646	borde
-13651	bordo
-13652	boreal
-13653	Borges
-13654	borla
-13655	borne
-13656	boro
-13661	bosar
-13662	Bosnia
-13663	bosque
-13664	bosta
-13665	Boston
-13666	bota
-14111	botar
-14112	bote
-14113	botijo
-14114	box
-14115	boxear
-14116	boxeo
-14121	boy
-14122	boya
-14123	boyal
-14124	boyar
-14125	bozal
-14126	bozo
-14131	braco
-14132	braga
-14133	brasa
-14134	Brasil
-14135	bravo
-14136	brazo
-14141	brea
-14142	brear
-14143	breca
-14144	brecha
-14145	brega
-14146	bren
-14151	brete
-14152	breva
-14153	breve
-14154	brezo
-14155	brida
-14156	brisa
-14161	brizo
-14162	broca
-14163	broche
-14164	broma
-14165	bromo
-14166	bronce
-14211	brotar
-14212	brote
-14213	broto
-14214	broza
-14215	brugo
-14216	Brujas
-14221	brujo
-14222	bruma
-14223	bruto
-14224	buba
-14225	bucal
-14226	buces
-14231	buche
-14232	bucle
-14233	buco
-14234	Buda
-14235	buen
-14236	bueno
-14241	buey
-14242	bufa
-14243	bufar
-14244	bufete
-14245	bufo
-14246	buhar
-14251	buitre
-14252	buja
-14253	buje
-14254	bujo
-14255	bular
-14256	bulbo
-14261	bulda
-14262	bulla
-14263	bulo
-14264	bulto
-14265	BUP
-14266	buque
-14311	burdo
-14312	bureo
-14313	burga
-14314	burgo
-14315	Burgos
-14316	buril
-14321	burla
-14322	burro
-14323	bus
-14324	busca
-14325	buscar
-14326	busco
-14331	Bush
-14332	busto
-14333	butaca
-14334	buzar
-14335	buzo
-14336	buzos
-14341	cabal
-14342	cabe
-14343	caber
-14344	cabeza
-14345	cable
-14346	Cabo
-14351	cabo
-14352	cabra
-14353	cache
-14354	cacho
-14355	caco
-14356	cacto
-14361	cada
-14362	cadena
-14363	cadera
-14364	cadete
-14365	cadmio
-14366	cadoz
-14411	caduco
-14412	caer
-14413	cafiz
-14414	cafre
-14415	caico
-14416	Cairo
-14421	caja
-14422	cajero
-14423	cal
-14424	cala
-14425	calar
-14426	calcar
-14431	calcio
-14432	calco
-14433	calda
-14434	caldo
-14435	caler
-14436	calesa
-14441	caleta
-14442	calle
-14443	callo
-14444	calmar
-14445	calmo
-14446	calor
-14451	calvo
-14452	calza
-14453	calzar
-14454	calzo
-14455	cama
-14456	camada
-14461	cambio
-14462	cambo
-14463	camino
-14464	camio
-14465	camisa
-14466	campa
-14511	campo
-14512	campus
-14513	can
-14514	canal
-14515	candil
-14516	canela
-14521	caney
-14522	canez
-14523	canica
-14524	canje
-14525	cano
-14526	canoa
-14531	canon
-14532	Canon
-14533	canoso
-14534	canta
-14535	cante
-14536	canto
-14541	canuto
-14542	caoba
-14543	caos
-14544	capa
-14545	capaz
-14546	capea
-14551	capear
-14552	captar
-14553	caqui
-14554	car
-14555	caray
-14556	carca
-14561	cardo
-14562	carey
-14563	carga
-14564	cargar
-14565	cargo
-14566	Caribe
-14611	caries
-14612	cariz
-14613	carla
-14614	Carlos
-14615	carne
-14616	caro
-14621	carpa
-14622	carpo
-14623	carril
-14624	carro
-14625	carta
-14626	casa
-14631	casal
-14632	casar
-14633	casca
-14634	casco
-14635	casero
-14636	casi
-14641	casino
-14642	Casio
-14643	casio
-14644	caso
-14645	caspa
-14646	casto
-14651	castor
-14652	cata
-14653	catar
-14654	cato
-14655	catre
-14656	cauce
-14661	caucho
-14662	caudal
-14663	causa
-14664	causal
-14665	causar
-14666	cauto
-15111	cavar
-15112	cayo
-15113	caz
-15114	caza
-15115	cazar
-15116	cazuz
-15121	CCOO
-15122	CDROM
-15123	cea
-15124	ceba
-15125	cebar
-15126	cebo
-15131	cebra
-15132	cebro
-15133	cecina
-15134	ceder
-15135	cedro
-15136	cegar
-15141	ceja
-15142	cejar
-15143	cejo
-15144	cela
-15145	celar
-15146	celda
-15151	celia
-15152	celo
-15153	Celta
-15154	celta
-15155	cena
-15156	cenar
-15161	cenefa
-15162	cenit
-15163	censo
-15164	censor
-15165	cepa
-15166	cepo
-15211	cerca
-15212	cercar
-15213	cerco
-15214	cerdo
-15215	cereal
-15216	cereo
-15221	cerezo
-15222	cero
-15223	cerrar
-15224	cerro
-15225	cerviz
-15226	cesar
-15231	cese
-15232	cesio
-15233	ceso
-15234	cesta
-15235	cesto
-15236	cetro
-15241	Ceuta
-15242	chacha
-15243	chaco
-15244	chal
-15245	chalet
-15246	chanza
-15251	chapa
-15252	charco
-15253	Charly
-15254	charo
-15255	charol
-15256	chasis
-15261	chat
-15262	chato
-15263	chaval
-15264	che
-15265	checo
-15266	chepa
-15311	cheque
-15312	chic
-15313	chicha
-15314	chicle
-15315	chico
-15316	Chile
-15321	chile
-15322	China
-15323	chino
-15324	chip
-15325	Chipre
-15326	chispa
-15331	chist
-15332	chiste
-15333	Chita
-15334	chito
-15335	chiva
-15336	chivo
-15341	chocar
-15342	choco
-15343	chola
-15344	Chopin
-15345	chopo
-15346	choque
-15351	chorro
-15352	choto
-15353	chovo
-15354	chozo
-15355	chufa
-15356	chulo
-15361	chupar
-15362	chuza
-15363	chuzo
-15364	ciar
-15365	ciclo
-15366	Cid
-15411	ciego
-15412	cielo
-15413	cien
-15414	cieno
-15415	ciervo
-15416	cifra
-15421	cilio
-15422	cima
-15423	cimia
-15424	cinca
-15425	cincel
-15426	cinco
-15431	cine
-15432	cinema
-15433	cinta
-15434	cinto
-15435	cipayo
-15436	circe
-15441	Circe
-15442	circo
-15443	cirio
-15444	cirro
-15445	cisco
-15446	cisma
-15451	cisne
-15452	cita
-15453	citar
-15454	cito
-15455	ciudad
-15456	civil
-15461	clamor
-15462	clan
-15463	claro
-15464	clase
-15465	clavar
-15466	clave
-15511	clavel
-15512	clavo
-15513	clero
-15514	clima
-15515	Clio
-15516	clip
-15521	ClNa
-15522	clonar
-15523	cloro
-15524	club
-15525	CNMT
-15526	CNMV
-15531	coba
-15532	cobijo
-15533	cobra
-15534	cobre
-15535	cobro
-15536	cocar
-15541	cocer
-15542	coche
-15543	cocina
-15544	codo
-15545	cofa
-15546	cofia
-15551	cofre
-15552	cohete
-15553	cohol
-15554	cojear
-15555	cojera
-15556	cojez
-15561	cojo
-15562	col
-15563	cola
-15564	colar
-15565	colega
-15566	coleta
-15611	collar
-15612	colmar
-15613	colmo
-15614	colo
-15615	colon
-15616	colono
-15621	color
-15622	coloso
-15623	colza
-15624	coma
-15625	comba
-15626	comer
-15631	cometa
-15632	con
-15633	conato
-15634	conde
-15635	conejo
-15636	conexo
-15641	conga
-15642	Congo
-15643	cono
-15644	conta
-15645	convoy
-15646	copa
-15651	copar
-15652	cope
-15653	copia
-15654	copiar
-15655	copla
-15656	copo
-15661	copy
-15662	coque
-15663	cor
-15664	coraje
-15665	coral
-15666	coraza
-16111	corcel
-16112	corcho
-16113	corda
-16114	cordel
-16115	corno
-16116	coro
-16121	corona
-16122	corra
-16123	corral
-16124	correo
-16125	corro
-16126	corso
-16131	cortar
-16132	corte
-16133	corto
-16134	corva
-16135	corvo
-16136	corzo
-16141	cosa
-16142	coser
-16143	cosita
-16144	coso
-16145	costa
-16146	coste
-16151	costo
-16152	cota
-16153	cotar
-16154	coto
-16155	coyote
-16156	coz
-16161	craso
-16162	crea
-16163	crear
-16164	crecer
-16165	credo
-16166	creer
-16211	crema
-16212	Creta
-16213	criar
-16214	criba
-16215	cric
-16216	crida
-16221	crimen
-16222	crin
-16223	cripta
-16224	croar
-16225	cromo
-16226	crono
-16231	cruce
-16232	crudo
-16233	cruel
-16234	cruz
-16235	cruzar
-16236	cual
-16241	cuan
-16242	cuando
-16243	cuarto
-16244	cuarzo
-16245	cuatro
-16246	Cuba
-16251	cuba
-16252	cubano
-16253	cubil
-16254	cubo
-16255	cubrir
-16256	cucar
-16261	cuco
-16262	cuello
-16263	cuemo
-16264	cuenta
-16265	cuerdo
-16266	cuero
-16311	cuerpo
-16312	cuesa
-16313	cuesta
-16314	cueva
-16315	cuezo
-16316	cuida
-16321	cuidar
-16322	cuita
-16323	culpa
-16324	culto
-16325	cumbre
-16326	cuna
-16331	cuneta
-16332	Cuomo
-16333	cuota
-16334	cupo
-16335	cura
-16336	curar
-16341	curdo
-16342	curia
-16343	curio
-16344	curro
-16345	cursar
-16346	cursi
-16351	curso
-16352	cursor
-16353	curta
-16354	curtir
-16355	curto
-16356	curvo
-16361	cutir
-16362	cutis
-16363	cutre
-16364	cuyo
-16365	cuzco
-16366	Cuzco
-16411	daba
-16412	daban
-16413	dabas
-16414	daca
-16415	dacio
-16416	dad
-16421	dador
-16422	daga
-16423	dais
-16424	dala
-16425	dalia
-16426	dalle
-16431	dama
-16432	damos
-16433	dan
-16434	dandi
-16435	danger
-16436	Danone
-16441	Dante
-16442	danza
-16443	danzar
-16444	dar
-16445	dardo
-16446	darga
-16451	das
-16452	datar
-16453	dato
-16454	David
-16455	deal
-16456	debajo
-16461	debate
-16462	debdo
-16463	debe
-16464	deber
-16465	debut
-16466	decir
-16511	decoro
-16512	dedal
-16513	dedil
-16514	dedo
-16515	dehesa
-16516	deis
-16521	dejar
-16522	del
-16523	dele
-16524	delga
-16525	Delia
-16526	delito
-16531	delta
-16532	demo
-16533	demos
-16534	den
-16535	dende
-16536	denso
-16541	dental
-16542	dentro
-16543	deo
-16544	des
-16545	desde
-16546	dese
-16551	deseo
-16552	desga
-16553	desk
-16554	desliz
-16555	deso
-16556	deste
-16561	desto
-16562	deudo
-16563	deudor
-16564	devoto
-16565	Dheli
-16566	diablo
-16611	diado
-16612	dial
-16613	Diana
-16614	diana
-16615	diario
-16616	dibujo
-16621	dicho
-16622	dictar
-16623	Diego
-16624	diente
-16625	diera
-16626	diere
-16631	diese
-16632	Diesel
-16633	dieta
-16634	diez
-16635	difuso
-16636	digno
-16641	dije
-16642	dilema
-16643	dimes
-16644	dimos
-16645	DIN
-16646	dinero
-16651	dino
-16652	dintel
-16653	dio
-16654	diodo
-16655	dios
-16656	diosa
-16661	dioso
-16662	dique
-16663	disco
-16664	disk
-16665	dispar
-16666	diste
-21111	dito
-21112	divino
-21113	divo
-21114	dobla
-21115	doblar
-21116	doble
-21121	doblo
-21122	doca
-21123	doce
-21124	docena
-21125	docto
-21126	doctor
-21131	dogal
-21132	dogma
-21133	dogo
-21134	dolar
-21135	doler
-21136	dolo
-21141	dolor
-21142	doma
-21143	domar
-21144	domo
-21145	Don
-21146	don
-21151	Don
-21152	dona
-21153	Donald
-21154	donar
-21155	doncel
-21156	donde
-21161	dopar
-21162	dorado
-21163	doral
-21164	dorar
-21165	dorio
-21166	dormir
-21211	dorna
-21212	dorso
-21213	dos
-21214	dosel
-21215	dosis
-21216	dotal
-21221	dotar
-21222	dote
-21223	dotor
-21224	Dove
-21225	dovela
-21226	down
-21231	doy
-21232	draga
-21233	dragar
-21234	drago
-21235	drama
-21236	drenar
-21241	drino
-21242	driza
-21243	droga
-21244	drogar
-21245	drope
-21246	drupa
-21251	druso
-21252	dual
-21253	duba
-21254	dubio
-21255	duc
-21256	ducal
-21261	ducho
-21262	duda
-21263	dudar
-21264	dudoso
-21265	duela
-21266	duelo
-21311	duena
-21312	duende
-21313	dueto
-21314	dujo
-21315	dula
-21316	dular
-21321	dulce
-21322	duma
-21323	duna
-21324	dunda
-21325	dundo
-21326	dupa
-21331	duplo
-21332	duque
-21333	durar
-21334	durez
-21335	dureza
-21336	duro
-21341	ebrio
-21342	Ebro
-21343	echar
-21344	eco
-21345	ecuo
-21346	edad
-21351	edema
-21352	edicto
-21353	edil
-21354	educar
-21355	EEUU
-21356	efebo
-21361	efeto
-21362	eficaz
-21363	efusa
-21364	efuso
-21365	egeno
-21366	Egipto
-21411	eguar
-21412	eje
-21413	elata
-21414	elato
-21415	Elba
-21416	elche
-21421	Elche
-21422	elegir
-21423	Elena
-21424	eleto
-21425	elevar
-21426	elfo
-21431	elipse
-21432	elite
-21433	elixir
-21434	ello
-21435	elogio
-21436	elote
-21441	embudo
-21442	Emilio
-21443	emir
-21444	emitir
-21445	Emma
-21446	EMP
-21451	empuje
-21452	enano
-21453	ende
-21454	enea
-21455	enema
-21456	enero
-21461	enigma
-21462	enlace
-21463	enojar
-21464	enojo
-21465	enorme
-21466	ensayo
-21511	ente
-21512	Enter
-21513	entrar
-21514	entre
-21515	entro
-21516	enza
-21521	enzima
-21522	EOI
-21523	eolio
-21524	epa
-21525	epi
-21526	equis
-21531	era
-21532	erais
-21533	eraje
-21534	eral
-21535	erala
-21536	eran
-21541	erar
-21542	eras
-21543	erbio
-21544	ere
-21545	erebo
-21546	eres
-21551	ergio
-21552	ergo
-21553	erial
-21554	erina
-21555	erizo
-21556	ermar
-21561	ermita
-21562	ero
-21563	eros
-21564	Eros
-21565	errar
-21566	erre
-21611	erro
-21612	error
-21613	eruga
-21614	esca
-21615	escala
-21616	escama
-21621	escaso
-21622	escoa
-21623	escoba
-21624	escote
-21625	ese
-21626	esfera
-21631	eso
-21632	espada
-21633	espejo
-21634	espera
-21635	espiga
-21636	espina
-21641	estad
-21642	estado
-21643	estafa
-21644	estar
-21645	este
-21646	estela
-21651	Esther
-21652	estil
-21653	estipe
-21654	esto
-21655	estol
-21656	estola
-21661	estoy
-21662	estro
-21663	etano
-21664	etapa
-21665	etc
-21666	eterno
-22111	etilo
-22112	etnia
-22113	euro
-22114	Europa
-22115	exacto
-22116	exento
-22121	exilio
-22122	exir
-22123	exit
-22124	extra
-22125	fabla
-22126	fabril
-22131	fabro
-22132	faca
-22133	facer
-22134	facha
-22135	facia
-22136	factor
-22141	fadar
-22142	fado
-22143	faena
-22144	faja
-22145	fajar
-22146	fajo
-22151	falaz
-22152	falca
-22153	falda
-22154	falir
-22155	fallo
-22156	falto
-22161	fama
-22162	fame
-22163	famoso
-22164	fanal
-22165	fango
-22166	fano
-22211	FAO
-22212	fardo
-22213	Fargo
-22214	faro
-22215	farol
-22216	farola
-22221	farra
-22222	farsa
-22223	fase
-22224	faso
-22225	fasta
-22226	fasto
-22231	fata
-22232	fatal
-22233	fatiga
-22234	fato
-22235	fator
-22236	fatuo
-22241	fauna
-22242	fauno
-22243	favor
-22244	fax
-22245	faz
-22246	faza
-22251	febril
-22252	fecha
-22253	feder
-22254	fedor
-22255	feliz
-22256	felpa
-22261	feo
-22262	feota
-22263	feote
-22264	fer
-22265	feral
-22266	feraz
-22311	feria
-22312	ferial
-22313	Feroe
-22314	feroz
-22315	ferro
-22316	fervor
-22321	festa
-22322	fetal
-22323	feto
-22324	feudal
-22325	feudo
-22326	fianza
-22331	fiar
-22332	Fiat
-22333	fibra
-22334	ficha
-22335	fideo
-22336	fido
-22341	fiel
-22342	fiero
-22343	fiesta
-22344	figle
-22345	figura
-22346	fijar
-22351	fijo
-22352	fila
-22353	filar
-22354	file
-22355	filfa
-22356	film
-22361	filmar
-22362	filo
-22363	fin
-22364	final
-22365	finar
-22366	finca
-22411	fingir
-22412	fino
-22413	finta
-22414	fiordo
-22415	fique
-22416	firma
-22421	firme
-22422	fisco
-22423	fisga
-22424	flaco
-22425	flama
-22426	flan
-22431	flanco
-22432	flato
-22433	flecha
-22434	fleco
-22435	fleje
-22436	flema
-22441	fletar
-22442	flete
-22443	Flex
-22444	flexo
-22445	flojo
-22446	flor
-22451	flora
-22452	flota
-22453	flotar
-22454	flote
-22455	fluido
-22456	fluir
-22461	flujo
-22462	flux
-22463	fobia
-22464	focal
-22465	focha
-22466	foco
-22511	fogata
-22512	foir
-22513	foiso
-22514	foja
-22515	folio
-22516	fona
-22521	fondo
-22522	fonje
-22523	foral
-22524	forca
-22525	forja
-22526	forma
-22531	formal
-22532	forno
-22533	foro
-22534	forro
-22535	forzar
-22536	fosar
-22541	foso
-22542	foto
-22543	foyo
-22544	foz
-22545	frac
-22546	frade
-22551	fraga
-22552	fragua
-22553	France
-22554	frao
-22555	frasco
-22556	frase
-22561	Frau
-22562	fraude
-22563	fray
-22564	fredo
-22565	frenar
-22566	freno
-22611	frente
-22612	freo
-22613	fresa
-22614	freso
-22615	frez
-22616	freza
-22621	frige
-22622	frior
-22623	friso
-22624	frito
-22625	frote
-22626	frutal
-22631	fruto
-22632	fucia
-22633	fuco
-22634	fue
-22635	fuego
-22636	fuelle
-22641	fuente
-22642	fuer
-22643	fuera
-22644	fuere
-22645	fuero
-22646	fuesa
-22651	fuese
-22652	fuga
-22653	fugar
-22654	fugaz
-22655	fugir
-22656	fui
-22661	fuina
-22662	fuir
-22663	fulano
-22664	fular
-22665	fulgor
-22666	fumar
-23111	fumo
-23112	funda
-23113	fundar
-23114	fundir
-23115	fundo
-23116	furia
-23121	furor
-23122	furto
-23123	fusa
-23124	fusca
-23125	fusil
-23126	fusor
-23131	fusta
-23132	fuste
-23133	futre
-23134	futuro
-23135	gabar
-23136	gacel
-23141	gacho
-23142	gafar
-23143	gafo
-23144	gag
-23145	gago
-23146	gaita
-23151	gaje
-23152	gajo
-23153	galea
-23154	Galeno
-23155	Gales
-23156	galgo
-23161	galio
-23162	gallo
-23163	galo
-23164	galope
-23165	gamba
-23166	gamma
-23211	gamo
-23212	gamuza
-23213	gana
-23214	ganar
-23215	ganga
-23216	gano
-23221	ganso
-23222	Gante
-23223	garaje
-23224	garbo
-23225	garito
-23226	garla
-23231	garra
-23232	garzo
-23233	gas
-23234	gasa
-23235	gastar
-23236	gasto
-23241	gato
-23242	gaucho
-23243	gavia
-23244	gayo
-23245	Gaza
-23246	gel
-23251	gelo
-23252	gema
-23253	gemir
-23254	gen
-23255	genial
-23256	genio
-23261	genro
-23262	gente
-23263	gentil
-23264	gento
-23265	GEO
-23266	gerno
-23311	gestar
-23312	gesto
-23313	giba
-23314	gibar
-23315	giga
-23316	gil
-23321	ginea
-23322	girar
-23323	giro
-23324	Girona
-23325	GIS
-23326	gitano
-23331	gleba
-23332	global
-23333	globo
-23334	glosa
-23335	GMT
-23336	gneis
-23341	gnomo
-23342	gobio
-23343	goce
-23344	gocho
-23345	godo
-23346	Godoy
-23351	gofio
-23352	gol
-23353	gola
-23354	goleta
-23355	golf
-23356	golfo
-23361	golpe
-23362	goma
-23363	gomar
-23364	gomer
-23365	gong
-23366	Google
-23411	gordo
-23412	gorja
-23413	Gorja
-23414	gorro
-23415	gota
-23416	gotear
-23421	goteo
-23422	gotita
-23423	Goya
-23424	gozar
-23425	gozne
-23426	gozo
-23431	gozoso
-23432	gracia
-23433	grado
-23434	grafo
-23435	grajo
-23436	gramo
-23441	gran
-23442	grand
-23443	grande
-23444	grano
-23445	grant
-23446	grao
-23451	grapa
-23452	grapar
-23453	graso
-23454	grato
-23455	grava
-23456	grave
-23461	greba
-23462	Grecia
-23463	greco
-23464	greda
-23465	grege
-23466	grelo
-23511	gremio
-23512	gres
-23513	Grial
-23514	grida
-23515	grido
-23516	griego
-23521	grifo
-23522	grija
-23523	grillo
-23524	grima
-23525	gripal
-23526	gripe
-23531	gris
-23532	grisa
-23533	grito
-23534	gro
-23535	gros
-23536	grosa
-23541	groso
-23542	grosor
-23543	grueso
-23544	grumo
-23545	grupo
-23546	gruta
-23551	GTM
-23552	gua
-23553	guaca
-23554	guaco
-23555	guaje
-23556	guama
-23561	guano
-23562	guante
-23563	guapo
-23564	guara
-23565	guarda
-23566	guaro
-23611	guaso
-23612	guata
-23613	guate
-23614	guau
-23615	guay
-23616	guayo
-23621	gubia
-23622	guerra
-23623	gueto
-23624	guiar
-23625	guido
-23626	guijo
-23631	guiri
-23632	guisa
-23633	guisar
-23634	guiso
-23635	guite
-23636	guito
-23641	gula
-23642	gun
-23643	gurdo
-23644	guro
-23645	gusano
-23646	gustar
-23651	gusto
-23652	Gut
-23653	guzla
-23654	haba
-23655	Habana
-23656	habano
-23661	habar
-23662	haber
-23663	habiz
-23664	habla
-23665	hablar
-23666	haca
-24111	hacer
-24112	hache
-24113	hacho
-24114	hacia
-24115	hadar
-24116	hado
-24121	haedo
-24122	hafiz
-24123	halago
-24124	halar
-24125	halda
-24126	Hall
-24131	halo
-24132	hamaca
-24133	hambre
-24134	hamez
-24135	hamo
-24136	hampa
-24141	hampo
-24142	han
-24143	hansa
-24144	harca
-24145	harem
-24146	harina
-24151	harpa
-24152	harre
-24153	hartar
-24154	harto
-24155	has
-24156	hasta
-24161	hato
-24162	haute
-24163	havar
-24164	havo
-24165	Hawaii
-24166	hay
-24211	haya
-24212	hayal
-24213	hayan
-24214	hayas
-24215	hayo
-24216	haz
-24221	haza
-24222	hebra
-24223	hebreo
-24224	hecto
-24225	heder
-24226	hedo
-24231	hedor
-24232	helar
-24233	helio
-24234	helor
-24235	help
-24236	hembra
-24241	hemos
-24242	henal
-24243	henar
-24244	henil
-24245	heno
-24246	her
-24251	hereje
-24252	heria
-24253	heril
-24254	herir
-24255	herma
-24256	herpe
-24261	Herr
-24262	hervor
-24263	heteo
-24264	hez
-24265	hiato
-24266	hidro
-24311	hiel
-24312	hielo
-24313	hiena
-24314	hiero
-24315	higo
-24316	hila
-24321	hilar
-24322	hilo
-24323	himen
-24324	hinco
-24325	hipar
-24326	hiper
-24331	hipo
-24332	hirco
-24333	hirma
-24334	hisca
-24335	hitar
-24336	hito
-24341	hoce
-24342	hocico
-24343	hogar
-24344	hoja
-24345	hola
-24346	holco
-24351	hombre
-24352	home
-24353	hondo
-24354	hongo
-24355	honor
-24356	honra
-24361	honrar
-24362	Hood
-24363	hopa
-24364	hopeo
-24365	hopo
-24366	hoque
-24411	hora
-24412	horco
-24413	horda
-24414	horma
-24415	horno
-24416	horre
-24421	horror
-24422	hosco
-24423	hospa
-24424	hoste
-24425	hostil
-24426	hotel
-24431	hoto
-24432	hove
-24433	hoy
-24434	hoyo
-24435	hoz
-24436	hozar
-24441	huaco
-24442	hube
-24443	hubo
-24444	hucha
-24445	hucho
-24446	hucia
-24451	hueco
-24452	huego
-24453	Huelva
-24454	huero
-24455	huerto
-24456	hueso
-24461	huevo
-24462	Hugo
-24463	huich
-24464	huido
-24465	huifa
-24466	huir
-24511	hule
-24512	hulla
-24513	hum
-24514	humar
-24515	humil
-24516	humo
-24521	humor
-24522	humus
-24523	huno
-24524	hupe
-24525	hurra
-24526	hurto
-24531	husmo
-24532	huso
-24533	huta
-24534	huy
-24535	iba
-24536	iban
-24541	ibas
-24542	IBEX
-24543	Ibi
-24544	ibis
-24545	Ibiza
-24546	IBM
-24551	icaco
-24552	ICEX
-24553	icho
-24554	icono
-24555	icor
-24556	ida
-24561	ideal
-24562	idear
-24563	ideo
-24564	idioma
-24565	ido
-24566	idos
-24611	idus
-24612	igual
-24613	iguar
-24614	ijar
-24615	IKEA
-24616	ileso
-24621	ilion
-24622	ilota
-24623	iluso
-24624	imada
-24625	impar
-24626	impla
-24631	impune
-24632	inane
-24633	inca
-24634	inda
-24635	India
-24636	indio
-24641	indo
-24642	ingle
-24643	ingre
-24644	inicio
-24645	inocuo
-24646	inri
-24651	INTA
-24652	Intel
-24653	Intro
-24654	ion
-24655	iota
-24656	ira
-24661	irado
-24662	Irak
-24663	irar
-24664	Irene
-24665	iridio
-24666	iris
-25111	Irma
-25112	irme
-25113	irnos
-25114	iros
-25115	irreal
-25116	irse
-25121	irte
-25122	Isaac
-25123	Isabel
-25124	isba
-25125	ISBN
-25126	Isidro
-25131	isla
-25132	islam
-25133	islote
-25134	Ismael
-25135	Israel
-25136	istmo
-25141	ita
-25142	Italia
-25143	Italy
-25144	itrio
-25145	iza
-25146	izar
-25151	izote
-25152	jaba
-25153	Jack
-25154	jaco
-25155	jade
-25156	jadear
-25161	jadeo
-25162	jaiba
-25163	Jaime
-25164	jalar
-25165	jalda
-25166	jalde
-25211	jaldo
-25212	jalea
-25213	jaleo
-25214	jalma
-25215	jamar
-25216	jamba
-25221	jambo
-25222	James
-25223	jaque
-25224	jara
-25225	jarabe
-25226	jaral
-25231	jaro
-25232	jarra
-25233	jarro
-25234	jasa
-25235	jasar
-25236	jaspe
-25241	jata
-25242	jateo
-25243	jatib
-25244	jato
-25245	jau
-25246	jauja
-25251	jaula
-25252	jauto
-25253	javo
-25254	jazz
-25255	jea
-25256	jebe
-25261	jeda
-25262	jedar
-25263	Jeep
-25264	jefa
-25265	jefe
-25266	jeito
-25311	jeja
-25312	jeliz
-25313	jemal
-25314	jeme
-25315	jeque
-25316	jera
-25321	jerbo
-25322	jerez
-25323	jerga
-25324	jerpa
-25325	jersey
-25326	jeta
-25331	jetar
-25332	jeto
-25333	jibia
-25334	jifa
-25335	jifia
-25336	jiga
-25341	jijas
-25342	jijeo
-25343	Jim
-25344	jimio
-25345	jinjo
-25346	jira
-25351	jire
-25352	jisca
-25353	jisma
-25354	jitar
-25355	Job
-25356	jobo
-25361	jofor
-25362	jonio
-25363	jopar
-25364	jopo
-25365	jora
-25366	jorco
-25411	jorfe
-25412	jorge
-25413	Jorge
-25414	jorro
-25415	josa
-25416	Jose
-25421	jota
-25422	jote
-25423	joule
-25424	joven
-25425	jovial
-25426	joya
-25431	joyero
-25432	joyo
-25433	Juan
-25434	Juana
-25435	juba
-25436	jubo
-25441	judas
-25442	Judea
-25443	Judit
-25444	juego
-25445	juera
-25446	jueves
-25451	juez
-25452	jugar
-25453	jugo
-25454	jujeo
-25455	Julia
-25456	Julio
-25461	julio
-25462	julo
-25463	Jumbo
-25464	junco
-25465	jungla
-25466	junio
-25511	juno
-25512	junto
-25513	junza
-25514	jura
-25515	jurar
-25516	jurel
-25521	jurio
-25522	juro
-25523	jusi
-25524	justo
-25525	juta
-25526	juvia
-25531	juzgar
-25532	Kabul
-25533	kan
-25534	kappa
-25535	KGB
-25536	Kiev
-25541	kilo
-25542	Kim
-25543	kiosco
-25544	Kioto
-25545	kirie
-25546	Krupp
-25551	kurdo
-25552	Kurt
-25553	KVA
-25554	labia
-25555	labio
-25556	labor
-25561	labra
-25562	labrar
-25563	labro
-25564	laca
-25565	lacayo
-25566	lacha
-25611	lacio
-25612	lacra
-25613	lacre
-25614	lada
-25615	ladeo
-25616	lado
-25621	ladra
-25622	lagar
-25623	lago
-25624	laguna
-25625	laico
-25626	laido
-25631	Laika
-25632	laja
-25633	Lama
-25634	lama
-25635	lamer
-25636	lampa
-25641	lampo
-25642	lana
-25643	lanar
-25644	lance
-25645	landa
-25646	lande
-25651	langa
-25652	lanudo
-25653	lanza
-25654	lapa
-25655	lapsa
-25656	lapso
-25661	lapsus
-25662	laque
-25663	lar
-25664	lardo
-25665	largo
-25666	Larios
-26111	larra
-26112	Larra
-26113	larva
-26114	lasa
-26115	lasar
-26116	lasca
-26121	laso
-26122	lasto
-26123	lata
-26124	lataz
-26125	latir
-26126	lato
-26131	lauda
-26132	laude
-26133	laudo
-26134	launa
-26135	Laura
-26136	laurel
-26141	lauro
-26142	lava
-26143	lavabo
-26144	lavar
-26145	lave
-26146	laxa
-26151	laxar
-26152	laxo
-26153	laya
-26154	layar
-26155	lazar
-26156	lazo
-26161	leal
-26162	lecha
-26163	leche
-26164	lecho
-26165	lector
-26166	leda
-26211	ledo
-26212	leer
-26213	lega
-26214	legal
-26215	legar
-26216	lego
-26221	legra
-26222	legua
-26223	Leika
-26224	leila
-26225	Leila
-26226	leima
-26231	leja
-26232	lejar
-26233	lejas
-26234	lejos
-26235	lelo
-26236	lema
-26241	lembo
-26242	leme
-26243	lena
-26244	lende
-26245	lene
-26246	lengua
-26251	lenir
-26252	lente
-26253	lento
-26254	Leo
-26255	leo
-26256	lepar
-26261	lepra
-26262	lera
-26263	lerdo
-26264	les
-26265	lesa
-26266	lesna
-26311	leso
-26312	less
-26313	leste
-26314	letal
-26315	leteo
-26316	letor
-26321	letra
-26322	leude
-26323	leudo
-26324	leva
-26325	levar
-26326	leve
-26331	levita
-26332	Lex
-26333	Lexus
-26334	ley
-26335	lezna
-26336	lezne
-26341	liana
-26342	liar
-26343	liara
-26344	liaza
-26345	libar
-26346	Libia
-26351	libio
-26352	Libra
-26353	libra
-26354	librar
-26355	libre
-26356	libro
-26361	liceo
-26362	licio
-26363	licor
-26364	lid
-26365	lidiar
-26366	lidio
-26411	liebre
-26412	liego
-26413	lienzo
-26414	liga
-26415	ligar
-26416	ligio
-26421	ligua
-26422	ligur
-26423	lija
-26424	lijar
-26425	lijo
-26426	lila
-26431	lilac
-26432	lilao
-26433	Lima
-26434	lima
-26435	limar
-26436	limbo
-26441	limen
-26442	limo
-26443	linao
-26444	linar
-26445	lince
-26446	linde
-26451	lindo
-26452	linfa
-26453	linio
-26454	link
-26455	lino
-26456	linte
-26461	lioso
-26462	lipes
-26463	lipis
-26464	lira
-26465	liria
-26466	lirio
-26511	lis
-26512	lisar
-26513	liso
-26514	lisor
-26515	list
-26516	lista
-26521	liste
-26522	listo
-26523	Listz
-26524	lita
-26525	litar
-26526	lite
-26531	litio
-26532	litis
-26533	litre
-26534	litro
-26535	lituo
-26536	liudo
-26541	livor
-26542	liza
-26543	lizar
-26544	lizo
-26545	llaca
-26546	llaga
-26551	llama
-26552	llano
-26553	llanta
-26554	llapa
-26555	llar
-26556	llave
-26561	lleco
-26562	llega
-26563	Lleida
-26564	lleno
-26565	llera
-26566	lleta
-26611	lleva
-26612	llorar
-26613	lloro
-26614	llosa
-26615	lluvia
-26616	loa
-26621	loan
-26622	loar
-26623	lobo
-26624	local
-26625	locha
-26626	loche
-26631	loco
-26632	locro
-26633	locuaz
-26634	lodo
-26635	logar
-26636	logia
-26641	logis
-26642	lograr
-26643	logro
-26644	loica
-26645	loina
-26646	Lola
-26651	Loli
-26652	lolio
-26653	loma
-26654	lomar
-26655	lomba
-26656	lombo
-26661	lomo
-26662	lona
-26663	longo
-26664	lonja
-26665	loor
-26666	Lope
-31111	lora
-31112	lord
-31113	loro
-31114	lorza
-31115	losa
-31116	losar
-31121	loseta
-31122	lota
-31123	lote
-31124	loto
-31125	loza
-31126	Lucas
-31131	lucha
-31132	luche
-31133	lucio
-31134	lucir
-31135	luco
-31136	lucro
-31141	luda
-31142	ludio
-31143	ludir
-31144	luego
-31145	lugar
-31146	Lugo
-31151	lugre
-31152	luir
-31153	Luis
-31154	Luisa
-31155	lujo
-31156	lujoso
-31161	lula
-31162	luma
-31163	lumbo
-31164	lumbre
-31165	lumia
-31166	Luna
-31211	luna
-31212	lunar
-31213	lunes
-31214	lungo
-31215	lupa
-31216	lupia
-31221	lupus
-31222	lurte
-31223	lusa
-31224	lusco
-31225	luso
-31226	luto
-31231	luva
-31232	luvia
-31233	luxar
-31234	luz
-31235	maca
-31236	Macao
-31241	macar
-31242	maceo
-31243	maceta
-31244	mach
-31245	macha
-31246	machi
-31251	macho
-31252	macia
-31253	macizo
-31254	maco
-31255	madre
-31256	Madrid
-31261	maes
-31262	maesa
-31263	maese
-31264	maeso
-31265	mafia
-31266	maga
-31311	magar
-31312	Maggi
-31313	Maggie
-31314	magia
-31315	magma
-31316	magna
-31321	magno
-31322	Magno
-31323	mago
-31324	magro
-31325	mail
-31326	maja
-31331	majal
-31332	majar
-31333	majo
-31334	mal
-31335	malar
-31336	malayo
-31341	maleta
-31342	malla
-31343	mallo
-31344	malo
-31345	Malta
-31346	malta
-31351	malva
-31352	mamey
-31353	mamut
-31354	mana
-31355	manada
-31356	manar
-31361	manaza
-31362	mancha
-31363	manco
-31364	manda
-31365	mando
-31366	manea
-31411	manera
-31412	manes
-31413	Manga
-31414	manga
-31415	mango
-31416	manir
-31421	mano
-31422	manojo
-31423	manso
-31424	manta
-31425	manto
-31426	manual
-31431	Manuel
-31432	mapa
-31433	maque
-31434	maqui
-31435	mar
-31436	maraca
-31441	marca
-31442	marco
-31443	Marcos
-31444	marea
-31445	marear
-31446	mareo
-31451	marga
-31452	maria
-31453	marido
-31454	Mario
-31455	maro
-31456	maroma
-31461	marra
-31462	marro
-31463	marsa
-31464	marso
-31465	marta
-31466	Marta
-31511	Marte
-31512	martes
-31513	Marx
-31514	Mary
-31515	marzo
-31516	mas
-31521	masa
-31522	masaje
-31523	masar
-31524	mascar
-31525	masivo
-31526	maslo
-31531	maste
-31532	masto
-31533	mata
-31534	matar
-31535	match
-31536	mate
-31541	Mateo
-31542	matiz
-31543	mato
-31544	maula
-31545	maura
-31546	maure
-31551	mauro
-31552	Mauro
-31553	maya
-31554	mayal
-31555	mayo
-31556	mayor
-31561	maza
-31562	mazar
-31563	Mazda
-31564	mazo
-31565	meaja
-31566	meato
-31611	Meca
-31612	mecer
-31613	mecha
-31614	meco
-31615	meda
-31616	medio
-31621	medir
-31622	medo
-31623	medra
-31624	medro
-31625	mega
-31626	mego
-31631	meiga
-31632	meigo
-31633	mejor
-31634	mela
-31635	melar
-31636	melaza
-31641	melca
-31642	melga
-31643	melgo
-31644	melis
-31645	mella
-31646	melsa
-31651	melva
-31652	memo
-31653	mena
-31654	menar
-31655	menda
-31656	Mendo
-31661	meneo
-31662	menge
-31663	Menor
-31664	menor
-31665	menos
-31666	menta
-32111	mente
-32112	mentor
-32113	merar
-32114	merca
-32115	merced
-32116	mere
-32121	merey
-32122	mergo
-32123	merla
-32124	merlo
-32125	merma
-32126	mero
-32131	mes
-32132	mesa
-32133	mesar
-32134	mese
-32135	meseta
-32136	mesmo
-32141	Mesta
-32142	mesto
-32143	meta
-32144	metad
-32145	metal
-32146	metano
-32151	meteo
-32152	meter
-32153	metra
-32154	metro
-32155	Mexico
-32156	meyor
-32161	miaja
-32162	Miami
-32163	miau
-32164	mica
-32165	micer
-32166	micho
-32211	mico
-32212	micra
-32213	mida
-32214	miedo
-32215	miel
-32216	miera
-32221	mies
-32222	miga
-32223	migar
-32224	Miguel
-32225	mijo
-32226	mil
-32231	milla
-32232	millar
-32233	millo
-32234	milo
-32235	milord
-32236	milpa
-32241	mimar
-32242	mimo
-32243	mina
-32244	minal
-32245	minar
-32246	minaz
-32251	minero
-32252	mingo
-32253	minio
-32254	mino
-32255	minuta
-32256	mioma
-32261	miope
-32262	Mir
-32263	mira
-32264	mirado
-32265	mirar
-32266	miria
-32311	mirla
-32312	mirlo
-32313	mirra
-32314	mirto
-32315	mirza
-32316	mis
-32321	misa
-32322	misal
-32323	misar
-32324	misil
-32325	misio
-32326	mismo
-32331	mista
-32332	misto
-32333	MIT
-32334	mita
-32335	mitad
-32336	mitin
-32341	mito
-32342	mitra
-32343	mixto
-32344	miza
-32345	mizca
-32346	mizo
-32351	moble
-32352	mocar
-32353	moche
-32354	mocho
-32355	mocil
-32356	moda
-32361	modal
-32362	modelo
-32363	modio
-32364	modo
-32365	moer
-32366	mofa
-32411	mofar
-32412	mogo
-32413	mogol
-32414	moho
-32415	mojar
-32416	moje
-32421	moji
-32422	mojo
-32423	mola
-32424	molar
-32425	molde
-32426	mole
-32431	moler
-32432	molino
-32433	molla
-32434	molle
-32435	molo
-32436	molsa
-32441	molso
-32442	moma
-32443	momio
-32444	mona
-32445	monada
-32446	mondo
-32451	mongo
-32452	mongol
-32453	monja
-32454	monje
-32455	mono
-32456	monta
-32461	montar
-32462	monte
-32463	monto
-32464	Moon
-32465	mor
-32466	mora
-32511	moral
-32512	morar
-32513	morbo
-32514	morca
-32515	mordaz
-32516	morfa
-32521	Morfeo
-32522	morga
-32523	morir
-32524	moro
-32525	moroso
-32526	morra
-32531	morro
-32532	morsa
-32533	mortal
-32534	mosca
-32535	mosco
-32536	moste
-32541	mosto
-32542	mota
-32543	motar
-32544	mote
-32545	motel
-32546	moto
-32551	motor
-32552	motriz
-32553	mouse
-32554	mover
-32555	moxa
-32556	moxte
-32561	moya
-32562	moyo
-32563	Mozart
-32564	mozo
-32565	mucho
-32566	mudar
-32611	mudez
-32612	mudo
-32613	mueble
-32614	mueca
-32615	muela
-32616	muelle
-32621	muelo
-32622	muer
-32623	muera
-32624	muerte
-32625	Muerto
-32626	muesa
-32631	mueso
-32632	mufla
-32633	muga
-32634	mugar
-32635	mugir
-32636	mugre
-32641	muir
-32642	muito
-32643	mujer
-32644	mular
-32645	mulato
-32646	mulla
-32651	mullo
-32652	mulo
-32653	mulsa
-32654	mulso
-32655	multa
-32656	mundo
-32661	mur
-32662	mura
-32663	mural
-32664	murar
-32665	Murcia
-32666	murga
-33111	muria
-33112	muro
-33113	murta
-33114	mus
-33115	musa
-33116	musar
-33121	musca
-33122	musco
-33123	museo
-33124	musgo
-33125	musir
-33126	muslo
-33131	muste
-33132	mustio
-33133	muta
-33134	mutar
-33135	mutis
-33136	mutuo
-33141	muy
-33142	muza
-33143	muzo
-33144	naba
-33145	nabal
-33146	nabar
-33151	nabla
-33152	nacer
-33153	nacho
-33154	naco
-33155	nacre
-33156	nada
-33161	nadal
-33162	nadar
-33163	nadga
-33164	nadi
-33165	nadie
-33166	nadir
-33211	nado
-33212	nafa
-33213	nafta
-33214	nagua
-33215	naife
-33216	naipe
-33221	naire
-33222	naja
-33223	nalca
-33224	nalga
-33225	nance
-33226	nano
-33231	nansa
-33232	nao
-33233	napa
-33234	napeo
-33235	naque
-33236	nardo
-33241	nares
-33242	nariz
-33243	narra
-33244	narrar
-33245	nasa
-33246	nasal
-33251	naso
-33252	nata
-33253	natal
-33254	nativo
-33255	nato
-33256	nauta
-33261	nava
-33262	naval
-33263	nave
-33264	NCR
-33265	necio
-33266	negar
-33311	Negro
-33312	negro
-33313	negus
-33314	neis
-33315	neja
-33316	neldo
-33321	nema
-33322	neme
-33323	nemeo
-33324	Nemo
-33325	nemon
-33326	nen
-33331	Nena
-33332	nena
-33333	neo
-33334	Nepal
-33335	nesga
-33336	neto
-33341	neuma
-33342	nevar
-33343	nevera
-33344	nexo
-33345	niara
-33346	niazo
-33351	nicho
-33352	nicle
-33353	nidal
-33354	nidio
-33355	nido
-33356	niebla
-33361	niego
-33362	nieto
-33363	nieve
-33364	Nikon
-33365	Nilo
-33366	nimbo
-33411	nimio
-33412	nin
-33413	ninfa
-33414	ninfo
-33415	Nino
-33416	nioto
-33421	nipa
-33422	nito
-33423	nitro
-33424	nivel
-33425	Nobel
-33426	noble
-33431	noca
-33432	noche
-33433	nocivo
-33434	nocla
-33435	nodo
-33436	NODO
-33441	Noel
-33442	nogal
-33443	nolit
-33444	noma
-33445	nome
-33446	nomo
-33451	nomon
-33452	non
-33453	nona
-33454	nonio
-33455	noria
-33456	norma
-33461	norte
-33462	nos
-33463	nota
-33464	notar
-33465	noto
-33466	notro
-33511	nova
-33512	noval
-33513	novar
-33514	novel
-33515	novela
-33516	novio
-33521	noxa
-33522	nube
-33523	nubla
-33524	nublar
-33525	nuca
-33526	nucir
-33531	nuco
-33532	nudo
-33533	nuera
-33534	nueso
-33535	nueve
-33536	nuevo
-33541	nuez
-33542	nulo
-33543	numen
-33544	numo
-33545	nunca
-33546	Nuria
-33551	nutria
-33552	oasis
-33553	obelo
-33554	obeso
-33555	obispo
-33556	objeto
-33561	oblea
-33562	oboe
-33563	obra
-33564	obrar
-33565	obrero
-33566	obuses
-33611	obvio
-33612	oca
-33613	ocaso
-33614	ocelo
-33615	ocena
-33616	ocho
-33621	ociar
-33622	ocio
-33623	ocioso
-33624	ocle
-33625	ocre
-33626	octavo
-33631	ocupar
-33632	oda
-33633	odiar
-33634	odio
-33635	odioso
-33636	odisea
-33641	odre
-33642	oeste
-33643	off
-33644	ofidio
-33645	ofita
-33646	ogro
-33651	Ohm
-33652	ohmio
-33653	oidor
-33654	OIT
-33655	ojal
-33656	ojar
-33661	ojear
-33662	ojeo
-33663	ojera
-33664	ojete
-33665	ojiva
-33666	ojo
-34111	ojoso
-34112	ojota
-34113	ola
-34114	olaje
-34115	oleaje
-34116	olear
-34121	oler
-34122	olfato
-34123	oliva
-34124	olivo
-34125	olla
-34126	ollar
-34131	olmo
-34132	olor
-34133	olura
-34134	olvido
-34135	omega
-34136	omisa
-34141	omiso
-34142	omitir
-34143	omni
-34144	once
-34145	onda
-34146	onde
-34151	ondeo
-34152	ondra
-34153	ONG
-34154	ONU
-34155	onza
-34156	opa
-34161	OPA
-34162	opaco
-34163	Opel
-34164	operar
-34165	opinar
-34166	opio
-34211	Oporto
-34212	optar
-34213	ora
-34214	oral
-34215	orar
-34216	orate
-34221	orbe
-34222	orca
-34223	orco
-34224	orden
-34225	orear
-34226	oreja
-34231	orfo
-34232	orfre
-34233	oribe
-34234	orilla
-34235	orive
-34236	orla
-34241	orlar
-34242	orlo
-34243	ornar
-34244	oro
-34245	oropel
-34246	oroya
-34251	orto
-34252	oruga
-34253	orujo
-34254	orza
-34255	orzar
-34256	osar
-34261	osear
-34262	osero
-34263	Oslo
-34264	osmio
-34265	oso
-34266	ostia
-34311	ostra
-34312	ostro
-34313	osudo
-34314	osuno
-34315	OTAN
-34316	otear
-34321	otero
-34322	otoba
-34323	otre
-34324	otri
-34325	otro
-34326	otubre
-34331	out
-34332	oval
-34333	ovar
-34334	oveja
-34335	ovino
-34336	ovio
-34341	OVNI
-34342	ovni
-34343	ovo
-34344	ovoide
-34345	Oxford
-34346	oxte
-34351	ozono
-34352	Pablo
-34353	PAC
-34354	Paca
-34355	pacer
-34356	Paco
-34361	pactar
-34362	pacto
-34363	padir
-34364	padre
-34365	paella
-34366	pafio
-34411	paga
-34412	pagar
-34413	pago
-34414	paico
-34415	pairo
-34416	paja
-34421	pajar
-34422	paje
-34423	pajea
-34424	paji
-34425	pajo
-34426	pala
-34431	palco
-34432	palio
-34433	paliza
-34434	Palma
-34435	palma
-34436	palmo
-34441	palo
-34442	palomo
-34443	palpo
-34444	pamela
-34445	pampa
-34446	pan
-34451	pana
-34452	panal
-34453	Pancho
-34454	panco
-34455	panda
-34456	panel
-34461	pano
-34462	pansa
-34463	Panza
-34464	panza
-34465	papel
-34466	par
-34511	para
-34512	parco
-34513	pardo
-34514	pared
-34515	parejo
-34516	pareo
-34521	pargo
-34522	paria
-34523	parir
-34524	paro
-34525	parque
-34526	parra
-34531	parta
-34532	parte
-34533	partir
-34534	parto
-34535	parva
-34536	parvo
-34541	pasaje
-34542	pasar
-34543	pasco
-34544	pase
-34545	paseo
-34546	pasmo
-34551	paso
-34552	pasta
-34553	pasto
-34554	pastor
-34555	patao
-34556	patax
-34561	pateo
-34562	pater
-34563	patio
-34564	pato
-34565	pausa
-34566	pauta
-34611	pavo
-34612	pavor
-34613	pax
-34614	payaso
-34615	payo
-34616	paz
-34621	pazo
-34622	peaje
-34623	peal
-34624	peana
-34625	peca
-34626	pecar
-34631	pecha
-34632	pecho
-34633	pecio
-34634	pedal
-34635	pedir
-34636	Pedro
-34641	pega
-34642	pegado
-34643	pegar
-34644	peina
-34645	peinar
-34646	peine
-34651	peje
-34652	pela
-34653	pelar
-34654	pelea
-34655	pella
-34656	pello
-34661	pelma
-34662	pelo
-34663	pelota
-34664	pelta
-34665	pena
-34666	penal
-35111	penar
-35112	penca
-35113	penco
-35114	peno
-35115	pensar
-35116	peor
-35121	Pepa
-35122	Pepe
-35123	pepino
-35124	pera
-35125	peral
-35126	perca
-35131	perder
-35132	pereza
-35133	perfil
-35134	perla
-35135	perno
-35136	pero
-35141	perol
-35142	perro
-35143	persa
-35144	perta
-35145	pesar
-35146	pesca
-35151	pescar
-35152	peso
-35153	peste
-35154	petar
-35155	peto
-35156	petra
-35161	Petra
-35162	pez
-35163	phi
-35164	piada
-35165	pian
-35166	piano
-35211	piar
-35212	piara
-35213	pica
-35214	picar
-35215	picea
-35216	pichi
-35221	picio
-35222	pico
-35223	picor
-35224	picudo
-35225	pie
-35226	piedad
-35231	piejo
-35232	piel
-35233	pienso
-35234	pieza
-35235	pifia
-35236	pifo
-35241	pigro
-35242	pila
-35243	Pilar
-35244	pilar
-35245	Pili
-35246	pilla
-35251	pillo
-35252	pilo
-35253	piloto
-35254	pinar
-35255	pingo
-35256	pino
-35261	pinta
-35262	Pinta
-35263	pinto
-35264	pinza
-35265	piojo
-35266	piola
-35311	pipa
-35312	pipar
-35313	pipo
-35314	pique
-35315	pira
-35316	pirar
-35321	pirca
-35322	pirco
-35323	piropo
-35324	pisa
-35325	pisar
-35326	Piscis
-35331	pisco
-35332	piso
-35333	pispa
-35334	pista
-35335	pisto
-35336	pita
-35341	pitao
-35342	pitar
-35343	pito
-35344	pivote
-35345	pizca
-35346	pizco
-35351	placa
-35352	placer
-35353	plaga
-35354	plagio
-35355	plan
-35356	planes
-35361	plano
-35362	planta
-35363	plasma
-35364	plata
-35365	plato
-35366	playa
-35411	plaza
-35412	plazo
-35413	plebe
-35414	pleca
-35415	pleito
-35416	pleno
-35421	plexo
-35422	plica
-35423	plomo
-35424	plug
-35425	pluma
-35426	plural
-35431	plus
-35432	Pluto
-35433	PNV
-35434	pobo
-35435	pobra
-35436	pobre
-35441	pocho
-35442	poco
-35443	poda
-35444	podar
-35445	poder
-35446	podio
-35451	podo
-35452	podre
-35453	poema
-35454	poeta
-35455	pola
-35456	polar
-35461	polca
-35462	polea
-35463	polen
-35464	poleo
-35465	polio
-35466	polir
-35511	pollo
-35512	polo
-35513	polvo
-35514	poma
-35515	pomar
-35516	pomo
-35521	pompo
-35522	pon
-35523	poncho
-35524	pondo
-35525	Ponds
-35526	poner
-35531	ponto
-35532	popar
-35533	por
-35534	pora
-35535	porco
-35536	poro
-35541	porra
-35542	porro
-35543	porta
-35544	portal
-35545	porte
-35546	pos
-35551	posar
-35552	posca
-35553	poseer
-35554	posma
-35555	poso
-35556	post
-35561	posta
-35562	poste
-35563	potar
-35564	potasa
-35565	pote
-35566	potro
-35611	poyo
-35612	poza
-35613	pozo
-35614	prado
-35615	Prado
-35616	prava
-35621	pravo
-35622	praza
-35623	prea
-35624	prear
-35625	precio
-35626	precoz
-35631	premio
-35632	prenda
-35633	presa
-35634	preso
-35635	prever
-35636	previo
-35641	prieto
-35642	primo
-35643	print
-35644	prior
-35645	priori
-35646	prisa
-35651	priso
-35652	pro
-35653	proa
-35654	proba
-35655	probo
-35656	proeza
-35661	prole
-35662	prono
-35663	pronto
-35664	prora
-35665	prosa
-35666	pruno
-36111	Prusia
-36112	pseudo
-36113	psi
-36114	PSOE
-36115	PSUC
-36116	puar
-36121	pub
-36122	pubes
-36123	pubis
-36124	pucho
-36125	pucia
-36126	pudio
-36131	pudir
-36132	pudor
-36133	puente
-36134	pueril
-36135	puerto
-36136	pues
-36141	puf
-36142	pufo
-36143	puga
-36144	pugna
-36145	puja
-36146	pujar
-36151	pujo
-36152	pulcro
-36153	pulga
-36154	pulir
-36155	pull
-36156	pulla
-36161	pulpa
-36162	pulpo
-36163	pulsar
-36164	pulso
-36165	pum
-36166	puma
-36211	puna
-36212	punir
-36213	punta
-36214	puntal
-36215	punto
-36216	pupa
-36221	pupila
-36222	pureza
-36223	purga
-36224	puro
-36225	pus
-36226	push
-36231	puya
-36232	puyar
-36233	puyo
-36234	que
-36235	quedo
-36236	queja
-36241	quejo
-36242	quema
-36243	quemar
-36244	quena
-36245	quepa
-36246	quepo
-36251	quera
-36252	queso
-36253	qui
-36254	quid
-36255	quien
-36256	quier
-36261	quieto
-36262	quijo
-36263	quila
-36264	quilla
-36265	quima
-36266	quimo
-36311	quina
-36312	quino
-36313	quinto
-36314	quipo
-36315	quiste
-36316	quito
-36321	raba
-36322	Rabat
-36323	rabeo
-36324	rabi
-36325	rabia
-36326	rabino
-36331	rabo
-36332	racha
-36333	racimo
-36334	rada
-36335	radar
-36336	raer
-36341	Rafa
-36342	Rafael
-36343	rafe
-36344	rafez
-36345	rafia
-36346	ragua
-36351	rahez
-36352	raijo
-36353	rain
-36354	raja
-36355	rajar
-36356	ralea
-36361	rallar
-36362	ralo
-36363	rama
-36364	ramal
-36365	Rambo
-36366	ramio
-36411	Ramiro
-36412	ramo
-36413	ramoso
-36414	rampa
-36415	rango
-36416	rano
-36421	ranura
-36422	rapa
-36423	rapar
-36424	rapaz
-36425	rape
-36426	rapo
-36431	rapta
-36432	raptar
-36433	rapto
-36434	Raquel
-36435	raro
-36436	ras
-36441	rasar
-36442	rasco
-36443	rasero
-36444	rasgo
-36445	raso
-36446	raspa
-36451	rastro
-36452	rata
-36453	rateo
-36454	ratero
-36455	ratito
-36456	rato
-36461	raudo
-36462	rauta
-36463	raya
-36464	rayar
-36465	rayo
-36466	raza
-36511	reacio
-36512	real
-36513	reame
-36514	reata
-36515	reato
-36516	reble
-36521	recelo
-36522	receta
-36523	recibo
-36524	recio
-36525	recodo
-36526	recre
-36531	recreo
-36532	recto
-36533	rector
-36534	recua
-36535	red
-36536	redil
-36541	redro
-36542	refez
-36543	regalo
-36544	regar
-36545	regazo
-36546	regio
-36551	regir
-36552	regla
-36553	reina
-36554	reinar
-36555	reino
-36556	reja
-36561	rejo
-36562	relato
-36563	relevo
-36564	reloj
-36565	relso
-36566	remar
-36611	remesa
-36612	remo
-36613	renal
-36614	rencor
-36615	renda
-36616	rene
-36621	renga
-36622	reno
-36623	renta
-36624	rento
-36625	reo
-36626	reojo
-36631	repisa
-36632	reptil
-36633	res
-36634	resta
-36635	resto
-36636	retal
-36641	retar
-36642	retina
-36643	retir
-36644	reto
-36645	retor
-36646	retro
-36651	reunir
-36652	Reus
-36653	rey
-36654	reyes
-36655	rezar
-36656	rezno
-36661	rezo
-36662	riada
-36663	ribera
-36664	ricio
-36665	rico
-36666	riego
-41111	riel
-41112	rieto
-41113	rifa
-41114	rifar
-41115	rifle
-41116	rigor
-41121	rija
-41122	rijo
-41123	rilar
-41124	rima
-41125	rimar
-41126	rimo
-41131	Rin
-41132	ring
-41133	ripia
-41134	ripio
-41135	risa
-41136	risco
-41141	riso
-41142	rispa
-41143	rispo
-41144	riste
-41145	Rita
-41146	ritmo
-41151	rito
-41152	ritual
-41153	rival
-41154	riza
-41155	rizar
-41156	rizo
-41161	roa
-41162	roano
-41163	robado
-41164	robar
-41165	Robin
-41166	robla
-41211	roble
-41212	robo
-41213	robot
-41214	robots
-41215	robra
-41216	robre
-41221	roca
-41222	roce
-41223	rock
-41224	roda
-41225	rodado
-41226	rodal
-41231	rodar
-41232	rodas
-41233	rodear
-41234	rodeo
-41235	roe
-41236	roedor
-41241	roela
-41242	roer
-41243	roete
-41244	rogar
-41245	roge
-41246	rojal
-41251	rojez
-41252	rojo
-41253	rol
-41254	rolar
-41255	rolde
-41256	roleo
-41261	Rolex
-41262	rolla
-41263	rollo
-41264	Roma
-41265	romano
-41266	rombo
-41311	romeo
-41312	romo
-41313	ron
-41314	ronca
-41315	roncar
-41316	ronce
-41321	ronco
-41322	ronda
-41323	ronde
-41324	ronza
-41325	ropa
-41326	ropero
-41331	roque
-41332	Roque
-41333	rorro
-41334	ros
-41335	Rosa
-41336	rosa
-41341	rosado
-41342	rosal
-41343	rosar
-41344	rosca
-41345	rosco
-41346	rosita
-41351	rosjo
-41352	roso
-41353	rotal
-41354	rotar
-41355	roten
-41356	roto
-41361	rotor
-41362	ROVER
-41363	roya
-41364	royal
-41365	royo
-41366	roza
-41411	rozar
-41412	rozno
-41413	rozo
-41414	ruano
-41415	ruar
-41416	rubio
-41421	rublo
-41422	rubo
-41423	rubor
-41424	rubra
-41425	rubro
-41426	ruca
-41431	rucar
-41432	ruche
-41433	rucho
-41434	rucio
-41435	ruco
-41436	rudez
-41441	rudo
-41442	rueca
-41443	rueda
-41444	ruedo
-41445	ruego
-41446	rufa
-41451	rufo
-41452	ruga
-41453	rugar
-41454	rugir
-41455	ruido
-41456	ruin
-41461	ruina
-41462	rula
-41463	rular
-41464	rulo
-41465	ruma
-41466	rumba
-41511	rumbo
-41512	rumia
-41513	rumiar
-41514	rumo
-41515	rumor
-41516	runa
-41521	rungo
-41522	runo
-41523	rupia
-41524	rural
-41525	rusco
-41526	Rusia
-41531	ruso
-41532	ruta
-41533	rutar
-41534	rutel
-41535	Saab
-41536	sabeo
-41541	saber
-41542	sabino
-41543	sabio
-41544	sable
-41545	sabor
-41546	sabre
-41551	saca
-41552	sacar
-41553	sacho
-41554	sacio
-41555	saco
-41556	sacre
-41561	sacro
-41562	saeta
-41563	safio
-41564	safir
-41565	saga
-41566	sagaz
-41611	sage
-41612	sago
-41613	saja
-41614	sajar
-41615	sal
-41616	sala
-41621	salado
-41622	salar
-41623	salaz
-41624	salce
-41625	saldo
-41626	salea
-41631	salep
-41632	salga
-41633	salido
-41634	salio
-41635	salir
-41636	salma
-41641	salmo
-41642	salol
-41643	salpa
-41644	salsa
-41645	salso
-41646	salto
-41651	salud
-41652	saludo
-41653	salva
-41654	salve
-41655	Sam
-41656	sama
-41661	samio
-41662	sampa
-41663	san
-41664	sanar
-41665	Sancho
-41666	sanco
-42111	sanear
-42112	sanes
-42113	sango
-42114	sanie
-42115	sano
-42116	sansa
-42121	sanso
-42122	santo
-42123	sapo
-42124	saque
-42125	saqueo
-42126	Sara
-42131	sarao
-42132	sarco
-42133	sarda
-42134	sarde
-42135	sardo
-42136	sarga
-42141	sargo
-42142	sarna
-42143	sarro
-42144	sarta
-42145	sarza
-42146	sarzo
-42151	SAS
-42152	sastre
-42153	satis
-42154	sato
-42155	sauce
-42156	saurio
-42161	sauz
-42162	savia
-42163	saya
-42164	sayal
-42165	sayo
-42166	saz
-42211	Scott
-42212	sea
-42213	sean
-42214	seas
-42215	Seat
-42216	sebe
-42221	sebo
-42222	secar
-42223	sece
-42224	seco
-42225	secor
-42226	secta
-42231	secua
-42232	sed
-42233	seda
-42234	sedal
-42235	sedar
-42236	sede
-42241	sedoso
-42242	seer
-42243	sega
-42244	segar
-42245	segur
-42246	seico
-42251	Seiko
-42252	seis
-42253	sello
-42254	seltz
-42255	selva
-42256	semi
-42261	semis
-42262	sen
-42263	sena
-42264	senda
-42265	sene
-42266	senil
-42311	senior
-42312	seno
-42313	sentir
-42314	seo
-42315	sepia
-42316	ser
-42321	sera
-42322	Sergio
-42323	serie
-42324	serio
-42325	serna
-42326	serpa
-42331	serta
-42332	servil
-42333	ses
-42334	sesga
-42335	sesgo
-42336	sesma
-42341	sesmo
-42342	seso
-42343	sesudo
-42344	seta
-42345	seto
-42346	seudo
-42351	severo
-42352	sexma
-42353	sexo
-42354	sexto
-42355	sian
-42356	sibil
-42361	sido
-42362	sidra
-42363	siega
-42364	sien
-42365	siena
-42366	siesta
-42411	siete
-42412	sigla
-42413	siglo
-42414	sigma
-42415	signo
-42416	Sil
-42421	silba
-42422	silbo
-42423	silfo
-42424	silla
-42425	silo
-42426	silva
-42431	Silvia
-42432	sima
-42433	simbo
-42434	simio
-42435	simple
-42436	sin
-42441	sino
-42442	sira
-42443	sirga
-42444	sirgo
-42445	sirio
-42446	sirle
-42451	Siro
-42452	siro
-42453	sirte
-42454	sisa
-42455	sisar
-42456	siseo
-42461	sismo
-42462	sitio
-42463	sito
-42464	soba
-42465	sobar
-42466	sobeo
-42511	sobo
-42512	sobra
-42513	sobre
-42514	sobrio
-42515	soca
-42516	socaz
-42521	social
-42522	socio
-42523	soda
-42524	sodio
-42525	soez
-42526	soeza
-42531	soga
-42532	sois
-42533	soja
-42534	Sol
-42535	sol
-42536	solar
-42541	solaz
-42542	soleo
-42543	soler
-42544	solfa
-42545	solfeo
-42546	solio
-42551	solla
-42552	solo
-42553	soma
-42554	sombra
-42555	somo
-42556	somos
-42561	son
-42562	sonado
-42563	sonar
-42564	sonda
-42565	sondeo
-42566	soneto
-42611	Sonia
-42612	sonido
-42613	sonoro
-42614	sopa
-42615	sopar
-42616	soplo
-42621	sopor
-42622	sor
-42623	sora
-42624	sorba
-42625	sorbo
-42626	sorce
-42631	sordez
-42632	sordo
-42633	sorgo
-42634	sorna
-42635	soro
-42636	sorra
-42641	sorteo
-42642	SOS
-42643	sos
-42644	sosa
-42645	sosar
-42646	sosia
-42651	sota
-42652	sotar
-42653	sote
-42654	sotil
-42655	soto
-42656	sotol
-42661	sovoz
-42662	soy
-42663	Spain
-42664	stop
-42665	suave
-42666	subir
-43111	sucio
-43112	sudar
-43113	sudor
-43114	sueco
-43115	suela
-43116	sueldo
-43121	suelo
-43122	sueno
-43123	suero
-43124	sufra
-43125	sufrir
-43126	suizo
-43131	sula
-43132	suma
-43133	sumar
-43134	sumir
-43135	sumiso
-43136	sumo
-43141	supino
-43142	supra
-43143	sur
-43144	surco
-43145	surto
-43146	suso
-43151	susto
-43152	sutil
-43153	sutura
-43154	suyo
-43155	taba
-43156	tabaco
-43161	tabla
-43162	taca
-43163	tacar
-43164	tacha
-43165	tacho
-43166	taco
-43211	tacto
-43212	tafia
-43213	tafo
-43214	tafur
-43215	tagua
-43216	taha
-43221	taifa
-43222	taiga
-43223	taima
-43224	taina
-43225	taja
-43226	tajar
-43231	tajea
-43232	Tajo
-43233	tajo
-43234	tal
-43235	tala
-43236	talar
-43241	talco
-43242	talego
-43243	talio
-43244	talla
-43245	talle
-43246	taller
-43251	tallo
-43252	talma
-43253	talo
-43254	talpa
-43255	talud
-43256	tamal
-43261	tamba
-43262	tambo
-43263	tamiz
-43264	tamo
-43265	tan
-43266	tanda
-43311	tanga
-43312	tango
-43313	tanque
-43314	tanto
-43315	tao
-43316	tapa
-43321	tapar
-43322	tapia
-43323	tapiar
-43324	tapir
-43325	tapiz
-43326	taque
-43331	tara
-43332	tarado
-43333	taray
-43334	tarco
-43335	tarda
-43336	tarde
-43341	tardo
-43342	tarea
-43343	tarifa
-43344	tarja
-43345	tarro
-43346	tarso
-43351	tarta
-43352	tasa
-43353	tasar
-43354	tasca
-43355	tasco
-43356	tasio
-43361	tasto
-43362	tate
-43363	tato
-43364	tatuar
-43365	Tauro
-43366	tauro
-43411	taxi
-43412	taza
-43413	tazar
-43414	tea
-43415	teatro
-43416	tebeo
-43421	teca
-43422	techo
-43423	tecla
-43424	tecleo
-43425	teda
-43426	tedio
-43431	tegua
-43432	Teide
-43433	teja
-43434	tejado
-43435	tejar
-43436	tejer
-43441	tejo
-43442	tela
-43443	telar
-43444	tema
-43445	temer
-43446	temor
-43451	temple
-43452	ten
-43453	tena
-43454	tenaz
-43455	tenaza
-43456	tener
-43461	tenia
-43462	tenis
-43463	tenor
-43464	tenso
-43465	tensor
-43466	tenue
-43511	tenuo
-43512	teoso
-43513	terco
-43514	Teresa
-43515	termal
-43516	termas
-43521	termo
-43522	terna
-43523	terne
-43524	terno
-43525	tero
-43526	Terra
-43531	terror
-43532	terso
-43533	Teruel
-43534	tesa
-43535	tesar
-43536	tesina
-43541	tesis
-43542	teso
-43543	testa
-43544	teste
-43545	tetar
-43546	tetra
-43551	tetro
-43552	Texas
-43553	textil
-43554	texto
-43555	teyo
-43556	tez
-43561	tiaca
-43562	tiara
-43563	tibe
-43564	Tibet
-43565	tibio
-43566	tic
-43611	tiempo
-43612	tienta
-43613	tiento
-43614	Tierra
-43615	tieso
-43616	tifo
-43621	tifus
-43622	tigra
-43623	tigre
-43624	tija
-43625	tijera
-43626	tila
-43631	tilde
-43632	tilia
-43633	tilla
-43634	tillo
-43635	tilma
-43636	tilo
-43641	timar
-43642	timba
-43643	timbal
-43644	timo
-43645	timol
-43646	Timor
-43651	timpa
-43652	tina
-43653	tinaja
-43654	tinca
-43655	tinge
-43656	tino
-43661	tinta
-43662	tinte
-43663	tinto
-43664	tipa
-43665	tipo
-43666	tique
-44111	tira
-44112	tirar
-44113	tirio
-44114	tiro
-44115	tirso
-44116	tirte
-44121	tiste
-44122	titar
-44123	Tito
-44124	tito
-44125	Tito
-44126	tiza
-44131	tizna
-44132	tizne
-44133	tizo
-44134	toalla
-44135	toar
-44136	toba
-44141	tobar
-44142	toca
-44143	tocar
-44144	toche
-44145	tocho
-44146	tocino
-44151	toco
-44152	todo
-44153	toesa
-44154	tofo
-44155	toga
-44156	togado
-44161	tojal
-44162	tojo
-44163	Tokio
-44164	tola
-44165	tolda
-44166	toldo
-44211	tole
-44212	Toledo
-44213	tolla
-44214	tolmo
-44215	tolo
-44216	tolva
-44221	toma
-44222	tomate
-44223	tomo
-44224	ton
-44225	tona
-44226	tonal
-44231	tonar
-44232	tonca
-44233	tondo
-44234	tonel
-44235	tonga
-44236	tongo
-44241	tono
-44242	tonto
-44243	top
-44244	topa
-44245	topar
-44246	tope
-44251	topo
-44252	toque
-44253	tora
-44254	toral
-44255	torca
-44256	torco
-44261	torda
-44262	tordo
-44263	torear
-44264	toreo
-44265	torga
-44266	torgo
-44311	toril
-44312	torio
-44313	tormo
-44314	torna
-44315	tornar
-44316	torno
-44321	toro
-44322	torpe
-44323	torre
-44324	torso
-44325	torta
-44326	torva
-44331	torvo
-44332	tos
-44333	tosa
-44334	tosco
-44335	tose
-44336	toser
-44341	total
-44342	tova
-44343	toza
-44344	tozo
-44345	tozudo
-44346	traba
-44351	trabe
-44352	traca
-44353	trace
-44354	traer
-44355	trago
-44356	traje
-44361	trama
-44362	tramo
-44363	trampa
-44364	trapa
-44365	trape
-44366	trapo
-44411	tras
-44412	traste
-44413	trata
-44414	trato
-44415	trauma
-44416	traza
-44421	trazo
-44422	trece
-44423	tregua
-44424	treja
-44425	tren
-44426	trena
-44431	treno
-44432	trenza
-44433	treo
-44434	trepe
-44435	tres
-44436	treta
-44441	tri
-44442	triar
-44443	tribu
-44444	triga
-44445	trigo
-44446	trile
-44451	trino
-44452	tripa
-44453	tripe
-44454	triple
-44455	tris
-44456	trisa
-44461	triste
-44462	triza
-44463	trofeo
-44464	troja
-44465	troje
-44466	trola
-44511	trole
-44512	trompa
-44513	trona
-44514	tronco
-44515	trono
-44516	tropa
-44521	tropo
-44522	trotar
-44523	trote
-44524	trova
-44525	Troya
-44526	troza
-44531	trozo
-44532	trucha
-44533	truco
-44534	trueno
-44535	trufa
-44536	truja
-44541	tuba
-44542	tubo
-44543	tuco
-44544	tuda
-44545	tueco
-44546	tuera
-44551	tuerca
-44552	tufo
-44553	tulipa
-44554	tumba
-44555	tumbo
-44556	tumo
-44561	tumor
-44562	tuna
-44563	tunar
-44564	tunda
-44565	tuno
-44566	tupa
-44611	tupir
-44612	tupla
-44613	tura
-44614	turar
-44615	turba
-44616	turco
-44621	turma
-44622	turnar
-44623	turno
-44624	turra
-44625	tusa
-44626	tusar
-44631	tute
-44632	tutear
-44633	tuteo
-44634	tutor
-44635	tuyo
-44636	ubio
-44641	ubre
-44642	ucase
-44643	uced
-44644	ufanar
-44645	ufano
-44646	ufo
-44651	UFO
-44652	ugre
-44653	UGT
-44654	ujier
-44655	ulema
-44656	ultra
-44661	umbral
-44662	uncir
-44663	ungir
-44664	unidad
-44665	unir
-44666	uno
-45111	untar
-45112	unto
-45113	Ural
-45114	uranio
-45115	Urano
-45116	urbe
-45121	urdir
-45122	urea
-45123	Urgel
-45124	urgir
-45125	URL
-45126	urna
-45131	uro
-45132	ursa
-45133	URSS
-45134	USA
-45135	usaje
-45136	usar
-45141	uso
-45142	usted
-45143	usual
-45144	usura
-45145	Utrera
-45146	uva
-45151	uvada
-45152	uvero
-45153	uzo
-45154	vaca
-45155	vacar
-45156	vaco
-45161	vacuno
-45162	vacuo
-45163	vade
-45164	vado
-45165	vafo
-45166	vagar
-45211	vago
-45212	vaho
-45213	vaina
-45214	vais
-45215	val
-45216	valar
-45221	vale
-45222	valer
-45223	valija
-45224	valla
-45225	valle
-45226	valor
-45231	vals
-45232	valva
-45233	vamos
-45234	van
-45235	vano
-45236	vapor
-45241	vara
-45242	varea
-45243	vareo
-45244	varga
-45245	vario
-45246	variz
-45251	vas
-45252	vasar
-45253	vasco
-45254	vaso
-45255	vasto
-45256	vate
-45261	vatio
-45262	vaya
-45263	vayan
-45264	vayas
-45265	vea
-45266	vean
-45311	veas
-45312	vecino
-45313	ved
-45314	veda
-45315	vedar
-45316	veer
-45321	vega
-45322	veinte
-45323	veis
-45324	vejar
-45325	vejez
-45326	vela
-45331	velar
-45332	vello
-45333	veloz
-45334	vemos
-45335	ven
-45336	vena
-45341	venado
-45342	venal
-45343	vencer
-45344	vender
-45345	vendo
-45346	venia
-45351	venir
-45352	venta
-45353	Venus
-45354	veo
-45355	ver
-45356	vera
-45361	verano
-45362	veras
-45363	veraz
-45364	verbo
-45365	verdad
-45366	verde
-45411	verja
-45412	vermut
-45413	vero
-45414	verso
-45415	ves
-45416	vesta
-45421	veste
-45422	veta
-45423	vetar
-45424	veto
-45425	vez
-45426	veza
-45431	vezar
-45432	vezo
-45433	viajar
-45434	viaje
-45435	vial
-45436	vice
-45441	vicia
-45442	vicio
-45443	victo
-45444	vid
-45445	vida
-45446	vidal
-45451	vidrio
-45452	vidro
-45453	viejo
-45454	Viena
-45455	viento
-45456	viera
-45461	viere
-45462	viese
-45463	viga
-45464	Vigo
-45465	vigor
-45466	vil
-45511	villa
-45512	vilo
-45513	vimos
-45514	vino
-45515	vio
-45516	viola
-45521	VIP
-45522	viral
-45523	virar
-45524	Virgo
-45525	virgo
-45526	viril
-45531	virtud
-45532	virus
-45533	viruta
-45534	vis
-45535	visa
-45536	visar
-45541	visco
-45542	visera
-45543	visir
-45544	viso
-45545	visor
-45546	vista
-45551	viste
-45552	visto
-45553	visual
-45554	vital
-45555	vito
-45556	viudo
-45561	vivac
-45562	Vivar
-45563	vivaz
-45564	vivez
-45565	viveza
-45566	vivo
-45611	vocal
-45612	vodka
-45613	volar
-45614	volea
-45615	voleo
-45616	Volga
-45621	voltio
-45622	Volvo
-45623	voraz
-45624	vos
-45625	voso
-45626	votar
-45631	voto
-45632	voy
-45633	voz
-45634	vuelo
-45635	vuelta
-45636	vueso
-45641	vulgar
-45642	vulgo
-45643	Wagner
-45644	Wells
-45645	Xerox
-45646	yaba
-45651	yac
-45652	yacija
-45653	yacio
-45654	yaga
-45655	yagan
-45656	Yago
-45661	yak
-45662	yana
-45663	Yankee
-45664	yanta
-45665	yarda
-45666	yayo
-46111	yazga
-46112	yazgo
-46113	yebo
-46114	yedra
-46115	yegua
-46116	yelmo
-46121	yema
-46122	yen
-46123	yendo
-46124	yerba
-46125	yermo
-46126	yerno
-46131	yero
-46132	yerro
-46133	yerto
-46134	yesar
-46135	yesca
-46136	yeso
-46141	yeti
-46142	yodo
-46143	yoduro
-46144	yogur
-46145	yubo
-46146	yugo
-46151	yunque
-46152	yunta
-46153	yunto
-46154	yuso
-46155	yute
-46156	zafar
-46161	zafio
-46162	zafir
-46163	zafiro
-46164	zafo
-46165	Zafra
-46166	zaga
-46211	zagal
-46212	zaino
-46213	zambo
-46214	Zamora
-46215	zampa
-46216	zampar
-46221	zanca
-46222	zanco
-46223	zanga
-46224	zanja
-46225	zapa
-46226	zapar
-46231	zapato
-46232	zapo
-46233	zaque
-46234	zar
-46235	zara
-46236	zarbo
-46241	zarca
-46242	zarco
-46243	zarja
-46244	zarpa
-46245	zarpar
-46246	zarza
-46251	zarzo
-46252	zas
-46253	zata
-46254	zato
-46255	zaya
-46256	zeda
-46261	Zeiss
-46262	zenda
-46263	zendo
-46264	zenit
-46265	zeta
-46266	zigzag
-46311	zinc
-46312	zoca
-46313	zoco
-46314	zofra
-46315	zoizo
-46316	zoma
-46321	zona
-46322	zonal
-46323	zopo
-46324	Zorro
-46325	zorro
-46326	zote
-46331	zuavo
-46332	zubia
-46333	zuda
-46334	zueco
-46335	zuela
-46336	zulo
-46341	zumba
-46342	zumo
-46343	zurcir
-46344	zurdo
-46345	zureo
-46346	Zurich
-46351	zuro
-46352	zurra
-46353	zurrar
-46354	zuzar
+abad
+abajo
+abar
+abate
+abedul
+abeja
+abeto
+abisal
+abismo
+abogar
+abolir
+abonar
+abono
+abordo
+abort
+abra
+abrazo
+abrigo
+abril
+abrir
+ABS
+abuelo
+abundo
+abusar
+abuso
+acabar
+acabo
+acaso
+acato
+acebo
+acecho
+aceite
+acelga
+acento
+acepto
+acera
+acerca
+acero
+aceta
+aceto
+acezo
+aciano
+acidez
+acimut
+acoger
+acopio
+acosar
+acoso
+acotar
+acre
+acta
+actea
+activo
+acto
+actor
+actriz
+actual
+actuar
+acudir
+acunar
+acure
+acusar
+acuse
+acuto
+adara
+adelfa
+adepto
+adeudo
+adobe
+adobo
+adonde
+adoro
+adrar
+aduana
+aduar
+adula
+adular
+adulto
+adur
+AEG
+afable
+afear
+afgano
+afiar
+afijo
+afinar
+afine
+afino
+aforo
+afro
+afta
+afuera
+agenda
+agir
+agosto
+agote
+agraz
+agre
+agriar
+agrio
+agro
+agror
+agua
+aguar
+agudo
+aguja
+aguoso
+ahogar
+ahogo
+ahora
+ahorro
+air
+airar
+aire
+airear
+aja
+ajar
+Ajax
+aje
+ajea
+ajear
+ajebe
+ajeno
+ajeo
+ajero
+ajete
+ajo
+ajobo
+ajote
+ajuar
+ajuste
+ala
+alabar
+alado
+alafa
+alama
+alano
+alar
+alazo
+albano
+albar
+albo
+albor
+albur
+alce
+alcea
+alcor
+aldea
+alea
+alear
+alece
+aleda
+alegar
+alegre
+alegro
+aleja
+alejar
+alera
+alero
+aleto
+aleya
+alezo
+alfa
+alfar
+alfil
+alfiz
+alfoz
+alga
+algar
+algo
+alguno
+alhaja
+alhoz
+aliar
+alias
+Alicia
+alifa
+alijo
+alioj
+aliso
+aljez
+aljibe
+almo
+almud
+alno
+aloa
+aloja
+Alonso
+alosa
+aloya
+Alpes
+altar
+Altea
+alteza
+alto
+altura
+alud
+aludo
+alza
+alzar
+amable
+amago
+amar
+amaro
+amarre
+amate
+ambas
+ambos
+ameba
+amelo
+ameno
+ameos
+amibo
+amida
+amigo
+amito
+amo
+amole
+amor
+amoral
+amplo
+amuje
+amura
+amuso
+Ana
+anaco
+anafe
+anata
+anca
+ancho
+anchoa
+ancla
+anda
+andar
+anea
+anejo
+anemia
+aneto
+anexo
+angla
+anglo
+angra
+anidar
+animal
+anime
+anito
+Ann
+anoche
+anotar
+ansa
+ANSI
+ansia
+ante
+antena
+antes
+antia
+antro
+anual
+anuo
+anura
+anuro
+aojar
+aorta
+aovar
+apea
+apear
+apego
+apelo
+apena
+apenas
+apeo
+apero
+apilar
+apio
+apnea
+apodo
+apoyar
+apoyo
+aptar
+apto
+apure
+apuro
+aquel
+aqueo
+Arabia
+arabo
+Aral
+arana
+arca
+arcar
+arcaz
+arce
+arcea
+archa
+arco
+arda
+arder
+ardid
+ardor
+arduo
+arena
+arenal
+ares
+arete
+Argel
+argo
+argos
+argot
+Aries
+arillo
+ario
+arma
+armar
+armero
+aro
+aroma
+arpa
+arpar
+arpeo
+arra
+arre
+arreo
+arria
+arriba
+arroz
+artar
+arte
+Arturo
+asa
+asador
+asar
+asaz
+asco
+ascua
+asear
+aseo
+asesor
+asgo
+Asia
+asilo
+asina
+asir
+asma
+asmar
+asnal
+asno
+asomo
+aspa
+asta
+aster
+asto
+Astra
+astro
+asumir
+asuso
+ata
+atabe
+atajo
+atal
+ataque
+atar
+atasco
+atear
+ateneo
+ateo
+atino
+atlas
+atoar
+atona
+atora
+atoro
+atraer
+atril
+atrio
+atroz
+atufo
+audaz
+audio
+auge
+augur
+aula
+aun
+aunar
+aupar
+aura
+auto
+autor
+aval
+avalar
+avaro
+ave
+AVE
+avena
+aveza
+aviar
+avica
+avieso
+aviso
+avizor
+avo
+avol
+axe
+axial
+axila
+axis
+ayate
+ayer
+ayo
+ayuda
+ayudar
+ayunar
+ayuno
+ayuso
+azada
+azar
+azaro
+azaya
+azimut
+Aznar
+azoar
+azogue
+azor
+azote
+azua
+azul
+azur
+azuzar
+Babel
+babia
+bable
+babor
+baca
+Bach
+bache
+bacilo
+badal
+badea
+bag
+baga
+bagaje
+bagar
+bagazo
+bago
+bagre
+bah
+Baikal
+baila
+bailar
+baile
+bajar
+bajel
+bajez
+bajeza
+bajo
+bajura
+bala
+balar
+balda
+balde
+baldo
+balea
+baleo
+baliza
+ballet
+balso
+balto
+bamba
+Bambi
+banal
+banas
+bance
+banco
+banda
+bando
+bang
+baobab
+baque
+bar
+baraja
+barato
+barba
+barbo
+barco
+barda
+bardo
+bario
+Barna
+barra
+barril
+barrio
+barro
+Bart
+barza
+basa
+basal
+basar
+basca
+basco
+base
+BASF
+basis
+baso
+baste
+basto
+basura
+bata
+batel
+bateo
+batir
+bato
+batuta
+baudio
+bauza
+baya
+bayal
+Bayern
+bayeta
+bayo
+baza
+bazar
+bazo
+BBV
+beato
+bebdo
+beca
+becar
+bedel
+befa
+befar
+befre
+beige
+beis
+belez
+belfo
+belga
+belio
+bello
+bemol
+Ben
+benzol
+beodo
+berro
+berta
+berza
+besar
+beso
+bestia
+besugo
+beta
+Betis
+beudo
+bevra
+bey
+bezar
+Bibi
+biblia
+BIC
+bicho
+bici
+biela
+bien
+bienal
+big
+bigote
+bija
+bilao
+Bilbao
+bilis
+billar
+bimba
+bina
+binar
+bingo
+bio
+biombo
+BIOS
+birla
+birlo
+bis
+bisel
+biso
+bit
+bizca
+blago
+blando
+blavo
+bleda
+bledo
+blezo
+bloc
+bloca
+bloque
+blusa
+BMW
+boa
+boato
+Bob
+bobina
+boca
+bocado
+bocal
+bocar
+bocha
+boche
+bocina
+bocio
+boda
+bodega
+BOE
+bofa
+bofe
+boga
+bogar
+Bohr
+boicot
+boina
+boj
+bojar
+bol
+bolar
+bolero
+boleto
+bolla
+bollo
+bolo
+bolso
+bomba
+bombeo
+bombo
+bongo
+bonito
+Bonn
+bono
+bonzo
+borato
+borde
+bordo
+boreal
+Borges
+borla
+borne
+boro
+bosar
+Bosnia
+bosque
+bosta
+Boston
+bota
+botar
+bote
+botijo
+box
+boxear
+boxeo
+boy
+boya
+boyal
+boyar
+bozal
+bozo
+braco
+braga
+brasa
+Brasil
+bravo
+brazo
+brea
+brear
+breca
+brecha
+brega
+bren
+brete
+breva
+breve
+brezo
+brida
+brisa
+brizo
+broca
+broche
+broma
+bromo
+bronce
+brotar
+brote
+broto
+broza
+brugo
+Brujas
+brujo
+bruma
+bruto
+buba
+bucal
+buces
+buche
+bucle
+buco
+Buda
+buen
+bueno
+buey
+bufa
+bufar
+bufete
+bufo
+buhar
+buitre
+buja
+buje
+bujo
+bular
+bulbo
+bulda
+bulla
+bulo
+bulto
+BUP
+buque
+burdo
+bureo
+burga
+burgo
+Burgos
+buril
+burla
+burro
+bus
+busca
+buscar
+busco
+Bush
+busto
+butaca
+buzar
+buzo
+buzos
+cabal
+cabe
+caber
+cabeza
+cable
+Cabo
+cabo
+cabra
+cache
+cacho
+caco
+cacto
+cada
+cadena
+cadera
+cadete
+cadmio
+cadoz
+caduco
+caer
+cafiz
+cafre
+caico
+Cairo
+caja
+cajero
+cal
+cala
+calar
+calcar
+calcio
+calco
+calda
+caldo
+caler
+calesa
+caleta
+calle
+callo
+calmar
+calmo
+calor
+calvo
+calza
+calzar
+calzo
+cama
+camada
+cambio
+cambo
+camino
+camio
+camisa
+campa
+campo
+campus
+can
+canal
+candil
+canela
+caney
+canez
+canica
+canje
+cano
+canoa
+canon
+Canon
+canoso
+canta
+cante
+canto
+canuto
+caoba
+caos
+capa
+capaz
+capea
+capear
+captar
+caqui
+car
+caray
+carca
+cardo
+carey
+carga
+cargar
+cargo
+Caribe
+caries
+cariz
+carla
+Carlos
+carne
+caro
+carpa
+carpo
+carril
+carro
+carta
+casa
+casal
+casar
+casca
+casco
+casero
+casi
+casino
+Casio
+casio
+caso
+caspa
+casto
+castor
+cata
+catar
+cato
+catre
+cauce
+caucho
+caudal
+causa
+causal
+causar
+cauto
+cavar
+cayo
+caz
+caza
+cazar
+cazuz
+CCOO
+CDROM
+cea
+ceba
+cebar
+cebo
+cebra
+cebro
+cecina
+ceder
+cedro
+cegar
+ceja
+cejar
+cejo
+cela
+celar
+celda
+celia
+celo
+Celta
+celta
+cena
+cenar
+cenefa
+cenit
+censo
+censor
+cepa
+cepo
+cerca
+cercar
+cerco
+cerdo
+cereal
+cereo
+cerezo
+cero
+cerrar
+cerro
+cerviz
+cesar
+cese
+cesio
+ceso
+cesta
+cesto
+cetro
+Ceuta
+chacha
+chaco
+chal
+chalet
+chanza
+chapa
+charco
+Charly
+charo
+charol
+chasis
+chat
+chato
+chaval
+che
+checo
+chepa
+cheque
+chic
+chicha
+chicle
+chico
+Chile
+chile
+China
+chino
+chip
+Chipre
+chispa
+chist
+chiste
+Chita
+chito
+chiva
+chivo
+chocar
+choco
+chola
+Chopin
+chopo
+choque
+chorro
+choto
+chovo
+chozo
+chufa
+chulo
+chupar
+chuza
+chuzo
+ciar
+ciclo
+Cid
+ciego
+cielo
+cien
+cieno
+ciervo
+cifra
+cilio
+cima
+cimia
+cinca
+cincel
+cinco
+cine
+cinema
+cinta
+cinto
+cipayo
+circe
+Circe
+circo
+cirio
+cirro
+cisco
+cisma
+cisne
+cita
+citar
+cito
+ciudad
+civil
+clamor
+clan
+claro
+clase
+clavar
+clave
+clavel
+clavo
+clero
+clima
+Clio
+clip
+ClNa
+clonar
+cloro
+club
+CNMT
+CNMV
+coba
+cobijo
+cobra
+cobre
+cobro
+cocar
+cocer
+coche
+cocina
+codo
+cofa
+cofia
+cofre
+cohete
+cohol
+cojear
+cojera
+cojez
+cojo
+col
+cola
+colar
+colega
+coleta
+collar
+colmar
+colmo
+colo
+colon
+colono
+color
+coloso
+colza
+coma
+comba
+comer
+cometa
+con
+conato
+conde
+conejo
+conexo
+conga
+Congo
+cono
+conta
+convoy
+copa
+copar
+cope
+copia
+copiar
+copla
+copo
+copy
+coque
+cor
+coraje
+coral
+coraza
+corcel
+corcho
+corda
+cordel
+corno
+coro
+corona
+corra
+corral
+correo
+corro
+corso
+cortar
+corte
+corto
+corva
+corvo
+corzo
+cosa
+coser
+cosita
+coso
+costa
+coste
+costo
+cota
+cotar
+coto
+coyote
+coz
+craso
+crea
+crear
+crecer
+credo
+creer
+crema
+Creta
+criar
+criba
+cric
+crida
+crimen
+crin
+cripta
+croar
+cromo
+crono
+cruce
+crudo
+cruel
+cruz
+cruzar
+cual
+cuan
+cuando
+cuarto
+cuarzo
+cuatro
+Cuba
+cuba
+cubano
+cubil
+cubo
+cubrir
+cucar
+cuco
+cuello
+cuemo
+cuenta
+cuerdo
+cuero
+cuerpo
+cuesa
+cuesta
+cueva
+cuezo
+cuida
+cuidar
+cuita
+culpa
+culto
+cumbre
+cuna
+cuneta
+Cuomo
+cuota
+cupo
+cura
+curar
+curdo
+curia
+curio
+curro
+cursar
+cursi
+curso
+cursor
+curta
+curtir
+curto
+curvo
+cutir
+cutis
+cutre
+cuyo
+cuzco
+Cuzco
+daba
+daban
+dabas
+daca
+dacio
+dad
+dador
+daga
+dais
+dala
+dalia
+dalle
+dama
+damos
+dan
+dandi
+danger
+Danone
+Dante
+danza
+danzar
+dar
+dardo
+darga
+das
+datar
+dato
+David
+deal
+debajo
+debate
+debdo
+debe
+deber
+debut
+decir
+decoro
+dedal
+dedil
+dedo
+dehesa
+deis
+dejar
+del
+dele
+delga
+Delia
+delito
+delta
+demo
+demos
+den
+dende
+denso
+dental
+dentro
+deo
+des
+desde
+dese
+deseo
+desga
+desk
+desliz
+deso
+deste
+desto
+deudo
+deudor
+devoto
+Dheli
+diablo
+diado
+dial
+Diana
+diana
+diario
+dibujo
+dicho
+dictar
+Diego
+diente
+diera
+diere
+diese
+Diesel
+dieta
+diez
+difuso
+digno
+dije
+dilema
+dimes
+dimos
+DIN
+dinero
+dino
+dintel
+dio
+diodo
+dios
+diosa
+dioso
+dique
+disco
+disk
+dispar
+diste
+dito
+divino
+divo
+dobla
+doblar
+doble
+doblo
+doca
+doce
+docena
+docto
+doctor
+dogal
+dogma
+dogo
+dolar
+doler
+dolo
+dolor
+doma
+domar
+domo
+Don
+don
+Don
+dona
+Donald
+donar
+doncel
+donde
+dopar
+dorado
+doral
+dorar
+dorio
+dormir
+dorna
+dorso
+dos
+dosel
+dosis
+dotal
+dotar
+dote
+dotor
+Dove
+dovela
+down
+doy
+draga
+dragar
+drago
+drama
+drenar
+drino
+driza
+droga
+drogar
+drope
+drupa
+druso
+dual
+duba
+dubio
+duc
+ducal
+ducho
+duda
+dudar
+dudoso
+duela
+duelo
+duena
+duende
+dueto
+dujo
+dula
+dular
+dulce
+duma
+duna
+dunda
+dundo
+dupa
+duplo
+duque
+durar
+durez
+dureza
+duro
+ebrio
+Ebro
+echar
+eco
+ecuo
+edad
+edema
+edicto
+edil
+educar
+EEUU
+efebo
+efeto
+eficaz
+efusa
+efuso
+egeno
+Egipto
+eguar
+eje
+elata
+elato
+Elba
+elche
+Elche
+elegir
+Elena
+eleto
+elevar
+elfo
+elipse
+elite
+elixir
+ello
+elogio
+elote
+embudo
+Emilio
+emir
+emitir
+Emma
+EMP
+empuje
+enano
+ende
+enea
+enema
+enero
+enigma
+enlace
+enojar
+enojo
+enorme
+ensayo
+ente
+Enter
+entrar
+entre
+entro
+enza
+enzima
+EOI
+eolio
+epa
+epi
+equis
+era
+erais
+eraje
+eral
+erala
+eran
+erar
+eras
+erbio
+ere
+erebo
+eres
+ergio
+ergo
+erial
+erina
+erizo
+ermar
+ermita
+ero
+eros
+Eros
+errar
+erre
+erro
+error
+eruga
+esca
+escala
+escama
+escaso
+escoa
+escoba
+escote
+ese
+esfera
+eso
+espada
+espejo
+espera
+espiga
+espina
+estad
+estado
+estafa
+estar
+este
+estela
+Esther
+estil
+estipe
+esto
+estol
+estola
+estoy
+estro
+etano
+etapa
+etc
+eterno
+etilo
+etnia
+euro
+Europa
+exacto
+exento
+exilio
+exir
+exit
+extra
+fabla
+fabril
+fabro
+faca
+facer
+facha
+facia
+factor
+fadar
+fado
+faena
+faja
+fajar
+fajo
+falaz
+falca
+falda
+falir
+fallo
+falto
+fama
+fame
+famoso
+fanal
+fango
+fano
+FAO
+fardo
+Fargo
+faro
+farol
+farola
+farra
+farsa
+fase
+faso
+fasta
+fasto
+fata
+fatal
+fatiga
+fato
+fator
+fatuo
+fauna
+fauno
+favor
+fax
+faz
+faza
+febril
+fecha
+feder
+fedor
+feliz
+felpa
+feo
+feota
+feote
+fer
+feral
+feraz
+feria
+ferial
+Feroe
+feroz
+ferro
+fervor
+festa
+fetal
+feto
+feudal
+feudo
+fianza
+fiar
+Fiat
+fibra
+ficha
+fideo
+fido
+fiel
+fiero
+fiesta
+figle
+figura
+fijar
+fijo
+fila
+filar
+file
+filfa
+film
+filmar
+filo
+fin
+final
+finar
+finca
+fingir
+fino
+finta
+fiordo
+fique
+firma
+firme
+fisco
+fisga
+flaco
+flama
+flan
+flanco
+flato
+flecha
+fleco
+fleje
+flema
+fletar
+flete
+Flex
+flexo
+flojo
+flor
+flora
+flota
+flotar
+flote
+fluido
+fluir
+flujo
+flux
+fobia
+focal
+focha
+foco
+fogata
+foir
+foiso
+foja
+folio
+fona
+fondo
+fonje
+foral
+forca
+forja
+forma
+formal
+forno
+foro
+forro
+forzar
+fosar
+foso
+foto
+foyo
+foz
+frac
+frade
+fraga
+fragua
+France
+frao
+frasco
+frase
+Frau
+fraude
+fray
+fredo
+frenar
+freno
+frente
+freo
+fresa
+freso
+frez
+freza
+frige
+frior
+friso
+frito
+frote
+frutal
+fruto
+fucia
+fuco
+fue
+fuego
+fuelle
+fuente
+fuer
+fuera
+fuere
+fuero
+fuesa
+fuese
+fuga
+fugar
+fugaz
+fugir
+fui
+fuina
+fuir
+fulano
+fular
+fulgor
+fumar
+fumo
+funda
+fundar
+fundir
+fundo
+furia
+furor
+furto
+fusa
+fusca
+fusil
+fusor
+fusta
+fuste
+futre
+futuro
+gabar
+gacel
+gacho
+gafar
+gafo
+gag
+gago
+gaita
+gaje
+gajo
+galea
+Galeno
+Gales
+galgo
+galio
+gallo
+galo
+galope
+gamba
+gamma
+gamo
+gamuza
+gana
+ganar
+ganga
+gano
+ganso
+Gante
+garaje
+garbo
+garito
+garla
+garra
+garzo
+gas
+gasa
+gastar
+gasto
+gato
+gaucho
+gavia
+gayo
+Gaza
+gel
+gelo
+gema
+gemir
+gen
+genial
+genio
+genro
+gente
+gentil
+gento
+GEO
+gerno
+gestar
+gesto
+giba
+gibar
+giga
+gil
+ginea
+girar
+giro
+Girona
+GIS
+gitano
+gleba
+global
+globo
+glosa
+GMT
+gneis
+gnomo
+gobio
+goce
+gocho
+godo
+Godoy
+gofio
+gol
+gola
+goleta
+golf
+golfo
+golpe
+goma
+gomar
+gomer
+gong
+Google
+gordo
+gorja
+Gorja
+gorro
+gota
+gotear
+goteo
+gotita
+Goya
+gozar
+gozne
+gozo
+gozoso
+gracia
+grado
+grafo
+grajo
+gramo
+gran
+grand
+grande
+grano
+grant
+grao
+grapa
+grapar
+graso
+grato
+grava
+grave
+greba
+Grecia
+greco
+greda
+grege
+grelo
+gremio
+gres
+Grial
+grida
+grido
+griego
+grifo
+grija
+grillo
+grima
+gripal
+gripe
+gris
+grisa
+grito
+gro
+gros
+grosa
+groso
+grosor
+grueso
+grumo
+grupo
+gruta
+GTM
+gua
+guaca
+guaco
+guaje
+guama
+guano
+guante
+guapo
+guara
+guarda
+guaro
+guaso
+guata
+guate
+guau
+guay
+guayo
+gubia
+guerra
+gueto
+guiar
+guido
+guijo
+guiri
+guisa
+guisar
+guiso
+guite
+guito
+gula
+gun
+gurdo
+guro
+gusano
+gustar
+gusto
+Gut
+guzla
+haba
+Habana
+habano
+habar
+haber
+habiz
+habla
+hablar
+haca
+hacer
+hache
+hacho
+hacia
+hadar
+hado
+haedo
+hafiz
+halago
+halar
+halda
+Hall
+halo
+hamaca
+hambre
+hamez
+hamo
+hampa
+hampo
+han
+hansa
+harca
+harem
+harina
+harpa
+harre
+hartar
+harto
+has
+hasta
+hato
+haute
+havar
+havo
+Hawaii
+hay
+haya
+hayal
+hayan
+hayas
+hayo
+haz
+haza
+hebra
+hebreo
+hecto
+heder
+hedo
+hedor
+helar
+helio
+helor
+help
+hembra
+hemos
+henal
+henar
+henil
+heno
+her
+hereje
+heria
+heril
+herir
+herma
+herpe
+Herr
+hervor
+heteo
+hez
+hiato
+hidro
+hiel
+hielo
+hiena
+hiero
+higo
+hila
+hilar
+hilo
+himen
+hinco
+hipar
+hiper
+hipo
+hirco
+hirma
+hisca
+hitar
+hito
+hoce
+hocico
+hogar
+hoja
+hola
+holco
+hombre
+home
+hondo
+hongo
+honor
+honra
+honrar
+Hood
+hopa
+hopeo
+hopo
+hoque
+hora
+horco
+horda
+horma
+horno
+horre
+horror
+hosco
+hospa
+hoste
+hostil
+hotel
+hoto
+hove
+hoy
+hoyo
+hoz
+hozar
+huaco
+hube
+hubo
+hucha
+hucho
+hucia
+hueco
+huego
+Huelva
+huero
+huerto
+hueso
+huevo
+Hugo
+huich
+huido
+huifa
+huir
+hule
+hulla
+hum
+humar
+humil
+humo
+humor
+humus
+huno
+hupe
+hurra
+hurto
+husmo
+huso
+huta
+huy
+iba
+iban
+ibas
+IBEX
+Ibi
+ibis
+Ibiza
+IBM
+icaco
+ICEX
+icho
+icono
+icor
+ida
+ideal
+idear
+ideo
+idioma
+ido
+idos
+idus
+igual
+iguar
+ijar
+IKEA
+ileso
+ilion
+ilota
+iluso
+imada
+impar
+impla
+impune
+inane
+inca
+inda
+India
+indio
+indo
+ingle
+ingre
+inicio
+inocuo
+inri
+INTA
+Intel
+Intro
+ion
+iota
+ira
+irado
+Irak
+irar
+Irene
+iridio
+iris
+Irma
+irme
+irnos
+iros
+irreal
+irse
+irte
+Isaac
+Isabel
+isba
+ISBN
+Isidro
+isla
+islam
+islote
+Ismael
+Israel
+istmo
+ita
+Italia
+Italy
+itrio
+iza
+izar
+izote
+jaba
+Jack
+jaco
+jade
+jadear
+jadeo
+jaiba
+Jaime
+jalar
+jalda
+jalde
+jaldo
+jalea
+jaleo
+jalma
+jamar
+jamba
+jambo
+James
+jaque
+jara
+jarabe
+jaral
+jaro
+jarra
+jarro
+jasa
+jasar
+jaspe
+jata
+jateo
+jatib
+jato
+jau
+jauja
+jaula
+jauto
+javo
+jazz
+jea
+jebe
+jeda
+jedar
+Jeep
+jefa
+jefe
+jeito
+jeja
+jeliz
+jemal
+jeme
+jeque
+jera
+jerbo
+jerez
+jerga
+jerpa
+jersey
+jeta
+jetar
+jeto
+jibia
+jifa
+jifia
+jiga
+jijas
+jijeo
+Jim
+jimio
+jinjo
+jira
+jire
+jisca
+jisma
+jitar
+Job
+jobo
+jofor
+jonio
+jopar
+jopo
+jora
+jorco
+jorfe
+jorge
+Jorge
+jorro
+josa
+Jose
+jota
+jote
+joule
+joven
+jovial
+joya
+joyero
+joyo
+Juan
+Juana
+juba
+jubo
+judas
+Judea
+Judit
+juego
+juera
+jueves
+juez
+jugar
+jugo
+jujeo
+Julia
+Julio
+julio
+julo
+Jumbo
+junco
+jungla
+junio
+juno
+junto
+junza
+jura
+jurar
+jurel
+jurio
+juro
+jusi
+justo
+juta
+juvia
+juzgar
+Kabul
+kan
+kappa
+KGB
+Kiev
+kilo
+Kim
+kiosco
+Kioto
+kirie
+Krupp
+kurdo
+Kurt
+KVA
+labia
+labio
+labor
+labra
+labrar
+labro
+laca
+lacayo
+lacha
+lacio
+lacra
+lacre
+lada
+ladeo
+lado
+ladra
+lagar
+lago
+laguna
+laico
+laido
+Laika
+laja
+Lama
+lama
+lamer
+lampa
+lampo
+lana
+lanar
+lance
+landa
+lande
+langa
+lanudo
+lanza
+lapa
+lapsa
+lapso
+lapsus
+laque
+lar
+lardo
+largo
+Larios
+larra
+Larra
+larva
+lasa
+lasar
+lasca
+laso
+lasto
+lata
+lataz
+latir
+lato
+lauda
+laude
+laudo
+launa
+Laura
+laurel
+lauro
+lava
+lavabo
+lavar
+lave
+laxa
+laxar
+laxo
+laya
+layar
+lazar
+lazo
+leal
+lecha
+leche
+lecho
+lector
+leda
+ledo
+leer
+lega
+legal
+legar
+lego
+legra
+legua
+Leika
+leila
+Leila
+leima
+leja
+lejar
+lejas
+lejos
+lelo
+lema
+lembo
+leme
+lena
+lende
+lene
+lengua
+lenir
+lente
+lento
+Leo
+leo
+lepar
+lepra
+lera
+lerdo
+les
+lesa
+lesna
+leso
+less
+leste
+letal
+leteo
+letor
+letra
+leude
+leudo
+leva
+levar
+leve
+levita
+Lex
+Lexus
+ley
+lezna
+lezne
+liana
+liar
+liara
+liaza
+libar
+Libia
+libio
+Libra
+libra
+librar
+libre
+libro
+liceo
+licio
+licor
+lid
+lidiar
+lidio
+liebre
+liego
+lienzo
+liga
+ligar
+ligio
+ligua
+ligur
+lija
+lijar
+lijo
+lila
+lilac
+lilao
+Lima
+lima
+limar
+limbo
+limen
+limo
+linao
+linar
+lince
+linde
+lindo
+linfa
+linio
+link
+lino
+linte
+lioso
+lipes
+lipis
+lira
+liria
+lirio
+lis
+lisar
+liso
+lisor
+list
+lista
+liste
+listo
+Listz
+lita
+litar
+lite
+litio
+litis
+litre
+litro
+lituo
+liudo
+livor
+liza
+lizar
+lizo
+llaca
+llaga
+llama
+llano
+llanta
+llapa
+llar
+llave
+lleco
+llega
+Lleida
+lleno
+llera
+lleta
+lleva
+llorar
+lloro
+llosa
+lluvia
+loa
+loan
+loar
+lobo
+local
+locha
+loche
+loco
+locro
+locuaz
+lodo
+logar
+logia
+logis
+lograr
+logro
+loica
+loina
+Lola
+Loli
+lolio
+loma
+lomar
+lomba
+lombo
+lomo
+lona
+longo
+lonja
+loor
+Lope
+lora
+lord
+loro
+lorza
+losa
+losar
+loseta
+lota
+lote
+loto
+loza
+Lucas
+lucha
+luche
+lucio
+lucir
+luco
+lucro
+luda
+ludio
+ludir
+luego
+lugar
+Lugo
+lugre
+luir
+Luis
+Luisa
+lujo
+lujoso
+lula
+luma
+lumbo
+lumbre
+lumia
+Luna
+luna
+lunar
+lunes
+lungo
+lupa
+lupia
+lupus
+lurte
+lusa
+lusco
+luso
+luto
+luva
+luvia
+luxar
+luz
+maca
+Macao
+macar
+maceo
+maceta
+mach
+macha
+machi
+macho
+macia
+macizo
+maco
+madre
+Madrid
+maes
+maesa
+maese
+maeso
+mafia
+maga
+magar
+Maggi
+Maggie
+magia
+magma
+magna
+magno
+Magno
+mago
+magro
+mail
+maja
+majal
+majar
+majo
+mal
+malar
+malayo
+maleta
+malla
+mallo
+malo
+Malta
+malta
+malva
+mamey
+mamut
+mana
+manada
+manar
+manaza
+mancha
+manco
+manda
+mando
+manea
+manera
+manes
+Manga
+manga
+mango
+manir
+mano
+manojo
+manso
+manta
+manto
+manual
+Manuel
+mapa
+maque
+maqui
+mar
+maraca
+marca
+marco
+Marcos
+marea
+marear
+mareo
+marga
+maria
+marido
+Mario
+maro
+maroma
+marra
+marro
+marsa
+marso
+marta
+Marta
+Marte
+martes
+Marx
+Mary
+marzo
+mas
+masa
+masaje
+masar
+mascar
+masivo
+maslo
+maste
+masto
+mata
+matar
+match
+mate
+Mateo
+matiz
+mato
+maula
+maura
+maure
+mauro
+Mauro
+maya
+mayal
+mayo
+mayor
+maza
+mazar
+Mazda
+mazo
+meaja
+meato
+Meca
+mecer
+mecha
+meco
+meda
+medio
+medir
+medo
+medra
+medro
+mega
+mego
+meiga
+meigo
+mejor
+mela
+melar
+melaza
+melca
+melga
+melgo
+melis
+mella
+melsa
+melva
+memo
+mena
+menar
+menda
+Mendo
+meneo
+menge
+Menor
+menor
+menos
+menta
+mente
+mentor
+merar
+merca
+merced
+mere
+merey
+mergo
+merla
+merlo
+merma
+mero
+mes
+mesa
+mesar
+mese
+meseta
+mesmo
+Mesta
+mesto
+meta
+metad
+metal
+metano
+meteo
+meter
+metra
+metro
+Mexico
+meyor
+miaja
+Miami
+miau
+mica
+micer
+micho
+mico
+micra
+mida
+miedo
+miel
+miera
+mies
+miga
+migar
+Miguel
+mijo
+mil
+milla
+millar
+millo
+milo
+milord
+milpa
+mimar
+mimo
+mina
+minal
+minar
+minaz
+minero
+mingo
+minio
+mino
+minuta
+mioma
+miope
+Mir
+mira
+mirado
+mirar
+miria
+mirla
+mirlo
+mirra
+mirto
+mirza
+mis
+misa
+misal
+misar
+misil
+misio
+mismo
+mista
+misto
+MIT
+mita
+mitad
+mitin
+mito
+mitra
+mixto
+miza
+mizca
+mizo
+moble
+mocar
+moche
+mocho
+mocil
+moda
+modal
+modelo
+modio
+modo
+moer
+mofa
+mofar
+mogo
+mogol
+moho
+mojar
+moje
+moji
+mojo
+mola
+molar
+molde
+mole
+moler
+molino
+molla
+molle
+molo
+molsa
+molso
+moma
+momio
+mona
+monada
+mondo
+mongo
+mongol
+monja
+monje
+mono
+monta
+montar
+monte
+monto
+Moon
+mor
+mora
+moral
+morar
+morbo
+morca
+mordaz
+morfa
+Morfeo
+morga
+morir
+moro
+moroso
+morra
+morro
+morsa
+mortal
+mosca
+mosco
+moste
+mosto
+mota
+motar
+mote
+motel
+moto
+motor
+motriz
+mouse
+mover
+moxa
+moxte
+moya
+moyo
+Mozart
+mozo
+mucho
+mudar
+mudez
+mudo
+mueble
+mueca
+muela
+muelle
+muelo
+muer
+muera
+muerte
+Muerto
+muesa
+mueso
+mufla
+muga
+mugar
+mugir
+mugre
+muir
+muito
+mujer
+mular
+mulato
+mulla
+mullo
+mulo
+mulsa
+mulso
+multa
+mundo
+mur
+mura
+mural
+murar
+Murcia
+murga
+muria
+muro
+murta
+mus
+musa
+musar
+musca
+musco
+museo
+musgo
+musir
+muslo
+muste
+mustio
+muta
+mutar
+mutis
+mutuo
+muy
+muza
+muzo
+naba
+nabal
+nabar
+nabla
+nacer
+nacho
+naco
+nacre
+nada
+nadal
+nadar
+nadga
+nadi
+nadie
+nadir
+nado
+nafa
+nafta
+nagua
+naife
+naipe
+naire
+naja
+nalca
+nalga
+nance
+nano
+nansa
+nao
+napa
+napeo
+naque
+nardo
+nares
+nariz
+narra
+narrar
+nasa
+nasal
+naso
+nata
+natal
+nativo
+nato
+nauta
+nava
+naval
+nave
+NCR
+necio
+negar
+Negro
+negro
+negus
+neis
+neja
+neldo
+nema
+neme
+nemeo
+Nemo
+nemon
+nen
+Nena
+nena
+neo
+Nepal
+nesga
+neto
+neuma
+nevar
+nevera
+nexo
+niara
+niazo
+nicho
+nicle
+nidal
+nidio
+nido
+niebla
+niego
+nieto
+nieve
+Nikon
+Nilo
+nimbo
+nimio
+nin
+ninfa
+ninfo
+Nino
+nioto
+nipa
+nito
+nitro
+nivel
+Nobel
+noble
+noca
+noche
+nocivo
+nocla
+nodo
+NODO
+Noel
+nogal
+nolit
+noma
+nome
+nomo
+nomon
+non
+nona
+nonio
+noria
+norma
+norte
+nos
+nota
+notar
+noto
+notro
+nova
+noval
+novar
+novel
+novela
+novio
+noxa
+nube
+nubla
+nublar
+nuca
+nucir
+nuco
+nudo
+nuera
+nueso
+nueve
+nuevo
+nuez
+nulo
+numen
+numo
+nunca
+Nuria
+nutria
+oasis
+obelo
+obeso
+obispo
+objeto
+oblea
+oboe
+obra
+obrar
+obrero
+obuses
+obvio
+oca
+ocaso
+ocelo
+ocena
+ocho
+ociar
+ocio
+ocioso
+ocle
+ocre
+octavo
+ocupar
+oda
+odiar
+odio
+odioso
+odisea
+odre
+oeste
+off
+ofidio
+ofita
+ogro
+Ohm
+ohmio
+oidor
+OIT
+ojal
+ojar
+ojear
+ojeo
+ojera
+ojete
+ojiva
+ojo
+ojoso
+ojota
+ola
+olaje
+oleaje
+olear
+oler
+olfato
+oliva
+olivo
+olla
+ollar
+olmo
+olor
+olura
+olvido
+omega
+omisa
+omiso
+omitir
+omni
+once
+onda
+onde
+ondeo
+ondra
+ONG
+ONU
+onza
+opa
+OPA
+opaco
+Opel
+operar
+opinar
+opio
+Oporto
+optar
+ora
+oral
+orar
+orate
+orbe
+orca
+orco
+orden
+orear
+oreja
+orfo
+orfre
+oribe
+orilla
+orive
+orla
+orlar
+orlo
+ornar
+oro
+oropel
+oroya
+orto
+oruga
+orujo
+orza
+orzar
+osar
+osear
+osero
+Oslo
+osmio
+oso
+ostia
+ostra
+ostro
+osudo
+osuno
+OTAN
+otear
+otero
+otoba
+otre
+otri
+otro
+otubre
+out
+oval
+ovar
+oveja
+ovino
+ovio
+OVNI
+ovni
+ovo
+ovoide
+Oxford
+oxte
+ozono
+Pablo
+PAC
+Paca
+pacer
+Paco
+pactar
+pacto
+padir
+padre
+paella
+pafio
+paga
+pagar
+pago
+paico
+pairo
+paja
+pajar
+paje
+pajea
+paji
+pajo
+pala
+palco
+palio
+paliza
+Palma
+palma
+palmo
+palo
+palomo
+palpo
+pamela
+pampa
+pan
+pana
+panal
+Pancho
+panco
+panda
+panel
+pano
+pansa
+Panza
+panza
+papel
+par
+para
+parco
+pardo
+pared
+parejo
+pareo
+pargo
+paria
+parir
+paro
+parque
+parra
+parta
+parte
+partir
+parto
+parva
+parvo
+pasaje
+pasar
+pasco
+pase
+paseo
+pasmo
+paso
+pasta
+pasto
+pastor
+patao
+patax
+pateo
+pater
+patio
+pato
+pausa
+pauta
+pavo
+pavor
+pax
+payaso
+payo
+paz
+pazo
+peaje
+peal
+peana
+peca
+pecar
+pecha
+pecho
+pecio
+pedal
+pedir
+Pedro
+pega
+pegado
+pegar
+peina
+peinar
+peine
+peje
+pela
+pelar
+pelea
+pella
+pello
+pelma
+pelo
+pelota
+pelta
+pena
+penal
+penar
+penca
+penco
+peno
+pensar
+peor
+Pepa
+Pepe
+pepino
+pera
+peral
+perca
+perder
+pereza
+perfil
+perla
+perno
+pero
+perol
+perro
+persa
+perta
+pesar
+pesca
+pescar
+peso
+peste
+petar
+peto
+petra
+Petra
+pez
+phi
+piada
+pian
+piano
+piar
+piara
+pica
+picar
+picea
+pichi
+picio
+pico
+picor
+picudo
+pie
+piedad
+piejo
+piel
+pienso
+pieza
+pifia
+pifo
+pigro
+pila
+Pilar
+pilar
+Pili
+pilla
+pillo
+pilo
+piloto
+pinar
+pingo
+pino
+pinta
+Pinta
+pinto
+pinza
+piojo
+piola
+pipa
+pipar
+pipo
+pique
+pira
+pirar
+pirca
+pirco
+piropo
+pisa
+pisar
+Piscis
+pisco
+piso
+pispa
+pista
+pisto
+pita
+pitao
+pitar
+pito
+pivote
+pizca
+pizco
+placa
+placer
+plaga
+plagio
+plan
+planes
+plano
+planta
+plasma
+plata
+plato
+playa
+plaza
+plazo
+plebe
+pleca
+pleito
+pleno
+plexo
+plica
+plomo
+plug
+pluma
+plural
+plus
+Pluto
+PNV
+pobo
+pobra
+pobre
+pocho
+poco
+poda
+podar
+poder
+podio
+podo
+podre
+poema
+poeta
+pola
+polar
+polca
+polea
+polen
+poleo
+polio
+polir
+pollo
+polo
+polvo
+poma
+pomar
+pomo
+pompo
+pon
+poncho
+pondo
+Ponds
+poner
+ponto
+popar
+por
+pora
+porco
+poro
+porra
+porro
+porta
+portal
+porte
+pos
+posar
+posca
+poseer
+posma
+poso
+post
+posta
+poste
+potar
+potasa
+pote
+potro
+poyo
+poza
+pozo
+prado
+Prado
+prava
+pravo
+praza
+prea
+prear
+precio
+precoz
+premio
+prenda
+presa
+preso
+prever
+previo
+prieto
+primo
+print
+prior
+priori
+prisa
+priso
+pro
+proa
+proba
+probo
+proeza
+prole
+prono
+pronto
+prora
+prosa
+pruno
+Prusia
+pseudo
+psi
+PSOE
+PSUC
+puar
+pub
+pubes
+pubis
+pucho
+pucia
+pudio
+pudir
+pudor
+puente
+pueril
+puerto
+pues
+puf
+pufo
+puga
+pugna
+puja
+pujar
+pujo
+pulcro
+pulga
+pulir
+pull
+pulla
+pulpa
+pulpo
+pulsar
+pulso
+pum
+puma
+puna
+punir
+punta
+puntal
+punto
+pupa
+pupila
+pureza
+purga
+puro
+pus
+push
+puya
+puyar
+puyo
+que
+quedo
+queja
+quejo
+quema
+quemar
+quena
+quepa
+quepo
+quera
+queso
+qui
+quid
+quien
+quier
+quieto
+quijo
+quila
+quilla
+quima
+quimo
+quina
+quino
+quinto
+quipo
+quiste
+quito
+raba
+Rabat
+rabeo
+rabi
+rabia
+rabino
+rabo
+racha
+racimo
+rada
+radar
+raer
+Rafa
+Rafael
+rafe
+rafez
+rafia
+ragua
+rahez
+raijo
+rain
+raja
+rajar
+ralea
+rallar
+ralo
+rama
+ramal
+Rambo
+ramio
+Ramiro
+ramo
+ramoso
+rampa
+rango
+rano
+ranura
+rapa
+rapar
+rapaz
+rape
+rapo
+rapta
+raptar
+rapto
+Raquel
+raro
+ras
+rasar
+rasco
+rasero
+rasgo
+raso
+raspa
+rastro
+rata
+rateo
+ratero
+ratito
+rato
+raudo
+rauta
+raya
+rayar
+rayo
+raza
+reacio
+real
+reame
+reata
+reato
+reble
+recelo
+receta
+recibo
+recio
+recodo
+recre
+recreo
+recto
+rector
+recua
+red
+redil
+redro
+refez
+regalo
+regar
+regazo
+regio
+regir
+regla
+reina
+reinar
+reino
+reja
+rejo
+relato
+relevo
+reloj
+relso
+remar
+remesa
+remo
+renal
+rencor
+renda
+rene
+renga
+reno
+renta
+rento
+reo
+reojo
+repisa
+reptil
+res
+resta
+resto
+retal
+retar
+retina
+retir
+reto
+retor
+retro
+reunir
+Reus
+rey
+reyes
+rezar
+rezno
+rezo
+riada
+ribera
+ricio
+rico
+riego
+riel
+rieto
+rifa
+rifar
+rifle
+rigor
+rija
+rijo
+rilar
+rima
+rimar
+rimo
+Rin
+ring
+ripia
+ripio
+risa
+risco
+riso
+rispa
+rispo
+riste
+Rita
+ritmo
+rito
+ritual
+rival
+riza
+rizar
+rizo
+roa
+roano
+robado
+robar
+Robin
+robla
+roble
+robo
+robot
+robots
+robra
+robre
+roca
+roce
+rock
+roda
+rodado
+rodal
+rodar
+rodas
+rodear
+rodeo
+roe
+roedor
+roela
+roer
+roete
+rogar
+roge
+rojal
+rojez
+rojo
+rol
+rolar
+rolde
+roleo
+Rolex
+rolla
+rollo
+Roma
+romano
+rombo
+romeo
+romo
+ron
+ronca
+roncar
+ronce
+ronco
+ronda
+ronde
+ronza
+ropa
+ropero
+roque
+Roque
+rorro
+ros
+Rosa
+rosa
+rosado
+rosal
+rosar
+rosca
+rosco
+rosita
+rosjo
+roso
+rotal
+rotar
+roten
+roto
+rotor
+ROVER
+roya
+royal
+royo
+roza
+rozar
+rozno
+rozo
+ruano
+ruar
+rubio
+rublo
+rubo
+rubor
+rubra
+rubro
+ruca
+rucar
+ruche
+rucho
+rucio
+ruco
+rudez
+rudo
+rueca
+rueda
+ruedo
+ruego
+rufa
+rufo
+ruga
+rugar
+rugir
+ruido
+ruin
+ruina
+rula
+rular
+rulo
+ruma
+rumba
+rumbo
+rumia
+rumiar
+rumo
+rumor
+runa
+rungo
+runo
+rupia
+rural
+rusco
+Rusia
+ruso
+ruta
+rutar
+rutel
+Saab
+sabeo
+saber
+sabino
+sabio
+sable
+sabor
+sabre
+saca
+sacar
+sacho
+sacio
+saco
+sacre
+sacro
+saeta
+safio
+safir
+saga
+sagaz
+sage
+sago
+saja
+sajar
+sal
+sala
+salado
+salar
+salaz
+salce
+saldo
+salea
+salep
+salga
+salido
+salio
+salir
+salma
+salmo
+salol
+salpa
+salsa
+salso
+salto
+salud
+saludo
+salva
+salve
+Sam
+sama
+samio
+sampa
+san
+sanar
+Sancho
+sanco
+sanear
+sanes
+sango
+sanie
+sano
+sansa
+sanso
+santo
+sapo
+saque
+saqueo
+Sara
+sarao
+sarco
+sarda
+sarde
+sardo
+sarga
+sargo
+sarna
+sarro
+sarta
+sarza
+sarzo
+SAS
+sastre
+satis
+sato
+sauce
+saurio
+sauz
+savia
+saya
+sayal
+sayo
+saz
+Scott
+sea
+sean
+seas
+Seat
+sebe
+sebo
+secar
+sece
+seco
+secor
+secta
+secua
+sed
+seda
+sedal
+sedar
+sede
+sedoso
+seer
+sega
+segar
+segur
+seico
+Seiko
+seis
+sello
+seltz
+selva
+semi
+semis
+sen
+sena
+senda
+sene
+senil
+senior
+seno
+sentir
+seo
+sepia
+ser
+sera
+Sergio
+serie
+serio
+serna
+serpa
+serta
+servil
+ses
+sesga
+sesgo
+sesma
+sesmo
+seso
+sesudo
+seta
+seto
+seudo
+severo
+sexma
+sexo
+sexto
+sian
+sibil
+sido
+sidra
+siega
+sien
+siena
+siesta
+siete
+sigla
+siglo
+sigma
+signo
+Sil
+silba
+silbo
+silfo
+silla
+silo
+silva
+Silvia
+sima
+simbo
+simio
+simple
+sin
+sino
+sira
+sirga
+sirgo
+sirio
+sirle
+Siro
+siro
+sirte
+sisa
+sisar
+siseo
+sismo
+sitio
+sito
+soba
+sobar
+sobeo
+sobo
+sobra
+sobre
+sobrio
+soca
+socaz
+social
+socio
+soda
+sodio
+soez
+soeza
+soga
+sois
+soja
+Sol
+sol
+solar
+solaz
+soleo
+soler
+solfa
+solfeo
+solio
+solla
+solo
+soma
+sombra
+somo
+somos
+son
+sonado
+sonar
+sonda
+sondeo
+soneto
+Sonia
+sonido
+sonoro
+sopa
+sopar
+soplo
+sopor
+sor
+sora
+sorba
+sorbo
+sorce
+sordez
+sordo
+sorgo
+sorna
+soro
+sorra
+sorteo
+SOS
+sos
+sosa
+sosar
+sosia
+sota
+sotar
+sote
+sotil
+soto
+sotol
+sovoz
+soy
+Spain
+stop
+suave
+subir
+sucio
+sudar
+sudor
+sueco
+suela
+sueldo
+suelo
+sueno
+suero
+sufra
+sufrir
+suizo
+sula
+suma
+sumar
+sumir
+sumiso
+sumo
+supino
+supra
+sur
+surco
+surto
+suso
+susto
+sutil
+sutura
+suyo
+taba
+tabaco
+tabla
+taca
+tacar
+tacha
+tacho
+taco
+tacto
+tafia
+tafo
+tafur
+tagua
+taha
+taifa
+taiga
+taima
+taina
+taja
+tajar
+tajea
+Tajo
+tajo
+tal
+tala
+talar
+talco
+talego
+talio
+talla
+talle
+taller
+tallo
+talma
+talo
+talpa
+talud
+tamal
+tamba
+tambo
+tamiz
+tamo
+tan
+tanda
+tanga
+tango
+tanque
+tanto
+tao
+tapa
+tapar
+tapia
+tapiar
+tapir
+tapiz
+taque
+tara
+tarado
+taray
+tarco
+tarda
+tarde
+tardo
+tarea
+tarifa
+tarja
+tarro
+tarso
+tarta
+tasa
+tasar
+tasca
+tasco
+tasio
+tasto
+tate
+tato
+tatuar
+Tauro
+tauro
+taxi
+taza
+tazar
+tea
+teatro
+tebeo
+teca
+techo
+tecla
+tecleo
+teda
+tedio
+tegua
+Teide
+teja
+tejado
+tejar
+tejer
+tejo
+tela
+telar
+tema
+temer
+temor
+temple
+ten
+tena
+tenaz
+tenaza
+tener
+tenia
+tenis
+tenor
+tenso
+tensor
+tenue
+tenuo
+teoso
+terco
+Teresa
+termal
+termas
+termo
+terna
+terne
+terno
+tero
+Terra
+terror
+terso
+Teruel
+tesa
+tesar
+tesina
+tesis
+teso
+testa
+teste
+tetar
+tetra
+tetro
+Texas
+textil
+texto
+teyo
+tez
+tiaca
+tiara
+tibe
+Tibet
+tibio
+tic
+tiempo
+tienta
+tiento
+Tierra
+tieso
+tifo
+tifus
+tigra
+tigre
+tija
+tijera
+tila
+tilde
+tilia
+tilla
+tillo
+tilma
+tilo
+timar
+timba
+timbal
+timo
+timol
+Timor
+timpa
+tina
+tinaja
+tinca
+tinge
+tino
+tinta
+tinte
+tinto
+tipa
+tipo
+tique
+tira
+tirar
+tirio
+tiro
+tirso
+tirte
+tiste
+titar
+Tito
+tito
+Tito
+tiza
+tizna
+tizne
+tizo
+toalla
+toar
+toba
+tobar
+toca
+tocar
+toche
+tocho
+tocino
+toco
+todo
+toesa
+tofo
+toga
+togado
+tojal
+tojo
+Tokio
+tola
+tolda
+toldo
+tole
+Toledo
+tolla
+tolmo
+tolo
+tolva
+toma
+tomate
+tomo
+ton
+tona
+tonal
+tonar
+tonca
+tondo
+tonel
+tonga
+tongo
+tono
+tonto
+top
+topa
+topar
+tope
+topo
+toque
+tora
+toral
+torca
+torco
+torda
+tordo
+torear
+toreo
+torga
+torgo
+toril
+torio
+tormo
+torna
+tornar
+torno
+toro
+torpe
+torre
+torso
+torta
+torva
+torvo
+tos
+tosa
+tosco
+tose
+toser
+total
+tova
+toza
+tozo
+tozudo
+traba
+trabe
+traca
+trace
+traer
+trago
+traje
+trama
+tramo
+trampa
+trapa
+trape
+trapo
+tras
+traste
+trata
+trato
+trauma
+traza
+trazo
+trece
+tregua
+treja
+tren
+trena
+treno
+trenza
+treo
+trepe
+tres
+treta
+tri
+triar
+tribu
+triga
+trigo
+trile
+trino
+tripa
+tripe
+triple
+tris
+trisa
+triste
+triza
+trofeo
+troja
+troje
+trola
+trole
+trompa
+trona
+tronco
+trono
+tropa
+tropo
+trotar
+trote
+trova
+Troya
+troza
+trozo
+trucha
+truco
+trueno
+trufa
+truja
+tuba
+tubo
+tuco
+tuda
+tueco
+tuera
+tuerca
+tufo
+tulipa
+tumba
+tumbo
+tumo
+tumor
+tuna
+tunar
+tunda
+tuno
+tupa
+tupir
+tupla
+tura
+turar
+turba
+turco
+turma
+turnar
+turno
+turra
+tusa
+tusar
+tute
+tutear
+tuteo
+tutor
+tuyo
+ubio
+ubre
+ucase
+uced
+ufanar
+ufano
+ufo
+UFO
+ugre
+UGT
+ujier
+ulema
+ultra
+umbral
+uncir
+ungir
+unidad
+unir
+uno
+untar
+unto
+Ural
+uranio
+Urano
+urbe
+urdir
+urea
+Urgel
+urgir
+URL
+urna
+uro
+ursa
+URSS
+USA
+usaje
+usar
+uso
+usted
+usual
+usura
+Utrera
+uva
+uvada
+uvero
+uzo
+vaca
+vacar
+vaco
+vacuno
+vacuo
+vade
+vado
+vafo
+vagar
+vago
+vaho
+vaina
+vais
+val
+valar
+vale
+valer
+valija
+valla
+valle
+valor
+vals
+valva
+vamos
+van
+vano
+vapor
+vara
+varea
+vareo
+varga
+vario
+variz
+vas
+vasar
+vasco
+vaso
+vasto
+vate
+vatio
+vaya
+vayan
+vayas
+vea
+vean
+veas
+vecino
+ved
+veda
+vedar
+veer
+vega
+veinte
+veis
+vejar
+vejez
+vela
+velar
+vello
+veloz
+vemos
+ven
+vena
+venado
+venal
+vencer
+vender
+vendo
+venia
+venir
+venta
+Venus
+veo
+ver
+vera
+verano
+veras
+veraz
+verbo
+verdad
+verde
+verja
+vermut
+vero
+verso
+ves
+vesta
+veste
+veta
+vetar
+veto
+vez
+veza
+vezar
+vezo
+viajar
+viaje
+vial
+vice
+vicia
+vicio
+victo
+vid
+vida
+vidal
+vidrio
+vidro
+viejo
+Viena
+viento
+viera
+viere
+viese
+viga
+Vigo
+vigor
+vil
+villa
+vilo
+vimos
+vino
+vio
+viola
+VIP
+viral
+virar
+Virgo
+virgo
+viril
+virtud
+virus
+viruta
+vis
+visa
+visar
+visco
+visera
+visir
+viso
+visor
+vista
+viste
+visto
+visual
+vital
+vito
+viudo
+vivac
+Vivar
+vivaz
+vivez
+viveza
+vivo
+vocal
+vodka
+volar
+volea
+voleo
+Volga
+voltio
+Volvo
+voraz
+vos
+voso
+votar
+voto
+voy
+voz
+vuelo
+vuelta
+vueso
+vulgar
+vulgo
+Wagner
+Wells
+Xerox
+yaba
+yac
+yacija
+yacio
+yaga
+yagan
+Yago
+yak
+yana
+Yankee
+yanta
+yarda
+yayo
+yazga
+yazgo
+yebo
+yedra
+yegua
+yelmo
+yema
+yen
+yendo
+yerba
+yermo
+yerno
+yero
+yerro
+yerto
+yesar
+yesca
+yeso
+yeti
+yodo
+yoduro
+yogur
+yubo
+yugo
+yunque
+yunta
+yunto
+yuso
+yute
+zafar
+zafio
+zafir
+zafiro
+zafo
+Zafra
+zaga
+zagal
+zaino
+zambo
+Zamora
+zampa
+zampar
+zanca
+zanco
+zanga
+zanja
+zapa
+zapar
+zapato
+zapo
+zaque
+zar
+zara
+zarbo
+zarca
+zarco
+zarja
+zarpa
+zarpar
+zarza
+zarzo
+zas
+zata
+zato
+zaya
+zeda
+Zeiss
+zenda
+zendo
+zenit
+zeta
+zigzag
+zinc
+zoca
+zoco
+zofra
+zoizo
+zoma
+zona
+zonal
+zopo
+Zorro
+zorro
+zote
+zuavo
+zubia
+zuda
+zueco
+zuela
+zulo
+zumba
+zumo
+zurcir
+zurdo
+zureo
+Zurich
+zuro
+zurra
+zurrar
+zuzar

@@ -1,6694 +1,6694 @@
-11111	aachen
-11112	aal
-11113	aao
-11114	aas
-11115	aasig
-11116	abart
-11121	abb
-11122	abbau
-11123	abbe
-11124	abbild
-11125	abdomen
-11126	abend
-11131	aber
-11132	abf
-11133	abfall
-11134	abflug
-11135	abfuhr
-11136	abgabe
-11141	abgang
-11142	abgas
-11143	abgott
-11144	abguss
-11145	abhang
-11146	abitur
-11151	abk
-11152	abkehr
-11153	abladen
-11154	ablage
-11155	ablass
-11156	ablauf
-11161	ablaut
-11162	abluft
-11163	abnorm
-11164	abo
-11165	abraum
-11166	abrede
-11211	abrieb
-11212	abriss
-11213	abruf
-11214	abrupt
-11215	abs
-11216	absage
-11221	absatz
-11222	abschn
-11223	absenz
-11224	absurd
-11225	abt
-11226	abtei
-11231	abteil
-11232	abtun
-11233	abu
-11234	abuja
-11235	abweg
-11236	abwehr
-11241	abwurf
-11242	abzgl
-11243	abzug
-11244	accra
-11245	aceton
-11246	ach
-11251	achat
-11252	achse
-11253	achsel
-11254	acht
-11255	achte
-11256	achten
-11261	achtet
-11262	acker
-11263	acryl
-11264	adac
-11265	adagio
-11266	adana
-11311	addier
-11312	ade
-11313	adel
-11314	adeln
-11315	adelnd
-11316	adelt
-11321	adelte
-11322	adenom
-11323	ader
-11324	adis
-11325	adisch
-11326	adj
-11331	adler
-11332	adlig
-11333	adlige
-11334	adm
-11335	adn
-11336	adr
-11341	adrett
-11342	adria
-11343	adv
-11344	advent
-11345	adverb
-11346	aegide
-11351	aehre
-11352	aelter
-11353	aeon
-11354	aerger
-11355	aermel
-11356	aerob
-11361	aesche
-11362	aether
-11363	aethyl
-11364	aetna
-11365	aetzen
-11366	affe
-11411	affig
-11412	affin
-11413	afrika
-11414	after
-11415	agar
-11416	agent
-11421	agiert
-11422	agio
-11423	agonie
-11424	agra
-11425	agrar
-11426	aha
-11431	ahle
-11432	ahmt
-11433	ahmte
-11434	ahn
-11435	ahndet
-11436	ahndete
-11441	ahnen
-11442	ahnend
-11443	ahnt
-11444	ahnte
-11445	ahnung
-11446	ahorn
-11451	aids
-11452	airbus
-11453	aka
-11454	akazie
-11455	akelei
-11456	akkord
-11461	akne
-11462	akt
-11463	akte
-11464	akten
-11465	akteur
-11466	aktie
-11511	aktien
-11512	aktion
-11513	aktiv
-11514	aktiva
-11515	aktive
-11516	aktor
-11521	akut
-11522	akutes
-11523	akzent
-11524	akzept
-11525	alanin
-11526	alarm
-11531	alaska
-11532	alaun
-11533	albern
-11534	albert
-11535	albino
-11536	album
-11541	alge
-11542	alias
-11543	alibi
-11544	alkali
-11545	all
-11546	alle
-11551	allee
-11552	allein
-11553	allel
-11554	allem
-11555	allen
-11556	alles
-11561	allg
-11562	alltag
-11563	allzu
-11564	alm
-11565	alma
-11566	aloe
-11611	alofi
-11612	alp
-11613	alpen
-11614	alpin
-11615	alraun
-11616	als
-11621	alse
-11622	also
-11623	alt
-11624	altai
-11625	altar
-11626	altbau
-11631	alte
-11632	alter
-11633	altern
-11634	altert
-11635	altes
-11636	altoel
-11641	ama
-11642	amateur
-11643	amber
-11644	amboss
-11645	ambra
-11646	ameise
-11651	ami
-11652	amman
-11653	amme
-11654	amnion
-11655	amoebe
-11656	amok
-11661	amoll
-11662	amor
-11663	amorph
-11664	ampel
-11665	amsel
-11666	amt
-12111	amtl
-12112	amur
-12113	anabol
-12114	anal
-12115	analog
-12116	anatom
-12121	anbau
-12122	anbei
-12123	andere
-12124	anders
-12125	andora
-12126	anemone
-12131	anfall
-12132	anfang
-12133	anflug
-12134	anfuhr
-12135	angabe
-12136	angara
-12141	angel
-12142	angeln
-12143	anger
-12144	angina
-12145	angler
-12146	angola
-12151	angst
-12152	anguss
-12153	anh
-12154	anhand
-12155	anhang
-12156	anis
-12161	ank
-12162	ankara
-12163	ankauf
-12164	anker
-12165	ankert
-12166	ankunft
-12211	anl
-12212	anlage
-12213	anlass
-12214	anlauf
-12215	anlaut
-12216	anm
-12221	anmut
-12222	annona
-12223	anode
-12224	anomal
-12225	anomie
-12226	anonym
-12231	anorak
-12232	anrede
-12233	anreiz
-12234	anruf
-12235	ans
-12236	ansage
-12241	ansatz
-12242	ansaug
-12243	anschl
-12244	anshan
-12245	anteil
-12246	anti
-12251	antik
-12252	antrag
-12253	antw
-12254	anurie
-12255	anwalt
-12256	anzahl
-12261	anzug
-12262	aorta
-12263	apart
-12264	apfel
-12265	aphel
-12266	apia
-12311	apnoe
-12312	apo
-12313	app
-12314	appell
-12315	april
-12316	aquana
-12321	araber
-12322	arbeit
-12323	arbok
-12324	archiv
-12325	ard
-12326	arena
-12331	arglos
-12332	argon
-12333	arh
-12334	arie
-12335	arier
-12336	arkade
-12341	arktis
-12342	arm
-12343	armada
-12344	arme
-12345	armee
-12346	armer
-12351	armut
-12352	aroma
-12353	arrest
-12354	arsch
-12355	arsen
-12356	art
-12361	artig
-12362	artist
-12363	aruba
-12364	arznei
-12365	arzt
-12366	asbest
-12411	asche
-12412	aschig
-12413	asiat
-12414	asien
-12415	askese
-12416	asket
-12421	asmara
-12422	aspekt
-12423	aspik
-12424	ass
-12425	ast
-12426	astana
-12431	astat
-12432	aster
-12433	asthma
-12434	astral
-12435	asyl
-12436	ataxie
-12441	atem
-12442	athlet
-12443	atlas
-12444	atm
-12445	atmen
-12446	atmend
-12451	atmet
-12452	atmete
-12453	atmung
-12454	atoll
-12455	atom
-12456	atomar
-12461	atonie
-12462	atopie
-12463	atrial
-12464	atrium
-12465	attest
-12466	auch
-12511	aue
-12512	auf
-12513	aufbau
-12514	aufl
-12515	aufruf
-12516	aufs
-12521	aufzug
-12522	auge
-12523	augen
-12524	august
-12525	aula
-12526	aura
-12531	aural
-12532	aus
-12533	ausbau
-12534	aushub
-12535	ausruf
-12536	aussen
-12541	ausser
-12542	auster
-12543	austin
-12544	ausweg
-12545	auszug
-12546	autark
-12551	auto
-12552	autogen
-12553	autor
-12554	autsch
-12555	avarua
-12556	avis
-12561	axial
-12562	axiom
-12563	axt
-12564	azalee
-12565	azetat
-12566	azeton
-12611	azimut
-12612	azoren
-12613	azteke
-12614	baby
-12615	bach
-12616	back
-12621	backe
-12622	backen
-12623	bad
-12624	baden
-12625	badet
-12626	badete
-12631	baehen
-12632	baeht
-12633	baehte
-12634	baer
-12635	baerin
-12636	baff
-12641	bafoeg
-12642	bagel
-12643	bagger
-12644	bahn
-12645	bahre
-12646	baku
-12651	bald
-12652	baldig
-12653	balg
-12654	balkan
-12655	balken
-12656	balkon
-12661	ball
-12662	ballade
-12663	ballen
-12664	ballig
-12665	ballon
-12666	ballt
-13111	balsa
-13112	balsam
-13113	bamako
-13114	bambus
-13115	banal
-13116	band
-13121	bandar
-13122	bande
-13123	bandit
-13124	bange
-13125	bangen
-13126	bangt
-13131	bangte
-13132	bangui
-13133	banjo
-13134	banjul
-13135	bank
-13136	banner
-13141	baotou
-13142	bar
-13143	barbar
-13144	barde
-13145	barium
-13146	bark
-13151	barock
-13152	baron
-13153	barren
-13154	barsch
-13155	bart
-13156	baryon
-13161	basal
-13162	basalt
-13163	basar
-13164	basic
-13165	basis
-13166	baske
-13211	bass
-13212	bast
-13213	bastei
-13214	bat
-13215	baten
-13216	batik
-13221	batist
-13222	bau
-13223	bauamt
-13224	bauart
-13225	bauch
-13226	baud
-13231	baude
-13232	bauen
-13233	bauend
-13234	bauer
-13235	baum
-13236	bausch
-13241	baut
-13242	baute
-13243	bauxit
-13244	bauzaun
-13245	bayer
-13246	bayern
-13251	bayrut
-13252	bde
-13253	beamte
-13254	bebaut
-13255	bebt
-13256	bebte
-13261	becher
-13262	becken
-13263	bedarf
-13264	bedenk
-13265	beehrt
-13266	beeil
-13311	beeilt
-13312	beere
-13313	beet
-13314	befahl
-13315	befehl
-13316	befiel
-13321	befugt
-13322	befuhr
-13323	befund
-13324	begab
-13325	begabt
-13326	begann
-13331	begebe
-13332	begeht
-13333	begibt
-13334	beging
-13335	beginn
-13336	begoss
-13341	begrub
-13342	beguss
-13343	behalt
-13344	behaut
-13345	behebt
-13346	behext
-13351	bei
-13352	beide
-13353	beige
-13354	beil
-13355	beim
-13356	bein
-13361	beinah
-13362	beinig
-13363	beirat
-13364	beirrt
-13365	beirut
-13366	beisst
-13411	beiwort
-13412	bejaht
-13413	bekam
-13414	belag
-13415	belaubt
-13416	belebt
-13421	beleg
-13422	belegt
-13423	belem
-13424	belieh
-13425	belize
-13426	bellen
-13431	beller
-13432	bellt
-13433	bellte
-13434	belo
-13435	belud
-13436	bemass
-13441	benahm
-13442	bengel
-13443	benin
-13444	benzin
-13445	benzol
-13446	bequem
-13451	beraet
-13452	bereit
-13453	berg
-13454	bergab
-13455	bergan
-13456	bergen
-13461	berief
-13462	berlin
-13463	berme
-13464	bern
-13465	beruf
-13466	beruft
-13511	beruht
-13512	beryll
-13513	bes
-13514	besagt
-13515	besann
-13516	besass
-13521	besatz
-13522	besen
-13523	besitz
-13524	besser
-13525	beste
-13526	bester
-13531	bestnr
-13532	besuch
-13533	beten
-13534	betend
-13535	beton
-13536	betont
-13541	betr
-13542	betraf
-13543	betrag
-13544	betrat
-13545	betrog
-13546	betrug
-13551	bett
-13552	betten
-13553	bettet
-13554	beugen
-13555	beugt
-13556	beugte
-13561	beule
-13562	beulen
-13563	beute
-13564	beutel
-13565	beutet
-13566	bev
-13611	bevor
-13612	bewarb
-13613	bewegt
-13614	beweis
-13615	bez
-13616	bezirk
-13621	bezog
-13622	bezug
-13623	bgb
-13624	bgh
-13625	bhf
-13626	bhopal
-13631	bhutan
-13632	bias
-13633	bibel
-13634	biber
-13635	bibor
-13636	bieder
-13641	biegen
-13642	biegt
-13643	biene
-13644	bier
-13645	biest
-13646	bieten
-13651	bieter
-13652	bigott
-13653	bikini
-13654	bilanz
-13655	bilbao
-13656	bild
-13661	bilden
-13662	bilder
-13663	bildet
-13664	billig
-13665	bimsen
-13666	bin
-14111	binaer
-14112	binde
-14113	binden
-14114	binder
-14115	bindet
-14116	bingo
-14121	binom
-14122	binse
-14123	biogas
-14124	bionik
-14125	biopsie
-14126	bios
-14131	bip
-14132	birgt
-14133	birke
-14134	birne
-14135	bis
-14136	bisam
-14141	bisher
-14142	bismut
-14143	biss
-14144	bissau
-14145	bissen
-14146	bissig
-14151	bit
-14152	bitmap
-14153	bitte
-14154	bitten
-14155	bitter
-14156	bittet
-14161	biwak
-14162	bizarr
-14163	bizeps
-14164	blaeht
-14165	blaest
-14166	blaeue
-14211	blank
-14212	blase
-14213	blasen
-14214	blasig
-14215	blass
-14216	blatt
-14221	blau
-14222	blauer
-14223	blaues
-14224	blazer
-14225	blech
-14226	blei
-14231	bleibt
-14232	bleich
-14233	blende
-14234	blick
-14235	blind
-14236	blinde
-14241	blitz
-14242	blitza
-14243	block
-14244	bloed
-14245	blond
-14246	blonde
-14251	blosse
-14252	bluete
-14253	bluff
-14254	blume
-14255	blumen
-14256	bluse
-14261	blut
-14262	bluten
-14263	bluter
-14264	blutig
-14265	bluts
-14266	blz
-14311	bmw
-14312	bnd
-14313	boa
-14314	bob
-14315	bochum
-14316	bock
-14321	bocken
-14322	bodden
-14323	boden
-14324	boehme
-14325	boeig
-14326	boerse
-14331	boese
-14332	bogen
-14333	bogota
-14334	bohle
-14335	bohne
-14336	bohnen
-14341	bohren
-14342	bohrer
-14343	boje
-14344	bolero
-14345	bolzen
-14346	bombe
-14351	bomber
-14352	bonbon
-14353	bongo
-14354	bonn
-14355	bonus
-14356	boom
-14361	boot
-14362	bor
-14363	borax
-14364	bord
-14365	bordell
-14366	boskop
-14411	boss
-14412	boston
-14413	bote
-14414	bowle
-14415	box
-14416	boxen
-14421	boxer
-14422	bozen
-14423	brand
-14424	braten
-14425	brauch
-14426	braue
-14431	braun
-14432	braut
-14433	bravo
-14434	brd
-14435	brei
-14436	breiig
-14441	breite
-14442	bremen
-14443	bremse
-14444	brett
-14445	brezel
-14446	brie
-14451	brief
-14452	brigg
-14453	brille
-14454	brise
-14455	brit
-14456	brite
-14461	brokat
-14462	brom
-14463	bronze
-14464	brot
-14465	brt
-14466	bruch
-14511	bruder
-14512	bruehe
-14513	bruesk
-14514	brunei
-14515	brunst
-14516	brust
-14521	brut
-14522	brutal
-14523	brutei
-14524	brutto
-14525	bse
-14526	bsp
-14531	bub
-14532	bube
-14533	buccal
-14534	buch
-14535	buche
-14536	buchen
-14541	buchse
-14542	bucht
-14543	buckel
-14544	bude
-14545	buegel
-14546	buehne
-14551	buenos
-14552	buerge
-14553	buero
-14554	bueste
-14555	buett
-14556	buette
-14561	bug
-14562	buhlen
-14563	bukett
-14564	bulle
-14565	bulloes
-14566	bump
-14611	bums
-14612	bund
-14613	bunker
-14614	bunny
-14615	bunt
-14616	bursa
-14621	bus
-14622	busch
-14623	busen
-14624	buss
-14625	busse
-14626	butler
-14631	butter
-14632	butzen
-14633	bypass
-14634	byte
-14635	bzgl
-14636	bzw
-14641	cabrio
-14642	cache
-14643	cad
-14644	cafe
-14645	cai
-14646	cali
-14651	cam
-14652	cand
-14653	carrel
-14654	cayenne
-14655	ccitt
-14656	cdrom
-14661	cdu
-14662	cebu
-14663	cerium
-14664	chance
-14665	chaos
-14666	charge
-15111	chef
-15112	chemie
-15113	chile
-15114	chili
-15115	china
-15116	chip
-15121	chips
-15122	chlor
-15123	chor
-15124	choral
-15125	chr
-15126	christ
-15131	chrom
-15132	chuzpe
-15133	chylus
-15134	cim
-15135	citrin
-15136	ciudad
-15141	claim
-15142	clever
-15143	clique
-15144	clogs
-15145	cmos
-15146	cnc
-15151	cobalt
-15152	cochin
-15153	code
-15154	codec
-15155	comic
-15156	cook
-15161	cookie
-15162	costa
-15163	cote
-15164	coup
-15165	coupon
-15166	cousin
-15211	crash
-15212	csu
-15213	curium
-15214	cursor
-15215	cvjm
-15216	dabei
-15221	dach
-15222	dachs
-15223	dachte
-15224	dackel
-15225	daemmt
-15226	daemon
-15231	daene
-15232	dafuer
-15233	dag
-15234	daheim
-15235	daher
-15236	dahlie
-15241	dakar
-15242	dalian
-15243	dallas
-15244	damals
-15245	damast
-15246	dame
-15251	damen
-15252	damit
-15253	damm
-15254	dampf
-15255	dampft
-15256	danach
-15261	dandy
-15262	dank
-15263	danke
-15264	danken
-15265	dankt
-15266	dann
-15311	dar
-15312	daran
-15313	darauf
-15314	daraus
-15315	darf
-15316	darin
-15321	darm
-15322	darum
-15323	das
-15324	dasein
-15325	dass
-15326	datei
-15331	daten
-15332	dativ
-15333	dato
-15334	datong
-15335	dattel
-15336	datum
-15341	dauer
-15342	dauern
-15343	dauert
-15344	daumen
-15345	daune
-15346	davao
-15351	davon
-15352	davor
-15353	dazu
-15354	ddr
-15355	debuet
-15356	deck
-15361	decke
-15362	deckel
-15363	decken
-15364	deckt
-15365	degen
-15366	dehnen
-15411	dehnt
-15412	dehnte
-15413	deich
-15414	dein
-15415	deine
-15416	deist
-15421	dekade
-15422	dekan
-15423	dekor
-15424	dekret
-15425	delfin
-15426	delikt
-15431	delle
-15432	dem
-15433	demut
-15434	den
-15435	denise
-15436	denk
-15441	denken
-15442	denker
-15443	denkt
-15444	denn
-15445	dental
-15446	denver
-15451	deo
-15452	depot
-15453	depp
-15454	der
-15455	derart
-15456	derb
-15461	derber
-15462	deren
-15463	des
-15464	despot
-15465	dessen
-15466	dessert
-15511	desto
-15512	detail
-15513	deuten
-15514	deutet
-15515	devon
-15516	devot
-15521	dezent
-15522	dfb
-15523	dgb
-15524	dgl
-15525	dgr
-15526	dhaka
-15531	dia
-15532	diadem
-15533	diaet
-15534	diag
-15535	diakon
-15536	dialog
-15541	dich
-15542	dicht
-15543	dichte
-15544	dick
-15545	dicke
-15546	dicker
-15551	dickes
-15552	die
-15553	dieb
-15554	diele
-15555	diener
-15556	dienst
-15561	dient
-15562	diente
-15563	dies
-15564	diese
-15565	diesel
-15566	dieser
-15611	diffus
-15612	diktat
-15613	dilemma
-15614	dill
-15615	dimmer
-15616	din
-15621	ding
-15622	dingen
-15623	dinghy
-15624	dinkel
-15625	diode
-15626	dioxyd
-15631	dip
-15632	dipl
-15633	diplom
-15634	dipol
-15635	dir
-15636	direkt
-15641	dirndl
-15642	dirne
-15643	diskus
-15644	distal
-15645	distel
-15646	dito
-15651	diva
-15652	divers
-15653	diwan
-15654	djh
-15655	dkp
-15656	doch
-15661	docht
-15662	dock
-15663	docke
-15664	doebel
-15665	doesen
-15666	doest
-16111	doeste
-16112	dogge
-16113	doha
-16114	dohle
-16115	doktor
-16116	dolch
-16121	dolde
-16122	dollar
-16123	dom
-16124	domino
-16125	don
-16126	donau
-16131	donner
-16132	doof
-16133	dopen
-16134	doping
-16135	doppel
-16136	dorf
-16141	dorn
-16142	dornig
-16143	dorsal
-16144	dorsch
-16145	dort
-16146	dose
-16151	dosis
-16152	dotter
-16153	douala
-16154	double
-16155	doz
-16156	dozent
-16161	dozer
-16162	dpa
-16163	drache
-16164	draht
-16165	drall
-16166	dralle
-16211	drama
-16212	drang
-16213	dreck
-16214	dreckt
-16215	drehen
-16216	dreher
-16221	drehst
-16222	dreht
-16223	drehte
-16224	drei
-16225	dreist
-16226	drell
-16231	drg
-16232	drift
-16233	drill
-16234	drillt
-16235	drin
-16236	dringt
-16241	dritte
-16242	droben
-16243	droge
-16244	drohen
-16245	dronte
-16246	drops
-16251	drosch
-16252	druck
-16253	druckt
-16254	druese
-16255	druse
-16256	dtzd
-16261	dublin
-16262	ducken
-16263	duckt
-16264	duckte
-16265	duebel
-16266	duell
-16311	duene
-16312	duengt
-16313	duenn
-16314	duenne
-16315	duerr
-16316	duerre
-16321	duese
-16322	duester
-16323	duett
-16324	duft
-16325	duften
-16326	duftet
-16331	duftig
-16332	dulden
-16333	duldet
-16334	dumas
-16335	dumdum
-16336	dumm
-16341	dumme
-16342	dummer
-16343	dummes
-16344	dumpf
-16345	dung
-16346	dunkel
-16351	dunst
-16352	duo
-16353	duplex
-16354	dur
-16355	durban
-16356	durch
-16361	dusche
-16362	dussel
-16363	dutt
-16364	dynamo
-16365	dysurie
-16366	ebbe
-16411	ebd
-16412	eben
-16413	ebene
-16414	ebenso
-16415	eber
-16416	ebnen
-16421	ebonit
-16422	echo
-16423	echt
-16424	echter
-16425	echtes
-16426	ecke
-16431	eckig
-16432	eckige
-16433	eckt
-16434	ecma
-16435	edamer
-16436	edel
-16441	editor
-16442	edv
-16443	edwin
-16444	efeu
-16445	effekt
-16446	efre
-16451	efta
-16452	egge
-16453	eggend
-16454	egoist
-16455	ehe
-16456	ehedem
-16461	ehem
-16462	eher
-16463	ehern
-16464	ehrbar
-16465	ehre
-16466	ehren
-16511	ehrend
-16512	ehrlos
-16513	ehrt
-16514	ehrte
-16515	ehrung
-16516	eibe
-16521	eiche
-16522	eichel
-16523	eichen
-16524	eid
-16525	eidam
-16526	eides
-16531	eidg
-16532	eier
-16533	eifer
-16534	eifern
-16535	eifert
-16536	eifrig
-16541	eigelb
-16542	eigen
-16543	eigene
-16544	eignet
-16545	eigtl
-16546	eile
-16551	eilen
-16552	eilend
-16553	eilig
-16554	eilzug
-16555	eimer
-16556	ein
-16561	einbau
-16562	einbit
-16563	eine
-16564	einehe
-16565	einem
-16566	einen
-16611	einer
-16612	eines
-16613	einfach
-16614	einheit
-16615	einher
-16616	einige
-16621	einmal
-16622	einoede
-16623	einrad
-16624	eins
-16625	einsam
-16626	einser
-16631	einst
-16632	einweg
-16633	einzeln
-16634	einzig
-16635	einzug
-16636	eis
-16641	eisen
-16642	eisern
-16643	eisig
-16644	eistee
-16645	eitel
-16646	eiter
-16651	eitern
-16652	eitert
-16653	eitrig
-16654	ekd
-16655	ekel
-16656	ekelnd
-16661	ekelt
-16662	ekelte
-16663	ekg
-16664	eklig
-16665	ekzem
-16666	elan
-21111	elbe
-21112	elch
-21113	elend
-21114	elf
-21115	elfe
-21116	elfte
-21121	elite
-21122	elle
-21123	elsass
-21124	elster
-21125	eltern
-21126	email
-21131	emb
-21132	emblem
-21133	embryo
-21134	emesis
-21135	emirat
-21136	empor
-21141	empore
-21142	empyem
-21143	emsig
-21144	end
-21145	ende
-21146	enden
-21151	endend
-21152	endet
-21153	endlos
-21154	endung
-21155	eng
-21156	engel
-21161	enger
-21162	enges
-21163	engl
-21164	engt
-21165	engte
-21166	enkel
-21211	enorm
-21212	ente
-21213	enthob
-21214	entity
-21215	entkam
-21216	entspr
-21221	entzog
-21222	entzug
-21223	enzian
-21224	enzym
-21225	eozaen
-21226	epilog
-21231	episch
-21232	epoche
-21233	eponym
-21234	epos
-21235	erb
-21236	erbat
-21241	erbaut
-21242	erbe
-21243	erbend
-21244	erbin
-21245	erbium
-21246	erbot
-21251	erbse
-21252	erbt
-21253	erde
-21254	erden
-21255	erdgas
-21256	erdig
-21261	erdoel
-21262	ereilt
-21263	erfand
-21264	erfolg
-21265	erfuhr
-21266	erfurt
-21311	ergab
-21312	ergeben
-21313	ergibt
-21314	erguss
-21315	erhalt
-21316	erhebt
-21321	erhob
-21322	erholen
-21323	erholt
-21324	erker
-21325	erlass
-21326	erle
-21331	erlebt
-21332	erlegt
-21333	erloes
-21334	erneut
-21335	ernst
-21336	ernte
-21341	ernten
-21342	erntet
-21343	erogen
-21344	erotik
-21345	errang
-21346	erregt
-21351	ersann
-21352	ersatz
-21353	erw
-21354	erwarb
-21355	erwerb
-21356	erz
-21361	esa
-21362	esche
-21363	esel
-21364	espe
-21365	ess
-21366	essay
-21411	essbar
-21412	essen
-21413	essenz
-21414	esser
-21415	essig
-21416	este
-21421	eszb
-21422	etage
-21423	etappe
-21424	etat
-21425	ethanol
-21426	ethik
-21431	etuede
-21432	etui
-21433	etwa
-21434	etwaig
-21435	etwas
-21436	etws
-21441	euer
-21442	eugh
-21443	eule
-21444	eunuch
-21445	euro
-21446	europa
-21451	euter
-21452	evoli
-21453	evtl
-21454	ewenke
-21455	ewi
-21456	ewig
-21461	ewige
-21462	ews
-21463	ewwu
-21464	exakt
-21465	examen
-21466	exil
-21511	exkl
-21512	exkurs
-21513	expl
-21514	export
-21515	extern
-21516	extra
-21521	extrem
-21522	exzess
-21523	ezb
-21524	fabel
-21525	fabrik
-21526	fach
-21531	fackel
-21532	fad
-21533	fade
-21534	faden
-21535	faehig
-21536	faehre
-21541	faehrt
-21542	faekal
-21543	faelle
-21544	faellt
-21545	faengt
-21546	faerbt
-21551	faerse
-21552	fagott
-21553	fahl
-21554	fahne
-21555	fahren
-21556	fahrer
-21561	fahrig
-21562	fahrt
-21563	faible
-21564	fair
-21565	fakir
-21566	fakt
-21611	fakten
-21612	faktor
-21613	falb
-21614	falbel
-21615	falke
-21616	fall
-21621	falle
-21622	fallen
-21623	falls
-21624	falte
-21625	falten
-21626	falter
-21631	faltet
-21632	faltig
-21633	falz
-21634	falzen
-21635	falzt
-21636	fam
-21641	famos
-21642	fan
-21643	fanal
-21644	fand
-21645	fang
-21646	fangen
-21651	fao
-21652	farad
-21653	farbe
-21654	farbig
-21655	farm
-21656	farmer
-21661	farn
-21662	fasan
-21663	fascia
-21664	fase
-21665	faseln
-21666	faser
-22111	fasert
-22112	fass
-22113	fasse
-22114	fassen
-22115	fasst
-22116	fasste
-22121	fast
-22122	fasten
-22123	fastet
-22124	fatal
-22125	faul
-22126	faulen
-22131	fauler
-22132	faulig
-22133	faulte
-22134	faun
-22135	fauna
-22136	faust
-22141	fax
-22142	faxe
-22143	fazit
-22144	fbi
-22145	fddi
-22146	fdgb
-22151	fdp
-22152	feder
-22153	fee
-22154	fegen
-22155	fegt
-22156	fegten
-22161	fehde
-22162	fehl
-22163	fehlen
-22164	fehler
-22165	fehlt
-22166	fehlte
-22211	feier
-22212	feiern
-22213	feiert
-22214	feige
-22215	feile
-22216	feilen
-22221	fein
-22222	feind
-22223	feine
-22224	feiner
-22225	feines
-22226	feld
-22231	felge
-22232	fell
-22233	fels
-22234	felsig
-22235	fender
-22236	ferien
-22241	ferkel
-22242	fern
-22243	ferne
-22244	ferner
-22245	ferrat
-22246	ferrit
-22251	ferse
-22252	fertig
-22253	fesch
-22254	fessel
-22255	fest
-22256	feste
-22261	fester
-22262	festes
-22263	festtag
-22264	fete
-22265	feten
-22266	fett
-22311	fette
-22312	fetten
-22313	fettig
-22314	fetzen
-22315	feucht
-22316	feudal
-22321	feuer
-22322	feuern
-22323	feurig
-22324	fiasko
-22325	fibel
-22326	fichte
-22331	ficht
-22332	ficus
-22333	fidel
-22334	fieber
-22335	fiedel
-22336	fiedelt
-22341	fiel
-22342	fies
-22343	fig
-22344	figur
-22345	fiktiv
-22346	file
-22351	filet
-22352	film
-22353	filme
-22354	filmen
-22355	filmte
-22356	filter
-22361	filz
-22362	filzen
-22363	filzig
-22364	fimmel
-22365	finale
-22366	finanz
-22411	finden
-22412	finder
-22413	findet
-22414	findig
-22415	fing
-22416	finger
-22421	finite
-22422	fink
-22423	finne
-22424	finte
-22425	firma
-22426	firmen
-22431	fisch
-22432	fische
-22433	fischt
-22434	fiskus
-22435	fistel
-22436	fitis
-22441	fixen
-22442	fixend
-22443	fixer
-22444	fixt
-22445	fixte
-22446	fixum
-22451	fjord
-22452	flach
-22453	flache
-22454	flachs
-22455	flag
-22456	flagge
-22461	flak
-22462	flakon
-22463	flame
-22464	flamme
-22465	flanke
-22466	flansch
-22511	flau
-22512	flaum
-22513	flaute
-22514	fleck
-22515	flegel
-22516	flehen
-22521	fleht
-22522	flehte
-22523	fleiss
-22524	flickt
-22525	flieder
-22526	fliege
-22531	fliegt
-22532	flink
-22533	flinte
-22534	flirt
-22535	flocke
-22536	floete
-22541	floez
-22542	floh
-22543	flora
-22544	floss
-22545	flosse
-22546	flott
-22551	flotte
-22552	fluch
-22553	flucht
-22554	fluege
-22555	fluenz
-22556	flug
-22561	flugs
-22562	fluke
-22563	flunke
-22564	fluor
-22565	flur
-22566	flusen
-22611	fluss
-22612	flut
-22613	fock
-22614	foehn
-22615	foehre
-22616	foetal
-22621	foetus
-22622	fohlen
-22623	fokal
-22624	fokus
-22625	folg
-22626	folge
-22631	folgen
-22632	folger
-22633	folgt
-22634	folgte
-22635	folie
-22636	folter
-22641	fond
-22642	fondue
-22643	foppen
-22644	foppt
-22645	foppte
-22646	form
-22651	formal
-22652	format
-22653	formel
-22654	formen
-22655	former
-22656	formt
-22661	formte
-22662	forsch
-22663	fort
-22664	fortan
-22665	forts
-22666	fortsf
-23111	forum
-23112	fossil
-23113	fotogen
-23114	fracht
-23115	frack
-23116	fraese
-23121	fraest
-23122	frag
-23123	frage
-23124	fragen
-23125	frager
-23126	fragt
-23131	fragte
-23132	franko
-23133	franse
-23134	frass
-23135	fratze
-23136	frau
-23141	frauen
-23142	freak
-23143	frech
-23144	frei
-23145	freie
-23146	freier
-23151	freies
-23152	freite
-23153	fremd
-23154	fremde
-23155	fresko
-23156	freu
-23161	freude
-23162	freund
-23163	freut
-23164	freute
-23165	frevel
-23166	friede
-23211	friert
-23212	fries
-23213	frisch
-23214	frisst
-23215	frist
-23216	frisur
-23221	fritte
-23222	frivol
-23223	frl
-23224	froh
-23225	frohe
-23226	fromm
-23231	fron
-23232	front
-23233	fror
-23234	froren
-23235	frosch
-23236	frost
-23241	frucht
-23242	frueh
-23243	fruehe
-23244	frz
-23245	fuchs
-23246	fuder
-23251	fuegt
-23252	fuegte
-23253	fuehlt
-23254	fuehrt
-23255	fuehrte
-23256	fuelle
-23261	fuellt
-23262	fuenf
-23263	fuer
-23264	fuers
-23265	fuge
-23266	fugen
-23311	fuhr
-23312	fuhre
-23313	fund
-23314	fundus
-23315	funke
-23316	funkt
-23321	furche
-23322	furcht
-23323	furie
-23324	furier
-23325	furt
-23326	furz
-23331	furzen
-23332	fushun
-23333	fusion
-23334	fuss
-23335	fussel
-23336	futsch
-23341	futter
-23342	fuzhou
-23343	fuzzy
-23344	gab
-23345	gabel
-23346	gabeln
-23351	gabelt
-23352	gabun
-23353	gaehnt
-23354	gaele
-23355	gaemse
-23356	gaeren
-23361	gaffen
-23362	gaffer
-23363	gafft
-23364	gaffte
-23365	gag
-23366	gage
-23411	gala
-23412	galant
-23413	galgen
-23414	galle
-23415	gallen
-23416	gallig
-23421	galmei
-23422	galopp
-23423	galt
-23424	galten
-23425	gambe
-23426	gambia
-23431	gambit
-23432	gamma
-23433	gams
-23434	gang
-23435	ganove
-23436	gans
-23441	ganz
-23442	ganze
-23443	gap
-23444	gar
-23445	garage
-23446	garant
-23451	garbe
-23452	garde
-23453	garn
-23454	garten
-23455	gas
-23456	gasse
-23461	gast
-23462	gatt
-23463	gatte
-23464	gatter
-23465	gattin
-23466	gaudi
-23511	gaul
-23512	gaumen
-23513	gauner
-23514	gaze
-23515	geb
-23516	gebaut
-23521	geben
-23522	geber
-23523	gebet
-23524	gebiet
-23525	gebiss
-23526	gebot
-23531	gebr
-23532	geburt
-23533	geck
-23534	gecko
-23535	gedieh
-23536	gedoest
-23541	geduld
-23542	geeggt
-23543	geehrt
-23544	geeilt
-23545	geerbt
-23546	gefahr
-23551	gefeit
-23552	gefiel
-23553	gegner
-23554	gegr
-23555	geh
-23556	gehabt
-23561	gehalt
-23562	gehaut
-23563	gehege
-23564	geheim
-23565	gehen
-23566	gehend
-23611	geheul
-23612	gehirn
-23613	gehoer
-23614	geholt
-23615	gehren
-23616	geht
-23621	gehuft
-23622	gehupt
-23623	gehweg
-23624	geier
-23625	geige
-23626	geiger
-23631	geil
-23632	geisel
-23633	geiser
-23634	geiss
-23635	geist
-23636	geiz
-23641	geizen
-23642	geizig
-23643	gejagt
-23644	gek
-23645	gekaut
-23646	gelage
-23651	gelang
-23652	gelass
-23653	gelb
-23654	gelbe
-23655	gelber
-23656	gelbes
-23661	geld
-23662	gelder
-23663	gelee
-23664	gelege
-23665	gelegt
-23666	geleit
-24111	gelenk
-24112	gelobt
-24113	gelost
-24114	gelten
-24115	gemalt
-24116	gemein
-24121	gemuet
-24122	gemuht
-24123	gen
-24124	genagt
-24125	genas
-24126	genau
-24131	genaue
-24132	genese
-24133	genial
-24134	genick
-24135	genie
-24136	genius
-24141	genoss
-24142	genre
-24143	genua
-24144	genug
-24145	genus
-24146	genuss
-24151	geoelt
-24152	george
-24153	gepard
-24154	gerade
-24155	geraet
-24156	gerast
-24161	geraum
-24162	gerben
-24163	gerber
-24164	gerede
-24165	gering
-24166	gern
-24211	gerne
-24212	gerte
-24213	geruch
-24214	geruhe
-24215	geruht
-24216	ges
-24221	gesaet
-24222	gesagt
-24223	gesamt
-24224	gesang
-24225	gesch
-24226	gesenk
-24231	gesetz
-24232	gest
-24233	geste
-24234	gesuch
-24235	gesund
-24236	getagt
-24241	getaut
-24242	geteilt
-24243	getobt
-24244	getto
-24245	getue
-24246	getunkt
-24251	geuebt
-24252	gew
-24253	gewagt
-24254	gewahr
-24255	gewalt
-24256	gewand
-24261	gewann
-24262	gewebe
-24263	gewebt
-24264	gewehr
-24265	geweht
-24266	geweih
-24311	gewinn
-24312	gewirr
-24313	gewiss
-24314	gewogt
-24315	gez
-24316	ggf
-24321	ghana
-24322	gib
-24323	gibbon
-24324	gibt
-24325	gicht
-24326	giebel
-24331	gier
-24332	gieren
-24333	gierig
-24334	gierte
-24335	giesst
-24336	gift
-24341	giftig
-24342	gigant
-24343	gigolo
-24344	gilde
-24345	gimpe
-24346	gimpel
-24351	gin
-24352	ging
-24353	gingen
-24354	gipfel
-24355	gips
-24356	gischt
-24361	gitter
-24362	glanz
-24363	glas
-24364	glaser
-24365	glasig
-24366	glasur
-24411	glatt
-24412	glatte
-24413	glatze
-24414	glaube
-24415	glauben
-24416	glaubt
-24421	gleich
-24422	gleis
-24423	gleit
-24424	gleite
-24425	gleiten
-24426	glich
-24431	glied
-24432	glimmt
-24433	glitt
-24434	global
-24435	globus
-24436	glocke
-24441	glomm
-24442	glossar
-24443	glosse
-24444	glotze
-24445	glotzt
-24446	glucke
-24451	glueck
-24452	glueht
-24453	glukose
-24454	glurak
-24455	glut
-24456	glycin
-24461	gmbh
-24462	gnade
-24463	gneis
-24464	gnom
-24465	gnu
-24466	goetze
-24511	gokart
-24512	gold
-24513	golden
-24514	golf
-24515	gon
-24516	gondel
-24521	gong
-24522	gospel
-24523	goss
-24524	gosse
-24525	gotik
-24526	gott
-24531	gps
-24532	grab
-24533	graben
-24534	grad
-24535	graebt
-24536	graf
-24541	grafik
-24542	gram
-24543	gramm
-24544	granat
-24545	grand
-24546	grande
-24551	granit
-24552	granne
-24553	grapen
-24554	graph
-24555	gras
-24556	grasen
-24561	grasig
-24562	grat
-24563	gratis
-24564	grau
-24565	grauen
-24566	grauer
-24611	gravur
-24612	grease
-24613	green
-24614	greift
-24615	greis
-24616	grell
-24621	grelle
-24622	grenze
-24623	grenzt
-24624	griebe
-24625	griess
-24626	griff
-24631	grill
-24632	grille
-24633	grimm
-24634	grizzly
-24635	grinst
-24636	grippe
-24641	grips
-24642	grob
-24643	grober
-24644	grobes
-24645	groelt
-24646	grog
-24651	groll
-24652	gros
-24653	gross
-24654	grosse
-24655	grotte
-24656	grub
-24661	grube
-24662	gruen
-24663	gruene
-24664	gruess
-24665	grufti
-24666	grund
-25111	grunge
-25112	grunzt
-25113	gruppe
-25114	gruss
-25115	gsm
-25116	guam
-25121	gucken
-25122	guete
-25123	gueter
-25124	guetig
-25125	guinea
-25126	gummi
-25131	gunst
-25132	gurke
-25133	gurren
-25134	gurt
-25135	guru
-25136	gut
-25141	gute
-25142	guten
-25143	guter
-25144	guyana
-25145	gvp
-25146	haar
-25151	haarig
-25152	hab
-25153	habe
-25154	haben
-25155	hacke
-25156	hacken
-25161	hacker
-25162	hackt
-25163	hackte
-25164	haelt
-25165	haende
-25166	haengt
-25211	haerte
-25212	haeufig
-25213	haeuft
-25214	haeuser
-25215	hafen
-25216	hafer
-25221	haft
-25222	haften
-25223	haftet
-25224	hagel
-25225	hageln
-25226	hagelt
-25231	hagen
-25232	hager
-25233	haggis
-25234	hahn
-25235	hai
-25236	hain
-25241	haiti
-25242	haken
-25243	hakend
-25244	hakig
-25245	hakt
-25246	hakte
-25251	halab
-25252	halb
-25253	halber
-25254	halbgar
-25255	halde
-25256	half
-25261	halle
-25262	hallo
-25263	hallt
-25264	hallte
-25265	halm
-25266	halme
-25311	hals
-25312	halse
-25313	halsen
-25314	halsig
-25315	halt
-25316	halte
-25321	halten
-25322	halter
-25323	halts
-25324	hamlet
-25325	hammel
-25326	hammer
-25331	hand
-25332	handan
-25333	handel
-25334	hanf
-25335	hanfen
-25336	hang
-25341	hanoi
-25342	hans
-25343	hanse
-25344	hantel
-25345	harbin
-25346	harem
-25351	harfe
-25352	harke
-25353	harken
-25354	hart
-25355	harte
-25356	harz
-25361	harzen
-25362	harzig
-25363	hascht
-25364	hase
-25365	haspe
-25366	hass
-25411	hassen
-25412	hasser
-25413	hasst
-25414	hast
-25415	haste
-25416	hasten
-25421	hastet
-25422	hastig
-25423	hat
-25424	hau
-25425	haube
-25426	hauch
-25431	hauen
-25432	hauend
-25433	hauer
-25434	haufen
-25435	haupt
-25436	haus
-25441	haut
-25442	haute
-25443	hawaii
-25444	hbf
-25445	heard
-25446	hebel
-25451	hebeln
-25452	heben
-25453	hebend
-25454	hebt
-25455	hecht
-25456	heck
-25461	hecke
-25462	heckt
-25463	heer
-25464	hefe
-25465	hefei
-25466	hefig
-25511	heften
-25512	heftet
-25513	heftig
-25514	heide
-25515	heikel
-25516	heil
-25521	heilen
-25522	heiler
-25523	heilig
-25524	heilige
-25525	heilung
-25526	heim
-25531	heimat
-25532	heirat
-25533	heiser
-25534	heiss
-25535	heiter
-25536	heizen
-25541	heizer
-25542	heizt
-25543	heizte
-25544	hektar
-25545	hektik
-25546	held
-25551	heldin
-25552	helfen
-25553	helfer
-25554	helfs
-25555	helium
-25556	hell
-25561	hellt
-25562	helm
-25563	hemd
-25564	hemmen
-25565	hemmt
-25566	hemmte
-25611	hengst
-25612	henkel
-25613	henker
-25614	henne
-25615	herauf
-25616	heraus
-25621	herb
-25622	herbst
-25623	herd
-25624	herde
-25625	herden
-25626	herein
-25631	hering
-25632	hernia
-25633	herold
-25634	herpes
-25635	herr
-25636	herrin
-25641	hertz
-25642	herum
-25643	hervor
-25644	herz
-25645	herzas
-25646	herzig
-25651	herzog
-25652	hesse
-25653	hessen
-25654	hetze
-25655	hetzen
-25656	hetzer
-25661	hetzt
-25662	hetzte
-25663	heu
-25664	heuer
-25665	heul
-25666	heulen
-26111	heult
-26112	heulte
-26113	heute
-26114	heutig
-26115	hexe
-26116	hieb
-26121	hielt
-26122	hier
-26123	hierzu
-26124	hiesig
-26125	hiess
-26126	hieven
-26131	hilfe
-26132	hilfen
-26133	hilflos
-26134	hilfs
-26135	himmel
-26136	hin
-26141	hinab
-26142	hinauf
-26143	hinaus
-26144	hindert
-26145	hing
-26146	hinken
-26151	hinkt
-26152	hins
-26153	hinten
-26154	hinter
-26155	hinz
-26156	hippie
-26161	hirsch
-26162	hirse
-26163	hirt
-26164	hit
-26165	hitze
-26166	hitzig
-26211	hiv
-26212	hmilch
-26213	hmmm
-26214	hob
-26215	hobby
-26216	hobel
-26221	hobeln
-26222	hobelt
-26223	hoch
-26224	hocken
-26225	hocker
-26226	hockey
-26231	hockt
-26232	hockte
-26233	hoden
-26234	hoehe
-26235	hoehere
-26236	hoehle
-26241	hoelle
-26242	hoer
-26243	hoerbar
-26244	hoeren
-26245	hoert
-26246	hoerte
-26251	hof
-26252	hoffen
-26253	hofft
-26254	hoffte
-26255	hohe
-26256	hoheit
-26261	hoher
-26262	hohes
-26263	hohl
-26264	hohler
-26265	hohn
-26266	hol
-26311	hold
-26312	holen
-26313	holend
-26314	holm
-26315	holst
-26316	holt
-26321	holte
-26322	holz
-26323	holzen
-26324	holzig
-26325	hong
-26326	honig
-26331	honoel
-26332	hopfen
-26333	hoppla
-26334	horcht
-26335	horde
-26336	hormon
-26341	horn
-26342	hornig
-26343	hort
-26344	horten
-26345	hortet
-26346	hose
-26351	hosen
-26352	hotel
-26353	hotkey
-26354	hrsg
-26355	huang
-26356	hub
-26361	huefte
-26362	huegel
-26363	huelle
-26364	huellt
-26365	huelse
-26366	huepft
-26411	huepfte
-26412	huerde
-26413	huete
-26414	hueten
-26415	hueter
-26416	huette
-26421	huf
-26422	huhn
-26423	huker
-26424	human
-26425	humbug
-26426	hummel
-26431	hummer
-26432	humor
-26433	humus
-26434	hund
-26435	hunde
-26436	hunger
-26441	hunne
-26442	hupe
-26443	hupen
-26444	hurrikan
-26445	hurghada
-26446	hurley
-26451	hurone
-26452	hurra
-26453	hurtig
-26454	husar
-26455	husten
-26456	hut
-26461	hyaene
-26462	hybrid
-26463	hydrid
-26464	hymne
-26465	iallg
-26466	iao
-26511	iata
-26512	ibadan
-26513	ibitak
-26514	ice
-26515	ich
-26516	idaho
-26521	ideal
-26522	idee
-26523	ideell
-26524	idiot
-26525	idol
-26526	idylle
-26531	igel
-26532	iglu
-26533	ihf
-26534	ihk
-26535	ihm
-26536	ihn
-26541	ihnen
-26542	ihr
-26543	ihre
-26544	ihrer
-26545	ikone
-26546	ileus
-26551	illegal
-26552	iltis
-26553	image
-26554	imbiss
-26555	imker
-26556	immer
-26561	immun
-26562	impfen
-26563	impft
-26564	impfte
-26565	import
-26566	impuls
-26611	indem
-26612	inder
-26613	index
-26614	indien
-26615	indigo
-26616	indium
-26621	indore
-26622	info
-26623	infra
-26624	ing
-26625	inger
-26626	ingwer
-26631	inh
-26632	inhalt
-26633	inka
-26634	inkl
-26635	inlett
-26636	innen
-26641	inner
-26642	innere
-26643	innung
-26644	ins
-26645	insekt
-26646	insel
-26651	insult
-26652	intakt
-26653	intern
-26654	intim
-26655	invers
-26656	iod
-26661	iok
-26662	ion
-26663	ionen
-26664	iowa
-26665	ira
-26666	irak
-31111	iraker
-31112	iran
-31113	iraner
-31114	irbil
-31115	irden
-31116	ire
-31121	irin
-31122	irisch
-31123	iritis
-31124	irk
-31125	irland
-31126	ironie
-31131	irre
-31132	irreal
-31133	irren
-31134	irrend
-31135	irrig
-31136	irrt
-31141	irrtum
-31142	irrweg
-31143	isbn
-31144	isebel
-31145	island
-31146	iso
-31151	isomer
-31152	isotop
-31153	israel
-31154	ist
-31155	iwf
-31156	izmir
-31161	jacht
-31162	jacke
-31163	jade
-31164	jaeger
-31165	jaeh
-31166	jaeten
-31211	jagd
-31212	jagen
-31213	jagend
-31214	jagt
-31215	jagte
-31216	jaguar
-31221	jahr
-31222	jaipur
-31223	jammer
-31224	januar
-31225	japan
-31226	jargon
-31231	jasmin
-31232	jauche
-31233	jaulen
-31234	jault
-31235	jaulte
-31236	jawohl
-31241	jawort
-31242	jazz
-31243	jeans
-31244	jede
-31245	jeden
-31246	jeder
-31251	jedes
-31252	jemals
-31253	jemand
-31254	jemen
-31255	jene
-31256	jener
-31261	jetlag
-31262	jetset
-31263	jetten
-31264	jetzt
-31265	jhrl
-31266	jhv
-31311	jiddah
-31312	jigger
-31313	jilin
-31314	jinan
-31315	job
-31316	joch
-31321	jod
-31322	jodeln
-31323	jodelt
-31324	jodler
-31325	joga
-31326	joggen
-31331	johlen
-31332	johlt
-31333	joint
-31334	jolle
-31335	jordan
-31336	jota
-31341	joule
-31342	jubel
-31343	jubeln
-31344	jubelt
-31345	jucken
-31346	jude
-31351	juedin
-31352	jugend
-31353	juli
-31354	julius
-31355	jumbo
-31356	jumper
-31361	jung
-31362	junge
-31363	jungen
-31364	junger
-31365	junges
-31366	jungs
-31411	juni
-31412	junker
-31413	junkie
-31414	junta
-31415	jur
-31416	jura
-31421	jurist
-31422	jury
-31423	justiz
-31424	jute
-31425	juwel
-31426	kabel
-31431	kabine
-31432	kabul
-31433	kachel
-31434	kacke
-31435	kadaver
-31436	kadenz
-31441	kader
-31442	kadett
-31443	kaefer
-31444	kaefig
-31445	kaelte
-31446	kaese
-31451	kaeut
-31452	kaeute
-31453	kaff
-31454	kaffee
-31455	kahl
-31456	kahle
-31461	kahler
-31462	kahmig
-31463	kahn
-31464	kai
-31465	kaiser
-31466	kajak
-31511	kaktee
-31512	kalb
-31513	kalben
-31514	kalbte
-31515	kalif
-31516	kalium
-31521	kalk
-31522	kalkig
-31523	kalkte
-31524	kalt
-31525	kalte
-31526	kalter
-31531	kaltes
-31532	kam
-31533	kamel
-31534	kamera
-31535	kamin
-31536	kamm
-31541	kammer
-31542	kampf
-31543	kanada
-31544	kanal
-31545	kandis
-31546	kann
-31551	kanne
-31552	kannst
-31553	kanone
-31554	kanpur
-31555	kansas
-31556	kante
-31561	kanter
-31562	kanton
-31563	kantor
-31564	kanu
-31565	kanzel
-31566	kaolin
-31611	kap
-31612	kapaun
-31613	kaper
-31614	kapern
-31615	kapier
-31616	kappa
-31621	kappe
-31622	kapsel
-31623	kaputt
-31624	karat
-31625	karate
-31626	karbid
-31631	karbol
-31632	karbon
-31633	karde
-31634	kardex
-31635	karo
-31636	karre
-31641	karren
-31642	karte
-31643	kartei
-31644	karton
-31645	kasack
-31646	kasan
-31651	kasino
-31652	kasse
-31653	kassel
-31654	kaste
-31655	kasten
-31656	katar
-31661	kate
-31662	kater
-31663	kath
-31664	kation
-31665	katode
-31666	kattun
-32111	katze
-32112	kaubar
-32113	kauen
-32114	kauend
-32115	kauer
-32116	kauern
-32121	kauert
-32122	kauf
-32123	kaufen
-32124	kauft
-32125	kaufte
-32126	kaum
-32131	kausal
-32132	kaut
-32133	kaute
-32134	kauten
-32135	kauz
-32136	kaviar
-32141	kebab
-32142	keck
-32143	kegel
-32144	kegeln
-32145	kegler
-32146	kehle
-32151	kehlig
-32152	kehrer
-32153	kehrt
-32154	kehrte
-32155	keifen
-32156	keift
-32161	keil
-32162	keilt
-32163	keilte
-32164	keim
-32165	keimen
-32166	keimt
-32211	kein
-32212	keine
-32213	keinen
-32214	keiner
-32215	keks
-32216	kelch
-32221	kelle
-32222	keller
-32223	keloid
-32224	kelte
-32225	kenia
-32226	kennen
-32231	kenner
-32232	kenyer
-32233	kerbe
-32234	kerbel
-32235	kerben
-32236	kerbt
-32241	kerbte
-32242	kerker
-32243	kerl
-32244	kern
-32245	kernal
-32246	kernig
-32251	kerze
-32252	kessel
-32253	keton
-32254	kette
-32255	kettet
-32256	ketzer
-32261	keucht
-32262	keule
-32263	keusch
-32264	kfm
-32265	kfz
-32266	khulna
-32311	kiefer
-32312	kiel
-32313	kieme
-32314	kiepe
-32315	kies
-32316	kiesel
-32321	kigali
-32322	kilo
-32323	kimm
-32324	kimme
-32325	kind
-32326	kinder
-32331	kinn
-32332	kino
-32333	kippe
-32334	kippen
-32335	kipper
-32336	kippt
-32341	kippte
-32342	kirche
-32343	kirmes
-32344	kissen
-32345	kiste
-32346	kitsch
-32351	kitt
-32352	kittel
-32353	kitten
-32354	kittet
-32355	kitz
-32356	kitzel
-32361	klappern
-32362	kladde
-32363	klaert
-32364	klage
-32365	klagen
-32366	klagt
-32411	klagte
-32412	klamm
-32413	klampe
-32414	klan
-32415	klang
-32416	klappe
-32421	klappt
-32422	klaps
-32423	klar
-32424	klasse
-32425	klaue
-32426	klauen
-32431	klause
-32432	klaut
-32433	klaute
-32434	kleben
-32435	kleber
-32436	klebt
-32441	klebte
-32442	klecks
-32443	klee
-32444	kleid
-32445	kleie
-32446	klein
-32451	kleine
-32452	kleiner
-32453	klemme
-32454	klemmt
-32455	klette
-32456	klick
-32461	klient
-32462	kliff
-32463	klima
-32464	klinge
-32465	klingt
-32466	klinik
-32511	klinke
-32512	klinkt
-32513	klippe
-32514	klirrt
-32515	klo
-32516	kloake
-32521	kloent
-32522	klon
-32523	klonen
-32524	klotz
-32525	klub
-32526	kluft
-32531	klug
-32532	knabe
-32533	knackt
-32534	knaeul
-32535	knall
-32536	knallt
-32541	knapp
-32542	knappe
-32543	knarre
-32544	knast
-32545	knebel
-32546	knecht
-32551	kneift
-32552	kneipe
-32553	knete
-32554	kneten
-32555	knick
-32556	knicks
-32561	knie
-32562	knien
-32563	kniend
-32564	kniet
-32565	kniete
-32566	kniff
-32611	knilch
-32612	knirps
-32613	knogga
-32614	knolle
-32615	knospe
-32616	knoten
-32621	knotet
-32622	knotig
-32623	knowhow
-32624	knurrt
-32625	knut
-32626	knute
-32631	kobalt
-32632	kobold
-32633	koch
-32634	kochen
-32635	kocher
-32636	kocht
-32641	kochte
-32642	koda
-32643	kodein
-32644	kodex
-32645	koeder
-32646	koeln
-32651	koenig
-32652	koepft
-32653	koernt
-32654	koeter
-32655	koffer
-32656	kognak
-32661	kohl
-32662	kohle
-32663	kohorte
-32664	koitus
-32665	koje
-32666	kojote
-33111	kokain
-33112	kokett
-33113	koks
-33114	kokuna
-33115	kolben
-33116	kolik
-33121	kolleg
-33122	kollege
-33123	koller
-33124	koloss
-33125	komet
-33126	komi
-33131	komm
-33132	komma
-33133	kommen
-33134	kommst
-33135	kommt
-33136	kondom
-33141	kondor
-33142	konkav
-33143	konnte
-33144	konsul
-33145	konsum
-33146	konter
-33151	konto
-33152	kontor
-33153	kontra
-33154	konus
-33155	konvex
-33156	kopal
-33161	kopf
-33162	kopie
-33163	koppel
-33164	koran
-33165	korb
-33166	kord
-33211	kordel
-33212	kordon
-33213	korea
-33214	korfu
-33215	kork
-33216	korken
-33221	korn
-33222	korse
-33223	korund
-33224	kosen
-33225	kosmos
-33226	kosovo
-33231	kost
-33232	kosten
-33233	kostet
-33234	kot
-33235	kotig
-33236	kotzen
-33241	kpev
-33242	krabbe
-33243	krach
-33244	kracht
-33245	kraehe
-33246	kraft
-33251	kragen
-33252	krake
-33253	kralle
-33254	krampf
-33255	kran
-33256	krank
-33261	kranke
-33262	kranz
-33263	krass
-33264	krater
-33265	kratze
-33266	kratzt
-33311	krault
-33312	kraus
-33313	krause
-33314	kraut
-33315	krebs
-33316	kredit
-33321	kreide
-33322	kreis
-33323	kreist
-33324	kreml
-33325	krempe
-33326	krepp
-33331	kresse
-33332	kreta
-33333	kreter
-33334	kreuz
-33335	kreuzt
-33336	krieg
-33341	krill
-33342	krim
-33343	krimi
-33344	kripo
-33345	krippe
-33346	krise
-33351	kritik
-33352	kroate
-33353	kroch
-33354	kroete
-33355	krokus
-33356	krone
-33361	kropf
-33362	kruemmt
-33363	krug
-33364	krumm
-33365	krumme
-33366	krung
-33411	krupp
-33412	kruste
-33413	krypta
-33414	kto
-33415	kuala
-33416	kuba
-33421	kubist
-33422	kuchen
-33423	kuebel
-33424	kueche
-33425	kuehl
-33426	kuehle
-33431	kuehlt
-33432	kuehn
-33433	kueken
-33434	kuer
-33435	kueren
-33436	kuerze
-33441	kuerzt
-33442	kuesst
-33443	kueste
-33444	kufe
-33445	kugel
-33446	kuguar
-33451	kuh
-33452	kulanz
-33453	kuli
-33454	kult
-33455	kultur
-33456	kummer
-33461	kumpan
-33462	kumpel
-33463	kunde
-33464	kunden
-33465	kundig
-33466	kunst
-33511	kupfer
-33512	kuppel
-33513	kur
-33514	kurare
-33515	kurbel
-33516	kurie
-33521	kurier
-33522	kuries
-33523	kuriose
-33524	kurort
-33525	kurs
-33526	kursiv
-33531	kurve
-33532	kurz
-33533	kurze
-33534	kurzen
-33535	kurzer
-33536	kurzum
-33541	kuss
-33542	kutte
-33543	kuweit
-33544	kyyiv
-33545	lab
-33546	labend
-33551	labern
-33552	labial
-33553	labil
-33554	labor
-33555	lache
-33556	lachen
-33561	lacher
-33562	lachs
-33563	lacht
-33564	lachte
-33565	lack
-33566	lade
-33611	laden
-33612	ladend
-33613	lader
-33614	ladung
-33615	laedt
-33616	laehmt
-33621	laenge
-33622	laengs
-33623	laerm
-33624	laermt
-33625	laesst
-33626	laeuft
-33631	lag
-33632	lage
-33633	lager
-33634	lagern
-33635	lagert
-33636	lagos
-33641	lagune
-33642	lahm
-33643	lahore
-33644	laib
-33645	laich
-33646	laie
-33651	lakai
-33652	lake
-33653	laken
-33654	lamm
-33655	lammen
-33656	lampe
-33661	land
-33662	landen
-33663	lang
-33664	lange
-33665	lanze
-33666	laos
-34111	laote
-34112	lappen
-34113	laptop
-34114	larve
-34115	larven
-34116	las
-34121	lasch
-34122	lasche
-34123	laser
-34124	lass
-34125	lassen
-34126	lasso
-34131	lasst
-34132	last
-34133	lasten
-34134	laster
-34135	lasur
-34136	latein
-34141	latent
-34142	latte
-34143	latz
-34144	lau
-34145	laub
-34146	laube
-34151	lauern
-34152	lauert
-34153	lauf
-34154	laufen
-34155	lauge
-34156	laugen
-34161	laugt
-34162	laugte
-34163	laune
-34164	launig
-34165	laurie
-34166	laus
-34211	lausen
-34212	lausig
-34213	lauste
-34214	laut
-34215	laute
-34216	lauter
-34221	lautes
-34222	lava
-34223	lawine
-34224	layout
-34225	leb
-34226	lebe
-34231	leben
-34232	lebend
-34233	leber
-34234	leblos
-34235	lebst
-34236	lebt
-34241	lebte
-34242	leck
-34243	lecken
-34244	lecker
-34245	leckt
-34246	led
-34251	leder
-34252	ledern
-34253	ledig
-34254	lee
-34255	leeds
-34256	leefze
-34261	leer
-34262	leere
-34263	leeren
-34264	leeres
-34265	leert
-34266	legal
-34311	legat
-34312	legen
-34313	leger
-34314	legion
-34315	legt
-34316	legte
-34321	leguan
-34322	lehen
-34323	lehm
-34324	lehmig
-34325	lehne
-34326	lehnen
-34331	lehnt
-34332	lehnte
-34333	lehr
-34334	lehre
-34335	lehren
-34336	lehrer
-34341	lehrt
-34342	lehrte
-34343	leib
-34344	leiche
-34345	leicht
-34346	leid
-34351	leiden
-34352	leider
-34353	leidet
-34354	leier
-34355	leihe
-34356	leihen
-34361	leiht
-34362	leim
-34363	leimen
-34364	leimt
-34365	leine
-34366	leinen
-34411	leise
-34412	leiser
-34413	leiste
-34414	leit
-34415	leiten
-34416	leiter
-34421	leitet
-34422	lektor
-34423	lemma
-34424	lena
-34425	lende
-34426	lenken
-34431	lenker
-34432	lenkt
-34433	lenkte
-34434	lenz
-34435	lenzen
-34436	leon
-34441	lepra
-34442	lerche
-34443	lernen
-34444	lernend
-34445	lernst
-34446	lernt
-34451	lernte
-34452	lesart
-34453	lesbar
-34454	lesbe
-34455	lese
-34456	lesen
-34461	lesend
-34462	leser
-34463	lesung
-34464	lette
-34465	letzte
-34466	leucin
-34511	leute
-34512	level
-34513	lewis
-34514	lfd
-34515	lfg
-34516	libero
-34521	libido
-34522	libyen
-34523	libyer
-34524	licht
-34525	lid
-34526	lieb
-34531	liebe
-34532	lieben
-34533	lieber
-34534	liebes
-34535	liebt
-34536	lied
-34541	lief
-34542	liege
-34543	liegen
-34544	liegt
-34545	lieh
-34546	lies
-34551	liess
-34552	liest
-34553	lift
-34554	liga
-34555	likoer
-34556	lila
-34561	lille
-34562	lima
-34563	limbo
-34564	limes
-34565	linde
-34566	lineal
-34611	linear
-34612	linie
-34613	linke
-34614	links
-34615	linse
-34616	linux
-34621	lipid
-34622	lippe
-34623	liquor
-34624	lisboa
-34625	list
-34626	liste
-34631	listet
-34632	listig
-34633	litauer
-34634	liter
-34635	litze
-34636	livedo
-34641	lizenz
-34642	lkw
-34643	llkw
-34644	lmaa
-34645	lob
-34646	loben
-34651	lobend
-34652	lobt
-34653	lobte
-34654	loch
-34655	lochen
-34656	lochia
-34661	locke
-34662	locken
-34663	locker
-34664	lockere
-34665	lockt
-34666	lockte
-35111	loden
-35112	lodz
-35113	loesen
-35114	loeser
-35115	loess
-35116	loest
-35121	loeste
-35122	loeten
-35123	loetend
-35124	loewe
-35125	log
-35126	logge
-35131	loggia
-35132	logik
-35133	logo
-35134	lohn
-35135	lohnen
-35136	lohnt
-35141	loipe
-35142	lokal
-35143	lokale
-35144	lokum
-35145	lome
-35146	london
-35151	lore
-35152	los
-35153	losbar
-35154	lose
-35155	loser
-35156	losung
-35161	lot
-35162	loten
-35163	lotion
-35164	lotse
-35165	loyal
-35166	ltd
-35211	ltg
-35212	luanda
-35213	luchs
-35214	lud
-35215	luecke
-35216	lueg
-35221	luege
-35222	luegen
-35223	luffa
-35224	luft
-35225	luftig
-35226	luftweg
-35231	luftzug
-35232	lug
-35233	luke
-35234	lullt
-35235	lullte
-35236	lumbal
-35241	lumen
-35242	lunch
-35243	lunge
-35244	lungen
-35245	lunker
-35246	lupe
-35251	lupine
-35252	lurch
-35253	lusaka
-35254	lust
-35255	lustig
-35256	lustlos
-35261	luth
-35262	luv
-35263	luven
-35264	lux
-35265	luxus
-35266	lymphe
-35311	lyon
-35312	lyra
-35313	lyrik
-35314	lysin
-35315	lyzeum
-35316	maat
-35321	macau
-35322	mach
-35323	machen
-35324	macher
-35325	macho
-35326	machs
-35331	machst
-35332	macht
-35333	machte
-35334	macke
-35335	mad
-35336	made
-35341	madig
-35342	madrid
-35343	maedel
-35344	maehen
-35345	maeher
-35346	maehne
-35351	maeht
-35352	maehte
-35353	maekle
-35354	maennl
-35355	maerz
-35356	mafia
-35361	mag
-35362	magd
-35363	magen
-35364	mager
-35365	magere
-35366	magern
-35411	magert
-35412	magie
-35413	magnat
-35414	magnet
-35415	mahl
-35416	mahlen
-35421	mahlt
-35422	mahlte
-35423	mahnen
-35424	mahnt
-35425	mahnte
-35426	mai
-35431	maid
-35432	maine
-35433	mainz
-35434	mais
-35435	major
-35436	majuro
-35441	makel
-35442	makler
-35443	makro
-35444	makula
-35445	mal
-35446	malabo
-35451	malaie
-35452	malawi
-35453	male
-35454	malen
-35455	maler
-35456	mali
-35461	malier
-35462	malt
-35463	malta
-35464	malve
-35465	malz
-35466	malzig
-35511	mamey
-35512	mammon
-35513	mammut
-35514	mampf
-35515	man
-35516	manama
-35521	manaus
-35522	manche
-35523	mandat
-35524	mandel
-35525	manege
-35526	mangan
-35531	mangel
-35532	mango
-35533	manie
-35534	manila
-35535	manko
-35536	mann
-35541	mantel
-35542	manual
-35543	mappe
-35544	maputo
-35545	marder
-35546	mariae
-35551	marij
-35552	marine
-35553	mark
-35554	marke
-35555	marken
-35556	markig
-35561	markt
-35562	marmor
-35563	marone
-35564	mars
-35565	marsch
-35566	marter
-35611	masche
-35612	maser
-35613	masern
-35614	maseru
-35615	maske
-35616	mass
-35621	masse
-35622	massig
-35623	massiv
-35624	masst
-35625	mast
-35626	matrix
-35631	matsch
-35632	matt
-35633	matte
-35634	mauer
-35635	mauern
-35636	mauert
-35641	mauken
-35642	maul
-35643	maurer
-35644	maus
-35645	mauser
-35646	mauzi
-35651	max
-35652	mazare
-35653	mbh
-35654	mdb
-35655	mdl
-35656	medan
-35661	median
-35662	medley
-35663	meer
-35664	meere
-35665	meerut
-35666	mega
-36111	mehl
-36112	mehlig
-36113	mehr
-36114	meiden
-36115	meidet
-36116	meile
-36121	meiler
-36122	mein
-36123	meine
-36124	meinen
-36125	meiner
-36126	meint
-36131	meinte
-36132	meise
-36133	meist
-36134	mekka
-36135	mekong
-36136	melden
-36141	meldet
-36142	meldung
-36143	melken
-36144	melkt
-36145	melone
-36146	menge
-36151	mengt
-36152	mensa
-36153	mensch
-36154	mensur
-36155	mental
-36156	mentor
-36161	menue
-36162	mergel
-36163	merk
-36164	merken
-36165	merkte
-36166	merkur
-36211	merlin
-36212	merzt
-36213	mess
-36214	messbar
-36215	messe
-36216	messen
-36221	messer
-36222	met
-36223	metall
-36224	meteor
-36225	meter
-36226	methan
-36231	methyl
-36232	metier
-36233	metro
-36234	metrum
-36235	meute
-36236	mewtu
-36241	mexiko
-36242	mez
-36243	mfg
-36244	miami
-36245	miauen
-36246	miaut
-36251	miaute
-36252	mich
-36253	micro
-36254	mieden
-36255	mieder
-36256	mief
-36261	miene
-36262	mies
-36263	miete
-36264	mieten
-36265	mieter
-36266	mietze
-36311	mikron
-36312	milano
-36313	milbe
-36314	milch
-36315	mild
-36316	milde
-36321	milieu
-36322	miliz
-36323	mill
-36324	milz
-36325	mimend
-36326	mimose
-36331	mimt
-36332	mimte
-36333	min
-36334	minder
-36335	mine
-36336	minor
-36341	minsk
-36342	minus
-36343	minute
-36344	minze
-36345	mio
-36346	mir
-36351	misch
-36352	mischt
-36353	misst
-36354	mist
-36355	mistel
-36356	mit
-36361	mitose
-36362	mittag
-36363	mitte
-36364	mittel
-36365	mitten
-36366	mittig
-36411	mitw
-36412	mixer
-36413	mixt
-36414	mixte
-36415	mobil
-36416	mobile
-36421	mod
-36422	modal
-36423	mode
-36424	modell
-36425	modem
-36426	moder
-36431	modern
-36432	modrig
-36433	modul
-36434	modus
-36435	moebel
-36436	moebl
-36441	moegen
-36442	moehre
-36443	moel
-36444	moench
-36445	moderne
-36446	moewe
-36451	mofa
-36452	mogeln
-36453	mogelt
-36454	mogul
-36455	mol
-36456	moldau
-36461	mole
-36462	molke
-36463	moll
-36464	molle
-36465	mollig
-36466	mombi
-36511	moment
-36512	monaco
-36513	monat
-36514	mond
-36515	monom
-36516	monsun
-36521	montag
-36522	moor
-36523	moos
-36524	moosig
-36525	mop
-36526	moped
-36531	mops
-36532	moral
-36533	morast
-36534	morbid
-36535	mord
-36536	morden
-36541	morgen
-36542	moroni
-36543	mosaik
-36544	moskva
-36545	moslem
-36546	most
-36551	motel
-36552	motiv
-36553	motor
-36554	motte
-36555	motto
-36556	mousse
-36561	mrd
-36562	mtl
-36563	muecke
-36564	muede
-36565	muehe
-36566	muehle
-36611	muell
-36612	mueller
-36613	muendig
-36614	muenze
-36615	muerbe
-36616	muetze
-36621	muff
-36622	muffe
-36623	muffig
-36624	muhen
-36625	muhend
-36626	mulch
-36631	mulde
-36632	muldex
-36633	mull
-36634	mullah
-36635	multan
-36636	mumbai
-36641	mumie
-36642	mund
-36643	munden
-36644	mungo
-36645	munter
-36646	murmel
-36651	murren
-36652	mus
-36653	muscat
-36654	musisch
-36655	muse
-36656	museum
-36661	musik
-36662	musiker
-36663	muskat
-36664	muskel
-36665	muss
-36666	muster
-41111	mut
-41112	mutig
-41113	mutlos
-41114	mutter
-41115	mutti
-41116	mwst
-41121	myelom
-41122	mykose
-41123	myon
-41124	myopie
-41125	myosin
-41126	myrrhe
-41131	myrthe
-41132	mystik
-41133	mythos
-41134	nabe
-41135	nabel
-41136	nach
-41141	nachm
-41142	nacht
-41143	nachts
-41144	nacken
-41145	nackig
-41146	nackt
-41151	nackte
-41152	nadel
-41153	naehe
-41154	naehen
-41155	naeher
-41156	naeht
-41161	naehte
-41162	naeml
-41163	naesse
-41164	nagel
-41165	nageln
-41166	nagend
-41211	nagoya
-41212	nagpur
-41213	nagt
-41214	nah
-41215	nahe
-41216	nahen
-41221	nahend
-41222	nahezu
-41223	nahm
-41224	nahost
-41225	naht
-41226	naiv
-41231	name
-41232	namen
-41233	namens
-41234	nannte
-41235	nanu
-41236	naomi
-41241	napalm
-41242	napf
-41243	napoli
-41244	narbe
-41245	narbig
-41246	narr
-41251	nasa
-41252	nasal
-41253	nase
-41254	nashik
-41255	nass
-41256	nassau
-41261	nation
-41262	nato
-41263	natter
-41264	natur
-41265	nauru
-41266	nazi
-41311	nchf
-41312	nchr
-41313	nebel
-41314	neben
-41315	neblig
-41316	necken
-41321	neckt
-41322	neckte
-41323	neffe
-41324	neg
-41325	negativ
-41326	negieren
-41331	nehmen
-41332	neid
-41333	neider
-41334	neigen
-41335	neigt
-41336	neigte
-41341	nein
-41342	nektar
-41343	nelke
-41344	nennen
-41345	nenner
-41346	nennt
-41351	neodym
-41352	neogen
-41353	neon
-41354	nepal
-41355	neppt
-41356	neptun
-41361	nerv
-41362	nerven
-41363	nervig
-41364	nervt
-41365	nervte
-41366	nerz
-41411	nessel
-41412	nest
-41413	nett
-41414	netto
-41415	netz
-41416	neu
-41421	neubau
-41422	neue
-41423	neuer
-41424	neues
-41425	neun
-41426	neunte
-41431	neural
-41432	neuron
-41433	nevada
-41434	new
-41435	ngo
-41436	niamey
-41441	nicht
-41442	nichte
-41443	nichts
-41444	nickel
-41445	nicken
-41446	nie
-41451	nieder
-41452	niere
-41453	nieren
-41454	niesen
-41455	niest
-41456	niet
-41461	niete
-41462	nieten
-41463	niger
-41464	nigeria
-41465	nil
-41466	nimm
-41511	nimmt
-41512	ningbo
-41513	nippel
-41514	nippen
-41515	nippt
-41516	nische
-41521	nisten
-41522	nistet
-41523	nitrit
-41524	niue
-41525	nix
-41526	nixe
-41531	niznij
-41532	nizza
-41533	nmal
-41534	nobel
-41535	noch
-41536	nocke
-41541	nodoes
-41542	noetig
-41543	nomade
-41544	nonius
-41545	norden
-41546	norm
-41551	normal
-41552	north
-41553	not
-41554	notar
-41555	note
-41556	noten
-41561	notiz
-41562	notruf
-41563	nougat
-41564	noumea
-41565	npd
-41566	nudel
-41611	nudist
-41612	nuetze
-41613	nuetzt
-41614	nukleon
-41615	null
-41616	nullen
-41621	nummer
-41622	nun
-41623	nur
-41624	nuss
-41625	nussig
-41626	nut
-41631	nutria
-41632	nutte
-41633	nutzen
-41634	nutzer
-41635	nuuk
-41636	nylon
-41641	oas
-41642	oase
-41643	obb
-41644	obdach
-41645	oben
-41646	obenab
-41651	ober
-41652	obere
-41653	obige
-41654	objekt
-41655	oblag
-41656	oblate
-41661	oboe
-41662	obst
-41663	obwohl
-41664	ochse
-41665	ocker
-41666	ode
-42111	oder
-42112	odessa
-42113	odor
-42114	oecd
-42115	oede
-42116	oedem
-42121	oeffne
-42122	oelbad
-42123	oelen
-42124	oelend
-42125	oeler
-42126	oelig
-42131	oelt
-42132	oelte
-42133	oese
-42134	ofen
-42135	off
-42136	offen
-42141	offene
-42142	offiz
-42143	oft
-42144	ohchr
-42145	ohg
-42146	ohio
-42151	ohm
-42152	ohne
-42153	ohr
-42154	ohren
-42155	oktal
-42156	oktan
-42161	oktant
-42162	oktave
-42163	okular
-42164	oliv
-42165	olive
-42166	oma
-42211	oman
-42212	omen
-42213	omsk
-42214	onkel
-42215	onyx
-42216	opa
-42221	opal
-42222	opec
-42223	oper
-42224	opfer
-42225	opfern
-42226	opfert
-42231	opiat
-42232	opium
-42233	oprof
-42234	optik
-42235	option
-42236	opus
-42241	orakel
-42242	oral
-42243	orange
-42244	orden
-42245	ordnen
-42246	ordner
-42251	ordnet
-42252	oregon
-42253	organ
-42254	orgel
-42255	orgie
-42256	orient
-42261	orig
-42262	oring
-42263	orion
-42264	orkan
-42265	ort
-42266	orten
-42311	ortet
-42312	orth
-42313	ortung
-42314	osaka
-42315	oslo
-42316	osmium
-42321	osmose
-42322	ossi
-42323	ost
-42324	osten
-42325	ostern
-42326	ostsee
-42331	ottawa
-42332	otter
-42333	oval
-42334	ovipar
-42335	ovum
-42336	oxid
-42341	ozean
-42342	ozelot
-42343	ozon
-42344	paar
-42345	paaren
-42346	paarig
-42351	paart
-42352	paarte
-42353	pacht
-42354	pack
-42355	packen
-42356	packer
-42361	packt
-42362	packte
-42363	paddel
-42364	padr
-42365	paella
-42366	paffen
-42411	paffer
-42412	pafft
-42413	paffte
-42414	pago
-42415	pagode
-42416	paket
-42421	pakt
-42422	palast
-42423	palau
-42424	palme
-42425	pampa
-42426	pampe
-42431	panama
-42432	panda
-42433	panik
-42434	panne
-42435	pansen
-42436	panter
-42441	panzer
-42442	pap
-42443	papel
-42444	papier
-42445	pappe
-42446	pappel
-42451	papst
-42452	papua
-42453	parade
-42454	parese
-42455	pari
-42456	paris
-42461	park
-42462	parka
-42463	parken
-42464	parkt
-42465	parole
-42466	partei
-42511	partie
-42512	party
-42513	pascal
-42514	pass
-42515	passen
-42516	passiv
-42521	passt
-42522	passte
-42523	paste
-42524	pastor
-42525	pasty
-42526	patch
-42531	pate
-42532	patent
-42533	pater
-42534	patin
-42535	patna
-42536	patt
-42541	patzer
-42542	patzig
-42543	patzte
-42544	pauke
-42545	pauken
-42546	pause
-42551	pausen
-42552	pavian
-42553	pecan
-42554	pech
-42555	pedant
-42556	peer
-42561	pegel
-42562	pein
-42563	pelvin
-42564	pelz
-42565	pendel
-42566	peng
-42611	penne
-42612	penny
-42613	pensum
-42614	pepsin
-42615	peptid
-42616	per
-42621	perle
-42622	perm
-42623	pers
-42624	perser
-42625	person
-42626	perth
-42631	peru
-42632	pessar
-42633	pest
-42634	peter
-42635	petit
-42636	petrus
-42641	petzen
-42642	petzer
-42643	petzte
-42644	pfad
-42645	pfahl
-42646	pfand
-42651	pfanne
-42652	pfau
-42653	pfd
-42654	pfeife
-42655	pfeil
-42656	pferd
-42661	pfiff
-42662	pflege
-42663	pflegt
-42664	pflug
-42665	pfote
-42666	pfriem
-43111	pfropf
-43112	pfuhl
-43113	pfui
-43114	pfund
-43115	pfusch
-43116	phase
-43121	phiole
-43122	phlox
-43123	phnum
-43124	phobie
-43125	phon
-43126	phonem
-43131	phrase
-43132	phwert
-43133	physik
-43134	pickel
-43135	picken
-43136	piepen
-43141	piepst
-43142	pik
-43143	pikant
-43144	pilger
-43145	pille
-43146	pilot
-43151	pilz
-43152	piment
-43153	pimms
-43154	pin
-43155	pinie
-43156	pinkel
-43161	pinne
-43162	pinsel
-43163	piranha
-43164	pirat
-43165	pirol
-43166	pirsch
-43211	pissoir
-43212	piste
-43213	pizza
-43214	pkt
-43215	pkw
-43216	plaene
-43221	plage
-43222	plagen
-43223	plagiat
-43224	plagt
-43225	plagte
-43226	plakat
-43231	plan
-43232	plane
-43233	planen
-43234	planet
-43235	planke
-43236	plante
-43241	planum
-43242	plasma
-43243	platin
-43244	platt
-43245	platte
-43246	platz
-43251	platzt
-43252	pleite
-43253	plenum
-43254	plombe
-43255	plugin
-43256	plump
-43261	plumps
-43262	plus
-43263	pluto
-43264	ply
-43265	plz
-43266	pocke
-43311	pocken
-43312	podest
-43313	podium
-43314	poebel
-43315	poesie
-43316	poet
-43321	pogrom
-43322	pokal
-43323	pol
-43324	pole
-43325	polen
-43326	police
-43331	polka
-43332	pollen
-43333	poller
-43334	polo
-43335	polung
-43336	polyp
-43341	pomade
-43342	pomp
-43343	poncho
-43344	ponton
-43345	pony
-43346	pop
-43351	popel
-43352	pore
-43353	porno
-43354	poroes
-43355	porree
-43356	port
-43361	portal
-43362	porto
-43363	pose
-43364	posen
-43365	posse
-43366	possen
-43411	post
-43412	posten
-43413	poster
-43414	potent
-43415	potenz
-43416	ppa
-43421	pracht
-43422	praegt
-43423	praha
-43424	prahlt
-43425	praia
-43426	prall
-43431	prallt
-43432	praxis
-43433	preis
-43434	preise
-43435	preist
-43436	presse
-43441	presst
-43442	prima
-43443	prime
-43444	primel
-43445	prinz
-43446	prise
-43451	prisma
-43452	privat
-43453	pro
-43454	proa
-43455	probe
-43456	proben
-43461	probt
-43462	prof
-43463	profan
-43464	profi
-43465	profil
-43466	profit
-43511	prolet
-43512	prolin
-43513	prolog
-43514	prompt
-43515	propan
-43516	prosa
-43521	prosit
-43522	proton
-43523	protzt
-43524	pruede
-43525	prueft
-43526	prunk
-43531	psalm
-43532	pseudo
-43533	pst
-43534	psyche
-43535	ptose
-43536	pudel
-43541	puder
-43542	pudern
-43543	puebla
-43544	pueblo
-43545	pueree
-43546	puerto
-43551	pumuckl
-43552	puffen
-43553	puffer
-43554	pulk
-43555	puls
-43556	pult
-43561	pulver
-43562	pulvert
-43563	puma
-43564	pumpe
-43565	pumpen
-43566	pumps
-43611	pumpt
-43612	pumpte
-43613	pune
-43614	punkt
-43615	punkte
-43616	punt
-43621	puppe
-43622	purist
-43623	purpur
-43624	pusan
-43625	pustel
-43626	puter
-43631	putsch
-43632	putten
-43633	putz
-43634	putze
-43635	putzen
-43636	putzt
-43641	putzte
-43642	puzzle
-43643	pyogen
-43644	pyrit
-43645	python
-43646	qkm
-43651	quader
-43652	quaeket
-43653	quaekt
-43654	quaelt
-43655	quaken
-43656	quakt
-43661	quakte
-43662	qual
-43663	qualle
-43664	qualm
-43665	quark
-43666	quarte
-44111	quarz
-44112	quast
-44113	quecke
-44114	quelle
-44115	quer
-44116	querab
-44121	queren
-44122	quiche
-44123	quiekt
-44124	quillt
-44125	quinte
-44126	quirl
-44131	quito
-44132	quitt
-44133	quitte
-44134	quiz
-44135	quoll
-44136	quorum
-44141	quote
-44142	rabat
-44143	rabatt
-44144	rabatz
-44145	rabe
-44146	rabiat
-44151	rache
-44152	rachen
-44153	racker
-44154	rad
-44155	radar
-44156	radau
-44161	radelt
-44162	radial
-44163	radio
-44164	radium
-44165	radius
-44166	radler
-44211	radon
-44212	radweg
-44213	raecht
-44214	raet
-44215	raeude
-44216	raeumt
-44221	rage
-44222	ragen
-44223	ragout
-44224	ragt
-44225	rah
-44226	rahm
-44231	rahmen
-44232	raichu
-44233	rakel
-44234	rakete
-44235	rallye
-44236	ramme
-44241	rammen
-44242	rammler
-44243	rampe
-44244	ranch
-44245	rand
-44246	rang
-44251	range
-44252	rank
-44253	ranke
-44254	rannte
-44255	ranzen
-44256	ranzig
-44261	rapier
-44262	rappe
-44263	raps
-44264	rar
-44265	rasant
-44266	rasch
-44311	rasen
-44312	rasend
-44313	raser
-44314	raserei
-44315	raspel
-44316	rasse
-44321	rassel
-44322	rassig
-44323	rast
-44324	raste
-44325	rasten
-44326	raster
-44331	rasur
-44332	rat
-44333	rate
-44334	raten
-44335	ratend
-44336	ration
-44341	ratlos
-44342	ratsam
-44343	rattan
-44344	ratte
-44345	rau
-44346	raub
-44351	rauben
-44352	raubt
-44353	raubte
-44354	rauch
-44355	raucht
-44356	raufe
-44361	raufen
-44362	rauft
-44363	rauhe
-44364	rauher
-44365	raum
-44366	raupe
-44411	raupy
-44412	rausch
-44413	raut
-44414	raute
-44415	rayon
-44416	razzia
-44421	reale
-44422	reales
-44423	rebe
-44424	rebell
-44425	rechen
-44426	recht
-44431	rechte
-44432	rechts
-44433	recife
-44434	reck
-44435	red
-44436	rede
-44441	reden
-44442	redend
-44443	redet
-44444	redete
-44445	redner
-44446	reede
-44451	reeder
-44452	reell
-44453	reelle
-44454	reffen
-44455	reflex
-44456	reform
-44461	reg
-44462	regal
-44463	regbez
-44464	rege
-44465	regel
-44466	regeln
-44511	regelt
-44512	regen
-44513	regent
-44514	reggae
-44515	regie
-44516	regime
-44521	region
-44522	regler
-44523	regnen
-44524	regnet
-44525	regt
-44526	regte
-44531	regula
-44532	regung
-44533	reh
-44534	reiben
-44535	reibt
-44536	reich
-44541	reicht
-44542	reif
-44543	reife
-44544	reifen
-44545	reift
-44546	reihe
-44551	reiher
-44552	reiht
-44553	reihte
-44554	reihum
-44555	reim
-44556	reimt
-44561	rein
-44562	reine
-44563	reinen
-44564	reiner
-44565	reis
-44566	reise
-44611	reisen
-44612	reisst
-44613	reist
-44614	reiste
-44615	reiten
-44616	reiter
-44621	reitet
-44622	reiz
-44623	reizen
-44624	reizt
-44625	reizte
-44626	rekeln
-44631	rekelt
-44632	rekord
-44633	rekrut
-44634	rektal
-44635	rektor
-44636	rel
-44641	relais
-44642	relief
-44643	relikt
-44644	reling
-44645	remis
-44646	ren
-44651	renin
-44652	renn
-44653	rennen
-44654	renner
-44655	rennt
-44656	rente
-44661	rep
-44662	replik
-44663	repro
-44664	reptil
-44665	resp
-44666	rest
-45111	reste
-45112	retour
-45113	rettan
-45114	retten
-45115	retter
-45116	rettet
-45121	reue
-45122	reuig
-45123	reuse
-45124	revier
-45125	revue
-45126	rezept
-45131	rhein
-45132	rheuma
-45133	rhode
-45134	rias
-45135	rieb
-45136	riecht
-45141	rief
-45142	riefe
-45143	riege
-45144	riegel
-45145	riemen
-45146	ries
-45151	riese
-45152	riesen
-45153	riesig
-45154	riff
-45155	riffig
-45156	riga
-45161	rille
-45162	rind
-45163	rinde
-45164	rinden
-45165	rinder
-45166	ring
-45211	ringen
-45212	ringt
-45213	rinne
-45214	rinnen
-45215	rio
-45216	rippe
-45221	risiko
-45222	rispe
-45223	riss
-45224	risse
-45225	rissig
-45226	rist
-45231	ritt
-45232	ritter
-45233	ritual
-45234	ritus
-45235	ritz
-45236	ritze
-45241	ritzel
-45242	ritzen
-45243	ritzt
-45244	ritzte
-45245	rivale
-45246	robbe
-45251	robe
-45252	robust
-45253	rochen
-45254	rocker
-45255	rocky
-45256	rodeln
-45261	rodelt
-45262	roden
-45263	rodend
-45264	rodeo
-45265	rodet
-45266	rodete
-45311	rodung
-45312	roehre
-45313	roem
-45314	roemer
-45315	roete
-45316	roeten
-45321	roeter
-45322	roggen
-45323	roh
-45324	rohbau
-45325	rohe
-45326	rohoel
-45331	rohr
-45332	rohre
-45333	rolle
-45334	rollen
-45335	roller
-45336	rollo
-45341	rollt
-45342	rollte
-45343	rom
-45344	roma
-45345	roman
-45346	romeo
-45351	rondo
-45352	rosa
-45353	rose
-45354	roseau
-45355	rosig
-45356	rosine
-45361	ross
-45362	rost
-45363	rosten
-45364	rostet
-45365	rostig
-45366	rot
-45411	rote
-45412	roter
-45413	rotes
-45414	rotte
-45415	rottet
-45416	rotz
-45421	rotzig
-45422	rouge
-45423	route
-45424	router
-45425	rowdy
-45426	ruanda
-45431	rubel
-45432	rubin
-45433	rubrik
-45434	ruck
-45435	rucken
-45436	rudel
-45441	ruder
-45442	rudern
-45443	rudert
-45444	ruebe
-45445	rueck
-45446	rueckt
-45451	ruede
-45452	ruegen
-45453	ruegt
-45454	ruegte
-45455	ruehmt
-45456	ruehrt
-45461	ruest
-45462	ruesten
-45463	ruf
-45464	rufen
-45465	ruft
-45466	ruhe
-45511	ruhen
-45512	ruhend
-45513	ruhig
-45514	ruhige
-45515	ruhm
-45516	ruhr
-45521	ruht
-45522	ruhte
-45523	ruin
-45524	ruine
-45525	rum
-45526	rumba
-45531	rummel
-45532	rumpf
-45533	rund
-45534	runde
-45535	runden
-45536	rune
-45541	runzel
-45542	rupfen
-45543	rupft
-45544	rupie
-45545	ruptur
-45546	russ
-45551	russe
-45552	russig
-45553	rute
-45554	rutsch
-45555	saal
-45556	sabbat
-45561	sacha
-45562	sache
-45563	sachen
-45564	sachse
-45565	sachte
-45566	sack
-45611	sacken
-45612	sackt
-45613	sackte
-45614	sadist
-45615	saebel
-45616	saeen
-45621	saeend
-45622	saege
-45623	saegen
-45624	saeger
-45625	saegt
-45626	saemig
-45631	saet
-45632	saete
-45633	saeugt
-45634	saeule
-45635	saeumt
-45636	saeure
-45641	safari
-45642	safcon
-45643	saflor
-45644	safran
-45645	saft
-45646	saftig
-45651	saga
-45652	sage
-45653	sagen
-45654	sagend
-45655	sago
-45656	sagt
-45661	sagte
-45662	sah
-45663	sahnig
-45664	sahnt
-45665	saint
-45666	saite
-46111	sakrale
-46112	salami
-46113	salat
-46114	salbe
-46115	salbei
-46116	salbst
-46121	salbt
-46122	salbte
-46123	saldo
-46124	saline
-46125	salm
-46126	salon
-46131	salopp
-46132	salt
-46133	salto
-46134	salut
-46135	salve
-46136	salz
-46141	salzen
-46142	salzig
-46143	salzt
-46144	samara
-46145	sambia
-46146	same
-46151	samen
-46152	samoa
-46153	sampan
-46154	samt
-46155	samtig
-46156	san
-46161	sana
-46162	sand
-46163	sandan
-46164	sandig
-46165	sandte
-46166	sanft
-46211	sang
-46212	sank
-46213	sanken
-46214	sankt
-46215	santa
-46216	santo
-46221	santos
-46222	sao
-46223	saphir
-46224	sarg
-46225	sari
-46226	sarkom
-46231	sass
-46232	satan
-46233	satin
-46234	satire
-46235	satt
-46236	sattel
-46241	saturn
-46242	satyr
-46243	satz
-46244	satzbau
-46245	sau
-46246	sauber
-46251	saudi
-46252	sauer
-46253	saufen
-46254	sauft
-46255	saufte
-46256	saugen
-46261	saugt
-46262	saugte
-46263	saum
-46264	sauna
-46265	sausen
-46266	saust
-46311	sauste
-46312	sbb
-46313	scampi
-46314	schabe
-46315	schach
-46316	schade
-46321	schaem
-46322	schaf
-46323	schaft
-46324	schah
-46325	schal
-46326	schale
-46331	schall
-46332	schalt
-46333	scham
-46334	schar
-46335	scharf
-46336	schart
-46341	schatz
-46342	schau
-46343	schaum
-46344	schaut
-46345	scheck
-46346	schein
-46351	scheit
-46352	schell
-46353	schelm
-46354	schema
-46355	scher
-46356	schere
-46361	scherz
-46362	scheu
-46363	scheut
-46364	schick
-46365	schieb
-46366	schiebt
-46411	schief
-46412	schien
-46413	schiff
-46414	schild
-46415	schilf
-46416	schirm
-46421	schlaf
-46422	schlag
-46423	schlau
-46424	schluf
-46425	schlug
-46426	schmal
-46431	schmerz
-46432	schmus
-46433	schnee
-46434	schnur
-46435	schob
-46436	schock
-46441	schoen
-46442	schon
-46443	schopf
-46444	schor
-46445	schorf
-46446	schoss
-46451	schot
-46452	schott
-46453	schrei
-46454	schrie
-46455	schrot
-46456	schub
-46461	schuber
-46462	schuft
-46463	schuh
-46464	schuld
-46465	schule
-46466	schult
-46511	schund
-46512	schur
-46513	schurz
-46514	schuss
-46515	schutt
-46516	schutz
-46521	schwan
-46522	schwer
-46523	schwor
-46524	schwul
-46525	schwur
-46526	seance
-46531	sechs
-46532	sechse
-46533	sed
-46534	see
-46535	seebad
-46536	seele
-46541	seenot
-46542	seeweg
-46543	segel
-46544	segeln
-46545	segelnd
-46546	segelt
-46551	segen
-46552	segler
-46553	segnen
-46554	segnet
-46555	sehen
-46556	seher
-46561	sehne
-46562	sehnig
-46563	sehnt
-46564	sehnte
-46565	sehr
-46566	sei
-46611	seicht
-46612	seide
-46613	seiden
-46614	seidig
-46615	seien
-46616	seiend
-46621	seife
-46622	seifig
-46623	seift
-46624	seil
-46625	seiler
-46626	sein
-46631	seine
-46632	seinen
-46633	seiner
-46634	seis
-46635	seit
-46636	seitan
-46641	seite
-46642	seiten
-46643	seitig
-46644	sekr
-46645	sekret
-46646	sekt
-46651	sekte
-46652	sektor
-46653	selbe
-46654	selber
-46655	selbst
-46656	selen
-46661	selten
-46662	semit
-46663	senat
-46664	sendai
-46665	senden
-46666	sender
-51111	senf
-51112	sengen
-51113	senior
-51114	senke
-51115	senker
-51116	senne
-51121	senner
-51122	sense
-51123	sepsis
-51124	septum
-51125	seraph
-51126	serbe
-51131	serge
-51132	serie
-51133	serife
-51134	serin
-51135	sermon
-51136	serum
-51141	servo
-51142	sesam
-51143	sessel
-51144	set
-51145	setz
-51146	setze
-51151	setzei
-51152	setzen
-51153	setzer
-51154	seuche
-51155	sexist
-51156	sexte
-51161	shalom
-51162	shanty
-51163	sherpa
-51164	shimmy
-51165	shiraz
-51166	show
-51211	shunt
-51212	sich
-51213	sichel
-51214	sicher
-51215	sicht
-51216	sie
-51221	sieb
-51222	sieben
-51223	siebt
-51224	siebte
-51225	sieche
-51226	siecht
-51231	sieden
-51232	siedet
-51233	sieg
-51234	siegel
-51235	siegen
-51236	sieger
-51241	siegt
-51242	sieh
-51243	siehe
-51244	siehst
-51245	sieht
-51246	sierra
-51251	signal
-51252	signum
-51253	silbe
-51254	silben
-51255	silber
-51256	silur
-51261	sims
-51262	sind
-51263	singen
-51264	sinken
-51265	sinkt
-51266	sinn
-51311	sinnen
-51312	sinnes
-51313	sinnig
-51314	sinter
-51315	sinus
-51316	sioux
-51321	siphon
-51322	sippe
-51323	sirene
-51324	sirup
-51325	sisal
-51326	sitar
-51331	sitte
-51332	sitz
-51333	sitzen
-51334	sitzt
-51335	skala
-51336	skalar
-51341	skalp
-51342	skat
-51343	skeet
-51344	sketch
-51345	ski
-51346	skiff
-51351	skizze
-51352	sklave
-51353	sklera
-51354	skopje
-51355	skotom
-51356	slalom
-51361	slam
-51362	slang
-51363	slawe
-51364	slick
-51365	slip
-51366	slum
-51411	slums
-51412	smog
-51413	snapin
-51414	snob
-51415	sobald
-51416	socke
-51421	sockel
-51422	soda
-51423	soeben
-51424	sofa
-51425	sofern
-51426	sofia
-51431	sofort
-51432	sog
-51433	sogar
-51434	sohle
-51435	sohn
-51436	soiree
-51441	soja
-51442	solch
-51443	solche
-51444	sold
-51445	soldat
-51446	solide
-51451	solist
-51452	soll
-51453	sollen
-51454	sollst
-51455	sollte
-51456	solo
-51461	sommer
-51462	sonate
-51463	sonde
-51464	sonett
-51465	sonne
-51466	sonnen
-51511	sonnig
-51512	sonor
-51513	sonst
-51514	sooft
-51515	sopran
-51516	sorbet
-51521	sorge
-51522	sorgen
-51523	sorgt
-51524	sorgte
-51525	sorte
-51526	sosse
-51531	soul
-51532	south
-51533	soviel
-51534	sowas
-51535	soweit
-51536	sowie
-51541	sowjet
-51542	sowohl
-51543	sozial
-51544	spaet
-51545	spalt
-51546	spalte
-51551	spam
-51552	spange
-51553	spanne
-51554	spant
-51555	spar
-51556	sparen
-51561	sparer
-51562	spass
-51563	spat
-51564	spatel
-51565	spaten
-51566	spatz
-51611	spd
-51612	specht
-51613	speck
-51614	speer
-51615	speien
-51616	speise
-51621	spelz
-51622	spende
-51623	sperma
-51624	sperre
-51625	sphinx
-51626	spiegel
-51631	spiel
-51632	spiess
-51633	spike
-51634	spinal
-51635	spinat
-51636	spinne
-51641	spion
-51642	spital
-51643	spitz
-51644	spitze
-51645	spleen
-51646	splice
-51651	splint
-51652	splitt
-51653	spore
-51654	sport
-51655	spott
-51656	spr
-51661	spray
-51662	spreu
-51663	sprich
-51664	sprit
-51665	sproed
-51666	spross
-52111	spruch
-52112	sprung
-52113	spuck
-52114	spucke
-52115	spuele
-52116	spuk
-52121	spuken
-52122	spule
-52123	spund
-52124	spur
-52125	sputum
-52126	sri
-52131	ssid
-52132	staat
-52133	stab
-52134	stabil
-52135	stadt
-52136	stahl
-52141	staken
-52142	stall
-52143	stamm
-52144	stand
-52145	stange
-52146	stanze
-52151	stapel
-52152	star
-52153	stark
-52154	starr
-52155	start
-52156	stase
-52161	statik
-52162	statur
-52163	status
-52164	statut
-52165	stau
-52166	staub
-52211	stauen
-52212	stauer
-52213	staupe
-52214	std
-52215	steak
-52216	steck
-52221	steg
-52222	stehen
-52223	steher
-52224	steht
-52225	steif
-52226	steig
-52231	steile
-52232	stein
-52233	stele
-52234	stell
-52235	stelle
-52236	stellt
-52241	stellte
-52242	stelze
-52243	stent
-52244	steppe
-52245	steppen
-52246	steppt
-52251	steril
-52252	stern
-52253	stet
-52254	stetig
-52255	stets
-52256	steuer
-52261	stgb
-52262	stich
-52263	stieg
-52264	stiel
-52265	stier
-52266	stiess
-52311	stift
-52312	stifter
-52313	stigma
-52314	stil
-52315	still
-52316	stille
-52321	stillt
-52322	stimme
-52323	stimmt
-52324	stinkt
-52325	stippt
-52326	stirbt
-52331	stirn
-52332	stock
-52333	stockt
-52334	stoer
-52335	stoert
-52336	stoff
-52341	stola
-52342	stolz
-52343	stopft
-52344	stopp
-52345	storch
-52346	stoss
-52351	stout
-52352	str
-52353	straf
-52354	strafe
-52355	straff
-52356	straft
-52361	strahl
-52362	stramm
-52363	strand
-52364	strang
-52365	straps
-52366	strebe
-52411	strebt
-52412	streik
-52413	streit
-52414	streng
-52415	stress
-52416	streut
-52421	strich
-52422	strick
-52423	strikt
-52424	stritt
-52425	stroh
-52426	strom
-52431	stromer
-52432	struma
-52433	stvo
-52434	styren
-52435	sublim
-52436	subtil
-52441	suche
-52442	suchen
-52443	sucher
-52444	sucht
-52445	suchte
-52446	sudan
-52451	sudeln
-52452	sueden
-52453	suehne
-52454	suelze
-52455	suende
-52456	suess
-52461	suesse
-52462	suesst
-52463	suhle
-52464	suhlen
-52465	suite
-52466	sulfat
-52511	sulfid
-52512	sulfit
-52513	sultan
-52514	summe
-52515	summen
-52516	summer
-52521	summt
-52522	summte
-52523	sumo
-52524	sumpf
-52525	sund
-52526	sunnit
-52531	super
-52532	superb
-52533	suppe
-52534	surat
-52535	surren
-52536	surrt
-52541	suva
-52542	sydney
-52543	symbol
-52544	synode
-52545	syntax
-52546	syrer
-52551	syrien
-52552	system
-52553	systole
-52554	szene
-52555	tabak
-52556	tabor
-52561	tabriz
-52562	tabu
-52563	tabula
-52564	tadel
-52565	tadeln
-52566	tadelt
-52611	tadler
-52612	taefeln
-52613	taegu
-52614	taejon
-52615	taeter
-52616	taetig
-52621	tafel
-52622	taft
-52623	tag
-52624	tagaus
-52625	tage
-52626	tagen
-52631	tagend
-52632	tags
-52633	tagt
-52634	tagung
-52635	taifun
-52636	taille
-52641	tainan
-52642	taipei
-52643	taiwan
-52644	takel
-52645	takeln
-52646	takler
-52651	takt
-52652	taktik
-52653	tal
-52654	talent
-52655	talg
-52656	talgig
-52661	talk
-52662	talkum
-52663	talon
-52664	tampa
-52665	tampon
-52666	tamtam
-53111	tan
-53112	tand
-53113	tandem
-53114	tang
-53115	tango
-53116	tank
-53121	tanken
-53122	tanker
-53123	tankt
-53124	tankte
-53125	tanne
-53126	tannin
-53131	tantal
-53132	tante
-53133	tanz
-53134	tanzen
-53135	tanzt
-53136	tanzte
-53141	tapete
-53142	tapfer
-53143	tapsen
-53144	tapst
-53145	tara
-53146	tarawa
-53151	tardiv
-53152	tarif
-53153	tarnen
-53154	tarnte
-53155	tarock
-53156	tartan
-53161	tasche
-53162	tasse
-53163	tast
-53164	taste
-53165	tasten
-53166	taster
-53211	tastet
-53212	tat
-53213	taten
-53214	tatort
-53215	tau
-53216	taub
-53221	taube
-53222	tauben
-53223	taubsi
-53224	taucht
-53225	tauen
-53226	taufe
-53231	taufen
-53232	tauft
-53233	taufte
-53234	taugen
-53235	taumel
-53236	tausch
-53241	taut
-53242	taute
-53243	taxi
-53244	tbruch
-53245	teak
-53246	tee
-53251	teeei
-53252	teer
-53253	teeren
-53254	teflon
-53255	tehran
-53256	teich
-53261	teig
-53262	teil
-53263	teilen
-53264	teiler
-53265	teils
-53266	teilt
-53311	teilte
-53312	tel
-53313	teller
-53314	tellur
-53315	tempeh
-53316	tempel
-53321	tempo
-53322	tender
-53323	tenne
-53324	tennis
-53325	tenor
-53326	tensid
-53331	term
-53332	termin
-53333	terror
-53334	terz
-53335	test
-53336	testen
-53341	tester
-53342	testet
-53343	teuer
-53344	teufel
-53345	texas
-53346	text
-53351	texter
-53352	textil
-53353	tgl
-53354	thai
-53355	thanh
-53356	theist
-53361	theke
-53362	thema
-53363	themse
-53364	therme
-53365	these
-53366	thiamin
-53411	thread
-53412	thron
-53413	thront
-53414	thymus
-53415	tiara
-53416	tibet
-53421	tic
-53422	tick
-53423	ticken
-53424	tickt
-53425	tief
-53426	tiefe
-53431	tiefer
-53432	tiegel
-53433	tier
-53434	tiger
-53435	tigris
-53436	tilde
-53441	tilgen
-53442	tilgt
-53443	tilgte
-53444	timon
-53445	tinte
-53446	tipp
-53451	tippen
-53452	tippt
-53453	tippte
-53454	tirade
-53455	tirana
-53456	tirol
-53461	tisch
-53462	titan
-53463	titel
-53464	titer
-53465	titanic
-53466	titus
-53511	toben
-53512	tobend
-53513	tobt
-53514	tobte
-53515	tod
-53516	toddy
-53521	toerin
-53522	toeten
-53523	tofu
-53524	togo
-53525	tokelau
-53526	tokyo
-53531	toll
-53532	tolle
-53533	tollen
-53534	tollt
-53535	toluca
-53536	tomate
-53541	tombak
-53542	ton
-53543	tonarm
-53544	tonart
-53545	tonbad
-53546	tonga
-53551	tonika
-53552	tonlos
-53553	tonne
-53554	tonsur
-53555	tonus
-53556	topas
-53561	topf
-53562	tophus
-53563	topp
-53564	tor
-53565	torf
-53566	torino
-53611	torlos
-53612	torte
-53613	torweg
-53614	tory
-53615	tot
-53616	total
-53621	totale
-53622	tote
-53623	totem
-53624	totes
-53625	toupet
-53626	tour
-53631	toxin
-53632	trab
-53633	traber
-53634	tracht
-53635	traege
-53636	traegt
-53641	traene
-53642	traf
-53643	trage
-53644	tragen
-53645	tragik
-53646	trakt
-53651	trampt
-53652	trance
-53653	trank
-53654	trapez
-53655	trat
-53656	tratte
-53661	trau
-53662	traube
-53663	trauen
-53664	trauer
-53665	traufe
-53666	traum
-54111	trauma
-54112	traut
-54113	traute
-54114	treck
-54115	treib
-54116	treibt
-54121	tremor
-54122	trend
-54123	trennt
-54124	treppe
-54125	tresor
-54126	treten
-54131	treu
-54132	treue
-54133	treuer
-54134	trias
-54135	trick
-54136	trieb
-54141	trieft
-54142	triel
-54143	trifft
-54144	triftig
-54145	trikot
-54146	trimm
-54151	trinkt
-54152	trist
-54153	tritt
-54154	trog
-54155	troja
-54156	trollt
-54161	tropf
-54162	trost
-54163	trott
-54164	trotz
-54165	trotzt
-54166	truebe
-54211	truebt
-54212	trug
-54213	trumpf
-54214	truppe
-54215	tschad
-54216	tshirt
-54221	tuba
-54222	tube
-54223	tuch
-54224	tucuxi
-54225	tue
-54226	tuell
-54231	tuelle
-54232	tuer
-54233	tuerke
-54234	tuev
-54235	tugend
-54236	tulpe
-54241	tumor
-54242	tun
-54243	tundra
-54244	tuner
-54245	tunika
-54246	tunis
-54251	tunkt
-54252	tunkte
-54253	tunnel
-54254	tunken
-54255	tupel
-54256	turban
-54261	turbo
-54262	turf
-54263	turks
-54264	turm
-54265	turnen
-54266	turnt
-54311	turnte
-54312	turtok
-54313	tusche
-54314	tut
-54315	tuten
-54316	type
-54321	typhus
-54322	uawg
-54323	ubahn
-54324	uboot
-54325	udssr
-54326	uebel
-54331	ueben
-54332	uebend
-54333	ueber
-54334	uebers
-54335	ueble
-54336	uebrig
-54341	uebte
-54342	uebung
-54343	uefa
-54344	ueppig
-54345	ufa
-54346	ufer
-54351	uff
-54352	ufo
-54353	ufz
-54354	uganda
-54355	uhf
-54356	uhr
-54361	uhu
-54362	uie
-54363	ukw
-54364	ulcus
-54365	ulk
-54366	ulkig
-54411	ulkus
-54412	ulme
-54413	ulsan
-54414	ulster
-54415	ultimo
-54416	ultra
-54421	umarmt
-54422	umbau
-54423	umber
-54424	umfang
-54425	umfeld
-54426	umflog
-54431	umgab
-54432	umgeht
-54433	umgibt
-54434	umging
-54435	umhang
-54436	umin
-54441	umkehr
-54442	umlage
-54443	umlauf
-54444	umlaut
-54445	umluft
-54446	umriss
-54451	ums
-54452	umsatz
-54453	umweg
-54454	umwelt
-54455	umzu
-54456	umzug
-54461	unart
-54462	uncc
-54463	unccd
-54464	uncdf
-54465	uncrd
-54466	unctad
-54511	und
-54512	undank
-54513	undcp
-54514	undp
-54515	uneben
-54516	unecht
-54521	unedel
-54522	unehre
-54523	unep
-54524	unesco
-54525	unevoc
-54526	unfair
-54531	unfall
-54532	unfccc
-54533	unfein
-54534	unfpa
-54535	unfug
-54536	ungar
-54541	ungarn
-54542	ungern
-54543	ungute
-54544	unhchr
-54545	unhcr
-54546	unheil
-54551	uni
-54552	unicef
-54553	unicri
-54554	unidir
-54555	union
-54556	unklar
-54561	unklug
-54562	unlieb
-54563	unmut
-54564	unreif
-54565	unrein
-54566	unrisd
-54611	unruh
-54612	unruhe
-54613	unrwa
-54614	uns
-54615	unser
-54616	unsere
-54621	unsinn
-54622	unstet
-54623	untat
-54624	unten
-54625	unter
-54626	untere
-54631	unterm
-54632	untier
-54633	untreu
-54634	unu
-54635	unv
-54636	unwahr
-54641	unweit
-54642	unwohl
-54643	unzahl
-54644	unzart
-54645	unze
-54646	unzeit
-54651	upu
-54652	uralt
-54653	uran
-54654	uranus
-54655	urban
-54656	urform
-54661	urgenz
-54662	urin
-54663	urinal
-54664	urlaub
-54665	urlaut
-54666	urne
-55111	urteil
-55112	urumqi
-55113	urwald
-55114	urzeit
-55115	usa
-55116	usw
-55121	utah
-55122	utopia
-55123	utopie
-55124	vaduz
-55125	vaeter
-55126	vagal
-55131	vage
-55132	vakuum
-55133	valenz
-55134	valin
-55135	valuta
-55136	vamp
-55141	vampir
-55142	vasall
-55143	vase
-55144	vater
-55145	vati
-55146	vchr
-55151	veb
-55152	vektor
-55153	velar
-55154	velin
-55155	vene
-55156	venoes
-55161	ventil
-55162	venus
-55163	verb
-55164	verbal
-55165	verbat
-55166	verbot
-55211	verein
-55212	verf
-55213	vergab
-55214	verh
-55215	verl
-55216	verlag
-55221	verlor
-55222	verrat
-55223	verruf
-55224	vers
-55225	versatz
-55226	versen
-55231	vertan
-55232	verw
-55233	verzug
-55234	vespern
-55235	vform
-55236	vgl
-55241	vhf
-55242	vhs
-55243	video
-55244	vieh
-55245	viel
-55246	viele
-55251	vielen
-55252	vieles
-55253	vier
-55254	vierte
-55255	vikar
-55256	villa
-55261	vinyl
-55262	vip
-55263	viper
-55264	virus
-55265	visage
-55266	vision
-55311	visum
-55312	vlies
-55313	voegel
-55314	vogel
-55315	vogt
-55316	voile
-55321	volant
-55322	volk
-55323	voll
-55324	voller
-55325	volt
-55326	vom
-55331	von
-55332	voodoo
-55333	vor
-55334	vorab
-55335	voran
-55336	voraus
-55341	vorbau
-55342	vordem
-55343	vorfall
-55344	vorher
-55345	vorhin
-55346	vorhof
-55351	vorhut
-55352	vorige
-55353	vorlaut
-55354	vorm
-55355	vormals
-55356	vorn
-55361	vorne
-55362	vorrat
-55363	vors
-55364	vorweg
-55365	vorzug
-55366	vrumpf
-55411	vulkan
-55412	vulva
-55413	vuz
-55414	waage
-55415	wabe
-55416	wach
-55421	wache
-55422	wachen
-55423	wachs
-55424	wachst
-55425	wacht
-55426	wachte
-55431	wacker
-55432	wade
-55433	waegen
-55434	waeger
-55435	waehle
-55436	waehlt
-55441	waehnt
-55442	waelzt
-55443	waende
-55444	waere
-55445	waeren
-55446	waerme
-55451	waermt
-55452	waffe
-55453	waffel
-55454	waffen
-55455	wagen
-55456	waggon
-55461	wagnis
-55462	wahl
-55463	wahn
-55464	wal
-55465	wald
-55466	waldig
-55511	wales
-55512	walker
-55513	wall
-55514	wallis
-55515	waltz
-55516	walze
-55521	walzen
-55522	walzer
-55523	walzte
-55524	wamme
-55525	wand
-55526	wandel
-55531	wandte
-55532	wange
-55533	wanken
-55534	wankt
-55535	wann
-55536	wanze
-55541	wapiti
-55542	wappen
-55543	war
-55544	warb
-55545	ware
-55546	waren
-55551	warf
-55552	warm
-55553	warme
-55554	warnen
-55555	warnt
-55556	warnte
-55561	warpt
-55562	warte
-55563	warten
-55564	wartet
-55565	warum
-55566	warze
-55611	warzig
-55612	was
-55613	wasser
-55614	waten
-55615	watt
-55616	watte
-55621	wbl
-55622	wdhlg
-55623	weben
-55624	webend
-55625	weber
-55626	webt
-55631	webte
-55632	wecken
-55633	wecker
-55634	wedel
-55635	wedeln
-55636	weder
-55641	weg
-55642	wegen
-55643	weh
-55644	wehe
-55645	wehen
-55646	wehend
-55651	wehmut
-55652	wehr
-55653	wehrt
-55654	wehrte
-55655	weht
-55656	wehte
-55661	weich
-55662	weiche
-55663	weicht
-55664	weide
-55665	weiden
-55666	weidend
-56111	weidet
-56112	weih
-56113	weihe
-56114	weiht
-56115	weihte
-56116	weil
-56121	weile
-56122	wein
-56123	weinen
-56124	weint
-56125	weinte
-56126	weise
-56131	weisen
-56132	weiss
-56133	weisse
-56134	weist
-56135	weit
-56136	weite
-56141	weiter
-56142	weizen
-56143	welch
-56144	welche
-56145	welk
-56146	welken
-56151	welle
-56152	wellen
-56153	wellig
-56154	wellt
-56155	welpe
-56156	welt
-56161	wem
-56162	wen
-56163	wende
-56164	wenden
-56165	wendet
-56166	wendig
-56211	wenig
-56212	wenn
-56213	wer
-56214	werben
-56215	werber
-56216	werbt
-56221	werde
-56222	werden
-56223	werfen
-56224	werfer
-56225	werft
-56226	werg
-56231	werk
-56232	wermut
-56233	wert
-56234	wertet
-56235	wertig
-56236	wesen
-56241	wesir
-56242	wespe
-56243	wessen
-56244	wessi
-56245	west
-56246	weste
-56251	westen
-56252	wette
-56253	wetten
-56254	wetter
-56255	wettet
-56256	wetzen
-56261	wetzt
-56262	wetzte
-56263	wez
-56264	whg
-56265	whisky
-56266	whist
-56311	who
-56312	wich
-56313	wicht
-56314	wicke
-56315	widder
-56316	wider
-56321	widert
-56322	widmen
-56323	widmet
-56324	widrig
-56325	wie
-56326	wied
-56331	wieder
-56332	wiege
-56333	wiegen
-56334	wiegt
-56335	wiegte
-56336	wien
-56341	wiener
-56342	wies
-56343	wiese
-56344	wiesel
-56345	wigwam
-56346	wild
-56351	wilde
-56352	wildes
-56353	wille
-56354	willig
-56355	willst
-56356	wimmern
-56361	wimper
-56362	wind
-56363	winde
-56364	windei
-56365	windel
-56366	winden
-56411	windet
-56412	windig
-56413	wink
-56414	winkel
-56415	winken
-56416	winker
-56421	winkt
-56422	winkte
-56423	winsch
-56424	winter
-56425	winzig
-56426	wipfel
-56431	wippen
-56432	wippt
-56433	wippte
-56434	wir
-56435	wirbel
-56436	wirbt
-56441	wird
-56442	wirft
-56443	wirken
-56444	wirkt
-56445	wirkte
-56446	wirr
-56451	wirt
-56452	wirtin
-56453	wisch
-56454	wischt
-56455	wisent
-56456	wissen
-56461	witwe
-56462	witwer
-56463	witz
-56464	witzig
-56465	wobei
-56466	woche
-56511	wodka
-56512	woelbt
-56513	wofuer
-56514	wog
-56515	woge
-56516	wogen
-56521	wogend
-56522	wogt
-56523	wogte
-56524	woher
-56525	wohin
-56526	wohl
-56531	wohn
-56532	wohnen
-56533	wok
-56534	wolf
-56535	wolga
-56536	wolke
-56541	wolkig
-56542	wolle
-56543	wollen
-56544	wollig
-56545	wollte
-56546	womit
-56551	wonach
-56552	wonne
-56553	woran
-56554	worauf
-56555	woraus
-56556	worden
-56561	worin
-56562	world
-56563	wort
-56564	worte
-56565	worum
-56566	wovon
-56611	wovor
-56612	wozu
-56613	wrack
-56614	wringt
-56615	wsa
-56616	wto
-56621	wucher
-56622	wuchs
-56623	wucht
-56624	wuehler
-56625	wuerde
-56626	wuerger
-56631	wuergt
-56632	wuerze
-56633	wuerzen
-56634	wuest
-56635	wueste
-56636	wuhan
-56641	wulst
-56642	wund
-56643	wunde
-56644	wunder
-56645	wunsch
-56646	wurde
-56651	wurden
-56652	wurf
-56653	wurm
-56654	wurmig
-56655	wurzel
-56656	wusch
-56661	wusste
-56662	wut
-56663	wuxi
-56664	xbeine
-56665	xenon
-56666	xfache
-61111	xian
-61112	xmal
-61113	xuzhou
-61114	yang
-61115	yangon
-61116	yard
-61121	yawl
-61122	yen
-61123	yeti
-61124	yoga
-61125	yucca
-61126	yuppie
-61131	zacke
-61132	zacken
-61133	zackig
-61134	zaeh
-61135	zaeher
-61136	zaehl
-61141	zaehlt
-61142	zaehmt
-61143	zaehne
-61144	zaeunt
-61145	zagreb
-61146	zahl
-61151	zahlen
-61152	zahlt
-61153	zahlte
-61154	zahm
-61155	zahn
-61156	zahnen
-61161	zahnt
-61162	zahnte
-61163	zander
-61164	zange
-61165	zank
-61166	zanken
-61211	zankt
-61212	zankte
-61213	zapfen
-61214	zappen
-61215	zar
-61216	zarge
-61221	zarin
-61222	zart
-61223	zaster
-61224	zauber
-61225	zaum
-61226	zaun
-61231	zausen
-61232	zaust
-61233	zauste
-61234	zdf
-61235	zebra
-61236	zebu
-61241	zechen
-61242	zecher
-61243	zecht
-61244	zechte
-61245	zecke
-61246	zeder
-61251	zehe
-61252	zehn
-61253	zehner
-61254	zehnte
-61255	zehren
-61256	zehrt
-61261	zeigen
-61262	zeiger
-61263	zeigt
-61264	zeihen
-61265	zeile
-61266	zeilen
-61311	zeit
-61312	zeitgen
-61313	zelle
-61314	zelot
-61315	zelt
-61316	zelten
-61321	zelter
-61322	zement
-61323	zenit
-61324	zensur
-61325	zephir
-61326	zepter
-61331	zerren
-61332	zerrt
-61333	zerrte
-61334	zettel
-61335	zeug
-61336	zeuge
-61341	zeugen
-61342	zeugt
-61343	zeugte
-61344	zhd
-61345	zibo
-61346	zich
-61351	zickzack
-61352	zilk
-61353	ziege
-61354	ziegel
-61355	zieh
-61356	ziehe
-61361	ziehen
-61362	zieht
-61363	ziel
-61364	zielen
-61365	zielt
-61366	ziemen
-61411	ziemt
-61412	zier
-61413	zierde
-61414	ziert
-61415	ziffer
-61416	zikade
-61421	zimmer
-61422	zimt
-61423	zinder
-61424	zink
-61425	zinke
-61426	zinken
-61431	zinn
-61432	zinnen
-61433	zinnie
-61434	zins
-61435	zirkon
-61436	zirkus
-61441	zirpen
-61442	zischt
-61443	zitat
-61444	zither
-61445	zitrat
-61446	zitrus
-61451	zitze
-61452	zivil
-61453	zobel
-61454	zoelle
-61455	zofe
-61456	zog
-61461	zogen
-61462	zoll
-61463	zombie
-61464	zonal
-61465	zone
-61466	zonen
-61511	zoomt
-61512	zoomte
-61513	zopf
-61514	zorn
-61515	zornig
-61516	zotte
-61521	zottig
-61522	ztg
-61523	ztschr
-61524	zucht
-61525	zucken
-61526	zucker
-61531	zuckt
-61532	zuckte
-61533	zudem
-61534	zueckt
-61535	zuege
-61536	zuegel
-61541	zuernt
-61542	zufall
-61543	zug
-61544	zugabe
-61545	zugang
-61546	zugig
-61551	zulage
-61552	zulauf
-61553	zuluft
-61554	zum
-61555	zumal
-61556	zuname
-61561	zunder
-61562	zunft
-61563	zunge
-61564	zupfen
-61565	zupft
-61566	zupfte
-61611	zur
-61612	zurren
-61613	zurrt
-61614	zuruf
-61615	zus
-61616	zusage
-61621	zusatz
-61622	zutat
-61623	zuvor
-61624	zwang
-61625	zwangs
-61626	zwar
-61631	zweck
-61632	zwecke
-61633	zwecks
-61634	zwei
-61635	zweier
-61636	zweig
-61641	zweite
-61642	zwerg
-61643	zwingt
-61644	zwirn
-61645	zwirnt
-61646	zwist
-61651	zwoelf
-61652	zyanat
-61653	zyanid
-61654	zygote
-61655	zyklon
-61656	zyklop
-61661	zyklus
-61662	zypern
-61663	zyste
-61664	zzgl
+aachen
+aal
+aao
+aas
+aasig
+abart
+abb
+abbau
+abbe
+abbild
+abdomen
+abend
+aber
+abf
+abfall
+abflug
+abfuhr
+abgabe
+abgang
+abgas
+abgott
+abguss
+abhang
+abitur
+abk
+abkehr
+abladen
+ablage
+ablass
+ablauf
+ablaut
+abluft
+abnorm
+abo
+abraum
+abrede
+abrieb
+abriss
+abruf
+abrupt
+abs
+absage
+absatz
+abschn
+absenz
+absurd
+abt
+abtei
+abteil
+abtun
+abu
+abuja
+abweg
+abwehr
+abwurf
+abzgl
+abzug
+accra
+aceton
+ach
+achat
+achse
+achsel
+acht
+achte
+achten
+achtet
+acker
+acryl
+adac
+adagio
+adana
+addier
+ade
+adel
+adeln
+adelnd
+adelt
+adelte
+adenom
+ader
+adis
+adisch
+adj
+adler
+adlig
+adlige
+adm
+adn
+adr
+adrett
+adria
+adv
+advent
+adverb
+aegide
+aehre
+aelter
+aeon
+aerger
+aermel
+aerob
+aesche
+aether
+aethyl
+aetna
+aetzen
+affe
+affig
+affin
+afrika
+after
+agar
+agent
+agiert
+agio
+agonie
+agra
+agrar
+aha
+ahle
+ahmt
+ahmte
+ahn
+ahndet
+ahndete
+ahnen
+ahnend
+ahnt
+ahnte
+ahnung
+ahorn
+aids
+airbus
+aka
+akazie
+akelei
+akkord
+akne
+akt
+akte
+akten
+akteur
+aktie
+aktien
+aktion
+aktiv
+aktiva
+aktive
+aktor
+akut
+akutes
+akzent
+akzept
+alanin
+alarm
+alaska
+alaun
+albern
+albert
+albino
+album
+alge
+alias
+alibi
+alkali
+all
+alle
+allee
+allein
+allel
+allem
+allen
+alles
+allg
+alltag
+allzu
+alm
+alma
+aloe
+alofi
+alp
+alpen
+alpin
+alraun
+als
+alse
+also
+alt
+altai
+altar
+altbau
+alte
+alter
+altern
+altert
+altes
+altoel
+ama
+amateur
+amber
+amboss
+ambra
+ameise
+ami
+amman
+amme
+amnion
+amoebe
+amok
+amoll
+amor
+amorph
+ampel
+amsel
+amt
+amtl
+amur
+anabol
+anal
+analog
+anatom
+anbau
+anbei
+andere
+anders
+andora
+anemone
+anfall
+anfang
+anflug
+anfuhr
+angabe
+angara
+angel
+angeln
+anger
+angina
+angler
+angola
+angst
+anguss
+anh
+anhand
+anhang
+anis
+ank
+ankara
+ankauf
+anker
+ankert
+ankunft
+anl
+anlage
+anlass
+anlauf
+anlaut
+anm
+anmut
+annona
+anode
+anomal
+anomie
+anonym
+anorak
+anrede
+anreiz
+anruf
+ans
+ansage
+ansatz
+ansaug
+anschl
+anshan
+anteil
+anti
+antik
+antrag
+antw
+anurie
+anwalt
+anzahl
+anzug
+aorta
+apart
+apfel
+aphel
+apia
+apnoe
+apo
+app
+appell
+april
+aquana
+araber
+arbeit
+arbok
+archiv
+ard
+arena
+arglos
+argon
+arh
+arie
+arier
+arkade
+arktis
+arm
+armada
+arme
+armee
+armer
+armut
+aroma
+arrest
+arsch
+arsen
+art
+artig
+artist
+aruba
+arznei
+arzt
+asbest
+asche
+aschig
+asiat
+asien
+askese
+asket
+asmara
+aspekt
+aspik
+ass
+ast
+astana
+astat
+aster
+asthma
+astral
+asyl
+ataxie
+atem
+athlet
+atlas
+atm
+atmen
+atmend
+atmet
+atmete
+atmung
+atoll
+atom
+atomar
+atonie
+atopie
+atrial
+atrium
+attest
+auch
+aue
+auf
+aufbau
+aufl
+aufruf
+aufs
+aufzug
+auge
+augen
+august
+aula
+aura
+aural
+aus
+ausbau
+aushub
+ausruf
+aussen
+ausser
+auster
+austin
+ausweg
+auszug
+autark
+auto
+autogen
+autor
+autsch
+avarua
+avis
+axial
+axiom
+axt
+azalee
+azetat
+azeton
+azimut
+azoren
+azteke
+baby
+bach
+back
+backe
+backen
+bad
+baden
+badet
+badete
+baehen
+baeht
+baehte
+baer
+baerin
+baff
+bafoeg
+bagel
+bagger
+bahn
+bahre
+baku
+bald
+baldig
+balg
+balkan
+balken
+balkon
+ball
+ballade
+ballen
+ballig
+ballon
+ballt
+balsa
+balsam
+bamako
+bambus
+banal
+band
+bandar
+bande
+bandit
+bange
+bangen
+bangt
+bangte
+bangui
+banjo
+banjul
+bank
+banner
+baotou
+bar
+barbar
+barde
+barium
+bark
+barock
+baron
+barren
+barsch
+bart
+baryon
+basal
+basalt
+basar
+basic
+basis
+baske
+bass
+bast
+bastei
+bat
+baten
+batik
+batist
+bau
+bauamt
+bauart
+bauch
+baud
+baude
+bauen
+bauend
+bauer
+baum
+bausch
+baut
+baute
+bauxit
+bauzaun
+bayer
+bayern
+bayrut
+bde
+beamte
+bebaut
+bebt
+bebte
+becher
+becken
+bedarf
+bedenk
+beehrt
+beeil
+beeilt
+beere
+beet
+befahl
+befehl
+befiel
+befugt
+befuhr
+befund
+begab
+begabt
+begann
+begebe
+begeht
+begibt
+beging
+beginn
+begoss
+begrub
+beguss
+behalt
+behaut
+behebt
+behext
+bei
+beide
+beige
+beil
+beim
+bein
+beinah
+beinig
+beirat
+beirrt
+beirut
+beisst
+beiwort
+bejaht
+bekam
+belag
+belaubt
+belebt
+beleg
+belegt
+belem
+belieh
+belize
+bellen
+beller
+bellt
+bellte
+belo
+belud
+bemass
+benahm
+bengel
+benin
+benzin
+benzol
+bequem
+beraet
+bereit
+berg
+bergab
+bergan
+bergen
+berief
+berlin
+berme
+bern
+beruf
+beruft
+beruht
+beryll
+bes
+besagt
+besann
+besass
+besatz
+besen
+besitz
+besser
+beste
+bester
+bestnr
+besuch
+beten
+betend
+beton
+betont
+betr
+betraf
+betrag
+betrat
+betrog
+betrug
+bett
+betten
+bettet
+beugen
+beugt
+beugte
+beule
+beulen
+beute
+beutel
+beutet
+bev
+bevor
+bewarb
+bewegt
+beweis
+bez
+bezirk
+bezog
+bezug
+bgb
+bgh
+bhf
+bhopal
+bhutan
+bias
+bibel
+biber
+bibor
+bieder
+biegen
+biegt
+biene
+bier
+biest
+bieten
+bieter
+bigott
+bikini
+bilanz
+bilbao
+bild
+bilden
+bilder
+bildet
+billig
+bimsen
+bin
+binaer
+binde
+binden
+binder
+bindet
+bingo
+binom
+binse
+biogas
+bionik
+biopsie
+bios
+bip
+birgt
+birke
+birne
+bis
+bisam
+bisher
+bismut
+biss
+bissau
+bissen
+bissig
+bit
+bitmap
+bitte
+bitten
+bitter
+bittet
+biwak
+bizarr
+bizeps
+blaeht
+blaest
+blaeue
+blank
+blase
+blasen
+blasig
+blass
+blatt
+blau
+blauer
+blaues
+blazer
+blech
+blei
+bleibt
+bleich
+blende
+blick
+blind
+blinde
+blitz
+blitza
+block
+bloed
+blond
+blonde
+blosse
+bluete
+bluff
+blume
+blumen
+bluse
+blut
+bluten
+bluter
+blutig
+bluts
+blz
+bmw
+bnd
+boa
+bob
+bochum
+bock
+bocken
+bodden
+boden
+boehme
+boeig
+boerse
+boese
+bogen
+bogota
+bohle
+bohne
+bohnen
+bohren
+bohrer
+boje
+bolero
+bolzen
+bombe
+bomber
+bonbon
+bongo
+bonn
+bonus
+boom
+boot
+bor
+borax
+bord
+bordell
+boskop
+boss
+boston
+bote
+bowle
+box
+boxen
+boxer
+bozen
+brand
+braten
+brauch
+braue
+braun
+braut
+bravo
+brd
+brei
+breiig
+breite
+bremen
+bremse
+brett
+brezel
+brie
+brief
+brigg
+brille
+brise
+brit
+brite
+brokat
+brom
+bronze
+brot
+brt
+bruch
+bruder
+bruehe
+bruesk
+brunei
+brunst
+brust
+brut
+brutal
+brutei
+brutto
+bse
+bsp
+bub
+bube
+buccal
+buch
+buche
+buchen
+buchse
+bucht
+buckel
+bude
+buegel
+buehne
+buenos
+buerge
+buero
+bueste
+buett
+buette
+bug
+buhlen
+bukett
+bulle
+bulloes
+bump
+bums
+bund
+bunker
+bunny
+bunt
+bursa
+bus
+busch
+busen
+buss
+busse
+butler
+butter
+butzen
+bypass
+byte
+bzgl
+bzw
+cabrio
+cache
+cad
+cafe
+cai
+cali
+cam
+cand
+carrel
+cayenne
+ccitt
+cdrom
+cdu
+cebu
+cerium
+chance
+chaos
+charge
+chef
+chemie
+chile
+chili
+china
+chip
+chips
+chlor
+chor
+choral
+chr
+christ
+chrom
+chuzpe
+chylus
+cim
+citrin
+ciudad
+claim
+clever
+clique
+clogs
+cmos
+cnc
+cobalt
+cochin
+code
+codec
+comic
+cook
+cookie
+costa
+cote
+coup
+coupon
+cousin
+crash
+csu
+curium
+cursor
+cvjm
+dabei
+dach
+dachs
+dachte
+dackel
+daemmt
+daemon
+daene
+dafuer
+dag
+daheim
+daher
+dahlie
+dakar
+dalian
+dallas
+damals
+damast
+dame
+damen
+damit
+damm
+dampf
+dampft
+danach
+dandy
+dank
+danke
+danken
+dankt
+dann
+dar
+daran
+darauf
+daraus
+darf
+darin
+darm
+darum
+das
+dasein
+dass
+datei
+daten
+dativ
+dato
+datong
+dattel
+datum
+dauer
+dauern
+dauert
+daumen
+daune
+davao
+davon
+davor
+dazu
+ddr
+debuet
+deck
+decke
+deckel
+decken
+deckt
+degen
+dehnen
+dehnt
+dehnte
+deich
+dein
+deine
+deist
+dekade
+dekan
+dekor
+dekret
+delfin
+delikt
+delle
+dem
+demut
+den
+denise
+denk
+denken
+denker
+denkt
+denn
+dental
+denver
+deo
+depot
+depp
+der
+derart
+derb
+derber
+deren
+des
+despot
+dessen
+dessert
+desto
+detail
+deuten
+deutet
+devon
+devot
+dezent
+dfb
+dgb
+dgl
+dgr
+dhaka
+dia
+diadem
+diaet
+diag
+diakon
+dialog
+dich
+dicht
+dichte
+dick
+dicke
+dicker
+dickes
+die
+dieb
+diele
+diener
+dienst
+dient
+diente
+dies
+diese
+diesel
+dieser
+diffus
+diktat
+dilemma
+dill
+dimmer
+din
+ding
+dingen
+dinghy
+dinkel
+diode
+dioxyd
+dip
+dipl
+diplom
+dipol
+dir
+direkt
+dirndl
+dirne
+diskus
+distal
+distel
+dito
+diva
+divers
+diwan
+djh
+dkp
+doch
+docht
+dock
+docke
+doebel
+doesen
+doest
+doeste
+dogge
+doha
+dohle
+doktor
+dolch
+dolde
+dollar
+dom
+domino
+don
+donau
+donner
+doof
+dopen
+doping
+doppel
+dorf
+dorn
+dornig
+dorsal
+dorsch
+dort
+dose
+dosis
+dotter
+douala
+double
+doz
+dozent
+dozer
+dpa
+drache
+draht
+drall
+dralle
+drama
+drang
+dreck
+dreckt
+drehen
+dreher
+drehst
+dreht
+drehte
+drei
+dreist
+drell
+drg
+drift
+drill
+drillt
+drin
+dringt
+dritte
+droben
+droge
+drohen
+dronte
+drops
+drosch
+druck
+druckt
+druese
+druse
+dtzd
+dublin
+ducken
+duckt
+duckte
+duebel
+duell
+duene
+duengt
+duenn
+duenne
+duerr
+duerre
+duese
+duester
+duett
+duft
+duften
+duftet
+duftig
+dulden
+duldet
+dumas
+dumdum
+dumm
+dumme
+dummer
+dummes
+dumpf
+dung
+dunkel
+dunst
+duo
+duplex
+dur
+durban
+durch
+dusche
+dussel
+dutt
+dynamo
+dysurie
+ebbe
+ebd
+eben
+ebene
+ebenso
+eber
+ebnen
+ebonit
+echo
+echt
+echter
+echtes
+ecke
+eckig
+eckige
+eckt
+ecma
+edamer
+edel
+editor
+edv
+edwin
+efeu
+effekt
+efre
+efta
+egge
+eggend
+egoist
+ehe
+ehedem
+ehem
+eher
+ehern
+ehrbar
+ehre
+ehren
+ehrend
+ehrlos
+ehrt
+ehrte
+ehrung
+eibe
+eiche
+eichel
+eichen
+eid
+eidam
+eides
+eidg
+eier
+eifer
+eifern
+eifert
+eifrig
+eigelb
+eigen
+eigene
+eignet
+eigtl
+eile
+eilen
+eilend
+eilig
+eilzug
+eimer
+ein
+einbau
+einbit
+eine
+einehe
+einem
+einen
+einer
+eines
+einfach
+einheit
+einher
+einige
+einmal
+einoede
+einrad
+eins
+einsam
+einser
+einst
+einweg
+einzeln
+einzig
+einzug
+eis
+eisen
+eisern
+eisig
+eistee
+eitel
+eiter
+eitern
+eitert
+eitrig
+ekd
+ekel
+ekelnd
+ekelt
+ekelte
+ekg
+eklig
+ekzem
+elan
+elbe
+elch
+elend
+elf
+elfe
+elfte
+elite
+elle
+elsass
+elster
+eltern
+email
+emb
+emblem
+embryo
+emesis
+emirat
+empor
+empore
+empyem
+emsig
+end
+ende
+enden
+endend
+endet
+endlos
+endung
+eng
+engel
+enger
+enges
+engl
+engt
+engte
+enkel
+enorm
+ente
+enthob
+entity
+entkam
+entspr
+entzog
+entzug
+enzian
+enzym
+eozaen
+epilog
+episch
+epoche
+eponym
+epos
+erb
+erbat
+erbaut
+erbe
+erbend
+erbin
+erbium
+erbot
+erbse
+erbt
+erde
+erden
+erdgas
+erdig
+erdoel
+ereilt
+erfand
+erfolg
+erfuhr
+erfurt
+ergab
+ergeben
+ergibt
+erguss
+erhalt
+erhebt
+erhob
+erholen
+erholt
+erker
+erlass
+erle
+erlebt
+erlegt
+erloes
+erneut
+ernst
+ernte
+ernten
+erntet
+erogen
+erotik
+errang
+erregt
+ersann
+ersatz
+erw
+erwarb
+erwerb
+erz
+esa
+esche
+esel
+espe
+ess
+essay
+essbar
+essen
+essenz
+esser
+essig
+este
+eszb
+etage
+etappe
+etat
+ethanol
+ethik
+etuede
+etui
+etwa
+etwaig
+etwas
+etws
+euer
+eugh
+eule
+eunuch
+euro
+europa
+euter
+evoli
+evtl
+ewenke
+ewi
+ewig
+ewige
+ews
+ewwu
+exakt
+examen
+exil
+exkl
+exkurs
+expl
+export
+extern
+extra
+extrem
+exzess
+ezb
+fabel
+fabrik
+fach
+fackel
+fad
+fade
+faden
+faehig
+faehre
+faehrt
+faekal
+faelle
+faellt
+faengt
+faerbt
+faerse
+fagott
+fahl
+fahne
+fahren
+fahrer
+fahrig
+fahrt
+faible
+fair
+fakir
+fakt
+fakten
+faktor
+falb
+falbel
+falke
+fall
+falle
+fallen
+falls
+falte
+falten
+falter
+faltet
+faltig
+falz
+falzen
+falzt
+fam
+famos
+fan
+fanal
+fand
+fang
+fangen
+fao
+farad
+farbe
+farbig
+farm
+farmer
+farn
+fasan
+fascia
+fase
+faseln
+faser
+fasert
+fass
+fasse
+fassen
+fasst
+fasste
+fast
+fasten
+fastet
+fatal
+faul
+faulen
+fauler
+faulig
+faulte
+faun
+fauna
+faust
+fax
+faxe
+fazit
+fbi
+fddi
+fdgb
+fdp
+feder
+fee
+fegen
+fegt
+fegten
+fehde
+fehl
+fehlen
+fehler
+fehlt
+fehlte
+feier
+feiern
+feiert
+feige
+feile
+feilen
+fein
+feind
+feine
+feiner
+feines
+feld
+felge
+fell
+fels
+felsig
+fender
+ferien
+ferkel
+fern
+ferne
+ferner
+ferrat
+ferrit
+ferse
+fertig
+fesch
+fessel
+fest
+feste
+fester
+festes
+festtag
+fete
+feten
+fett
+fette
+fetten
+fettig
+fetzen
+feucht
+feudal
+feuer
+feuern
+feurig
+fiasko
+fibel
+fichte
+ficht
+ficus
+fidel
+fieber
+fiedel
+fiedelt
+fiel
+fies
+fig
+figur
+fiktiv
+file
+filet
+film
+filme
+filmen
+filmte
+filter
+filz
+filzen
+filzig
+fimmel
+finale
+finanz
+finden
+finder
+findet
+findig
+fing
+finger
+finite
+fink
+finne
+finte
+firma
+firmen
+fisch
+fische
+fischt
+fiskus
+fistel
+fitis
+fixen
+fixend
+fixer
+fixt
+fixte
+fixum
+fjord
+flach
+flache
+flachs
+flag
+flagge
+flak
+flakon
+flame
+flamme
+flanke
+flansch
+flau
+flaum
+flaute
+fleck
+flegel
+flehen
+fleht
+flehte
+fleiss
+flickt
+flieder
+fliege
+fliegt
+flink
+flinte
+flirt
+flocke
+floete
+floez
+floh
+flora
+floss
+flosse
+flott
+flotte
+fluch
+flucht
+fluege
+fluenz
+flug
+flugs
+fluke
+flunke
+fluor
+flur
+flusen
+fluss
+flut
+fock
+foehn
+foehre
+foetal
+foetus
+fohlen
+fokal
+fokus
+folg
+folge
+folgen
+folger
+folgt
+folgte
+folie
+folter
+fond
+fondue
+foppen
+foppt
+foppte
+form
+formal
+format
+formel
+formen
+former
+formt
+formte
+forsch
+fort
+fortan
+forts
+fortsf
+forum
+fossil
+fotogen
+fracht
+frack
+fraese
+fraest
+frag
+frage
+fragen
+frager
+fragt
+fragte
+franko
+franse
+frass
+fratze
+frau
+frauen
+freak
+frech
+frei
+freie
+freier
+freies
+freite
+fremd
+fremde
+fresko
+freu
+freude
+freund
+freut
+freute
+frevel
+friede
+friert
+fries
+frisch
+frisst
+frist
+frisur
+fritte
+frivol
+frl
+froh
+frohe
+fromm
+fron
+front
+fror
+froren
+frosch
+frost
+frucht
+frueh
+fruehe
+frz
+fuchs
+fuder
+fuegt
+fuegte
+fuehlt
+fuehrt
+fuehrte
+fuelle
+fuellt
+fuenf
+fuer
+fuers
+fuge
+fugen
+fuhr
+fuhre
+fund
+fundus
+funke
+funkt
+furche
+furcht
+furie
+furier
+furt
+furz
+furzen
+fushun
+fusion
+fuss
+fussel
+futsch
+futter
+fuzhou
+fuzzy
+gab
+gabel
+gabeln
+gabelt
+gabun
+gaehnt
+gaele
+gaemse
+gaeren
+gaffen
+gaffer
+gafft
+gaffte
+gag
+gage
+gala
+galant
+galgen
+galle
+gallen
+gallig
+galmei
+galopp
+galt
+galten
+gambe
+gambia
+gambit
+gamma
+gams
+gang
+ganove
+gans
+ganz
+ganze
+gap
+gar
+garage
+garant
+garbe
+garde
+garn
+garten
+gas
+gasse
+gast
+gatt
+gatte
+gatter
+gattin
+gaudi
+gaul
+gaumen
+gauner
+gaze
+geb
+gebaut
+geben
+geber
+gebet
+gebiet
+gebiss
+gebot
+gebr
+geburt
+geck
+gecko
+gedieh
+gedoest
+geduld
+geeggt
+geehrt
+geeilt
+geerbt
+gefahr
+gefeit
+gefiel
+gegner
+gegr
+geh
+gehabt
+gehalt
+gehaut
+gehege
+geheim
+gehen
+gehend
+geheul
+gehirn
+gehoer
+geholt
+gehren
+geht
+gehuft
+gehupt
+gehweg
+geier
+geige
+geiger
+geil
+geisel
+geiser
+geiss
+geist
+geiz
+geizen
+geizig
+gejagt
+gek
+gekaut
+gelage
+gelang
+gelass
+gelb
+gelbe
+gelber
+gelbes
+geld
+gelder
+gelee
+gelege
+gelegt
+geleit
+gelenk
+gelobt
+gelost
+gelten
+gemalt
+gemein
+gemuet
+gemuht
+gen
+genagt
+genas
+genau
+genaue
+genese
+genial
+genick
+genie
+genius
+genoss
+genre
+genua
+genug
+genus
+genuss
+geoelt
+george
+gepard
+gerade
+geraet
+gerast
+geraum
+gerben
+gerber
+gerede
+gering
+gern
+gerne
+gerte
+geruch
+geruhe
+geruht
+ges
+gesaet
+gesagt
+gesamt
+gesang
+gesch
+gesenk
+gesetz
+gest
+geste
+gesuch
+gesund
+getagt
+getaut
+geteilt
+getobt
+getto
+getue
+getunkt
+geuebt
+gew
+gewagt
+gewahr
+gewalt
+gewand
+gewann
+gewebe
+gewebt
+gewehr
+geweht
+geweih
+gewinn
+gewirr
+gewiss
+gewogt
+gez
+ggf
+ghana
+gib
+gibbon
+gibt
+gicht
+giebel
+gier
+gieren
+gierig
+gierte
+giesst
+gift
+giftig
+gigant
+gigolo
+gilde
+gimpe
+gimpel
+gin
+ging
+gingen
+gipfel
+gips
+gischt
+gitter
+glanz
+glas
+glaser
+glasig
+glasur
+glatt
+glatte
+glatze
+glaube
+glauben
+glaubt
+gleich
+gleis
+gleit
+gleite
+gleiten
+glich
+glied
+glimmt
+glitt
+global
+globus
+glocke
+glomm
+glossar
+glosse
+glotze
+glotzt
+glucke
+glueck
+glueht
+glukose
+glurak
+glut
+glycin
+gmbh
+gnade
+gneis
+gnom
+gnu
+goetze
+gokart
+gold
+golden
+golf
+gon
+gondel
+gong
+gospel
+goss
+gosse
+gotik
+gott
+gps
+grab
+graben
+grad
+graebt
+graf
+grafik
+gram
+gramm
+granat
+grand
+grande
+granit
+granne
+grapen
+graph
+gras
+grasen
+grasig
+grat
+gratis
+grau
+grauen
+grauer
+gravur
+grease
+green
+greift
+greis
+grell
+grelle
+grenze
+grenzt
+griebe
+griess
+griff
+grill
+grille
+grimm
+grizzly
+grinst
+grippe
+grips
+grob
+grober
+grobes
+groelt
+grog
+groll
+gros
+gross
+grosse
+grotte
+grub
+grube
+gruen
+gruene
+gruess
+grufti
+grund
+grunge
+grunzt
+gruppe
+gruss
+gsm
+guam
+gucken
+guete
+gueter
+guetig
+guinea
+gummi
+gunst
+gurke
+gurren
+gurt
+guru
+gut
+gute
+guten
+guter
+guyana
+gvp
+haar
+haarig
+hab
+habe
+haben
+hacke
+hacken
+hacker
+hackt
+hackte
+haelt
+haende
+haengt
+haerte
+haeufig
+haeuft
+haeuser
+hafen
+hafer
+haft
+haften
+haftet
+hagel
+hageln
+hagelt
+hagen
+hager
+haggis
+hahn
+hai
+hain
+haiti
+haken
+hakend
+hakig
+hakt
+hakte
+halab
+halb
+halber
+halbgar
+halde
+half
+halle
+hallo
+hallt
+hallte
+halm
+halme
+hals
+halse
+halsen
+halsig
+halt
+halte
+halten
+halter
+halts
+hamlet
+hammel
+hammer
+hand
+handan
+handel
+hanf
+hanfen
+hang
+hanoi
+hans
+hanse
+hantel
+harbin
+harem
+harfe
+harke
+harken
+hart
+harte
+harz
+harzen
+harzig
+hascht
+hase
+haspe
+hass
+hassen
+hasser
+hasst
+hast
+haste
+hasten
+hastet
+hastig
+hat
+hau
+haube
+hauch
+hauen
+hauend
+hauer
+haufen
+haupt
+haus
+haut
+haute
+hawaii
+hbf
+heard
+hebel
+hebeln
+heben
+hebend
+hebt
+hecht
+heck
+hecke
+heckt
+heer
+hefe
+hefei
+hefig
+heften
+heftet
+heftig
+heide
+heikel
+heil
+heilen
+heiler
+heilig
+heilige
+heilung
+heim
+heimat
+heirat
+heiser
+heiss
+heiter
+heizen
+heizer
+heizt
+heizte
+hektar
+hektik
+held
+heldin
+helfen
+helfer
+helfs
+helium
+hell
+hellt
+helm
+hemd
+hemmen
+hemmt
+hemmte
+hengst
+henkel
+henker
+henne
+herauf
+heraus
+herb
+herbst
+herd
+herde
+herden
+herein
+hering
+hernia
+herold
+herpes
+herr
+herrin
+hertz
+herum
+hervor
+herz
+herzas
+herzig
+herzog
+hesse
+hessen
+hetze
+hetzen
+hetzer
+hetzt
+hetzte
+heu
+heuer
+heul
+heulen
+heult
+heulte
+heute
+heutig
+hexe
+hieb
+hielt
+hier
+hierzu
+hiesig
+hiess
+hieven
+hilfe
+hilfen
+hilflos
+hilfs
+himmel
+hin
+hinab
+hinauf
+hinaus
+hindert
+hing
+hinken
+hinkt
+hins
+hinten
+hinter
+hinz
+hippie
+hirsch
+hirse
+hirt
+hit
+hitze
+hitzig
+hiv
+hmilch
+hmmm
+hob
+hobby
+hobel
+hobeln
+hobelt
+hoch
+hocken
+hocker
+hockey
+hockt
+hockte
+hoden
+hoehe
+hoehere
+hoehle
+hoelle
+hoer
+hoerbar
+hoeren
+hoert
+hoerte
+hof
+hoffen
+hofft
+hoffte
+hohe
+hoheit
+hoher
+hohes
+hohl
+hohler
+hohn
+hol
+hold
+holen
+holend
+holm
+holst
+holt
+holte
+holz
+holzen
+holzig
+hong
+honig
+honoel
+hopfen
+hoppla
+horcht
+horde
+hormon
+horn
+hornig
+hort
+horten
+hortet
+hose
+hosen
+hotel
+hotkey
+hrsg
+huang
+hub
+huefte
+huegel
+huelle
+huellt
+huelse
+huepft
+huepfte
+huerde
+huete
+hueten
+hueter
+huette
+huf
+huhn
+huker
+human
+humbug
+hummel
+hummer
+humor
+humus
+hund
+hunde
+hunger
+hunne
+hupe
+hupen
+hurrikan
+hurghada
+hurley
+hurone
+hurra
+hurtig
+husar
+husten
+hut
+hyaene
+hybrid
+hydrid
+hymne
+iallg
+iao
+iata
+ibadan
+ibitak
+ice
+ich
+idaho
+ideal
+idee
+ideell
+idiot
+idol
+idylle
+igel
+iglu
+ihf
+ihk
+ihm
+ihn
+ihnen
+ihr
+ihre
+ihrer
+ikone
+ileus
+illegal
+iltis
+image
+imbiss
+imker
+immer
+immun
+impfen
+impft
+impfte
+import
+impuls
+indem
+inder
+index
+indien
+indigo
+indium
+indore
+info
+infra
+ing
+inger
+ingwer
+inh
+inhalt
+inka
+inkl
+inlett
+innen
+inner
+innere
+innung
+ins
+insekt
+insel
+insult
+intakt
+intern
+intim
+invers
+iod
+iok
+ion
+ionen
+iowa
+ira
+irak
+iraker
+iran
+iraner
+irbil
+irden
+ire
+irin
+irisch
+iritis
+irk
+irland
+ironie
+irre
+irreal
+irren
+irrend
+irrig
+irrt
+irrtum
+irrweg
+isbn
+isebel
+island
+iso
+isomer
+isotop
+israel
+ist
+iwf
+izmir
+jacht
+jacke
+jade
+jaeger
+jaeh
+jaeten
+jagd
+jagen
+jagend
+jagt
+jagte
+jaguar
+jahr
+jaipur
+jammer
+januar
+japan
+jargon
+jasmin
+jauche
+jaulen
+jault
+jaulte
+jawohl
+jawort
+jazz
+jeans
+jede
+jeden
+jeder
+jedes
+jemals
+jemand
+jemen
+jene
+jener
+jetlag
+jetset
+jetten
+jetzt
+jhrl
+jhv
+jiddah
+jigger
+jilin
+jinan
+job
+joch
+jod
+jodeln
+jodelt
+jodler
+joga
+joggen
+johlen
+johlt
+joint
+jolle
+jordan
+jota
+joule
+jubel
+jubeln
+jubelt
+jucken
+jude
+juedin
+jugend
+juli
+julius
+jumbo
+jumper
+jung
+junge
+jungen
+junger
+junges
+jungs
+juni
+junker
+junkie
+junta
+jur
+jura
+jurist
+jury
+justiz
+jute
+juwel
+kabel
+kabine
+kabul
+kachel
+kacke
+kadaver
+kadenz
+kader
+kadett
+kaefer
+kaefig
+kaelte
+kaese
+kaeut
+kaeute
+kaff
+kaffee
+kahl
+kahle
+kahler
+kahmig
+kahn
+kai
+kaiser
+kajak
+kaktee
+kalb
+kalben
+kalbte
+kalif
+kalium
+kalk
+kalkig
+kalkte
+kalt
+kalte
+kalter
+kaltes
+kam
+kamel
+kamera
+kamin
+kamm
+kammer
+kampf
+kanada
+kanal
+kandis
+kann
+kanne
+kannst
+kanone
+kanpur
+kansas
+kante
+kanter
+kanton
+kantor
+kanu
+kanzel
+kaolin
+kap
+kapaun
+kaper
+kapern
+kapier
+kappa
+kappe
+kapsel
+kaputt
+karat
+karate
+karbid
+karbol
+karbon
+karde
+kardex
+karo
+karre
+karren
+karte
+kartei
+karton
+kasack
+kasan
+kasino
+kasse
+kassel
+kaste
+kasten
+katar
+kate
+kater
+kath
+kation
+katode
+kattun
+katze
+kaubar
+kauen
+kauend
+kauer
+kauern
+kauert
+kauf
+kaufen
+kauft
+kaufte
+kaum
+kausal
+kaut
+kaute
+kauten
+kauz
+kaviar
+kebab
+keck
+kegel
+kegeln
+kegler
+kehle
+kehlig
+kehrer
+kehrt
+kehrte
+keifen
+keift
+keil
+keilt
+keilte
+keim
+keimen
+keimt
+kein
+keine
+keinen
+keiner
+keks
+kelch
+kelle
+keller
+keloid
+kelte
+kenia
+kennen
+kenner
+kenyer
+kerbe
+kerbel
+kerben
+kerbt
+kerbte
+kerker
+kerl
+kern
+kernal
+kernig
+kerze
+kessel
+keton
+kette
+kettet
+ketzer
+keucht
+keule
+keusch
+kfm
+kfz
+khulna
+kiefer
+kiel
+kieme
+kiepe
+kies
+kiesel
+kigali
+kilo
+kimm
+kimme
+kind
+kinder
+kinn
+kino
+kippe
+kippen
+kipper
+kippt
+kippte
+kirche
+kirmes
+kissen
+kiste
+kitsch
+kitt
+kittel
+kitten
+kittet
+kitz
+kitzel
+klappern
+kladde
+klaert
+klage
+klagen
+klagt
+klagte
+klamm
+klampe
+klan
+klang
+klappe
+klappt
+klaps
+klar
+klasse
+klaue
+klauen
+klause
+klaut
+klaute
+kleben
+kleber
+klebt
+klebte
+klecks
+klee
+kleid
+kleie
+klein
+kleine
+kleiner
+klemme
+klemmt
+klette
+klick
+klient
+kliff
+klima
+klinge
+klingt
+klinik
+klinke
+klinkt
+klippe
+klirrt
+klo
+kloake
+kloent
+klon
+klonen
+klotz
+klub
+kluft
+klug
+knabe
+knackt
+knaeul
+knall
+knallt
+knapp
+knappe
+knarre
+knast
+knebel
+knecht
+kneift
+kneipe
+knete
+kneten
+knick
+knicks
+knie
+knien
+kniend
+kniet
+kniete
+kniff
+knilch
+knirps
+knogga
+knolle
+knospe
+knoten
+knotet
+knotig
+knowhow
+knurrt
+knut
+knute
+kobalt
+kobold
+koch
+kochen
+kocher
+kocht
+kochte
+koda
+kodein
+kodex
+koeder
+koeln
+koenig
+koepft
+koernt
+koeter
+koffer
+kognak
+kohl
+kohle
+kohorte
+koitus
+koje
+kojote
+kokain
+kokett
+koks
+kokuna
+kolben
+kolik
+kolleg
+kollege
+koller
+koloss
+komet
+komi
+komm
+komma
+kommen
+kommst
+kommt
+kondom
+kondor
+konkav
+konnte
+konsul
+konsum
+konter
+konto
+kontor
+kontra
+konus
+konvex
+kopal
+kopf
+kopie
+koppel
+koran
+korb
+kord
+kordel
+kordon
+korea
+korfu
+kork
+korken
+korn
+korse
+korund
+kosen
+kosmos
+kosovo
+kost
+kosten
+kostet
+kot
+kotig
+kotzen
+kpev
+krabbe
+krach
+kracht
+kraehe
+kraft
+kragen
+krake
+kralle
+krampf
+kran
+krank
+kranke
+kranz
+krass
+krater
+kratze
+kratzt
+krault
+kraus
+krause
+kraut
+krebs
+kredit
+kreide
+kreis
+kreist
+kreml
+krempe
+krepp
+kresse
+kreta
+kreter
+kreuz
+kreuzt
+krieg
+krill
+krim
+krimi
+kripo
+krippe
+krise
+kritik
+kroate
+kroch
+kroete
+krokus
+krone
+kropf
+kruemmt
+krug
+krumm
+krumme
+krung
+krupp
+kruste
+krypta
+kto
+kuala
+kuba
+kubist
+kuchen
+kuebel
+kueche
+kuehl
+kuehle
+kuehlt
+kuehn
+kueken
+kuer
+kueren
+kuerze
+kuerzt
+kuesst
+kueste
+kufe
+kugel
+kuguar
+kuh
+kulanz
+kuli
+kult
+kultur
+kummer
+kumpan
+kumpel
+kunde
+kunden
+kundig
+kunst
+kupfer
+kuppel
+kur
+kurare
+kurbel
+kurie
+kurier
+kuries
+kuriose
+kurort
+kurs
+kursiv
+kurve
+kurz
+kurze
+kurzen
+kurzer
+kurzum
+kuss
+kutte
+kuweit
+kyyiv
+lab
+labend
+labern
+labial
+labil
+labor
+lache
+lachen
+lacher
+lachs
+lacht
+lachte
+lack
+lade
+laden
+ladend
+lader
+ladung
+laedt
+laehmt
+laenge
+laengs
+laerm
+laermt
+laesst
+laeuft
+lag
+lage
+lager
+lagern
+lagert
+lagos
+lagune
+lahm
+lahore
+laib
+laich
+laie
+lakai
+lake
+laken
+lamm
+lammen
+lampe
+land
+landen
+lang
+lange
+lanze
+laos
+laote
+lappen
+laptop
+larve
+larven
+las
+lasch
+lasche
+laser
+lass
+lassen
+lasso
+lasst
+last
+lasten
+laster
+lasur
+latein
+latent
+latte
+latz
+lau
+laub
+laube
+lauern
+lauert
+lauf
+laufen
+lauge
+laugen
+laugt
+laugte
+laune
+launig
+laurie
+laus
+lausen
+lausig
+lauste
+laut
+laute
+lauter
+lautes
+lava
+lawine
+layout
+leb
+lebe
+leben
+lebend
+leber
+leblos
+lebst
+lebt
+lebte
+leck
+lecken
+lecker
+leckt
+led
+leder
+ledern
+ledig
+lee
+leeds
+leefze
+leer
+leere
+leeren
+leeres
+leert
+legal
+legat
+legen
+leger
+legion
+legt
+legte
+leguan
+lehen
+lehm
+lehmig
+lehne
+lehnen
+lehnt
+lehnte
+lehr
+lehre
+lehren
+lehrer
+lehrt
+lehrte
+leib
+leiche
+leicht
+leid
+leiden
+leider
+leidet
+leier
+leihe
+leihen
+leiht
+leim
+leimen
+leimt
+leine
+leinen
+leise
+leiser
+leiste
+leit
+leiten
+leiter
+leitet
+lektor
+lemma
+lena
+lende
+lenken
+lenker
+lenkt
+lenkte
+lenz
+lenzen
+leon
+lepra
+lerche
+lernen
+lernend
+lernst
+lernt
+lernte
+lesart
+lesbar
+lesbe
+lese
+lesen
+lesend
+leser
+lesung
+lette
+letzte
+leucin
+leute
+level
+lewis
+lfd
+lfg
+libero
+libido
+libyen
+libyer
+licht
+lid
+lieb
+liebe
+lieben
+lieber
+liebes
+liebt
+lied
+lief
+liege
+liegen
+liegt
+lieh
+lies
+liess
+liest
+lift
+liga
+likoer
+lila
+lille
+lima
+limbo
+limes
+linde
+lineal
+linear
+linie
+linke
+links
+linse
+linux
+lipid
+lippe
+liquor
+lisboa
+list
+liste
+listet
+listig
+litauer
+liter
+litze
+livedo
+lizenz
+lkw
+llkw
+lmaa
+lob
+loben
+lobend
+lobt
+lobte
+loch
+lochen
+lochia
+locke
+locken
+locker
+lockere
+lockt
+lockte
+loden
+lodz
+loesen
+loeser
+loess
+loest
+loeste
+loeten
+loetend
+loewe
+log
+logge
+loggia
+logik
+logo
+lohn
+lohnen
+lohnt
+loipe
+lokal
+lokale
+lokum
+lome
+london
+lore
+los
+losbar
+lose
+loser
+losung
+lot
+loten
+lotion
+lotse
+loyal
+ltd
+ltg
+luanda
+luchs
+lud
+luecke
+lueg
+luege
+luegen
+luffa
+luft
+luftig
+luftweg
+luftzug
+lug
+luke
+lullt
+lullte
+lumbal
+lumen
+lunch
+lunge
+lungen
+lunker
+lupe
+lupine
+lurch
+lusaka
+lust
+lustig
+lustlos
+luth
+luv
+luven
+lux
+luxus
+lymphe
+lyon
+lyra
+lyrik
+lysin
+lyzeum
+maat
+macau
+mach
+machen
+macher
+macho
+machs
+machst
+macht
+machte
+macke
+mad
+made
+madig
+madrid
+maedel
+maehen
+maeher
+maehne
+maeht
+maehte
+maekle
+maennl
+maerz
+mafia
+mag
+magd
+magen
+mager
+magere
+magern
+magert
+magie
+magnat
+magnet
+mahl
+mahlen
+mahlt
+mahlte
+mahnen
+mahnt
+mahnte
+mai
+maid
+maine
+mainz
+mais
+major
+majuro
+makel
+makler
+makro
+makula
+mal
+malabo
+malaie
+malawi
+male
+malen
+maler
+mali
+malier
+malt
+malta
+malve
+malz
+malzig
+mamey
+mammon
+mammut
+mampf
+man
+manama
+manaus
+manche
+mandat
+mandel
+manege
+mangan
+mangel
+mango
+manie
+manila
+manko
+mann
+mantel
+manual
+mappe
+maputo
+marder
+mariae
+marij
+marine
+mark
+marke
+marken
+markig
+markt
+marmor
+marone
+mars
+marsch
+marter
+masche
+maser
+masern
+maseru
+maske
+mass
+masse
+massig
+massiv
+masst
+mast
+matrix
+matsch
+matt
+matte
+mauer
+mauern
+mauert
+mauken
+maul
+maurer
+maus
+mauser
+mauzi
+max
+mazare
+mbh
+mdb
+mdl
+medan
+median
+medley
+meer
+meere
+meerut
+mega
+mehl
+mehlig
+mehr
+meiden
+meidet
+meile
+meiler
+mein
+meine
+meinen
+meiner
+meint
+meinte
+meise
+meist
+mekka
+mekong
+melden
+meldet
+meldung
+melken
+melkt
+melone
+menge
+mengt
+mensa
+mensch
+mensur
+mental
+mentor
+menue
+mergel
+merk
+merken
+merkte
+merkur
+merlin
+merzt
+mess
+messbar
+messe
+messen
+messer
+met
+metall
+meteor
+meter
+methan
+methyl
+metier
+metro
+metrum
+meute
+mewtu
+mexiko
+mez
+mfg
+miami
+miauen
+miaut
+miaute
+mich
+micro
+mieden
+mieder
+mief
+miene
+mies
+miete
+mieten
+mieter
+mietze
+mikron
+milano
+milbe
+milch
+mild
+milde
+milieu
+miliz
+mill
+milz
+mimend
+mimose
+mimt
+mimte
+min
+minder
+mine
+minor
+minsk
+minus
+minute
+minze
+mio
+mir
+misch
+mischt
+misst
+mist
+mistel
+mit
+mitose
+mittag
+mitte
+mittel
+mitten
+mittig
+mitw
+mixer
+mixt
+mixte
+mobil
+mobile
+mod
+modal
+mode
+modell
+modem
+moder
+modern
+modrig
+modul
+modus
+moebel
+moebl
+moegen
+moehre
+moel
+moench
+moderne
+moewe
+mofa
+mogeln
+mogelt
+mogul
+mol
+moldau
+mole
+molke
+moll
+molle
+mollig
+mombi
+moment
+monaco
+monat
+mond
+monom
+monsun
+montag
+moor
+moos
+moosig
+mop
+moped
+mops
+moral
+morast
+morbid
+mord
+morden
+morgen
+moroni
+mosaik
+moskva
+moslem
+most
+motel
+motiv
+motor
+motte
+motto
+mousse
+mrd
+mtl
+muecke
+muede
+muehe
+muehle
+muell
+mueller
+muendig
+muenze
+muerbe
+muetze
+muff
+muffe
+muffig
+muhen
+muhend
+mulch
+mulde
+muldex
+mull
+mullah
+multan
+mumbai
+mumie
+mund
+munden
+mungo
+munter
+murmel
+murren
+mus
+muscat
+musisch
+muse
+museum
+musik
+musiker
+muskat
+muskel
+muss
+muster
+mut
+mutig
+mutlos
+mutter
+mutti
+mwst
+myelom
+mykose
+myon
+myopie
+myosin
+myrrhe
+myrthe
+mystik
+mythos
+nabe
+nabel
+nach
+nachm
+nacht
+nachts
+nacken
+nackig
+nackt
+nackte
+nadel
+naehe
+naehen
+naeher
+naeht
+naehte
+naeml
+naesse
+nagel
+nageln
+nagend
+nagoya
+nagpur
+nagt
+nah
+nahe
+nahen
+nahend
+nahezu
+nahm
+nahost
+naht
+naiv
+name
+namen
+namens
+nannte
+nanu
+naomi
+napalm
+napf
+napoli
+narbe
+narbig
+narr
+nasa
+nasal
+nase
+nashik
+nass
+nassau
+nation
+nato
+natter
+natur
+nauru
+nazi
+nchf
+nchr
+nebel
+neben
+neblig
+necken
+neckt
+neckte
+neffe
+neg
+negativ
+negieren
+nehmen
+neid
+neider
+neigen
+neigt
+neigte
+nein
+nektar
+nelke
+nennen
+nenner
+nennt
+neodym
+neogen
+neon
+nepal
+neppt
+neptun
+nerv
+nerven
+nervig
+nervt
+nervte
+nerz
+nessel
+nest
+nett
+netto
+netz
+neu
+neubau
+neue
+neuer
+neues
+neun
+neunte
+neural
+neuron
+nevada
+new
+ngo
+niamey
+nicht
+nichte
+nichts
+nickel
+nicken
+nie
+nieder
+niere
+nieren
+niesen
+niest
+niet
+niete
+nieten
+niger
+nigeria
+nil
+nimm
+nimmt
+ningbo
+nippel
+nippen
+nippt
+nische
+nisten
+nistet
+nitrit
+niue
+nix
+nixe
+niznij
+nizza
+nmal
+nobel
+noch
+nocke
+nodoes
+noetig
+nomade
+nonius
+norden
+norm
+normal
+north
+not
+notar
+note
+noten
+notiz
+notruf
+nougat
+noumea
+npd
+nudel
+nudist
+nuetze
+nuetzt
+nukleon
+null
+nullen
+nummer
+nun
+nur
+nuss
+nussig
+nut
+nutria
+nutte
+nutzen
+nutzer
+nuuk
+nylon
+oas
+oase
+obb
+obdach
+oben
+obenab
+ober
+obere
+obige
+objekt
+oblag
+oblate
+oboe
+obst
+obwohl
+ochse
+ocker
+ode
+oder
+odessa
+odor
+oecd
+oede
+oedem
+oeffne
+oelbad
+oelen
+oelend
+oeler
+oelig
+oelt
+oelte
+oese
+ofen
+off
+offen
+offene
+offiz
+oft
+ohchr
+ohg
+ohio
+ohm
+ohne
+ohr
+ohren
+oktal
+oktan
+oktant
+oktave
+okular
+oliv
+olive
+oma
+oman
+omen
+omsk
+onkel
+onyx
+opa
+opal
+opec
+oper
+opfer
+opfern
+opfert
+opiat
+opium
+oprof
+optik
+option
+opus
+orakel
+oral
+orange
+orden
+ordnen
+ordner
+ordnet
+oregon
+organ
+orgel
+orgie
+orient
+orig
+oring
+orion
+orkan
+ort
+orten
+ortet
+orth
+ortung
+osaka
+oslo
+osmium
+osmose
+ossi
+ost
+osten
+ostern
+ostsee
+ottawa
+otter
+oval
+ovipar
+ovum
+oxid
+ozean
+ozelot
+ozon
+paar
+paaren
+paarig
+paart
+paarte
+pacht
+pack
+packen
+packer
+packt
+packte
+paddel
+padr
+paella
+paffen
+paffer
+pafft
+paffte
+pago
+pagode
+paket
+pakt
+palast
+palau
+palme
+pampa
+pampe
+panama
+panda
+panik
+panne
+pansen
+panter
+panzer
+pap
+papel
+papier
+pappe
+pappel
+papst
+papua
+parade
+parese
+pari
+paris
+park
+parka
+parken
+parkt
+parole
+partei
+partie
+party
+pascal
+pass
+passen
+passiv
+passt
+passte
+paste
+pastor
+pasty
+patch
+pate
+patent
+pater
+patin
+patna
+patt
+patzer
+patzig
+patzte
+pauke
+pauken
+pause
+pausen
+pavian
+pecan
+pech
+pedant
+peer
+pegel
+pein
+pelvin
+pelz
+pendel
+peng
+penne
+penny
+pensum
+pepsin
+peptid
+per
+perle
+perm
+pers
+perser
+person
+perth
+peru
+pessar
+pest
+peter
+petit
+petrus
+petzen
+petzer
+petzte
+pfad
+pfahl
+pfand
+pfanne
+pfau
+pfd
+pfeife
+pfeil
+pferd
+pfiff
+pflege
+pflegt
+pflug
+pfote
+pfriem
+pfropf
+pfuhl
+pfui
+pfund
+pfusch
+phase
+phiole
+phlox
+phnum
+phobie
+phon
+phonem
+phrase
+phwert
+physik
+pickel
+picken
+piepen
+piepst
+pik
+pikant
+pilger
+pille
+pilot
+pilz
+piment
+pimms
+pin
+pinie
+pinkel
+pinne
+pinsel
+piranha
+pirat
+pirol
+pirsch
+pissoir
+piste
+pizza
+pkt
+pkw
+plaene
+plage
+plagen
+plagiat
+plagt
+plagte
+plakat
+plan
+plane
+planen
+planet
+planke
+plante
+planum
+plasma
+platin
+platt
+platte
+platz
+platzt
+pleite
+plenum
+plombe
+plugin
+plump
+plumps
+plus
+pluto
+ply
+plz
+pocke
+pocken
+podest
+podium
+poebel
+poesie
+poet
+pogrom
+pokal
+pol
+pole
+polen
+police
+polka
+pollen
+poller
+polo
+polung
+polyp
+pomade
+pomp
+poncho
+ponton
+pony
+pop
+popel
+pore
+porno
+poroes
+porree
+port
+portal
+porto
+pose
+posen
+posse
+possen
+post
+posten
+poster
+potent
+potenz
+ppa
+pracht
+praegt
+praha
+prahlt
+praia
+prall
+prallt
+praxis
+preis
+preise
+preist
+presse
+presst
+prima
+prime
+primel
+prinz
+prise
+prisma
+privat
+pro
+proa
+probe
+proben
+probt
+prof
+profan
+profi
+profil
+profit
+prolet
+prolin
+prolog
+prompt
+propan
+prosa
+prosit
+proton
+protzt
+pruede
+prueft
+prunk
+psalm
+pseudo
+pst
+psyche
+ptose
+pudel
+puder
+pudern
+puebla
+pueblo
+pueree
+puerto
+pumuckl
+puffen
+puffer
+pulk
+puls
+pult
+pulver
+pulvert
+puma
+pumpe
+pumpen
+pumps
+pumpt
+pumpte
+pune
+punkt
+punkte
+punt
+puppe
+purist
+purpur
+pusan
+pustel
+puter
+putsch
+putten
+putz
+putze
+putzen
+putzt
+putzte
+puzzle
+pyogen
+pyrit
+python
+qkm
+quader
+quaeket
+quaekt
+quaelt
+quaken
+quakt
+quakte
+qual
+qualle
+qualm
+quark
+quarte
+quarz
+quast
+quecke
+quelle
+quer
+querab
+queren
+quiche
+quiekt
+quillt
+quinte
+quirl
+quito
+quitt
+quitte
+quiz
+quoll
+quorum
+quote
+rabat
+rabatt
+rabatz
+rabe
+rabiat
+rache
+rachen
+racker
+rad
+radar
+radau
+radelt
+radial
+radio
+radium
+radius
+radler
+radon
+radweg
+raecht
+raet
+raeude
+raeumt
+rage
+ragen
+ragout
+ragt
+rah
+rahm
+rahmen
+raichu
+rakel
+rakete
+rallye
+ramme
+rammen
+rammler
+rampe
+ranch
+rand
+rang
+range
+rank
+ranke
+rannte
+ranzen
+ranzig
+rapier
+rappe
+raps
+rar
+rasant
+rasch
+rasen
+rasend
+raser
+raserei
+raspel
+rasse
+rassel
+rassig
+rast
+raste
+rasten
+raster
+rasur
+rat
+rate
+raten
+ratend
+ration
+ratlos
+ratsam
+rattan
+ratte
+rau
+raub
+rauben
+raubt
+raubte
+rauch
+raucht
+raufe
+raufen
+rauft
+rauhe
+rauher
+raum
+raupe
+raupy
+rausch
+raut
+raute
+rayon
+razzia
+reale
+reales
+rebe
+rebell
+rechen
+recht
+rechte
+rechts
+recife
+reck
+red
+rede
+reden
+redend
+redet
+redete
+redner
+reede
+reeder
+reell
+reelle
+reffen
+reflex
+reform
+reg
+regal
+regbez
+rege
+regel
+regeln
+regelt
+regen
+regent
+reggae
+regie
+regime
+region
+regler
+regnen
+regnet
+regt
+regte
+regula
+regung
+reh
+reiben
+reibt
+reich
+reicht
+reif
+reife
+reifen
+reift
+reihe
+reiher
+reiht
+reihte
+reihum
+reim
+reimt
+rein
+reine
+reinen
+reiner
+reis
+reise
+reisen
+reisst
+reist
+reiste
+reiten
+reiter
+reitet
+reiz
+reizen
+reizt
+reizte
+rekeln
+rekelt
+rekord
+rekrut
+rektal
+rektor
+rel
+relais
+relief
+relikt
+reling
+remis
+ren
+renin
+renn
+rennen
+renner
+rennt
+rente
+rep
+replik
+repro
+reptil
+resp
+rest
+reste
+retour
+rettan
+retten
+retter
+rettet
+reue
+reuig
+reuse
+revier
+revue
+rezept
+rhein
+rheuma
+rhode
+rias
+rieb
+riecht
+rief
+riefe
+riege
+riegel
+riemen
+ries
+riese
+riesen
+riesig
+riff
+riffig
+riga
+rille
+rind
+rinde
+rinden
+rinder
+ring
+ringen
+ringt
+rinne
+rinnen
+rio
+rippe
+risiko
+rispe
+riss
+risse
+rissig
+rist
+ritt
+ritter
+ritual
+ritus
+ritz
+ritze
+ritzel
+ritzen
+ritzt
+ritzte
+rivale
+robbe
+robe
+robust
+rochen
+rocker
+rocky
+rodeln
+rodelt
+roden
+rodend
+rodeo
+rodet
+rodete
+rodung
+roehre
+roem
+roemer
+roete
+roeten
+roeter
+roggen
+roh
+rohbau
+rohe
+rohoel
+rohr
+rohre
+rolle
+rollen
+roller
+rollo
+rollt
+rollte
+rom
+roma
+roman
+romeo
+rondo
+rosa
+rose
+roseau
+rosig
+rosine
+ross
+rost
+rosten
+rostet
+rostig
+rot
+rote
+roter
+rotes
+rotte
+rottet
+rotz
+rotzig
+rouge
+route
+router
+rowdy
+ruanda
+rubel
+rubin
+rubrik
+ruck
+rucken
+rudel
+ruder
+rudern
+rudert
+ruebe
+rueck
+rueckt
+ruede
+ruegen
+ruegt
+ruegte
+ruehmt
+ruehrt
+ruest
+ruesten
+ruf
+rufen
+ruft
+ruhe
+ruhen
+ruhend
+ruhig
+ruhige
+ruhm
+ruhr
+ruht
+ruhte
+ruin
+ruine
+rum
+rumba
+rummel
+rumpf
+rund
+runde
+runden
+rune
+runzel
+rupfen
+rupft
+rupie
+ruptur
+russ
+russe
+russig
+rute
+rutsch
+saal
+sabbat
+sacha
+sache
+sachen
+sachse
+sachte
+sack
+sacken
+sackt
+sackte
+sadist
+saebel
+saeen
+saeend
+saege
+saegen
+saeger
+saegt
+saemig
+saet
+saete
+saeugt
+saeule
+saeumt
+saeure
+safari
+safcon
+saflor
+safran
+saft
+saftig
+saga
+sage
+sagen
+sagend
+sago
+sagt
+sagte
+sah
+sahnig
+sahnt
+saint
+saite
+sakrale
+salami
+salat
+salbe
+salbei
+salbst
+salbt
+salbte
+saldo
+saline
+salm
+salon
+salopp
+salt
+salto
+salut
+salve
+salz
+salzen
+salzig
+salzt
+samara
+sambia
+same
+samen
+samoa
+sampan
+samt
+samtig
+san
+sana
+sand
+sandan
+sandig
+sandte
+sanft
+sang
+sank
+sanken
+sankt
+santa
+santo
+santos
+sao
+saphir
+sarg
+sari
+sarkom
+sass
+satan
+satin
+satire
+satt
+sattel
+saturn
+satyr
+satz
+satzbau
+sau
+sauber
+saudi
+sauer
+saufen
+sauft
+saufte
+saugen
+saugt
+saugte
+saum
+sauna
+sausen
+saust
+sauste
+sbb
+scampi
+schabe
+schach
+schade
+schaem
+schaf
+schaft
+schah
+schal
+schale
+schall
+schalt
+scham
+schar
+scharf
+schart
+schatz
+schau
+schaum
+schaut
+scheck
+schein
+scheit
+schell
+schelm
+schema
+scher
+schere
+scherz
+scheu
+scheut
+schick
+schieb
+schiebt
+schief
+schien
+schiff
+schild
+schilf
+schirm
+schlaf
+schlag
+schlau
+schluf
+schlug
+schmal
+schmerz
+schmus
+schnee
+schnur
+schob
+schock
+schoen
+schon
+schopf
+schor
+schorf
+schoss
+schot
+schott
+schrei
+schrie
+schrot
+schub
+schuber
+schuft
+schuh
+schuld
+schule
+schult
+schund
+schur
+schurz
+schuss
+schutt
+schutz
+schwan
+schwer
+schwor
+schwul
+schwur
+seance
+sechs
+sechse
+sed
+see
+seebad
+seele
+seenot
+seeweg
+segel
+segeln
+segelnd
+segelt
+segen
+segler
+segnen
+segnet
+sehen
+seher
+sehne
+sehnig
+sehnt
+sehnte
+sehr
+sei
+seicht
+seide
+seiden
+seidig
+seien
+seiend
+seife
+seifig
+seift
+seil
+seiler
+sein
+seine
+seinen
+seiner
+seis
+seit
+seitan
+seite
+seiten
+seitig
+sekr
+sekret
+sekt
+sekte
+sektor
+selbe
+selber
+selbst
+selen
+selten
+semit
+senat
+sendai
+senden
+sender
+senf
+sengen
+senior
+senke
+senker
+senne
+senner
+sense
+sepsis
+septum
+seraph
+serbe
+serge
+serie
+serife
+serin
+sermon
+serum
+servo
+sesam
+sessel
+set
+setz
+setze
+setzei
+setzen
+setzer
+seuche
+sexist
+sexte
+shalom
+shanty
+sherpa
+shimmy
+shiraz
+show
+shunt
+sich
+sichel
+sicher
+sicht
+sie
+sieb
+sieben
+siebt
+siebte
+sieche
+siecht
+sieden
+siedet
+sieg
+siegel
+siegen
+sieger
+siegt
+sieh
+siehe
+siehst
+sieht
+sierra
+signal
+signum
+silbe
+silben
+silber
+silur
+sims
+sind
+singen
+sinken
+sinkt
+sinn
+sinnen
+sinnes
+sinnig
+sinter
+sinus
+sioux
+siphon
+sippe
+sirene
+sirup
+sisal
+sitar
+sitte
+sitz
+sitzen
+sitzt
+skala
+skalar
+skalp
+skat
+skeet
+sketch
+ski
+skiff
+skizze
+sklave
+sklera
+skopje
+skotom
+slalom
+slam
+slang
+slawe
+slick
+slip
+slum
+slums
+smog
+snapin
+snob
+sobald
+socke
+sockel
+soda
+soeben
+sofa
+sofern
+sofia
+sofort
+sog
+sogar
+sohle
+sohn
+soiree
+soja
+solch
+solche
+sold
+soldat
+solide
+solist
+soll
+sollen
+sollst
+sollte
+solo
+sommer
+sonate
+sonde
+sonett
+sonne
+sonnen
+sonnig
+sonor
+sonst
+sooft
+sopran
+sorbet
+sorge
+sorgen
+sorgt
+sorgte
+sorte
+sosse
+soul
+south
+soviel
+sowas
+soweit
+sowie
+sowjet
+sowohl
+sozial
+spaet
+spalt
+spalte
+spam
+spange
+spanne
+spant
+spar
+sparen
+sparer
+spass
+spat
+spatel
+spaten
+spatz
+spd
+specht
+speck
+speer
+speien
+speise
+spelz
+spende
+sperma
+sperre
+sphinx
+spiegel
+spiel
+spiess
+spike
+spinal
+spinat
+spinne
+spion
+spital
+spitz
+spitze
+spleen
+splice
+splint
+splitt
+spore
+sport
+spott
+spr
+spray
+spreu
+sprich
+sprit
+sproed
+spross
+spruch
+sprung
+spuck
+spucke
+spuele
+spuk
+spuken
+spule
+spund
+spur
+sputum
+sri
+ssid
+staat
+stab
+stabil
+stadt
+stahl
+staken
+stall
+stamm
+stand
+stange
+stanze
+stapel
+star
+stark
+starr
+start
+stase
+statik
+statur
+status
+statut
+stau
+staub
+stauen
+stauer
+staupe
+std
+steak
+steck
+steg
+stehen
+steher
+steht
+steif
+steig
+steile
+stein
+stele
+stell
+stelle
+stellt
+stellte
+stelze
+stent
+steppe
+steppen
+steppt
+steril
+stern
+stet
+stetig
+stets
+steuer
+stgb
+stich
+stieg
+stiel
+stier
+stiess
+stift
+stifter
+stigma
+stil
+still
+stille
+stillt
+stimme
+stimmt
+stinkt
+stippt
+stirbt
+stirn
+stock
+stockt
+stoer
+stoert
+stoff
+stola
+stolz
+stopft
+stopp
+storch
+stoss
+stout
+str
+straf
+strafe
+straff
+straft
+strahl
+stramm
+strand
+strang
+straps
+strebe
+strebt
+streik
+streit
+streng
+stress
+streut
+strich
+strick
+strikt
+stritt
+stroh
+strom
+stromer
+struma
+stvo
+styren
+sublim
+subtil
+suche
+suchen
+sucher
+sucht
+suchte
+sudan
+sudeln
+sueden
+suehne
+suelze
+suende
+suess
+suesse
+suesst
+suhle
+suhlen
+suite
+sulfat
+sulfid
+sulfit
+sultan
+summe
+summen
+summer
+summt
+summte
+sumo
+sumpf
+sund
+sunnit
+super
+superb
+suppe
+surat
+surren
+surrt
+suva
+sydney
+symbol
+synode
+syntax
+syrer
+syrien
+system
+systole
+szene
+tabak
+tabor
+tabriz
+tabu
+tabula
+tadel
+tadeln
+tadelt
+tadler
+taefeln
+taegu
+taejon
+taeter
+taetig
+tafel
+taft
+tag
+tagaus
+tage
+tagen
+tagend
+tags
+tagt
+tagung
+taifun
+taille
+tainan
+taipei
+taiwan
+takel
+takeln
+takler
+takt
+taktik
+tal
+talent
+talg
+talgig
+talk
+talkum
+talon
+tampa
+tampon
+tamtam
+tan
+tand
+tandem
+tang
+tango
+tank
+tanken
+tanker
+tankt
+tankte
+tanne
+tannin
+tantal
+tante
+tanz
+tanzen
+tanzt
+tanzte
+tapete
+tapfer
+tapsen
+tapst
+tara
+tarawa
+tardiv
+tarif
+tarnen
+tarnte
+tarock
+tartan
+tasche
+tasse
+tast
+taste
+tasten
+taster
+tastet
+tat
+taten
+tatort
+tau
+taub
+taube
+tauben
+taubsi
+taucht
+tauen
+taufe
+taufen
+tauft
+taufte
+taugen
+taumel
+tausch
+taut
+taute
+taxi
+tbruch
+teak
+tee
+teeei
+teer
+teeren
+teflon
+tehran
+teich
+teig
+teil
+teilen
+teiler
+teils
+teilt
+teilte
+tel
+teller
+tellur
+tempeh
+tempel
+tempo
+tender
+tenne
+tennis
+tenor
+tensid
+term
+termin
+terror
+terz
+test
+testen
+tester
+testet
+teuer
+teufel
+texas
+text
+texter
+textil
+tgl
+thai
+thanh
+theist
+theke
+thema
+themse
+therme
+these
+thiamin
+thread
+thron
+thront
+thymus
+tiara
+tibet
+tic
+tick
+ticken
+tickt
+tief
+tiefe
+tiefer
+tiegel
+tier
+tiger
+tigris
+tilde
+tilgen
+tilgt
+tilgte
+timon
+tinte
+tipp
+tippen
+tippt
+tippte
+tirade
+tirana
+tirol
+tisch
+titan
+titel
+titer
+titanic
+titus
+toben
+tobend
+tobt
+tobte
+tod
+toddy
+toerin
+toeten
+tofu
+togo
+tokelau
+tokyo
+toll
+tolle
+tollen
+tollt
+toluca
+tomate
+tombak
+ton
+tonarm
+tonart
+tonbad
+tonga
+tonika
+tonlos
+tonne
+tonsur
+tonus
+topas
+topf
+tophus
+topp
+tor
+torf
+torino
+torlos
+torte
+torweg
+tory
+tot
+total
+totale
+tote
+totem
+totes
+toupet
+tour
+toxin
+trab
+traber
+tracht
+traege
+traegt
+traene
+traf
+trage
+tragen
+tragik
+trakt
+trampt
+trance
+trank
+trapez
+trat
+tratte
+trau
+traube
+trauen
+trauer
+traufe
+traum
+trauma
+traut
+traute
+treck
+treib
+treibt
+tremor
+trend
+trennt
+treppe
+tresor
+treten
+treu
+treue
+treuer
+trias
+trick
+trieb
+trieft
+triel
+trifft
+triftig
+trikot
+trimm
+trinkt
+trist
+tritt
+trog
+troja
+trollt
+tropf
+trost
+trott
+trotz
+trotzt
+truebe
+truebt
+trug
+trumpf
+truppe
+tschad
+tshirt
+tuba
+tube
+tuch
+tucuxi
+tue
+tuell
+tuelle
+tuer
+tuerke
+tuev
+tugend
+tulpe
+tumor
+tun
+tundra
+tuner
+tunika
+tunis
+tunkt
+tunkte
+tunnel
+tunken
+tupel
+turban
+turbo
+turf
+turks
+turm
+turnen
+turnt
+turnte
+turtok
+tusche
+tut
+tuten
+type
+typhus
+uawg
+ubahn
+uboot
+udssr
+uebel
+ueben
+uebend
+ueber
+uebers
+ueble
+uebrig
+uebte
+uebung
+uefa
+ueppig
+ufa
+ufer
+uff
+ufo
+ufz
+uganda
+uhf
+uhr
+uhu
+uie
+ukw
+ulcus
+ulk
+ulkig
+ulkus
+ulme
+ulsan
+ulster
+ultimo
+ultra
+umarmt
+umbau
+umber
+umfang
+umfeld
+umflog
+umgab
+umgeht
+umgibt
+umging
+umhang
+umin
+umkehr
+umlage
+umlauf
+umlaut
+umluft
+umriss
+ums
+umsatz
+umweg
+umwelt
+umzu
+umzug
+unart
+uncc
+unccd
+uncdf
+uncrd
+unctad
+und
+undank
+undcp
+undp
+uneben
+unecht
+unedel
+unehre
+unep
+unesco
+unevoc
+unfair
+unfall
+unfccc
+unfein
+unfpa
+unfug
+ungar
+ungarn
+ungern
+ungute
+unhchr
+unhcr
+unheil
+uni
+unicef
+unicri
+unidir
+union
+unklar
+unklug
+unlieb
+unmut
+unreif
+unrein
+unrisd
+unruh
+unruhe
+unrwa
+uns
+unser
+unsere
+unsinn
+unstet
+untat
+unten
+unter
+untere
+unterm
+untier
+untreu
+unu
+unv
+unwahr
+unweit
+unwohl
+unzahl
+unzart
+unze
+unzeit
+upu
+uralt
+uran
+uranus
+urban
+urform
+urgenz
+urin
+urinal
+urlaub
+urlaut
+urne
+urteil
+urumqi
+urwald
+urzeit
+usa
+usw
+utah
+utopia
+utopie
+vaduz
+vaeter
+vagal
+vage
+vakuum
+valenz
+valin
+valuta
+vamp
+vampir
+vasall
+vase
+vater
+vati
+vchr
+veb
+vektor
+velar
+velin
+vene
+venoes
+ventil
+venus
+verb
+verbal
+verbat
+verbot
+verein
+verf
+vergab
+verh
+verl
+verlag
+verlor
+verrat
+verruf
+vers
+versatz
+versen
+vertan
+verw
+verzug
+vespern
+vform
+vgl
+vhf
+vhs
+video
+vieh
+viel
+viele
+vielen
+vieles
+vier
+vierte
+vikar
+villa
+vinyl
+vip
+viper
+virus
+visage
+vision
+visum
+vlies
+voegel
+vogel
+vogt
+voile
+volant
+volk
+voll
+voller
+volt
+vom
+von
+voodoo
+vor
+vorab
+voran
+voraus
+vorbau
+vordem
+vorfall
+vorher
+vorhin
+vorhof
+vorhut
+vorige
+vorlaut
+vorm
+vormals
+vorn
+vorne
+vorrat
+vors
+vorweg
+vorzug
+vrumpf
+vulkan
+vulva
+vuz
+waage
+wabe
+wach
+wache
+wachen
+wachs
+wachst
+wacht
+wachte
+wacker
+wade
+waegen
+waeger
+waehle
+waehlt
+waehnt
+waelzt
+waende
+waere
+waeren
+waerme
+waermt
+waffe
+waffel
+waffen
+wagen
+waggon
+wagnis
+wahl
+wahn
+wal
+wald
+waldig
+wales
+walker
+wall
+wallis
+waltz
+walze
+walzen
+walzer
+walzte
+wamme
+wand
+wandel
+wandte
+wange
+wanken
+wankt
+wann
+wanze
+wapiti
+wappen
+war
+warb
+ware
+waren
+warf
+warm
+warme
+warnen
+warnt
+warnte
+warpt
+warte
+warten
+wartet
+warum
+warze
+warzig
+was
+wasser
+waten
+watt
+watte
+wbl
+wdhlg
+weben
+webend
+weber
+webt
+webte
+wecken
+wecker
+wedel
+wedeln
+weder
+weg
+wegen
+weh
+wehe
+wehen
+wehend
+wehmut
+wehr
+wehrt
+wehrte
+weht
+wehte
+weich
+weiche
+weicht
+weide
+weiden
+weidend
+weidet
+weih
+weihe
+weiht
+weihte
+weil
+weile
+wein
+weinen
+weint
+weinte
+weise
+weisen
+weiss
+weisse
+weist
+weit
+weite
+weiter
+weizen
+welch
+welche
+welk
+welken
+welle
+wellen
+wellig
+wellt
+welpe
+welt
+wem
+wen
+wende
+wenden
+wendet
+wendig
+wenig
+wenn
+wer
+werben
+werber
+werbt
+werde
+werden
+werfen
+werfer
+werft
+werg
+werk
+wermut
+wert
+wertet
+wertig
+wesen
+wesir
+wespe
+wessen
+wessi
+west
+weste
+westen
+wette
+wetten
+wetter
+wettet
+wetzen
+wetzt
+wetzte
+wez
+whg
+whisky
+whist
+who
+wich
+wicht
+wicke
+widder
+wider
+widert
+widmen
+widmet
+widrig
+wie
+wied
+wieder
+wiege
+wiegen
+wiegt
+wiegte
+wien
+wiener
+wies
+wiese
+wiesel
+wigwam
+wild
+wilde
+wildes
+wille
+willig
+willst
+wimmern
+wimper
+wind
+winde
+windei
+windel
+winden
+windet
+windig
+wink
+winkel
+winken
+winker
+winkt
+winkte
+winsch
+winter
+winzig
+wipfel
+wippen
+wippt
+wippte
+wir
+wirbel
+wirbt
+wird
+wirft
+wirken
+wirkt
+wirkte
+wirr
+wirt
+wirtin
+wisch
+wischt
+wisent
+wissen
+witwe
+witwer
+witz
+witzig
+wobei
+woche
+wodka
+woelbt
+wofuer
+wog
+woge
+wogen
+wogend
+wogt
+wogte
+woher
+wohin
+wohl
+wohn
+wohnen
+wok
+wolf
+wolga
+wolke
+wolkig
+wolle
+wollen
+wollig
+wollte
+womit
+wonach
+wonne
+woran
+worauf
+woraus
+worden
+worin
+world
+wort
+worte
+worum
+wovon
+wovor
+wozu
+wrack
+wringt
+wsa
+wto
+wucher
+wuchs
+wucht
+wuehler
+wuerde
+wuerger
+wuergt
+wuerze
+wuerzen
+wuest
+wueste
+wuhan
+wulst
+wund
+wunde
+wunder
+wunsch
+wurde
+wurden
+wurf
+wurm
+wurmig
+wurzel
+wusch
+wusste
+wut
+wuxi
+xbeine
+xenon
+xfache
+xian
+xmal
+xuzhou
+yang
+yangon
+yard
+yawl
+yen
+yeti
+yoga
+yucca
+yuppie
+zacke
+zacken
+zackig
+zaeh
+zaeher
+zaehl
+zaehlt
+zaehmt
+zaehne
+zaeunt
+zagreb
+zahl
+zahlen
+zahlt
+zahlte
+zahm
+zahn
+zahnen
+zahnt
+zahnte
+zander
+zange
+zank
+zanken
+zankt
+zankte
+zapfen
+zappen
+zar
+zarge
+zarin
+zart
+zaster
+zauber
+zaum
+zaun
+zausen
+zaust
+zauste
+zdf
+zebra
+zebu
+zechen
+zecher
+zecht
+zechte
+zecke
+zeder
+zehe
+zehn
+zehner
+zehnte
+zehren
+zehrt
+zeigen
+zeiger
+zeigt
+zeihen
+zeile
+zeilen
+zeit
+zeitgen
+zelle
+zelot
+zelt
+zelten
+zelter
+zement
+zenit
+zensur
+zephir
+zepter
+zerren
+zerrt
+zerrte
+zettel
+zeug
+zeuge
+zeugen
+zeugt
+zeugte
+zhd
+zibo
+zich
+zickzack
+zilk
+ziege
+ziegel
+zieh
+ziehe
+ziehen
+zieht
+ziel
+zielen
+zielt
+ziemen
+ziemt
+zier
+zierde
+ziert
+ziffer
+zikade
+zimmer
+zimt
+zinder
+zink
+zinke
+zinken
+zinn
+zinnen
+zinnie
+zins
+zirkon
+zirkus
+zirpen
+zischt
+zitat
+zither
+zitrat
+zitrus
+zitze
+zivil
+zobel
+zoelle
+zofe
+zog
+zogen
+zoll
+zombie
+zonal
+zone
+zonen
+zoomt
+zoomte
+zopf
+zorn
+zornig
+zotte
+zottig
+ztg
+ztschr
+zucht
+zucken
+zucker
+zuckt
+zuckte
+zudem
+zueckt
+zuege
+zuegel
+zuernt
+zufall
+zug
+zugabe
+zugang
+zugig
+zulage
+zulauf
+zuluft
+zum
+zumal
+zuname
+zunder
+zunft
+zunge
+zupfen
+zupft
+zupfte
+zur
+zurren
+zurrt
+zuruf
+zus
+zusage
+zusatz
+zutat
+zuvor
+zwang
+zwangs
+zwar
+zweck
+zwecke
+zwecks
+zwei
+zweier
+zweig
+zweite
+zwerg
+zwingt
+zwirn
+zwirnt
+zwist
+zwoelf
+zyanat
+zyanid
+zygote
+zyklon
+zyklop
+zyklus
+zypern
+zyste
+zzgl

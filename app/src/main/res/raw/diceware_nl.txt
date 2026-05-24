@@ -1,6749 +1,6749 @@
-11111	Aagje
-11112	aagt
-11113	aagten
-11114	aai
-11115	aaide
-11116	aaien
-11121	aaitje
-11122	aak
-11123	aal
-11124	aalbes
-11125	aalput
-11126	aalt
-11131	aaltje
-11132	aam
-11133	aambei
-11134	aan
-11135	aanbad
-11136	aanbod
-11141	aaneen
-11142	aanhef
-11143	aanleg
-11144	aanpak
-11145	aantal
-11146	aanval
-11151	aanwas
-11152	aanzet
-11153	aap
-11154	aapje
-11155	aapjes
-11156	aapte
-11161	aar
-11162	aard
-11163	aardas
-11164	aardde
-11165	aarde
-11166	aarden
-11211	aardig
-11212	aards
-11213	aardse
-11214	aars
-11215	aarzen
-11216	aas
-11221	aasde
-11222	aasje
-11223	aasjes
-11224	aaszak
-11225	aatje
-11226	aatjes
-11231	abaci
-11232	abacus
-11233	abdij
-11234	abdis
-11235	abeel
-11236	abel
-11241	abele
-11242	abelen
-11243	abject
-11244	ablaut
-11245	abri
-11246	abrupt
-11251	abscis
-11252	absent
-11253	absint
-11254	absurd
-11255	abt
-11256	abten
-11261	abuis
-11262	acajou
-11263	accent
-11264	accept
-11265	acces
-11266	accres
-11311	accu
-11312	ace
-11313	aceton
-11314	ach
-11315	acht
-11316	achten
-11321	achter
-11322	achtte
-11323	acid
-11324	acne
-11325	acquit
-11326	acre
-11331	acres
-11332	acryl
-11333	act
-11334	acteur
-11335	actie
-11336	actief
-11341	actiën
-11342	acties
-11343	activa
-11344	acute
-11345	acuter
-11346	acuut
-11351	adagia
-11352	adagio
-11353	Adam
-11354	adat
-11355	adder
-11356	adders
-11361	addict
-11362	adel
-11363	adelde
-11364	adelen
-11365	adem
-11366	ademde
-11411	ademen
-11412	adept
-11413	ader
-11414	aderde
-11415	aderen
-11416	adieu
-11421	adios
-11422	adonis
-11423	adres
-11424	advent
-11425	advies
-11426	aequo
-11431	aëroob
-11432	afasie
-11433	afbouw
-11434	afdak
-11435	afdoen
-11436	afdruk
-11441	affect
-11442	affix
-11443	affuit
-11444	afgaan
-11445	afgang
-11446	afgod
-11451	afijn
-11452	afkeer
-11453	afkoop
-11454	aflaat
-11455	afloop
-11456	afmars
-11461	afname
-11462	afpeil
-11463	afreis
-11464	afrit
-11465	afroep
-11466	afslag
-11511	afstel
-11512	aft
-11513	aftrap
-11514	aftrek
-11515	afval
-11516	afvoer
-11521	afwas
-11522	afweer
-11523	afzet
-11524	afzien
-11525	afzijn
-11526	agaat
-11531	agamie
-11532	agaten
-11533	agave
-11534	agaven
-11535	agenda
-11536	agens
-11541	agent
-11542	agente
-11543	ageren
-11544	agio
-11545	agnost
-11546	agogie
-11551	agonie
-11552	agoog
-11553	agrafe
-11554	aha
-11555	ahoi
-11556	ahorn
-11561	aids
-11562	aikido
-11563	air
-11564	airbag
-11565	airbus
-11566	airco
-11611	airtje
-11612	aïs
-11613	aïssen
-11614	ajour
-11615	ajuin
-11616	ajuus
-11621	akant
-11622	akela
-11623	akelei
-11624	akelig
-11625	aker
-11626	akker
-11631	akkers
-11632	akolei
-11633	aks
-11634	aksen
-11635	akst
-11636	aksten
-11641	akte
-11642	akten
-11643	aktes
-11644	alaam
-11645	alarm
-11646	albast
-11651	albe
-11652	alben
-11653	albino
-11654	album
-11655	albums
-11656	aldaar
-11661	aldoor
-11662	aldra
-11663	aldus
-11664	aleer
-11665	alert
-11666	alerte
-12111	alfa
-12112	algauw
-12113	alge
-12114	algen
-12115	alhier
-12116	alias
-12121	alibi
-12122	alinea
-12123	alk
-12124	alkali
-12125	alken
-12126	alkoof
-12131	all
-12132	Allah
-12133	allang
-12134	alle
-12135	allee
-12136	alleen
-12141	allen
-12142	aller
-12143	alles
-12144	allo
-12145	allooi
-12146	allure
-12151	almaar
-12152	almede
-12153	almee
-12154	aloë
-12155	alom
-12156	aloud
-12161	aloude
-12162	alp
-12163	alpaca
-12164	alpen
-12165	alpien
-12166	alpine
-12211	alpino
-12212	alras
-12213	alruin
-12214	als
-12215	alsdan
-12216	alsem
-12221	alsnog
-12222	alsof
-12223	alsook
-12224	alt
-12225	altaar
-12226	alten
-12231	alter
-12232	althea
-12233	altijd
-12234	altist
-12235	altoos
-12236	aluin
-12241	alvast
-12242	alver
-12243	alvers
-12244	alwaar
-12245	alweer
-12246	alzo
-12251	amanda
-12252	amant
-12253	amaril
-12254	amati
-12255	amber
-12256	ambigu
-12261	ambo
-12262	ambt
-12263	ambten
-12264	amen
-12265	amfoor
-12266	amfora
-12311	amice
-12312	amices
-12313	amict
-12314	amigo
-12315	amoebe
-12316	amok
-12321	amorf
-12322	amorfe
-12323	ampel
-12324	ampele
-12325	amper
-12326	ampère
-12331	ampex
-12332	ampul
-12333	amulet
-12334	amuse
-12335	anaal
-12336	anale
-12341	ancien
-12342	ander
-12343	andere
-12344	anders
-12345	anemie
-12346	angel
-12351	angels
-12352	angina
-12353	angora
-12354	angst
-12355	anijs
-12356	anima
-12361	animo
-12362	animus
-12363	anion
-12364	anjer
-12365	anjers
-12366	ank
-12411	anker
-12412	ankers
-12413	anklet
-12414	annex
-12415	anno
-12416	anode
-12421	anoden
-12422	anodes
-12423	anomie
-12424	anorak
-12425	ante
-12426	anti
-12431	antiek
-12432	anus
-12433	aorta
-12434	apache
-12435	apart
-12436	aparte
-12441	aperçu
-12442	aperij
-12443	apert
-12444	aperte
-12445	apezat
-12446	apin
-12451	aplomb
-12452	aporie
-12453	appel
-12454	appèl
-12455	appels
-12456	april
-12461	aprils
-12462	apsis
-12463	ara
-12464	arak
-12465	arbeid
-12466	arcade
-12511	arde
-12512	arduin
-12513	are
-12514	areaal
-12515	aren
-12516	arena
-12521	arend
-12522	argon
-12523	argot
-12524	argots
-12525	argus
-12526	aria
-12531	ariër
-12532	ariërs
-12533	arisch
-12534	ark
-12535	arken
-12536	arm
-12541	armada
-12542	arme
-12543	armee
-12544	armen
-12545	armer
-12546	armoe
-12551	armpje
-12552	armvol
-12553	Arnhem
-12554	aroma
-12555	aromen
-12556	aroom
-12561	arren
-12562	arrest
-12563	arrivé
-12564	ars
-12565	arseen
-12566	art
-12611	arts
-12612	artsen
-12613	asbak
-12614	asbelt
-12615	asbest
-12616	asceet
-12621	ascese
-12622	Asdag
-12623	asem
-12624	asemen
-12625	asfalt
-12626	ashoop
-12631	asiel
-12632	askar
-12633	asla
-12634	aslade
-12635	aspect
-12636	aspic
-12641	aspot
-12642	asrest
-12643	assem
-12644	assen
-12645	Assen
-12646	ast
-12651	asten
-12652	aster
-12653	asters
-12654	astma
-12655	aston
-12656	asurn
-12661	ataxie
-12662	atjar
-12663	Atjees
-12664	atlant
-12665	atlas
-12666	atleet
-13111	atlete
-13112	atol
-13113	atomen
-13114	atoom
-13115	atrium
-13116	attaca
-13121	attent
-13122	attest
-13123	aubade
-13124	auctie
-13125	auctor
-13126	aucuba
-13131	augurk
-13132	aula
-13133	aura
-13134	aurora
-13135	Aussie
-13136	auteur
-13141	autist
-13142	auto
-13143	auxine
-13144	aval
-13145	avance
-13146	avant
-13151	avatar
-13152	ave
-13153	avenue
-13154	averij
-13155	avis
-13156	avond
-13161	axel
-13162	axiaal
-13163	axiale
-13164	axioma
-13165	azalea
-13166	azen
-13211	Aziaat
-13212	azijn
-13213	azimut
-13214	azteek
-13215	azuren
-13216	azuur
-13221	baadde
-13222	baadje
-13223	baai
-13224	baaien
-13225	baak
-13226	baal
-13231	baalde
-13232	baan
-13233	baande
-13234	baar
-13235	baard
-13236	baarde
-13241	baars
-13242	baas
-13243	baasde
-13244	baat
-13245	baatte
-13246	babbel
-13251	babi
-13252	baboe
-13253	baboes
-13254	baby
-13255	bacil
-13256	back
-13261	backen
-13262	bacon
-13263	bacove
-13264	bad
-13265	badcel
-13266	baden
-13311	bader
-13312	baders
-13313	badge
-13314	badjas
-13315	badpak
-13316	badtas
-13321	bagger
-13322	bagno
-13323	bah
-13324	bahco
-13325	baisse
-13326	bajes
-13331	bak
-13332	baken
-13333	bakens
-13334	baker
-13335	bakers
-13336	bakken
-13341	bakker
-13342	bakkes
-13343	bakkie
-13344	bakpan
-13345	baksel
-13346	bakte
-13351	bakten
-13352	bakvis
-13353	bal
-13354	balans
-13355	balata
-13356	balde
-13361	balein
-13362	balen
-13363	balg
-13364	balgen
-13365	balie
-13366	balies
-13411	balije
-13412	baljuw
-13413	balk
-13414	balken
-13415	balkon
-13416	balkte
-13421	ballen
-13422	ballet
-13423	ballon
-13424	balpen
-13425	balsa
-13426	balsem
-13431	balts
-13432	balzak
-13433	bamba
-13434	bamboe
-13435	bami
-13436	Bamis
-13441	ban
-13442	banaal
-13443	banaan
-13444	banaat
-13445	banale
-13446	band
-13451	bande
-13452	banden
-13453	banen
-13454	bang
-13455	bange
-13456	banger
-13461	bangig
-13462	banier
-13463	banjer
-13464	banjir
-13465	banjo
-13466	bank
-13511	banken
-13512	banket
-13513	bankje
-13514	bankte
-13515	bannen
-13516	bantoe
-13521	bar
-13522	barak
-13523	bard
-13524	barden
-13525	barder
-13526	bare
-13531	bareel
-13532	baren
-13533	baret
-13534	bariet
-13535	baring
-13536	barium
-13541	bark
-13542	barkas
-13543	barken
-13544	barman
-13545	barok
-13546	baron
-13551	barons
-13552	barre
-13553	barrel
-13554	bars
-13555	barse
-13556	barser
-13561	barzoi
-13562	bas
-13563	basaal
-13564	basale
-13565	basalt
-13566	base
-13611	basen
-13612	bases
-13613	basis
-13614	basket
-13615	bassen
-13616	basset
-13621	bassin
-13622	bast
-13623	basta
-13624	baste
-13625	basten
-13626	bat
-13631	Bataaf
-13632	bataat
-13633	batch
-13634	bate
-13635	baten
-13636	batig
-13641	batik
-13642	batiks
-13643	batist
-13644	baton
-13645	batten
-13646	baud
-13651	bauwde
-13652	bauwen
-13653	bavet
-13654	baxter
-13655	bazaar
-13656	bazen
-13661	bazig
-13662	bazige
-13663	bazin
-13664	bazuin
-13665	beaamd
-13666	beaat
-14111	beamen
-14112	beat
-14113	beauté
-14114	beauty
-14115	beboet
-14116	bebop
-14121	bebost
-14122	bed
-14123	bedden
-14124	bede
-14125	bedekt
-14126	beden
-14131	bederf
-14132	bedild
-14133	beding
-14134	bedolf
-14135	bedong
-14136	bedot
-14141	bedrag
-14142	bedrog
-14143	beduid
-14144	beefde
-14145	beek
-14146	beeld
-14151	beemd
-14152	been
-14153	beende
-14154	beer
-14155	beerde
-14156	beërfd
-14161	beest
-14162	beet
-14163	beetje
-14164	bef
-14165	beffen
-14166	begaan
-14211	begaf
-14212	begijn
-14213	begild
-14214	begin
-14215	beging
-14216	begon
-14221	begoot
-14222	begrip
-14223	beha
-14224	behang
-14225	beheer
-14226	behept
-14231	behing
-14232	behoed
-14233	behoef
-14234	behoud
-14235	behulp
-14236	behuwd
-14241	bei
-14242	beidde
-14243	beide
-14244	beiden
-14245	beider
-14246	beien
-14251	Beier
-14252	Beiers
-14253	beige
-14254	beitel
-14255	beits
-14256	bejoeg
-14261	bek
-14262	bekaf
-14263	bekakt
-14264	bekapt
-14265	bekeef
-14266	bekeek
-14311	beken
-14312	bekend
-14313	beker
-14314	bekers
-14315	bekist
-14316	bekken
-14321	beklad
-14322	beklag
-14323	beklom
-14324	beknot
-14325	bekort
-14326	bekte
-14331	bekwam
-14332	bel
-14333	beland
-14334	belang
-14335	belas
-14336	belast
-14341	belde
-14342	beleed
-14343	beleg
-14344	belegd
-14345	beleid
-14346	belet
-14351	Belg
-14352	Belgen
-14353	België
-14354	beliep
-14355	belle
-14356	bellen
-14361	bello
-14362	beloog
-14363	beloop
-14364	belt
-14365	belten
-14366	beluik
-14411	belust
-14412	bemand
-14413	bemest
-14414	bemind
-14415	bemost
-14416	ben
-14421	benam
-14422	benard
-14423	bende
-14424	benden
-14425	bendes
-14426	bene
-14431	bengel
-14432	benig
-14433	benige
-14434	benijd
-14435	bennen
-14436	bent
-14441	benul
-14442	benut
-14443	benzoë
-14444	benzol
-14445	beo
-14446	beogen
-14451	beoogd
-14452	bepakt
-14453	beraad
-14454	berber
-14455	berd
-14456	berde
-14461	berden
-14462	bereed
-14463	bereid
-14464	bereik
-14465	beren
-14466	berg
-14511	bergaf
-14512	bergen
-14513	Bergen
-14514	bergop
-14515	beried
-14516	beriep
-14521	beril
-14522	berin
-14523	berini
-14524	berk
-14525	berken
-14526	berm
-14531	bermen
-14532	beroep
-14533	beroet
-14534	berouw
-14535	berrie
-14536	berust
-14541	bes
-14542	besef
-14543	beseft
-14544	besje
-14545	besjes
-14546	beslag
-14551	besmet
-14552	bespot
-14553	bessen
-14554	best
-14555	bestal
-14556	beste
-14561	bestek
-14562	bestel
-14563	besten
-14564	bèta
-14565	betast
-14566	bete
-14611	betel
-14612	beten
-14613	beter
-14614	beton
-14615	betond
-14616	betoog
-14621	betoon
-14622	betrad
-14623	betrof
-14624	betrok
-14625	bette
-14626	betten
-14631	beu
-14632	beug
-14633	beugel
-14634	beugen
-14635	beuk
-14636	beuken
-14641	beuker
-14642	beukte
-14643	beul
-14644	beulde
-14645	beulen
-14646	beun
-14651	beunen
-14652	beurde
-14653	beuren
-14654	beurs
-14655	beurse
-14656	beurt
-14661	beval
-14662	bevat
-14663	bevel
-14664	beven
-14665	bever
-14666	bevers
-15111	beviel
-15112	bevind
-15113	beving
-15114	bevist
-15115	bevit
-15116	bevoer
-15121	bevond
-15122	bewees
-15123	beweid
-15124	bewies
-15125	bewijs
-15126	bewind
-15131	bewoog
-15132	bewust
-15133	bezaan
-15134	bezag
-15135	bezat
-15136	bezem
-15141	bezems
-15142	bezet
-15143	bezie
-15144	bezien
-15145	beziën
-15146	bezig
-15151	bezige
-15152	bezit
-15153	bezoek
-15154	bezon
-15155	bezong
-15156	bezonk
-15161	bezoop
-15162	bias
-15163	bibs
-15164	bic
-15165	biceps
-15166	biddag
-15211	bidden
-15212	bidder
-15213	bidet
-15214	bidets
-15215	bidon
-15216	bidweg
-15221	bieb
-15222	biecht
-15223	bieden
-15224	bieder
-15225	biel
-15226	biels
-15231	bier
-15232	bieren
-15233	bies
-15234	biesde
-15235	biest
-15236	biet
-15241	bieten
-15242	biezen
-15243	big
-15244	bigde
-15245	biggen
-15246	bigot
-15251	bij
-15252	bijbal
-15253	bijbel
-15254	bijeen
-15255	bijen
-15256	bijl
-15261	bijlen
-15262	bijles
-15263	bijna
-15264	bijou
-15265	bijous
-15266	bijrol
-15311	bijt
-15312	bijten
-15313	bijter
-15314	bijtje
-15315	bijtte
-15316	bijvak
-15321	bijval
-15322	bijzin
-15323	bijzit
-15324	bijzon
-15325	bik
-15326	bikini
-15331	bikkel
-15332	bikken
-15333	bikte
-15334	bil
-15335	bilde
-15336	biljet
-15341	billen
-15342	bimbam
-15343	binair
-15344	binden
-15345	binder
-15346	bingo
-15351	bink
-15352	binken
-15353	binnen
-15354	binst
-15355	bint
-15356	binten
-15361	bintje
-15362	biobak
-15363	biogas
-15364	bios
-15365	bips
-15366	bis
-15411	bisdom
-15412	bismut
-15413	bissen
-15414	bisser
-15415	bister
-15416	bistro
-15421	bit
-15422	bits
-15423	bitse
-15424	bitser
-15425	bitsig
-15426	bitten
-15431	bitter
-15432	bivak
-15433	bizar
-15434	bizon
-15435	bizons
-15436	blaag
-15441	blaam
-15442	blaar
-15443	blaas
-15444	blad
-15445	bladen
-15446	blafte
-15451	blagen
-15452	blague
-15453	blak
-15454	blaken
-15455	blaker
-15456	blakke
-15461	blanco
-15462	blanda
-15463	blank
-15464	blanke
-15465	blaren
-15466	blasé
-15511	blaten
-15512	blauw
-15513	blauwe
-15514	blazen
-15515	blazer
-15516	bleef
-15521	bleek
-15522	blees
-15523	blei
-15524	bleien
-15525	bleke
-15526	bleken
-15531	bleker
-15532	blekte
-15533	blende
-15534	blèrde
-15535	blèren
-15536	bles
-15541	bleten
-15542	bleu
-15543	blezen
-15544	bliek
-15545	bliep
-15546	blies
-15551	blij
-15552	blijde
-15553	blijer
-15554	blijf
-15555	blik
-15556	blikte
-15561	blind
-15562	blinde
-15563	blink
-15564	blits
-15565	blo
-15566	blode
-15611	bloder
-15612	bloed
-15613	bloei
-15614	bloem
-15615	bloes
-15616	blok
-15621	blokte
-15622	blom
-15623	blond
-15624	blonde
-15625	bloot
-15626	blos
-15631	blote
-15632	bloter
-15633	blouse
-15634	blow
-15635	blowen
-15636	blower
-15641	blozen
-15642	blues
-15643	bluf
-15644	blufte
-15645	bluste
-15646	blut
-15651	bluts
-15652	boa
-15653	board
-15654	bob
-15655	bobbel
-15656	bobben
-15661	bobby
-15662	bobde
-15663	bobijn
-15664	bobine
-15665	bochel
-15666	bocht
-16111	bock
-16112	bod
-16113	bode
-16114	bodega
-16115	bodem
-16116	bodems
-16121	boden
-16122	bodes
-16123	body
-16124	boe
-16125	boedel
-16126	boef
-16131	boeg
-16132	boegen
-16133	boei
-16134	boeide
-16135	boeien
-16136	boeier
-16141	boek
-16142	boeken
-16143	boeket
-16144	boekte
-16145	boel
-16146	boelen
-16151	boem
-16152	boeman
-16153	boemel
-16154	boende
-16155	boer
-16156	boerde
-16161	boeren
-16162	boerin
-16163	boers
-16164	boerse
-16165	boert
-16166	boes
-16211	boete
-16212	boeten
-16213	boetes
-16214	boette
-16215	boeven
-16216	boezel
-16221	boezem
-16222	boezen
-16223	bof
-16224	boffen
-16225	boffer
-16226	bofte
-16231	bogen
-16232	bohème
-16233	boiler
-16234	bojaar
-16235	bok
-16236	bokaal
-16241	bokken
-16242	bokkig
-16243	boksen
-16244	bokser
-16245	bokste
-16246	bokte
-16251	boktor
-16252	bol
-16253	bolde
-16254	bolder
-16255	boleet
-16256	bolero
-16261	bolide
-16262	bolk
-16263	bolken
-16264	bolkop
-16265	bolle
-16266	bollen
-16311	boller
-16312	bollig
-16313	bolus
-16314	bom
-16315	bombam
-16316	bomde
-16321	bomen
-16322	bomer
-16323	bomers
-16324	bomgat
-16325	bomijs
-16326	bommel
-16331	bommen
-16332	bomvol
-16333	bon
-16334	bonbon
-16335	bond
-16336	bonden
-16341	bondig
-16342	bonen
-16343	bongo
-16344	boni
-16345	bonje
-16346	bonk
-16351	bonken
-16352	bonket
-16353	bonkig
-16354	bonkte
-16355	bonnen
-16356	bonnet
-16361	bonobo
-16362	bons
-16363	bonsai
-16364	bonsde
-16365	bont
-16366	bonte
-16411	bonten
-16412	bonter
-16413	bontje
-16414	bonus
-16415	bonze
-16416	bonzen
-16421	boog
-16422	boogde
-16423	boom
-16424	boomde
-16425	boon
-16426	boor
-16431	booras
-16432	boord
-16433	boorde
-16434	boort
-16435	boos
-16436	boot
-16441	bootee
-16442	bootte
-16443	bopper
-16444	boraat
-16445	borat
-16446	borax
-16451	bord
-16452	borden
-16453	border
-16454	bordes
-16455	boren
-16456	borg
-16461	borgde
-16462	borgen
-16463	boring
-16464	borium
-16465	borrel
-16466	bos
-16511	bosbes
-16512	bosgod
-16513	bosje
-16514	bosjes
-16515	boskat
-16516	boson
-16521	bospad
-16522	bossen
-16523	boste
-16524	boston
-16525	bosuil
-16526	bot
-16531	boten
-16532	boter
-16533	botje
-16534	botjes
-16535	bots
-16536	botsen
-16541	botste
-16542	botte
-16543	bottel
-16544	botten
-16545	botter
-16546	botweg
-16551	bouclé
-16552	boud
-16553	boude
-16554	bougie
-16555	boules
-16556	bout
-16561	boute
-16562	bouten
-16563	bouw
-16564	bouwde
-16565	bouwen
-16566	bouwer
-16611	boven
-16612	bowl
-16613	bowlde
-16614	bowlen
-16615	bowler
-16616	box
-16621	boxer
-16622	boy
-16623	boycot
-16624	boze
-16625	bozer
-16626	bozig
-16631	braaf
-16632	braai
-16633	braak
-16634	braam
-16635	bracht
-16636	braden
-16641	brak
-16642	braken
-16643	brakke
-16644	bralde
-16645	bram
-16646	bramen
-16651	brand
-16652	brandy
-16653	branie
-16654	bras
-16655	brasem
-16656	braste
-16661	brat
-16662	brave
-16663	braver
-16664	bravo
-16665	break
-16666	brede
-21111	breder
-21112	breed
-21113	breide
-21114	breien
-21115	brein
-21116	breken
-21121	breker
-21122	brem
-21123	brems
-21124	bres
-21125	bretel
-21126	Breton
-21131	breuk
-21132	breve
-21133	breven
-21134	brevet
-21135	bridge
-21136	brie
-21141	brief
-21142	bries
-21143	brij
-21144	brijen
-21145	brik
-21146	briket
-21151	bril
-21152	brilde
-21153	brille
-21154	brink
-21155	brio
-21156	Brit
-21161	Brits
-21162	Britse
-21163	broche
-21164	broden
-21165	broed
-21166	broeds
-21211	broei
-21212	broek
-21213	broer
-21214	broes
-21215	brogue
-21216	brok
-21221	broker
-21222	brokte
-21223	brom
-21224	bromde
-21225	bron
-21226	brons
-21231	bronst
-21232	brood
-21233	broom
-21234	broos
-21235	bros
-21236	brosse
-21241	broze
-21242	brozen
-21243	brozer
-21244	brug
-21245	Brugge
-21246	brugje
-21251	brui
-21252	bruid
-21253	bruin
-21254	bruine
-21255	bruis
-21256	brulde
-21261	brunch
-21262	brut
-21263	brute
-21264	bruten
-21265	bruter
-21266	bruto
-21311	bruusk
-21312	bruut
-21313	bubbel
-21314	buddy
-21315	budget
-21316	budo
-21321	buffel
-21322	buffer
-21323	buffet
-21324	bug
-21325	bugel
-21326	bugels
-21331	buggy
-21332	bŸhne
-21333	bui
-21334	buide
-21335	buidel
-21336	buien
-21341	buigen
-21342	buiig
-21343	buik
-21344	buiken
-21345	buikig
-21346	buikje
-21351	buil
-21352	builde
-21353	builen
-21354	buis
-21355	buisde
-21356	buit
-21361	buiten
-21362	buitje
-21363	buitte
-21364	buizen
-21365	bukken
-21366	buks
-21411	buksen
-21412	bukte
-21413	bul
-21414	buldog
-21415	bulk
-21416	bulken
-21421	bulkte
-21422	bullen
-21423	bult
-21424	bulten
-21425	bultig
-21426	bultte
-21431	bumper
-21432	bun
-21433	bundel
-21434	bunder
-21435	bunker
-21436	bunnen
-21441	bunny
-21442	bups
-21443	burcht
-21444	bureau
-21445	bureel
-21446	buren
-21451	buret
-21452	burg
-21453	burgen
-21454	burger
-21455	burijn
-21456	burin
-21461	burins
-21462	bus
-21463	bussel
-21464	bussen
-21465	buste
-21466	busten
-21511	bustes
-21512	butaan
-21513	butler
-21514	butsen
-21515	button
-21516	buur
-21521	buurde
-21522	buurt
-21523	buxus
-21524	bye
-21525	bypass
-21526	byte
-21531	bytes
-21532	caban
-21533	cabans
-21534	cabine
-21535	cachet
-21536	cachot
-21541	cactus
-21542	cadans
-21543	caddie
-21544	cadeau
-21545	cadens
-21546	cadet
-21551	caesar
-21552	café
-21553	cafés
-21554	cahier
-21555	cake
-21556	cakes
-21561	calque
-21562	camber
-21563	camee
-21564	camel
-21565	camera
-21566	camion
-21611	camper
-21612	campus
-21613	canada
-21614	canapé
-21615	canard
-21616	cancan
-21621	canon
-21622	canons
-21623	canto
-21624	cantor
-21625	canule
-21626	canvas
-21631	cape
-21632	capes
-21633	capita
-21634	carbid
-21635	carbol
-21636	carbon
-21641	care
-21642	cargo
-21643	cariës
-21644	carnet
-21645	carré
-21646	carrés
-21651	carter
-21652	casco
-21653	case
-21654	cash
-21655	casino
-21656	cassis
-21661	cast
-21662	casten
-21663	castte
-21664	casus
-21665	catgut
-21666	causa
-22111	cautie
-22112	cavia
-22113	cedel
-22114	cedels
-22115	ceder
-22116	ceders
-22121	ceel
-22122	cel
-22123	celen
-22124	cellen
-22125	cello
-22126	cement
-22131	censor
-22132	census
-22133	cent
-22134	centen
-22135	center
-22136	centra
-22141	cerise
-22142	cervix
-22143	cesium
-22144	cessie
-22145	cesuur
-22146	cetera
-22151	chador
-22152	chalet
-22153	chaoot
-22154	chaos
-22155	charge
-22156	charme
-22161	charta
-22162	cheeta
-22163	chef
-22164	chefs
-22165	chemie
-22166	cheque
-22211	cherub
-22212	chic
-22213	chick
-22214	chili
-22215	chintz
-22216	chip
-22221	chips
-22222	chique
-22223	chloor
-22224	choco
-22225	choke
-22226	choken
-22231	chorus
-22232	chroma
-22233	chromo
-22234	chrono
-22235	chroom
-22236	cicero
-22241	cider
-22242	cijfer
-22243	cijns
-22244	cineac
-22245	cinema
-22246	cipier
-22251	cipres
-22252	circa
-22253	circus
-22254	cirkel
-22255	cirrus
-22256	cis
-22261	cissen
-22262	citaat
-22263	citer
-22264	citers
-22265	city
-22266	civet
-22311	civiel
-22312	claim
-22313	clan
-22314	claque
-22315	claris
-22316	claus
-22321	claves
-22322	claxon
-22323	clean
-22324	cleane
-22325	clerus
-22326	cliché
-22331	click
-22332	cliënt
-22333	climax
-22334	clinch
-22335	clip
-22336	clivia
-22341	cloaca
-22342	close
-22343	closet
-22344	clou
-22345	clown
-22346	club
-22351	coach
-22352	coaten
-22353	cobra
-22354	coca
-22355	coccus
-22356	coda
-22361	code
-22362	codes
-22363	codeur
-22364	codex
-22365	cognac
-22366	cohort
-22411	coïtus
-22412	coke
-22413	cokes
-22414	col
-22415	cola
-22416	colli
-22421	collie
-22422	collo
-22423	colt
-22424	column
-22425	coma
-22426	combi
-22431	combo
-22432	comité
-22433	condor
-22434	conga
-22435	congé
-22436	congés
-22441	consul
-22442	conté
-22443	conti
-22444	conto
-22445	contra
-22446	conus
-22451	convex
-22452	corgi
-22453	corner
-22454	cornet
-22455	corona
-22456	corps
-22461	corpus
-22462	corso
-22463	Cortes
-22464	cortex
-22465	corvee
-22466	coup
-22511	coupe
-22512	coupé
-22513	coupes
-22514	coupés
-22515	coupon
-22516	cour
-22521	cover
-22522	cowboy
-22523	coyote
-22524	crack
-22525	crank
-22526	crash
-22531	crawl
-22532	crayon
-22533	crazy
-22534	crèche
-22535	credit
-22536	credo
-22541	crème
-22542	crèmes
-22543	creool
-22544	crêpe
-22545	cretin
-22546	crew
-22551	criant
-22552	crime
-22553	crises
-22554	cross
-22555	cru
-22556	cruise
-22561	crux
-22562	crypte
-22563	Cubaan
-22564	cue
-22565	culten
-22566	cultus
-22611	cumul
-22612	cup
-22613	cupido
-22614	curare
-22615	curie
-22616	cursor
-22621	cursus
-22622	curve
-22623	curven
-22624	custos
-22625	cutter
-22626	cyaan
-22631	cycli
-22632	cyclus
-22633	cynici
-22634	cypers
-22635	cyste
-22636	cysten
-22641	daad
-22642	daagde
-22643	daags
-22644	daagse
-22645	daalde
-22646	daar
-22651	daaraf
-22652	daarin
-22653	daarna
-22654	daarom
-22655	daarop
-22656	daas
-22661	daasde
-22662	dabben
-22663	dabde
-22664	dacht
-22665	dadel
-22666	dadels
-23111	daden
-23112	dader
-23113	daders
-23114	dading
-23115	dag
-23116	dage
-23121	dagen
-23122	dager
-23123	dagers
-23124	dagge
-23125	daggen
-23126	daging
-23131	dagje
-23132	dagjes
-23133	daguil
-23134	dahlia
-23135	daim
-23136	dak
-23141	daken
-23142	dakpan
-23143	dal
-23144	dalem
-23145	dalems
-23146	dalen
-23151	daling
-23152	daluur
-23153	dam
-23154	damar
-23155	damast
-23156	damde
-23161	dame
-23162	dames
-23163	dammen
-23164	dammer
-23165	damp
-23166	dampen
-23211	dampig
-23212	dampte
-23213	dan
-23214	dandy
-23215	danig
-23216	danige
-23221	dank
-23222	danken
-23223	dankte
-23224	dans
-23225	dansen
-23226	danser
-23231	danste
-23232	dapper
-23233	dar
-23234	darm
-23235	darmen
-23236	darren
-23241	dartel
-23242	darts
-23243	das
-23244	dassen
-23245	dat
-23246	data
-23251	datief
-23252	datje
-23253	datjes
-23254	dato
-23255	datsja
-23256	datum
-23261	datums
-23262	dauw
-23263	dauwde
-23264	dauwen
-23265	daver
-23266	davit
-23311	davits
-23312	dazen
-23313	deal
-23314	dealen
-23315	dealer
-23316	debat
-23321	debet
-23322	debiel
-23323	debiet
-23324	debuut
-23325	decaan
-23326	decade
-23331	decent
-23332	deciel
-23333	deck
-23334	decor
-23335	decors
-23336	dédain
-23341	deed
-23342	deeg
-23343	deejay
-23344	deel
-23345	deelde
-23346	deels
-23351	Deen
-23352	Deens
-23353	Deense
-23354	deerde
-23355	deerne
-23356	degel
-23361	degels
-23362	degen
-23363	degene
-23364	degens
-23365	degout
-23366	deinde
-23411	deinen
-23412	deïsme
-23413	deïst
-23414	dek
-23415	dekbed
-23416	deken
-23421	dekens
-23422	dekhut
-23423	dekken
-23424	dekker
-23425	deksel
-23426	dekte
-23431	del
-23432	dele
-23433	delen
-23434	deler
-23435	delers
-23436	delfde
-23441	delfts
-23442	delgde
-23443	delgen
-23444	delict
-23445	deling
-23446	dellen
-23451	delta
-23452	delven
-23453	dement
-23454	demi
-23455	demo
-23456	demon
-23461	demons
-23462	dempen
-23463	demper
-23464	dempte
-23465	denier
-23466	denim
-23511	denken
-23512	denker
-23513	dennen
-23514	Deo
-23515	depot
-23516	depots
-23521	deppen
-23522	depte
-23523	der
-23524	derby
-23525	derde
-23526	derden
-23531	derdes
-23532	deren
-23533	derfde
-23534	derny
-23535	derrie
-23536	dertig
-23541	derven
-23542	des
-23543	desa
-23544	desem
-23545	desems
-23546	design
-23551	desk
-23552	dessen
-23553	dessin
-23554	detail
-23555	deuce
-23556	deugd
-23561	deugde
-23562	deugen
-23563	deuk
-23564	deuken
-23565	deukte
-23566	deun
-23611	deunde
-23612	deunen
-23613	deur
-23614	deuren
-23615	deuvik
-23616	devies
-23621	Devoon
-23622	devoot
-23623	devote
-23624	dewijl
-23625	deze
-23626	dezen
-23631	dezer
-23632	dia
-23633	diaken
-23634	dicht
-23635	dichte
-23636	dictee
-23641	dictie
-23642	die
-23643	dieet
-23644	dief
-23645	diefde
-23646	dien
-23651	diende
-23652	diens
-23653	dienst
-23654	diep
-23655	diepe
-23656	diepen
-23661	dieper
-23662	diepte
-23663	dier
-23664	dieren
-23665	dies
-23666	diesel
-24111	diëten
-24112	Diets
-24113	Dietse
-24114	dieven
-24115	dij
-24116	dijde
-24121	dijen
-24122	dijn
-24123	dik
-24124	dikbil
-24125	dikke
-24126	dikken
-24131	dikker
-24132	dikkig
-24133	dikkop
-24134	dikoor
-24135	dikte
-24136	dikten
-24141	diktes
-24142	dikzak
-24143	dildo
-24144	dille
-24145	dillen
-24146	dimde
-24151	dimmen
-24152	dimmer
-24153	dimorf
-24154	dinar
-24155	diner
-24156	diners
-24161	ding
-24162	dingen
-24163	dinges
-24164	dingo
-24165	diode
-24166	diodes
-24211	dip
-24212	dippen
-24213	dipte
-24214	direct
-24215	dirk
-24216	dirken
-24221	dirkte
-24222	dis
-24223	disco
-24224	discus
-24225	disk
-24226	dissel
-24231	dissen
-24232	distel
-24233	dit
-24234	ditje
-24235	ditjes
-24236	dito
-24241	diva
-24242	divan
-24243	divans
-24244	divers
-24245	dizzy
-24246	djati
-24251	dobber
-24252	docent
-24253	doch
-24254	dociel
-24255	doctor
-24256	doddig
-24261	dode
-24262	doden
-24263	doding
-24264	doedel
-24265	doek
-24266	doeken
-24311	doekte
-24312	doel
-24313	doelde
-24314	doelen
-24315	doem
-24316	doemde
-24321	doemen
-24322	doen
-24323	doende
-24324	doener
-24325	doerak
-24326	does
-24331	doetje
-24332	doezel
-24333	doezen
-24334	dof
-24335	doffe
-24336	doffen
-24341	doffer
-24342	doft
-24343	dofte
-24344	doften
-24345	dog
-24346	doge
-24351	dogen
-24352	doges
-24353	doggen
-24354	dogger
-24355	dogma
-24356	dok
-24361	doka
-24362	doken
-24363	dokken
-24364	dokte
-24365	dokter
-24366	dol
-24411	dolby
-24412	dolde
-24413	dolen
-24414	doler
-24415	dolik
-24416	doling
-24421	dolk
-24422	dolken
-24423	dollar
-24424	dolle
-24425	dollen
-24426	doller
-24431	dolly
-24432	dolman
-24433	dolmen
-24434	dolven
-24435	dom
-24436	domein
-24441	domen
-24442	domino
-24443	domkop
-24444	domme
-24445	dommel
-24446	dommer
-24451	domoor
-24452	dompel
-24453	domper
-24454	dompig
-24455	domweg
-24456	don
-24461	doña
-24462	donaat
-24463	donder
-24464	dong
-24465	donjon
-24466	donk
-24511	donker
-24512	donkey
-24513	donna
-24514	donor
-24515	donors
-24516	dons
-24521	donsje
-24522	donut
-24523	donzen
-24524	donzig
-24525	dood
-24526	doodde
-24531	doodop
-24532	doods
-24533	doodse
-24534	doof
-24535	doofde
-24536	dooi
-24541	dooide
-24542	dooie
-24543	dooien
-24544	dooier
-24545	dook
-24546	dool
-24551	doolde
-24552	doom
-24553	doomde
-24554	doop
-24555	doopte
-24556	door
-24561	doorn
-24562	doos
-24563	dop
-24564	dope
-24565	dopen
-24566	doper
-24611	dopers
-24612	dophei
-24613	doping
-24614	doppen
-24615	dopper
-24616	dopte
-24621	dor
-24622	dorade
-24623	dorado
-24624	dorde
-24625	dorder
-24626	doren
-24631	dorens
-24632	dorp
-24633	dorpel
-24634	dorpen
-24635	dorper
-24636	dorps
-24641	dorpse
-24642	dorre
-24643	dorren
-24644	dors
-24645	dorsen
-24646	dos
-24651	doses
-24652	dosis
-24653	dossen
-24654	doste
-24655	dot
-24656	dotaal
-24661	dotten
-24662	dotter
-24663	douane
-24664	doublé
-24665	douche
-24666	douw
-25111	douwde
-25112	douwen
-25113	dove
-25114	doven
-25115	dover
-25116	down
-25121	dozen
-25122	dozijn
-25123	dra
-25124	draad
-25125	draai
-25126	draak
-25131	drab
-25132	dracht
-25133	draden
-25134	draf
-25135	dragee
-25136	dragen
-25141	drager
-25142	dragon
-25143	draken
-25144	dralen
-25145	drama
-25146	dramde
-25151	drang
-25152	drank
-25153	dras
-25154	drasse
-25155	draven
-25156	draver
-25161	dravik
-25162	draw
-25163	dreef
-25164	dreg
-25165	dregde
-25166	drek
-25211	dreun
-25212	drevel
-25213	dreven
-25214	drie
-25215	drieën
-25216	dries
-25221	driest
-25222	drift
-25223	dril
-25224	drilde
-25225	drive
-25226	drives
-25231	droef
-25232	droeg
-25233	droes
-25234	droeve
-25235	droge
-25236	drogen
-25241	droger
-25242	drol
-25243	drom
-25244	dromde
-25245	dromen
-25246	dromer
-25251	drong
-25252	dronk
-25253	droog
-25254	droom
-25255	drop
-25256	dropje
-25261	drops
-25262	dropte
-25263	drost
-25264	droste
-25265	drozen
-25266	drug
-25311	druïde
-25312	druif
-25313	druil
-25314	druk
-25315	drukke
-25316	drukte
-25321	drum
-25322	drumde
-25323	drup
-25324	drupte
-25325	dry
-25326	dryade
-25331	duaal
-25332	duale
-25333	dualis
-25334	dubbel
-25335	dubben
-25336	dubde
-25341	dubio
-25342	duel
-25343	duels
-25344	duet
-25345	duf
-25346	duffe
-25351	duffel
-25352	duffer
-25353	duidde
-25354	duiden
-25355	duif
-25356	duig
-25361	duigen
-25362	duik
-25363	duiken
-25364	duiker
-25365	duim
-25366	duimde
-25411	duimen
-25412	duin
-25413	duinen
-25414	duist
-25415	duit
-25416	duiten
-25421	Duits
-25422	Duitse
-25423	duivel
-25424	duiven
-25425	duiver
-25426	duivin
-25431	dukaat
-25432	duldde
-25433	dulden
-25434	dumdum
-25435	dummy
-25436	dump
-25441	dumpen
-25442	dumpte
-25443	dun
-25444	dunde
-25445	dunk
-25446	dunken
-25451	dunne
-25452	dunnen
-25453	dunner
-25454	dunsel
-25455	dunte
-25456	duo
-25461	dupe
-25462	dupes
-25463	duplo
-25464	dure
-25465	duren
-25466	durf
-25511	durfal
-25512	durfde
-25513	duro
-25514	durven
-25515	dus
-25516	duster
-25521	dusver
-25522	dut
-25523	dutje
-25524	duts
-25525	dutsen
-25526	dutte
-25531	dutten
-25532	duur
-25533	duurde
-25534	duurte
-25535	duvel
-25536	duvels
-25541	duw
-25542	duwbak
-25543	duwde
-25544	duwen
-25545	duwtje
-25546	dwaal
-25551	dwaas
-25552	dwalen
-25553	dwang
-25554	dwars
-25555	dwarse
-25556	dwaze
-25561	dwazen
-25562	dwazer
-25563	dweil
-25564	dwepen
-25565	dweper
-25566	dwerg
-25611	dynamo
-25612	dynast
-25613	dyne
-25614	dynes
-25615	eau
-25616	ebbe
-25621	ebben
-25622	ebde
-25623	ebdeur
-25624	ecarté
-25625	echec
-25626	echel
-25631	echo
-25632	echode
-25633	echoën
-25634	echt
-25635	echte
-25636	echten
-25641	echter
-25642	echtte
-25643	eclair
-25644	eclips
-25645	ecru
-25646	eczeem
-25651	eczema
-25652	edel
-25653	edele
-25654	edeler
-25655	Eden
-25656	edict
-25661	edik
-25662	editie
-25663	edoch
-25664	eed
-25665	eega
-25666	eegaas
-26111	eek
-26112	eelt
-26113	eeltig
-26114	een
-26115	eenarm
-26116	eend
-26121	eenden
-26122	eender
-26123	eenoog
-26124	eens
-26125	eentje
-26126	eer
-26131	eerde
-26132	eerder
-26133	eervol
-26134	eest
-26135	eesten
-26136	eestte
-26141	eeuw
-26142	eeuwen
-26143	eeuwig
-26144	effect
-26145	effen
-26146	egaal
-26151	egale
-26152	egaler
-26153	egard
-26154	egde
-26155	egel
-26156	egge
-26161	eggen
-26162	ego
-26163	egoïst
-26164	eiber
-26165	eibers
-26166	eicel
-26211	eieren
-26212	eigen
-26213	eik
-26214	eikel
-26215	eikels
-26216	eiken
-26221	eilaas
-26222	eiland
-26223	eind
-26224	eindde
-26225	einde
-26226	einden
-26231	einder
-26232	eindig
-26233	eindje
-26234	eins
-26235	einze
-26236	einzen
-26241	eirond
-26242	eis
-26243	eisen
-26244	eiser
-26245	eisers
-26246	eiste
-26251	eitje
-26252	eitjes
-26253	eivol
-26254	eiwit
-26255	eken
-26256	ekster
-26261	elan
-26262	eland
-26263	elders
-26264	elegie
-26265	elf
-26266	elfde
-26311	elfden
-26312	elfen
-26313	elft
-26314	elftal
-26315	elften
-26316	elisie
-26321	elite
-26322	elixer
-26323	elk
-26324	elkaar
-26325	elke
-26326	elkeen
-26331	ellen
-26332	ellens
-26333	ellips
-26334	elpee
-26335	elpees
-26336	elpen
-26341	els
-26342	elven
-26343	elzen
-26344	email
-26345	embryo
-26346	emfase
-26351	emir
-26352	emmer
-26353	emmers
-26354	emoe
-26355	emotie
-26356	empire
-26361	end
-26362	enden
-26363	ener
-26364	enfin
-26365	eng
-26366	enge
-26411	engel
-26412	Engels
-26413	enger
-26414	engerd
-26415	engte
-26416	engten
-26421	engtes
-26422	enig
-26423	enige
-26424	enigma
-26425	enigst
-26426	enk
-26431	enkel
-26432	enkele
-26433	enkels
-26434	enken
-26435	enorm
-26436	enorme
-26441	ent
-26442	enten
-26443	enter
-26444	enters
-26445	enting
-26446	entree
-26451	entte
-26452	enzym
-26453	Eoceen
-26454	eoliet
-26455	epiek
-26456	epifyt
-26461	episch
-26462	epoche
-26463	epopee
-26464	epoque
-26465	epos
-26466	equipe
-26511	era
-26512	eraan
-26513	eraf
-26514	erbij
-26515	erdoor
-26516	ere
-26521	erelid
-26522	eren
-26523	erf
-26524	erfde
-26525	erfoom
-26526	erfwet
-26531	erg
-26532	erge
-26533	ergens
-26534	erger
-26535	ergo
-26536	ergon
-26541	erheen
-26542	erica
-26543	erin
-26544	erkend
-26545	erker
-26546	erkers
-26551	ermede
-26552	ermee
-26553	erna
-26554	ernaar
-26555	ernst
-26556	erom
-26561	erop
-26562	eropaf
-26563	eropin
-26564	eropna
-26565	Eros
-26566	erosie
-26611	erover
-26612	errata
-26613	ersatz
-26614	ertoe
-26615	erts
-26616	ertsen
-26621	eruit
-26622	ervan
-26623	erve
-26624	erven
-26625	ervoer
-26626	ervoor
-26631	erwt
-26632	erwten
-26633	escape
-26634	escort
-26635	escudo
-26636	eskimo
-26641	esp
-26642	espada
-26643	espen
-26644	esprit
-26645	essay
-26646	essays
-26651	essen
-26652	ester
-26653	estrik
-26654	etage
-26655	etages
-26656	etappe
-26661	eten
-26662	eter
-26663	etheen
-26664	ether
-26665	ethica
-26666	ethiek
-31111	ethos
-31112	ethyl
-31113	etiket
-31114	etmaal
-31115	ets
-31116	etsen
-31121	etser
-31122	etsers
-31123	etste
-31124	etter
-31125	etude
-31126	etudes
-31131	etui
-31132	eunuch
-31133	eureka
-31134	euvel
-31135	euvele
-31136	euvels
-31141	euzie
-31142	euzies
-31143	eva
-31144	evacué
-31145	evasie
-31146	even
-31151	evenzo
-31152	ever
-31153	exact
-31154	exacte
-31155	examen
-31156	exces
-31161	excuus
-31162	exil
-31163	exit
-31164	exodus
-31165	exoot
-31166	expert
-31211	export
-31212	exposé
-31213	expres
-31214	exquis
-31215	extase
-31216	extern
-31221	extra
-31222	ezel
-31223	ezelin
-31224	faal
-31225	faalde
-31226	faam
-31231	faas
-31232	fabel
-31233	fabels
-31234	façade
-31235	face
-31236	facet
-31241	facie
-31242	facies
-31243	facit
-31244	factie
-31245	facto
-31246	factor
-31251	fade
-31252	fading
-31253	fado
-31254	faëton
-31255	fagot
-31256	fair
-31261	faire
-31262	fake
-31263	faken
-31264	fakir
-31265	fakirs
-31266	fakkel
-31311	falanx
-31312	falen
-31313	falie
-31314	falies
-31315	fallus
-31316	falset
-31321	fameus
-31322	fan
-31323	fanaal
-31324	fanaat
-31325	farad
-31326	farao
-31331	farce
-31332	farcen
-31333	farces
-31334	farde
-31335	farden
-31336	fardes
-31341	farm
-31342	farmer
-31343	faro
-31344	fase
-31345	fasen
-31346	fases
-31351	fat
-31352	fata
-31353	fataal
-31354	fatale
-31355	fats
-31356	fatsen
-31361	fatten
-31362	fatum
-31363	fatwa
-31364	faun
-31365	fauna
-31366	faunen
-31411	faveur
-31412	fax
-31413	faxen
-31414	faxte
-31415	fazant
-31416	fazen
-31421	fecaal
-31422	feces
-31423	fee
-31424	feeën
-31425	feeks
-31426	feest
-31431	feetje
-31432	feil
-31433	feilde
-31434	feilen
-31435	feit
-31436	feiten
-31441	fel
-31442	fellah
-31443	felle
-31444	feller
-31445	fels
-31446	felsen
-31451	felste
-31452	femel
-31453	feniks
-31454	fenol
-31455	fep
-31456	ferm
-31461	ferme
-31462	fermer
-31463	ferry
-31464	fes
-31465	fessen
-31466	feston
-31511	feta
-31512	fetisj
-31513	feut
-31514	fez
-31515	fezzen
-31516	fiasco
-31521	fiat
-31522	fiber
-31523	fibril
-31524	fibula
-31525	fiche
-31526	fiches
-31531	fichu
-31532	fictie
-31533	ficus
-31534	fideel
-31535	fidele
-31536	fiedel
-31541	fielt
-31542	fier
-31543	fiere
-31544	fiets
-31545	figaro
-31546	figuur
-31551	fijfel
-31552	fijn
-31553	fijne
-31554	fijnen
-31555	fijner
-31556	fijnte
-31561	fijt
-31562	fik
-31563	fikken
-31564	fikkie
-31565	fiks
-31566	fikse
-31611	fiksen
-31612	file
-31613	files
-31614	filet
-31615	filets
-31616	film
-31621	filmde
-31622	filmen
-31623	filmer
-31624	filter
-31625	Fin
-31626	finaal
-31631	finale
-31632	fine
-31633	fineer
-31634	finish
-31635	Finnen
-31636	Fins
-31641	Finse
-31642	fint
-31643	finten
-31644	fiolen
-31645	fiool
-31646	firma
-31651	firn
-31652	fis
-31653	fiscus
-31654	fissen
-31655	fistel
-31656	fit
-31661	fitis
-31662	fits
-31663	fitte
-31664	fitten
-31665	fitter
-31666	fixeer
-32111	fixus
-32112	fjord
-32113	flacon
-32114	flair
-32115	flanel
-32116	flank
-32121	flap
-32122	flapte
-32123	flard
-32124	flash
-32125	flat
-32126	flater
-32131	flatus
-32132	flauw
-32133	flauwe
-32134	fleer
-32135	flegma
-32136	flemen
-32141	flens
-32142	fleren
-32143	fles
-32144	flets
-32145	fletse
-32146	fleur
-32151	flexie
-32152	flik
-32153	flikje
-32154	flikte
-32155	flink
-32156	flinke
-32161	flip
-32162	flipte
-32163	flirt
-32164	flits
-32165	floep
-32166	floer
-32211	floers
-32212	floot
-32213	flop
-32214	floppy
-32215	flor
-32216	flora
-32221	floret
-32222	floste
-32223	flox
-32224	fluïde
-32225	fluim
-32226	fluit
-32231	fluks
-32232	fluor
-32233	flus
-32234	flut
-32235	flux
-32236	fobie
-32241	focus
-32242	foefje
-32243	foei
-32244	foelie
-32245	foetus
-32246	foezel
-32251	föhn
-32252	föhnde
-32253	föhnen
-32254	fok
-32255	fokken
-32256	fokker
-32261	foksia
-32262	fokte
-32263	fokvee
-32264	folder
-32265	folie
-32266	folies
-32311	folio
-32312	fond
-32313	fonds
-32314	fondue
-32315	foneem
-32316	font
-32321	fooi
-32322	fooien
-32323	foor
-32324	fop
-32325	foppen
-32326	fopte
-32331	fora
-32332	ford
-32333	forel
-32334	foren
-32335	forens
-32336	forint
-32341	forma
-32342	formol
-32343	fors
-32344	forse
-32345	forser
-32346	forsig
-32351	fort
-32352	forten
-32353	forto
-32354	forum
-32355	forums
-32356	fosfor
-32361	foto
-32362	foton
-32363	fout
-32364	foute
-32365	fouten
-32366	fouter
-32411	foutje
-32412	fox
-32413	foyer
-32414	foyers
-32415	fraai
-32416	frak
-32421	frame
-32422	frames
-32423	franc
-32424	franco
-32425	franje
-32426	frank
-32431	Frank
-32432	franke
-32433	Frans
-32434	Franse
-32435	frappe
-32436	frase
-32441	frasen
-32442	frases
-32443	frater
-32444	frats
-32445	fraude
-32446	freak
-32451	frees
-32452	fregat
-32453	frêle
-32454	freon
-32455	fresco
-32456	fresia
-32461	fret
-32462	frette
-32463	freule
-32464	frezen
-32465	Fries
-32466	Friese
-32511	friet
-32512	frik
-32513	fris
-32514	frisco
-32515	frisse
-32516	friste
-32521	frites
-32522	frons
-32523	front
-32524	fruit
-32525	fuga
-32526	fuif
-32531	fuifde
-32532	fuik
-32533	fuiken
-32534	fuiven
-32535	fulp
-32536	fulpen
-32541	fundi
-32542	funest
-32543	fungus
-32544	funk
-32545	funky
-32546	furie
-32551	furiën
-32552	furies
-32553	furore
-32554	fusee
-32555	fusie
-32556	fusies
-32561	fust
-32562	fusten
-32563	fut
-32564	futen
-32565	futiel
-32566	fuut
-32611	fylum
-32612	fysica
-32613	fysici
-32614	fysiek
-32615	gaaf
-32616	gaai
-32621	gaaien
-32622	gaal
-32623	gaan
-32624	gaande
-32625	gaap
-32626	gaapte
-32631	gaar
-32632	gaard
-32633	gaarde
-32634	gaarne
-32635	gaas
-32636	gaasje
-32641	gaatje
-32642	gabber
-32643	gade
-32644	gaden
-32645	gadget
-32646	gading
-32651	gaf
-32652	gaffe
-32653	gaffel
-32654	gag
-32655	gage
-32656	gagel
-32661	gagels
-32662	gages
-32663	gaine
-32664	gajes
-32665	gal
-32666	gala
-33111	galant
-33112	galde
-33113	galei
-33114	galen
-33115	galg
-33116	galgen
-33121	gallen
-33122	gallig
-33123	gallon
-33124	galm
-33125	galmde
-33126	galmei
-33131	galmen
-33132	galmug
-33133	galon
-33134	galons
-33135	galop
-33136	galops
-33141	gamba
-33142	gambir
-33143	game
-33144	gameet
-33145	gamel
-33146	games
-33151	gamma
-33152	gammel
-33153	gander
-33154	gang
-33155	gangen
-33156	gannef
-33161	gans
-33162	ganse
-33163	ganser
-33164	ganzen
-33165	gapen
-33166	gaper
-33211	gapers
-33212	gaping
-33213	gappen
-33214	gapper
-33215	gapte
-33216	garage
-33221	garant
-33222	gard
-33223	garde
-33224	garden
-33225	gardes
-33226	gare
-33231	gareel
-33232	garen
-33233	garens
-33234	garf
-33235	garfde
-33236	garoe
-33241	garve
-33242	garven
-33243	gas
-33244	gasbek
-33245	gasbel
-33246	gaslek
-33251	gasman
-33252	gasnet
-33253	gaspit
-33254	gassen
-33255	gast
-33256	gaste
-33261	gasten
-33262	gat
-33263	gaten
-33264	gatten
-33265	gaucho
-33266	gauw
-33311	gauwer
-33312	gave
-33313	gaven
-33314	gaver
-33315	gay
-33316	gazel
-33321	gazen
-33322	gazet
-33323	gazon
-33324	gazons
-33325	geaaid
-33326	geaard
-33331	geaasd
-33332	geacht
-33333	geard
-33334	gearmd
-33335	gebaad
-33336	gebaar
-33341	gebaat
-33342	gebak
-33343	gebakt
-33344	gebald
-33345	gebalk
-33346	gebast
-33351	gebed
-33352	gebeft
-33353	gebeid
-33354	gebekt
-33355	gebeld
-33356	gebet
-33361	gebied
-33362	gebigd
-33363	gebijt
-33364	gebikt
-33365	gebild
-33366	gebint
-33411	gebit
-33412	geblaf
-33413	geblèr
-33414	gebluf
-33415	gebobd
-33416	gebod
-33421	geboet
-33422	geboft
-33423	gebokt
-33424	gebold
-33425	gebomd
-33426	gebood
-33431	geboot
-33432	gebost
-33433	gebot
-33434	gebouw
-33435	gebral
-33436	gebrek
-33441	gebrom
-33442	gebrul
-33443	gebuid
-33444	gebukt
-33445	gebult
-33446	gecast
-33451	gedaan
-33452	gedaas
-33453	gedabd
-33454	gedag
-33455	gedamd
-33456	gedane
-33461	gedekt
-33462	gedept
-33463	gedijd
-33464	gedikt
-33465	gedimd
-33466	geding
-33511	gedoe
-33512	gedokt
-33513	gedold
-33514	gedood
-33515	gedopt
-33516	gedord
-33521	gedost
-33522	gedrag
-33523	gedubd
-33524	geduid
-33525	geduld
-33526	gedund
-33531	gedut
-33532	geduwd
-33533	gedwee
-33534	geëbd
-33535	geëcht
-33536	geëerd
-33541	geëest
-33542	geef
-33543	geëgd
-33544	geëind
-33545	geëist
-33546	geel
-33551	geelde
-33552	geen
-33553	geënt
-33554	geep
-33555	geer
-33556	geerde
-33561	geërfd
-33562	geest
-33563	geëtst
-33564	geeuw
-33565	gefaxt
-33566	gefokt
-33611	gefopt
-33612	gefret
-33613	gegaan
-33614	gegald
-33615	gegalm
-33616	gegapt
-33621	gegast
-33622	gegil
-33623	gegild
-33624	gegist
-33625	geglad
-33626	gegoed
-33631	gegokt
-33632	gegomd
-33633	gegons
-33634	gegord
-33635	gegrom
-33636	gegrut
-33641	gegund
-33642	gegymd
-33643	gehaat
-33644	gehad
-33645	gehakt
-33646	gehand
-33651	gehapt
-33652	gehard
-33653	geheel
-33654	geheet
-33655	geheid
-33656	geheim
-33661	geheld
-33662	gehele
-33663	gehemd
-33664	gehikt
-33665	gehipt
-33666	gehoed
-34111	gehokt
-34112	gehold
-34113	gehoon
-34114	gehoor
-34115	gehopt
-34116	gehord
-34121	gehore
-34122	gehort
-34123	gehost
-34124	gehot
-34125	gehuil
-34126	gehukt
-34131	gehuld
-34132	gehumd
-34133	gehupt
-34134	gehuwd
-34135	gei
-34136	geïaad
-34141	geide
-34142	geien
-34143	geijld
-34144	geijsd
-34145	geil
-34146	geile
-34151	geiler
-34152	gein
-34153	geïnd
-34154	geinig
-34155	geïnkt
-34156	geiser
-34161	geisha
-34162	geit
-34163	geiten
-34164	gejank
-34165	gejast
-34166	gejat
-34211	gejij
-34212	gejijd
-34213	gejoel
-34214	gejokt
-34215	gejold
-34216	gejond
-34221	gejou
-34222	gejukt
-34223	gejut
-34224	gek
-34225	gekaft
-34226	gekakt
-34231	gekald
-34232	gekamd
-34233	gekant
-34234	gekapt
-34235	gekard
-34236	gekast
-34241	gekat
-34242	gekeft
-34243	gekend
-34244	gekift
-34245	gekikt
-34246	gekild
-34251	gekimd
-34252	gekipt
-34253	gekird
-34254	gekist
-34255	gekit
-34256	gekke
-34261	gekken
-34262	gekker
-34263	gekkin
-34264	gekko
-34265	geklad
-34266	geklap
-34311	geklit
-34312	geklop
-34313	geknik
-34314	geknot
-34315	gekold
-34316	gekoot
-34321	gekopt
-34322	gekord
-34323	gekort
-34324	gekost
-34325	gekout
-34326	gekte
-34331	gekuch
-34332	gekuip
-34333	gekuld
-34334	gekund
-34335	gekust
-34336	gel
-34341	gelaat
-34342	gelach
-34343	gelag
-34344	gelakt
-34345	gelal
-34346	gelald
-34351	geland
-34352	gelang
-34353	gelapt
-34354	gelast
-34355	gelat
-34356	geld
-34361	gelden
-34362	geldig
-34363	geldla
-34364	gele
-34365	gelede
-34366	gelee
-34411	geleed
-34412	geleek
-34413	gelegd
-34414	gelei
-34415	geleid
-34416	gelekt
-34421	gelen
-34422	gelept
-34423	geler
-34424	gelet
-34425	gelid
-34426	gelift
-34431	gelig
-34432	gelige
-34433	gelikt
-34434	gelild
-34435	gelipt
-34436	gelobd
-34441	geloei
-34442	gelogd
-34443	gelokt
-34444	gelold
-34445	gelood
-34446	geloof
-34451	geloop
-34452	geloot
-34453	gelord
-34454	gelost
-34455	gelubd
-34456	gelui
-34461	geluid
-34462	geluk
-34463	gelukt
-34464	gelul
-34465	geluld
-34466	gelust
-34511	geluwd
-34512	gemaal
-34513	gemaft
-34514	gemak
-34515	gemald
-34516	gemand
-34521	gemard
-34522	gemast
-34523	gemat
-34524	gember
-34525	gemeen
-34526	gemekt
-34531	gemeld
-34532	gemend
-34533	gemene
-34534	gemept
-34535	gemest
-34536	gemier
-34541	gemijt
-34542	gemikt
-34543	gemind
-34544	gemis
-34545	gemist
-34546	gemixt
-34551	gemoed
-34552	gemok
-34553	gemokt
-34554	gemold
-34555	gemond
-34556	gemor
-34561	gemord
-34562	gemors
-34563	gemot
-34564	gemout
-34565	gems
-34566	gemuit
-34611	gemunt
-34612	gemzen
-34613	gen
-34614	genade
-34615	gênant
-34616	genard
-34621	genas
-34622	genat
-34623	gene
-34624	gêne
-34625	genekt
-34626	genept
-34631	genera
-34632	genese
-34633	genet
-34634	genie
-34635	geniën
-34636	geniep
-34641	geniet
-34642	genikt
-34643	genipt
-34644	genist
-34645	genius
-34646	genoeg
-34651	genokt
-34652	genood
-34653	genoom
-34654	genoot
-34655	genot
-34656	genre
-34661	genres
-34662	Gent
-34663	genten
-34664	genus
-34665	geoogd
-34666	gepaft
-35111	gepakt
-35112	gepand
-35113	gepapt
-35114	gepast
-35115	gepekt
-35116	gepeld
-35121	gepen
-35122	gepend
-35123	gepest
-35124	gepiep
-35125	gepikt
-35126	gepind
-35131	gepist
-35132	gepit
-35133	geplas
-35134	geplat
-35135	geplet
-35136	gepoft
-35141	gepokt
-35142	gepoot
-35143	gepord
-35144	gepost
-35145	gepot
-35146	gepote
-35151	gepuft
-35152	gepunt
-35153	gepust
-35154	geput
-35155	geraas
-35156	geragd
-35161	geramd
-35162	gerand
-35163	gerant
-35164	gerat
-35165	gered
-35166	gerede
-35211	gereed
-35212	gerei
-35213	gereid
-35214	gerekt
-35215	gereld
-35216	geremd
-35221	geren
-35222	gerend
-35223	gerent
-35224	gerept
-35225	gerest
-35226	geribd
-35231	gerief
-35232	gerij
-35233	gerijd
-35234	gerild
-35235	gering
-35236	gerist
-35241	gerit
-35242	geroep
-35243	gerokt
-35244	gerold
-35245	gerond
-35246	geronk
-35251	geroot
-35252	gerost
-35253	gerot
-35254	geruid
-35255	geruim
-35256	geruis
-35261	geruit
-35262	gerukt
-35263	gerund
-35264	gerust
-35265	geruwd
-35266	ges
-35311	gesard
-35312	gesast
-35313	gesel
-35314	gesels
-35315	gesimd
-35316	gesis
-35321	gesist
-35322	gesjot
-35323	gesmet
-35324	gesnap
-35325	gesnor
-35326	gesold
-35331	gesopt
-35332	gesp
-35333	gespan
-35334	gespat
-35335	gespen
-35336	gespet
-35341	gespit
-35342	gespot
-35343	gespte
-35344	gessen
-35345	geste
-35346	gestel
-35351	gestes
-35352	gestie
-35353	gesuft
-35354	gesust
-35355	getakt
-35356	getal
-35361	getale
-35362	getalm
-35363	getand
-35364	getapt
-35365	getart
-35366	getast
-35411	geteem
-35412	geteld
-35413	getemd
-35414	getest
-35415	geteut
-35416	getier
-35421	getij
-35422	getik
-35423	getikt
-35424	getild
-35425	getint
-35426	getipt
-35431	getob
-35432	getobd
-35433	getoet
-35434	getold
-35435	getond
-35436	getopt
-35441	getost
-35442	getouw
-35443	getto
-35444	getuft
-35445	getuid
-35446	getuig
-35451	getuit
-35452	getukt
-35453	getypt
-35454	geuit
-35455	geul
-35456	geulen
-35461	geur
-35462	geurde
-35463	geuren
-35464	geurig
-35465	geärmd
-35466	geus
-35511	geut
-35512	geuten
-35513	geuzen
-35514	gevaar
-35515	gevaat
-35516	geval
-35521	gevang
-35522	gevast
-35523	gevat
-35524	gevel
-35525	geveld
-35526	gevels
-35531	geven
-35532	gevent
-35533	gever
-35534	gevers
-35535	gevest
-35536	gevet
-35541	geviel
-35542	gevild
-35543	gevind
-35544	gevist
-35545	gevit
-35546	gevlei
-35551	gevlet
-35552	gevlij
-35553	gevlot
-35554	gevoed
-35555	gevoeg
-35556	gevoel
-35561	gevold
-35562	gevolg
-35563	gevost
-35564	gevrij
-35565	gevuld
-35566	gewaad
-35611	gewaar
-35612	gewag
-35613	gewald
-35614	gewamd
-35615	gewand
-35616	gewant
-35621	geward
-35622	gewas
-35623	gewast
-35624	gewed
-35625	geween
-35626	geweer
-35631	gewei
-35632	geweid
-35633	gewekt
-35634	geweld
-35635	gewelf
-35636	gewend
-35641	gewerd
-35642	gewest
-35643	gewet
-35644	gewied
-35645	gewijd
-35646	gewikt
-35651	gewild
-35652	gewin
-35653	gewipt
-35654	gewis
-35655	gewist
-35656	gewit
-35661	gewoed
-35662	gewoel
-35663	gewon
-35664	gewond
-35665	gewone
-35666	gewoon
-36111	gezaag
-36112	gezag
-36113	gezakt
-36114	gezand
-36115	gezang
-36116	gezant
-36121	gezapt
-36122	gezegd
-36123	gezeik
-36124	gezel
-36125	gezet
-36126	gezeul
-36131	gezeur
-36132	gezien
-36133	gezift
-36134	gezin
-36135	gezind
-36136	gezoem
-36141	gezoet
-36142	gezond
-36143	gezwam
-36144	gezwel
-36145	gibbon
-36146	gibus
-36151	gids
-36152	gidsen
-36153	giebel
-36154	giek
-36155	gieken
-36156	gier
-36161	gierde
-36162	gieren
-36163	gierig
-36164	gieten
-36165	gieter
-36166	gif
-36211	giffen
-36212	gifgas
-36213	gift
-36214	giften
-36215	giftig
-36216	gig
-36221	gigant
-36222	giggen
-36223	gigolo
-36224	gigue
-36225	gij
-36226	gijl
-36231	gijn
-36232	gijnen
-36233	gijpen
-36234	gijpte
-36235	gil
-36236	gild
-36241	gilde
-36242	gilden
-36243	gilet
-36244	gilets
-36245	gillen
-36246	gin
-36251	ginder
-36252	ginds
-36253	gindse
-36254	ging
-36255	ginkgo
-36256	gips
-36261	gipsen
-36262	gipste
-36263	gipsy
-36264	giraal
-36265	giraf
-36266	girale
-36311	girant
-36312	giro
-36313	gis
-36314	gispen
-36315	gispte
-36316	gissen
-36321	gist
-36322	giste
-36323	gisten
-36324	gistte
-36325	git
-36326	gitaar
-36331	gitten
-36332	glacé
-36333	glacés
-36334	glacis
-36335	glad
-36336	gladaf
-36341	gladde
-36342	glans
-36343	glas
-36344	glazen
-36345	glazig
-36346	glee
-36351	gleed
-36352	gleeën
-36353	gleis
-36354	gleuf
-36355	glimp
-36356	glip
-36361	glipte
-36362	glit
-36363	globe
-36364	globes
-36365	gloed
-36366	gloor
-36411	gloren
-36412	gloria
-36413	glorie
-36414	glosse
-36415	glossy
-36416	glui
-36421	gluien
-36422	gluren
-36423	gluten
-36424	gluton
-36425	glycol
-36426	gneis
-36431	gnoe
-36432	gnomen
-36433	gnomon
-36434	gnoom
-36435	gnosis
-36436	goal
-36441	goalie
-36442	gocart
-36443	God
-36444	goden
-36445	godin
-36446	godlof
-36451	goed
-36452	goede
-36453	goeden
-36454	goedig
-36455	goedje
-36456	goeiig
-36461	goeman
-36462	goeroe
-36463	gojim
-36464	gojims
-36465	gojs
-36466	gok
-36511	gokhal
-36512	gokken
-36513	gokker
-36514	gokte
-36515	golem
-36516	golems
-36521	golf
-36522	golfde
-36523	golfen
-36524	golven
-36525	gom
-36526	gombal
-36531	gomde
-36532	gommen
-36533	gompie
-36534	gonade
-36535	gondel
-36536	gong
-36541	gons
-36542	gonsde
-36543	gonzen
-36544	goog
-36545	gooi
-36546	gooide
-36551	gooien
-36552	goor
-36553	goot
-36554	gordde
-36555	gordel
-36556	gorden
-36561	gore
-36562	gorgel
-36563	gorig
-36564	gorige
-36565	gors
-36566	gort
-36611	gorten
-36612	gorter
-36613	gortig
-36614	gorzen
-36615	gospel
-36616	gossip
-36621	goten
-36622	gotiek
-36623	gotspe
-36624	goud
-36625	gouden
-36626	gouw
-36631	gouwe
-36632	gouwen
-36633	gozer
-36634	gozers
-36635	graad
-36636	graaf
-36641	graag
-36642	graai
-36643	graal
-36644	graan
-36645	graat
-36646	gracht
-36651	graden
-36652	graeci
-36653	graf
-36654	grafie
-36655	grage
-36656	grager
-36661	gram
-36662	gramme
-36663	grand
-36664	grande
-36665	grands
-36666	granen
-41111	grap
-41112	gras
-41113	graten
-41114	gratie
-41115	gratig
-41116	gratis
-41121	grauw
-41122	grauwe
-41123	gravel
-41124	graven
-41125	graver
-41126	gravin
-41131	grazen
-41132	grazig
-41133	grebbe
-41134	green
-41135	greep
-41136	grein
-41141	grens
-41142	grepen
-41143	gres
-41144	gretig
-41145	gribus
-41146	grief
-41151	Griek
-41152	Grieks
-41153	griel
-41154	griend
-41155	griep
-41156	gries
-41161	griet
-41162	grieve
-41163	grif
-41164	griffe
-41165	grift
-41166	grifte
-41211	grijns
-41212	grijp
-41213	grijs
-41214	grijze
-41215	gril
-41216	grilde
-41221	grill
-41222	grille
-41223	grim
-41224	grimas
-41225	grimde
-41226	grime
-41231	grimes
-41232	grind
-41233	grip
-41234	grise
-41235	grises
-41236	griste
-41241	grit
-41242	groef
-41243	groei
-41244	groen
-41245	groene
-41246	groep
-41251	groet
-41252	groeve
-41253	grof
-41254	grofte
-41255	grog
-41256	groggy
-41261	grol
-41262	grolde
-41263	grom
-41264	gromde
-41265	grond
-41266	gronde
-41311	groot
-41312	groots
-41313	gros
-41314	grosse
-41315	grosso
-41316	grot
-41321	grote
-41322	groten
-41323	groter
-41324	grove
-41325	grover
-41326	gruis
-41331	grunge
-41332	grut
-41333	grutte
-41334	grutto
-41335	gruwde
-41336	gruwel
-41341	gruwen
-41342	guano
-41343	guit
-41344	guiten
-41345	guitig
-41346	gul
-41351	gulden
-41352	gulle
-41353	gullen
-41354	guller
-41355	gulp
-41356	gulpen
-41361	gulpte
-41362	gulzig
-41363	gum
-41364	gumde
-41365	gummen
-41366	gummi
-41411	gunde
-41412	gunnen
-41413	gunst
-41414	gup
-41415	guppy
-41416	gure
-41421	gust
-41422	guts
-41423	gutsen
-41424	gutste
-41425	guur
-41426	gym
-41431	gymde
-41432	gymmen
-41433	gymp
-41434	gympie
-41435	haaf
-41436	haagde
-41441	haai
-41442	haaide
-41443	haaien
-41444	haaiig
-41445	haak
-41446	haaks
-41451	haakse
-41452	haakte
-41453	haal
-41454	haalde
-41455	haam
-41456	haan
-41461	haar
-41462	haard
-41463	haarde
-41464	haas
-41465	haast
-41466	haat
-41511	haatte
-41512	habijt
-41513	hachee
-41514	hachje
-41515	hacken
-41516	hadith
-41521	hadji
-41522	hadzji
-41523	haf
-41524	haffen
-41525	haft
-41526	haften
-41531	hagel
-41532	hagen
-41533	haiku
-41534	hak
-41535	haken
-41536	hakken
-41541	hakker
-41542	hakmes
-41543	haksel
-41544	hakte
-41545	hal
-41546	halen
-41551	half
-41552	halfje
-41553	hall
-41554	hallen
-41555	hallo
-41556	halm
-41561	halma
-41562	halmen
-41563	halo
-41564	hals
-41565	halsde
-41566	halt
-41611	halte
-41612	halten
-41613	halter
-41614	haltes
-41615	halve
-41616	halzen
-41621	ham
-41622	hamei
-41623	hamel
-41624	hamels
-41625	hamen
-41626	hamer
-41631	hamers
-41632	hamlap
-41633	hammen
-41634	hand
-41635	handde
-41636	handel
-41641	handen
-41642	handig
-41643	handje
-41644	hanen
-41645	hang
-41646	hangar
-41651	hangel
-41652	hangen
-41653	hanger
-41654	hangop
-41655	hanig
-41656	hanige
-41661	hannes
-41662	hans
-41663	hansop
-41664	Hanze
-41665	hanzen
-41666	hap
-42111	hapax
-42112	hapje
-42113	hapjes
-42114	happen
-42115	happig
-42116	happy
-42121	hapte
-42122	har
-42123	hard
-42124	hardde
-42125	harde
-42126	harden
-42131	harder
-42132	hardop
-42133	harem
-42134	harems
-42135	haren
-42136	harent
-42141	harig
-42142	harige
-42143	haring
-42144	hark
-42145	harken
-42146	harkte
-42151	harnas
-42152	harp
-42153	harpen
-42154	harpij
-42155	harpte
-42156	harre
-42161	harrel
-42162	harren
-42163	hars
-42164	harsen
-42165	harsig
-42166	hart
-42211	harte
-42212	harten
-42213	hartig
-42214	hartje
-42215	hasj
-42216	haspel
-42221	haten
-42222	hater
-42223	haters
-42224	hausse
-42225	haute
-42226	hauw
-42231	hauwen
-42232	have
-42233	haven
-42234	havens
-42235	haver
-42236	havik
-42241	havo
-42242	hazard
-42243	hazen
-42244	heat
-42245	heavy
-42246	heb
-42251	hebben
-42252	hebbes
-42253	hecht
-42254	hechte
-42255	heden
-42256	heef
-42261	heeft
-42262	heel
-42263	heelal
-42264	heelde
-42265	heem
-42266	heemst
-42311	heen
-42312	heep
-42313	heer
-42314	hees
-42315	heet
-42316	heette
-42321	hef
-42322	heffe
-42323	heffen
-42324	heft
-42325	heften
-42326	heftig
-42331	heg
-42332	hegge
-42333	heggen
-42334	hegje
-42335	hei
-42336	heibel
-42341	heide
-42342	heiden
-42343	heien
-42344	heiig
-42345	heiige
-42346	heikel
-42351	heil
-42352	heilig
-42353	Hein
-42354	heinde
-42355	heisa
-42356	heitje
-42361	hek
-42362	hekel
-42363	hekels
-42364	hekken
-42365	heks
-42366	heksen
-42411	hekste
-42412	hel
-42413	hela
-42414	helaas
-42415	held
-42416	helde
-42421	helden
-42422	helder
-42423	heldin
-42424	hele
-42425	helen
-42426	heler
-42431	helers
-42432	helft
-42433	heli
-42434	heling
-42435	helium
-42436	helix
-42441	helle
-42442	hellen
-42443	heller
-42444	helm
-42445	helmen
-42446	heloot
-42451	helpen
-42452	helper
-42453	helpt
-42454	hels
-42455	helse
-42456	hem
-42461	hemd
-42462	hemde
-42463	hemden
-42464	hemel
-42465	hemels
-42466	hemen
-42511	hemmen
-42512	hen
-42513	hendel
-42514	heng
-42515	hengel
-42516	hengen
-42521	hengst
-42522	henna
-42523	hennen
-42524	hennep
-42525	hens
-42526	hepen
-42531	her
-42532	heraut
-42533	herder
-42534	heren
-42535	herfst
-42536	hergaf
-42541	herig
-42542	herik
-42543	herlas
-42544	hernam
-42545	hernia
-42546	heroën
-42551	heros
-42552	herpes
-42553	herren
-42554	herrie
-42555	hert
-42556	herten
-42561	hertog
-42562	hertz
-42563	hervat
-42564	herwon
-42565	herzag
-42566	hes
-42611	hese
-42612	heser
-42613	hesp
-42614	hespen
-42615	hessen
-42616	het
-42621	hete
-42622	heten
-42623	heter
-42624	hetero
-42625	hetze
-42626	hetzij
-42631	heug
-42632	heugde
-42633	heugel
-42634	heugen
-42635	heul
-42636	heulde
-42641	heulen
-42642	heup
-42643	heupen
-42644	heus
-42645	heuse
-42646	heuser
-42651	heuvel
-42652	hevea
-42653	hevel
-42654	hevels
-42655	hevig
-42656	hevige
-42661	hiaat
-42662	hiaten
-42663	hiel
-42664	hield
-42665	hielde
-42666	hielen
-43111	hielp
-43112	hier
-43113	hieraf
-43114	hierin
-43115	hierna
-43116	hierom
-43121	hierop
-43122	hifi
-43123	high
-43124	hik
-43125	hikken
-43126	hikte
-43131	hinde
-43132	hinden
-43133	hinder
-43134	Hindoe
-43135	hing
-43136	hinken
-43141	hinkte
-43142	hint
-43143	hinten
-43144	hip
-43145	hiphop
-43146	hippe
-43151	hippen
-43152	hippie
-43153	hipte
-43154	hit
-43155	hitsig
-43156	hitte
-43161	hitten
-43162	hobbel
-43163	hobby
-43164	hobo
-43165	hoc
-43166	hockey
-43211	hoe
-43212	hoed
-43213	hoedde
-43214	hoede
-43215	hoeden
-43216	hoeder
-43221	hoef
-43222	hoefde
-43223	hoek
-43224	hoeken
-43225	hoeker
-43226	hoekig
-43231	hoeks
-43232	hoekse
-43233	hoekte
-43234	hoempa
-43235	hoen
-43236	hoep
-43241	hoepel
-43242	hoepen
-43243	hoepla
-43244	hoer
-43245	hoera
-43246	hoerde
-43251	hoeren
-43252	hoerig
-43253	hoes
-43254	hoest
-43255	hoeve
-43256	hoeven
-43261	hoever
-43262	hoewel
-43263	hoezee
-43264	hoezen
-43265	hoezo
-43266	hof
-43311	hofje
-43312	hofjes
-43313	hofnar
-43314	hoge
-43315	hogen
-43316	hoger
-43321	hoging
-43322	hoi
-43323	hok
-43324	hokken
-43325	hokte
-43326	hol
-43331	hola
-43332	holde
-43333	hole
-43334	holen
-43335	holist
-43336	holle
-43341	hollen
-43342	holler
-43343	holte
-43344	holten
-43345	holtes
-43346	hom
-43351	home
-43352	hommel
-43353	hommen
-43354	hommer
-43355	homo
-43356	homp
-43361	hompen
-43362	hond
-43363	honden
-43364	honds
-43365	hondse
-43366	honen
-43411	honend
-43412	honger
-43413	honig
-43414	honing
-43415	honk
-43416	honken
-43421	honkte
-43422	hoofd
-43423	hoofde
-43424	hoofs
-43425	hoofse
-43426	hoog
-43431	hoogde
-43432	hoogst
-43433	hoogte
-43434	hooi
-43435	hooide
-43436	hooien
-43441	hooier
-43442	hooked
-43443	hoon
-43444	hoonde
-43445	hoop
-43446	hoopte
-43451	hoor
-43452	hoorde
-43453	hoorn
-43454	hoos
-43455	hoosde
-43456	hop
-43461	hope
-43462	hopen
-43463	hopla
-43464	hopman
-43465	hoppe
-43466	hoppen
-43511	hopper
-43512	hopsa
-43513	hopte
-43514	hor
-43515	hordde
-43516	horde
-43521	horden
-43522	hordes
-43523	horeca
-43524	horen
-43525	horens
-43526	horig
-43531	horige
-43532	hork
-43533	horken
-43534	hormon
-43535	horren
-43536	horror
-43541	hors
-43542	horsen
-43543	hort
-43544	horten
-43545	hortte
-43546	hortus
-43551	horzel
-43552	horzen
-43553	hospes
-43554	hospik
-43555	hossen
-43556	hoste
-43561	hostel
-43562	hostie
-43563	hot
-43564	hotdog
-43565	hotel
-43566	hotels
-43611	hotsen
-43612	hotste
-43613	hotte
-43614	hotten
-43615	hou
-43616	houden
-43621	houder
-43622	house
-43623	housen
-43624	hout
-43625	houten
-43626	houtig
-43631	houtje
-43632	houw
-43633	houwen
-43634	houwer
-43635	hoven
-43636	hoving
-43641	hozen
-43642	hui
-43643	huid
-43644	huiden
-43645	huidig
-43646	huif
-43651	huifde
-43652	huig
-43653	huigen
-43654	huik
-43655	huiken
-43656	huilde
-43661	huilen
-43662	huiler
-43663	huis
-43664	huisde
-43665	huisje
-43666	huiven
-44111	huize
-44112	huizen
-44113	hukken
-44114	hukte
-44115	hul
-44116	hulde
-44121	hulk
-44122	hulken
-44123	hullen
-44124	hulp
-44125	hulpen
-44126	huls
-44131	hulsel
-44132	hulst
-44133	hulzen
-44134	hum
-44135	humaan
-44136	humane
-44141	humbug
-44142	humde
-44143	humeur
-44144	hummel
-44145	hummen
-44146	humor
-44151	humus
-44152	hun
-44153	hunne
-44154	hunnen
-44155	hup
-44156	huppen
-44161	hups
-44162	hupse
-44163	hupte
-44164	huren
-44165	hurken
-44166	hurkte
-44211	husky
-44212	hut
-44213	hutje
-44214	hutten
-44215	huur
-44216	huurde
-44221	huwde
-44222	huwen
-44223	huzaar
-44224	hybris
-44225	hydra
-44226	hyena
-44231	hymen
-44232	hymens
-44233	hymne
-44234	hymnen
-44235	hype
-44236	hypo
-44241	hysop
-44242	iade
-44243	iaën
-44244	ibidem
-44245	ibis
-44246	icing
-44251	iconen
-44252	icoon
-44253	ideaal
-44254	ideale
-44255	idee
-44256	ideëel
-44261	ideeën
-44262	ideële
-44263	idem
-44264	idioom
-44265	idioot
-44266	idiote
-44311	idolen
-44312	idool
-44313	idylle
-44314	iebel
-44315	ieder
-44316	iedere
-44321	iel
-44322	iele
-44323	iemand
-44324	iemker
-44325	iep
-44326	iepen
-44331	Ier
-44332	Ieren
-44333	Iers
-44334	Ierse
-44335	iet
-44336	iets
-44341	ietsje
-44342	ietwat
-44343	iglo
-44344	ijdel
-44345	ijdele
-44346	ijl
-44351	ijlde
-44352	ijle
-44353	ijlen
-44354	ijler
-44355	ijs
-44356	ijsco
-44361	ijsde
-44362	ijsje
-44363	ijsjes
-44364	ijskap
-44365	ijszak
-44366	ijszee
-44411	ijver
-44412	ijzel
-44413	ijzen
-44414	ijzer
-44415	ijzers
-44416	ijzig
-44421	ijzige
-44422	ikzelf
-44423	Ilias
-44424	image
-44425	imago
-44426	imam
-44431	imker
-44432	imkers
-44433	immens
-44434	immer
-44435	immers
-44436	immune
-44441	immuun
-44442	impact
-44443	impala
-44444	import
-44445	impost
-44446	impuls
-44451	inbaar
-44452	inbare
-44453	inca
-44454	incest
-44455	inch
-44456	inches
-44461	inde
-44462	index
-44463	indien
-44464	Indiër
-44465	indigo
-44466	Indo
-44511	indoen
-44512	indruk
-44513	indult
-44514	ineen
-44515	ineens
-44516	inert
-44521	inerte
-44522	infaam
-44523	infame
-44524	infant
-44525	info
-44526	infuus
-44531	ingaan
-44532	ingang
-44533	ingoed
-44534	ingooi
-44535	inham
-44536	inhoud
-44541	inkeep
-44542	inkeer
-44543	inkom
-44544	inkoop
-44545	inkoud
-44546	inkt
-44551	inkten
-44552	inktte
-44553	inlaag
-44554	inlaat
-44555	inlage
-44556	inlas
-44561	inlaut
-44562	inleg
-44563	inloop
-44564	inmaak
-44565	inname
-44566	innen
-44611	innig
-44612	innige
-44613	inning
-44614	input
-44615	inrit
-44616	inruil
-44621	insect
-44622	inslag
-44623	insult
-44624	intact
-44625	intake
-44626	intens
-44631	intern
-44632	intiem
-44633	intimi
-44634	intree
-44635	intrek
-44636	intro
-44641	intron
-44642	inval
-44643	invers
-44644	invert
-44645	invite
-44646	invité
-44651	invoer
-44652	inworp
-44653	inzage
-44654	inzake
-44655	inzet
-44656	inzien
-44661	ion
-44662	ionen
-44663	iris
-44664	ironie
-44665	islam
-44666	isme
-45111	ismen
-45112	ismes
-45113	issue
-45114	issues
-45115	item
-45116	ivoor
-45121	ivoren
-45122	Ivriet
-45123	jaagde
-45124	jaap
-45125	jaapte
-45126	jaar
-45131	jabot
-45132	jabots
-45133	jacht
-45134	jack
-45135	jacket
-45136	jade
-45141	jaeger
-45142	jagen
-45143	jager
-45144	jagers
-45145	jaguar
-45146	Jahwe
-45151	Jahweh
-45152	jajem
-45153	jak
-45154	jakken
-45155	jakkes
-45156	jam
-45161	jambe
-45162	jamben
-45163	jammen
-45164	jammer
-45165	jampot
-45166	jan
-45211	janhen
-45212	janken
-45213	jankte
-45214	jannen
-45215	jantje
-45216	janus
-45221	Jap
-45222	Japans
-45223	japen
-45224	japon
-45225	Jappen
-45226	jaren
-45231	jargon
-45232	jarig
-45233	jarige
-45234	jas
-45235	jaspis
-45236	jassen
-45241	jaste
-45242	jaszak
-45243	jat
-45244	jatte
-45245	jatten
-45246	Javaan
-45251	jawel
-45252	jazz
-45253	jazzy
-45254	jeans
-45255	jeep
-45256	jegens
-45261	Jehova
-45262	jein
-45263	jekker
-45264	jelui
-45265	jengel
-45266	jennen
-45311	jersey
-45312	jet
-45313	jetlag
-45314	jetset
-45315	jetski
-45316	jeu
-45321	jeugd
-45322	jeuïg
-45323	jeuk
-45324	jeuken
-45325	jeukte
-45326	jezelf
-45331	jicht
-45332	jij
-45333	jijde
-45334	jijen
-45335	jingle
-45336	jive
-45341	Job
-45342	jochie
-45343	jockey
-45344	joden
-45345	jodide
-45346	jodin
-45351	jodium
-45352	joeg
-45353	joekel
-45354	joelde
-45355	joelen
-45356	joep
-45361	joetje
-45362	jofel
-45363	joggen
-45364	jogger
-45365	joh
-45366	joint
-45411	jok
-45412	joke
-45413	joker
-45414	jokers
-45415	jokken
-45416	jokte
-45421	jol
-45422	jolde
-45423	jolen
-45424	jolig
-45425	jolige
-45426	jolijt
-45431	jollen
-45432	Jonas
-45433	jonde
-45434	jonen
-45435	jong
-45436	jongde
-45441	jonge
-45442	jongen
-45443	jonger
-45444	jongs
-45445	jonk
-45446	jonken
-45451	jonker
-45452	jonnen
-45453	jood
-45454	joods
-45455	joodse
-45456	jool
-45461	joolde
-45462	joon
-45463	joop
-45464	Joost
-45465	jopen
-45466	jota
-45511	jou
-45512	joule
-45513	jour
-45514	jouw
-45515	jouwde
-45516	jouwen
-45521	joyeus
-45522	jozef
-45523	jubel
-45524	judas
-45525	judo
-45526	judoën
-45531	judoka
-45532	juf
-45533	juffen
-45534	juffer
-45535	juffie
-45536	juist
-45541	juiste
-45542	juk
-45543	jukken
-45544	jukte
-45545	juli
-45546	jullie
-45551	jumbo
-45552	jumper
-45553	jungle
-45554	juni
-45555	junior
-45556	junk
-45561	junkie
-45562	junta
-45563	Jura
-45564	jurist
-45565	jurk
-45566	jurken
-45611	jury
-45612	jus
-45613	juskom
-45614	jut
-45615	jute
-45616	juten
-45621	jutte
-45622	jutten
-45623	jutter
-45624	juweel
-45625	kaag
-45626	kaai
-45631	kaaide
-45632	kaaien
-45633	kaak
-45634	kaakje
-45635	kaakte
-45636	kaal
-45641	kaalte
-45642	kaam
-45643	kaamde
-45644	kaan
-45645	kaap
-45646	kaapte
-45651	kaar
-45652	kaard
-45653	kaarde
-45654	kaars
-45655	kaart
-45656	kaas
-45661	kaasde
-45662	kaats
-45663	kabaai
-45664	kabaal
-45665	kabaja
-45666	kabas
-46111	kabel
-46112	kabels
-46113	kachel
-46114	kade
-46115	kadee
-46116	kadees
-46121	kaden
-46122	kader
-46123	kaders
-46124	kadi
-46125	kaduke
-46126	kaduuk
-46131	kaf
-46132	kaffa
-46133	kaffer
-46134	kaft
-46135	kaftan
-46136	kaften
-46141	kaftte
-46142	kafzak
-46143	kagen
-46144	kaön
-46145	kaöns
-46146	kajak
-46151	kajaks
-46152	kajuit
-46153	kak
-46154	kakel
-46155	kakels
-46156	kaken
-46161	kaki
-46162	kakken
-46163	kakte
-46164	kalbas
-46165	kalde
-46166	kale
-46211	kalen
-46212	kaler
-46213	kalf
-46214	kalfde
-46215	kalfje
-46216	kali
-46221	kalief
-46222	kalium
-46223	kalk
-46224	kalkei
-46225	kalken
-46226	kalkte
-46231	kalle
-46232	kallen
-46233	kalm
-46234	kalme
-46235	kalmer
-46236	kalmte
-46241	kalot
-46242	kalven
-46243	kam
-46244	kamde
-46245	kameel
-46246	kamen
-46251	kamer
-46252	kamers
-46253	kamfer
-46254	kamig
-46255	kammen
-46256	kamp
-46261	kampen
-46262	kamper
-46263	kampte
-46264	kamrad
-46265	kan
-46266	kanaal
-46311	kanaat
-46312	kandij
-46313	kaneel
-46314	kanen
-46315	kanis
-46316	kanjer
-46321	kanji
-46322	kanker
-46323	kannen
-46324	kano
-46325	kanode
-46326	kanoën
-46331	kanoër
-46332	kanoet
-46333	kanon
-46334	kans
-46335	kansel
-46336	kansen
-46341	kant
-46342	kanten
-46343	kantig
-46344	kantje
-46345	kanton
-46346	kantte
-46351	kap
-46352	kapel
-46353	kapen
-46354	kaper
-46355	kapers
-46356	kapje
-46361	kapjes
-46362	kapmes
-46363	kapoen
-46364	kapok
-46365	kapot
-46366	kappa
-46411	kappen
-46412	kapper
-46413	kapsel
-46414	kapte
-46415	kar
-46416	karaat
-46421	karaf
-46422	karate
-46423	karde
-46424	karen
-46425	karet
-46426	karig
-46431	karige
-46432	karkas
-46433	karma
-46434	karn
-46435	karnde
-46436	karnen
-46441	karos
-46442	karot
-46443	karper
-46444	karpet
-46445	karren
-46446	kartel
-46451	karton
-46452	karwei
-46453	karwij
-46454	kas
-46455	kasba
-46456	kashba
-46461	kassa
-46462	kassei
-46463	kassen
-46464	kast
-46465	kaste
-46466	kasten
-46511	kastie
-46512	kat
-46513	kater
-46514	katern
-46515	katers
-46516	kation
-46521	katje
-46522	katjes
-46523	katoen
-46524	katoog
-46525	katrol
-46526	katte
-46531	katten
-46532	kattig
-46533	kattin
-46534	katuil
-46535	katvis
-46536	kauri
-46541	kauw
-46542	kauwde
-46543	kauwen
-46544	kavel
-46545	kavels
-46546	kazak
-46551	kazen
-46552	kebab
-46553	kebon
-46554	kebons
-46555	keek
-46556	keel
-46561	keelde
-46562	keen
-46563	keende
-46564	keep
-46565	keepen
-46566	keeper
-46611	keepte
-46612	keer
-46613	keerde
-46614	kees
-46615	keet
-46616	keffen
-46621	keffer
-46622	kefir
-46623	kefte
-46624	keg
-46625	kegel
-46626	kegels
-46631	kegge
-46632	keggen
-46633	kegje
-46634	kei
-46635	keien
-46636	keikop
-46641	keilde
-46642	keilen
-46643	keitje
-46644	keizer
-46645	kek
-46646	kelder
-46651	kelen
-46652	kelim
-46653	kelk
-46654	kelken
-46655	kelner
-46656	kelp
-46661	kelt
-46662	kelten
-46663	kemel
-46664	kemels
-46665	kemp
-46666	kempen
-51111	kenau
-51112	kende
-51113	kennel
-51114	kennen
-51115	kenner
-51116	kennis
-51121	kepen
-51122	keper
-51123	kepers
-51124	kepie
-51125	kepies
-51126	kerel
-51131	kerels
-51132	keren
-51133	kerf
-51134	kerfde
-51135	kering
-51136	kerk
-51141	kerken
-51142	kerker
-51143	kerks
-51144	kerkse
-51145	kerkte
-51146	kermde
-51151	kermen
-51152	kermes
-51153	Kermis
-51154	kern
-51155	kernen
-51156	kerrie
-51161	kers
-51162	kersen
-51163	kervel
-51164	kerven
-51165	kesp
-51166	kespen
-51211	ketel
-51212	ketels
-51213	keten
-51214	ketens
-51215	ketjap
-51216	ketje
-51221	ketjes
-51222	kets
-51223	ketsen
-51224	ketste
-51225	ketter
-51226	keu
-51231	keuken
-51232	Keuls
-51233	Keulse
-51234	keur
-51235	keurde
-51236	keuren
-51241	keurig
-51242	keurs
-51243	keus
-51244	keutel
-51245	keuter
-51246	keuvel
-51251	keuze
-51252	keuzen
-51253	keuzes
-51254	kevel
-51255	kevels
-51256	kever
-51261	kevers
-51262	kevie
-51263	kevies
-51264	kezen
-51265	khmer
-51266	kick
-51311	kicken
-51312	kief
-51313	kiek
-51314	kieken
-51315	kiekje
-51316	kiekte
-51321	kiel
-51322	kielde
-51323	kielen
-51324	kiem
-51325	kiemde
-51326	kiemen
-51331	kien
-51332	kiende
-51333	kiene
-51334	kiep
-51335	kiepen
-51336	kier
-51341	kierde
-51342	kieren
-51343	kies
-51344	kiese
-51345	kieuw
-51346	kievit
-51351	kiezel
-51352	kiezen
-51353	kiezer
-51354	kift
-51355	kiften
-51356	kiftte
-51361	kijf
-51362	kijven
-51363	kik
-51364	kikken
-51365	kikker
-51366	kikte
-51411	kil
-51412	kilde
-51413	kille
-51414	killen
-51415	killer
-51416	kilo
-51421	kilt
-51422	kilte
-51423	kim
-51424	kimde
-51425	kimme
-51426	kimmen
-51431	kimono
-51432	kin
-51433	kina
-51434	kinase
-51435	kind
-51436	kindje
-51441	kinds
-51442	kindse
-51443	kinema
-51444	kink
-51445	kinkel
-51446	kinken
-51451	kinnen
-51452	kiosk
-51453	kip
-51454	kipbak
-51455	kipkap
-51456	kipkar
-51461	kippen
-51462	kippig
-51463	kipte
-51464	kirde
-51465	kirren
-51466	kirsch
-51511	kissen
-51512	kist
-51513	kiste
-51514	kisten
-51515	kistje
-51516	kistte
-51521	kit
-51522	kits
-51523	kitsch
-51524	kitsen
-51525	kitste
-51526	kitte
-51531	kitten
-51532	kittig
-51533	kiwi
-51534	klaar
-51535	klaas
-51536	klabak
-51541	klacht
-51542	klad
-51543	kladde
-51544	kladje
-51545	klagen
-51546	klager
-51551	klak
-51552	klakte
-51553	klam
-51554	klamme
-51555	klamp
-51556	klank
-51561	klant
-51562	klap
-51563	klapte
-51564	klare
-51565	klaren
-51566	klas
-51611	klasse
-51612	klauw
-51613	klaver
-51614	klazen
-51615	kleden
-51616	kledij
-51621	kleed
-51622	kleef
-51623	klef
-51624	kleffe
-51625	klei
-51626	kleide
-51631	kleien
-51632	kleiig
-51633	klein
-51634	kleine
-51635	klem
-51636	klemde
-51641	klep
-51642	klepel
-51643	klepte
-51644	kleren
-51645	klerk
-51646	klets
-51651	kleun
-51652	kleur
-51653	kleven
-51654	klever
-51655	kliek
-51656	klier
-51661	klif
-51662	klik
-51663	klikte
-51664	klim
-51665	klimop
-51666	kling
-52111	klink
-52112	klip
-52113	klis
-52114	kliste
-52115	klit
-52116	klitte
-52121	klodde
-52122	kloef
-52123	kloek
-52124	kloeke
-52125	kloet
-52126	klok
-52131	klokje
-52132	klokke
-52133	klokte
-52134	klom
-52135	klomp
-52136	klonen
-52141	klonk
-52142	klont
-52143	kloof
-52144	kloon
-52145	kloot
-52146	klop
-52151	klopje
-52152	klopte
-52153	klos
-52154	kloste
-52155	kloten
-52156	klove
-52161	kloven
-52162	klucht
-52163	kluft
-52164	kluif
-52165	kluis
-52166	kluit
-52211	klunen
-52212	kluns
-52213	klus
-52214	kluts
-52215	kluwen
-52216	klysma
-52221	knaak
-52222	knaap
-52223	knagen
-52224	knak
-52225	knaken
-52226	knakte
-52231	knal
-52232	knalde
-52233	knap
-52234	knapen
-52235	knappe
-52236	knapte
-52241	knar
-52242	knauw
-52243	knecht
-52244	kneden
-52245	kneep
-52246	knekel
-52251	knel
-52252	knelde
-52253	knepen
-52254	kneu
-52255	kneuen
-52256	kneus
-52261	knevel
-52262	knie
-52263	knieën
-52264	knier
-52265	knijp
-52266	knik
-52311	knikte
-52312	knip
-52313	knipte
-52314	knoei
-52315	knoest
-52316	knoet
-52321	knok
-52322	knoken
-52323	knokig
-52324	knokte
-52325	knol
-52326	knook
-52331	knoop
-52332	knor
-52333	knorde
-52334	knorf
-52335	knot
-52336	knotje
-52341	knots
-52342	knotte
-52343	knudde
-52344	knuist
-52345	knul
-52346	knus
-52351	knusse
-52352	koala
-52353	kobalt
-52354	kobbe
-52355	kobben
-52356	kobold
-52361	kocht
-52362	kodak
-52363	kodaks
-52364	kodde
-52365	kodden
-52366	koddig
-52411	koe
-52412	koedoe
-52413	koeien
-52414	koek
-52415	koeken
-52416	koekje
-52421	koekte
-52422	koel
-52423	koelak
-52424	koelde
-52425	koele
-52426	koelen
-52431	koeler
-52432	koelie
-52433	koelte
-52434	koen
-52435	koene
-52436	koepel
-52441	koepok
-52442	koer
-52443	koerde
-52444	koeren
-52445	koers
-52446	koest
-52451	koet
-52452	koeten
-52453	koetje
-52454	koets
-52455	kof
-52456	koffen
-52461	koffer
-52462	koffie
-52463	kogel
-52464	kogels
-52465	kogen
-52466	kogge
-52511	koggen
-52512	kohier
-52513	koine
-52514	kok
-52515	koken
-52516	kokend
-52521	koker
-52522	kokers
-52523	koket
-52524	kokkel
-52525	kokker
-52526	kokkie
-52531	kokkin
-52532	kol
-52533	kola
-52534	kolbak
-52535	kolde
-52536	kolder
-52541	kolen
-52542	kolf
-52543	kolfde
-52544	kolfje
-52545	koliek
-52546	kolk
-52551	kolken
-52552	kolkte
-52553	kollen
-52554	kolom
-52555	kolos
-52556	kolven
-52561	kom
-52562	komaan
-52563	komaf
-52564	komeet
-52565	komen
-52566	komend
-52611	komiek
-52612	komijn
-52613	komma
-52614	kommen
-52615	kommer
-52616	kompas
-52621	kompel
-52622	komst
-52623	komt
-52624	kond
-52625	konen
-52626	kongsi
-52631	konijn
-52632	koning
-52633	konkel
-52634	kont
-52635	konten
-52636	kontje
-52641	koof
-52642	koog
-52643	kooi
-52644	kooide
-52645	kooien
-52646	kook
-52651	kookte
-52652	kool
-52653	koon
-52654	koop
-52655	koopje
-52656	koor
-52661	koord
-52662	koorde
-52663	koorts
-52664	koos
-52665	koosde
-52666	koot
-53111	kootje
-53112	kootte
-53113	kop
-53114	kopal
-53115	kopbal
-53116	kopeke
-53121	kopen
-53122	koper
-53123	kopers
-53124	kopie
-53125	kopij
-53126	kopje
-53131	kopjes
-53132	kopman
-53133	koppel
-53134	koppen
-53135	koppig
-53136	kopra
-53141	kops
-53142	kopse
-53143	kopte
-53144	kor
-53145	koraal
-53146	koran
-53151	korde
-53152	kordon
-53153	koren
-53154	korf
-53155	korfde
-53156	korist
-53161	kornak
-53162	kornet
-53163	kornis
-53164	korps
-53165	korre
-53166	korrel
-53211	korren
-53212	korset
-53213	kort
-53214	kortaf
-53215	korte
-53216	korten
-53221	korter
-53222	kortom
-53223	kortte
-53224	korund
-53225	korven
-53226	korvet
-53231	kosjer
-53232	kosmos
-53233	kossem
-53234	kost
-53235	kosten
-53236	koster
-53241	kostte
-53242	kot
-53243	koten
-53244	koter
-53245	koters
-53246	kots
-53251	kotsen
-53252	kotste
-53253	kotten
-53254	kotter
-53255	kou
-53256	koud
-53261	koude
-53262	kouder
-53263	kous
-53264	kousen
-53265	kousje
-53266	kout
-53311	kouten
-53312	kouter
-53313	koutte
-53314	kovel
-53315	kovels
-53316	koven
-53321	kozak
-53322	kozen
-53323	kozijn
-53324	kraag
-53325	kraai
-53326	kraak
-53331	kraal
-53332	kraam
-53333	kraan
-53334	krab
-53335	krabbe
-53336	krabde
-53341	krach
-53342	kracht
-53343	kragen
-53344	krak
-53345	kraken
-53346	kraker
-53351	krakte
-53352	kralen
-53353	kram
-53354	kramde
-53355	kramen
-53356	kramer
-53361	kramp
-53362	kranen
-53363	kranig
-53364	krank
-53365	kranke
-53366	krans
-53411	krant
-53412	krap
-53413	krappe
-53414	krapte
-53415	kras
-53416	krasse
-53421	kraste
-53422	krat
-53423	krater
-53424	kraton
-53425	krats
-53426	krauw
-53431	kreeft
-53432	kreeg
-53433	kreek
-53434	kreet
-53435	kregel
-53436	krek
-53441	krekel
-53442	kreken
-53443	kreng
-53444	krent
-53445	krepte
-53446	kresen
-53451	kreten
-53452	kreuk
-53453	krevel
-53454	kribbe
-53455	kribde
-53456	kribje
-53461	kriek
-53462	kriel
-53463	krijg
-53464	krijn
-53465	krijs
-53466	krijt
-53511	krik
-53512	krikte
-53513	krill
-53514	krimi
-53515	krimp
-53516	kring
-53521	krip
-53522	kris
-53523	kriste
-53524	krocht
-53525	kroeg
-53526	kroep
-53531	kroes
-53532	kroeze
-53533	kroket
-53534	krokus
-53535	krol
-53536	krols
-53541	krolse
-53542	krom
-53543	kromde
-53544	kromme
-53545	kromp
-53546	kromte
-53551	kronen
-53552	kroon
-53553	kroop
-53554	kroos
-53555	kroost
-53556	kroot
-53561	krop
-53562	kropte
-53563	krot
-53564	kroten
-53565	krozen
-53566	kruid
-53611	kruide
-53612	kruien
-53613	kruier
-53614	kruik
-53615	kruim
-53616	kruin
-53621	kruis
-53622	kruit
-53623	kruk
-53624	krukas
-53625	krukte
-53626	krul
-53631	krulde
-53632	kubiek
-53633	kubist
-53634	kubus
-53635	kuch
-53636	kuchen
-53641	kuchte
-53642	kudde
-53643	kudden
-53644	kuddes
-53645	kuier
-53646	kuif
-53651	kuifde
-53652	kuiken
-53653	kuil
-53654	kuilde
-53655	kuilen
-53656	kuiler
-53661	kuip
-53662	kuipen
-53663	kuiper
-53664	kuipte
-53665	kuis
-53666	kuise
-54111	kuisen
-54112	kuiser
-54113	kuiste
-54114	kuit
-54115	kuiten
-54116	kuiter
-54121	kuiven
-54122	kuizen
-54123	kul
-54124	kulas
-54125	kulde
-54126	kullen
-54131	kummel
-54132	kunde
-54133	kundig
-54134	kungfu
-54135	kunne
-54136	kunnen
-54141	kunst
-54142	kär
-54143	kuras
-54144	kuren
-54145	kurk
-54146	kurken
-54151	kurkte
-54152	kus
-54153	kussen
-54154	kust
-54155	kuste
-54156	kusten
-54161	kut
-54162	kutten
-54163	kuub
-54164	kuur
-54165	kuurde
-54166	kwaad
-54211	kwaaie
-54212	kwaal
-54213	kwab
-54214	kwade
-54215	kwaden
-54216	kwader
-54221	kwak
-54222	kwaken
-54223	kwakte
-54224	kwal
-54225	kwalen
-54226	kwam
-54231	kwant
-54232	kwanta
-54233	kwark
-54234	kwart
-54235	kwarto
-54236	kwarts
-54241	kwast
-54242	kwee
-54243	kweeën
-54244	kweek
-54245	kween
-54246	kwek
-54251	kweken
-54252	kweker
-54253	kwekte
-54254	kwel
-54255	kwelde
-54256	kwelen
-54261	kwets
-54262	kwezel
-54263	kwibus
-54264	kwiek
-54265	kwieke
-54266	kwijl
-54311	kwijt
-54312	kwik
-54313	kwint
-54314	laadde
-54315	laaf
-54316	laafde
-54321	laag
-54322	laagje
-54323	laagte
-54324	laaide
-54325	laaie
-54326	laaien
-54331	laakte
-54332	laan
-54333	laar
-54334	laars
-54335	laat
-54336	laatje
-54341	laatst
-54342	lab
-54343	label
-54344	labels
-54345	labeur
-54346	labiel
-54351	labo
-54352	lach
-54353	lachen
-54354	lacher
-54355	lachte
-54356	lacune
-54361	ladder
-54362	lade
-54363	laden
-54364	lader
-54365	laders
-54366	lades
-54411	lading
-54412	lady
-54413	laesie
-54414	laf
-54415	lafbek
-54416	laffe
-54421	laffer
-54422	lag
-54423	lage
-54424	lagen
-54425	lager
-54426	lagune
-54431	lak
-54432	lakei
-54433	laken
-54434	lakens
-54435	lakken
-54436	lakooi
-54441	laks
-54442	lakse
-54443	lakser
-54444	lakte
-54445	lalde
-54446	lallen
-54451	lam
-54452	lama
-54453	lamŽ
-54454	lamel
-54455	lamfer
-54456	lamme
-54461	lammen
-54462	lammer
-54463	lammig
-54464	lamoen
-54465	lamp
-54466	lampen
-54511	lamzak
-54512	lancet
-54513	land
-54514	landde
-54515	lande
-54516	landen
-54521	landje
-54522	lanen
-54523	lang
-54524	langde
-54525	lange
-54526	langen
-54531	langer
-54532	langs
-54533	lans
-54534	lansen
-54535	Lap
-54536	Lappen
-54541	Laps
-54542	lapsus
-54543	lapte
-54544	laptop
-54545	laqué
-54546	laren
-54551	larf
-54552	largo
-54553	larie
-54554	lariks
-54555	larve
-54556	larven
-54561	larynx
-54562	las
-54563	laser
-54564	lasers
-54565	lassen
-54566	lasser
-54611	lasso
-54612	last
-54613	laste
-54614	lasten
-54615	laster
-54616	lastig
-54621	lat
-54622	late
-54623	latei
-54624	laten
-54625	latent
-54626	later
-54631	latere
-54632	latex
-54633	Latijn
-54634	latte
-54635	latten
-54636	latuw
-54641	lauden
-54642	lauw
-54643	lauwe
-54644	lauwer
-54645	lava
-54646	lavabo
-54651	lavas
-54652	laven
-54653	lavet
-54654	laving
-54655	lawaai
-54656	lawine
-54661	laxans
-54662	lazer
-54663	lazuur
-54664	league
-54665	lease
-54666	leasen
-55111	leb
-55112	lebaal
-55113	lebbe
-55114	lebben
-55115	lebbig
-55116	lector
-55121	led
-55122	lede
-55123	leden
-55124	leder
-55125	ledig
-55126	ledige
-55131	leed
-55132	leefde
-55133	leeg
-55134	leegde
-55135	leegte
-55136	leek
-55141	leekte
-55142	leem
-55143	leeman
-55144	leemde
-55145	leemte
-55146	leen
-55151	leende
-55152	leep
-55153	leer
-55154	leerde
-55155	leest
-55156	leeuw
-55161	lef
-55162	leg
-55163	legaal
-55164	legaat
-55165	legale
-55166	legato
-55211	legde
-55212	lege
-55213	legen
-55214	leger
-55215	legers
-55216	leges
-55221	leggen
-55222	legger
-55223	leghen
-55224	legio
-55225	lego
-55226	legsel
-55231	lei
-55232	leidde
-55233	leiden
-55234	leider
-55235	leien
-55236	leis
-55241	leisel
-55242	leitje
-55243	leizen
-55244	lek
-55245	lekbak
-55246	leken
-55251	lekgat
-55252	lekke
-55253	lekken
-55254	lekker
-55255	lekte
-55256	lel
-55261	lelde
-55262	lelie
-55263	leliën
-55264	lelies
-55265	lellen
-55266	lemen
-55311	lemma
-55312	lemmer
-55313	lemmet
-55314	lende
-55315	lenden
-55316	lener
-55321	leners
-55322	leng
-55323	lengde
-55324	lengen
-55325	lengte
-55326	lenig
-55331	lenige
-55332	lening
-55333	lens
-55334	lensde
-55335	lente
-55336	lentes
-55341	lento
-55342	lenze
-55343	lenzen
-55344	lepe
-55345	lepel
-55346	lepels
-55351	leper
-55352	leperd
-55353	leppen
-55354	lepra
-55355	lepte
-55356	lepton
-55361	leraar
-55362	leren
-55363	lering
-55364	les
-55365	lesbo
-55366	lessen
-55411	lest
-55412	leste
-55413	lesuur
-55414	Let
-55415	letaal
-55416	letale
-55421	letsel
-55422	lette
-55423	Letten
-55424	letter
-55425	leugen
-55426	leuk
-55431	leuke
-55432	leuker
-55433	leunde
-55434	leunen
-55435	leur
-55436	leurde
-55441	leuren
-55442	leus
-55443	leute
-55444	leuter
-55445	leutig
-55446	leuze
-55451	leuzen
-55452	Levant
-55453	leven
-55454	levend
-55455	levens
-55456	lever
-55461	levers
-55462	leviet
-55463	lexica
-55464	lezen
-55465	lezer
-55466	lezers
-55511	lezing
-55512	liaan
-55513	liane
-55514	lianen
-55515	Lias
-55516	libel
-55521	libero
-55522	libido
-55523	libris
-55524	licht
-55525	lichte
-55526	lictor
-55531	lid
-55532	lidje
-55533	lidjes
-55534	lied
-55535	lieden
-55536	liedje
-55541	lief
-55542	liefde
-55543	liefje
-55544	liefst
-55545	liegen
-55546	liep
-55551	lier
-55552	lieren
-55553	liëren
-55554	lies
-55555	liet
-55556	lieve
-55561	lieven
-55562	liever
-55563	lievig
-55564	liezen
-55565	lift
-55566	liften
-55611	lifter
-55612	liftte
-55613	liga
-55614	ligbad
-55615	ligdag
-55616	liggen
-55621	ligger
-55622	lij
-55623	lijden
-55624	lijder
-55625	lijf
-55626	lijfde
-55631	lijfje
-55632	lijm
-55633	lijmde
-55634	lijmen
-55635	lijmer
-55636	lijmig
-55641	lijn
-55642	lijnde
-55643	lijnen
-55644	lijs
-55645	lijst
-55646	lijve
-55651	lijven
-55652	lijvig
-55653	lijzen
-55654	lijzig
-55655	lijzij
-55656	lik
-55661	likeur
-55662	likken
-55663	likker
-55664	likte
-55665	lil
-55666	lila
-56111	lilde
-56112	lillen
-56113	liman
-56114	limans
-56115	limbo
-56116	limbus
-56121	limiet
-56122	limit
-56123	limoen
-56124	linde
-56125	linden
-56126	linea
-56131	linie
-56132	linies
-56133	link
-56134	linke
-56135	linken
-56136	linker
-56141	links
-56142	linkse
-56143	linnen
-56144	lino
-56145	lint
-56146	linten
-56151	lintje
-56152	linze
-56153	linzen
-56154	lip
-56155	lipje
-56156	lipjes
-56161	liplap
-56162	lippen
-56163	lipte
-56164	lipvis
-56165	lira
-56166	lire
-56211	lires
-56212	lis
-56213	lissen
-56214	list
-56215	listen
-56216	listig
-56221	liter
-56222	liters
-56223	litho
-56224	liturg
-56225	live
-56226	living
-56231	livrei
-56232	lob
-56233	lobben
-56234	lobbes
-56235	lobbig
-56236	lobby
-56241	loboor
-56242	loc
-56243	locale
-56244	locker
-56245	loco
-56246	lodder
-56251	loden
-56252	lodens
-56253	loding
-56254	loeder
-56255	loef
-56256	loefde
-56261	loeide
-56262	loeien
-56263	loens
-56264	loense
-56265	loep
-56266	loepen
-56311	loer
-56312	loerde
-56313	loeren
-56314	loeres
-56315	loeris
-56316	loet
-56321	loeten
-56322	loeven
-56323	lof
-56324	log
-56325	logde
-56326	loge
-56331	logé
-56332	logee
-56333	logees
-56334	logen
-56335	loges
-56336	logés
-56341	logge
-56342	loggen
-56343	logger
-56344	loggia
-56345	logica
-56346	logies
-56351	logo
-56352	loipe
-56353	lok
-56354	lokaal
-56355	lokaas
-56356	lokale
-56361	loket
-56362	lokken
-56363	lokkig
-56364	lokte
-56365	lol
-56366	lolde
-56411	lolita
-56412	lollen
-56413	lollig
-56414	lolly
-56415	lom
-56416	lombok
-56421	lome
-56422	lomer
-56423	lomig
-56424	lommen
-56425	lommer
-56426	lomp
-56431	lompe
-56432	lompen
-56433	lonen
-56434	long
-56435	longen
-56436	lonk
-56441	lonken
-56442	lonkte
-56443	lont
-56444	lonten
-56445	lood
-56446	loodde
-56451	loodje
-56452	loods
-56453	loof
-56454	loofde
-56455	loog
-56456	loogde
-56461	looi
-56462	looide
-56463	looien
-56464	looier
-56465	look
-56466	loom
-56511	loon
-56512	loonde
-56513	loop
-56514	loopje
-56515	loops
-56516	loopse
-56521	loos
-56522	loosde
-56523	loot
-56524	lootje
-56525	lootte
-56526	lopen
-56531	lopend
-56532	loper
-56533	lopers
-56534	lor
-56535	lord
-56536	lorde
-56541	lork
-56542	lorken
-56543	lorre
-56544	lorren
-56545	lorres
-56546	lorrie
-56551	lorrig
-56552	lorum
-56553	los
-56554	losbol
-56555	losdag
-56556	losjes
-56561	loss
-56562	löss
-56563	losse
-56564	lossen
-56565	losser
-56566	loste
-56611	losweg
-56612	lot
-56613	loten
-56614	loting
-56615	lotion
-56616	lotje
-56621	lotto
-56622	lotus
-56623	louche
-56624	lounge
-56625	louter
-56626	louw
-56631	louwen
-56632	loven
-56633	lover
-56634	loyaal
-56635	loyale
-56636	loze
-56641	lozen
-56642	lozer
-56643	lozing
-56644	lubben
-56645	lubde
-56646	lucht
-56651	lucide
-56652	ludiek
-56653	lues
-56654	lui
-56655	luid
-56656	luidde
-56661	luide
-56662	luiden
-56663	luider
-56664	luidop
-56665	luien
-56666	luier
-61111	luiers
-61112	luifel
-61113	Luik
-61114	luiken
-61115	luilak
-61116	luim
-61121	luimde
-61122	luimen
-61123	luimig
-61124	luis
-61125	luisde
-61126	luit
-61131	luiten
-61132	luizen
-61133	luizig
-61134	luk
-61135	lukken
-61136	lukte
-61141	lul
-61142	lulde
-61143	lullen
-61144	lullig
-61145	lummel
-61146	lunair
-61151	lunch
-61152	lunet
-61153	luns
-61154	lunsde
-61155	lunzen
-61156	lupine
-61161	lupus
-61162	luren
-61163	lurken
-61164	lurkte
-61165	lurven
-61166	lus
-61211	lussen
-61212	lust
-61213	lusten
-61214	luster
-61215	lustig
-61216	lustra
-61221	lustre
-61222	lustte
-61223	lutje
-61224	lutjes
-61225	luttel
-61226	luw
-61231	luwde
-61232	luwe
-61233	luwen
-61234	luwte
-61235	lux
-61236	luxe
-61241	lycea
-61242	lyceum
-61243	lychee
-61244	lycra
-61245	lymfe
-61246	lynx
-61251	lynxen
-61252	lyriek
-61253	lysine
-61254	lysol
-61255	maag
-61256	maagd
-61261	maaide
-61262	maaien
-61263	maaier
-61264	maak
-61265	maakte
-61266	maal
-61311	maalde
-61312	maan
-61313	maand
-61314	maande
-61315	maar
-61316	maart
-61321	maarte
-61322	maarts
-61323	maas
-61324	maasde
-61325	maat
-61326	maatje
-61331	mach
-61332	macho
-61333	macht
-61334	macro
-61335	madam
-61336	madame
-61341	madams
-61342	made
-61343	maden
-61344	madera
-61345	madras
-61346	maf
-61351	maffe
-61352	maffen
-61353	maffer
-61354	maffia
-61355	mafte
-61356	magen
-61361	mager
-61362	magere
-61363	maggi
-61364	magie
-61365	magiër
-61366	magma
-61411	magnum
-61412	Mahdi
-61413	mail
-61414	mailen
-61415	maïs
-61416	maître
-61421	majeur
-61422	majoor
-61423	major
-61424	majors
-61425	mak
-61426	maken
-61431	maker
-61432	makers
-61433	makke
-61434	makker
-61435	makron
-61436	mal
-61441	malaga
-61442	malde
-61443	Maleis
-61444	malen
-61445	maler
-61446	malers
-61451	malie
-61452	maliën
-61453	malies
-61454	maling
-61455	malle
-61456	mallen
-61461	maller
-61462	mals
-61463	malse
-61464	malser
-61465	malta
-61466	malus
-61511	maluwe
-61512	malve
-61513	malven
-61514	mam
-61515	mamma
-61516	mammen
-61521	mammon
-61522	mams
-61523	man
-61524	manche
-61525	manco
-61526	mand
-61531	mande
-61532	manden
-61533	manege
-61534	manen
-61535	maner
-61536	maners
-61541	manga
-61542	mangat
-61543	mangel
-61544	mango
-61545	maniak
-61546	manie
-61551	manier
-61552	manies
-61553	maniok
-61554	mank
-61555	manke
-61556	manken
-61561	mankte
-61562	manna
-61563	mannen
-61564	mannin
-61565	manou
-61566	mans
-61611	mantel
-61612	mantra
-61613	manuur
-61614	maoïst
-61615	map
-61616	mappen
-61621	marde
-61622	mare
-61623	maren
-61624	marge
-61625	marges
-61626	Maria
-61631	marine
-61632	mark
-61633	marken
-61634	marker
-61635	markt
-61636	marlde
-61641	marlen
-61642	marmer
-61643	marmot
-61644	marot
-61645	marqué
-61646	marren
-61651	marron
-61652	mars
-61653	marsen
-61654	marter
-61655	maseur
-61656	masker
-61661	massa
-61662	mast
-61663	mastel
-61664	masten
-61665	mastte
-61666	mat
-62111	match
-62112	mate
-62113	maté
-62114	maten
-62115	mater
-62116	maters
-62121	matig
-62122	matige
-62123	matje
-62124	matjes
-62125	matrak
-62126	matras
-62131	matrix
-62132	matse
-62133	matsen
-62134	matses
-62135	matste
-62136	matte
-62141	matten
-62142	matter
-62143	mauser
-62144	mauve
-62145	mauwde
-62146	mauwen
-62151	maxi
-62152	maxima
-62153	maxime
-62154	maya
-62155	mazen
-62156	mazzel
-62161	mede
-62162	media
-62163	medici
-62164	medina
-62165	medio
-62166	medium
-62211	medley
-62212	medoc
-62213	medusa
-62214	mee
-62215	meel
-62216	meelde
-62221	meelij
-62222	meende
-62223	meent
-62224	meer
-62225	meerde
-62226	meers
-62231	mees
-62232	meest
-62233	meeste
-62234	meet
-62235	meeuw
+Aagje
+aagt
+aagten
+aai
+aaide
+aaien
+aaitje
+aak
+aal
+aalbes
+aalput
+aalt
+aaltje
+aam
+aambei
+aan
+aanbad
+aanbod
+aaneen
+aanhef
+aanleg
+aanpak
+aantal
+aanval
+aanwas
+aanzet
+aap
+aapje
+aapjes
+aapte
+aar
+aard
+aardas
+aardde
+aarde
+aarden
+aardig
+aards
+aardse
+aars
+aarzen
+aas
+aasde
+aasje
+aasjes
+aaszak
+aatje
+aatjes
+abaci
+abacus
+abdij
+abdis
+abeel
+abel
+abele
+abelen
+abject
+ablaut
+abri
+abrupt
+abscis
+absent
+absint
+absurd
+abt
+abten
+abuis
+acajou
+accent
+accept
+acces
+accres
+accu
+ace
+aceton
+ach
+acht
+achten
+achter
+achtte
+acid
+acne
+acquit
+acre
+acres
+acryl
+act
+acteur
+actie
+actief
+actiën
+acties
+activa
+acute
+acuter
+acuut
+adagia
+adagio
+Adam
+adat
+adder
+adders
+addict
+adel
+adelde
+adelen
+adem
+ademde
+ademen
+adept
+ader
+aderde
+aderen
+adieu
+adios
+adonis
+adres
+advent
+advies
+aequo
+aëroob
+afasie
+afbouw
+afdak
+afdoen
+afdruk
+affect
+affix
+affuit
+afgaan
+afgang
+afgod
+afijn
+afkeer
+afkoop
+aflaat
+afloop
+afmars
+afname
+afpeil
+afreis
+afrit
+afroep
+afslag
+afstel
+aft
+aftrap
+aftrek
+afval
+afvoer
+afwas
+afweer
+afzet
+afzien
+afzijn
+agaat
+agamie
+agaten
+agave
+agaven
+agenda
+agens
+agent
+agente
+ageren
+agio
+agnost
+agogie
+agonie
+agoog
+agrafe
+aha
+ahoi
+ahorn
+aids
+aikido
+air
+airbag
+airbus
+airco
+airtje
+aïs
+aïssen
+ajour
+ajuin
+ajuus
+akant
+akela
+akelei
+akelig
+aker
+akker
+akkers
+akolei
+aks
+aksen
+akst
+aksten
+akte
+akten
+aktes
+alaam
+alarm
+albast
+albe
+alben
+albino
+album
+albums
+aldaar
+aldoor
+aldra
+aldus
+aleer
+alert
+alerte
+alfa
+algauw
+alge
+algen
+alhier
+alias
+alibi
+alinea
+alk
+alkali
+alken
+alkoof
+all
+Allah
+allang
+alle
+allee
+alleen
+allen
+aller
+alles
+allo
+allooi
+allure
+almaar
+almede
+almee
+aloë
+alom
+aloud
+aloude
+alp
+alpaca
+alpen
+alpien
+alpine
+alpino
+alras
+alruin
+als
+alsdan
+alsem
+alsnog
+alsof
+alsook
+alt
+altaar
+alten
+alter
+althea
+altijd
+altist
+altoos
+aluin
+alvast
+alver
+alvers
+alwaar
+alweer
+alzo
+amanda
+amant
+amaril
+amati
+amber
+ambigu
+ambo
+ambt
+ambten
+amen
+amfoor
+amfora
+amice
+amices
+amict
+amigo
+amoebe
+amok
+amorf
+amorfe
+ampel
+ampele
+amper
+ampère
+ampex
+ampul
+amulet
+amuse
+anaal
+anale
+ancien
+ander
+andere
+anders
+anemie
+angel
+angels
+angina
+angora
+angst
+anijs
+anima
+animo
+animus
+anion
+anjer
+anjers
+ank
+anker
+ankers
+anklet
+annex
+anno
+anode
+anoden
+anodes
+anomie
+anorak
+ante
+anti
+antiek
+anus
+aorta
+apache
+apart
+aparte
+aperçu
+aperij
+apert
+aperte
+apezat
+apin
+aplomb
+aporie
+appel
+appèl
+appels
+april
+aprils
+apsis
+ara
+arak
+arbeid
+arcade
+arde
+arduin
+are
+areaal
+aren
+arena
+arend
+argon
+argot
+argots
+argus
+aria
+ariër
+ariërs
+arisch
+ark
+arken
+arm
+armada
+arme
+armee
+armen
+armer
+armoe
+armpje
+armvol
+Arnhem
+aroma
+aromen
+aroom
+arren
+arrest
+arrivé
+ars
+arseen
+art
+arts
+artsen
+asbak
+asbelt
+asbest
+asceet
+ascese
+Asdag
+asem
+asemen
+asfalt
+ashoop
+asiel
+askar
+asla
+aslade
+aspect
+aspic
+aspot
+asrest
+assem
+assen
+Assen
+ast
+asten
+aster
+asters
+astma
+aston
+asurn
+ataxie
+atjar
+Atjees
+atlant
+atlas
+atleet
+atlete
+atol
+atomen
+atoom
+atrium
+attaca
+attent
+attest
+aubade
+auctie
+auctor
+aucuba
+augurk
+aula
+aura
+aurora
+Aussie
+auteur
+autist
+auto
+auxine
+aval
+avance
+avant
+avatar
+ave
+avenue
+averij
+avis
+avond
+axel
+axiaal
+axiale
+axioma
+azalea
+azen
+Aziaat
+azijn
+azimut
+azteek
+azuren
+azuur
+baadde
+baadje
+baai
+baaien
+baak
+baal
+baalde
+baan
+baande
+baar
+baard
+baarde
+baars
+baas
+baasde
+baat
+baatte
+babbel
+babi
+baboe
+baboes
+baby
+bacil
+back
+backen
+bacon
+bacove
+bad
+badcel
+baden
+bader
+baders
+badge
+badjas
+badpak
+badtas
+bagger
+bagno
+bah
+bahco
+baisse
+bajes
+bak
+baken
+bakens
+baker
+bakers
+bakken
+bakker
+bakkes
+bakkie
+bakpan
+baksel
+bakte
+bakten
+bakvis
+bal
+balans
+balata
+balde
+balein
+balen
+balg
+balgen
+balie
+balies
+balije
+baljuw
+balk
+balken
+balkon
+balkte
+ballen
+ballet
+ballon
+balpen
+balsa
+balsem
+balts
+balzak
+bamba
+bamboe
+bami
+Bamis
+ban
+banaal
+banaan
+banaat
+banale
+band
+bande
+banden
+banen
+bang
+bange
+banger
+bangig
+banier
+banjer
+banjir
+banjo
+bank
+banken
+banket
+bankje
+bankte
+bannen
+bantoe
+bar
+barak
+bard
+barden
+barder
+bare
+bareel
+baren
+baret
+bariet
+baring
+barium
+bark
+barkas
+barken
+barman
+barok
+baron
+barons
+barre
+barrel
+bars
+barse
+barser
+barzoi
+bas
+basaal
+basale
+basalt
+base
+basen
+bases
+basis
+basket
+bassen
+basset
+bassin
+bast
+basta
+baste
+basten
+bat
+Bataaf
+bataat
+batch
+bate
+baten
+batig
+batik
+batiks
+batist
+baton
+batten
+baud
+bauwde
+bauwen
+bavet
+baxter
+bazaar
+bazen
+bazig
+bazige
+bazin
+bazuin
+beaamd
+beaat
+beamen
+beat
+beauté
+beauty
+beboet
+bebop
+bebost
+bed
+bedden
+bede
+bedekt
+beden
+bederf
+bedild
+beding
+bedolf
+bedong
+bedot
+bedrag
+bedrog
+beduid
+beefde
+beek
+beeld
+beemd
+been
+beende
+beer
+beerde
+beërfd
+beest
+beet
+beetje
+bef
+beffen
+begaan
+begaf
+begijn
+begild
+begin
+beging
+begon
+begoot
+begrip
+beha
+behang
+beheer
+behept
+behing
+behoed
+behoef
+behoud
+behulp
+behuwd
+bei
+beidde
+beide
+beiden
+beider
+beien
+Beier
+Beiers
+beige
+beitel
+beits
+bejoeg
+bek
+bekaf
+bekakt
+bekapt
+bekeef
+bekeek
+beken
+bekend
+beker
+bekers
+bekist
+bekken
+beklad
+beklag
+beklom
+beknot
+bekort
+bekte
+bekwam
+bel
+beland
+belang
+belas
+belast
+belde
+beleed
+beleg
+belegd
+beleid
+belet
+Belg
+Belgen
+België
+beliep
+belle
+bellen
+bello
+beloog
+beloop
+belt
+belten
+beluik
+belust
+bemand
+bemest
+bemind
+bemost
+ben
+benam
+benard
+bende
+benden
+bendes
+bene
+bengel
+benig
+benige
+benijd
+bennen
+bent
+benul
+benut
+benzoë
+benzol
+beo
+beogen
+beoogd
+bepakt
+beraad
+berber
+berd
+berde
+berden
+bereed
+bereid
+bereik
+beren
+berg
+bergaf
+bergen
+Bergen
+bergop
+beried
+beriep
+beril
+berin
+berini
+berk
+berken
+berm
+bermen
+beroep
+beroet
+berouw
+berrie
+berust
+bes
+besef
+beseft
+besje
+besjes
+beslag
+besmet
+bespot
+bessen
+best
+bestal
+beste
+bestek
+bestel
+besten
+bèta
+betast
+bete
+betel
+beten
+beter
+beton
+betond
+betoog
+betoon
+betrad
+betrof
+betrok
+bette
+betten
+beu
+beug
+beugel
+beugen
+beuk
+beuken
+beuker
+beukte
+beul
+beulde
+beulen
+beun
+beunen
+beurde
+beuren
+beurs
+beurse
+beurt
+beval
+bevat
+bevel
+beven
+bever
+bevers
+beviel
+bevind
+beving
+bevist
+bevit
+bevoer
+bevond
+bewees
+beweid
+bewies
+bewijs
+bewind
+bewoog
+bewust
+bezaan
+bezag
+bezat
+bezem
+bezems
+bezet
+bezie
+bezien
+beziën
+bezig
+bezige
+bezit
+bezoek
+bezon
+bezong
+bezonk
+bezoop
+bias
+bibs
+bic
+biceps
+biddag
+bidden
+bidder
+bidet
+bidets
+bidon
+bidweg
+bieb
+biecht
+bieden
+bieder
+biel
+biels
+bier
+bieren
+bies
+biesde
+biest
+biet
+bieten
+biezen
+big
+bigde
+biggen
+bigot
+bij
+bijbal
+bijbel
+bijeen
+bijen
+bijl
+bijlen
+bijles
+bijna
+bijou
+bijous
+bijrol
+bijt
+bijten
+bijter
+bijtje
+bijtte
+bijvak
+bijval
+bijzin
+bijzit
+bijzon
+bik
+bikini
+bikkel
+bikken
+bikte
+bil
+bilde
+biljet
+billen
+bimbam
+binair
+binden
+binder
+bingo
+bink
+binken
+binnen
+binst
+bint
+binten
+bintje
+biobak
+biogas
+bios
+bips
+bis
+bisdom
+bismut
+bissen
+bisser
+bister
+bistro
+bit
+bits
+bitse
+bitser
+bitsig
+bitten
+bitter
+bivak
+bizar
+bizon
+bizons
+blaag
+blaam
+blaar
+blaas
+blad
+bladen
+blafte
+blagen
+blague
+blak
+blaken
+blaker
+blakke
+blanco
+blanda
+blank
+blanke
+blaren
+blasé
+blaten
+blauw
+blauwe
+blazen
+blazer
+bleef
+bleek
+blees
+blei
+bleien
+bleke
+bleken
+bleker
+blekte
+blende
+blèrde
+blèren
+bles
+bleten
+bleu
+blezen
+bliek
+bliep
+blies
+blij
+blijde
+blijer
+blijf
+blik
+blikte
+blind
+blinde
+blink
+blits
+blo
+blode
+bloder
+bloed
+bloei
+bloem
+bloes
+blok
+blokte
+blom
+blond
+blonde
+bloot
+blos
+blote
+bloter
+blouse
+blow
+blowen
+blower
+blozen
+blues
+bluf
+blufte
+bluste
+blut
+bluts
+boa
+board
+bob
+bobbel
+bobben
+bobby
+bobde
+bobijn
+bobine
+bochel
+bocht
+bock
+bod
+bode
+bodega
+bodem
+bodems
+boden
+bodes
+body
+boe
+boedel
+boef
+boeg
+boegen
+boei
+boeide
+boeien
+boeier
+boek
+boeken
+boeket
+boekte
+boel
+boelen
+boem
+boeman
+boemel
+boende
+boer
+boerde
+boeren
+boerin
+boers
+boerse
+boert
+boes
+boete
+boeten
+boetes
+boette
+boeven
+boezel
+boezem
+boezen
+bof
+boffen
+boffer
+bofte
+bogen
+bohème
+boiler
+bojaar
+bok
+bokaal
+bokken
+bokkig
+boksen
+bokser
+bokste
+bokte
+boktor
+bol
+bolde
+bolder
+boleet
+bolero
+bolide
+bolk
+bolken
+bolkop
+bolle
+bollen
+boller
+bollig
+bolus
+bom
+bombam
+bomde
+bomen
+bomer
+bomers
+bomgat
+bomijs
+bommel
+bommen
+bomvol
+bon
+bonbon
+bond
+bonden
+bondig
+bonen
+bongo
+boni
+bonje
+bonk
+bonken
+bonket
+bonkig
+bonkte
+bonnen
+bonnet
+bonobo
+bons
+bonsai
+bonsde
+bont
+bonte
+bonten
+bonter
+bontje
+bonus
+bonze
+bonzen
+boog
+boogde
+boom
+boomde
+boon
+boor
+booras
+boord
+boorde
+boort
+boos
+boot
+bootee
+bootte
+bopper
+boraat
+borat
+borax
+bord
+borden
+border
+bordes
+boren
+borg
+borgde
+borgen
+boring
+borium
+borrel
+bos
+bosbes
+bosgod
+bosje
+bosjes
+boskat
+boson
+bospad
+bossen
+boste
+boston
+bosuil
+bot
+boten
+boter
+botje
+botjes
+bots
+botsen
+botste
+botte
+bottel
+botten
+botter
+botweg
+bouclé
+boud
+boude
+bougie
+boules
+bout
+boute
+bouten
+bouw
+bouwde
+bouwen
+bouwer
+boven
+bowl
+bowlde
+bowlen
+bowler
+box
+boxer
+boy
+boycot
+boze
+bozer
+bozig
+braaf
+braai
+braak
+braam
+bracht
+braden
+brak
+braken
+brakke
+bralde
+bram
+bramen
+brand
+brandy
+branie
+bras
+brasem
+braste
+brat
+brave
+braver
+bravo
+break
+brede
+breder
+breed
+breide
+breien
+brein
+breken
+breker
+brem
+brems
+bres
+bretel
+Breton
+breuk
+breve
+breven
+brevet
+bridge
+brie
+brief
+bries
+brij
+brijen
+brik
+briket
+bril
+brilde
+brille
+brink
+brio
+Brit
+Brits
+Britse
+broche
+broden
+broed
+broeds
+broei
+broek
+broer
+broes
+brogue
+brok
+broker
+brokte
+brom
+bromde
+bron
+brons
+bronst
+brood
+broom
+broos
+bros
+brosse
+broze
+brozen
+brozer
+brug
+Brugge
+brugje
+brui
+bruid
+bruin
+bruine
+bruis
+brulde
+brunch
+brut
+brute
+bruten
+bruter
+bruto
+bruusk
+bruut
+bubbel
+buddy
+budget
+budo
+buffel
+buffer
+buffet
+bug
+bugel
+bugels
+buggy
+bŸhne
+bui
+buide
+buidel
+buien
+buigen
+buiig
+buik
+buiken
+buikig
+buikje
+buil
+builde
+builen
+buis
+buisde
+buit
+buiten
+buitje
+buitte
+buizen
+bukken
+buks
+buksen
+bukte
+bul
+buldog
+bulk
+bulken
+bulkte
+bullen
+bult
+bulten
+bultig
+bultte
+bumper
+bun
+bundel
+bunder
+bunker
+bunnen
+bunny
+bups
+burcht
+bureau
+bureel
+buren
+buret
+burg
+burgen
+burger
+burijn
+burin
+burins
+bus
+bussel
+bussen
+buste
+busten
+bustes
+butaan
+butler
+butsen
+button
+buur
+buurde
+buurt
+buxus
+bye
+bypass
+byte
+bytes
+caban
+cabans
+cabine
+cachet
+cachot
+cactus
+cadans
+caddie
+cadeau
+cadens
+cadet
+caesar
+café
+cafés
+cahier
+cake
+cakes
+calque
+camber
+camee
+camel
+camera
+camion
+camper
+campus
+canada
+canapé
+canard
+cancan
+canon
+canons
+canto
+cantor
+canule
+canvas
+cape
+capes
+capita
+carbid
+carbol
+carbon
+care
+cargo
+cariës
+carnet
+carré
+carrés
+carter
+casco
+case
+cash
+casino
+cassis
+cast
+casten
+castte
+casus
+catgut
+causa
+cautie
+cavia
+cedel
+cedels
+ceder
+ceders
+ceel
+cel
+celen
+cellen
+cello
+cement
+censor
+census
+cent
+centen
+center
+centra
+cerise
+cervix
+cesium
+cessie
+cesuur
+cetera
+chador
+chalet
+chaoot
+chaos
+charge
+charme
+charta
+cheeta
+chef
+chefs
+chemie
+cheque
+cherub
+chic
+chick
+chili
+chintz
+chip
+chips
+chique
+chloor
+choco
+choke
+choken
+chorus
+chroma
+chromo
+chrono
+chroom
+cicero
+cider
+cijfer
+cijns
+cineac
+cinema
+cipier
+cipres
+circa
+circus
+cirkel
+cirrus
+cis
+cissen
+citaat
+citer
+citers
+city
+civet
+civiel
+claim
+clan
+claque
+claris
+claus
+claves
+claxon
+clean
+cleane
+clerus
+cliché
+click
+cliënt
+climax
+clinch
+clip
+clivia
+cloaca
+close
+closet
+clou
+clown
+club
+coach
+coaten
+cobra
+coca
+coccus
+coda
+code
+codes
+codeur
+codex
+cognac
+cohort
+coïtus
+coke
+cokes
+col
+cola
+colli
+collie
+collo
+colt
+column
+coma
+combi
+combo
+comité
+condor
+conga
+congé
+congés
+consul
+conté
+conti
+conto
+contra
+conus
+convex
+corgi
+corner
+cornet
+corona
+corps
+corpus
+corso
+Cortes
+cortex
+corvee
+coup
+coupe
+coupé
+coupes
+coupés
+coupon
+cour
+cover
+cowboy
+coyote
+crack
+crank
+crash
+crawl
+crayon
+crazy
+crèche
+credit
+credo
+crème
+crèmes
+creool
+crêpe
+cretin
+crew
+criant
+crime
+crises
+cross
+cru
+cruise
+crux
+crypte
+Cubaan
+cue
+culten
+cultus
+cumul
+cup
+cupido
+curare
+curie
+cursor
+cursus
+curve
+curven
+custos
+cutter
+cyaan
+cycli
+cyclus
+cynici
+cypers
+cyste
+cysten
+daad
+daagde
+daags
+daagse
+daalde
+daar
+daaraf
+daarin
+daarna
+daarom
+daarop
+daas
+daasde
+dabben
+dabde
+dacht
+dadel
+dadels
+daden
+dader
+daders
+dading
+dag
+dage
+dagen
+dager
+dagers
+dagge
+daggen
+daging
+dagje
+dagjes
+daguil
+dahlia
+daim
+dak
+daken
+dakpan
+dal
+dalem
+dalems
+dalen
+daling
+daluur
+dam
+damar
+damast
+damde
+dame
+dames
+dammen
+dammer
+damp
+dampen
+dampig
+dampte
+dan
+dandy
+danig
+danige
+dank
+danken
+dankte
+dans
+dansen
+danser
+danste
+dapper
+dar
+darm
+darmen
+darren
+dartel
+darts
+das
+dassen
+dat
+data
+datief
+datje
+datjes
+dato
+datsja
+datum
+datums
+dauw
+dauwde
+dauwen
+daver
+davit
+davits
+dazen
+deal
+dealen
+dealer
+debat
+debet
+debiel
+debiet
+debuut
+decaan
+decade
+decent
+deciel
+deck
+decor
+decors
+dédain
+deed
+deeg
+deejay
+deel
+deelde
+deels
+Deen
+Deens
+Deense
+deerde
+deerne
+degel
+degels
+degen
+degene
+degens
+degout
+deinde
+deinen
+deïsme
+deïst
+dek
+dekbed
+deken
+dekens
+dekhut
+dekken
+dekker
+deksel
+dekte
+del
+dele
+delen
+deler
+delers
+delfde
+delfts
+delgde
+delgen
+delict
+deling
+dellen
+delta
+delven
+dement
+demi
+demo
+demon
+demons
+dempen
+demper
+dempte
+denier
+denim
+denken
+denker
+dennen
+Deo
+depot
+depots
+deppen
+depte
+der
+derby
+derde
+derden
+derdes
+deren
+derfde
+derny
+derrie
+dertig
+derven
+des
+desa
+desem
+desems
+design
+desk
+dessen
+dessin
+detail
+deuce
+deugd
+deugde
+deugen
+deuk
+deuken
+deukte
+deun
+deunde
+deunen
+deur
+deuren
+deuvik
+devies
+Devoon
+devoot
+devote
+dewijl
+deze
+dezen
+dezer
+dia
+diaken
+dicht
+dichte
+dictee
+dictie
+die
+dieet
+dief
+diefde
+dien
+diende
+diens
+dienst
+diep
+diepe
+diepen
+dieper
+diepte
+dier
+dieren
+dies
+diesel
+diëten
+Diets
+Dietse
+dieven
+dij
+dijde
+dijen
+dijn
+dik
+dikbil
+dikke
+dikken
+dikker
+dikkig
+dikkop
+dikoor
+dikte
+dikten
+diktes
+dikzak
+dildo
+dille
+dillen
+dimde
+dimmen
+dimmer
+dimorf
+dinar
+diner
+diners
+ding
+dingen
+dinges
+dingo
+diode
+diodes
+dip
+dippen
+dipte
+direct
+dirk
+dirken
+dirkte
+dis
+disco
+discus
+disk
+dissel
+dissen
+distel
+dit
+ditje
+ditjes
+dito
+diva
+divan
+divans
+divers
+dizzy
+djati
+dobber
+docent
+doch
+dociel
+doctor
+doddig
+dode
+doden
+doding
+doedel
+doek
+doeken
+doekte
+doel
+doelde
+doelen
+doem
+doemde
+doemen
+doen
+doende
+doener
+doerak
+does
+doetje
+doezel
+doezen
+dof
+doffe
+doffen
+doffer
+doft
+dofte
+doften
+dog
+doge
+dogen
+doges
+doggen
+dogger
+dogma
+dok
+doka
+doken
+dokken
+dokte
+dokter
+dol
+dolby
+dolde
+dolen
+doler
+dolik
+doling
+dolk
+dolken
+dollar
+dolle
+dollen
+doller
+dolly
+dolman
+dolmen
+dolven
+dom
+domein
+domen
+domino
+domkop
+domme
+dommel
+dommer
+domoor
+dompel
+domper
+dompig
+domweg
+don
+doña
+donaat
+donder
+dong
+donjon
+donk
+donker
+donkey
+donna
+donor
+donors
+dons
+donsje
+donut
+donzen
+donzig
+dood
+doodde
+doodop
+doods
+doodse
+doof
+doofde
+dooi
+dooide
+dooie
+dooien
+dooier
+dook
+dool
+doolde
+doom
+doomde
+doop
+doopte
+door
+doorn
+doos
+dop
+dope
+dopen
+doper
+dopers
+dophei
+doping
+doppen
+dopper
+dopte
+dor
+dorade
+dorado
+dorde
+dorder
+doren
+dorens
+dorp
+dorpel
+dorpen
+dorper
+dorps
+dorpse
+dorre
+dorren
+dors
+dorsen
+dos
+doses
+dosis
+dossen
+doste
+dot
+dotaal
+dotten
+dotter
+douane
+doublé
+douche
+douw
+douwde
+douwen
+dove
+doven
+dover
+down
+dozen
+dozijn
+dra
+draad
+draai
+draak
+drab
+dracht
+draden
+draf
+dragee
+dragen
+drager
+dragon
+draken
+dralen
+drama
+dramde
+drang
+drank
+dras
+drasse
+draven
+draver
+dravik
+draw
+dreef
+dreg
+dregde
+drek
+dreun
+drevel
+dreven
+drie
+drieën
+dries
+driest
+drift
+dril
+drilde
+drive
+drives
+droef
+droeg
+droes
+droeve
+droge
+drogen
+droger
+drol
+drom
+dromde
+dromen
+dromer
+drong
+dronk
+droog
+droom
+drop
+dropje
+drops
+dropte
+drost
+droste
+drozen
+drug
+druïde
+druif
+druil
+druk
+drukke
+drukte
+drum
+drumde
+drup
+drupte
+dry
+dryade
+duaal
+duale
+dualis
+dubbel
+dubben
+dubde
+dubio
+duel
+duels
+duet
+duf
+duffe
+duffel
+duffer
+duidde
+duiden
+duif
+duig
+duigen
+duik
+duiken
+duiker
+duim
+duimde
+duimen
+duin
+duinen
+duist
+duit
+duiten
+Duits
+Duitse
+duivel
+duiven
+duiver
+duivin
+dukaat
+duldde
+dulden
+dumdum
+dummy
+dump
+dumpen
+dumpte
+dun
+dunde
+dunk
+dunken
+dunne
+dunnen
+dunner
+dunsel
+dunte
+duo
+dupe
+dupes
+duplo
+dure
+duren
+durf
+durfal
+durfde
+duro
+durven
+dus
+duster
+dusver
+dut
+dutje
+duts
+dutsen
+dutte
+dutten
+duur
+duurde
+duurte
+duvel
+duvels
+duw
+duwbak
+duwde
+duwen
+duwtje
+dwaal
+dwaas
+dwalen
+dwang
+dwars
+dwarse
+dwaze
+dwazen
+dwazer
+dweil
+dwepen
+dweper
+dwerg
+dynamo
+dynast
+dyne
+dynes
+eau
+ebbe
+ebben
+ebde
+ebdeur
+ecarté
+echec
+echel
+echo
+echode
+echoën
+echt
+echte
+echten
+echter
+echtte
+eclair
+eclips
+ecru
+eczeem
+eczema
+edel
+edele
+edeler
+Eden
+edict
+edik
+editie
+edoch
+eed
+eega
+eegaas
+eek
+eelt
+eeltig
+een
+eenarm
+eend
+eenden
+eender
+eenoog
+eens
+eentje
+eer
+eerde
+eerder
+eervol
+eest
+eesten
+eestte
+eeuw
+eeuwen
+eeuwig
+effect
+effen
+egaal
+egale
+egaler
+egard
+egde
+egel
+egge
+eggen
+ego
+egoïst
+eiber
+eibers
+eicel
+eieren
+eigen
+eik
+eikel
+eikels
+eiken
+eilaas
+eiland
+eind
+eindde
+einde
+einden
+einder
+eindig
+eindje
+eins
+einze
+einzen
+eirond
+eis
+eisen
+eiser
+eisers
+eiste
+eitje
+eitjes
+eivol
+eiwit
+eken
+ekster
+elan
+eland
+elders
+elegie
+elf
+elfde
+elfden
+elfen
+elft
+elftal
+elften
+elisie
+elite
+elixer
+elk
+elkaar
+elke
+elkeen
+ellen
+ellens
+ellips
+elpee
+elpees
+elpen
+els
+elven
+elzen
+email
+embryo
+emfase
+emir
+emmer
+emmers
+emoe
+emotie
+empire
+end
+enden
+ener
+enfin
+eng
+enge
+engel
+Engels
+enger
+engerd
+engte
+engten
+engtes
+enig
+enige
+enigma
+enigst
+enk
+enkel
+enkele
+enkels
+enken
+enorm
+enorme
+ent
+enten
+enter
+enters
+enting
+entree
+entte
+enzym
+Eoceen
+eoliet
+epiek
+epifyt
+episch
+epoche
+epopee
+epoque
+epos
+equipe
+era
+eraan
+eraf
+erbij
+erdoor
+ere
+erelid
+eren
+erf
+erfde
+erfoom
+erfwet
+erg
+erge
+ergens
+erger
+ergo
+ergon
+erheen
+erica
+erin
+erkend
+erker
+erkers
+ermede
+ermee
+erna
+ernaar
+ernst
+erom
+erop
+eropaf
+eropin
+eropna
+Eros
+erosie
+erover
+errata
+ersatz
+ertoe
+erts
+ertsen
+eruit
+ervan
+erve
+erven
+ervoer
+ervoor
+erwt
+erwten
+escape
+escort
+escudo
+eskimo
+esp
+espada
+espen
+esprit
+essay
+essays
+essen
+ester
+estrik
+etage
+etages
+etappe
+eten
+eter
+etheen
+ether
+ethica
+ethiek
+ethos
+ethyl
+etiket
+etmaal
+ets
+etsen
+etser
+etsers
+etste
+etter
+etude
+etudes
+etui
+eunuch
+eureka
+euvel
+euvele
+euvels
+euzie
+euzies
+eva
+evacué
+evasie
+even
+evenzo
+ever
+exact
+exacte
+examen
+exces
+excuus
+exil
+exit
+exodus
+exoot
+expert
+export
+exposé
+expres
+exquis
+extase
+extern
+extra
+ezel
+ezelin
+faal
+faalde
+faam
+faas
+fabel
+fabels
+façade
+face
+facet
+facie
+facies
+facit
+factie
+facto
+factor
+fade
+fading
+fado
+faëton
+fagot
+fair
+faire
+fake
+faken
+fakir
+fakirs
+fakkel
+falanx
+falen
+falie
+falies
+fallus
+falset
+fameus
+fan
+fanaal
+fanaat
+farad
+farao
+farce
+farcen
+farces
+farde
+farden
+fardes
+farm
+farmer
+faro
+fase
+fasen
+fases
+fat
+fata
+fataal
+fatale
+fats
+fatsen
+fatten
+fatum
+fatwa
+faun
+fauna
+faunen
+faveur
+fax
+faxen
+faxte
+fazant
+fazen
+fecaal
+feces
+fee
+feeën
+feeks
+feest
+feetje
+feil
+feilde
+feilen
+feit
+feiten
+fel
+fellah
+felle
+feller
+fels
+felsen
+felste
+femel
+feniks
+fenol
+fep
+ferm
+ferme
+fermer
+ferry
+fes
+fessen
+feston
+feta
+fetisj
+feut
+fez
+fezzen
+fiasco
+fiat
+fiber
+fibril
+fibula
+fiche
+fiches
+fichu
+fictie
+ficus
+fideel
+fidele
+fiedel
+fielt
+fier
+fiere
+fiets
+figaro
+figuur
+fijfel
+fijn
+fijne
+fijnen
+fijner
+fijnte
+fijt
+fik
+fikken
+fikkie
+fiks
+fikse
+fiksen
+file
+files
+filet
+filets
+film
+filmde
+filmen
+filmer
+filter
+Fin
+finaal
+finale
+fine
+fineer
+finish
+Finnen
+Fins
+Finse
+fint
+finten
+fiolen
+fiool
+firma
+firn
+fis
+fiscus
+fissen
+fistel
+fit
+fitis
+fits
+fitte
+fitten
+fitter
+fixeer
+fixus
+fjord
+flacon
+flair
+flanel
+flank
+flap
+flapte
+flard
+flash
+flat
+flater
+flatus
+flauw
+flauwe
+fleer
+flegma
+flemen
+flens
+fleren
+fles
+flets
+fletse
+fleur
+flexie
+flik
+flikje
+flikte
+flink
+flinke
+flip
+flipte
+flirt
+flits
+floep
+floer
+floers
+floot
+flop
+floppy
+flor
+flora
+floret
+floste
+flox
+fluïde
+fluim
+fluit
+fluks
+fluor
+flus
+flut
+flux
+fobie
+focus
+foefje
+foei
+foelie
+foetus
+foezel
+föhn
+föhnde
+föhnen
+fok
+fokken
+fokker
+foksia
+fokte
+fokvee
+folder
+folie
+folies
+folio
+fond
+fonds
+fondue
+foneem
+font
+fooi
+fooien
+foor
+fop
+foppen
+fopte
+fora
+ford
+forel
+foren
+forens
+forint
+forma
+formol
+fors
+forse
+forser
+forsig
+fort
+forten
+forto
+forum
+forums
+fosfor
+foto
+foton
+fout
+foute
+fouten
+fouter
+foutje
+fox
+foyer
+foyers
+fraai
+frak
+frame
+frames
+franc
+franco
+franje
+frank
+Frank
+franke
+Frans
+Franse
+frappe
+frase
+frasen
+frases
+frater
+frats
+fraude
+freak
+frees
+fregat
+frêle
+freon
+fresco
+fresia
+fret
+frette
+freule
+frezen
+Fries
+Friese
+friet
+frik
+fris
+frisco
+frisse
+friste
+frites
+frons
+front
+fruit
+fuga
+fuif
+fuifde
+fuik
+fuiken
+fuiven
+fulp
+fulpen
+fundi
+funest
+fungus
+funk
+funky
+furie
+furiën
+furies
+furore
+fusee
+fusie
+fusies
+fust
+fusten
+fut
+futen
+futiel
+fuut
+fylum
+fysica
+fysici
+fysiek
+gaaf
+gaai
+gaaien
+gaal
+gaan
+gaande
+gaap
+gaapte
+gaar
+gaard
+gaarde
+gaarne
+gaas
+gaasje
+gaatje
+gabber
+gade
+gaden
+gadget
+gading
+gaf
+gaffe
+gaffel
+gag
+gage
+gagel
+gagels
+gages
+gaine
+gajes
+gal
+gala
+galant
+galde
+galei
+galen
+galg
+galgen
+gallen
+gallig
+gallon
+galm
+galmde
+galmei
+galmen
+galmug
+galon
+galons
+galop
+galops
+gamba
+gambir
+game
+gameet
+gamel
+games
+gamma
+gammel
+gander
+gang
+gangen
+gannef
+gans
+ganse
+ganser
+ganzen
+gapen
+gaper
+gapers
+gaping
+gappen
+gapper
+gapte
+garage
+garant
+gard
+garde
+garden
+gardes
+gare
+gareel
+garen
+garens
+garf
+garfde
+garoe
+garve
+garven
+gas
+gasbek
+gasbel
+gaslek
+gasman
+gasnet
+gaspit
+gassen
+gast
+gaste
+gasten
+gat
+gaten
+gatten
+gaucho
+gauw
+gauwer
+gave
+gaven
+gaver
+gay
+gazel
+gazen
+gazet
+gazon
+gazons
+geaaid
+geaard
+geaasd
+geacht
+geard
+gearmd
+gebaad
+gebaar
+gebaat
+gebak
+gebakt
+gebald
+gebalk
+gebast
+gebed
+gebeft
+gebeid
+gebekt
+gebeld
+gebet
+gebied
+gebigd
+gebijt
+gebikt
+gebild
+gebint
+gebit
+geblaf
+geblèr
+gebluf
+gebobd
+gebod
+geboet
+geboft
+gebokt
+gebold
+gebomd
+gebood
+geboot
+gebost
+gebot
+gebouw
+gebral
+gebrek
+gebrom
+gebrul
+gebuid
+gebukt
+gebult
+gecast
+gedaan
+gedaas
+gedabd
+gedag
+gedamd
+gedane
+gedekt
+gedept
+gedijd
+gedikt
+gedimd
+geding
+gedoe
+gedokt
+gedold
+gedood
+gedopt
+gedord
+gedost
+gedrag
+gedubd
+geduid
+geduld
+gedund
+gedut
+geduwd
+gedwee
+geëbd
+geëcht
+geëerd
+geëest
+geef
+geëgd
+geëind
+geëist
+geel
+geelde
+geen
+geënt
+geep
+geer
+geerde
+geërfd
+geest
+geëtst
+geeuw
+gefaxt
+gefokt
+gefopt
+gefret
+gegaan
+gegald
+gegalm
+gegapt
+gegast
+gegil
+gegild
+gegist
+geglad
+gegoed
+gegokt
+gegomd
+gegons
+gegord
+gegrom
+gegrut
+gegund
+gegymd
+gehaat
+gehad
+gehakt
+gehand
+gehapt
+gehard
+geheel
+geheet
+geheid
+geheim
+geheld
+gehele
+gehemd
+gehikt
+gehipt
+gehoed
+gehokt
+gehold
+gehoon
+gehoor
+gehopt
+gehord
+gehore
+gehort
+gehost
+gehot
+gehuil
+gehukt
+gehuld
+gehumd
+gehupt
+gehuwd
+gei
+geïaad
+geide
+geien
+geijld
+geijsd
+geil
+geile
+geiler
+gein
+geïnd
+geinig
+geïnkt
+geiser
+geisha
+geit
+geiten
+gejank
+gejast
+gejat
+gejij
+gejijd
+gejoel
+gejokt
+gejold
+gejond
+gejou
+gejukt
+gejut
+gek
+gekaft
+gekakt
+gekald
+gekamd
+gekant
+gekapt
+gekard
+gekast
+gekat
+gekeft
+gekend
+gekift
+gekikt
+gekild
+gekimd
+gekipt
+gekird
+gekist
+gekit
+gekke
+gekken
+gekker
+gekkin
+gekko
+geklad
+geklap
+geklit
+geklop
+geknik
+geknot
+gekold
+gekoot
+gekopt
+gekord
+gekort
+gekost
+gekout
+gekte
+gekuch
+gekuip
+gekuld
+gekund
+gekust
+gel
+gelaat
+gelach
+gelag
+gelakt
+gelal
+gelald
+geland
+gelang
+gelapt
+gelast
+gelat
+geld
+gelden
+geldig
+geldla
+gele
+gelede
+gelee
+geleed
+geleek
+gelegd
+gelei
+geleid
+gelekt
+gelen
+gelept
+geler
+gelet
+gelid
+gelift
+gelig
+gelige
+gelikt
+gelild
+gelipt
+gelobd
+geloei
+gelogd
+gelokt
+gelold
+gelood
+geloof
+geloop
+geloot
+gelord
+gelost
+gelubd
+gelui
+geluid
+geluk
+gelukt
+gelul
+geluld
+gelust
+geluwd
+gemaal
+gemaft
+gemak
+gemald
+gemand
+gemard
+gemast
+gemat
+gember
+gemeen
+gemekt
+gemeld
+gemend
+gemene
+gemept
+gemest
+gemier
+gemijt
+gemikt
+gemind
+gemis
+gemist
+gemixt
+gemoed
+gemok
+gemokt
+gemold
+gemond
+gemor
+gemord
+gemors
+gemot
+gemout
+gems
+gemuit
+gemunt
+gemzen
+gen
+genade
+gênant
+genard
+genas
+genat
+gene
+gêne
+genekt
+genept
+genera
+genese
+genet
+genie
+geniën
+geniep
+geniet
+genikt
+genipt
+genist
+genius
+genoeg
+genokt
+genood
+genoom
+genoot
+genot
+genre
+genres
+Gent
+genten
+genus
+geoogd
+gepaft
+gepakt
+gepand
+gepapt
+gepast
+gepekt
+gepeld
+gepen
+gepend
+gepest
+gepiep
+gepikt
+gepind
+gepist
+gepit
+geplas
+geplat
+geplet
+gepoft
+gepokt
+gepoot
+gepord
+gepost
+gepot
+gepote
+gepuft
+gepunt
+gepust
+geput
+geraas
+geragd
+geramd
+gerand
+gerant
+gerat
+gered
+gerede
+gereed
+gerei
+gereid
+gerekt
+gereld
+geremd
+geren
+gerend
+gerent
+gerept
+gerest
+geribd
+gerief
+gerij
+gerijd
+gerild
+gering
+gerist
+gerit
+geroep
+gerokt
+gerold
+gerond
+geronk
+geroot
+gerost
+gerot
+geruid
+geruim
+geruis
+geruit
+gerukt
+gerund
+gerust
+geruwd
+ges
+gesard
+gesast
+gesel
+gesels
+gesimd
+gesis
+gesist
+gesjot
+gesmet
+gesnap
+gesnor
+gesold
+gesopt
+gesp
+gespan
+gespat
+gespen
+gespet
+gespit
+gespot
+gespte
+gessen
+geste
+gestel
+gestes
+gestie
+gesuft
+gesust
+getakt
+getal
+getale
+getalm
+getand
+getapt
+getart
+getast
+geteem
+geteld
+getemd
+getest
+geteut
+getier
+getij
+getik
+getikt
+getild
+getint
+getipt
+getob
+getobd
+getoet
+getold
+getond
+getopt
+getost
+getouw
+getto
+getuft
+getuid
+getuig
+getuit
+getukt
+getypt
+geuit
+geul
+geulen
+geur
+geurde
+geuren
+geurig
+geärmd
+geus
+geut
+geuten
+geuzen
+gevaar
+gevaat
+geval
+gevang
+gevast
+gevat
+gevel
+geveld
+gevels
+geven
+gevent
+gever
+gevers
+gevest
+gevet
+geviel
+gevild
+gevind
+gevist
+gevit
+gevlei
+gevlet
+gevlij
+gevlot
+gevoed
+gevoeg
+gevoel
+gevold
+gevolg
+gevost
+gevrij
+gevuld
+gewaad
+gewaar
+gewag
+gewald
+gewamd
+gewand
+gewant
+geward
+gewas
+gewast
+gewed
+geween
+geweer
+gewei
+geweid
+gewekt
+geweld
+gewelf
+gewend
+gewerd
+gewest
+gewet
+gewied
+gewijd
+gewikt
+gewild
+gewin
+gewipt
+gewis
+gewist
+gewit
+gewoed
+gewoel
+gewon
+gewond
+gewone
+gewoon
+gezaag
+gezag
+gezakt
+gezand
+gezang
+gezant
+gezapt
+gezegd
+gezeik
+gezel
+gezet
+gezeul
+gezeur
+gezien
+gezift
+gezin
+gezind
+gezoem
+gezoet
+gezond
+gezwam
+gezwel
+gibbon
+gibus
+gids
+gidsen
+giebel
+giek
+gieken
+gier
+gierde
+gieren
+gierig
+gieten
+gieter
+gif
+giffen
+gifgas
+gift
+giften
+giftig
+gig
+gigant
+giggen
+gigolo
+gigue
+gij
+gijl
+gijn
+gijnen
+gijpen
+gijpte
+gil
+gild
+gilde
+gilden
+gilet
+gilets
+gillen
+gin
+ginder
+ginds
+gindse
+ging
+ginkgo
+gips
+gipsen
+gipste
+gipsy
+giraal
+giraf
+girale
+girant
+giro
+gis
+gispen
+gispte
+gissen
+gist
+giste
+gisten
+gistte
+git
+gitaar
+gitten
+glacé
+glacés
+glacis
+glad
+gladaf
+gladde
+glans
+glas
+glazen
+glazig
+glee
+gleed
+gleeën
+gleis
+gleuf
+glimp
+glip
+glipte
+glit
+globe
+globes
+gloed
+gloor
+gloren
+gloria
+glorie
+glosse
+glossy
+glui
+gluien
+gluren
+gluten
+gluton
+glycol
+gneis
+gnoe
+gnomen
+gnomon
+gnoom
+gnosis
+goal
+goalie
+gocart
+God
+goden
+godin
+godlof
+goed
+goede
+goeden
+goedig
+goedje
+goeiig
+goeman
+goeroe
+gojim
+gojims
+gojs
+gok
+gokhal
+gokken
+gokker
+gokte
+golem
+golems
+golf
+golfde
+golfen
+golven
+gom
+gombal
+gomde
+gommen
+gompie
+gonade
+gondel
+gong
+gons
+gonsde
+gonzen
+goog
+gooi
+gooide
+gooien
+goor
+goot
+gordde
+gordel
+gorden
+gore
+gorgel
+gorig
+gorige
+gors
+gort
+gorten
+gorter
+gortig
+gorzen
+gospel
+gossip
+goten
+gotiek
+gotspe
+goud
+gouden
+gouw
+gouwe
+gouwen
+gozer
+gozers
+graad
+graaf
+graag
+graai
+graal
+graan
+graat
+gracht
+graden
+graeci
+graf
+grafie
+grage
+grager
+gram
+gramme
+grand
+grande
+grands
+granen
+grap
+gras
+graten
+gratie
+gratig
+gratis
+grauw
+grauwe
+gravel
+graven
+graver
+gravin
+grazen
+grazig
+grebbe
+green
+greep
+grein
+grens
+grepen
+gres
+gretig
+gribus
+grief
+Griek
+Grieks
+griel
+griend
+griep
+gries
+griet
+grieve
+grif
+griffe
+grift
+grifte
+grijns
+grijp
+grijs
+grijze
+gril
+grilde
+grill
+grille
+grim
+grimas
+grimde
+grime
+grimes
+grind
+grip
+grise
+grises
+griste
+grit
+groef
+groei
+groen
+groene
+groep
+groet
+groeve
+grof
+grofte
+grog
+groggy
+grol
+grolde
+grom
+gromde
+grond
+gronde
+groot
+groots
+gros
+grosse
+grosso
+grot
+grote
+groten
+groter
+grove
+grover
+gruis
+grunge
+grut
+grutte
+grutto
+gruwde
+gruwel
+gruwen
+guano
+guit
+guiten
+guitig
+gul
+gulden
+gulle
+gullen
+guller
+gulp
+gulpen
+gulpte
+gulzig
+gum
+gumde
+gummen
+gummi
+gunde
+gunnen
+gunst
+gup
+guppy
+gure
+gust
+guts
+gutsen
+gutste
+guur
+gym
+gymde
+gymmen
+gymp
+gympie
+haaf
+haagde
+haai
+haaide
+haaien
+haaiig
+haak
+haaks
+haakse
+haakte
+haal
+haalde
+haam
+haan
+haar
+haard
+haarde
+haas
+haast
+haat
+haatte
+habijt
+hachee
+hachje
+hacken
+hadith
+hadji
+hadzji
+haf
+haffen
+haft
+haften
+hagel
+hagen
+haiku
+hak
+haken
+hakken
+hakker
+hakmes
+haksel
+hakte
+hal
+halen
+half
+halfje
+hall
+hallen
+hallo
+halm
+halma
+halmen
+halo
+hals
+halsde
+halt
+halte
+halten
+halter
+haltes
+halve
+halzen
+ham
+hamei
+hamel
+hamels
+hamen
+hamer
+hamers
+hamlap
+hammen
+hand
+handde
+handel
+handen
+handig
+handje
+hanen
+hang
+hangar
+hangel
+hangen
+hanger
+hangop
+hanig
+hanige
+hannes
+hans
+hansop
+Hanze
+hanzen
+hap
+hapax
+hapje
+hapjes
+happen
+happig
+happy
+hapte
+har
+hard
+hardde
+harde
+harden
+harder
+hardop
+harem
+harems
+haren
+harent
+harig
+harige
+haring
+hark
+harken
+harkte
+harnas
+harp
+harpen
+harpij
+harpte
+harre
+harrel
+harren
+hars
+harsen
+harsig
+hart
+harte
+harten
+hartig
+hartje
+hasj
+haspel
+haten
+hater
+haters
+hausse
+haute
+hauw
+hauwen
+have
+haven
+havens
+haver
+havik
+havo
+hazard
+hazen
+heat
+heavy
+heb
+hebben
+hebbes
+hecht
+hechte
+heden
+heef
+heeft
+heel
+heelal
+heelde
+heem
+heemst
+heen
+heep
+heer
+hees
+heet
+heette
+hef
+heffe
+heffen
+heft
+heften
+heftig
+heg
+hegge
+heggen
+hegje
+hei
+heibel
+heide
+heiden
+heien
+heiig
+heiige
+heikel
+heil
+heilig
+Hein
+heinde
+heisa
+heitje
+hek
+hekel
+hekels
+hekken
+heks
+heksen
+hekste
+hel
+hela
+helaas
+held
+helde
+helden
+helder
+heldin
+hele
+helen
+heler
+helers
+helft
+heli
+heling
+helium
+helix
+helle
+hellen
+heller
+helm
+helmen
+heloot
+helpen
+helper
+helpt
+hels
+helse
+hem
+hemd
+hemde
+hemden
+hemel
+hemels
+hemen
+hemmen
+hen
+hendel
+heng
+hengel
+hengen
+hengst
+henna
+hennen
+hennep
+hens
+hepen
+her
+heraut
+herder
+heren
+herfst
+hergaf
+herig
+herik
+herlas
+hernam
+hernia
+heroën
+heros
+herpes
+herren
+herrie
+hert
+herten
+hertog
+hertz
+hervat
+herwon
+herzag
+hes
+hese
+heser
+hesp
+hespen
+hessen
+het
+hete
+heten
+heter
+hetero
+hetze
+hetzij
+heug
+heugde
+heugel
+heugen
+heul
+heulde
+heulen
+heup
+heupen
+heus
+heuse
+heuser
+heuvel
+hevea
+hevel
+hevels
+hevig
+hevige
+hiaat
+hiaten
+hiel
+hield
+hielde
+hielen
+hielp
+hier
+hieraf
+hierin
+hierna
+hierom
+hierop
+hifi
+high
+hik
+hikken
+hikte
+hinde
+hinden
+hinder
+Hindoe
+hing
+hinken
+hinkte
+hint
+hinten
+hip
+hiphop
+hippe
+hippen
+hippie
+hipte
+hit
+hitsig
+hitte
+hitten
+hobbel
+hobby
+hobo
+hoc
+hockey
+hoe
+hoed
+hoedde
+hoede
+hoeden
+hoeder
+hoef
+hoefde
+hoek
+hoeken
+hoeker
+hoekig
+hoeks
+hoekse
+hoekte
+hoempa
+hoen
+hoep
+hoepel
+hoepen
+hoepla
+hoer
+hoera
+hoerde
+hoeren
+hoerig
+hoes
+hoest
+hoeve
+hoeven
+hoever
+hoewel
+hoezee
+hoezen
+hoezo
+hof
+hofje
+hofjes
+hofnar
+hoge
+hogen
+hoger
+hoging
+hoi
+hok
+hokken
+hokte
+hol
+hola
+holde
+hole
+holen
+holist
+holle
+hollen
+holler
+holte
+holten
+holtes
+hom
+home
+hommel
+hommen
+hommer
+homo
+homp
+hompen
+hond
+honden
+honds
+hondse
+honen
+honend
+honger
+honig
+honing
+honk
+honken
+honkte
+hoofd
+hoofde
+hoofs
+hoofse
+hoog
+hoogde
+hoogst
+hoogte
+hooi
+hooide
+hooien
+hooier
+hooked
+hoon
+hoonde
+hoop
+hoopte
+hoor
+hoorde
+hoorn
+hoos
+hoosde
+hop
+hope
+hopen
+hopla
+hopman
+hoppe
+hoppen
+hopper
+hopsa
+hopte
+hor
+hordde
+horde
+horden
+hordes
+horeca
+horen
+horens
+horig
+horige
+hork
+horken
+hormon
+horren
+horror
+hors
+horsen
+hort
+horten
+hortte
+hortus
+horzel
+horzen
+hospes
+hospik
+hossen
+hoste
+hostel
+hostie
+hot
+hotdog
+hotel
+hotels
+hotsen
+hotste
+hotte
+hotten
+hou
+houden
+houder
+house
+housen
+hout
+houten
+houtig
+houtje
+houw
+houwen
+houwer
+hoven
+hoving
+hozen
+hui
+huid
+huiden
+huidig
+huif
+huifde
+huig
+huigen
+huik
+huiken
+huilde
+huilen
+huiler
+huis
+huisde
+huisje
+huiven
+huize
+huizen
+hukken
+hukte
+hul
+hulde
+hulk
+hulken
+hullen
+hulp
+hulpen
+huls
+hulsel
+hulst
+hulzen
+hum
+humaan
+humane
+humbug
+humde
+humeur
+hummel
+hummen
+humor
+humus
+hun
+hunne
+hunnen
+hup
+huppen
+hups
+hupse
+hupte
+huren
+hurken
+hurkte
+husky
+hut
+hutje
+hutten
+huur
+huurde
+huwde
+huwen
+huzaar
+hybris
+hydra
+hyena
+hymen
+hymens
+hymne
+hymnen
+hype
+hypo
+hysop
+iade
+iaën
+ibidem
+ibis
+icing
+iconen
+icoon
+ideaal
+ideale
+idee
+ideëel
+ideeën
+ideële
+idem
+idioom
+idioot
+idiote
+idolen
+idool
+idylle
+iebel
+ieder
+iedere
+iel
+iele
+iemand
+iemker
+iep
+iepen
+Ier
+Ieren
+Iers
+Ierse
+iet
+iets
+ietsje
+ietwat
+iglo
+ijdel
+ijdele
+ijl
+ijlde
+ijle
+ijlen
+ijler
+ijs
+ijsco
+ijsde
+ijsje
+ijsjes
+ijskap
+ijszak
+ijszee
+ijver
+ijzel
+ijzen
+ijzer
+ijzers
+ijzig
+ijzige
+ikzelf
+Ilias
+image
+imago
+imam
+imker
+imkers
+immens
+immer
+immers
+immune
+immuun
+impact
+impala
+import
+impost
+impuls
+inbaar
+inbare
+inca
+incest
+inch
+inches
+inde
+index
+indien
+Indiër
+indigo
+Indo
+indoen
+indruk
+indult
+ineen
+ineens
+inert
+inerte
+infaam
+infame
+infant
+info
+infuus
+ingaan
+ingang
+ingoed
+ingooi
+inham
+inhoud
+inkeep
+inkeer
+inkom
+inkoop
+inkoud
+inkt
+inkten
+inktte
+inlaag
+inlaat
+inlage
+inlas
+inlaut
+inleg
+inloop
+inmaak
+inname
+innen
+innig
+innige
+inning
+input
+inrit
+inruil
+insect
+inslag
+insult
+intact
+intake
+intens
+intern
+intiem
+intimi
+intree
+intrek
+intro
+intron
+inval
+invers
+invert
+invite
+invité
+invoer
+inworp
+inzage
+inzake
+inzet
+inzien
+ion
+ionen
+iris
+ironie
+islam
+isme
+ismen
+ismes
+issue
+issues
+item
+ivoor
+ivoren
+Ivriet
+jaagde
+jaap
+jaapte
+jaar
+jabot
+jabots
+jacht
+jack
+jacket
+jade
+jaeger
+jagen
+jager
+jagers
+jaguar
+Jahwe
+Jahweh
+jajem
+jak
+jakken
+jakkes
+jam
+jambe
+jamben
+jammen
+jammer
+jampot
+jan
+janhen
+janken
+jankte
+jannen
+jantje
+janus
+Jap
+Japans
+japen
+japon
+Jappen
+jaren
+jargon
+jarig
+jarige
+jas
+jaspis
+jassen
+jaste
+jaszak
+jat
+jatte
+jatten
+Javaan
+jawel
+jazz
+jazzy
+jeans
+jeep
+jegens
+Jehova
+jein
+jekker
+jelui
+jengel
+jennen
+jersey
+jet
+jetlag
+jetset
+jetski
+jeu
+jeugd
+jeuïg
+jeuk
+jeuken
+jeukte
+jezelf
+jicht
+jij
+jijde
+jijen
+jingle
+jive
+Job
+jochie
+jockey
+joden
+jodide
+jodin
+jodium
+joeg
+joekel
+joelde
+joelen
+joep
+joetje
+jofel
+joggen
+jogger
+joh
+joint
+jok
+joke
+joker
+jokers
+jokken
+jokte
+jol
+jolde
+jolen
+jolig
+jolige
+jolijt
+jollen
+Jonas
+jonde
+jonen
+jong
+jongde
+jonge
+jongen
+jonger
+jongs
+jonk
+jonken
+jonker
+jonnen
+jood
+joods
+joodse
+jool
+joolde
+joon
+joop
+Joost
+jopen
+jota
+jou
+joule
+jour
+jouw
+jouwde
+jouwen
+joyeus
+jozef
+jubel
+judas
+judo
+judoën
+judoka
+juf
+juffen
+juffer
+juffie
+juist
+juiste
+juk
+jukken
+jukte
+juli
+jullie
+jumbo
+jumper
+jungle
+juni
+junior
+junk
+junkie
+junta
+Jura
+jurist
+jurk
+jurken
+jury
+jus
+juskom
+jut
+jute
+juten
+jutte
+jutten
+jutter
+juweel
+kaag
+kaai
+kaaide
+kaaien
+kaak
+kaakje
+kaakte
+kaal
+kaalte
+kaam
+kaamde
+kaan
+kaap
+kaapte
+kaar
+kaard
+kaarde
+kaars
+kaart
+kaas
+kaasde
+kaats
+kabaai
+kabaal
+kabaja
+kabas
+kabel
+kabels
+kachel
+kade
+kadee
+kadees
+kaden
+kader
+kaders
+kadi
+kaduke
+kaduuk
+kaf
+kaffa
+kaffer
+kaft
+kaftan
+kaften
+kaftte
+kafzak
+kagen
+kaön
+kaöns
+kajak
+kajaks
+kajuit
+kak
+kakel
+kakels
+kaken
+kaki
+kakken
+kakte
+kalbas
+kalde
+kale
+kalen
+kaler
+kalf
+kalfde
+kalfje
+kali
+kalief
+kalium
+kalk
+kalkei
+kalken
+kalkte
+kalle
+kallen
+kalm
+kalme
+kalmer
+kalmte
+kalot
+kalven
+kam
+kamde
+kameel
+kamen
+kamer
+kamers
+kamfer
+kamig
+kammen
+kamp
+kampen
+kamper
+kampte
+kamrad
+kan
+kanaal
+kanaat
+kandij
+kaneel
+kanen
+kanis
+kanjer
+kanji
+kanker
+kannen
+kano
+kanode
+kanoën
+kanoër
+kanoet
+kanon
+kans
+kansel
+kansen
+kant
+kanten
+kantig
+kantje
+kanton
+kantte
+kap
+kapel
+kapen
+kaper
+kapers
+kapje
+kapjes
+kapmes
+kapoen
+kapok
+kapot
+kappa
+kappen
+kapper
+kapsel
+kapte
+kar
+karaat
+karaf
+karate
+karde
+karen
+karet
+karig
+karige
+karkas
+karma
+karn
+karnde
+karnen
+karos
+karot
+karper
+karpet
+karren
+kartel
+karton
+karwei
+karwij
+kas
+kasba
+kashba
+kassa
+kassei
+kassen
+kast
+kaste
+kasten
+kastie
+kat
+kater
+katern
+katers
+kation
+katje
+katjes
+katoen
+katoog
+katrol
+katte
+katten
+kattig
+kattin
+katuil
+katvis
+kauri
+kauw
+kauwde
+kauwen
+kavel
+kavels
+kazak
+kazen
+kebab
+kebon
+kebons
+keek
+keel
+keelde
+keen
+keende
+keep
+keepen
+keeper
+keepte
+keer
+keerde
+kees
+keet
+keffen
+keffer
+kefir
+kefte
+keg
+kegel
+kegels
+kegge
+keggen
+kegje
+kei
+keien
+keikop
+keilde
+keilen
+keitje
+keizer
+kek
+kelder
+kelen
+kelim
+kelk
+kelken
+kelner
+kelp
+kelt
+kelten
+kemel
+kemels
+kemp
+kempen
+kenau
+kende
+kennel
+kennen
+kenner
+kennis
+kepen
+keper
+kepers
+kepie
+kepies
+kerel
+kerels
+keren
+kerf
+kerfde
+kering
+kerk
+kerken
+kerker
+kerks
+kerkse
+kerkte
+kermde
+kermen
+kermes
+Kermis
+kern
+kernen
+kerrie
+kers
+kersen
+kervel
+kerven
+kesp
+kespen
+ketel
+ketels
+keten
+ketens
+ketjap
+ketje
+ketjes
+kets
+ketsen
+ketste
+ketter
+keu
+keuken
+Keuls
+Keulse
+keur
+keurde
+keuren
+keurig
+keurs
+keus
+keutel
+keuter
+keuvel
+keuze
+keuzen
+keuzes
+kevel
+kevels
+kever
+kevers
+kevie
+kevies
+kezen
+khmer
+kick
+kicken
+kief
+kiek
+kieken
+kiekje
+kiekte
+kiel
+kielde
+kielen
+kiem
+kiemde
+kiemen
+kien
+kiende
+kiene
+kiep
+kiepen
+kier
+kierde
+kieren
+kies
+kiese
+kieuw
+kievit
+kiezel
+kiezen
+kiezer
+kift
+kiften
+kiftte
+kijf
+kijven
+kik
+kikken
+kikker
+kikte
+kil
+kilde
+kille
+killen
+killer
+kilo
+kilt
+kilte
+kim
+kimde
+kimme
+kimmen
+kimono
+kin
+kina
+kinase
+kind
+kindje
+kinds
+kindse
+kinema
+kink
+kinkel
+kinken
+kinnen
+kiosk
+kip
+kipbak
+kipkap
+kipkar
+kippen
+kippig
+kipte
+kirde
+kirren
+kirsch
+kissen
+kist
+kiste
+kisten
+kistje
+kistte
+kit
+kits
+kitsch
+kitsen
+kitste
+kitte
+kitten
+kittig
+kiwi
+klaar
+klaas
+klabak
+klacht
+klad
+kladde
+kladje
+klagen
+klager
+klak
+klakte
+klam
+klamme
+klamp
+klank
+klant
+klap
+klapte
+klare
+klaren
+klas
+klasse
+klauw
+klaver
+klazen
+kleden
+kledij
+kleed
+kleef
+klef
+kleffe
+klei
+kleide
+kleien
+kleiig
+klein
+kleine
+klem
+klemde
+klep
+klepel
+klepte
+kleren
+klerk
+klets
+kleun
+kleur
+kleven
+klever
+kliek
+klier
+klif
+klik
+klikte
+klim
+klimop
+kling
+klink
+klip
+klis
+kliste
+klit
+klitte
+klodde
+kloef
+kloek
+kloeke
+kloet
+klok
+klokje
+klokke
+klokte
+klom
+klomp
+klonen
+klonk
+klont
+kloof
+kloon
+kloot
+klop
+klopje
+klopte
+klos
+kloste
+kloten
+klove
+kloven
+klucht
+kluft
+kluif
+kluis
+kluit
+klunen
+kluns
+klus
+kluts
+kluwen
+klysma
+knaak
+knaap
+knagen
+knak
+knaken
+knakte
+knal
+knalde
+knap
+knapen
+knappe
+knapte
+knar
+knauw
+knecht
+kneden
+kneep
+knekel
+knel
+knelde
+knepen
+kneu
+kneuen
+kneus
+knevel
+knie
+knieën
+knier
+knijp
+knik
+knikte
+knip
+knipte
+knoei
+knoest
+knoet
+knok
+knoken
+knokig
+knokte
+knol
+knook
+knoop
+knor
+knorde
+knorf
+knot
+knotje
+knots
+knotte
+knudde
+knuist
+knul
+knus
+knusse
+koala
+kobalt
+kobbe
+kobben
+kobold
+kocht
+kodak
+kodaks
+kodde
+kodden
+koddig
+koe
+koedoe
+koeien
+koek
+koeken
+koekje
+koekte
+koel
+koelak
+koelde
+koele
+koelen
+koeler
+koelie
+koelte
+koen
+koene
+koepel
+koepok
+koer
+koerde
+koeren
+koers
+koest
+koet
+koeten
+koetje
+koets
+kof
+koffen
+koffer
+koffie
+kogel
+kogels
+kogen
+kogge
+koggen
+kohier
+koine
+kok
+koken
+kokend
+koker
+kokers
+koket
+kokkel
+kokker
+kokkie
+kokkin
+kol
+kola
+kolbak
+kolde
+kolder
+kolen
+kolf
+kolfde
+kolfje
+koliek
+kolk
+kolken
+kolkte
+kollen
+kolom
+kolos
+kolven
+kom
+komaan
+komaf
+komeet
+komen
+komend
+komiek
+komijn
+komma
+kommen
+kommer
+kompas
+kompel
+komst
+komt
+kond
+konen
+kongsi
+konijn
+koning
+konkel
+kont
+konten
+kontje
+koof
+koog
+kooi
+kooide
+kooien
+kook
+kookte
+kool
+koon
+koop
+koopje
+koor
+koord
+koorde
+koorts
+koos
+koosde
+koot
+kootje
+kootte
+kop
+kopal
+kopbal
+kopeke
+kopen
+koper
+kopers
+kopie
+kopij
+kopje
+kopjes
+kopman
+koppel
+koppen
+koppig
+kopra
+kops
+kopse
+kopte
+kor
+koraal
+koran
+korde
+kordon
+koren
+korf
+korfde
+korist
+kornak
+kornet
+kornis
+korps
+korre
+korrel
+korren
+korset
+kort
+kortaf
+korte
+korten
+korter
+kortom
+kortte
+korund
+korven
+korvet
+kosjer
+kosmos
+kossem
+kost
+kosten
+koster
+kostte
+kot
+koten
+koter
+koters
+kots
+kotsen
+kotste
+kotten
+kotter
+kou
+koud
+koude
+kouder
+kous
+kousen
+kousje
+kout
+kouten
+kouter
+koutte
+kovel
+kovels
+koven
+kozak
+kozen
+kozijn
+kraag
+kraai
+kraak
+kraal
+kraam
+kraan
+krab
+krabbe
+krabde
+krach
+kracht
+kragen
+krak
+kraken
+kraker
+krakte
+kralen
+kram
+kramde
+kramen
+kramer
+kramp
+kranen
+kranig
+krank
+kranke
+krans
+krant
+krap
+krappe
+krapte
+kras
+krasse
+kraste
+krat
+krater
+kraton
+krats
+krauw
+kreeft
+kreeg
+kreek
+kreet
+kregel
+krek
+krekel
+kreken
+kreng
+krent
+krepte
+kresen
+kreten
+kreuk
+krevel
+kribbe
+kribde
+kribje
+kriek
+kriel
+krijg
+krijn
+krijs
+krijt
+krik
+krikte
+krill
+krimi
+krimp
+kring
+krip
+kris
+kriste
+krocht
+kroeg
+kroep
+kroes
+kroeze
+kroket
+krokus
+krol
+krols
+krolse
+krom
+kromde
+kromme
+kromp
+kromte
+kronen
+kroon
+kroop
+kroos
+kroost
+kroot
+krop
+kropte
+krot
+kroten
+krozen
+kruid
+kruide
+kruien
+kruier
+kruik
+kruim
+kruin
+kruis
+kruit
+kruk
+krukas
+krukte
+krul
+krulde
+kubiek
+kubist
+kubus
+kuch
+kuchen
+kuchte
+kudde
+kudden
+kuddes
+kuier
+kuif
+kuifde
+kuiken
+kuil
+kuilde
+kuilen
+kuiler
+kuip
+kuipen
+kuiper
+kuipte
+kuis
+kuise
+kuisen
+kuiser
+kuiste
+kuit
+kuiten
+kuiter
+kuiven
+kuizen
+kul
+kulas
+kulde
+kullen
+kummel
+kunde
+kundig
+kungfu
+kunne
+kunnen
+kunst
+kär
+kuras
+kuren
+kurk
+kurken
+kurkte
+kus
+kussen
+kust
+kuste
+kusten
+kut
+kutten
+kuub
+kuur
+kuurde
+kwaad
+kwaaie
+kwaal
+kwab
+kwade
+kwaden
+kwader
+kwak
+kwaken
+kwakte
+kwal
+kwalen
+kwam
+kwant
+kwanta
+kwark
+kwart
+kwarto
+kwarts
+kwast
+kwee
+kweeën
+kweek
+kween
+kwek
+kweken
+kweker
+kwekte
+kwel
+kwelde
+kwelen
+kwets
+kwezel
+kwibus
+kwiek
+kwieke
+kwijl
+kwijt
+kwik
+kwint
+laadde
+laaf
+laafde
+laag
+laagje
+laagte
+laaide
+laaie
+laaien
+laakte
+laan
+laar
+laars
+laat
+laatje
+laatst
+lab
+label
+labels
+labeur
+labiel
+labo
+lach
+lachen
+lacher
+lachte
+lacune
+ladder
+lade
+laden
+lader
+laders
+lades
+lading
+lady
+laesie
+laf
+lafbek
+laffe
+laffer
+lag
+lage
+lagen
+lager
+lagune
+lak
+lakei
+laken
+lakens
+lakken
+lakooi
+laks
+lakse
+lakser
+lakte
+lalde
+lallen
+lam
+lama
+lamŽ
+lamel
+lamfer
+lamme
+lammen
+lammer
+lammig
+lamoen
+lamp
+lampen
+lamzak
+lancet
+land
+landde
+lande
+landen
+landje
+lanen
+lang
+langde
+lange
+langen
+langer
+langs
+lans
+lansen
+Lap
+Lappen
+Laps
+lapsus
+lapte
+laptop
+laqué
+laren
+larf
+largo
+larie
+lariks
+larve
+larven
+larynx
+las
+laser
+lasers
+lassen
+lasser
+lasso
+last
+laste
+lasten
+laster
+lastig
+lat
+late
+latei
+laten
+latent
+later
+latere
+latex
+Latijn
+latte
+latten
+latuw
+lauden
+lauw
+lauwe
+lauwer
+lava
+lavabo
+lavas
+laven
+lavet
+laving
+lawaai
+lawine
+laxans
+lazer
+lazuur
+league
+lease
+leasen
+leb
+lebaal
+lebbe
+lebben
+lebbig
+lector
+led
+lede
+leden
+leder
+ledig
+ledige
+leed
+leefde
+leeg
+leegde
+leegte
+leek
+leekte
+leem
+leeman
+leemde
+leemte
+leen
+leende
+leep
+leer
+leerde
+leest
+leeuw
+lef
+leg
+legaal
+legaat
+legale
+legato
+legde
+lege
+legen
+leger
+legers
+leges
+leggen
+legger
+leghen
+legio
+lego
+legsel
+lei
+leidde
+leiden
+leider
+leien
+leis
+leisel
+leitje
+leizen
+lek
+lekbak
+leken
+lekgat
+lekke
+lekken
+lekker
+lekte
+lel
+lelde
+lelie
+leliën
+lelies
+lellen
+lemen
+lemma
+lemmer
+lemmet
+lende
+lenden
+lener
+leners
+leng
+lengde
+lengen
+lengte
+lenig
+lenige
+lening
+lens
+lensde
+lente
+lentes
+lento
+lenze
+lenzen
+lepe
+lepel
+lepels
+leper
+leperd
+leppen
+lepra
+lepte
+lepton
+leraar
+leren
+lering
+les
+lesbo
+lessen
+lest
+leste
+lesuur
+Let
+letaal
+letale
+letsel
+lette
+Letten
+letter
+leugen
+leuk
+leuke
+leuker
+leunde
+leunen
+leur
+leurde
+leuren
+leus
+leute
+leuter
+leutig
+leuze
+leuzen
+Levant
+leven
+levend
+levens
+lever
+levers
+leviet
+lexica
+lezen
+lezer
+lezers
+lezing
+liaan
+liane
+lianen
+Lias
+libel
+libero
+libido
+libris
+licht
+lichte
+lictor
+lid
+lidje
+lidjes
+lied
+lieden
+liedje
+lief
+liefde
+liefje
+liefst
+liegen
+liep
+lier
+lieren
+liëren
+lies
+liet
+lieve
+lieven
+liever
+lievig
+liezen
+lift
+liften
+lifter
+liftte
+liga
+ligbad
+ligdag
+liggen
+ligger
+lij
+lijden
+lijder
+lijf
+lijfde
+lijfje
+lijm
+lijmde
+lijmen
+lijmer
+lijmig
+lijn
+lijnde
+lijnen
+lijs
+lijst
+lijve
+lijven
+lijvig
+lijzen
+lijzig
+lijzij
+lik
+likeur
+likken
+likker
+likte
+lil
+lila
+lilde
+lillen
+liman
+limans
+limbo
+limbus
+limiet
+limit
+limoen
+linde
+linden
+linea
+linie
+linies
+link
+linke
+linken
+linker
+links
+linkse
+linnen
+lino
+lint
+linten
+lintje
+linze
+linzen
+lip
+lipje
+lipjes
+liplap
+lippen
+lipte
+lipvis
+lira
+lire
+lires
+lis
+lissen
+list
+listen
+listig
+liter
+liters
+litho
+liturg
+live
+living
+livrei
+lob
+lobben
+lobbes
+lobbig
+lobby
+loboor
+loc
+locale
+locker
+loco
+lodder
+loden
+lodens
+loding
+loeder
+loef
+loefde
+loeide
+loeien
+loens
+loense
+loep
+loepen
+loer
+loerde
+loeren
+loeres
+loeris
+loet
+loeten
+loeven
+lof
+log
+logde
+loge
+logé
+logee
+logees
+logen
+loges
+logés
+logge
+loggen
+logger
+loggia
+logica
+logies
+logo
+loipe
+lok
+lokaal
+lokaas
+lokale
+loket
+lokken
+lokkig
+lokte
+lol
+lolde
+lolita
+lollen
+lollig
+lolly
+lom
+lombok
+lome
+lomer
+lomig
+lommen
+lommer
+lomp
+lompe
+lompen
+lonen
+long
+longen
+lonk
+lonken
+lonkte
+lont
+lonten
+lood
+loodde
+loodje
+loods
+loof
+loofde
+loog
+loogde
+looi
+looide
+looien
+looier
+look
+loom
+loon
+loonde
+loop
+loopje
+loops
+loopse
+loos
+loosde
+loot
+lootje
+lootte
+lopen
+lopend
+loper
+lopers
+lor
+lord
+lorde
+lork
+lorken
+lorre
+lorren
+lorres
+lorrie
+lorrig
+lorum
+los
+losbol
+losdag
+losjes
+loss
+löss
+losse
+lossen
+losser
+loste
+losweg
+lot
+loten
+loting
+lotion
+lotje
+lotto
+lotus
+louche
+lounge
+louter
+louw
+louwen
+loven
+lover
+loyaal
+loyale
+loze
+lozen
+lozer
+lozing
+lubben
+lubde
+lucht
+lucide
+ludiek
+lues
+lui
+luid
+luidde
+luide
+luiden
+luider
+luidop
+luien
+luier
+luiers
+luifel
+Luik
+luiken
+luilak
+luim
+luimde
+luimen
+luimig
+luis
+luisde
+luit
+luiten
+luizen
+luizig
+luk
+lukken
+lukte
+lul
+lulde
+lullen
+lullig
+lummel
+lunair
+lunch
+lunet
+luns
+lunsde
+lunzen
+lupine
+lupus
+luren
+lurken
+lurkte
+lurven
+lus
+lussen
+lust
+lusten
+luster
+lustig
+lustra
+lustre
+lustte
+lutje
+lutjes
+luttel
+luw
+luwde
+luwe
+luwen
+luwte
+lux
+luxe
+lycea
+lyceum
+lychee
+lycra
+lymfe
+lynx
+lynxen
+lyriek
+lysine
+lysol
+maag
+maagd
+maaide
+maaien
+maaier
+maak
+maakte
+maal
+maalde
+maan
+maand
+maande
+maar
+maart
+maarte
+maarts
+maas
+maasde
+maat
+maatje
+mach
+macho
+macht
+macro
+madam
+madame
+madams
+made
+maden
+madera
+madras
+maf
+maffe
+maffen
+maffer
+maffia
+mafte
+magen
+mager
+magere
+maggi
+magie
+magiër
+magma
+magnum
+Mahdi
+mail
+mailen
+maïs
+maître
+majeur
+majoor
+major
+majors
+mak
+maken
+maker
+makers
+makke
+makker
+makron
+mal
+malaga
+malde
+Maleis
+malen
+maler
+malers
+malie
+maliën
+malies
+maling
+malle
+mallen
+maller
+mals
+malse
+malser
+malta
+malus
+maluwe
+malve
+malven
+mam
+mamma
+mammen
+mammon
+mams
+man
+manche
+manco
+mand
+mande
+manden
+manege
+manen
+maner
+maners
+manga
+mangat
+mangel
+mango
+maniak
+manie
+manier
+manies
+maniok
+mank
+manke
+manken
+mankte
+manna
+mannen
+mannin
+manou
+mans
+mantel
+mantra
+manuur
+maoïst
+map
+mappen
+marde
+mare
+maren
+marge
+marges
+Maria
+marine
+mark
+marken
+marker
+markt
+marlde
+marlen
+marmer
+marmot
+marot
+marqué
+marren
+marron
+mars
+marsen
+marter
+maseur
+masker
+massa
+mast
+mastel
+masten
+mastte
+mat
+match
+mate
+maté
+maten
+mater
+maters
+matig
+matige
+matje
+matjes
+matrak
+matras
+matrix
+matse
+matsen
+matses
+matste
+matte
+matten
+matter
+mauser
+mauve
+mauwde
+mauwen
+maxi
+maxima
+maxime
+maya
+mazen
+mazzel
+mede
+media
+medici
+medina
+medio
+medium
+medley
+medoc
+medusa
+mee
+meel
+meelde
+meelij
+meende
+meent
+meer
+meerde
+meers
+mees
+meest
+meeste
+meet
+meeuw

@@ -1,6687 +1,6687 @@
-11111	abate
-11112	abati
-11113	abbai
-11114	abbaia
-11115	abbaio
-11116	abbi
-11121	abbia
-11122	abbina
-11123	abbini
-11124	abbino
-11125	abbona
-11126	abboni
-11131	abbono
-11132	abdica
-11133	abdico
-11134	abete
-11135	abeti
-11136	abile
-11141	abili
-11142	abissi
-11143	abisso
-11144	abiti
-11145	abito
-11146	abitua
-11151	abitui
-11152	abituo
-11153	abiura
-11154	abiuri
-11155	abiuro
-11156	abolii
-11161	aborti
-11162	abroga
-11163	abrogo
-11164	abusa
-11165	abusai
-11166	abusi
-11211	abuso
-11212	accada
-11213	accade
-11214	accasa
-11215	accasi
-11216	accaso
-11221	acceca
-11222	acceco
-11223	accede
-11224	accesa
-11225	accese
-11226	accesi
-11231	acceso
-11232	acciai
-11233	accoda
-11234	accusa
-11235	accusi
-11236	accuso
-11241	acerbe
-11242	acerbi
-11243	acerbo
-11244	aceti
-11245	acida
-11246	acide
-11251	acidi
-11252	acido
-11253	acqua
-11254	acque
-11255	acuta
-11256	acute
-11261	acuti
-11262	acuto
-11263	adagi
-11264	adagia
-11265	adagio
-11266	adatta
-11311	adatte
-11312	adatti
-11313	adatto
-11314	addii
-11315	addio
-11316	addita
-11321	additi
-11322	addito
-11323	addome
-11324	addomi
-11325	adegua
-11326	adegui
-11331	adeguo
-11332	adesso
-11333	adora
-11334	adorai
-11335	adorna
-11336	adorni
-11341	adoro
-11342	adotta
-11343	adotti
-11344	adotto
-11345	adula
-11346	adulai
-11351	aduli
-11352	adulo
-11353	adulta
-11354	adulte
-11355	adulti
-11356	adulto
-11361	aduna
-11362	adunai
-11363	aduni
-11364	aduno
-11365	aerea
-11366	aeree
-11411	aerei
-11412	aereo
-11413	afa
-11414	affama
-11415	affami
-11416	affamo
-11421	affare
-11422	affari
-11423	affida
-11424	affidi
-11425	affido
-11426	affila
-11431	affili
-11432	affilo
-11433	affine
-11434	affini
-11435	affoga
-11436	affogo
-11441	afona
-11442	afone
-11443	afoni
-11444	afono
-11445	afosa
-11446	afose
-11451	afosi
-11452	afoso
-11453	agenda
-11454	agende
-11455	agente
-11456	agenti
-11461	aggira
-11462	aggiri
-11463	aggiro
-11464	agi
-11465	agiata
-11466	agiate
-11511	agiato
-11512	agile
-11513	agili
-11514	agio
-11515	agire
-11516	agisca
-11521	agita
-11522	agitai
-11523	agiti
-11524	agito
-11525	agli
-11526	aglio
-11531	ago
-11532	agonia
-11533	agonie
-11534	agosto
-11535	agrume
-11536	agrumi
-11541	aguzza
-11542	aguzzi
-11543	aguzzo
-11544	aiuole
-11545	aiuta
-11546	aiutai
-11551	aiuti
-11552	aiuto
-11553	alba
-11554	albe
-11555	alberi
-11556	albero
-11561	albina
-11562	albine
-11563	albino
-11564	alcuna
-11565	alcune
-11566	alcuni
-11611	alfa
-11612	alga
-11613	alghe
-11614	ali
-11615	aliena
-11616	alieni
-11621	alieno
-11622	aliti
-11623	alito
-11624	allaga
-11625	allago
-11626	alle
-11631	allega
-11632	allego
-11633	allena
-11634	alleni
-11635	alleno
-11636	alleva
-11641	allevi
-11642	allevo
-11643	allo
-11644	allora
-11645	allori
-11646	alloro
-11651	alluce
-11652	alluci
-11653	almeno
-11654	alta
-11655	altare
-11656	altari
-11661	alte
-11662	altero
-11663	alti
-11664	alto
-11665	altra
-11666	altre
-12111	altri
-12112	altro
-12113	altrui
-12114	altura
-12115	alture
-12116	alunna
-12121	alunne
-12122	alunni
-12123	alunno
-12124	alveo
-12125	alza
-12126	alzai
-12131	alzano
-12132	alzare
-12133	alzata
-12134	alzate
-12135	alzato
-12136	alzava
-12141	alzavi
-12142	alzavo
-12143	alzi
-12144	alzino
-12145	alzo
-12146	ama
-12151	amaca
-12152	amache
-12153	amai
-12154	amando
-12155	amano
-12156	amante
-12161	amanti
-12162	amara
-12163	amare
-12164	amari
-12165	amaro
-12166	amasse
-12211	amassi
-12212	amaste
-12213	amasti
-12214	amata
-12215	amate
-12216	amato
-12221	amava
-12222	amavi
-12223	amavo
-12224	ambito
-12225	amena
-12226	amene
-12231	ameni
-12232	ameno
-12233	amerai
-12234	amerei
-12235	amiamo
-12236	amiate
-12241	amica
-12242	amiche
-12243	amici
-12244	amico
-12245	amido
-12246	ammala
-12251	ammali
-12252	ammalo
-12253	ammira
-12254	ammiri
-12255	ammiro
-12256	amo
-12261	amore
-12262	amorfe
-12263	amorfi
-12264	amorfo
-12265	amori
-12266	ampi
-12311	ampie
-12312	ampio
-12313	ampli
-12314	amplia
-12315	amplio
-12316	anatra
-12321	anatre
-12322	anca
-12323	anche
-12324	ancora
-12325	ancore
-12326	andai
-12331	andare
-12332	andata
-12333	andate
-12334	andati
-12335	andato
-12336	andava
-12341	andavi
-12342	andavo
-12343	andrai
-12344	andrei
-12345	anelli
-12346	anello
-12351	anfora
-12352	anfore
-12353	angeli
-12354	angelo
-12355	angolo
-12356	anima
-12361	animai
-12362	anime
-12363	animi
-12364	animo
-12365	annate
-12366	annega
-12411	annego
-12412	anni
-12413	annidi
-12414	annido
-12415	anno
-12416	annoda
-12421	annodi
-12422	annodo
-12423	annoi
-12424	annoia
-12425	annoio
-12426	annota
-12431	annoti
-12432	annoto
-12433	annusa
-12434	annusi
-12435	annuso
-12436	ansia
-12441	ansie
-12442	ante
-12443	antico
-12444	antri
-12445	antro
-12446	anzi
-12451	apatia
-12452	apatie
-12453	ape
-12454	aperse
-12455	aperta
-12456	aperte
-12461	aperti
-12462	aperto
-12463	api
-12464	apice
-12465	apici
-12466	appaia
-12511	appaio
-12512	appare
-12513	appari
-12514	appena
-12515	appura
-12516	appuri
-12521	appuro
-12522	apra
-12523	apre
-12524	apri
-12525	aprii
-12526	aprile
-12531	aprilo
-12532	aprire
-12533	aprite
-12534	apriva
-12535	apro
-12536	aprono
-12541	aquila
-12542	aquile
-12543	ara
-12544	arai
-12545	arammo
-12546	arance
-12551	arando
-12552	arano
-12553	arasse
-12554	arassi
-12555	araste
-12556	arasti
-12561	arata
-12562	arate
-12563	arati
-12564	arato
-12565	aratri
-12566	aratro
-12611	aravi
-12612	arcata
-12613	archi
-12614	arco
-12615	ardore
-12616	ardori
-12621	ardua
-12622	ardue
-12623	ardui
-12624	arduo
-12625	area
-12626	aree
-12631	arerai
-12632	argina
-12633	argine
-12634	argini
-12635	argute
-12636	arguti
-12641	arguto
-12642	ari
-12643	aria
-12644	ariamo
-12645	ariate
-12646	arida
-12651	aride
-12652	aridi
-12653	arido
-12654	arie
-12655	arino
-12656	ariosa
-12661	ariose
-12662	ariosi
-12663	arioso
-12664	arma
-12665	armadi
-12666	armai
-13111	armano
-13112	armare
-13113	armata
-13114	armate
-13115	armati
-13116	armato
-13121	armava
-13122	armavi
-13123	armavo
-13124	armeno
-13125	armi
-13126	armino
-13131	arnese
-13132	arnesi
-13133	arnia
-13134	aro
-13135	aroma
-13136	aromi
-13141	arpe
-13142	arreda
-13143	arredi
-13144	arredo
-13145	arrivi
-13146	arrivo
-13151	arroga
-13152	arrogo
-13153	arrota
-13154	arroti
-13155	arte
-13156	arti
-13161	arto
-13162	ascia
-13163	asili
-13164	asilo
-13165	asina
-13166	asine
-13211	asini
-13212	asino
-13213	asola
-13214	aspira
-13215	aspiri
-13216	aspiro
-13221	aspra
-13222	aspre
-13223	aspri
-13224	aspro
-13225	asse
-13226	assedi
-13231	assi
-13232	asso
-13233	associ
-13234	assoda
-13235	assodi
-13236	assodo
-13241	assuma
-13242	assume
-13243	astri
-13244	astro
-13245	atleta
-13246	atleti
-13251	atomi
-13252	atomo
-13253	atri
-13254	atrii
-13255	atroce
-13256	atroci
-13261	attesa
-13262	attese
-13263	attesi
-13264	atti
-13265	attimo
-13266	attiri
-13311	attiro
-13312	attiva
-13313	attive
-13314	attivi
-13315	attivo
-13316	atto
-13321	attore
-13322	attori
-13323	attua
-13324	attuai
-13325	attui
-13326	attuo
-13331	audace
-13332	audaci
-13333	augura
-13334	auguri
-13335	auguro
-13336	aula
-13341	aule
-13342	auree
-13343	aurei
-13344	aureo
-13345	aurora
-13346	aurore
-13351	auto
-13352	automa
-13353	automi
-13354	autore
-13355	autori
-13356	avalla
-13361	avallo
-13362	avanti
-13363	avanza
-13364	avanzi
-13365	avanzo
-13366	avara
-13411	avare
-13412	avari
-13413	avaria
-13414	avarie
-13415	avendo
-13416	avente
-13421	avere
-13422	averla
-13423	avesse
-13424	avessi
-13425	aveste
-13426	avete
-13431	aveva
-13432	avevi
-13433	avida
-13434	avide
-13435	avidi
-13436	avido
-13441	avrai
-13442	avrei
-13443	avuto
-13444	avvale
-13445	avvera
-13446	avveri
-13451	avvero
-13452	avvia
-13453	avviai
-13454	avvii
-13455	avvino
-13456	avvio
-13461	avvisi
-13462	avviso
-13463	avvita
-13464	avviti
-13465	avvito
-13466	azioni
-13511	babbo
-13512	bachi
-13513	baci
-13514	bacia
-13515	baciai
-13516	bacini
-13521	bacino
-13522	bacio
-13523	baco
-13524	bada
-13525	badai
-13526	badano
-13531	badare
-13532	badata
-13533	badate
-13534	badati
-13535	badato
-13536	badava
-13541	badavi
-13542	badavo
-13543	badi
-13544	badia
-13545	badile
-13546	badili
-13551	badino
-13552	bado
-13553	baffi
-13554	baffo
-13555	bagna
-13556	bagnai
-13561	bagni
-13562	bagno
-13563	bah
-13564	baia
-13565	baie
-13566	balena
-13611	balene
-13612	baleni
-13613	baleno
-13614	balia
-13615	balla
-13616	ballai
-13621	balli
-13622	ballo
-13623	balza
-13624	balzi
-13625	balzo
-13626	banale
-13631	banali
-13632	banca
-13633	banche
-13634	banchi
-13635	banda
-13636	bande
-13641	bandi
-13642	bandii
-13643	bara
-13644	barai
-13645	barano
-13646	barata
-13651	barate
-13652	barati
-13653	barato
-13654	barava
-13655	baravo
-13656	barba
-13661	barbe
-13662	barca
-13663	barche
-13664	bari
-13665	barile
-13666	barili
-14111	barino
-14112	bario
-14113	baro
-14114	baroni
-14115	barra
-14116	barre
-14121	basa
-14122	basare
-14123	basata
-14124	basate
-14125	basati
-14126	basato
-14131	basava
-14132	basavi
-14133	basavo
-14134	base
-14135	basi
-14136	basino
-14141	basico
-14142	basito
-14143	bassa
-14144	basso
-14145	basta
-14146	bastai
-14151	basti
-14152	basto
-14153	batta
-14154	batte
-14155	battei
-14156	batti
-14161	batto
-14162	baule
-14163	bauli
-14164	bava
-14165	bave
-14166	baveri
-14211	bavero
-14212	beata
-14213	beate
-14214	beati
-14215	becchi
-14216	becco
-14221	beffa
-14222	beffe
-14223	bella
-14224	belle
-14225	belli
-14226	bello
-14231	belva
-14232	belve
-14233	benda
-14234	bendai
-14235	bende
-14236	bendi
-14241	bendo
-14242	bene
-14243	beni
-14244	beone
-14245	bere
-14246	bestia
-14251	bestie
-14252	beva
-14253	beve
-14254	bevete
-14255	bevi
-14256	bevilo
-14261	bevine
-14262	bevo
-14263	bevono
-14264	bevuto
-14265	bianca
-14266	bianco
-14311	bibbia
-14312	bibbie
-14313	bidone
-14314	bidoni
-14315	biechi
-14316	bile
-14321	bili
-14322	bimba
-14323	bimbe
-14324	bimbi
-14325	bimbo
-14326	binari
-14331	bionda
-14332	bionde
-14333	biondi
-14334	biondo
-14335	birra
-14336	birre
-14341	bisca
-14342	bisce
-14343	bische
-14344	biscia
-14345	blanda
-14346	blande
-14351	blandi
-14352	blando
-14353	blocca
-14354	blu
-14355	bocca
-14356	bocce
-14361	bocche
-14362	bocci
-14363	boccia
-14364	boccio
-14365	bolla
-14366	bolle
-14411	bolli
-14412	bollo
-14413	bomba
-14414	bombe
-14415	bordi
-14416	bordo
-14421	borgo
-14422	borie
-14423	borsa
-14424	borse
-14425	boschi
-14426	botola
-14431	botole
-14432	botta
-14433	botte
-14434	bozza
-14435	bozze
-14436	bracco
-14441	brace
-14442	brama
-14443	brami
-14444	bramo
-14445	branca
-14446	branda
-14451	brande
-14452	brani
-14453	brano
-14454	brava
-14455	brave
-14456	bravi
-14461	breve
-14462	brevi
-14463	brezza
-14464	brezze
-14465	bricco
-14466	brilla
-14511	brilli
-14512	brillo
-14513	brina
-14514	brinda
-14515	brindi
-14516	brindo
-14521	brine
-14522	brio
-14523	brocca
-14524	brodi
-14525	brodo
-14526	bronci
-14531	bronzi
-14532	bronzo
-14533	bruci
-14534	brucia
-14535	brucio
-14536	bruco
-14541	brulla
-14542	brulle
-14543	brulli
-14544	brullo
-14545	bruna
-14546	brune
-14551	bruni
-14552	bruno
-14553	brusca
-14554	brusco
-14555	bruti
-14556	brutti
-14561	brutto
-14562	buca
-14563	bucce
-14564	buccia
-14565	buche
-14566	buchi
-14611	buco
-14612	budini
-14613	budino
-14614	bue
-14615	bufera
-14616	bufere
-14621	buffa
-14622	buffi
-14623	buffo
-14624	bugia
-14625	bugie
-14626	buio
-14631	bulbi
-14632	bulbo
-14633	buoi
-14634	buona
-14635	buone
-14636	buoni
-14641	buono
-14642	burla
-14643	burlai
-14644	burle
-14645	burli
-14646	burlo
-14651	burro
-14652	bussa
-14653	bussi
-14654	busso
-14655	busti
-14656	busto
-14661	butta
-14662	buttai
-14663	butti
-14664	butto
-14665	cabina
-14666	cabine
-15111	caccia
-15112	caccio
-15113	cadde
-15114	caddi
-15115	cade
-15116	cadere
-15121	cadeva
-15122	cadono
-15123	caduta
-15124	cadute
-15125	caduti
-15126	caduto
-15131	cagna
-15132	cagne
-15133	cala
-15134	calai
-15135	calano
-15136	calare
-15141	calata
-15142	calate
-15143	calati
-15144	calava
-15145	calavi
-15146	calavo
-15151	calci
-15152	calcio
-15153	calco
-15154	calda
-15155	calde
-15156	caldi
-15161	caldo
-15162	cali
-15163	calice
-15164	calici
-15165	calino
-15166	calli
-15211	callo
-15212	calma
-15213	calmai
-15214	calme
-15215	calmi
-15216	calmo
-15221	calo
-15222	calore
-15223	calori
-15224	calva
-15225	calve
-15226	calvi
-15231	calvo
-15232	calza
-15233	calzai
-15234	calzi
-15235	calzo
-15236	cambi
-15241	cambia
-15242	cambio
-15243	camera
-15244	camere
-15245	camini
-15246	camino
-15251	campa
-15252	campai
-15253	campi
-15254	campo
-15255	canale
-15256	canali
-15261	canapa
-15262	canape
-15263	cane
-15264	cani
-15265	canile
-15266	canili
-15311	canne
-15312	canora
-15313	canore
-15314	canori
-15315	canoro
-15316	canta
-15321	cantai
-15322	canti
-15323	canuta
-15324	canute
-15325	canuti
-15326	canuto
-15331	capace
-15332	capaci
-15333	capi
-15334	capire
-15335	capita
-15336	capito
-15341	capo
-15342	capra
-15343	capre
-15344	cara
-15345	care
-15346	carena
-15351	carene
-15352	cari
-15353	carica
-15354	carico
-15355	carina
-15356	carine
-15361	carini
-15362	carino
-15363	carne
-15364	carni
-15365	caro
-15366	carota
-15411	carote
-15412	carri
-15413	carta
-15414	carte
-15415	casa
-15416	caschi
-15421	case
-15422	casi
-15423	caso
-15424	cassa
-15425	casse
-15426	casta
-15431	caste
-15432	casti
-15433	casto
-15434	catena
-15435	catene
-15436	catini
-15441	catino
-15442	causa
-15443	causai
-15444	cause
-15445	causi
-15446	cauta
-15451	caute
-15452	cauti
-15453	cava
-15454	cavai
-15455	cavano
-15456	cavare
-15461	cavata
-15462	cavati
-15463	cavato
-15464	cave
-15465	cavoli
-15466	cavolo
-15511	cede
-15512	cedere
-15513	cedola
-15514	cedole
-15515	cedono
-15516	cedri
-15521	cedro
-15522	ceduta
-15523	cedute
-15524	ceffo
-15525	celai
-15526	celano
-15531	celare
-15532	celate
-15533	celati
-15534	celato
-15535	celava
-15536	celavi
-15541	celavo
-15542	celere
-15543	celeri
-15544	celibe
-15545	celibi
-15546	celino
-15551	cella
-15552	celle
-15553	cena
-15554	cenare
-15555	cenata
-15556	cenate
-15561	cenati
-15562	cenava
-15563	cenavi
-15564	cene
-15565	cenere
-15566	ceneri
-15611	ceni
-15612	cenni
-15613	cenno
-15614	ceno
-15615	cento
-15616	centra
-15621	centro
-15622	ceppo
-15623	cera
-15624	cerca
-15625	cerchi
-15626	cerco
-15631	cere
-15632	ceri
-15633	cerini
-15634	cerino
-15635	cero
-15636	certa
-15641	certe
-15642	certi
-15643	certo
-15644	cervi
-15645	cesoia
-15646	cessa
-15651	cessai
-15652	cesta
-15653	cesti
-15654	cetra
-15655	cetre
-15656	chi
-15661	chiama
-15662	chiami
-15663	chiamo
-15664	chiara
-15665	chiare
-15666	chiari
-16111	chiaro
-16112	chiave
-16113	chiavi
-16114	chieda
-16115	chiede
-16116	chiedo
-16121	chiesa
-16122	chiese
-16123	chiesi
-16124	china
-16125	chinai
-16126	chine
-16131	chini
-16132	chino
-16133	chiodi
-16134	chiodo
-16135	chioma
-16136	chiome
-16141	chiuda
-16142	chiude
-16143	chiudi
-16144	chiudo
-16145	chiusa
-16146	chiusi
-16151	chiuso
-16152	cialda
-16153	cialde
-16154	ciao
-16155	cibi
-16156	cibo
-16161	cicca
-16162	cicli
-16163	ciclo
-16164	cicuta
-16165	cicute
-16166	cieca
-16211	cieche
-16212	ciechi
-16213	cieco
-16214	cielo
-16215	cifra
-16216	cifre
-16221	ciglia
-16222	ciglio
-16223	cigni
-16224	cigno
-16225	cigola
-16226	cigoli
-16231	cigolo
-16232	cima
-16233	cime
-16234	cimice
-16235	cimici
-16236	cinema
-16241	cinica
-16242	cinici
-16243	cinico
-16244	cinque
-16245	cinse
-16246	cinta
-16251	cinto
-16252	ciocca
-16253	cipria
-16254	circa
-16255	circo
-16256	cirro
-16261	cisti
-16262	cita
-16263	citai
-16264	citano
-16265	citare
-16266	citate
-16311	citati
-16312	citato
-16313	citava
-16314	citavi
-16315	citavo
-16316	citi
-16321	citino
-16322	cito
-16323	ciuffi
-16324	ciuffo
-16325	ciurma
-16326	ciurme
-16331	civile
-16332	civili
-16333	classe
-16334	classi
-16335	clero
-16336	clima
-16341	climi
-16342	coda
-16343	code
-16344	codice
-16345	codici
-16346	cofani
-16351	cofano
-16352	coglie
-16353	cola
-16354	colai
-16355	colano
-16356	colare
-16361	colata
-16362	colate
-16363	colati
-16364	colato
-16365	colava
-16366	colavi
-16411	colavo
-16412	colera
-16413	coli
-16414	colini
-16415	colino
-16416	colla
-16421	colle
-16422	colli
-16423	collo
-16424	colma
-16425	colmai
-16426	colme
-16431	colmo
-16432	colo
-16433	coloni
-16434	colore
-16435	colori
-16436	coloro
-16441	colpa
-16442	colpe
-16443	colpi
-16444	colpii
-16445	colse
-16446	colta
-16451	colti
-16452	colto
-16453	cometa
-16454	comete
-16455	comica
-16456	comici
-16461	comico
-16462	comizi
-16463	comoda
-16464	comode
-16465	comodi
-16466	comodo
-16511	compie
-16512	compri
-16513	compro
-16514	comune
-16515	comuni
-16516	concia
-16521	concio
-16522	condii
-16523	coni
-16524	conia
-16525	coniai
-16526	conio
-16531	cono
-16532	conta
-16533	contai
-16534	conte
-16535	conti
-16536	contro
-16541	copia
-16542	copiai
-16543	copie
-16544	coppia
-16545	coppie
-16546	copra
-16551	copre
-16552	copri
-16553	copro
-16554	corda
-16555	corde
-16556	cori
-16561	corna
-16562	corno
-16563	coro
-16564	corona
-16565	corone
-16566	coroni
-16611	corono
-16612	corpi
-16613	corpo
-16614	corra
-16615	corre
-16616	corri
-16621	corro
-16622	corsa
-16623	corse
-16624	corsi
-16625	corsia
-16626	corsie
-16631	corso
-16632	corte
-16633	cortei
-16634	corteo
-16635	corto
-16636	corvi
-16641	corvo
-16642	cosa
-16643	cosca
-16644	cosce
-16645	coscia
-16646	cose
-16651	coseno
-16652	cosmo
-16653	coso
-16654	costa
-16655	costai
-16656	coste
-16661	costei
-16662	costo
-16663	cotone
-16664	cotta
-16665	cotte
-16666	cotti
-21111	cotto
-21112	cova
-21113	covai
-21114	covano
-21115	covata
-21116	covate
-21121	covati
-21122	covato
-21123	covavi
-21124	covavo
-21125	covi
-21126	covino
-21131	covo
-21132	cozza
-21133	cozze
-21134	cozzi
-21135	cozzo
-21136	crampi
-21141	crampo
-21142	crani
-21143	cranio
-21144	crea
-21145	creai
-21146	creano
-21151	creare
-21152	creata
-21153	create
-21154	creato
-21155	creava
-21156	creavi
-21161	creavo
-21162	crebbe
-21163	crebbi
-21164	creda
-21165	crede
-21166	credei
-21211	credi
-21212	credo
-21213	crei
-21214	creino
-21215	crema
-21216	cremai
-21221	creme
-21222	cremi
-21223	cremo
-21224	creo
-21225	crepa
-21226	crepe
-21231	crepi
-21232	crepo
-21233	cresca
-21234	cresce
-21235	cresci
-21236	cresco
-21241	crespa
-21242	crespe
-21243	crespi
-21244	crespo
-21245	cresta
-21246	creste
-21251	creta
-21252	crete
-21253	crisi
-21254	cristo
-21255	croce
-21256	croci
-21261	crolla
-21262	crolli
-21263	crollo
-21264	crosta
-21265	cruda
-21266	crudi
-21311	crudo
-21312	cruna
-21313	crune
-21314	crusca
-21315	cubi
-21316	cubo
-21321	cucina
-21322	cucine
-21323	cucini
-21324	cuffia
-21325	cuffie
-21326	cugina
-21331	cugine
-21332	cugini
-21333	cugino
-21334	culla
-21335	cullai
-21336	culli
-21341	culto
-21342	cumulo
-21343	cuoca
-21344	cuoche
-21345	cuochi
-21346	cuocia
-21351	cuoio
-21352	cuore
-21353	cuori
-21354	cupa
-21355	cupe
-21356	cupi
-21361	cupo
-21362	cupola
-21363	cupole
-21364	cura
-21365	curai
-21366	curano
-21411	curare
-21412	curate
-21413	curati
-21414	curato
-21415	curava
-21416	curavi
-21421	curavo
-21422	cure
-21423	curi
-21424	curino
-21425	curo
-21426	curva
-21431	curvai
-21432	curve
-21433	curvi
-21434	curvo
-21435	cute
-21436	dacci
-21441	dadi
-21442	dado
-21443	dagli
-21444	dai
-21445	daini
-21446	daino
-21451	dalla
-21452	dalle
-21453	dallo
-21454	dama
-21455	dame
-21456	dammi
-21461	dannai
-21462	danni
-21463	danno
-21464	danza
-21465	danze
-21466	danzi
-21511	darai
-21512	dare
-21513	darei
-21514	daremo
-21515	dargli
-21516	darsi
-21521	darti
-21522	darvi
-21523	data
-21524	datai
-21525	datano
-21526	datare
-21531	datava
-21532	datavi
-21533	datavo
-21534	date
-21535	datelo
-21536	datemi
-21541	datevi
-21542	dati
-21543	datino
-21544	dato
-21545	datomi
-21546	datosi
-21551	dava
-21552	davamo
-21553	davano
-21554	davo
-21555	dazio
-21556	dea
-21561	debba
-21562	debiti
-21563	debito
-21564	deboli
-21565	decani
-21566	decano
-21611	decide
-21612	decidi
-21613	decine
-21614	decisa
-21615	decise
-21616	decisi
-21621	decori
-21622	decoro
-21623	dedica
-21624	dedite
-21625	dediti
-21626	dedito
-21631	dee
-21632	degli
-21633	degna
-21634	degnai
-21635	degne
-21636	degni
-21641	degno
-21642	dei
-21643	delega
-21644	delego
-21645	delira
-21646	deliri
-21651	deliro
-21652	delizi
-21653	della
-21654	deludo
-21655	delusa
-21656	deluso
-21661	demmo
-21662	demoni
-21663	denari
-21664	denaro
-21665	densa
-21666	dense
-22111	denso
-22112	dente
-22113	denti
-22114	dentro
-22115	denuda
-22116	denudi
-22121	denudo
-22122	depose
-22123	depura
-22124	depuro
-22125	deride
-22126	derido
-22131	derise
-22132	derisi
-22133	deriva
-22134	derivi
-22135	derivo
-22136	deroga
-22141	deruba
-22142	derubi
-22143	derubo
-22144	desse
-22145	dessi
-22146	desta
-22151	destai
-22152	desti
-22153	desto
-22154	destra
-22155	desume
-22156	desumi
-22161	desumo
-22162	detta
-22163	dettai
-22164	dette
-22165	detti
-22166	detto
-22211	deve
-22212	devi
-22213	devo
-22214	devono
-22215	devota
-22216	devote
-22221	devoti
-22222	devoto
-22223	dia
-22224	diamo
-22225	diano
-22226	diario
-22231	dica
-22232	dicano
-22233	dicasi
-22234	dicci
-22235	dice
-22236	diceva
-22241	dicevo
-22242	dici
-22243	dico
-22244	dicono
-22245	dieci
-22246	diede
-22251	diedi
-22252	dieta
-22253	diete
-22254	dietro
-22255	difesa
-22256	difese
-22261	difesi
-22262	difeso
-22263	diga
-22264	digita
-22265	digiti
-22266	digli
-22311	dilani
-22312	dilati
-22313	dilato
-22314	dilla
-22315	dillo
-22316	diluii
-22321	diluvi
-22322	dimena
-22323	dimeni
-22324	dimeno
-22325	dinamo
-22326	dinari
-22331	dinne
-22332	dipana
-22333	dipani
-22334	dipano
-22335	dipesa
-22336	dipese
-22341	dipesi
-22342	dipeso
-22343	dirada
-22344	diradi
-22345	dirado
-22346	dirai
-22351	dirama
-22352	dirami
-22353	diramo
-22354	dirci
-22355	dire
-22356	direi
-22361	direte
-22362	dirgli
-22363	dirige
-22364	dirigo
-22365	dirla
-22366	dirle
-22411	dirlo
-22412	dirmi
-22413	dirne
-22414	dirsi
-22415	dirti
-22416	dirupi
-22421	dirupo
-22422	dirvi
-22423	disagi
-22424	dischi
-22425	disco
-22426	disse
-22431	dissi
-22432	dista
-22433	disti
-22434	disto
-22435	disuso
-22436	dita
-22441	ditale
-22442	dite
-22443	ditelo
-22444	ditemi
-22445	divaga
-22446	divago
-22451	divani
-22452	divano
-22453	dive
-22454	divide
-22455	dividi
-22456	divina
-22461	divine
-22462	divini
-22463	divino
-22464	divisa
-22465	divise
-22466	divisi
-22511	divora
-22512	divori
-22513	divoro
-22514	docce
-22515	doccia
-22516	docile
-22521	docili
-22522	dodici
-22523	dogana
-22524	dogane
-22525	dogma
-22526	dogmi
-22531	dolce
-22532	dolci
-22533	dolore
-22534	dolori
-22535	dolosa
-22536	dolose
-22541	dolosi
-22542	doloso
-22543	domai
-22544	domani
-22545	domano
-22546	domare
-22551	domata
-22552	domati
-22553	domato
-22554	domava
-22555	domavo
-22556	domina
-22561	domini
-22562	domino
-22563	dona
-22564	donai
-22565	donare
-22566	donate
-22611	donati
-22612	donato
-22613	donava
-22614	donavi
-22615	donavo
-22616	doni
-22621	donino
-22622	donna
-22623	donne
-22624	dono
-22625	dopo
-22626	doppia
-22631	doppie
-22632	doppio
-22633	dorata
-22634	dorate
-22635	dorato
-22636	dorma
-22641	dorme
-22642	dormi
-22643	dormo
-22644	dorsi
-22645	dorso
-22646	dosa
-22651	dosai
-22652	dosano
-22653	dosare
-22654	dosata
-22655	dosate
-22656	dosati
-22661	dosato
-22662	dosavi
-22663	dosavo
-22664	dosi
-22665	dosino
-22666	doso
-23111	dota
-23112	dotai
-23113	dotano
-23114	dotare
-23115	dotati
-23116	dotato
-23121	dotava
-23122	dotavi
-23123	dotavo
-23124	dote
-23125	doti
-23126	dotino
-23131	doto
-23132	dotta
-23133	dotte
-23134	dotti
-23135	dove
-23136	dovere
-23141	dovete
-23142	doveva
-23143	dovevi
-23144	dovevo
-23145	dovrai
-23146	dovrei
-23151	dovuta
-23152	dovute
-23153	dovuti
-23154	draga
-23155	draghe
-23156	drago
-23161	dramma
-23162	drammi
-23163	drizza
-23164	drizzi
-23165	drizzo
-23166	dubbi
-23211	dubbio
-23212	dubita
-23213	dubiti
-23214	dubito
-23215	duca
-23216	duchi
-23221	due
-23222	duello
-23223	duna
-23224	dune
-23225	duomi
-23226	dura
-23231	durai
-23232	durano
-23233	durare
-23234	durata
-23235	durate
-23236	durati
-23241	durato
-23242	durava
-23243	duravi
-23244	duravo
-23245	dure
-23246	duri
-23251	durino
-23252	duro
-23253	ebano
-23254	ecceda
-23255	eccede
-23256	eccedi
-23261	eccedo
-23262	eccita
-23263	ecciti
-23264	eccito
-23265	ecco
-23266	echi
-23311	eco
-23312	edera
-23313	edere
-23314	educo
-23315	egli
-23316	eguale
-23321	eguali
-23322	elegga
-23323	elegge
-23324	eleggi
-23325	eleggo
-23326	elenca
-23331	elenco
-23332	eletta
-23333	elette
-23334	eletti
-23335	eletto
-23336	elevai
-23341	eliche
-23342	ella
-23343	elogi
-23344	elogia
-23345	elogio
-23346	elude
-23351	eludi
-23352	eludo
-23353	elusa
-23354	eluse
-23355	elusi
-23356	eluso
-23361	emana
-23362	emanai
-23363	emani
-23364	emano
-23365	emboli
-23366	embolo
-23411	emenda
-23412	emendi
-23413	emendo
-23414	emerge
-23415	emergi
-23416	emergo
-23421	emerse
-23422	emersi
-23423	emerso
-23424	emesso
-23425	emette
-23426	emigra
-23431	emigri
-23432	emigro
-23433	emula
-23434	emulai
-23435	emuli
-23436	emulo
-23441	enfasi
-23442	enigma
-23443	enorme
-23444	enormi
-23445	ente
-23446	enti
-23451	entra
-23452	entrai
-23453	entri
-23454	entro
-23455	epica
-23456	epiche
-23461	epici
-23462	epico
-23463	epoca
-23464	epoche
-23465	eppure
-23466	epurai
-23511	equa
-23512	eque
-23513	equi
-23514	era
-23515	erano
-23516	erba
-23521	erbe
-23522	ere
-23523	eredi
-23524	eresia
-23525	eresie
-23526	eresse
-23531	eressi
-23532	eretta
-23533	erette
-23534	eretti
-23535	eretto
-23536	erige
-23541	erigi
-23542	erigo
-23543	eroe
-23544	eroi
-23545	errai
-23546	errano
-23551	errare
-23552	errata
-23553	errate
-23554	errati
-23555	errato
-23556	errava
-23561	erravi
-23562	errino
-23563	errore
-23564	errori
-23565	esalta
-23566	esalti
-23611	esalto
-23612	esame
-23613	esatta
-23614	esatte
-23615	esatti
-23616	esatto
-23621	esca
-23622	esce
-23623	esci
-23624	esco
-23625	escono
-23626	esegue
-23631	esenti
-23632	esige
-23633	esiguo
-23634	esile
-23635	esili
-23636	esilia
-23641	esilio
-23642	esimi
-23643	esimo
-23644	esista
-23645	esiste
-23646	esiti
-23651	esito
-23652	esorti
-23653	esorto
-23654	espia
-23655	espiai
-23656	espii
-23661	espio
-23662	essa
-23663	esse
-23664	essere
-23665	esseri
-23666	essi
-24111	esso
-24112	estate
-24113	estati
-24114	esteri
-24115	estero
-24116	estesa
-24121	estive
-24122	estivi
-24123	estivo
-24124	esula
-24125	esule
-24126	esuli
-24131	esulta
-24132	esulti
-24133	esulto
-24134	etere
-24135	eterna
-24136	eterne
-24141	eterni
-24142	eterno
-24143	etti
-24144	etto
-24145	evacua
-24146	evacui
-24151	evacuo
-24152	evento
-24153	evita
-24154	evitai
-24155	eviti
-24156	evito
-24161	evolve
-24162	evviva
-24163	fabbro
-24164	facce
-24165	faccia
-24166	faccio
-24211	faceva
-24212	facevi
-24213	facile
-24214	facili
-24215	faggi
-24216	faggio
-24221	fagli
-24222	fai
-24223	falce
-24224	falchi
-24225	falci
-24226	falcia
-24231	falcio
-24232	falda
-24233	falde
-24234	falla
-24235	falle
-24236	falsa
-24241	false
-24242	falsi
-24243	fama
-24244	fame
-24245	fammi
-24246	famosa
-24251	famose
-24252	famosi
-24253	famoso
-24254	fanale
-24255	fanali
-24256	fango
-24261	fanne
-24262	fanno
-24263	fanti
-24264	farci
-24265	fare
-24266	farei
-24311	faremo
-24312	farete
-24313	fargli
-24314	fari
-24315	farina
-24316	farine
-24321	farla
-24322	farle
-24323	farli
-24324	farlo
-24325	farmi
-24326	farne
-24331	farsi
-24332	farti
-24333	fasce
-24334	fasci
-24335	fascia
-24336	fascio
-24341	fase
-24342	fata
-24343	fatale
-24344	fatali
-24345	fate
-24346	fateci
-24351	fatela
-24352	fatelo
-24353	fatene
-24354	fatevi
-24355	fatica
-24356	fatico
-24361	fato
-24362	fatte
-24363	fatti
-24364	fatto
-24365	favola
-24366	favole
-24411	favori
-24412	febbre
-24413	febbri
-24414	fecero
-24415	fede
-24416	fedele
-24421	fedeli
-24422	federa
-24423	federe
-24424	fedi
-24425	fegati
-24426	fegato
-24431	felice
-24432	feltri
-24433	feltro
-24434	fende
-24435	fendi
-24436	fendo
-24441	fenice
-24442	ferii
-24443	ferire
-24444	ferita
-24445	ferite
-24446	feriti
-24451	feriva
-24452	ferivo
-24453	ferma
-24454	ferme
-24455	fermi
-24456	fermo
-24461	feroce
-24462	feroci
-24463	ferri
-24464	ferro
-24465	festa
-24466	fetida
-24511	fetide
-24512	fetidi
-24513	fetido
-24514	fetta
-24515	fette
-24516	fiacca
-24521	fiacco
-24522	fiamma
-24523	fichi
-24524	fico
-24525	fidata
-24526	fidate
-24531	fidati
-24532	fidato
-24533	fieni
-24534	fieno
-24535	fiera
-24536	fiere
-24541	fieri
-24542	fiero
-24543	figli
-24544	figlia
-24545	figlie
-24546	figlio
-24551	figura
-24552	figure
-24553	fila
-24554	filai
-24555	filano
-24556	filare
-24561	filate
-24562	filati
-24563	filato
-24564	filava
-24565	filavi
-24566	filavo
-24611	file
-24612	fili
-24613	filino
-24614	filo
-24615	filtri
-24616	filtro
-24621	finale
-24622	fine
-24623	finge
-24624	fingi
-24625	fingo
-24626	fini
-24631	finii
-24632	finire
-24633	finita
-24634	finite
-24635	finiti
-24636	finito
-24641	finiva
-24642	finivi
-24643	fino
-24644	finora
-24645	finse
-24646	finsi
-24651	finto
-24652	fiocco
-24653	fiore
-24654	firma
-24655	firmai
-24656	firme
-24661	firmi
-24662	firmo
-24663	fischi
-24664	fisco
-24665	fisica
-24666	fisici
-25111	fissa
-25112	fissai
-25113	fisse
-25114	fissi
-25115	fisso
-25116	fitta
-25121	fitte
-25122	fitti
-25123	fitto
-25124	fiume
-25125	fiumi
-25126	fiuta
-25131	fiutai
-25132	fiuti
-25133	fiuto
-25134	flauti
-25135	flauto
-25136	flotte
-25141	fluano
-25142	fluidi
-25143	fluido
-25144	fluii
-25145	fluita
-25146	fluite
-25151	fluiti
-25152	fluito
-25153	fluiva
-25154	fluivi
-25155	fluoro
-25156	flussi
-25161	flutti
-25162	flutto
-25163	foca
-25164	foche
-25165	foci
-25166	focosa
-25211	focose
-25212	focosi
-25213	fodera
-25214	fodere
-25215	foderi
-25216	fodero
-25221	fogli
-25222	foglie
-25223	fogne
-25224	folla
-25225	folle
-25226	follie
-25231	folta
-25232	folte
-25233	folti
-25234	folto
-25235	fonda
-25236	fondai
-25241	fondi
-25242	fondo
-25243	fora
-25244	forai
-25245	forano
-25246	forare
-25251	forata
-25252	forate
-25253	forati
-25254	forato
-25255	forava
-25256	foravo
-25261	fori
-25262	forino
-25263	forma
-25264	formai
-25265	forme
-25266	formi
-25311	formo
-25312	fornai
-25313	forni
-25314	fornii
-25315	forno
-25316	foro
-25321	forse
-25322	forte
-25323	forti
-25324	forza
-25325	forzai
-25326	forze
-25331	forzi
-25332	forzo
-25333	fosco
-25334	fossa
-25335	fosse
-25336	fossi
-25341	foste
-25342	fosti
-25343	foto
-25344	fra
-25345	frana
-25346	franai
-25351	franco
-25352	frane
-25353	frano
-25354	frase
-25355	frasi
-25356	frate
-25361	frati
-25362	frecce
-25363	fredda
-25364	fredde
-25365	freddi
-25366	freddo
-25411	freni
-25412	freno
-25413	fresca
-25414	fresco
-25415	fretta
-25416	fritte
-25421	frodai
-25422	frodi
-25423	frodo
-25424	fronte
-25425	frugai
-25426	frugo
-25431	frulla
-25432	frullo
-25433	frusta
-25434	fruste
-25435	frusti
-25436	frusto
-25441	frutta
-25442	frutti
-25443	frutto
-25444	fucila
-25445	fucile
-25446	fucili
-25451	fucilo
-25452	fuga
-25453	fugai
-25454	fugano
-25455	fugare
-25456	fugata
-25461	fugate
-25462	fugato
-25463	fugava
-25464	fugavi
-25465	fugavo
-25466	fugga
-25511	fugge
-25512	fuggi
-25513	fughe
-25514	fugo
-25515	fui
-25516	fuma
-25521	fumai
-25522	fumano
-25523	fumare
-25524	fumata
-25525	fumate
-25526	fumati
-25531	fumato
-25532	fumava
-25533	fumavi
-25534	fumavo
-25535	fumi
-25536	fumino
-25541	fummo
-25542	fumo
-25543	funge
-25544	fungo
-25545	fuochi
-25546	fuoco
-25551	fuori
-25552	furba
-25553	furbe
-25554	furbo
-25555	furono
-25556	furore
-25561	furori
-25562	furti
-25563	furto
-25564	fusa
-25565	fusaro
-25566	fuse
-25611	fuso
-25612	fusti
-25613	fusto
-25614	futile
-25615	futili
-25616	futuri
-25621	futuro
-25622	gabbia
-25623	gabbie
-25624	gaia
-25625	gaie
-25626	gaio
-25631	galera
-25632	galere
-25633	galli
-25634	gallo
-25635	gamba
-25636	gambe
-25641	gambi
-25642	gambo
-25643	gamma
-25644	ganci
-25645	gancio
-25646	gara
-25651	garbo
-25652	gare
-25653	garza
-25654	garze
-25655	gela
-25656	gelai
-25661	gelano
-25662	gelare
-25663	gelata
-25664	gelate
-25665	gelati
-25666	gelato
-26111	gelava
-26112	gelavi
-26113	gelavo
-26114	geli
-26115	gelida
-26116	gelide
-26121	gelidi
-26122	gelido
-26123	gelino
-26124	gelo
-26125	gelone
-26126	geloni
-26131	gelosa
-26132	geloso
-26133	gelsi
-26134	gelso
-26135	gemiti
-26136	gemito
-26141	gemma
-26142	gemme
-26143	gene
-26144	genere
-26145	genero
-26146	geni
-26151	gente
-26152	gerani
-26153	gergo
-26154	germe
-26155	germi
-26156	gessi
-26161	gesso
-26162	gesti
-26163	gesto
-26164	getta
-26165	gettai
-26166	getti
-26211	getto
-26212	giacca
-26213	giace
-26214	gialla
-26215	gialli
-26216	giallo
-26221	giara
-26222	giare
-26223	gigli
-26224	giglio
-26225	gioano
-26226	gioca
-26231	giocai
-26232	giochi
-26233	gioco
-26234	giogo
-26235	gioia
-26236	gioie
-26241	gioii
-26242	gioire
-26243	gioite
-26244	gioiva
-26245	gioivi
-26246	gioivo
-26251	giorno
-26252	giova
-26253	giovo
-26254	girai
-26255	girare
-26256	girate
-26261	girati
-26262	girato
-26263	girava
-26264	giravi
-26265	giravo
-26266	giri
-26311	girino
-26312	giro
-26313	gita
-26314	gite
-26315	giugno
-26316	giunco
-26321	giunga
-26322	giunge
-26323	giunse
-26324	giunsi
-26325	giunta
-26326	giunte
-26331	giunti
-26332	giunto
-26333	giura
-26334	giurai
-26335	giuri
-26336	giuria
-26341	giurie
-26342	giuro
-26343	giuste
-26344	giusto
-26345	gli
-26346	globi
-26351	globo
-26352	gloria
-26353	gobba
-26354	gobbe
-26355	gobbo
-26356	goccia
-26361	goffi
-26362	goffo
-26363	gola
-26364	gole
-26365	golfi
-26366	golfo
-26411	golose
-26412	golosi
-26413	goloso
-26414	gomiti
-26415	gomito
-26416	gomma
-26421	gomme
-26422	gonfia
-26423	gonna
-26424	gonne
-26425	gorgo
-26426	gradi
-26431	grado
-26432	gradua
-26433	gradui
-26434	graduo
-26435	graffe
-26436	graffi
-26441	grafo
-26442	grammo
-26443	grana
-26444	grande
-26445	grandi
-26446	grane
-26451	grani
-26452	grano
-26453	grappa
-26454	grappe
-26455	grassa
-26456	grasse
-26461	grassi
-26462	grata
-26463	grate
-26464	grati
-26465	grato
-26466	gratta
-26511	gratti
-26512	gratto
-26513	grava
-26514	gravai
-26515	grave
-26516	gravi
-26521	gravo
-26522	grazia
-26523	grazio
-26524	greche
-26525	gregge
-26526	greggi
-26531	grembi
-26532	grembo
-26533	gremii
-26534	grida
-26535	gridai
-26536	gridi
-26541	grido
-26542	grigi
-26543	grigio
-26544	grilli
-26545	grinza
-26546	grinze
-26551	groppa
-26552	groppe
-26553	grossa
-26554	grosse
-26555	grossi
-26556	grosso
-26561	gru
-26562	grucce
-26563	gruppo
-26564	guada
-26565	guadai
-26566	guadi
-26611	guado
-26612	guai
-26613	guaio
-26614	guarda
-26615	guardi
-26616	guardo
-26621	guasta
-26622	guasti
-26623	guasto
-26624	guerra
-26625	guerre
-26626	gufi
-26631	gufo
-26632	guglie
-26633	guida
-26634	guide
-26635	guidi
-26636	guido
-26641	guizza
-26642	guizzi
-26643	guizzo
-26644	gusci
-26645	guscio
-26646	gusta
-26651	gustai
-26652	gusti
-26653	gusto
-26654	hai
-26655	ibridi
-26656	ibrido
-26661	ideale
-26662	ideali
-26663	idee
-26664	idioma
-26665	idiomi
-26666	idoli
-31111	idolo
-31112	idonea
-31113	idonee
-31114	idonei
-31115	iena
-31116	iene
-31121	ieri
-31122	igiene
-31123	ignara
-31124	ignare
-31125	ignari
-31126	ignaro
-31131	ignora
-31132	ignori
-31133	ignoro
-31134	ignota
-31135	ignote
-31136	ignoto
-31141	illesa
-31142	illese
-31143	illesi
-31144	illeso
-31145	illude
-31146	illudi
-31151	illusa
-31152	illuse
-31153	illusi
-31154	illuso
-31155	imbuti
-31156	imbuto
-31161	imita
-31162	imitai
-31163	imiti
-31164	imito
-31165	immuni
-31166	impara
-31211	impari
-31212	imparo
-31213	imperi
-31214	impero
-31215	impeto
-31216	impeti
-31221	impura
-31222	impure
-31223	impuri
-31224	impuro
-31225	imputa
-31226	imputi
-31231	imputo
-31232	incide
-31233	incisa
-31234	incise
-31235	incita
-31236	inciti
-31241	incito
-31242	incubi
-31243	incubo
-31244	indaga
-31245	indica
-31246	indice
-31251	indici
-31252	indizi
-31253	indole
-31254	indugi
-31255	inebri
-31256	inerme
-31261	inermi
-31262	inerti
-31263	inezia
-31264	infama
-31265	infame
-31266	infami
-31311	infamo
-31312	infili
-31313	infilo
-31314	infine
-31315	iniqua
-31316	inique
-31321	iniqui
-31322	iniquo
-31323	inizi
-31324	inizia
-31325	inizio
-31326	inni
-31331	inno
-31332	intasa
-31333	intasi
-31334	intaso
-31335	intera
-31336	intere
-31341	interi
-31342	intero
-31343	intesa
-31344	intese
-31345	intesi
-31346	inteso
-31351	intima
-31352	intime
-31353	intimo
-31354	invano
-31355	invasa
-31356	invase
-31361	invasi
-31362	invaso
-31363	invece
-31364	inviai
-31365	invii
-31366	invino
-31411	invio
-31412	invita
-31413	inviti
-31414	invito
-31415	invoca
-31416	invoco
-31421	iodio
-31422	ira
-31423	ire
-31424	iride
-31425	ironia
-31426	ironie
-31431	irriga
-31432	irrita
-31433	irriti
-31434	irrito
-31435	isola
-31436	isolai
-31441	isole
-31442	isoli
-31443	isolo
-31444	istigo
-31445	istmo
-31446	ivi
-31451	labbra
-31452	labbro
-31453	lacche
-31454	lacci
-31455	lacera
-31456	lacere
-31461	laceri
-31462	lacero
-31463	ladra
-31464	ladre
-31465	ladri
-31466	ladro
-31511	lago
-31512	laguna
-31513	lagune
-31514	laica
-31515	laiche
-31516	laici
-31521	laico
-31522	lama
-31523	lambda
-31524	lambii
-31525	lame
-31526	lamina
-31531	lamine
-31532	lampi
-31533	lampo
-31534	lana
-31535	lance
-31536	lancio
-31541	landa
-31542	lande
-31543	lane
-31544	langui
-31545	lanosa
-31546	lanose
-31551	lanosi
-31552	lanoso
-31553	lapide
-31554	lapidi
-31555	lardo
-31556	larga
-31561	larghe
-31562	largo
-31563	lasci
-31564	lascia
-31565	lascio
-31566	lastra
-31611	lastre
-31612	lati
-31613	latini
-31614	lato
-31615	latra
-31616	latrai
-31621	latri
-31622	latro
-31623	lattai
-31624	latte
-31625	lauree
-31626	lava
-31631	lavabi
-31632	lavabo
-31633	lavai
-31634	lavano
-31635	lavata
-31636	lavate
-31641	lavati
-31642	lavato
-31643	lavi
-31644	lavo
-31645	lavora
-31646	lavori
-31651	lavoro
-31652	leale
-31653	leali
-31654	lecca
-31655	leccai
-31656	lecci
-31661	leccio
-31662	lecco
-31663	leciti
-31664	lede
-31665	ledere
-31666	ledi
-32111	ledo
-32112	lega
-32113	legai
-32114	legale
-32115	legali
-32116	legame
-32121	legami
-32122	legano
-32123	legare
-32124	legata
-32125	legati
-32126	legato
-32131	legava
-32132	legavi
-32133	legga
-32134	legge
-32135	leggi
-32136	leggo
-32141	leghe
-32142	legna
-32143	legni
-32144	legno
-32145	legume
-32146	legumi
-32151	lei
-32152	lembi
-32153	lembo
-32154	lenta
-32155	lenti
-32156	lento
-32161	lenza
-32162	lenze
-32163	leone
-32164	leoni
-32165	lepre
-32166	lepri
-32211	lerce
-32212	lerci
-32213	lercia
-32214	lercio
-32215	lesa
-32216	lese
-32221	lesi
-32222	leso
-32223	lessa
-32224	lessai
-32225	lesse
-32226	lessi
-32231	lesso
-32232	lesta
-32233	leste
-32234	lesto
-32235	letame
-32236	letami
-32241	letta
-32242	lette
-32243	letti
-32244	letto
-32245	leva
-32246	levai
-32251	levano
-32252	levare
-32253	levata
-32254	levate
-32255	levati
-32256	levavi
-32261	levavo
-32262	leve
-32263	levi
-32264	leviga
-32265	levigo
-32266	levino
-32311	levo
-32312	liana
-32313	libera
-32314	libere
-32315	liberi
-32316	libero
-32321	libra
-32322	libre
-32323	libri
-32324	libro
-32325	licei
-32326	lidi
-32331	lieta
-32332	liete
-32333	lieti
-32334	lieto
-32335	lieve
-32336	lievi
-32341	lilla
-32342	lima
-32343	limita
-32344	limite
-32345	limiti
-32346	limito
-32351	limone
-32352	limoni
-32353	linda
-32354	linde
-32355	lindi
-32356	lindo
-32361	linea
-32362	linee
-32363	lingua
-32364	lingue
-32365	lirica
-32366	lirici
-32411	lirico
-32412	lisca
-32413	lische
-32414	lisci
-32415	liscia
-32416	liscio
-32421	liso
-32422	lista
-32423	liste
-32424	lite
-32425	liti
-32426	litiga
-32431	litigo
-32432	litri
-32433	litro
-32434	livida
-32435	livide
-32436	lividi
-32441	livido
-32442	locale
-32443	lodai
-32444	lodano
-32445	lodata
-32446	lodate
-32451	lodati
-32452	lodato
-32453	lodava
-32454	lodavi
-32455	lodavo
-32456	lode
-32461	lodi
-32462	lodino
-32463	lodo
-32464	logica
-32465	logici
-32466	logico
-32511	logora
-32512	logori
-32513	logoro
-32514	lontra
-32515	lontre
-32516	lorda
-32521	lorde
-32522	lordi
-32523	lordo
-32524	losca
-32525	losche
-32526	loschi
-32531	losco
-32532	lotta
-32533	lotti
-32534	lotto
-32535	luce
-32536	luci
-32541	lucida
-32542	lucide
-32543	lucidi
-32544	lucido
-32545	lucore
-32546	luglio
-32551	lui
-32552	lumaca
-32553	lume
-32554	lumi
-32555	luna
-32556	lunga
-32561	lunghe
-32562	lungo
-32563	luogo
-32564	lupi
-32565	lupo
-32566	lussi
-32611	lusso
-32612	lutti
-32613	lutto
-32614	macera
-32615	maceri
-32616	macero
-32621	macina
-32622	macine
-32623	madre
-32624	madri
-32625	maggio
-32626	magica
-32631	magici
-32632	magico
-32633	mago
-32634	maglia
-32635	maglie
-32636	magra
-32641	magri
-32642	magro
-32643	mai
-32644	maiale
-32645	malata
-32646	malate
-32651	malati
-32652	malato
-32653	male
-32654	malga
-32655	mali
-32656	malore
-32661	malori
-32662	mamma
-32663	mamme
-32664	manata
-32665	manate
-32666	manca
-33111	mancai
-33112	mance
-33113	manchi
-33114	mancia
-33115	manda
-33116	mandai
-33121	mandi
-33122	mando
-33123	mangi
-33124	mangia
-33125	mangio
-33126	mani
-33131	mania
-33132	manica
-33133	manici
-33134	manie
-33135	mano
-33136	manzi
-33141	manzo
-33142	mappa
-33143	mappe
-33144	marca
-33145	marce
-33146	marci
-33151	marcia
-33152	marcio
-33153	marco
-33154	mare
-33155	marea
-33156	maree
-33161	mari
-33162	marina
-33163	marini
-33164	marino
-33165	marita
-33166	mariti
-33211	marito
-33212	marmi
-33213	marmo
-33214	marzo
-33215	maschi
-33216	massa
-33221	masse
-33222	massi
-33223	masso
-33224	mastri
-33225	mastro
-33226	matita
-33231	matite
-33232	matta
-33233	matte
-33234	matti
-33235	matto
-33236	matura
-33241	mature
-33242	maturi
-33243	maturo
-33244	mazza
-33245	mazze
-33246	mazzi
-33251	mazzo
-33252	media
-33253	medici
-33254	medico
-33255	medie
-33256	medio
-33261	medita
-33262	mediti
-33263	medito
-33264	medusa
-33265	meduse
-33266	meglio
-33311	mela
-33312	mele
-33313	meleto
-33314	melma
-33315	melo
-33316	membra
-33321	membri
-33322	membro
-33323	mena
-33324	menai
-33325	menano
-33326	menare
-33331	menata
-33332	menate
-33333	menati
-33334	menato
-33335	menava
-33336	menavi
-33341	menavo
-33342	meni
-33343	menino
-33344	meno
-33345	mensa
-33346	mense
-33351	menta
-33352	mente
-33353	menti
-33354	mentii
-33355	mento
-33356	mentre
-33361	merce
-33362	merci
-33363	meriti
-33364	merito
-33365	merli
-33366	merlo
-33411	mese
-33412	mesi
-33413	messa
-33414	messe
-33415	messi
-33416	messo
-33421	mesta
-33422	mestai
-33423	mesti
-33424	mesto
-33425	mete
-33426	metodi
-33431	metodo
-33432	metri
-33433	metta
-33434	mette
-33435	metti
-33436	mezza
-33441	mezze
-33442	mezzi
-33443	mezzo
-33444	mia
-33445	micce
-33446	miccia
-33451	miele
-33452	mieta
-33453	miete
-33454	mietei
-33455	mieti
-33456	miglio
-33461	milite
-33462	mille
-33463	milza
-33464	milze
-33465	mina
-33466	minata
-33511	mine
-33512	minima
-33513	minime
-33514	minimi
-33515	minimo
-33516	minori
-33521	minuta
-33522	minute
-33523	minuti
-33524	minuto
-33525	miope
-33526	miopi
-33531	mira
-33532	mirano
-33533	mirare
-33534	mirata
-33535	mirate
-33536	mirati
-33541	mirato
-33542	mirava
-33543	miravi
-33544	miravo
-33545	mire
-33546	miri
-33551	mirini
-33552	mirino
-33553	miro
-33554	mise
-33555	misera
-33556	misere
-33561	miseri
-33562	misi
-33563	mista
-33564	miste
-33565	misti
-33566	misto
-33611	misura
-33612	misuri
-33613	misuro
-33614	miti
-33615	mitiga
-33616	mitigo
-33621	mito
-33622	mobile
-33623	mobili
-33624	moda
-33625	mode
-33626	modera
-33631	moderi
-33632	modero
-33633	modi
-33634	modica
-33635	modici
-33636	modico
-33641	modo
-33642	moduli
-33643	modulo
-33644	mogano
-33645	mogli
-33646	moglie
-33651	molare
-33652	molari
-33653	moli
-33654	molla
-33655	molle
-33656	molo
-33661	molta
-33662	molte
-33663	molto
-33664	monaca
-33665	monaci
-33666	monaco
-34111	monca
-34112	monche
-34113	monchi
-34114	monco
-34115	mondi
-34116	moneta
-34121	monete
-34122	monna
-34123	monta
-34124	montai
-34125	monte
-34126	monti
-34131	mora
-34132	morali
-34133	morda
-34134	more
-34135	mori
-34136	moria
-34141	morire
-34142	moro
-34143	morra
-34144	morsa
-34145	morse
-34146	morsi
-34151	morso
-34152	morta
-34153	morte
-34154	morti
-34155	morto
-34156	mosca
-34161	mosche
-34162	mosci
-34163	mossa
-34164	mosse
-34165	mossi
-34166	mosso
-34211	mosto
-34212	mostra
-34213	mostre
-34214	mostri
-34215	mostro
-34216	motivi
-34221	motivo
-34222	moto
-34223	motore
-34224	motori
-34225	mozza
-34226	mozzai
-34231	mozzi
-34232	mozzo
-34233	mucca
-34234	mucchi
-34235	muffa
-34236	muffe
-34241	muggii
-34242	mugnai
-34243	mulini
-34244	mulino
-34245	mulo
-34246	multa
-34251	multe
-34252	mummia
-34253	munito
-34254	muoia
-34255	muoio
-34256	muore
-34261	muori
-34262	muova
-34263	muove
-34264	muovi
-34265	muovo
-34266	mura
-34311	muri
-34312	museo
-34313	musica
-34314	muso
-34315	muta
-34316	mutai
-34321	mutano
-34322	mutare
-34323	mutate
-34324	mutati
-34325	mutato
-34326	mutava
-34331	mutavi
-34332	mutavo
-34333	mute
-34334	muti
-34335	mutino
-34336	muto
-34341	nacque
-34342	nacqui
-34343	nafta
-34344	nane
-34345	nani
-34346	nano
-34351	nappa
-34352	narice
-34353	narici
-34354	narra
-34355	narrai
-34356	narri
-34361	nasale
-34362	nasali
-34363	nasce
-34364	nasco
-34365	nasi
-34366	naso
-34411	nastri
-34412	nata
-34413	natale
-34414	nati
-34415	natica
-34416	nativa
-34421	native
-34422	nativi
-34423	nativo
-34424	nato
-34425	natura
-34426	nature
-34431	nausea
-34432	navale
-34433	navali
-34434	navata
-34435	navate
-34436	nave
-34441	navi
-34442	naviga
-34443	navigo
-34444	nebbia
-34445	nebbie
-34446	negai
-34451	negano
-34452	negare
-34453	negata
-34454	negate
-34455	negati
-34456	negato
-34461	negava
-34462	negavi
-34463	negavo
-34464	negli
-34465	nego
-34466	negozi
-34511	nei
-34512	nella
-34513	nelle
-34514	nello
-34515	nemici
-34516	neo
-34521	nere
-34522	neri
-34523	nero
-34524	nervi
-34525	nervo
-34526	neutra
-34531	neutre
-34532	neutri
-34533	neutro
-34534	nevaio
-34535	neve
-34536	nevica
-34541	nevico
-34542	nidi
-34543	nido
-34544	niente
-34545	ninfa
-34546	ninfe
-34551	nipote
-34552	nipoti
-34553	nobile
-34554	nobili
-34555	noce
-34556	noci
-34561	nociva
-34562	nocive
-34563	nocivo
-34564	nodo
-34565	noi
-34566	noia
-34611	noie
-34612	noiosa
-34613	noiose
-34614	noiosi
-34615	noioso
-34616	nomade
-34621	nomadi
-34622	nome
-34623	nomi
-34624	nomina
-34625	nomine
-34626	nomini
-34631	nomino
-34632	nonna
-34633	nonne
-34634	nonni
-34635	nonno
-34636	norma
-34641	norme
-34642	nostra
-34643	nostre
-34644	nostri
-34645	nostro
-34646	notai
-34651	notaio
-34652	notare
-34653	notate
-34654	notato
-34655	notava
-34656	notavi
-34661	note
-34662	noti
-34663	notino
-34664	noto
-34665	notte
-34666	notti
-35111	nove
-35112	novizi
-35113	nozze
-35114	nubile
-35115	nubili
-35116	nuca
-35121	nuche
-35122	nuclei
-35123	nucleo
-35124	nuda
-35125	nudi
-35126	nudo
-35131	nulla
-35132	nullo
-35133	numera
-35134	numeri
-35135	numero
-35136	nunzio
-35141	nuora
-35142	nuota
-35143	nuotai
-35144	nuoti
-35145	nuoto
-35146	nuova
-35151	nuove
-35152	nuovi
-35153	nuovo
-35154	nutre
-35155	nutrii
-35156	nuvola
-35161	nuvole
-35162	oasi
-35163	oblia
-35164	oblii
-35165	oblio
-35166	oca
-35211	occhi
-35212	occhio
-35213	occupa
-35214	occupi
-35215	occupo
-35216	oceani
-35221	oceano
-35222	oche
-35223	ode
-35224	odi
-35225	odia
-35226	odiai
-35231	odiamo
-35232	odiano
-35233	odiare
-35234	odiate
-35235	odiato
-35236	odiava
-35241	odiavi
-35242	odiavo
-35243	odino
-35244	odio
-35245	odiosa
-35246	odiose
-35251	odiosi
-35252	odioso
-35253	odorai
-35254	odore
-35255	odori
-35256	odoro
-35261	offesa
-35262	offese
-35263	offesi
-35264	offeso
-35265	offra
-35266	offre
-35311	offri
-35312	offro
-35313	oggi
-35314	ogni
-35315	ognuna
-35316	ognuno
-35321	olezzi
-35322	olezzo
-35323	olia
-35324	oliai
-35325	oliamo
-35326	oliare
-35331	oliata
-35332	oliate
-35333	oliati
-35334	oliato
-35335	oliava
-35336	oliavi
-35341	oliavo
-35342	oliera
-35343	oliere
-35344	olino
-35345	oliva
-35346	olive
-35351	olmi
-35352	olmo
-35353	oltre
-35354	ombra
-35355	ombre
-35356	omeri
-35361	omero
-35362	omessa
-35363	omesse
-35364	omessi
-35365	omette
-35366	ometto
-35411	once
-35412	onda
-35413	onde
-35414	ondosa
-35415	ondose
-35416	ondosi
-35421	ondoso
-35422	ondula
-35423	onduli
-35424	ondulo
-35425	oneri
-35426	onesta
-35431	oneste
-35432	onesti
-35433	onesto
-35434	onice
-35435	onora
-35436	onorai
-35441	onore
-35442	onori
-35443	opaca
-35444	opachi
-35445	opaco
-35446	opera
-35451	operai
-35452	opere
-35453	operi
-35454	opero
-35455	opinai
-35456	oppure
-35461	opta
-35462	optai
-35463	optano
-35464	optare
-35465	optate
-35466	optati
-35511	optato
-35512	optava
-35513	optavi
-35514	optavo
-35515	opti
-35516	optino
-35521	opto
-35522	ora
-35523	orafa
-35524	orafe
-35525	orafi
-35526	orafo
-35531	orale
-35532	orali
-35533	orari
-35534	orario
-35535	orbite
-35536	orchi
-35541	orco
-35542	orda
-35543	orde
-35544	ordina
-35545	ordine
-35546	ordini
-35551	ordino
-35552	ordire
-35553	ordita
-35554	ordite
-35555	orditi
-35556	ordito
-35561	ordiva
-35562	ordivi
-35563	ordivo
-35564	oretta
-35565	orfana
-35566	orfane
-35611	orfani
-35612	orfano
-35613	organi
-35614	organo
-35615	origli
-35616	orla
-35621	orlai
-35622	orlano
-35623	orlare
-35624	orlata
-35625	orlate
-35626	orlati
-35631	orlato
-35632	orlava
-35633	orlavi
-35634	orlavo
-35635	orli
-35636	orlino
-35641	orlo
-35642	orma
-35643	orme
-35644	orna
-35645	ornai
-35646	ornano
-35651	ornare
-35652	ornata
-35653	ornate
-35654	ornati
-35655	ornato
-35656	ornava
-35661	ornavi
-35662	ornavo
-35663	orni
-35664	orno
-35665	oro
-35666	orrore
-36111	orrori
-36112	orsa
-36113	orse
-36114	orso
-36115	orti
-36116	ortica
-36121	orto
-36122	osa
-36123	osai
-36124	osammo
-36125	osando
-36126	osano
-36131	osare
-36132	osasse
-36133	osassi
-36134	osaste
-36135	osasti
-36136	osata
-36141	osate
-36142	osati
-36143	osato
-36144	osava
-36145	osavi
-36146	osavo
-36151	oscena
-36152	oscene
-36153	osceni
-36154	osceno
-36155	oscura
-36156	oscure
-36161	oscuri
-36162	oscuro
-36163	oserai
-36164	oserei
-36165	osi
-36166	osiamo
-36211	osiate
-36212	osino
-36213	oso
-36214	ospita
-36215	ospite
-36216	ospiti
-36221	ospito
-36222	ospizi
-36223	ossi
-36224	osso
-36225	osti
-36226	ostile
-36231	ostili
-36232	otre
-36233	otri
-36234	ottava
-36235	ottici
-36236	ottima
-36241	ottime
-36242	ottimi
-36243	ottimo
-36244	otto
-36245	ottone
-36246	ottura
-36251	otturi
-36252	otturo
-36253	ottusa
-36254	ottuse
-36255	ottusi
-36256	ottuso
-36261	ovale
-36262	ovali
-36263	ovatta
-36264	ovile
-36265	ovvero
-36266	ovvi
-36311	ovvia
-36312	ovvio
-36313	ozia
-36314	oziai
-36315	oziamo
-36316	oziano
-36321	oziare
-36322	oziate
-36323	oziava
-36324	oziavi
-36325	oziavo
-36326	ozino
-36331	ozio
-36332	oziose
-36333	oziosi
-36334	pacata
-36335	pacate
-36336	pacato
-36341	pacchi
-36342	pacco
-36343	pace
-36344	padre
-36345	padri
-36346	paese
-36351	paesi
-36352	paga
-36353	pagai
-36354	pagana
-36355	pagane
-36356	pagani
-36361	pagano
-36362	pagare
-36363	pagata
-36364	pagate
-36365	pagati
-36366	pagato
-36411	pagava
-36412	pagavi
-36413	pagavo
-36414	pagina
-36415	paglia
-36416	paglie
-36421	pago
-36422	paia
-36423	paio
-36424	paiono
-36425	palati
-36426	palato
-36431	palchi
-36432	palco
-36433	pale
-36434	palesa
-36435	palese
-36436	palesi
-36441	paleso
-36442	pali
-36443	palla
-36444	palma
-36445	palme
-36446	palo
-36451	palpa
-36452	palpai
-36453	palpi
-36454	palpo
-36455	palude
-36456	panca
-36461	pance
-36462	panche
-36463	pancia
-36464	pane
-36465	pani
-36466	panico
-36511	panino
-36512	panna
-36513	panni
-36514	panno
-36515	papera
-36516	papere
-36521	papero
-36522	pappa
-36523	pappe
-36524	parata
-36525	parate
-36526	parati
-36531	parchi
-36532	parco
-36533	pare
-36534	pareri
-36535	paresi
-36536	parete
-36541	pareva
-36542	pari
-36543	parla
-36544	parlai
-36545	parli
-36546	parola
-36551	parole
-36552	parsa
-36553	parso
-36554	parte
-36555	parti
-36556	parto
-36561	parve
-36562	pasqua
-36563	pasque
-36564	passa
-36565	passai
-36566	passi
-36611	passo
-36612	pasta
-36613	paste
-36614	pasti
-36615	pasto
-36616	patria
-36621	patrie
-36622	patta
-36623	patti
-36624	patto
-36625	paure
-36626	pausa
-36631	pause
-36632	pavone
-36633	pavoni
-36634	pazza
-36635	pazze
-36636	pazzi
-36641	pazzia
-36642	pazzie
-36643	pazzo
-36644	pecca
-36645	peccai
-36646	pecchi
-36651	pece
-36652	pecore
-36653	pedale
-36654	pedali
-36655	pedana
-36656	pedane
-36661	pedata
-36662	pedate
-36663	pedice
-36664	pedina
-36665	pedine
-36666	pedini
-41111	pedino
-41112	pedone
-41113	pedoni
-41114	peggio
-41115	pegni
-41116	pegno
-41121	pela
-41122	pelai
-41123	pelano
-41124	pelare
-41125	pelata
-41126	pelate
-41131	pelati
-41132	pelato
-41133	pelava
-41134	pelavi
-41135	peli
-41136	pelino
-41141	pelle
-41142	pelli
-41143	pelo
-41144	pelosa
-41145	pelose
-41146	pelosi
-41151	peloso
-41152	pena
-41153	penai
-41154	penano
-41155	penare
-41156	penata
-41161	penate
-41162	penati
-41163	penato
-41164	penava
-41165	penavi
-41166	penavo
-41211	pende
-41212	pendei
-41213	pendi
-41214	pendo
-41215	penino
-41216	penna
-41221	penne
-41222	penosa
-41223	penose
-41224	penosi
-41225	pensa
-41226	pensi
-41231	pera
-41232	perde
-41233	pere
-41234	peri
-41235	perita
-41236	perite
-41241	periti
-41242	perito
-41243	perla
-41244	perle
-41245	perni
-41246	perno
-41251	pero
-41252	perse
-41253	persi
-41254	perso
-41255	pesa
-41256	pesai
-41261	pesano
-41262	pesare
-41263	pesata
-41264	pesate
-41265	pesati
-41266	pesato
-41311	pesava
-41312	pesavi
-41313	pesavo
-41314	pesca
-41315	pescai
-41316	pesce
-41321	pesche
-41322	peschi
-41323	pesci
-41324	pesco
-41325	pese
-41326	pesi
-41331	pesino
-41332	peso
-41333	peste
-41334	pesti
-41335	pesto
-41336	petali
-41341	petalo
-41342	petti
-41343	petto
-41344	pezza
-41345	pezze
-41346	pezzi
-41351	pezzo
-41352	pia
-41353	piace
-41354	piaci
-41355	piaga
-41356	piaghe
-41361	pialla
-41362	pialle
-41363	piana
-41364	piane
-41365	pianga
-41366	piange
-41411	piangi
-41412	piango
-41413	piani
-41414	piano
-41415	pianse
-41416	pianta
-41421	piante
-41422	pianti
-41423	pianto
-41424	piatta
-41425	piatte
-41426	piatti
-41431	piazza
-41432	piazze
-41433	picchi
-41434	picco
-41435	pie
-41436	piede
-41441	piedi
-41442	piega
-41443	pieghe
-41444	piena
-41445	piene
-41446	pieni
-41451	pietre
-41452	pigli
-41453	piglia
-41454	piglio
-41455	pigre
-41456	pigro
-41461	pii
-41462	pila
-41463	pile
-41464	pilone
-41465	pilota
-41466	piloti
-41511	pineta
-41512	pinete
-41513	pini
-41514	pinna
-41515	pinne
-41516	pino
-41521	pinta
-41522	pinte
-41523	pinza
-41524	pinze
-41525	pio
-41526	piogge
-41531	piomba
-41532	piombi
-41533	piombo
-41534	pioppi
-41535	pioppo
-41536	piove
-41541	piovve
-41542	pipa
-41543	pirata
-41544	pirati
-41545	pista
-41546	piste
-41551	pitoni
-41552	piuma
-41553	piume
-41554	pizza
-41555	pizze
-41556	pizzi
-41561	pizzo
-41562	placca
-41563	placco
-41564	plance
-41565	plasma
-41566	plasmi
-41611	plasmo
-41612	platea
-41613	platee
-41614	plebe
-41615	plebi
-41616	plichi
-41621	plico
-41622	poca
-41623	poche
-41624	pochi
-41625	poco
-41626	podere
-41631	poderi
-41632	poema
-41633	poemi
-41634	poesia
-41635	poesie
-41636	poeta
-41641	poggi
-41642	poggio
-41643	poi
-41644	poiana
-41645	polare
-41646	polari
-41651	poli
-41652	polipi
-41653	polipo
-41654	pollai
-41655	polli
-41656	pollo
-41661	polo
-41662	polpa
-41663	polpe
-41664	polsi
-41665	polso
-41666	pomata
-42111	pomate
-42112	pomi
-42113	pomice
-42114	pomici
-42115	pomo
-42116	pompa
-42121	pompe
-42122	pompi
-42123	pompo
-42124	pone
-42125	poneva
-42126	ponte
-42131	porge
-42132	pori
-42133	porlo
-42134	poro
-42135	porosa
-42136	porose
-42141	poroso
-42142	porrai
-42143	porre
-42144	porri
-42145	porro
-42146	porse
-42151	porta
-42152	portai
-42153	porte
-42154	porto
-42155	porvi
-42156	posa
-42161	posai
-42162	posare
-42163	posata
-42164	posate
-42165	posati
-42166	posato
-42211	posava
-42212	posavi
-42213	posavo
-42214	pose
-42215	posi
-42216	posino
-42221	poso
-42222	possa
-42223	posso
-42224	posta
-42225	posti
-42226	posto
-42231	potare
-42232	potei
-42233	potere
-42234	poteva
-42235	potevi
-42236	potevo
-42241	potrai
-42242	potrei
-42243	potuta
-42244	potuti
-42245	potuto
-42246	povera
-42251	povere
-42252	poveri
-42253	povero
-42254	pozza
-42255	pozze
-42256	pozzi
-42261	pozzo
-42262	pranzi
-42263	pranzo
-42264	prati
-42265	prato
-42266	preda
-42311	predai
-42312	prede
-42313	predi
-42314	predii
-42315	predo
-42316	prega
-42321	pregai
-42322	pregi
-42323	pregio
-42324	prema
-42325	preme
-42326	premei
-42331	premi
-42332	premia
-42333	prenda
-42334	prende
-42335	prendi
-42336	prendo
-42341	prese
-42342	presi
-42343	preso
-42344	pressa
-42345	pressi
-42346	presso
-42351	presta
-42352	presti
-42353	presto
-42354	prete
-42355	preti
-42356	prezzi
-42361	prezzo
-42362	prima
-42363	prime
-42364	primi
-42365	primo
-42366	priori
-42411	prisma
-42412	priva
-42413	prive
-42414	privi
-42415	privo
-42416	prode
-42421	prodi
-42422	prole
-42423	pronte
-42424	pronti
-42425	pronto
-42426	propri
-42431	prosa
-42432	prose
-42433	prova
-42434	provai
-42435	prove
-42436	provi
-42441	provo
-42442	prugna
-42443	prugne
-42444	pseudo
-42445	psiche
-42446	pudica
-42451	pudici
-42452	pudico
-42453	pudore
-42454	pudori
-42455	pugile
-42456	pugni
-42461	pulce
-42462	pulci
-42463	pulii
-42464	pulita
-42465	pulite
-42466	puliti
-42511	pulito
-42512	puliva
-42513	pulivi
-42514	pulivo
-42515	pulsa
-42516	pulsai
-42521	pulsi
-42522	punge
-42523	pungi
-42524	pungo
-42525	punsi
-42526	puntai
-42531	punte
-42532	punti
-42533	punto
-42534	puoi
-42535	pura
-42536	pure
-42541	purga
-42542	purgai
-42543	purgo
-42544	puri
-42545	puro
-42546	puzzai
-42551	puzzi
-42552	puzzo
-42553	quadre
-42554	quadri
-42555	quadro
-42556	quale
-42561	quali
-42562	quando
-42563	quante
-42564	quanti
-42565	quanto
-42566	quarzi
-42611	quarzo
-42612	quasi
-42613	quasar
-42614	quei
-42615	quella
-42616	quello
-42621	querce
-42622	questa
-42623	queste
-42624	questi
-42625	questo
-42626	qui
-42631	quieta
-42632	quiete
-42633	quieti
-42634	quieto
-42635	quindi
-42636	quinto
-42641	quota
-42642	quotai
-42643	quote
-42644	quoti
-42645	quoto
-42646	rabbia
-42651	rabbie
-42652	rada
-42653	rade
-42654	radi
-42655	radia
-42656	radiai
-42661	radice
-42662	radici
-42663	radino
-42664	radio
-42665	rado
-42666	raduna
-43111	raduni
-43112	raduno
-43113	radura
-43114	radure
-43115	raggi
-43116	raggio
-43121	ragno
-43122	ramai
-43123	ramaio
-43124	rami
-43125	rampa
-43126	rampe
-43131	rana
-43132	ranci
-43133	rancio
-43134	rane
-43135	rango
-43136	rapa
-43141	rapace
-43142	rapaci
-43143	rapai
-43144	rapano
-43145	rapare
-43146	rapata
-43151	rapate
-43152	rapati
-43153	rapato
-43154	rapava
-43155	rapavi
-43156	rapavo
-43161	rape
-43162	rapida
-43163	rapide
-43164	rapidi
-43165	rapido
-43166	rapino
-43211	rapire
-43212	rapita
-43213	rapite
-43214	rapiti
-43215	rapito
-43216	rapiva
-43221	rapivi
-43222	rapivo
-43223	rapo
-43224	rare
-43225	rari
-43226	raro
-43231	rasa
-43232	rase
-43233	rasi
-43234	raso
-43235	rasoi
-43236	rasoio
-43241	raspa
-43242	raspai
-43243	raspi
-43244	raspo
-43245	rata
-43246	rate
-43251	ratti
-43252	ratto
-43253	rauca
-43254	rauche
-43255	rauchi
-43256	rauco
-43261	razza
-43262	razze
-43263	razzi
-43264	razzo
-43265	rea
-43266	reale
-43311	reali
-43312	reati
-43313	reato
-43314	recai
-43315	recare
-43316	recata
-43321	recate
-43322	recati
-43323	recato
-43324	recava
-43325	recavi
-43326	recavo
-43331	recede
-43332	recedi
-43333	recedo
-43334	rechi
-43335	recide
-43336	recidi
-43341	recido
-43342	recisa
-43343	recise
-43344	recisi
-43345	reciso
-43346	recita
-43351	recite
-43352	reciti
-43353	recito
-43354	redige
-43355	redigi
-43356	redigo
-43361	redine
-43362	redini
-43363	reduci
-43364	ree
-43365	regala
-43366	regale
-43411	regali
-43412	regalo
-43413	regate
-43414	regge
-43415	reggi
-43416	reggia
-43421	reggo
-43422	regime
-43423	regimi
-43424	regina
-43425	regine
-43426	regnai
-43431	regni
-43432	regola
-43433	regole
-43434	regoli
-43435	regolo
-43436	rei
-43441	relega
-43442	relego
-43443	rema
-43444	remai
-43445	remano
-43446	remare
-43451	remata
-43452	remate
-43453	remati
-43454	remato
-43455	remava
-43456	remavi
-43461	remavo
-43462	remi
-43463	remino
-43464	remo
-43465	remota
-43466	remote
-43511	remoti
-43512	remoto
-43513	renda
-43514	rende
-43515	rendi
-43516	rendo
-43521	rene
-43522	reni
-43523	renna
-43524	renne
-43525	reo
-43526	reputa
-43531	reputi
-43532	reputo
-43533	resa
-43534	rese
-43535	resero
-43536	resi
-43541	resina
-43542	resine
-43543	reso
-43544	ressa
-43545	resse
-43546	ressi
-43551	resta
-43552	restai
-43553	resti
-43554	restia
-43555	restie
-43556	restii
-43561	restio
-43562	resto
-43563	retate
-43564	rete
-43565	reti
-43566	retro
-43611	retta
-43612	rette
-43613	retto
-43614	revoca
-43615	revoco
-43616	rialza
-43621	rialzo
-43622	ricada
-43623	ricade
-43624	ricado
-43625	ricama
-43626	ricami
-43631	ricava
-43632	ricavi
-43633	ricavo
-43634	ricca
-43635	ricche
-43636	ricchi
-43641	ricci
-43642	riccio
-43643	ricco
-43644	riceva
-43645	riceve
-43646	ricevi
-43651	ricevo
-43652	ricino
-43653	ride
-43654	ridere
-43655	ridete
-43656	rideva
-43661	ridevo
-43662	ridi
-43663	ridici
-43664	rido
-43665	ridono
-43666	riempi
-44111	riesca
-44112	riesce
-44113	riesci
-44114	riesco
-44115	riga
-44116	righe
-44121	rigide
-44122	rigidi
-44123	rigido
-44124	rigo
-44125	rigore
-44126	rigori
-44131	rilega
-44132	rilego
-44133	rileva
-44134	rilevi
-44135	rilevo
-44136	rima
-44141	rimane
-44142	rimani
-44143	rimase
-44144	rimasi
-44145	rime
-44146	rimedi
-44151	rimise
-44152	rimisi
-44153	rinvia
-44154	rinvii
-44155	rinvio
-44156	rione
-44161	rioni
-44162	ripaga
-44163	ripago
-44164	ripara
-44165	ripari
-44166	riparo
-44211	ripeta
-44212	ripete
-44213	ripeti
-44214	ripeto
-44215	ripida
-44216	ripide
-44221	ripido
-44222	riposa
-44223	riposi
-44224	riposo
-44225	ripudi
-44226	risa
-44231	risaia
-44232	risana
-44233	risani
-44234	risano
-44235	risata
-44236	risate
-44241	rischi
-44242	rise
-44243	risero
-44244	risi
-44245	risma
-44246	risme
-44251	risona
-44252	risoni
-44253	risono
-44254	rissa
-44255	risse
-44256	riti
-44261	ritira
-44262	ritiri
-44263	ritiro
-44264	ritmi
-44265	ritmo
-44266	rito
-44311	ritta
-44312	ritte
-44313	ritti
-44314	ritto
-44315	riunii
-44316	riva
-44321	rivale
-44322	rivali
-44323	rive
-44324	riveda
-44325	rivede
-44326	rivedi
-44331	rivedo
-44332	rivela
-44333	riveli
-44334	rivelo
-44335	rocce
-44336	roccia
-44341	roma
-44342	romba
-44343	rombi
-44344	rombo
-44345	rompa
-44346	rompe
-44351	rompi
-44352	rompo
-44353	ronda
-44354	ronde
-44355	ronza
-44356	ronzai
-44361	ronzi
-44362	ronzo
-44363	rosa
-44364	rosari
-44365	rose
-44366	rosola
-44411	rosolo
-44412	rospi
-44413	rospo
-44414	rossa
-44415	rosse
-44416	rossi
-44421	rosso
-44422	rotaia
-44423	rotaie
-44424	rotola
-44425	rotoli
-44426	rotolo
-44431	rotta
-44432	rotte
-44433	rotti
-44434	rotto
-44435	rovi
-44436	rovina
-44441	rovine
-44442	rovini
-44443	rovino
-44444	rovo
-44445	rozza
-44446	rozze
-44451	rozzi
-44452	ruba
-44453	rubai
-44454	rubano
-44455	rubare
-44456	rubata
-44461	rubate
-44462	rubati
-44463	rubato
-44464	rubava
-44465	rubavi
-44466	rubavo
-44511	rubi
-44512	rubini
-44513	rubino
-44514	rubo
-44515	ruga
-44516	rughe
-44521	rulla
-44522	rullai
-44523	rulli
-44524	rullii
-44525	rullio
-44526	rullo
-44531	rumina
-44532	rumini
-44533	rumore
-44534	rumori
-44535	ruolo
-44536	ruota
-44541	ruote
-44542	rupe
-44543	rupi
-44544	rurale
-44545	rurali
-44546	russa
-44551	russi
-44552	russo
-44553	ruvida
-44554	ruvide
-44555	ruvidi
-44556	ruvido
-44561	sabato
-44562	sabbia
-44563	sacca
-44564	sacche
-44565	sacchi
-44566	sacco
-44611	sacra
-44612	sacre
-44613	sacro
-44614	sagace
-44615	sagaci
-44616	sagge
-44621	saggi
-44622	saggia
-44623	saggio
-44624	sai
-44625	sala
-44626	salai
-44631	salame
-44632	salami
-44633	salano
-44634	salare
-44635	salata
-44636	salate
-44641	salava
-44642	salavi
-44643	salavo
-44644	salda
-44645	saldai
-44646	salde
-44651	saldi
-44652	saldo
-44653	sale
-44654	salga
-44655	sali
-44656	salice
-44661	salici
-44662	salino
-44663	salire
-44664	salita
-44665	salite
-44666	saliti
-45111	salito
-45112	saliva
-45113	salivo
-45114	salma
-45115	salme
-45116	salmi
-45121	salpa
-45122	salpai
-45123	salpi
-45124	salpo
-45125	salsa
-45126	salse
-45131	salta
-45132	saltai
-45133	salti
-45134	salto
-45135	salume
-45136	salumi
-45141	saluta
-45142	salute
-45143	saluti
-45144	saluto
-45145	salva
-45146	salvai
-45151	salve
-45152	salvia
-45153	salvo
-45154	sana
-45155	sanai
-45156	sanare
-45161	sanata
-45162	sanati
-45163	sanato
-45164	sanava
-45165	sanavi
-45166	sanavo
-45211	sane
-45212	sangue
-45213	sani
-45214	sanino
-45215	sanno
-45216	sano
-45221	santa
-45222	sante
-45223	sapere
-45224	sapete
-45225	sapeva
-45226	sapevi
-45231	sapevo
-45232	sapone
-45233	saponi
-45234	sapore
-45235	sapori
-45236	sappi
-45241	sappia
-45242	saprai
-45243	saputo
-45244	sarai
-45245	sarei
-45246	sarta
-45251	sarte
-45252	sarti
-45253	sarto
-45254	sassi
-45255	sasso
-45256	satira
-45261	satire
-45262	sazia
-45263	saziai
-45264	sazie
-45265	sazino
-45266	sazio
-45311	sbagli
-45312	sballa
-45313	sballi
-45314	sballo
-45315	sbalza
-45316	sbalzi
-45321	sbarca
-45322	sbarco
-45323	sbarra
-45324	sbarre
-45325	sbarro
-45326	sbatta
-45331	sbatte
-45332	sbatti
-45333	sbava
-45334	sbavai
-45335	sbavi
-45336	sbavo
-45341	sbenda
-45342	sbendo
-45343	sbirci
-45344	sbocci
-45345	sbocco
-45346	sbrana
-45351	sbrano
-45352	sbriga
-45353	sbrigo
-45354	sbucci
-45355	sbuffa
-45356	sbuffi
-45361	scacci
-45362	scada
-45363	scade
-45364	scadi
-45365	scado
-45366	scafi
-45411	scafo
-45412	scala
-45413	scalai
-45414	scalda
-45415	scaldi
-45416	scaldo
-45421	scale
-45422	scali
-45423	scalo
-45424	scalza
-45425	scalze
-45426	scalzi
-45431	scalzo
-45432	scambi
-45433	scampa
-45434	scampi
-45435	scampo
-45436	scappa
-45441	scappi
-45442	scappo
-45443	scarpa
-45444	scarpe
-45445	scarse
-45446	scarsi
-45451	scarso
-45452	scarta
-45453	scarto
-45454	scassa
-45455	scassi
-45456	scasso
-45461	scatta
-45462	scatto
-45463	scava
-45464	scavi
-45465	scavo
-45466	scegli
-45511	scelga
-45512	scelgo
-45513	scelse
-45514	scelsi
-45515	scelta
-45516	scelte
-45521	scelti
-45522	scelto
-45523	scempi
-45524	scena
-45525	scenda
-45526	scende
-45531	scendi
-45532	scendo
-45533	scene
-45534	scesa
-45535	scese
-45536	scesi
-45541	sceso
-45542	scheda
-45543	schede
-45544	schema
-45545	schemi
-45546	schifo
-45551	sci
-45552	scia
-45553	sciame
-45554	sciami
-45555	scie
-45556	sciupa
-45561	sciupi
-45562	sciupo
-45563	scogli
-45564	scoli
-45565	scolo
-45566	sconta
-45611	sconti
-45612	sconto
-45613	scopi
-45614	scopo
-45615	scoppi
-45616	scopre
-45621	scopri
-45622	scopro
-45623	scorci
-45624	scorda
-45625	scordo
-45626	scorga
-45631	scorge
-45632	scorgi
-45633	scorgo
-45634	scorra
-45635	scorre
-45636	scorri
-45641	scorro
-45642	scorse
-45643	scorta
-45644	scorte
-45645	scorti
-45646	scorto
-45651	scorza
-45652	scorze
-45653	scossa
-45654	scosse
-45655	scossi
-45656	scosta
-45661	scosti
-45662	scosto
-45663	scotta
-45664	scotti
-45665	scotto
-45666	scovai
-46111	screma
-46112	scremi
-46113	scremo
-46114	scriva
-46115	scrivi
-46116	scrivo
-46121	scruta
-46122	scruto
-46123	scudi
-46124	scudo
-46125	scuola
-46126	scuote
-46131	scura
-46132	scure
-46133	scuri
-46134	scuro
-46135	scusa
-46136	scusai
-46141	scusi
-46142	scuso
-46143	sdegna
-46144	sdegni
-46145	sdoppi
-46146	sdraie
-46151	secca
-46152	secche
-46153	secchi
-46154	secoli
-46155	secolo
-46156	sedai
-46161	sedano
-46162	sedare
-46163	sedate
-46164	sedati
-46165	sedato
-46166	sedava
-46211	sedavi
-46212	sede
-46213	sedete
-46214	sedeva
-46215	sedevo
-46216	sedi
-46221	sedia
-46222	sedie
-46223	sedile
-46224	sedili
-46225	sedino
-46226	sedute
-46231	seduti
-46232	seduto
-46233	segale
-46234	seggi
-46235	seggio
-46236	seghe
-46241	segna
-46242	segni
-46243	segno
-46244	segue
-46245	segugi
-46246	seguii
-46251	seguo
-46252	sei
-46253	selci
-46254	selcia
-46255	selcio
-46256	sella
-46261	selle
-46262	selva
-46263	selve
-46264	sembra
-46265	sembri
-46266	sembro
-46311	seme
-46312	semi
-46313	semina
-46314	semine
-46315	semini
-46316	semino
-46321	sempre
-46322	senapa
-46323	senape
-46324	senati
-46325	senato
-46326	seni
-46331	senno
-46332	seno
-46333	sensi
-46334	senso
-46335	senta
-46336	sente
-46341	senti
-46342	sentii
-46343	sento
-46344	senza
-46345	separa
-46346	separi
-46351	separo
-46352	seppi
-46353	seppie
-46354	sera
-46355	serata
-46356	serba
-46361	serbi
-46362	serbo
-46363	sere
-46364	serena
-46365	serene
-46366	sereni
-46411	sereno
-46412	seri
-46413	seria
-46414	serie
-46415	serio
-46416	serra
-46421	serrai
-46422	serre
-46423	serri
-46424	serva
-46425	serve
-46426	servi
-46431	servo
-46432	sessi
-46433	seta
-46434	sete
-46435	setola
-46436	setole
-46441	setta
-46442	severa
-46443	severe
-46444	severi
-46445	severo
-46446	sfama
-46451	sfamai
-46452	sfami
-46453	sfamo
-46454	sfarzi
-46455	sfarzo
-46456	sfasci
-46461	sfatta
-46462	sfatte
-46463	sfatti
-46464	sfatto
-46465	sfera
-46466	sfere
-46511	sfibra
-46512	sfibri
-46513	sfibro
-46514	sfida
-46515	sfidai
-46516	sfide
-46521	sfidi
-46522	sfido
-46523	sfila
-46524	sfilai
-46525	sfilo
-46526	sfinge
-46531	sfingi
-46532	sfinii
-46533	sfiora
-46534	sfiori
-46535	sfioro
-46536	sfitta
-46541	sfitte
-46542	sfitti
-46543	sfitto
-46544	sfocia
-46545	sfocio
-46546	sfogai
-46551	sfogli
-46552	sfogo
-46553	sfonda
-46554	sfondi
-46555	sfondo
-46556	sforzi
-46561	sforzo
-46562	sfregi
-46563	sfrego
-46564	sgelo
-46565	sgobba
-46566	sgobbi
-46611	sgobbo
-46612	sgorga
-46613	sgorgo
-46614	sgrana
-46615	sgrani
-46616	sgrano
-46621	sgrava
-46622	sgravi
-46623	sgravo
-46624	sgrida
-46625	sgridi
-46626	sgrido
-46631	sia
-46632	siamo
-46633	siano
-46634	siate
-46635	sibila
-46636	sibili
-46641	sibilo
-46642	sicari
-46643	sicura
-46644	sicure
-46645	sicuri
-46646	sicuro
-46651	sidro
-46652	sieda
-46653	siede
-46654	siedi
-46655	siedo
-46656	siepe
-46661	siepi
-46662	sieri
-46663	siero
-46664	siesta
-46665	siete
-46666	sifone
-51111	sifoni
-51112	sigari
-51113	sigaro
-51114	sigla
-51115	sigle
-51116	sii
-51121	silura
-51122	siluri
-51123	siluro
-51124	simile
-51125	simili
-51126	simula
-51131	simuli
-51132	simulo
-51133	sino
-51134	sipari
-51135	sirene
-51136	situa
-51141	situai
-51142	situo
-51143	slacci
-51144	slanci
-51145	slargo
-51146	slavo
-51151	sleale
-51152	sleali
-51153	slega
-51154	slegai
-51155	slego
-51156	slitta
-51161	slitte
-51162	slitti
-51163	slitto
-51164	sloga
-51165	slogo
-51166	smacco
-51211	smalta
-51212	smalti
-51213	smalto
-51214	smania
-51215	smanie
-51216	smessa
-51221	smesse
-51222	smessi
-51223	smesso
-51224	smetta
-51225	smette
-51226	smetti
-51231	smetto
-51232	smezza
-51233	smezzi
-51234	smezzo
-51235	smilza
-51236	smilze
-51241	smilzi
-51242	smilzo
-51243	smise
-51244	smisi
-51245	smonta
-51246	smonto
-51251	smorta
-51252	smorte
-51253	smorti
-51254	smorto
-51255	smorza
-51256	smorzi
-51261	smorzo
-51262	smossa
-51263	smosse
-51264	smossi
-51265	smosso
-51266	smuova
-51311	smuove
-51312	smuovi
-51313	smuovo
-51314	snoda
-51315	snodai
-51316	snodi
-51321	snodo
-51322	soave
-51323	soavi
-51324	sobri
-51325	sobria
-51326	sobrie
-51331	sobrio
-51332	soci
-51333	socio
-51334	soda
-51335	sode
-51336	sodi
-51341	sodio
-51342	sodo
-51343	soffi
-51344	soffia
-51345	soffio
-51346	soffra
-51351	soffre
-51352	soffro
-51353	sogna
-51354	sognai
-51355	sogni
-51356	sogno
-51361	sola
-51362	solai
-51363	solaio
-51364	solca
-51365	solcai
-51366	solchi
-51411	solco
-51412	sole
-51413	soli
-51414	solida
-51415	solide
-51416	solidi
-51421	solido
-51422	solite
-51423	soliti
-51424	solito
-51425	solo
-51426	somma
-51431	somme
-51432	sommi
-51433	sommo
-51434	sonda
-51435	sondai
-51436	sonde
-51441	sondi
-51442	sondo
-51443	sonni
-51444	sonno
-51445	sono
-51446	sonora
-51451	sonore
-51452	sonori
-51453	sonoro
-51454	sopii
-51455	sopra
-51456	sorcio
-51461	sorda
-51462	sorde
-51463	sordi
-51464	sorge
-51465	sorse
-51466	sorsi
-51511	sorso
-51512	sorte
-51513	sorto
-51514	sosia
-51515	sosta
-51516	sostai
-51521	soste
-51522	sosti
-51523	sosto
-51524	sotto
-51525	spacca
-51526	spade
-51531	spago
-51532	spalla
-51533	spalle
-51534	spalma
-51535	spalmi
-51536	spalmo
-51541	spanda
-51542	spande
-51543	spandi
-51544	spando
-51545	spanna
-51546	spanne
-51551	spara
-51552	sparai
-51553	spari
-51554	sparii
-51555	sparla
-51556	sparli
-51561	sparlo
-51562	sparo
-51563	sparsa
-51564	sparse
-51565	sparsi
-51566	sparso
-51611	spazi
-51612	spazia
-51613	spazio
-51614	spazza
-51615	spazzi
-51616	spazzo
-51621	specie
-51622	speck
-51623	spedii
-51624	spegne
-51625	spegni
-51626	spella
-51631	spelli
-51632	spello
-51633	spende
-51634	spendo
-51635	spenga
-51636	spengo
-51641	spensi
-51642	spenta
-51643	spente
-51644	spenti
-51645	spento
-51646	spera
-51651	sperai
-51652	sperda
-51653	sperde
-51654	sperdi
-51655	sperdo
-51656	spersa
-51661	sperso
-51662	speri
-51663	spero
-51664	spesa
-51665	spesai
-51666	spese
-52111	spesi
-52112	speso
-52113	spesso
-52114	spetta
-52115	spetto
-52116	spezia
-52121	spezie
-52122	spezza
-52123	spezzi
-52124	spezzo
-52125	spia
-52126	spiana
-52131	spiani
-52132	spiano
-52133	spicca
-52134	spicco
-52135	spie
-52136	spiedi
-52141	spiedo
-52142	spiega
-52143	spiego
-52144	spiga
-52145	spighe
-52146	spilla
-52151	spilli
-52152	spina
-52153	spine
-52154	spinge
-52155	spingi
-52156	spingo
-52161	spinse
-52162	spinta
-52163	spinte
-52164	spinti
-52165	spinto
-52166	spira
-52211	spirai
-52212	spiri
-52213	spiro
-52214	spogli
-52215	spola
-52216	spole
-52221	sponda
-52222	sponde
-52223	sporco
-52224	sporga
-52225	sporge
-52226	sporgi
-52231	sporgo
-52232	sporse
-52233	sporta
-52234	sporte
-52235	sporti
-52236	sporto
-52241	sposa
-52242	spose
-52243	sposi
-52244	sposo
-52245	sposta
-52246	sposti
-52251	sposto
-52252	spregi
-52253	sprema
-52254	spreme
-52255	spremi
-52256	spremo
-52261	sprona
-52262	sproni
-52263	sprono
-52264	spugna
-52265	spugne
-52266	spuma
-52311	spume
-52312	spunta
-52313	spunti
-52314	spunto
-52315	sputa
-52316	sputi
-52321	sputo
-52322	squali
-52323	squalo
-52324	squama
-52325	squame
-52326	sta
-52331	stacca
-52332	stacco
-52333	stadi
-52334	stadio
-52335	staffa
-52336	staffe
-52341	stagni
-52342	stagno
-52343	stai
-52344	stalla
-52345	stalle
-52346	stammi
-52351	stampa
-52352	stampe
-52353	stampi
-52354	stampo
-52355	stana
-52356	stanai
-52361	stanca
-52362	stanco
-52363	stando
-52364	stani
-52365	stanno
-52366	stano
-52411	stanza
-52412	stanze
-52413	stanzi
-52414	stappa
-52415	stappi
-52416	stappo
-52421	starai
-52422	starci
-52423	starei
-52424	staro
-52425	starti
-52426	state
-52431	stati
-52432	stato
-52433	statua
-52434	statue
-52435	stavi
-52436	stavo
-52441	stazza
-52442	stazze
-52443	stazzi
-52444	stazzo
-52445	stecca
-52446	steli
-52451	stella
-52452	stelle
-52453	stelo
-52454	stemmi
-52455	stenda
-52456	stende
-52461	stendi
-52462	stendo
-52463	stenta
-52464	stenti
-52465	stento
-52466	steppa
-52511	steppe
-52512	sterco
-52513	sterno
-52514	sterza
-52515	sterzi
-52516	sterzo
-52521	stesa
-52522	stese
-52523	stesi
-52524	steso
-52525	stessa
-52526	stesse
-52531	stessi
-52532	stesso
-52533	stette
-52534	stia
-52535	stiano
-52536	stile
-52541	stili
-52542	stima
-52543	stimai
-52544	stime
-52545	stimi
-52546	stimo
-52551	stinco
-52552	stira
-52553	stirai
-52554	stiri
-52555	stiro
-52556	stirpe
-52561	stirpi
-52562	stiva
-52563	stivai
-52564	stive
-52565	stivo
-52566	stizza
-52611	sto
-52612	stoffa
-52613	stoffe
-52614	stola
-52615	stole
-52616	stona
-52621	stonai
-52622	stoni
-52623	stono
-52624	stoppa
-52625	stoppe
-52626	storia
-52631	storie
-52632	stormi
-52633	stormo
-52634	storte
-52635	storti
-52636	strada
-52641	strade
-52642	strage
-52643	stragi
-52644	strana
-52645	strane
-52646	strani
-52651	strano
-52652	strati
-52653	strato
-52654	strida
-52655	stride
-52656	stridi
-52661	strido
-52662	strofa
-52663	strofe
-52664	sua
-52665	subito
-52666	succhi
-53111	succo
-53112	suda
-53113	sudai
-53114	sudano
-53115	sudare
-53116	sudata
-53121	sudate
-53122	sudati
-53123	sudava
-53124	sudavi
-53125	sudavo
-53126	sudi
-53131	sudice
-53132	sudici
-53133	sudino
-53134	sudo
-53135	sudore
-53136	sudori
-53141	sue
-53142	sugli
-53143	sui
-53144	suini
-53145	suino
-53146	sulla
-53151	sulle
-53152	sullo
-53153	sunto
-53154	suo
-53155	suoi
-53156	suola
-53161	suole
-53162	suona
-53163	suonai
-53164	suoni
-53165	suono
-53166	suora
-53211	suore
-53212	supera
-53213	superi
-53214	supero
-53215	supine
-53216	supini
-53221	supino
-53222	susina
-53223	susine
-53224	sutura
-53225	suture
-53226	svaga
-53231	svagai
-53232	svago
-53233	svanii
-53234	svaso
-53235	svegli
-53236	svelta
-53241	svelte
-53242	svelti
-53243	svelto
-53244	sverni
-53245	sverno
-53246	svia
-53251	sviai
-53252	sviamo
-53253	sviare
-53254	sviata
-53255	sviati
-53256	sviato
-53261	sviava
-53262	sviavi
-53263	svio
-53264	svisa
-53265	svisai
-53266	svisi
-53311	sviso
-53312	svista
-53313	sviste
-53314	svita
-53315	svitai
-53316	sviti
-53321	svito
-53322	svolga
-53323	svolge
-53324	svolgi
-53325	svolgo
-53326	svolta
-53331	svolte
-53332	svolti
-53333	svolto
-53334	svuota
-53335	svuoti
-53336	svuoto
-53341	tac
-53342	tacchi
-53343	taccia
-53344	taccio
-53345	tacco
-53346	tace
-53351	tacere
-53352	taceva
-53353	tacevo
-53354	taci
-53355	tacita
-53356	tacite
-53361	taciti
-53362	tacito
-53363	tacque
-53364	tacqui
-53365	tafano
-53366	tagli
-53411	taglia
-53412	taglie
-53413	talco
-53414	tale
-53415	tali
-53416	talpa
-53421	talpe
-53422	talune
-53423	tana
-53424	tane
-53425	tanfo
-53426	tanga
-53431	tanta
-53432	tante
-53433	tanti
-53434	tanto
-53435	tappa
-53436	tappe
-53441	tappi
-53442	tappo
-53443	tara
-53444	tarata
-53445	tarate
-53446	tarati
-53451	tarda
-53452	tardai
-53453	tardi
-53454	tardo
-53455	tare
-53456	targa
-53461	targhe
-53462	tarpa
-53463	tarpo
-53464	tasca
-53465	tasche
-53466	tassa
-53511	tassai
-53512	tasse
-53513	tassi
-53514	tasso
-53515	tasta
-53516	tastai
-53521	tasti
-53522	tasto
-53523	tatto
-53524	tatua
-53525	tatuai
-53526	tatui
-53531	tatuo
-53532	tavole
-53533	tavoli
-53534	tazza
-53535	tazze
-53536	teatri
-53541	teatro
-53542	tedi
-53543	tedia
-53544	tediai
-53545	tedino
-53546	tedio
-53551	tegame
-53552	tegola
-53553	tegole
-53554	teiera
-53555	teiere
-53556	tela
-53561	telai
-53562	tele
-53563	teli
-53564	telo
-53565	tema
-53566	temi
-53611	tempi
-53612	tempia
-53613	tempie
-53614	tempo
-53615	tempra
-53616	tempri
-53621	tempro
-53622	tenaci
-53623	tenda
-53624	tende
-53625	tenera
-53626	tenere
-53631	teneri
-53632	tenero
-53633	tenete
-53634	teneva
-53635	tenevi
-53636	tenevo
-53641	tenga
-53642	tengo
-53643	tenne
-53644	tenni
-53645	tenore
-53646	tenori
-53651	tenta
-53652	tentai
-53653	tenti
-53654	tento
-53655	tenue
-53656	tenui
-53661	tenuta
-53662	tenute
-53663	tenuti
-53664	tenuto
-53665	teoria
-53666	teorie
-54111	tepore
-54112	tepori
-54113	terga
-54114	terge
-54115	tergi
-54116	tergo
-54121	terme
-54122	termos
-54123	terna
-54124	terne
-54125	terno
-54126	terra
-54131	terrai
-54132	terre
-54133	tersa
-54134	terse
-54135	tersi
-54136	terso
-54141	terzi
-54142	terzo
-54143	tesa
-54144	teschi
-54145	tesina
-54146	tesla
-54151	tese
-54152	tesi
-54153	teso
-54154	tesori
-54155	tesoro
-54156	tessa
-54161	tessei
-54162	tessi
-54163	tesso
-54164	testa
-54165	teste
-54166	testi
-54211	testo
-54212	tetano
-54213	tetra
-54214	tetre
-54215	tetri
-54216	tetro
-54221	tetti
-54222	tetto
-54223	tibia
-54224	tibie
-54225	tiene
-54226	tieni
-54231	tienti
-54232	tifo
-54233	tifone
-54234	tifoni
-54235	tigli
-54236	tiglio
-54241	tigna
-54242	tigne
-54243	tigri
-54244	timbra
-54245	timbri
-54246	timbro
-54251	timida
-54252	timide
-54253	timidi
-54254	timido
-54255	timone
-54256	timore
-54261	timori
-54262	tini
-54263	tino
-54264	tinta
-54265	tinte
-54266	tinti
-54311	tinto
-54312	tipa
-54313	tipe
-54314	tipi
-54315	tipica
-54316	tipici
-54321	tipo
-54322	tira
-54323	tirai
-54324	tirare
-54325	tirata
-54326	tirati
-54331	tirato
-54332	tirava
-54333	tiravi
-54334	tiravo
-54335	tirchi
-54336	tiri
-54341	tirino
-54342	tiro
-54343	tisana
-54344	tisane
-54345	titoli
-54346	titolo
-54351	tizi
-54352	tizia
-54353	tizie
-54354	tizio
-54355	tocca
-54356	toccai
-54361	tocchi
-54362	tocco
-54363	toga
-54364	toghe
-54365	togli
-54366	toglie
-54411	tolga
-54412	tolse
-54413	tolsi
-54414	tolta
-54415	tolte
-54416	tolti
-54421	tolto
-54422	tomaie
-54423	tomba
-54424	tonaca
-54425	tonaci
-54426	tonaco
-54431	tonchi
-54432	tonda
-54433	tonde
-54434	tondi
-54435	tonfi
-54436	tonfo
-54441	toni
-54442	tonni
-54443	tonno
-54444	tonta
-54445	tonte
-54446	tonti
-54451	tonto
-54452	topazi
-54453	topo
-54454	toppa
-54455	toppe
-54456	torace
-54461	toraci
-54462	torba
-54463	torbe
-54464	torce
-54465	torchi
-54466	torcia
-54511	tori
-54512	torna
-54513	tornai
-54514	torne
-54515	tornea
-54516	tornei
-54521	torneo
-54522	torni
-54523	tornii
-54524	tornio
-54525	torno
-54526	toro
-54531	torre
-54532	torta
-54533	torte
-54534	torti
-54535	torto
-54536	tosa
-54541	tosai
-54542	tosano
-54543	tosare
-54544	tosata
-54545	tosate
-54546	tosati
-54551	tosato
-54552	tosava
-54553	tosavi
-54554	tosavo
-54555	tosi
-54556	tosino
-54561	toso
-54562	tosse
-54563	tossi
-54564	tossii
-54565	tosta
-54566	tostai
-54611	toste
-54612	tosti
-54613	totale
-54614	totali
-54615	totani
-54616	totano
-54621	tozza
-54622	tozze
-54623	tozzo
-54624	tra
-54625	tracce
-54626	tracci
-54631	tradii
-54632	trae
-54633	traevo
-54634	traina
-54635	traini
-54636	traino
-54641	tralci
-54642	trama
-54643	tramai
-54644	trame
-54645	trami
-54646	tramo
-54651	tranci
-54652	tranne
-54653	trarla
-54654	trarre
-54655	trasse
-54656	tratta
-54661	tratte
-54662	tratti
-54663	tratto
-54664	trauma
-54665	traumi
-54666	trave
-55111	travi
-55112	travia
-55113	travio
-55114	tre
-55115	tregua
-55116	trema
-55121	tremai
-55122	tremi
-55123	tremo
-55124	treni
-55125	treno
-55126	trenta
-55131	triade
-55132	trilla
-55133	trilli
-55134	trillo
-55135	tripla
-55136	triplo
-55141	trippa
-55142	trippe
-55143	triste
-55144	tristi
-55145	trita
-55146	trite
-55151	triti
-55152	trito
-55153	trofei
-55154	trofeo
-55155	tromba
-55156	trombe
-55161	tronca
-55162	tronco
-55163	troni
-55164	trono
-55165	troppa
-55166	troppe
-55211	troppi
-55212	troppo
-55213	trota
-55214	trote
-55215	trotta
-55216	trotti
-55221	trotto
-55222	trova
-55223	trovai
-55224	trovi
-55225	trovo
-55226	trucca
-55231	trucco
-55232	truffe
-55233	truffi
-55234	truffo
-55235	truppa
-55236	truppe
-55241	tua
-55242	tuba
-55243	tubano
-55244	tubare
-55245	tubata
-55246	tubate
-55251	tubato
-55252	tubavo
-55253	tuberi
-55254	tubero
-55255	tubi
-55256	tubino
-55261	tubo
-55262	tue
-55263	tuffa
-55264	tuffi
-55265	tuffo
-55266	tufo
-55311	tuguri
-55312	tulle
-55313	tuo
-55314	tuona
-55315	tuoni
-55316	tuono
-55321	turai
-55322	turba
-55323	turbai
-55324	turbo
-55325	turca
-55326	turchi
-55331	turni
-55332	turno
-55333	tutela
-55334	tutele
-55335	tuteli
-55336	tutelo
-55341	tutore
-55342	tutori
-55343	tutta
-55344	tutte
-55345	tutti
-55346	tutto
-55351	udendo
-55352	udii
-55353	udire
-55354	udirla
-55355	udita
-55356	udite
-55361	uditi
-55362	udivo
-55363	uffici
-55364	ufo
-55365	uguale
-55366	uguali
-55411	ultima
-55412	ultime
-55413	ultimi
-55414	ultimo
-55415	umane
-55416	umani
-55421	umano
-55422	umida
-55423	umide
-55424	umidi
-55425	umido
-55426	umile
-55431	umili
-55432	umilia
-55433	umilio
-55434	umore
-55435	umori
-55436	una
-55441	uncini
-55442	uncino
-55443	unendo
-55444	unge
-55445	ungere
-55446	ungi
-55451	ungo
-55452	ungono
-55453	uniamo
-55454	uniate
-55455	unica
-55456	uniche
-55461	unici
-55462	unico
-55463	unii
-55464	unione
-55465	unioni
-55466	unirai
-55511	unire
-55512	unirei
-55513	unisce
-55514	unisci
-55515	unisco
-55516	unissi
-55521	uniste
-55522	unisti
-55523	unita
-55524	unite
-55525	uniti
-55526	unito
-55531	univa
-55532	univo
-55533	uno
-55534	unta
-55535	unte
-55536	unti
-55541	unto
-55542	uomini
-55543	uomo
-55544	urbana
-55545	urbane
-55546	urbani
-55551	urbano
-55552	urla
-55553	urlai
-55554	urlano
-55555	urlare
-55556	urlata
-55561	urlate
-55562	urlati
-55563	urlato
-55564	urlava
-55565	urlavi
-55566	urlavo
-55611	urli
-55612	urlino
-55613	urlo
-55614	urna
-55615	urne
-55616	urta
-55621	urtano
-55622	urtare
-55623	urtate
-55624	urtati
-55625	urtato
-55626	urtava
-55631	urtavi
-55632	urtavo
-55633	urti
-55634	urto
-55635	usa
-55636	usai
-55641	usando
-55642	usano
-55643	usanza
-55644	usanze
-55645	usare
-55646	usasse
-55651	usassi
-55652	usaste
-55653	usasti
-55654	usata
-55655	usate
-55656	usati
-55661	usato
-55662	usava
-55663	usavi
-55664	usavo
-55665	usci
-55666	uscii
-56111	uscio
-56112	uscire
-56113	uscita
-56114	uscite
-56115	usciti
-56116	uscito
-56121	usciva
-56122	uscivo
-56123	userai
-56124	userei
-56125	usi
-56126	usiamo
-56131	usiate
-56132	uso
-56133	usuale
-56134	usuali
-56135	usura
-56136	usurai
-56141	usure
-56142	usurpi
-56143	usurpo
-56144	utente
-56145	utenti
-56146	utenza
-56151	utile
-56152	utili
-56153	utopia
-56154	utopie
-56155	uve
-56156	vacche
-56161	vada
-56162	vadano
-56163	vado
-56164	vaga
-56165	vagano
-56166	vagare
-56211	vagata
-56212	vagate
-56213	vagati
-56214	vagato
-56215	vagava
-56216	vagavi
-56221	vagavo
-56222	vaghe
-56223	vagire
-56224	vagita
-56225	vagite
-56226	vagiti
-56231	vagito
-56232	vagiva
-56233	vagivo
-56234	vagli
-56235	vaglia
-56236	vaglio
-56241	vagone
-56242	vagoni
-56243	vaioli
-56244	vaiolo
-56245	vale
-56246	valere
-56251	valeva
-56252	valga
-56253	valgo
-56254	valica
-56255	valida
-56256	valide
-56261	validi
-56262	valido
-56263	valle
-56264	valli
-56265	vallo
-56266	valore
-56311	valori
-56312	valuta
-56313	valute
-56314	valuto
-56315	vampa
-56316	vana
-56321	vane
-56322	vanga
-56323	vango
-56324	van
-56325	vani
-56326	vanno
-56331	vano
-56332	vanta
-56333	vantai
-56334	vanti
-56335	vanto
-56336	vapore
-56341	vapori
-56342	vara
-56343	varate
-56344	varati
-56345	varato
-56346	varava
-56351	varavi
-56352	varavo
-56353	varchi
-56354	varco
-56355	vari
-56356	variai
-56361	varie
-56362	varino
-56363	vario
-56364	vasaio
-56365	vasca
-56366	vasche
-56411	vaso
-56412	vassoi
-56413	vasta
-56414	vaste
-56415	vasti
-56416	vasto
-56421	vecchi
-56422	veda
-56423	vedano
-56424	vede
-56425	vedere
-56426	vedete
-56431	vedeva
-56432	vedevi
-56433	vedevo
-56434	vedi
-56435	vedili
-56436	vedo
-56441	vedono
-56442	vedova
-56443	vedove
-56444	vedovi
-56445	vedovo
-56446	vedrai
-56451	veduta
-56452	vedute
-56453	veduti
-56454	veduto
-56455	vegeta
-56456	vegete
-56461	vegeti
-56462	vegeto
-56463	vegli
-56464	veglia
-56465	veglio
-56466	vela
-56511	velai
-56512	velano
-56513	velare
-56514	velata
-56515	velate
-56516	velati
-56521	velava
-56522	velavi
-56523	velavo
-56524	vele
-56525	veli
-56526	velina
-56531	veline
-56532	velino
-56533	velo
-56534	veloce
-56535	veloci
-56536	vena
-56541	venale
-56542	venali
-56543	venda
-56544	vende
-56545	vendi
-56546	venera
-56551	venere
-56552	veneri
-56553	venero
-56554	venga
-56555	venire
-56556	venite
-56561	veniva
-56562	venivi
-56563	venivo
-56564	venne
-56565	venni
-56566	venti
-56611	vento
-56612	ventre
-56613	ventri
-56614	venuta
-56615	venute
-56616	venuti
-56621	venuto
-56622	vera
-56623	verbi
-56624	verbo
-56625	verde
-56626	verdi
-56631	vere
-56632	verga
-56633	verghe
-56634	veri
-56635	verme
-56636	vermi
-56641	verrei
-56642	versa
-56643	versai
-56644	versi
-56645	verso
-56646	vespa
-56651	vespe
-56652	vespri
-56653	vespro
-56654	vessa
-56655	vessai
-56656	vessi
-56661	vesso
-56662	veste
-56663	vesti
-56664	vesto
-56665	veti
-56666	vetri
-61111	vetta
-61112	vette
-61113	viaggi
-61114	viale
-61115	viali
-61116	vibra
-61121	vibrai
-61122	vibri
-61123	vicari
-61124	vicina
-61125	vicine
-61126	vicini
-61131	vicino
-61132	vicoli
-61133	vicolo
-61134	vide
-61135	video
-61136	videro
-61141	vidima
-61142	vidimi
-61143	vidimo
-61144	vie
-61145	viene
-61146	vieni
-61151	vieta
-61152	vietai
-61153	vieto
-61154	vigere
-61155	vigile
-61156	vigili
-61161	vigilo
-61162	vigne
-61163	vigore
-61164	vigori
-61165	vile
-61166	villa
-61211	ville
-61212	vimini
-61213	vinaio
-61214	vinci
-61215	vinco
-61216	vini
-61221	vino
-61222	vinta
-61223	vinte
-61224	vinto
-61225	viola
-61226	violai
-61231	viole
-61232	violi
-61233	violo
-61234	vipera
-61235	vipere
-61236	vira
-61241	virano
-61242	virata
-61243	virate
-61244	virati
-61245	virato
-61246	virava
-61251	viravi
-61252	viravo
-61253	virile
-61254	virili
-61255	visi
-61256	visita
-61261	visite
-61262	visiti
-61263	visito
-61264	viso
-61265	visone
-61266	visoni
-61311	vispa
-61312	vispe
-61313	vispi
-61314	visse
-61315	vissi
-61316	vista
-61321	vistai
-61322	viste
-61323	visti
-61324	visto
-61325	vita
-61326	vitale
-61331	vitali
-61332	vite
-61333	viti
-61334	viva
-61335	vivace
-61336	vivaci
-61341	vivaio
-61342	vivano
-61343	vive
-61344	vivere
-61345	vivete
-61346	viveva
-61351	vivevi
-61352	vivevo
-61353	vivo
-61354	vivono
-61355	vizi
-61356	vizia
-61361	vizio
-61362	vocale
-61363	vocali
-61364	voce
-61365	voci
-61366	voga
-61411	vogai
-61412	vogano
-61413	vogata
-61414	vogate
-61415	vogati
-61416	vogato
-61421	vogava
-61422	voglia
-61423	voglie
-61424	voglio
-61425	vogo
-61426	voi
-61431	volai
-61432	volano
-61433	volare
-61434	volata
-61435	volate
-61436	volati
-61441	volava
-61442	volavi
-61443	volavo
-61444	volere
-61445	volete
-61446	voleva
-61451	volevi
-61452	volge
-61453	volgo
-61454	voli
-61455	volino
-61456	volli
-61461	volo
-61462	volpe
-61463	volpi
-61464	volse
-61465	volta
-61466	voltai
-61511	volte
-61512	volti
-61513	volto
-61514	volumi
-61515	voluta
-61516	volute
-61521	voluti
-61522	voluto
-61523	vorace
-61524	voraci
-61525	vorrai
-61526	vorrei
-61531	vostro
-61532	voti
-61533	votiva
-61534	votive
-61535	votivi
-61536	votivo
-61541	voto
-61542	vuoi
-61543	vuole
-61544	vuota
-61545	vuotai
-61546	vuoti
-61551	vuoto
-61552	zaino
-61553	zampa
-61554	zampe
-61555	zanna
-61556	zappai
-61561	zappi
-61562	zappo
-61563	zecca
-61564	zelo
-61565	zeppa
-61566	zeppe
-61611	zeppi
-61612	zeppo
-61613	zeri
-61614	zia
-61615	zie
-61616	zii
-61621	zio
-61622	zitta
-61623	zitti
-61624	zitto
-61625	zolfo
-61626	zolla
-61631	zona
-61632	zone
-61633	zoppa
-61634	zoppe
-61635	zoppi
-61636	zoppo
-61641	zotica
-61642	zotici
-61643	zotico
-61644	zucca
-61645	zucche
-61646	zuffa
-61651	zuffe
-61652	zuppa
-61653	zuppe
+abate
+abati
+abbai
+abbaia
+abbaio
+abbi
+abbia
+abbina
+abbini
+abbino
+abbona
+abboni
+abbono
+abdica
+abdico
+abete
+abeti
+abile
+abili
+abissi
+abisso
+abiti
+abito
+abitua
+abitui
+abituo
+abiura
+abiuri
+abiuro
+abolii
+aborti
+abroga
+abrogo
+abusa
+abusai
+abusi
+abuso
+accada
+accade
+accasa
+accasi
+accaso
+acceca
+acceco
+accede
+accesa
+accese
+accesi
+acceso
+acciai
+accoda
+accusa
+accusi
+accuso
+acerbe
+acerbi
+acerbo
+aceti
+acida
+acide
+acidi
+acido
+acqua
+acque
+acuta
+acute
+acuti
+acuto
+adagi
+adagia
+adagio
+adatta
+adatte
+adatti
+adatto
+addii
+addio
+addita
+additi
+addito
+addome
+addomi
+adegua
+adegui
+adeguo
+adesso
+adora
+adorai
+adorna
+adorni
+adoro
+adotta
+adotti
+adotto
+adula
+adulai
+aduli
+adulo
+adulta
+adulte
+adulti
+adulto
+aduna
+adunai
+aduni
+aduno
+aerea
+aeree
+aerei
+aereo
+afa
+affama
+affami
+affamo
+affare
+affari
+affida
+affidi
+affido
+affila
+affili
+affilo
+affine
+affini
+affoga
+affogo
+afona
+afone
+afoni
+afono
+afosa
+afose
+afosi
+afoso
+agenda
+agende
+agente
+agenti
+aggira
+aggiri
+aggiro
+agi
+agiata
+agiate
+agiato
+agile
+agili
+agio
+agire
+agisca
+agita
+agitai
+agiti
+agito
+agli
+aglio
+ago
+agonia
+agonie
+agosto
+agrume
+agrumi
+aguzza
+aguzzi
+aguzzo
+aiuole
+aiuta
+aiutai
+aiuti
+aiuto
+alba
+albe
+alberi
+albero
+albina
+albine
+albino
+alcuna
+alcune
+alcuni
+alfa
+alga
+alghe
+ali
+aliena
+alieni
+alieno
+aliti
+alito
+allaga
+allago
+alle
+allega
+allego
+allena
+alleni
+alleno
+alleva
+allevi
+allevo
+allo
+allora
+allori
+alloro
+alluce
+alluci
+almeno
+alta
+altare
+altari
+alte
+altero
+alti
+alto
+altra
+altre
+altri
+altro
+altrui
+altura
+alture
+alunna
+alunne
+alunni
+alunno
+alveo
+alza
+alzai
+alzano
+alzare
+alzata
+alzate
+alzato
+alzava
+alzavi
+alzavo
+alzi
+alzino
+alzo
+ama
+amaca
+amache
+amai
+amando
+amano
+amante
+amanti
+amara
+amare
+amari
+amaro
+amasse
+amassi
+amaste
+amasti
+amata
+amate
+amato
+amava
+amavi
+amavo
+ambito
+amena
+amene
+ameni
+ameno
+amerai
+amerei
+amiamo
+amiate
+amica
+amiche
+amici
+amico
+amido
+ammala
+ammali
+ammalo
+ammira
+ammiri
+ammiro
+amo
+amore
+amorfe
+amorfi
+amorfo
+amori
+ampi
+ampie
+ampio
+ampli
+amplia
+amplio
+anatra
+anatre
+anca
+anche
+ancora
+ancore
+andai
+andare
+andata
+andate
+andati
+andato
+andava
+andavi
+andavo
+andrai
+andrei
+anelli
+anello
+anfora
+anfore
+angeli
+angelo
+angolo
+anima
+animai
+anime
+animi
+animo
+annate
+annega
+annego
+anni
+annidi
+annido
+anno
+annoda
+annodi
+annodo
+annoi
+annoia
+annoio
+annota
+annoti
+annoto
+annusa
+annusi
+annuso
+ansia
+ansie
+ante
+antico
+antri
+antro
+anzi
+apatia
+apatie
+ape
+aperse
+aperta
+aperte
+aperti
+aperto
+api
+apice
+apici
+appaia
+appaio
+appare
+appari
+appena
+appura
+appuri
+appuro
+apra
+apre
+apri
+aprii
+aprile
+aprilo
+aprire
+aprite
+apriva
+apro
+aprono
+aquila
+aquile
+ara
+arai
+arammo
+arance
+arando
+arano
+arasse
+arassi
+araste
+arasti
+arata
+arate
+arati
+arato
+aratri
+aratro
+aravi
+arcata
+archi
+arco
+ardore
+ardori
+ardua
+ardue
+ardui
+arduo
+area
+aree
+arerai
+argina
+argine
+argini
+argute
+arguti
+arguto
+ari
+aria
+ariamo
+ariate
+arida
+aride
+aridi
+arido
+arie
+arino
+ariosa
+ariose
+ariosi
+arioso
+arma
+armadi
+armai
+armano
+armare
+armata
+armate
+armati
+armato
+armava
+armavi
+armavo
+armeno
+armi
+armino
+arnese
+arnesi
+arnia
+aro
+aroma
+aromi
+arpe
+arreda
+arredi
+arredo
+arrivi
+arrivo
+arroga
+arrogo
+arrota
+arroti
+arte
+arti
+arto
+ascia
+asili
+asilo
+asina
+asine
+asini
+asino
+asola
+aspira
+aspiri
+aspiro
+aspra
+aspre
+aspri
+aspro
+asse
+assedi
+assi
+asso
+associ
+assoda
+assodi
+assodo
+assuma
+assume
+astri
+astro
+atleta
+atleti
+atomi
+atomo
+atri
+atrii
+atroce
+atroci
+attesa
+attese
+attesi
+atti
+attimo
+attiri
+attiro
+attiva
+attive
+attivi
+attivo
+atto
+attore
+attori
+attua
+attuai
+attui
+attuo
+audace
+audaci
+augura
+auguri
+auguro
+aula
+aule
+auree
+aurei
+aureo
+aurora
+aurore
+auto
+automa
+automi
+autore
+autori
+avalla
+avallo
+avanti
+avanza
+avanzi
+avanzo
+avara
+avare
+avari
+avaria
+avarie
+avendo
+avente
+avere
+averla
+avesse
+avessi
+aveste
+avete
+aveva
+avevi
+avida
+avide
+avidi
+avido
+avrai
+avrei
+avuto
+avvale
+avvera
+avveri
+avvero
+avvia
+avviai
+avvii
+avvino
+avvio
+avvisi
+avviso
+avvita
+avviti
+avvito
+azioni
+babbo
+bachi
+baci
+bacia
+baciai
+bacini
+bacino
+bacio
+baco
+bada
+badai
+badano
+badare
+badata
+badate
+badati
+badato
+badava
+badavi
+badavo
+badi
+badia
+badile
+badili
+badino
+bado
+baffi
+baffo
+bagna
+bagnai
+bagni
+bagno
+bah
+baia
+baie
+balena
+balene
+baleni
+baleno
+balia
+balla
+ballai
+balli
+ballo
+balza
+balzi
+balzo
+banale
+banali
+banca
+banche
+banchi
+banda
+bande
+bandi
+bandii
+bara
+barai
+barano
+barata
+barate
+barati
+barato
+barava
+baravo
+barba
+barbe
+barca
+barche
+bari
+barile
+barili
+barino
+bario
+baro
+baroni
+barra
+barre
+basa
+basare
+basata
+basate
+basati
+basato
+basava
+basavi
+basavo
+base
+basi
+basino
+basico
+basito
+bassa
+basso
+basta
+bastai
+basti
+basto
+batta
+batte
+battei
+batti
+batto
+baule
+bauli
+bava
+bave
+baveri
+bavero
+beata
+beate
+beati
+becchi
+becco
+beffa
+beffe
+bella
+belle
+belli
+bello
+belva
+belve
+benda
+bendai
+bende
+bendi
+bendo
+bene
+beni
+beone
+bere
+bestia
+bestie
+beva
+beve
+bevete
+bevi
+bevilo
+bevine
+bevo
+bevono
+bevuto
+bianca
+bianco
+bibbia
+bibbie
+bidone
+bidoni
+biechi
+bile
+bili
+bimba
+bimbe
+bimbi
+bimbo
+binari
+bionda
+bionde
+biondi
+biondo
+birra
+birre
+bisca
+bisce
+bische
+biscia
+blanda
+blande
+blandi
+blando
+blocca
+blu
+bocca
+bocce
+bocche
+bocci
+boccia
+boccio
+bolla
+bolle
+bolli
+bollo
+bomba
+bombe
+bordi
+bordo
+borgo
+borie
+borsa
+borse
+boschi
+botola
+botole
+botta
+botte
+bozza
+bozze
+bracco
+brace
+brama
+brami
+bramo
+branca
+branda
+brande
+brani
+brano
+brava
+brave
+bravi
+breve
+brevi
+brezza
+brezze
+bricco
+brilla
+brilli
+brillo
+brina
+brinda
+brindi
+brindo
+brine
+brio
+brocca
+brodi
+brodo
+bronci
+bronzi
+bronzo
+bruci
+brucia
+brucio
+bruco
+brulla
+brulle
+brulli
+brullo
+bruna
+brune
+bruni
+bruno
+brusca
+brusco
+bruti
+brutti
+brutto
+buca
+bucce
+buccia
+buche
+buchi
+buco
+budini
+budino
+bue
+bufera
+bufere
+buffa
+buffi
+buffo
+bugia
+bugie
+buio
+bulbi
+bulbo
+buoi
+buona
+buone
+buoni
+buono
+burla
+burlai
+burle
+burli
+burlo
+burro
+bussa
+bussi
+busso
+busti
+busto
+butta
+buttai
+butti
+butto
+cabina
+cabine
+caccia
+caccio
+cadde
+caddi
+cade
+cadere
+cadeva
+cadono
+caduta
+cadute
+caduti
+caduto
+cagna
+cagne
+cala
+calai
+calano
+calare
+calata
+calate
+calati
+calava
+calavi
+calavo
+calci
+calcio
+calco
+calda
+calde
+caldi
+caldo
+cali
+calice
+calici
+calino
+calli
+callo
+calma
+calmai
+calme
+calmi
+calmo
+calo
+calore
+calori
+calva
+calve
+calvi
+calvo
+calza
+calzai
+calzi
+calzo
+cambi
+cambia
+cambio
+camera
+camere
+camini
+camino
+campa
+campai
+campi
+campo
+canale
+canali
+canapa
+canape
+cane
+cani
+canile
+canili
+canne
+canora
+canore
+canori
+canoro
+canta
+cantai
+canti
+canuta
+canute
+canuti
+canuto
+capace
+capaci
+capi
+capire
+capita
+capito
+capo
+capra
+capre
+cara
+care
+carena
+carene
+cari
+carica
+carico
+carina
+carine
+carini
+carino
+carne
+carni
+caro
+carota
+carote
+carri
+carta
+carte
+casa
+caschi
+case
+casi
+caso
+cassa
+casse
+casta
+caste
+casti
+casto
+catena
+catene
+catini
+catino
+causa
+causai
+cause
+causi
+cauta
+caute
+cauti
+cava
+cavai
+cavano
+cavare
+cavata
+cavati
+cavato
+cave
+cavoli
+cavolo
+cede
+cedere
+cedola
+cedole
+cedono
+cedri
+cedro
+ceduta
+cedute
+ceffo
+celai
+celano
+celare
+celate
+celati
+celato
+celava
+celavi
+celavo
+celere
+celeri
+celibe
+celibi
+celino
+cella
+celle
+cena
+cenare
+cenata
+cenate
+cenati
+cenava
+cenavi
+cene
+cenere
+ceneri
+ceni
+cenni
+cenno
+ceno
+cento
+centra
+centro
+ceppo
+cera
+cerca
+cerchi
+cerco
+cere
+ceri
+cerini
+cerino
+cero
+certa
+certe
+certi
+certo
+cervi
+cesoia
+cessa
+cessai
+cesta
+cesti
+cetra
+cetre
+chi
+chiama
+chiami
+chiamo
+chiara
+chiare
+chiari
+chiaro
+chiave
+chiavi
+chieda
+chiede
+chiedo
+chiesa
+chiese
+chiesi
+china
+chinai
+chine
+chini
+chino
+chiodi
+chiodo
+chioma
+chiome
+chiuda
+chiude
+chiudi
+chiudo
+chiusa
+chiusi
+chiuso
+cialda
+cialde
+ciao
+cibi
+cibo
+cicca
+cicli
+ciclo
+cicuta
+cicute
+cieca
+cieche
+ciechi
+cieco
+cielo
+cifra
+cifre
+ciglia
+ciglio
+cigni
+cigno
+cigola
+cigoli
+cigolo
+cima
+cime
+cimice
+cimici
+cinema
+cinica
+cinici
+cinico
+cinque
+cinse
+cinta
+cinto
+ciocca
+cipria
+circa
+circo
+cirro
+cisti
+cita
+citai
+citano
+citare
+citate
+citati
+citato
+citava
+citavi
+citavo
+citi
+citino
+cito
+ciuffi
+ciuffo
+ciurma
+ciurme
+civile
+civili
+classe
+classi
+clero
+clima
+climi
+coda
+code
+codice
+codici
+cofani
+cofano
+coglie
+cola
+colai
+colano
+colare
+colata
+colate
+colati
+colato
+colava
+colavi
+colavo
+colera
+coli
+colini
+colino
+colla
+colle
+colli
+collo
+colma
+colmai
+colme
+colmo
+colo
+coloni
+colore
+colori
+coloro
+colpa
+colpe
+colpi
+colpii
+colse
+colta
+colti
+colto
+cometa
+comete
+comica
+comici
+comico
+comizi
+comoda
+comode
+comodi
+comodo
+compie
+compri
+compro
+comune
+comuni
+concia
+concio
+condii
+coni
+conia
+coniai
+conio
+cono
+conta
+contai
+conte
+conti
+contro
+copia
+copiai
+copie
+coppia
+coppie
+copra
+copre
+copri
+copro
+corda
+corde
+cori
+corna
+corno
+coro
+corona
+corone
+coroni
+corono
+corpi
+corpo
+corra
+corre
+corri
+corro
+corsa
+corse
+corsi
+corsia
+corsie
+corso
+corte
+cortei
+corteo
+corto
+corvi
+corvo
+cosa
+cosca
+cosce
+coscia
+cose
+coseno
+cosmo
+coso
+costa
+costai
+coste
+costei
+costo
+cotone
+cotta
+cotte
+cotti
+cotto
+cova
+covai
+covano
+covata
+covate
+covati
+covato
+covavi
+covavo
+covi
+covino
+covo
+cozza
+cozze
+cozzi
+cozzo
+crampi
+crampo
+crani
+cranio
+crea
+creai
+creano
+creare
+creata
+create
+creato
+creava
+creavi
+creavo
+crebbe
+crebbi
+creda
+crede
+credei
+credi
+credo
+crei
+creino
+crema
+cremai
+creme
+cremi
+cremo
+creo
+crepa
+crepe
+crepi
+crepo
+cresca
+cresce
+cresci
+cresco
+crespa
+crespe
+crespi
+crespo
+cresta
+creste
+creta
+crete
+crisi
+cristo
+croce
+croci
+crolla
+crolli
+crollo
+crosta
+cruda
+crudi
+crudo
+cruna
+crune
+crusca
+cubi
+cubo
+cucina
+cucine
+cucini
+cuffia
+cuffie
+cugina
+cugine
+cugini
+cugino
+culla
+cullai
+culli
+culto
+cumulo
+cuoca
+cuoche
+cuochi
+cuocia
+cuoio
+cuore
+cuori
+cupa
+cupe
+cupi
+cupo
+cupola
+cupole
+cura
+curai
+curano
+curare
+curate
+curati
+curato
+curava
+curavi
+curavo
+cure
+curi
+curino
+curo
+curva
+curvai
+curve
+curvi
+curvo
+cute
+dacci
+dadi
+dado
+dagli
+dai
+daini
+daino
+dalla
+dalle
+dallo
+dama
+dame
+dammi
+dannai
+danni
+danno
+danza
+danze
+danzi
+darai
+dare
+darei
+daremo
+dargli
+darsi
+darti
+darvi
+data
+datai
+datano
+datare
+datava
+datavi
+datavo
+date
+datelo
+datemi
+datevi
+dati
+datino
+dato
+datomi
+datosi
+dava
+davamo
+davano
+davo
+dazio
+dea
+debba
+debiti
+debito
+deboli
+decani
+decano
+decide
+decidi
+decine
+decisa
+decise
+decisi
+decori
+decoro
+dedica
+dedite
+dediti
+dedito
+dee
+degli
+degna
+degnai
+degne
+degni
+degno
+dei
+delega
+delego
+delira
+deliri
+deliro
+delizi
+della
+deludo
+delusa
+deluso
+demmo
+demoni
+denari
+denaro
+densa
+dense
+denso
+dente
+denti
+dentro
+denuda
+denudi
+denudo
+depose
+depura
+depuro
+deride
+derido
+derise
+derisi
+deriva
+derivi
+derivo
+deroga
+deruba
+derubi
+derubo
+desse
+dessi
+desta
+destai
+desti
+desto
+destra
+desume
+desumi
+desumo
+detta
+dettai
+dette
+detti
+detto
+deve
+devi
+devo
+devono
+devota
+devote
+devoti
+devoto
+dia
+diamo
+diano
+diario
+dica
+dicano
+dicasi
+dicci
+dice
+diceva
+dicevo
+dici
+dico
+dicono
+dieci
+diede
+diedi
+dieta
+diete
+dietro
+difesa
+difese
+difesi
+difeso
+diga
+digita
+digiti
+digli
+dilani
+dilati
+dilato
+dilla
+dillo
+diluii
+diluvi
+dimena
+dimeni
+dimeno
+dinamo
+dinari
+dinne
+dipana
+dipani
+dipano
+dipesa
+dipese
+dipesi
+dipeso
+dirada
+diradi
+dirado
+dirai
+dirama
+dirami
+diramo
+dirci
+dire
+direi
+direte
+dirgli
+dirige
+dirigo
+dirla
+dirle
+dirlo
+dirmi
+dirne
+dirsi
+dirti
+dirupi
+dirupo
+dirvi
+disagi
+dischi
+disco
+disse
+dissi
+dista
+disti
+disto
+disuso
+dita
+ditale
+dite
+ditelo
+ditemi
+divaga
+divago
+divani
+divano
+dive
+divide
+dividi
+divina
+divine
+divini
+divino
+divisa
+divise
+divisi
+divora
+divori
+divoro
+docce
+doccia
+docile
+docili
+dodici
+dogana
+dogane
+dogma
+dogmi
+dolce
+dolci
+dolore
+dolori
+dolosa
+dolose
+dolosi
+doloso
+domai
+domani
+domano
+domare
+domata
+domati
+domato
+domava
+domavo
+domina
+domini
+domino
+dona
+donai
+donare
+donate
+donati
+donato
+donava
+donavi
+donavo
+doni
+donino
+donna
+donne
+dono
+dopo
+doppia
+doppie
+doppio
+dorata
+dorate
+dorato
+dorma
+dorme
+dormi
+dormo
+dorsi
+dorso
+dosa
+dosai
+dosano
+dosare
+dosata
+dosate
+dosati
+dosato
+dosavi
+dosavo
+dosi
+dosino
+doso
+dota
+dotai
+dotano
+dotare
+dotati
+dotato
+dotava
+dotavi
+dotavo
+dote
+doti
+dotino
+doto
+dotta
+dotte
+dotti
+dove
+dovere
+dovete
+doveva
+dovevi
+dovevo
+dovrai
+dovrei
+dovuta
+dovute
+dovuti
+draga
+draghe
+drago
+dramma
+drammi
+drizza
+drizzi
+drizzo
+dubbi
+dubbio
+dubita
+dubiti
+dubito
+duca
+duchi
+due
+duello
+duna
+dune
+duomi
+dura
+durai
+durano
+durare
+durata
+durate
+durati
+durato
+durava
+duravi
+duravo
+dure
+duri
+durino
+duro
+ebano
+ecceda
+eccede
+eccedi
+eccedo
+eccita
+ecciti
+eccito
+ecco
+echi
+eco
+edera
+edere
+educo
+egli
+eguale
+eguali
+elegga
+elegge
+eleggi
+eleggo
+elenca
+elenco
+eletta
+elette
+eletti
+eletto
+elevai
+eliche
+ella
+elogi
+elogia
+elogio
+elude
+eludi
+eludo
+elusa
+eluse
+elusi
+eluso
+emana
+emanai
+emani
+emano
+emboli
+embolo
+emenda
+emendi
+emendo
+emerge
+emergi
+emergo
+emerse
+emersi
+emerso
+emesso
+emette
+emigra
+emigri
+emigro
+emula
+emulai
+emuli
+emulo
+enfasi
+enigma
+enorme
+enormi
+ente
+enti
+entra
+entrai
+entri
+entro
+epica
+epiche
+epici
+epico
+epoca
+epoche
+eppure
+epurai
+equa
+eque
+equi
+era
+erano
+erba
+erbe
+ere
+eredi
+eresia
+eresie
+eresse
+eressi
+eretta
+erette
+eretti
+eretto
+erige
+erigi
+erigo
+eroe
+eroi
+errai
+errano
+errare
+errata
+errate
+errati
+errato
+errava
+erravi
+errino
+errore
+errori
+esalta
+esalti
+esalto
+esame
+esatta
+esatte
+esatti
+esatto
+esca
+esce
+esci
+esco
+escono
+esegue
+esenti
+esige
+esiguo
+esile
+esili
+esilia
+esilio
+esimi
+esimo
+esista
+esiste
+esiti
+esito
+esorti
+esorto
+espia
+espiai
+espii
+espio
+essa
+esse
+essere
+esseri
+essi
+esso
+estate
+estati
+esteri
+estero
+estesa
+estive
+estivi
+estivo
+esula
+esule
+esuli
+esulta
+esulti
+esulto
+etere
+eterna
+eterne
+eterni
+eterno
+etti
+etto
+evacua
+evacui
+evacuo
+evento
+evita
+evitai
+eviti
+evito
+evolve
+evviva
+fabbro
+facce
+faccia
+faccio
+faceva
+facevi
+facile
+facili
+faggi
+faggio
+fagli
+fai
+falce
+falchi
+falci
+falcia
+falcio
+falda
+falde
+falla
+falle
+falsa
+false
+falsi
+fama
+fame
+fammi
+famosa
+famose
+famosi
+famoso
+fanale
+fanali
+fango
+fanne
+fanno
+fanti
+farci
+fare
+farei
+faremo
+farete
+fargli
+fari
+farina
+farine
+farla
+farle
+farli
+farlo
+farmi
+farne
+farsi
+farti
+fasce
+fasci
+fascia
+fascio
+fase
+fata
+fatale
+fatali
+fate
+fateci
+fatela
+fatelo
+fatene
+fatevi
+fatica
+fatico
+fato
+fatte
+fatti
+fatto
+favola
+favole
+favori
+febbre
+febbri
+fecero
+fede
+fedele
+fedeli
+federa
+federe
+fedi
+fegati
+fegato
+felice
+feltri
+feltro
+fende
+fendi
+fendo
+fenice
+ferii
+ferire
+ferita
+ferite
+feriti
+feriva
+ferivo
+ferma
+ferme
+fermi
+fermo
+feroce
+feroci
+ferri
+ferro
+festa
+fetida
+fetide
+fetidi
+fetido
+fetta
+fette
+fiacca
+fiacco
+fiamma
+fichi
+fico
+fidata
+fidate
+fidati
+fidato
+fieni
+fieno
+fiera
+fiere
+fieri
+fiero
+figli
+figlia
+figlie
+figlio
+figura
+figure
+fila
+filai
+filano
+filare
+filate
+filati
+filato
+filava
+filavi
+filavo
+file
+fili
+filino
+filo
+filtri
+filtro
+finale
+fine
+finge
+fingi
+fingo
+fini
+finii
+finire
+finita
+finite
+finiti
+finito
+finiva
+finivi
+fino
+finora
+finse
+finsi
+finto
+fiocco
+fiore
+firma
+firmai
+firme
+firmi
+firmo
+fischi
+fisco
+fisica
+fisici
+fissa
+fissai
+fisse
+fissi
+fisso
+fitta
+fitte
+fitti
+fitto
+fiume
+fiumi
+fiuta
+fiutai
+fiuti
+fiuto
+flauti
+flauto
+flotte
+fluano
+fluidi
+fluido
+fluii
+fluita
+fluite
+fluiti
+fluito
+fluiva
+fluivi
+fluoro
+flussi
+flutti
+flutto
+foca
+foche
+foci
+focosa
+focose
+focosi
+fodera
+fodere
+foderi
+fodero
+fogli
+foglie
+fogne
+folla
+folle
+follie
+folta
+folte
+folti
+folto
+fonda
+fondai
+fondi
+fondo
+fora
+forai
+forano
+forare
+forata
+forate
+forati
+forato
+forava
+foravo
+fori
+forino
+forma
+formai
+forme
+formi
+formo
+fornai
+forni
+fornii
+forno
+foro
+forse
+forte
+forti
+forza
+forzai
+forze
+forzi
+forzo
+fosco
+fossa
+fosse
+fossi
+foste
+fosti
+foto
+fra
+frana
+franai
+franco
+frane
+frano
+frase
+frasi
+frate
+frati
+frecce
+fredda
+fredde
+freddi
+freddo
+freni
+freno
+fresca
+fresco
+fretta
+fritte
+frodai
+frodi
+frodo
+fronte
+frugai
+frugo
+frulla
+frullo
+frusta
+fruste
+frusti
+frusto
+frutta
+frutti
+frutto
+fucila
+fucile
+fucili
+fucilo
+fuga
+fugai
+fugano
+fugare
+fugata
+fugate
+fugato
+fugava
+fugavi
+fugavo
+fugga
+fugge
+fuggi
+fughe
+fugo
+fui
+fuma
+fumai
+fumano
+fumare
+fumata
+fumate
+fumati
+fumato
+fumava
+fumavi
+fumavo
+fumi
+fumino
+fummo
+fumo
+funge
+fungo
+fuochi
+fuoco
+fuori
+furba
+furbe
+furbo
+furono
+furore
+furori
+furti
+furto
+fusa
+fusaro
+fuse
+fuso
+fusti
+fusto
+futile
+futili
+futuri
+futuro
+gabbia
+gabbie
+gaia
+gaie
+gaio
+galera
+galere
+galli
+gallo
+gamba
+gambe
+gambi
+gambo
+gamma
+ganci
+gancio
+gara
+garbo
+gare
+garza
+garze
+gela
+gelai
+gelano
+gelare
+gelata
+gelate
+gelati
+gelato
+gelava
+gelavi
+gelavo
+geli
+gelida
+gelide
+gelidi
+gelido
+gelino
+gelo
+gelone
+geloni
+gelosa
+geloso
+gelsi
+gelso
+gemiti
+gemito
+gemma
+gemme
+gene
+genere
+genero
+geni
+gente
+gerani
+gergo
+germe
+germi
+gessi
+gesso
+gesti
+gesto
+getta
+gettai
+getti
+getto
+giacca
+giace
+gialla
+gialli
+giallo
+giara
+giare
+gigli
+giglio
+gioano
+gioca
+giocai
+giochi
+gioco
+giogo
+gioia
+gioie
+gioii
+gioire
+gioite
+gioiva
+gioivi
+gioivo
+giorno
+giova
+giovo
+girai
+girare
+girate
+girati
+girato
+girava
+giravi
+giravo
+giri
+girino
+giro
+gita
+gite
+giugno
+giunco
+giunga
+giunge
+giunse
+giunsi
+giunta
+giunte
+giunti
+giunto
+giura
+giurai
+giuri
+giuria
+giurie
+giuro
+giuste
+giusto
+gli
+globi
+globo
+gloria
+gobba
+gobbe
+gobbo
+goccia
+goffi
+goffo
+gola
+gole
+golfi
+golfo
+golose
+golosi
+goloso
+gomiti
+gomito
+gomma
+gomme
+gonfia
+gonna
+gonne
+gorgo
+gradi
+grado
+gradua
+gradui
+graduo
+graffe
+graffi
+grafo
+grammo
+grana
+grande
+grandi
+grane
+grani
+grano
+grappa
+grappe
+grassa
+grasse
+grassi
+grata
+grate
+grati
+grato
+gratta
+gratti
+gratto
+grava
+gravai
+grave
+gravi
+gravo
+grazia
+grazio
+greche
+gregge
+greggi
+grembi
+grembo
+gremii
+grida
+gridai
+gridi
+grido
+grigi
+grigio
+grilli
+grinza
+grinze
+groppa
+groppe
+grossa
+grosse
+grossi
+grosso
+gru
+grucce
+gruppo
+guada
+guadai
+guadi
+guado
+guai
+guaio
+guarda
+guardi
+guardo
+guasta
+guasti
+guasto
+guerra
+guerre
+gufi
+gufo
+guglie
+guida
+guide
+guidi
+guido
+guizza
+guizzi
+guizzo
+gusci
+guscio
+gusta
+gustai
+gusti
+gusto
+hai
+ibridi
+ibrido
+ideale
+ideali
+idee
+idioma
+idiomi
+idoli
+idolo
+idonea
+idonee
+idonei
+iena
+iene
+ieri
+igiene
+ignara
+ignare
+ignari
+ignaro
+ignora
+ignori
+ignoro
+ignota
+ignote
+ignoto
+illesa
+illese
+illesi
+illeso
+illude
+illudi
+illusa
+illuse
+illusi
+illuso
+imbuti
+imbuto
+imita
+imitai
+imiti
+imito
+immuni
+impara
+impari
+imparo
+imperi
+impero
+impeto
+impeti
+impura
+impure
+impuri
+impuro
+imputa
+imputi
+imputo
+incide
+incisa
+incise
+incita
+inciti
+incito
+incubi
+incubo
+indaga
+indica
+indice
+indici
+indizi
+indole
+indugi
+inebri
+inerme
+inermi
+inerti
+inezia
+infama
+infame
+infami
+infamo
+infili
+infilo
+infine
+iniqua
+inique
+iniqui
+iniquo
+inizi
+inizia
+inizio
+inni
+inno
+intasa
+intasi
+intaso
+intera
+intere
+interi
+intero
+intesa
+intese
+intesi
+inteso
+intima
+intime
+intimo
+invano
+invasa
+invase
+invasi
+invaso
+invece
+inviai
+invii
+invino
+invio
+invita
+inviti
+invito
+invoca
+invoco
+iodio
+ira
+ire
+iride
+ironia
+ironie
+irriga
+irrita
+irriti
+irrito
+isola
+isolai
+isole
+isoli
+isolo
+istigo
+istmo
+ivi
+labbra
+labbro
+lacche
+lacci
+lacera
+lacere
+laceri
+lacero
+ladra
+ladre
+ladri
+ladro
+lago
+laguna
+lagune
+laica
+laiche
+laici
+laico
+lama
+lambda
+lambii
+lame
+lamina
+lamine
+lampi
+lampo
+lana
+lance
+lancio
+landa
+lande
+lane
+langui
+lanosa
+lanose
+lanosi
+lanoso
+lapide
+lapidi
+lardo
+larga
+larghe
+largo
+lasci
+lascia
+lascio
+lastra
+lastre
+lati
+latini
+lato
+latra
+latrai
+latri
+latro
+lattai
+latte
+lauree
+lava
+lavabi
+lavabo
+lavai
+lavano
+lavata
+lavate
+lavati
+lavato
+lavi
+lavo
+lavora
+lavori
+lavoro
+leale
+leali
+lecca
+leccai
+lecci
+leccio
+lecco
+leciti
+lede
+ledere
+ledi
+ledo
+lega
+legai
+legale
+legali
+legame
+legami
+legano
+legare
+legata
+legati
+legato
+legava
+legavi
+legga
+legge
+leggi
+leggo
+leghe
+legna
+legni
+legno
+legume
+legumi
+lei
+lembi
+lembo
+lenta
+lenti
+lento
+lenza
+lenze
+leone
+leoni
+lepre
+lepri
+lerce
+lerci
+lercia
+lercio
+lesa
+lese
+lesi
+leso
+lessa
+lessai
+lesse
+lessi
+lesso
+lesta
+leste
+lesto
+letame
+letami
+letta
+lette
+letti
+letto
+leva
+levai
+levano
+levare
+levata
+levate
+levati
+levavi
+levavo
+leve
+levi
+leviga
+levigo
+levino
+levo
+liana
+libera
+libere
+liberi
+libero
+libra
+libre
+libri
+libro
+licei
+lidi
+lieta
+liete
+lieti
+lieto
+lieve
+lievi
+lilla
+lima
+limita
+limite
+limiti
+limito
+limone
+limoni
+linda
+linde
+lindi
+lindo
+linea
+linee
+lingua
+lingue
+lirica
+lirici
+lirico
+lisca
+lische
+lisci
+liscia
+liscio
+liso
+lista
+liste
+lite
+liti
+litiga
+litigo
+litri
+litro
+livida
+livide
+lividi
+livido
+locale
+lodai
+lodano
+lodata
+lodate
+lodati
+lodato
+lodava
+lodavi
+lodavo
+lode
+lodi
+lodino
+lodo
+logica
+logici
+logico
+logora
+logori
+logoro
+lontra
+lontre
+lorda
+lorde
+lordi
+lordo
+losca
+losche
+loschi
+losco
+lotta
+lotti
+lotto
+luce
+luci
+lucida
+lucide
+lucidi
+lucido
+lucore
+luglio
+lui
+lumaca
+lume
+lumi
+luna
+lunga
+lunghe
+lungo
+luogo
+lupi
+lupo
+lussi
+lusso
+lutti
+lutto
+macera
+maceri
+macero
+macina
+macine
+madre
+madri
+maggio
+magica
+magici
+magico
+mago
+maglia
+maglie
+magra
+magri
+magro
+mai
+maiale
+malata
+malate
+malati
+malato
+male
+malga
+mali
+malore
+malori
+mamma
+mamme
+manata
+manate
+manca
+mancai
+mance
+manchi
+mancia
+manda
+mandai
+mandi
+mando
+mangi
+mangia
+mangio
+mani
+mania
+manica
+manici
+manie
+mano
+manzi
+manzo
+mappa
+mappe
+marca
+marce
+marci
+marcia
+marcio
+marco
+mare
+marea
+maree
+mari
+marina
+marini
+marino
+marita
+mariti
+marito
+marmi
+marmo
+marzo
+maschi
+massa
+masse
+massi
+masso
+mastri
+mastro
+matita
+matite
+matta
+matte
+matti
+matto
+matura
+mature
+maturi
+maturo
+mazza
+mazze
+mazzi
+mazzo
+media
+medici
+medico
+medie
+medio
+medita
+mediti
+medito
+medusa
+meduse
+meglio
+mela
+mele
+meleto
+melma
+melo
+membra
+membri
+membro
+mena
+menai
+menano
+menare
+menata
+menate
+menati
+menato
+menava
+menavi
+menavo
+meni
+menino
+meno
+mensa
+mense
+menta
+mente
+menti
+mentii
+mento
+mentre
+merce
+merci
+meriti
+merito
+merli
+merlo
+mese
+mesi
+messa
+messe
+messi
+messo
+mesta
+mestai
+mesti
+mesto
+mete
+metodi
+metodo
+metri
+metta
+mette
+metti
+mezza
+mezze
+mezzi
+mezzo
+mia
+micce
+miccia
+miele
+mieta
+miete
+mietei
+mieti
+miglio
+milite
+mille
+milza
+milze
+mina
+minata
+mine
+minima
+minime
+minimi
+minimo
+minori
+minuta
+minute
+minuti
+minuto
+miope
+miopi
+mira
+mirano
+mirare
+mirata
+mirate
+mirati
+mirato
+mirava
+miravi
+miravo
+mire
+miri
+mirini
+mirino
+miro
+mise
+misera
+misere
+miseri
+misi
+mista
+miste
+misti
+misto
+misura
+misuri
+misuro
+miti
+mitiga
+mitigo
+mito
+mobile
+mobili
+moda
+mode
+modera
+moderi
+modero
+modi
+modica
+modici
+modico
+modo
+moduli
+modulo
+mogano
+mogli
+moglie
+molare
+molari
+moli
+molla
+molle
+molo
+molta
+molte
+molto
+monaca
+monaci
+monaco
+monca
+monche
+monchi
+monco
+mondi
+moneta
+monete
+monna
+monta
+montai
+monte
+monti
+mora
+morali
+morda
+more
+mori
+moria
+morire
+moro
+morra
+morsa
+morse
+morsi
+morso
+morta
+morte
+morti
+morto
+mosca
+mosche
+mosci
+mossa
+mosse
+mossi
+mosso
+mosto
+mostra
+mostre
+mostri
+mostro
+motivi
+motivo
+moto
+motore
+motori
+mozza
+mozzai
+mozzi
+mozzo
+mucca
+mucchi
+muffa
+muffe
+muggii
+mugnai
+mulini
+mulino
+mulo
+multa
+multe
+mummia
+munito
+muoia
+muoio
+muore
+muori
+muova
+muove
+muovi
+muovo
+mura
+muri
+museo
+musica
+muso
+muta
+mutai
+mutano
+mutare
+mutate
+mutati
+mutato
+mutava
+mutavi
+mutavo
+mute
+muti
+mutino
+muto
+nacque
+nacqui
+nafta
+nane
+nani
+nano
+nappa
+narice
+narici
+narra
+narrai
+narri
+nasale
+nasali
+nasce
+nasco
+nasi
+naso
+nastri
+nata
+natale
+nati
+natica
+nativa
+native
+nativi
+nativo
+nato
+natura
+nature
+nausea
+navale
+navali
+navata
+navate
+nave
+navi
+naviga
+navigo
+nebbia
+nebbie
+negai
+negano
+negare
+negata
+negate
+negati
+negato
+negava
+negavi
+negavo
+negli
+nego
+negozi
+nei
+nella
+nelle
+nello
+nemici
+neo
+nere
+neri
+nero
+nervi
+nervo
+neutra
+neutre
+neutri
+neutro
+nevaio
+neve
+nevica
+nevico
+nidi
+nido
+niente
+ninfa
+ninfe
+nipote
+nipoti
+nobile
+nobili
+noce
+noci
+nociva
+nocive
+nocivo
+nodo
+noi
+noia
+noie
+noiosa
+noiose
+noiosi
+noioso
+nomade
+nomadi
+nome
+nomi
+nomina
+nomine
+nomini
+nomino
+nonna
+nonne
+nonni
+nonno
+norma
+norme
+nostra
+nostre
+nostri
+nostro
+notai
+notaio
+notare
+notate
+notato
+notava
+notavi
+note
+noti
+notino
+noto
+notte
+notti
+nove
+novizi
+nozze
+nubile
+nubili
+nuca
+nuche
+nuclei
+nucleo
+nuda
+nudi
+nudo
+nulla
+nullo
+numera
+numeri
+numero
+nunzio
+nuora
+nuota
+nuotai
+nuoti
+nuoto
+nuova
+nuove
+nuovi
+nuovo
+nutre
+nutrii
+nuvola
+nuvole
+oasi
+oblia
+oblii
+oblio
+oca
+occhi
+occhio
+occupa
+occupi
+occupo
+oceani
+oceano
+oche
+ode
+odi
+odia
+odiai
+odiamo
+odiano
+odiare
+odiate
+odiato
+odiava
+odiavi
+odiavo
+odino
+odio
+odiosa
+odiose
+odiosi
+odioso
+odorai
+odore
+odori
+odoro
+offesa
+offese
+offesi
+offeso
+offra
+offre
+offri
+offro
+oggi
+ogni
+ognuna
+ognuno
+olezzi
+olezzo
+olia
+oliai
+oliamo
+oliare
+oliata
+oliate
+oliati
+oliato
+oliava
+oliavi
+oliavo
+oliera
+oliere
+olino
+oliva
+olive
+olmi
+olmo
+oltre
+ombra
+ombre
+omeri
+omero
+omessa
+omesse
+omessi
+omette
+ometto
+once
+onda
+onde
+ondosa
+ondose
+ondosi
+ondoso
+ondula
+onduli
+ondulo
+oneri
+onesta
+oneste
+onesti
+onesto
+onice
+onora
+onorai
+onore
+onori
+opaca
+opachi
+opaco
+opera
+operai
+opere
+operi
+opero
+opinai
+oppure
+opta
+optai
+optano
+optare
+optate
+optati
+optato
+optava
+optavi
+optavo
+opti
+optino
+opto
+ora
+orafa
+orafe
+orafi
+orafo
+orale
+orali
+orari
+orario
+orbite
+orchi
+orco
+orda
+orde
+ordina
+ordine
+ordini
+ordino
+ordire
+ordita
+ordite
+orditi
+ordito
+ordiva
+ordivi
+ordivo
+oretta
+orfana
+orfane
+orfani
+orfano
+organi
+organo
+origli
+orla
+orlai
+orlano
+orlare
+orlata
+orlate
+orlati
+orlato
+orlava
+orlavi
+orlavo
+orli
+orlino
+orlo
+orma
+orme
+orna
+ornai
+ornano
+ornare
+ornata
+ornate
+ornati
+ornato
+ornava
+ornavi
+ornavo
+orni
+orno
+oro
+orrore
+orrori
+orsa
+orse
+orso
+orti
+ortica
+orto
+osa
+osai
+osammo
+osando
+osano
+osare
+osasse
+osassi
+osaste
+osasti
+osata
+osate
+osati
+osato
+osava
+osavi
+osavo
+oscena
+oscene
+osceni
+osceno
+oscura
+oscure
+oscuri
+oscuro
+oserai
+oserei
+osi
+osiamo
+osiate
+osino
+oso
+ospita
+ospite
+ospiti
+ospito
+ospizi
+ossi
+osso
+osti
+ostile
+ostili
+otre
+otri
+ottava
+ottici
+ottima
+ottime
+ottimi
+ottimo
+otto
+ottone
+ottura
+otturi
+otturo
+ottusa
+ottuse
+ottusi
+ottuso
+ovale
+ovali
+ovatta
+ovile
+ovvero
+ovvi
+ovvia
+ovvio
+ozia
+oziai
+oziamo
+oziano
+oziare
+oziate
+oziava
+oziavi
+oziavo
+ozino
+ozio
+oziose
+oziosi
+pacata
+pacate
+pacato
+pacchi
+pacco
+pace
+padre
+padri
+paese
+paesi
+paga
+pagai
+pagana
+pagane
+pagani
+pagano
+pagare
+pagata
+pagate
+pagati
+pagato
+pagava
+pagavi
+pagavo
+pagina
+paglia
+paglie
+pago
+paia
+paio
+paiono
+palati
+palato
+palchi
+palco
+pale
+palesa
+palese
+palesi
+paleso
+pali
+palla
+palma
+palme
+palo
+palpa
+palpai
+palpi
+palpo
+palude
+panca
+pance
+panche
+pancia
+pane
+pani
+panico
+panino
+panna
+panni
+panno
+papera
+papere
+papero
+pappa
+pappe
+parata
+parate
+parati
+parchi
+parco
+pare
+pareri
+paresi
+parete
+pareva
+pari
+parla
+parlai
+parli
+parola
+parole
+parsa
+parso
+parte
+parti
+parto
+parve
+pasqua
+pasque
+passa
+passai
+passi
+passo
+pasta
+paste
+pasti
+pasto
+patria
+patrie
+patta
+patti
+patto
+paure
+pausa
+pause
+pavone
+pavoni
+pazza
+pazze
+pazzi
+pazzia
+pazzie
+pazzo
+pecca
+peccai
+pecchi
+pece
+pecore
+pedale
+pedali
+pedana
+pedane
+pedata
+pedate
+pedice
+pedina
+pedine
+pedini
+pedino
+pedone
+pedoni
+peggio
+pegni
+pegno
+pela
+pelai
+pelano
+pelare
+pelata
+pelate
+pelati
+pelato
+pelava
+pelavi
+peli
+pelino
+pelle
+pelli
+pelo
+pelosa
+pelose
+pelosi
+peloso
+pena
+penai
+penano
+penare
+penata
+penate
+penati
+penato
+penava
+penavi
+penavo
+pende
+pendei
+pendi
+pendo
+penino
+penna
+penne
+penosa
+penose
+penosi
+pensa
+pensi
+pera
+perde
+pere
+peri
+perita
+perite
+periti
+perito
+perla
+perle
+perni
+perno
+pero
+perse
+persi
+perso
+pesa
+pesai
+pesano
+pesare
+pesata
+pesate
+pesati
+pesato
+pesava
+pesavi
+pesavo
+pesca
+pescai
+pesce
+pesche
+peschi
+pesci
+pesco
+pese
+pesi
+pesino
+peso
+peste
+pesti
+pesto
+petali
+petalo
+petti
+petto
+pezza
+pezze
+pezzi
+pezzo
+pia
+piace
+piaci
+piaga
+piaghe
+pialla
+pialle
+piana
+piane
+pianga
+piange
+piangi
+piango
+piani
+piano
+pianse
+pianta
+piante
+pianti
+pianto
+piatta
+piatte
+piatti
+piazza
+piazze
+picchi
+picco
+pie
+piede
+piedi
+piega
+pieghe
+piena
+piene
+pieni
+pietre
+pigli
+piglia
+piglio
+pigre
+pigro
+pii
+pila
+pile
+pilone
+pilota
+piloti
+pineta
+pinete
+pini
+pinna
+pinne
+pino
+pinta
+pinte
+pinza
+pinze
+pio
+piogge
+piomba
+piombi
+piombo
+pioppi
+pioppo
+piove
+piovve
+pipa
+pirata
+pirati
+pista
+piste
+pitoni
+piuma
+piume
+pizza
+pizze
+pizzi
+pizzo
+placca
+placco
+plance
+plasma
+plasmi
+plasmo
+platea
+platee
+plebe
+plebi
+plichi
+plico
+poca
+poche
+pochi
+poco
+podere
+poderi
+poema
+poemi
+poesia
+poesie
+poeta
+poggi
+poggio
+poi
+poiana
+polare
+polari
+poli
+polipi
+polipo
+pollai
+polli
+pollo
+polo
+polpa
+polpe
+polsi
+polso
+pomata
+pomate
+pomi
+pomice
+pomici
+pomo
+pompa
+pompe
+pompi
+pompo
+pone
+poneva
+ponte
+porge
+pori
+porlo
+poro
+porosa
+porose
+poroso
+porrai
+porre
+porri
+porro
+porse
+porta
+portai
+porte
+porto
+porvi
+posa
+posai
+posare
+posata
+posate
+posati
+posato
+posava
+posavi
+posavo
+pose
+posi
+posino
+poso
+possa
+posso
+posta
+posti
+posto
+potare
+potei
+potere
+poteva
+potevi
+potevo
+potrai
+potrei
+potuta
+potuti
+potuto
+povera
+povere
+poveri
+povero
+pozza
+pozze
+pozzi
+pozzo
+pranzi
+pranzo
+prati
+prato
+preda
+predai
+prede
+predi
+predii
+predo
+prega
+pregai
+pregi
+pregio
+prema
+preme
+premei
+premi
+premia
+prenda
+prende
+prendi
+prendo
+prese
+presi
+preso
+pressa
+pressi
+presso
+presta
+presti
+presto
+prete
+preti
+prezzi
+prezzo
+prima
+prime
+primi
+primo
+priori
+prisma
+priva
+prive
+privi
+privo
+prode
+prodi
+prole
+pronte
+pronti
+pronto
+propri
+prosa
+prose
+prova
+provai
+prove
+provi
+provo
+prugna
+prugne
+pseudo
+psiche
+pudica
+pudici
+pudico
+pudore
+pudori
+pugile
+pugni
+pulce
+pulci
+pulii
+pulita
+pulite
+puliti
+pulito
+puliva
+pulivi
+pulivo
+pulsa
+pulsai
+pulsi
+punge
+pungi
+pungo
+punsi
+puntai
+punte
+punti
+punto
+puoi
+pura
+pure
+purga
+purgai
+purgo
+puri
+puro
+puzzai
+puzzi
+puzzo
+quadre
+quadri
+quadro
+quale
+quali
+quando
+quante
+quanti
+quanto
+quarzi
+quarzo
+quasi
+quasar
+quei
+quella
+quello
+querce
+questa
+queste
+questi
+questo
+qui
+quieta
+quiete
+quieti
+quieto
+quindi
+quinto
+quota
+quotai
+quote
+quoti
+quoto
+rabbia
+rabbie
+rada
+rade
+radi
+radia
+radiai
+radice
+radici
+radino
+radio
+rado
+raduna
+raduni
+raduno
+radura
+radure
+raggi
+raggio
+ragno
+ramai
+ramaio
+rami
+rampa
+rampe
+rana
+ranci
+rancio
+rane
+rango
+rapa
+rapace
+rapaci
+rapai
+rapano
+rapare
+rapata
+rapate
+rapati
+rapato
+rapava
+rapavi
+rapavo
+rape
+rapida
+rapide
+rapidi
+rapido
+rapino
+rapire
+rapita
+rapite
+rapiti
+rapito
+rapiva
+rapivi
+rapivo
+rapo
+rare
+rari
+raro
+rasa
+rase
+rasi
+raso
+rasoi
+rasoio
+raspa
+raspai
+raspi
+raspo
+rata
+rate
+ratti
+ratto
+rauca
+rauche
+rauchi
+rauco
+razza
+razze
+razzi
+razzo
+rea
+reale
+reali
+reati
+reato
+recai
+recare
+recata
+recate
+recati
+recato
+recava
+recavi
+recavo
+recede
+recedi
+recedo
+rechi
+recide
+recidi
+recido
+recisa
+recise
+recisi
+reciso
+recita
+recite
+reciti
+recito
+redige
+redigi
+redigo
+redine
+redini
+reduci
+ree
+regala
+regale
+regali
+regalo
+regate
+regge
+reggi
+reggia
+reggo
+regime
+regimi
+regina
+regine
+regnai
+regni
+regola
+regole
+regoli
+regolo
+rei
+relega
+relego
+rema
+remai
+remano
+remare
+remata
+remate
+remati
+remato
+remava
+remavi
+remavo
+remi
+remino
+remo
+remota
+remote
+remoti
+remoto
+renda
+rende
+rendi
+rendo
+rene
+reni
+renna
+renne
+reo
+reputa
+reputi
+reputo
+resa
+rese
+resero
+resi
+resina
+resine
+reso
+ressa
+resse
+ressi
+resta
+restai
+resti
+restia
+restie
+restii
+restio
+resto
+retate
+rete
+reti
+retro
+retta
+rette
+retto
+revoca
+revoco
+rialza
+rialzo
+ricada
+ricade
+ricado
+ricama
+ricami
+ricava
+ricavi
+ricavo
+ricca
+ricche
+ricchi
+ricci
+riccio
+ricco
+riceva
+riceve
+ricevi
+ricevo
+ricino
+ride
+ridere
+ridete
+rideva
+ridevo
+ridi
+ridici
+rido
+ridono
+riempi
+riesca
+riesce
+riesci
+riesco
+riga
+righe
+rigide
+rigidi
+rigido
+rigo
+rigore
+rigori
+rilega
+rilego
+rileva
+rilevi
+rilevo
+rima
+rimane
+rimani
+rimase
+rimasi
+rime
+rimedi
+rimise
+rimisi
+rinvia
+rinvii
+rinvio
+rione
+rioni
+ripaga
+ripago
+ripara
+ripari
+riparo
+ripeta
+ripete
+ripeti
+ripeto
+ripida
+ripide
+ripido
+riposa
+riposi
+riposo
+ripudi
+risa
+risaia
+risana
+risani
+risano
+risata
+risate
+rischi
+rise
+risero
+risi
+risma
+risme
+risona
+risoni
+risono
+rissa
+risse
+riti
+ritira
+ritiri
+ritiro
+ritmi
+ritmo
+rito
+ritta
+ritte
+ritti
+ritto
+riunii
+riva
+rivale
+rivali
+rive
+riveda
+rivede
+rivedi
+rivedo
+rivela
+riveli
+rivelo
+rocce
+roccia
+roma
+romba
+rombi
+rombo
+rompa
+rompe
+rompi
+rompo
+ronda
+ronde
+ronza
+ronzai
+ronzi
+ronzo
+rosa
+rosari
+rose
+rosola
+rosolo
+rospi
+rospo
+rossa
+rosse
+rossi
+rosso
+rotaia
+rotaie
+rotola
+rotoli
+rotolo
+rotta
+rotte
+rotti
+rotto
+rovi
+rovina
+rovine
+rovini
+rovino
+rovo
+rozza
+rozze
+rozzi
+ruba
+rubai
+rubano
+rubare
+rubata
+rubate
+rubati
+rubato
+rubava
+rubavi
+rubavo
+rubi
+rubini
+rubino
+rubo
+ruga
+rughe
+rulla
+rullai
+rulli
+rullii
+rullio
+rullo
+rumina
+rumini
+rumore
+rumori
+ruolo
+ruota
+ruote
+rupe
+rupi
+rurale
+rurali
+russa
+russi
+russo
+ruvida
+ruvide
+ruvidi
+ruvido
+sabato
+sabbia
+sacca
+sacche
+sacchi
+sacco
+sacra
+sacre
+sacro
+sagace
+sagaci
+sagge
+saggi
+saggia
+saggio
+sai
+sala
+salai
+salame
+salami
+salano
+salare
+salata
+salate
+salava
+salavi
+salavo
+salda
+saldai
+salde
+saldi
+saldo
+sale
+salga
+sali
+salice
+salici
+salino
+salire
+salita
+salite
+saliti
+salito
+saliva
+salivo
+salma
+salme
+salmi
+salpa
+salpai
+salpi
+salpo
+salsa
+salse
+salta
+saltai
+salti
+salto
+salume
+salumi
+saluta
+salute
+saluti
+saluto
+salva
+salvai
+salve
+salvia
+salvo
+sana
+sanai
+sanare
+sanata
+sanati
+sanato
+sanava
+sanavi
+sanavo
+sane
+sangue
+sani
+sanino
+sanno
+sano
+santa
+sante
+sapere
+sapete
+sapeva
+sapevi
+sapevo
+sapone
+saponi
+sapore
+sapori
+sappi
+sappia
+saprai
+saputo
+sarai
+sarei
+sarta
+sarte
+sarti
+sarto
+sassi
+sasso
+satira
+satire
+sazia
+saziai
+sazie
+sazino
+sazio
+sbagli
+sballa
+sballi
+sballo
+sbalza
+sbalzi
+sbarca
+sbarco
+sbarra
+sbarre
+sbarro
+sbatta
+sbatte
+sbatti
+sbava
+sbavai
+sbavi
+sbavo
+sbenda
+sbendo
+sbirci
+sbocci
+sbocco
+sbrana
+sbrano
+sbriga
+sbrigo
+sbucci
+sbuffa
+sbuffi
+scacci
+scada
+scade
+scadi
+scado
+scafi
+scafo
+scala
+scalai
+scalda
+scaldi
+scaldo
+scale
+scali
+scalo
+scalza
+scalze
+scalzi
+scalzo
+scambi
+scampa
+scampi
+scampo
+scappa
+scappi
+scappo
+scarpa
+scarpe
+scarse
+scarsi
+scarso
+scarta
+scarto
+scassa
+scassi
+scasso
+scatta
+scatto
+scava
+scavi
+scavo
+scegli
+scelga
+scelgo
+scelse
+scelsi
+scelta
+scelte
+scelti
+scelto
+scempi
+scena
+scenda
+scende
+scendi
+scendo
+scene
+scesa
+scese
+scesi
+sceso
+scheda
+schede
+schema
+schemi
+schifo
+sci
+scia
+sciame
+sciami
+scie
+sciupa
+sciupi
+sciupo
+scogli
+scoli
+scolo
+sconta
+sconti
+sconto
+scopi
+scopo
+scoppi
+scopre
+scopri
+scopro
+scorci
+scorda
+scordo
+scorga
+scorge
+scorgi
+scorgo
+scorra
+scorre
+scorri
+scorro
+scorse
+scorta
+scorte
+scorti
+scorto
+scorza
+scorze
+scossa
+scosse
+scossi
+scosta
+scosti
+scosto
+scotta
+scotti
+scotto
+scovai
+screma
+scremi
+scremo
+scriva
+scrivi
+scrivo
+scruta
+scruto
+scudi
+scudo
+scuola
+scuote
+scura
+scure
+scuri
+scuro
+scusa
+scusai
+scusi
+scuso
+sdegna
+sdegni
+sdoppi
+sdraie
+secca
+secche
+secchi
+secoli
+secolo
+sedai
+sedano
+sedare
+sedate
+sedati
+sedato
+sedava
+sedavi
+sede
+sedete
+sedeva
+sedevo
+sedi
+sedia
+sedie
+sedile
+sedili
+sedino
+sedute
+seduti
+seduto
+segale
+seggi
+seggio
+seghe
+segna
+segni
+segno
+segue
+segugi
+seguii
+seguo
+sei
+selci
+selcia
+selcio
+sella
+selle
+selva
+selve
+sembra
+sembri
+sembro
+seme
+semi
+semina
+semine
+semini
+semino
+sempre
+senapa
+senape
+senati
+senato
+seni
+senno
+seno
+sensi
+senso
+senta
+sente
+senti
+sentii
+sento
+senza
+separa
+separi
+separo
+seppi
+seppie
+sera
+serata
+serba
+serbi
+serbo
+sere
+serena
+serene
+sereni
+sereno
+seri
+seria
+serie
+serio
+serra
+serrai
+serre
+serri
+serva
+serve
+servi
+servo
+sessi
+seta
+sete
+setola
+setole
+setta
+severa
+severe
+severi
+severo
+sfama
+sfamai
+sfami
+sfamo
+sfarzi
+sfarzo
+sfasci
+sfatta
+sfatte
+sfatti
+sfatto
+sfera
+sfere
+sfibra
+sfibri
+sfibro
+sfida
+sfidai
+sfide
+sfidi
+sfido
+sfila
+sfilai
+sfilo
+sfinge
+sfingi
+sfinii
+sfiora
+sfiori
+sfioro
+sfitta
+sfitte
+sfitti
+sfitto
+sfocia
+sfocio
+sfogai
+sfogli
+sfogo
+sfonda
+sfondi
+sfondo
+sforzi
+sforzo
+sfregi
+sfrego
+sgelo
+sgobba
+sgobbi
+sgobbo
+sgorga
+sgorgo
+sgrana
+sgrani
+sgrano
+sgrava
+sgravi
+sgravo
+sgrida
+sgridi
+sgrido
+sia
+siamo
+siano
+siate
+sibila
+sibili
+sibilo
+sicari
+sicura
+sicure
+sicuri
+sicuro
+sidro
+sieda
+siede
+siedi
+siedo
+siepe
+siepi
+sieri
+siero
+siesta
+siete
+sifone
+sifoni
+sigari
+sigaro
+sigla
+sigle
+sii
+silura
+siluri
+siluro
+simile
+simili
+simula
+simuli
+simulo
+sino
+sipari
+sirene
+situa
+situai
+situo
+slacci
+slanci
+slargo
+slavo
+sleale
+sleali
+slega
+slegai
+slego
+slitta
+slitte
+slitti
+slitto
+sloga
+slogo
+smacco
+smalta
+smalti
+smalto
+smania
+smanie
+smessa
+smesse
+smessi
+smesso
+smetta
+smette
+smetti
+smetto
+smezza
+smezzi
+smezzo
+smilza
+smilze
+smilzi
+smilzo
+smise
+smisi
+smonta
+smonto
+smorta
+smorte
+smorti
+smorto
+smorza
+smorzi
+smorzo
+smossa
+smosse
+smossi
+smosso
+smuova
+smuove
+smuovi
+smuovo
+snoda
+snodai
+snodi
+snodo
+soave
+soavi
+sobri
+sobria
+sobrie
+sobrio
+soci
+socio
+soda
+sode
+sodi
+sodio
+sodo
+soffi
+soffia
+soffio
+soffra
+soffre
+soffro
+sogna
+sognai
+sogni
+sogno
+sola
+solai
+solaio
+solca
+solcai
+solchi
+solco
+sole
+soli
+solida
+solide
+solidi
+solido
+solite
+soliti
+solito
+solo
+somma
+somme
+sommi
+sommo
+sonda
+sondai
+sonde
+sondi
+sondo
+sonni
+sonno
+sono
+sonora
+sonore
+sonori
+sonoro
+sopii
+sopra
+sorcio
+sorda
+sorde
+sordi
+sorge
+sorse
+sorsi
+sorso
+sorte
+sorto
+sosia
+sosta
+sostai
+soste
+sosti
+sosto
+sotto
+spacca
+spade
+spago
+spalla
+spalle
+spalma
+spalmi
+spalmo
+spanda
+spande
+spandi
+spando
+spanna
+spanne
+spara
+sparai
+spari
+sparii
+sparla
+sparli
+sparlo
+sparo
+sparsa
+sparse
+sparsi
+sparso
+spazi
+spazia
+spazio
+spazza
+spazzi
+spazzo
+specie
+speck
+spedii
+spegne
+spegni
+spella
+spelli
+spello
+spende
+spendo
+spenga
+spengo
+spensi
+spenta
+spente
+spenti
+spento
+spera
+sperai
+sperda
+sperde
+sperdi
+sperdo
+spersa
+sperso
+speri
+spero
+spesa
+spesai
+spese
+spesi
+speso
+spesso
+spetta
+spetto
+spezia
+spezie
+spezza
+spezzi
+spezzo
+spia
+spiana
+spiani
+spiano
+spicca
+spicco
+spie
+spiedi
+spiedo
+spiega
+spiego
+spiga
+spighe
+spilla
+spilli
+spina
+spine
+spinge
+spingi
+spingo
+spinse
+spinta
+spinte
+spinti
+spinto
+spira
+spirai
+spiri
+spiro
+spogli
+spola
+spole
+sponda
+sponde
+sporco
+sporga
+sporge
+sporgi
+sporgo
+sporse
+sporta
+sporte
+sporti
+sporto
+sposa
+spose
+sposi
+sposo
+sposta
+sposti
+sposto
+spregi
+sprema
+spreme
+spremi
+spremo
+sprona
+sproni
+sprono
+spugna
+spugne
+spuma
+spume
+spunta
+spunti
+spunto
+sputa
+sputi
+sputo
+squali
+squalo
+squama
+squame
+sta
+stacca
+stacco
+stadi
+stadio
+staffa
+staffe
+stagni
+stagno
+stai
+stalla
+stalle
+stammi
+stampa
+stampe
+stampi
+stampo
+stana
+stanai
+stanca
+stanco
+stando
+stani
+stanno
+stano
+stanza
+stanze
+stanzi
+stappa
+stappi
+stappo
+starai
+starci
+starei
+staro
+starti
+state
+stati
+stato
+statua
+statue
+stavi
+stavo
+stazza
+stazze
+stazzi
+stazzo
+stecca
+steli
+stella
+stelle
+stelo
+stemmi
+stenda
+stende
+stendi
+stendo
+stenta
+stenti
+stento
+steppa
+steppe
+sterco
+sterno
+sterza
+sterzi
+sterzo
+stesa
+stese
+stesi
+steso
+stessa
+stesse
+stessi
+stesso
+stette
+stia
+stiano
+stile
+stili
+stima
+stimai
+stime
+stimi
+stimo
+stinco
+stira
+stirai
+stiri
+stiro
+stirpe
+stirpi
+stiva
+stivai
+stive
+stivo
+stizza
+sto
+stoffa
+stoffe
+stola
+stole
+stona
+stonai
+stoni
+stono
+stoppa
+stoppe
+storia
+storie
+stormi
+stormo
+storte
+storti
+strada
+strade
+strage
+stragi
+strana
+strane
+strani
+strano
+strati
+strato
+strida
+stride
+stridi
+strido
+strofa
+strofe
+sua
+subito
+succhi
+succo
+suda
+sudai
+sudano
+sudare
+sudata
+sudate
+sudati
+sudava
+sudavi
+sudavo
+sudi
+sudice
+sudici
+sudino
+sudo
+sudore
+sudori
+sue
+sugli
+sui
+suini
+suino
+sulla
+sulle
+sullo
+sunto
+suo
+suoi
+suola
+suole
+suona
+suonai
+suoni
+suono
+suora
+suore
+supera
+superi
+supero
+supine
+supini
+supino
+susina
+susine
+sutura
+suture
+svaga
+svagai
+svago
+svanii
+svaso
+svegli
+svelta
+svelte
+svelti
+svelto
+sverni
+sverno
+svia
+sviai
+sviamo
+sviare
+sviata
+sviati
+sviato
+sviava
+sviavi
+svio
+svisa
+svisai
+svisi
+sviso
+svista
+sviste
+svita
+svitai
+sviti
+svito
+svolga
+svolge
+svolgi
+svolgo
+svolta
+svolte
+svolti
+svolto
+svuota
+svuoti
+svuoto
+tac
+tacchi
+taccia
+taccio
+tacco
+tace
+tacere
+taceva
+tacevo
+taci
+tacita
+tacite
+taciti
+tacito
+tacque
+tacqui
+tafano
+tagli
+taglia
+taglie
+talco
+tale
+tali
+talpa
+talpe
+talune
+tana
+tane
+tanfo
+tanga
+tanta
+tante
+tanti
+tanto
+tappa
+tappe
+tappi
+tappo
+tara
+tarata
+tarate
+tarati
+tarda
+tardai
+tardi
+tardo
+tare
+targa
+targhe
+tarpa
+tarpo
+tasca
+tasche
+tassa
+tassai
+tasse
+tassi
+tasso
+tasta
+tastai
+tasti
+tasto
+tatto
+tatua
+tatuai
+tatui
+tatuo
+tavole
+tavoli
+tazza
+tazze
+teatri
+teatro
+tedi
+tedia
+tediai
+tedino
+tedio
+tegame
+tegola
+tegole
+teiera
+teiere
+tela
+telai
+tele
+teli
+telo
+tema
+temi
+tempi
+tempia
+tempie
+tempo
+tempra
+tempri
+tempro
+tenaci
+tenda
+tende
+tenera
+tenere
+teneri
+tenero
+tenete
+teneva
+tenevi
+tenevo
+tenga
+tengo
+tenne
+tenni
+tenore
+tenori
+tenta
+tentai
+tenti
+tento
+tenue
+tenui
+tenuta
+tenute
+tenuti
+tenuto
+teoria
+teorie
+tepore
+tepori
+terga
+terge
+tergi
+tergo
+terme
+termos
+terna
+terne
+terno
+terra
+terrai
+terre
+tersa
+terse
+tersi
+terso
+terzi
+terzo
+tesa
+teschi
+tesina
+tesla
+tese
+tesi
+teso
+tesori
+tesoro
+tessa
+tessei
+tessi
+tesso
+testa
+teste
+testi
+testo
+tetano
+tetra
+tetre
+tetri
+tetro
+tetti
+tetto
+tibia
+tibie
+tiene
+tieni
+tienti
+tifo
+tifone
+tifoni
+tigli
+tiglio
+tigna
+tigne
+tigri
+timbra
+timbri
+timbro
+timida
+timide
+timidi
+timido
+timone
+timore
+timori
+tini
+tino
+tinta
+tinte
+tinti
+tinto
+tipa
+tipe
+tipi
+tipica
+tipici
+tipo
+tira
+tirai
+tirare
+tirata
+tirati
+tirato
+tirava
+tiravi
+tiravo
+tirchi
+tiri
+tirino
+tiro
+tisana
+tisane
+titoli
+titolo
+tizi
+tizia
+tizie
+tizio
+tocca
+toccai
+tocchi
+tocco
+toga
+toghe
+togli
+toglie
+tolga
+tolse
+tolsi
+tolta
+tolte
+tolti
+tolto
+tomaie
+tomba
+tonaca
+tonaci
+tonaco
+tonchi
+tonda
+tonde
+tondi
+tonfi
+tonfo
+toni
+tonni
+tonno
+tonta
+tonte
+tonti
+tonto
+topazi
+topo
+toppa
+toppe
+torace
+toraci
+torba
+torbe
+torce
+torchi
+torcia
+tori
+torna
+tornai
+torne
+tornea
+tornei
+torneo
+torni
+tornii
+tornio
+torno
+toro
+torre
+torta
+torte
+torti
+torto
+tosa
+tosai
+tosano
+tosare
+tosata
+tosate
+tosati
+tosato
+tosava
+tosavi
+tosavo
+tosi
+tosino
+toso
+tosse
+tossi
+tossii
+tosta
+tostai
+toste
+tosti
+totale
+totali
+totani
+totano
+tozza
+tozze
+tozzo
+tra
+tracce
+tracci
+tradii
+trae
+traevo
+traina
+traini
+traino
+tralci
+trama
+tramai
+trame
+trami
+tramo
+tranci
+tranne
+trarla
+trarre
+trasse
+tratta
+tratte
+tratti
+tratto
+trauma
+traumi
+trave
+travi
+travia
+travio
+tre
+tregua
+trema
+tremai
+tremi
+tremo
+treni
+treno
+trenta
+triade
+trilla
+trilli
+trillo
+tripla
+triplo
+trippa
+trippe
+triste
+tristi
+trita
+trite
+triti
+trito
+trofei
+trofeo
+tromba
+trombe
+tronca
+tronco
+troni
+trono
+troppa
+troppe
+troppi
+troppo
+trota
+trote
+trotta
+trotti
+trotto
+trova
+trovai
+trovi
+trovo
+trucca
+trucco
+truffe
+truffi
+truffo
+truppa
+truppe
+tua
+tuba
+tubano
+tubare
+tubata
+tubate
+tubato
+tubavo
+tuberi
+tubero
+tubi
+tubino
+tubo
+tue
+tuffa
+tuffi
+tuffo
+tufo
+tuguri
+tulle
+tuo
+tuona
+tuoni
+tuono
+turai
+turba
+turbai
+turbo
+turca
+turchi
+turni
+turno
+tutela
+tutele
+tuteli
+tutelo
+tutore
+tutori
+tutta
+tutte
+tutti
+tutto
+udendo
+udii
+udire
+udirla
+udita
+udite
+uditi
+udivo
+uffici
+ufo
+uguale
+uguali
+ultima
+ultime
+ultimi
+ultimo
+umane
+umani
+umano
+umida
+umide
+umidi
+umido
+umile
+umili
+umilia
+umilio
+umore
+umori
+una
+uncini
+uncino
+unendo
+unge
+ungere
+ungi
+ungo
+ungono
+uniamo
+uniate
+unica
+uniche
+unici
+unico
+unii
+unione
+unioni
+unirai
+unire
+unirei
+unisce
+unisci
+unisco
+unissi
+uniste
+unisti
+unita
+unite
+uniti
+unito
+univa
+univo
+uno
+unta
+unte
+unti
+unto
+uomini
+uomo
+urbana
+urbane
+urbani
+urbano
+urla
+urlai
+urlano
+urlare
+urlata
+urlate
+urlati
+urlato
+urlava
+urlavi
+urlavo
+urli
+urlino
+urlo
+urna
+urne
+urta
+urtano
+urtare
+urtate
+urtati
+urtato
+urtava
+urtavi
+urtavo
+urti
+urto
+usa
+usai
+usando
+usano
+usanza
+usanze
+usare
+usasse
+usassi
+usaste
+usasti
+usata
+usate
+usati
+usato
+usava
+usavi
+usavo
+usci
+uscii
+uscio
+uscire
+uscita
+uscite
+usciti
+uscito
+usciva
+uscivo
+userai
+userei
+usi
+usiamo
+usiate
+uso
+usuale
+usuali
+usura
+usurai
+usure
+usurpi
+usurpo
+utente
+utenti
+utenza
+utile
+utili
+utopia
+utopie
+uve
+vacche
+vada
+vadano
+vado
+vaga
+vagano
+vagare
+vagata
+vagate
+vagati
+vagato
+vagava
+vagavi
+vagavo
+vaghe
+vagire
+vagita
+vagite
+vagiti
+vagito
+vagiva
+vagivo
+vagli
+vaglia
+vaglio
+vagone
+vagoni
+vaioli
+vaiolo
+vale
+valere
+valeva
+valga
+valgo
+valica
+valida
+valide
+validi
+valido
+valle
+valli
+vallo
+valore
+valori
+valuta
+valute
+valuto
+vampa
+vana
+vane
+vanga
+vango
+van
+vani
+vanno
+vano
+vanta
+vantai
+vanti
+vanto
+vapore
+vapori
+vara
+varate
+varati
+varato
+varava
+varavi
+varavo
+varchi
+varco
+vari
+variai
+varie
+varino
+vario
+vasaio
+vasca
+vasche
+vaso
+vassoi
+vasta
+vaste
+vasti
+vasto
+vecchi
+veda
+vedano
+vede
+vedere
+vedete
+vedeva
+vedevi
+vedevo
+vedi
+vedili
+vedo
+vedono
+vedova
+vedove
+vedovi
+vedovo
+vedrai
+veduta
+vedute
+veduti
+veduto
+vegeta
+vegete
+vegeti
+vegeto
+vegli
+veglia
+veglio
+vela
+velai
+velano
+velare
+velata
+velate
+velati
+velava
+velavi
+velavo
+vele
+veli
+velina
+veline
+velino
+velo
+veloce
+veloci
+vena
+venale
+venali
+venda
+vende
+vendi
+venera
+venere
+veneri
+venero
+venga
+venire
+venite
+veniva
+venivi
+venivo
+venne
+venni
+venti
+vento
+ventre
+ventri
+venuta
+venute
+venuti
+venuto
+vera
+verbi
+verbo
+verde
+verdi
+vere
+verga
+verghe
+veri
+verme
+vermi
+verrei
+versa
+versai
+versi
+verso
+vespa
+vespe
+vespri
+vespro
+vessa
+vessai
+vessi
+vesso
+veste
+vesti
+vesto
+veti
+vetri
+vetta
+vette
+viaggi
+viale
+viali
+vibra
+vibrai
+vibri
+vicari
+vicina
+vicine
+vicini
+vicino
+vicoli
+vicolo
+vide
+video
+videro
+vidima
+vidimi
+vidimo
+vie
+viene
+vieni
+vieta
+vietai
+vieto
+vigere
+vigile
+vigili
+vigilo
+vigne
+vigore
+vigori
+vile
+villa
+ville
+vimini
+vinaio
+vinci
+vinco
+vini
+vino
+vinta
+vinte
+vinto
+viola
+violai
+viole
+violi
+violo
+vipera
+vipere
+vira
+virano
+virata
+virate
+virati
+virato
+virava
+viravi
+viravo
+virile
+virili
+visi
+visita
+visite
+visiti
+visito
+viso
+visone
+visoni
+vispa
+vispe
+vispi
+visse
+vissi
+vista
+vistai
+viste
+visti
+visto
+vita
+vitale
+vitali
+vite
+viti
+viva
+vivace
+vivaci
+vivaio
+vivano
+vive
+vivere
+vivete
+viveva
+vivevi
+vivevo
+vivo
+vivono
+vizi
+vizia
+vizio
+vocale
+vocali
+voce
+voci
+voga
+vogai
+vogano
+vogata
+vogate
+vogati
+vogato
+vogava
+voglia
+voglie
+voglio
+vogo
+voi
+volai
+volano
+volare
+volata
+volate
+volati
+volava
+volavi
+volavo
+volere
+volete
+voleva
+volevi
+volge
+volgo
+voli
+volino
+volli
+volo
+volpe
+volpi
+volse
+volta
+voltai
+volte
+volti
+volto
+volumi
+voluta
+volute
+voluti
+voluto
+vorace
+voraci
+vorrai
+vorrei
+vostro
+voti
+votiva
+votive
+votivi
+votivo
+voto
+vuoi
+vuole
+vuota
+vuotai
+vuoti
+vuoto
+zaino
+zampa
+zampe
+zanna
+zappai
+zappi
+zappo
+zecca
+zelo
+zeppa
+zeppe
+zeppi
+zeppo
+zeri
+zia
+zie
+zii
+zio
+zitta
+zitti
+zitto
+zolfo
+zolla
+zona
+zone
+zoppa
+zoppe
+zoppi
+zoppo
+zotica
+zotici
+zotico
+zucca
+zucche
+zuffa
+zuffe
+zuppa
+zuppe
