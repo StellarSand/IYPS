@@ -61,7 +61,6 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.inject
 import java.security.SecureRandom
-import kotlin.sequences.forEach
 
 class GeneratePassphraseFragment : Fragment() {
     
@@ -71,7 +70,8 @@ class GeneratePassphraseFragment : Fragment() {
     private var sliderValue = 0.0f
     private var wordListDropdownSelectedPos = 0
     private var separatorDropdownSelectedPos = 0
-    private var wordMap = mapOf<String, String>()
+    private var allWordsArray = arrayOf<String>()
+    private var totalWordsInWordlist = 0
     private val secureRandom by inject<SecureRandom>()
     private var generatedPhraseString: String = ""
     
@@ -92,7 +92,20 @@ class GeneratePassphraseFragment : Fragment() {
             arrayOf(
                 getString(R.string.eff_long),
                 getString(R.string.eff_short_1),
-                getString(R.string.eff_short_2)
+                getString(R.string.eff_short_2),
+                "Diceware Čeština", // Czech
+                "Diceware Deutsch", // German
+                "Diceware Eesti", // Estonian
+                "Diceware English",
+                "Diceware Español", // Spanish
+                "Diceware Français", // French
+                "Diceware Italiano", // Italian
+                "Diceware Nederlands", // Dutch
+                "Diceware Português", // Portuguese
+                "Diceware Svenska", // Swedish
+                "Diceware Türkçe", // Turkish
+                "Diceware 汉语", // Chinese
+                "Diceware 日本語" // Japanese
             )
         wordListDropdownSelectedPos = prefManager.getInt(PHRASE_WORDLIST_POS)
         val separatorDropdownArray = PHRASE_SEPARATORS.map { it.toString() }.toTypedArray() + getString(R.string.spaces)
@@ -136,7 +149,8 @@ class GeneratePassphraseFragment : Fragment() {
                 if (position != wordListDropdownSelectedPos) {
                     wordListDropdownSelectedPos = position
                     lifecycleScope.launch {
-                        wordMap = getWordMapFromRes()
+                        allWordsArray = getWordsArrayFromRes()
+                        totalWordsInWordlist = allWordsArray.size
                         showGeneratedPassphrase()
                     }
                 }
@@ -173,7 +187,8 @@ class GeneratePassphraseFragment : Fragment() {
         }
         
         lifecycleScope.launch {
-            wordMap = getWordMapFromRes()
+            allWordsArray = getWordsArrayFromRes()
+            totalWordsInWordlist = allWordsArray.size
             showGeneratedPassphrase()
         }
         
@@ -210,37 +225,40 @@ class GeneratePassphraseFragment : Fragment() {
                 (1..7).map {
                     async { GenerateMultiList.multiList.add(generatePassphrase()) }
                 }.awaitAll()
+                
+                GenerateMultipleBottomSheet(isPassphraseFragment = true).show(parentFragmentManager, "GenerateMultipleBottomSheet")
             }
-            GenerateMultipleBottomSheet(isPassphraseFragment = true).show(parentFragmentManager, "GenerateMultipleBottomSheet")
         }
     }
     
-    private suspend fun getWordMapFromRes(): Map<String, String> {
+    private suspend fun getWordsArrayFromRes(): Array<String> {
         return withContext(Dispatchers.IO) {
-            val wordlistWordMap = hashMapOf<String, String>()
             val wordlistRawRes =
                 when (wordListDropdownSelectedPos) {
                     0 -> resources.openRawResource(R.raw.eff_passphrase_long)
                     1 -> resources.openRawResource(R.raw.eff_passphrase_short)
-                    else -> resources.openRawResource(R.raw.eff_passphrase_typo_tolerant)
+                    2 -> resources.openRawResource(R.raw.eff_passphrase_typo_tolerant)
+                    3 -> resources.openRawResource(R.raw.diceware_cs)
+                    4 -> resources.openRawResource(R.raw.diceware_de)
+                    5 -> resources.openRawResource(R.raw.diceware_et)
+                    6 -> resources.openRawResource(R.raw.diceware_en)
+                    7 -> resources.openRawResource(R.raw.diceware_es)
+                    8 -> resources.openRawResource(R.raw.diceware_fr)
+                    9 -> resources.openRawResource(R.raw.diceware_it)
+                    10 -> resources.openRawResource(R.raw.diceware_nl)
+                    11 -> resources.openRawResource(R.raw.diceware_pt)
+                    12 -> resources.openRawResource(R.raw.diceware_sv)
+                    13 -> resources.openRawResource(R.raw.diceware_tr)
+                    14 -> resources.openRawResource(R.raw.diceware_zh)
+                    else -> resources.openRawResource(R.raw.diceware_ja)
                 }
             
-            wordlistRawRes
-                .bufferedReader()
-                .useLines { lines ->
-                    lines.forEach { line ->
-                        val (id, word) = line.split("\t")
-                        wordlistWordMap[id] = word
-                    }
-                }
-            
-            wordlistWordMap as Map<String, String>
+            wordlistRawRes.bufferedReader().use { it.readLines() }.toTypedArray()
         }
     }
     
     private suspend fun generatePassphrase(): String {
-        val wordsCount = sliderValue.toInt()
-        val repeatTimes = if (wordListDropdownSelectedPos == 0) 5 else 4
+        val wordsInPhrase = sliderValue.toInt()
         val shouldCapitalize = fragmentBinding.capitalizeSwitch.isChecked
         val shouldAddNumbers = fragmentBinding.phraseNumbersSwitch.isChecked
         val maxNums: Int
@@ -255,32 +273,34 @@ class GeneratePassphraseFragment : Fragment() {
         
         return withContext(Dispatchers.Default) {
             if (shouldAddNumbers) {
-                maxNums = (wordsCount * 0.4).coerceAtMost(8.0).toInt()
-                numPositions = (0 until wordsCount).shuffled().take(maxNums).toSet()
+                maxNums = (wordsInPhrase * 0.4).coerceAtMost(8.0).toInt()
+                numPositions = (0 until wordsInPhrase).shuffled(secureRandom).take(maxNums).toSet()
             }
             
             buildString {
-                (0 until wordsCount).forEach {
-                    val wordKey =
-                        buildString(capacity = repeatTimes) {
-                            // Rolling a six-sided die five (or four) times
-                            repeat(repeatTimes) {
-                                append(secureRandom.nextInt(6) + 1)
-                            }
+                // Instead of rolling a six sided die 5 (or 4) times,
+                // select random words from wordlist directly.
+                // This will help eliminate some complexity as I cleaned the diceware wordlists,
+                // therefore some diceware wordlists don't have 7776 (6^5) or 1296 (6^4) words.
+                // We could also do:
+                // repeat(5) { secureRandom.nextInt(totalWordsInWordlist) }
+                // but that could result in some words being selected more than once.
+                (0 until totalWordsInWordlist)
+                    .shuffled(secureRandom) // Randomly selected indices of the words from wordlist
+                    .take(wordsInPhrase)
+                    .forEachIndexed { /*index = */ posInPhrase, /*value = */ indexInWordlist ->
+                        // posInPhrase = position of the word in passphrase
+                        // indexInWordlist = index of the word from wordlist
+                        var word = allWordsArray[indexInWordlist]
+                        if (shouldCapitalize) {
+                            word = word.replaceFirstChar { it.titlecase() }
                         }
-                    var word = wordMap[wordKey] // Find the word from words list with corresponding key
-                    if (shouldCapitalize) {
-                        word =
-                            word?.replaceFirstChar { char ->
-                                char.titlecase()
-                            }
+                        append(word)
+                        if (shouldAddNumbers && numPositions?.contains(posInPhrase) == true) {
+                            append(secureRandom.nextInt(9) + 1) // Random number from 1-9
+                        }
+                        if (posInPhrase < wordsInPhrase - 1) append(separator)
                     }
-                    append(word)
-                    if (shouldAddNumbers && numPositions?.contains(it) == true) {
-                        append(secureRandom.nextInt(9) + 1) // Random number from 1-9
-                    }
-                    if (it < wordsCount - 1) append(separator)
-                }
             }
         }
     }

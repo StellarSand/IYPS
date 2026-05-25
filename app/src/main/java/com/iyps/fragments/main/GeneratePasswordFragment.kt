@@ -237,8 +237,9 @@ class GeneratePasswordFragment : Fragment() {
                 (1..7).map {
                     async { GenerateMultiList.multiList.add(generatePassword(shouldBuildAllCharsList = false)) }
                 }.awaitAll()
+                
+                GenerateMultipleBottomSheet().show(parentFragmentManager, "GenerateMultipleBottomSheet")
             }
-            GenerateMultipleBottomSheet().show(parentFragmentManager, "GenerateMultipleBottomSheet")
         }
         
     }
@@ -306,7 +307,7 @@ class GeneratePasswordFragment : Fragment() {
                 
                 // To avoid spaces at the start & end,
                 // iterate from 1 < (length - 1)
-                for (index in (1 until (length - 1)).shuffled()) {
+                for (index in (1 until (length - 1)).shuffled(secureRandom)) {
                     if (spacePositions.size >= maxSpaces) break
                     
                     // Prevent consecutive indexes for spaces
