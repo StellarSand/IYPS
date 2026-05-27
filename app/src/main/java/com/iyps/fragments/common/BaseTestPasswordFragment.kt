@@ -131,7 +131,7 @@ abstract class BaseTestPasswordFragment : Fragment() {
     private val graphString by lazy { getString(R.string.graph) }
     private val turnsString by lazy { getString(R.string.turns) }
     private val regexNameString by lazy { getString(R.string.regex_name) }
-    protected val numberFmt: NumberFormat by lazy { NumberFormat.getInstance() }
+    private val numberFmt by lazy { NumberFormat.getInstance() }
     protected var isPassphrase = false
     protected lateinit var clipboardManager: ClipboardManager
     
@@ -372,12 +372,21 @@ abstract class BaseTestPasswordFragment : Fragment() {
     
     private fun getStatisticsCounts(charSequence: CharSequence): Array<Int> {
         val length = charSequence.length
+        val uniqueCharsCount = charSequence.toSet().size
         val upperCaseCount = charSequence.count { it.isUpperCase() }
         val lowerCaseCount = charSequence.count { it.isLowerCase() }
         val numbersCount = charSequence.count { it.isDigit() }
         val spacesCount = charSequence.count { it.isWhitespace() }
         val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount - spacesCount
-        return arrayOf(length, upperCaseCount, lowerCaseCount, numbersCount, specialCharsCount, spacesCount)
+        return arrayOf(
+            length,
+            uniqueCharsCount,
+            upperCaseCount,
+            lowerCaseCount,
+            numbersCount,
+            specialCharsCount,
+            spacesCount
+        )
     }
     
     private fun getPwdEntropyText(statsCountsList: Array<Int>): String {
@@ -388,10 +397,10 @@ abstract class BaseTestPasswordFragment : Fragment() {
         // a-z -> 26
         // 0-9 -> 10
         // Special characters -> 32 on a standard US keyboard
-        if (statsCountsList[1] > 0) poolSize += 26.0 // Uppercase
-        if (statsCountsList[2] > 0) poolSize += 26.0 // Lowercase
-        if (statsCountsList[3] > 0) poolSize += 10.0 // Digits
-        if (statsCountsList[4] > 0) poolSize += 32.0 // Special characters
+        if (statsCountsList[2] > 0) poolSize += 26.0 // Uppercase
+        if (statsCountsList[3] > 0) poolSize += 26.0 // Lowercase
+        if (statsCountsList[4] > 0) poolSize += 10.0 // Digits
+        if (statsCountsList[5] > 0) poolSize += 32.0 // Special characters
         
         return numberFmt.format(
             // Entropy = Length * log2(pool size)
@@ -401,13 +410,16 @@ abstract class BaseTestPasswordFragment : Fragment() {
     
     private fun getPhraseEntropyText(wordsInPhrase: Double,
                                      totalWordsInWordlist: Double,
-                                     hasNumber: Boolean): String {
+                                     hasNumber: Boolean): Pair<String, String> {
         // Entropy = words_in_passphrase * log2(total_words_in_wordlist)
         // if numbers included, add log2(10.0)
         var entropy = wordsInPhrase * log2(totalWordsInWordlist)
         if (hasNumber) entropy += log2(10.0)
         
-        return numberFmt.format(entropy)
+        return Pair(
+            numberFmt.format(entropy), // Total entropy
+            numberFmt.format(entropy / wordsInPhrase) // Per word entropy
+        )
     }
     
     @SuppressLint("SetTextI18n")
@@ -477,28 +489,37 @@ abstract class BaseTestPasswordFragment : Fragment() {
                 buildString {
                     append(
                         "\u2022 ${getString(R.string.length)}: ${numberFmt.format(statsList[0])}",
-                        "\n\u2022 ${getString(R.string.uppercase)}: ${numberFmt.format(statsList[1])}",
-                        "\n\u2022 ${getString(R.string.lowercase)}: ${numberFmt.format(statsList[2])}",
-                        "\n\u2022 ${getString(R.string.numbers)}: ${numberFmt.format(statsList[3])}",
-                        "\n\u2022 ${getString(R.string.special_char)}: ${numberFmt.format(statsList[4])}",
-                        "\n\u2022 ${getString(R.string.spaces)}: ${numberFmt.format(statsList[5])}"
+                        "\n\u2022 ${getString(R.string.unique_chars)}: ${numberFmt.format(statsList[1])}",
+                        "\n\u2022 ${getString(R.string.uppercase)}: ${numberFmt.format(statsList[2])}",
+                        "\n\u2022 ${getString(R.string.lowercase)}: ${numberFmt.format(statsList[3])}",
+                        "\n\u2022 ${getString(R.string.numbers)}: ${numberFmt.format(statsList[4])}",
+                        "\n\u2022 ${getString(R.string.special_char)}: ${numberFmt.format(statsList[5])}",
+                        "\n\u2022 ${getString(R.string.spaces)}: ${numberFmt.format(statsList[6])}"
                     )
                 }
         }
     }
     
-    protected fun displayPhraseDetails(passphrase: CharSequence) {
+    protected fun displayPhraseResults(passphrase: CharSequence) {
         val phraseDetails =
             if (Build.VERSION.SDK_INT >= 33) arguments?.getParcelable("phraseDetails", GenPhraseDetails::class.java)!!
             else arguments?.getParcelable("phraseDetails")!!
         
-        @SuppressLint("SetTextI18n")
-        fragmentBinding.entropySubtitle.text =
-            "${getPhraseEntropyText(
+        val (totalEntropy, perWordEntropy) =
+            getPhraseEntropyText(
                 phraseDetails.wordsInPhrase.toDouble(),
                 phraseDetails.totalWordsInWordlist.toDouble(),
                 phraseDetails.hasNumber
-            )} ${getString(R.string.bits)}"
+            )
+        
+        @SuppressLint("SetTextI18n")
+        fragmentBinding.entropySubtitle.text =
+            buildString {
+                append(
+                    "\u2022 ${getString(R.string.total)}: $totalEntropy ${getString(R.string.bits)}",
+                    "\n\u2022 ${getString(R.string.per_word)}: $perWordEntropy ${getString(R.string.bits)}"
+                )
+            }
         
         val wordsList =
             passphrase
@@ -516,6 +537,11 @@ abstract class BaseTestPasswordFragment : Fragment() {
             buildString {
                 append(
                     "\u2022 ${getString(R.string.words)}: ${numberFmt.format(phraseDetails.wordsInPhrase.toInt())}",
+                    "\n\u2022 ${getString(R.string.avg_word_length)}: ${
+                        numberFmt.format(
+                            (longestWord.length + shortestWord.length) / 2
+                        )
+                    }",
                     "\n\u2022 ${getString(R.string.longest_word)}: $longestWord",
                     "\n\u2022 ${getString(R.string.longest_word_length)}: ${numberFmt.format(longestWord.length)}",
                     "\n\u2022 ${getString(R.string.shortest_word)}: $shortestWord",

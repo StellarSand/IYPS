@@ -90,7 +90,7 @@ class PassphraseDetailsFragment : BaseTestPasswordFragment() {
             }
         }
         
-        displayPhraseDetails(passphrase)
+        displayPhraseResults(passphrase)
     }
     
     override fun getCoordinatorLayout(): CoordinatorLayout {
