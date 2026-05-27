@@ -17,6 +17,7 @@
 
 package com.iyps.fragments.details
 
+import android.text.InputFilter
 import android.view.View
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.ViewCompat
@@ -27,13 +28,14 @@ import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.fragments.common.BaseTestPasswordFragment
 
-class DetailsFragment : BaseTestPasswordFragment() {
+class PassphraseDetailsFragment : BaseTestPasswordFragment() {
     
     private lateinit var detailsActivity: DetailsActivity
     
     override fun setupFragmentContent() {
+        isPassphrase = true
         detailsActivity = (requireActivity() as DetailsActivity)
-        val password = detailsActivity.passwordLine
+        val passphrase = detailsActivity.passwordLine
         
         // Adjust UI components for edge to edge
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.scrollView) { v, windowInsets ->
@@ -44,17 +46,51 @@ class DetailsFragment : BaseTestPasswordFragment() {
         }
         
         fragmentBinding.apply {
+            crackTimeTitle.isVisible = false
+            tenBGuessesStrengthMeter.isVisible = false
+            tenBGuessesTitle.isVisible = false
+            tenBGuessesSubtitle.isVisible = false
+            tenBGuessesStrengthTitle.isVisible = false
+            tenBGuessesStrength.isVisible = false
+            tenKGuessesStrengthMeter.isVisible = false
+            tenKGuessesTitle.isVisible = false
+            tenKGuessesSubtitle.isVisible = false
+            tenKGuessesStrengthTitle.isVisible = false
+            tenKGuessesStrength.isVisible = false
+            tenGuessesStrengthMeter.isVisible = false
+            tenGuessesTitle.isVisible = false
+            tenGuessesSubtitle.isVisible = false
+            tenGuessesStrengthTitle.isVisible = false
+            tenGuessesStrength.isVisible = false
+            hundredGuessesStrengthMeter.isVisible = false
+            hundredGuessesTitle.isVisible = false
+            hundredGuessesSubtitle.isVisible = false
+            hundredGuessesStrengthTitle.isVisible = false
+            hundredGuessesStrength.isVisible = false
+            warningTitle.isVisible = false
+            warningSubtitle.isVisible = false
+            suggestionsTitle.isVisible = false
+            suggestionsSubtitle.isVisible = false
+            guessesTitle.isVisible = false
+            guessesSubtitle.isVisible = false
+            orderMagnTitle.isVisible = false
+            orderMagnSubtitle.isVisible = false
+            matchSequenceTitle.isVisible = false
+            matchSequenceSubtitle.isVisible = false
             testMultipleFab.isVisible = false
-            passwordBox.hint = getString(R.string.password)
+            passwordBox.hint = getString(R.string.passphrase)
             passwordText.apply {
-                setText(password)
+                // Remove 128 chars limit
+                filters = filters.filterNot { it is InputFilter.LengthFilter }.toTypedArray()
+                
+                setText(passphrase)
                 isFocusable = false
                 isCursorVisible = false
                 isSingleLine = true
             }
         }
         
-        displayResults(password)
+        displayPhraseDetails(passphrase)
     }
     
     override fun getCoordinatorLayout(): CoordinatorLayout {

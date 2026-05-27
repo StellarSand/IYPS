@@ -15,12 +15,15 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.iyps.objects
+package com.iyps.models
 
-import com.iyps.models.GenMultiItem
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 
-object GenerateMultiList {
-    
-    val multiList by lazy { arrayListOf<GenMultiItem>() }
-    
-}
+@Parcelize
+data class GenPhraseDetails(
+    val wordsInPhrase: Float,
+    val totalWordsInWordlist: Int,
+    val separator: String,
+    val hasNumber: Boolean
+) : Parcelable

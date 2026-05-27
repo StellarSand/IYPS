@@ -20,6 +20,6 @@ package com.iyps.models
 data class SupportMethod(
     val title: String,
     val titleIcon: Int,
-    val qr: Int,
+    val qrCodeDrawable: Int,
     val url: String
 )

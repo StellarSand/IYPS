@@ -34,6 +34,7 @@ import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
 import com.iyps.databinding.FragmentTestPasswordBinding
+import com.iyps.models.GenPhraseDetails
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.ClipboardUtils.Companion.scheduleClipboardClear
 import com.iyps.utils.IntentUtils.Companion.shareText
@@ -130,7 +131,8 @@ abstract class BaseTestPasswordFragment : Fragment() {
     private val graphString by lazy { getString(R.string.graph) }
     private val turnsString by lazy { getString(R.string.turns) }
     private val regexNameString by lazy { getString(R.string.regex_name) }
-    private val numberFmt by lazy { NumberFormat.getInstance() }
+    protected val numberFmt: NumberFormat by lazy { NumberFormat.getInstance() }
+    protected var isPassphrase = false
     protected lateinit var clipboardManager: ClipboardManager
     
     private companion object {
@@ -378,7 +380,7 @@ abstract class BaseTestPasswordFragment : Fragment() {
         return arrayOf(length, upperCaseCount, lowerCaseCount, numbersCount, specialCharsCount, spacesCount)
     }
     
-    private fun getEntropyText(statsCountsList: Array<Int>): String {
+    private fun getPwdEntropyText(statsCountsList: Array<Int>): String {
         var poolSize = 0.0
         
         // Pool size
@@ -391,14 +393,25 @@ abstract class BaseTestPasswordFragment : Fragment() {
         if (statsCountsList[3] > 0) poolSize += 10.0 // Digits
         if (statsCountsList[4] > 0) poolSize += 32.0 // Special characters
         
-        // Entropy = Length * log2(pool size)
         return numberFmt.format(
+            // Entropy = Length * log2(pool size)
             (statsCountsList[0] * log2(poolSize))
         )
     }
     
+    private fun getPhraseEntropyText(wordsInPhrase: Double,
+                                     totalWordsInWordlist: Double,
+                                     hasNumber: Boolean): String {
+        // Entropy = words_in_passphrase * log2(total_words_in_wordlist)
+        // if numbers included, add log2(10.0)
+        var entropy = wordsInPhrase * log2(totalWordsInWordlist)
+        if (hasNumber) entropy += log2(10.0)
+        
+        return numberFmt.format(entropy)
+    }
+    
     @SuppressLint("SetTextI18n")
-    protected fun displayResults(password: CharSequence) {
+    protected fun displayPwdResults(password: CharSequence) {
         val strength = get<Zxcvbn>().measure(password)
         val crackTimesDisplay = strength.crackTimesDisplay
         val crackTimeSeconds = strength.crackTimeSeconds
@@ -454,8 +467,7 @@ abstract class BaseTestPasswordFragment : Fragment() {
             
             // Entropy
             val statsList = getStatisticsCounts(password)
-            entropySubtitle.text =
-                "${getEntropyText(statsList)} ${getString(R.string.bits)}"
+            entropySubtitle.text = "${getPwdEntropyText(statsList)} ${getString(R.string.bits)}"
             
             // Match sequence
             matchSequenceSubtitle.text = getMatchSequenceText(strength)
@@ -473,6 +485,43 @@ abstract class BaseTestPasswordFragment : Fragment() {
                     )
                 }
         }
+    }
+    
+    protected fun displayPhraseDetails(passphrase: CharSequence) {
+        val phraseDetails =
+            if (Build.VERSION.SDK_INT >= 33) arguments?.getParcelable("phraseDetails", GenPhraseDetails::class.java)!!
+            else arguments?.getParcelable("phraseDetails")!!
+        
+        @SuppressLint("SetTextI18n")
+        fragmentBinding.entropySubtitle.text =
+            "${getPhraseEntropyText(
+                phraseDetails.wordsInPhrase.toDouble(),
+                phraseDetails.totalWordsInWordlist.toDouble(),
+                phraseDetails.hasNumber
+            )} ${getString(R.string.bits)}"
+        
+        val wordsList =
+            passphrase
+                .split(phraseDetails.separator)
+                .map {
+                    it.dropLastWhile { char ->
+                        char.isDigit()
+                    }
+                }
+        val longestWord = wordsList.maxBy { it.length }
+        val shortestWord = wordsList.minBy { it.length }
+        
+        // Statistics
+        fragmentBinding.statsSubtitle.text =
+            buildString {
+                append(
+                    "\u2022 ${getString(R.string.words)}: ${numberFmt.format(phraseDetails.wordsInPhrase.toInt())}",
+                    "\n\u2022 ${getString(R.string.longest_word)}: $longestWord",
+                    "\n\u2022 ${getString(R.string.longest_word_length)}: ${numberFmt.format(longestWord.length)}",
+                    "\n\u2022 ${getString(R.string.shortest_word)}: $shortestWord",
+                    "\n\u2022 ${getString(R.string.shortest_word_length)}: ${numberFmt.format(shortestWord.length)}"
+                )
+            }
     }
     
     protected fun copyToClipboard(copiedText: CharSequence) {
@@ -497,38 +546,50 @@ abstract class BaseTestPasswordFragment : Fragment() {
     
     private fun getFormattedResultsText(): String {
         return buildString {
-            append("# ${getString(R.string.password)}\n")
-            append("${fragmentBinding.passwordText.text.toString()}\n\n")
-            append("## ${getString(R.string.est_time_to_crack)}\n\n")
-            append("#### ${getString(R.string.ten_b_guesses_per_sec)}\n")
-            append("\u2022 ${fragmentBinding.tenBGuessesSubtitle.text}\n")
-            append("\u2022 ${getString(R.string.strength)}: ${fragmentBinding.tenBGuessesStrength.text}\n\n")
-            append("#### ${getString(R.string.ten_k_guesses_per_sec)}\n")
-            append("\u2022 ${fragmentBinding.tenKGuessesSubtitle.text}\n")
-            append("\u2022 ${getString(R.string.strength)}: ${fragmentBinding.tenKGuessesStrength.text}\n\n")
-            append("#### ${getString(R.string.ten_guesses_per_sec)}\n")
-            append("\u2022 ${fragmentBinding.tenGuessesSubtitle.text}\n")
-            append("\u2022 ${getString(R.string.strength)}: ${fragmentBinding.tenGuessesStrength.text}\n\n")
-            append("#### ${getString(R.string.hundred_guesses_per_hour)}\n")
-            append("\u2022 ${fragmentBinding.hundredGuessesSubtitle.text}\n")
-            append("\u2022 ${getString(R.string.strength)}: ${fragmentBinding.hundredGuessesStrength.text}\n\n")
-            append("## ${getString(R.string.warning)}\n")
-            append("${fragmentBinding.warningSubtitle.text}\n\n")
-            append("## ${getString(R.string.suggestions)}\n")
-            append("${fragmentBinding.suggestionsSubtitle.text}\n\n")
-            append("## ${getString(R.string.est_guesses_to_crack)}\n")
-            append("${fragmentBinding.guessesSubtitle.text.replace(
-                // Insert ^ after "x 10" (before superscript)
-                Regex("\u00D7\\s+10(\\d+)"), "\u00D7 10\u005E$1"
-            )}\n\n")
-            append("## ${getString(R.string.order_of_magn)}\n")
-            append("${fragmentBinding.orderMagnSubtitle.text}\n\n")
-            append("## ${getString(R.string.entropy)}\n")
-            append("${fragmentBinding.entropySubtitle.text}\n\n")
-            append("## ${getString(R.string.match_sequence)}\n")
-            append("${fragmentBinding.matchSequenceSubtitle.text}\n\n")
-            append("## ${getString(R.string.statistics)}\n")
-            append("${fragmentBinding.statsSubtitle.text}")
+            if (!isPassphrase) {
+                append("# ${getString(R.string.password)}\n")
+                append("${fragmentBinding.passwordText.text.toString()}\n\n")
+                append("## ${getString(R.string.est_time_to_crack)}\n\n")
+                append("#### ${getString(R.string.ten_b_guesses_per_sec)}\n")
+                append("\u2022 ${fragmentBinding.tenBGuessesSubtitle.text}\n")
+                append("\u2022 ${getString(R.string.strength)}: ${fragmentBinding.tenBGuessesStrength.text}\n\n")
+                append("#### ${getString(R.string.ten_k_guesses_per_sec)}\n")
+                append("\u2022 ${fragmentBinding.tenKGuessesSubtitle.text}\n")
+                append("\u2022 ${getString(R.string.strength)}: ${fragmentBinding.tenKGuessesStrength.text}\n\n")
+                append("#### ${getString(R.string.ten_guesses_per_sec)}\n")
+                append("\u2022 ${fragmentBinding.tenGuessesSubtitle.text}\n")
+                append("\u2022 ${getString(R.string.strength)}: ${fragmentBinding.tenGuessesStrength.text}\n\n")
+                append("#### ${getString(R.string.hundred_guesses_per_hour)}\n")
+                append("\u2022 ${fragmentBinding.hundredGuessesSubtitle.text}\n")
+                append("\u2022 ${getString(R.string.strength)}: ${fragmentBinding.hundredGuessesStrength.text}\n\n")
+                append("## ${getString(R.string.warning)}\n")
+                append("${fragmentBinding.warningSubtitle.text}\n\n")
+                append("## ${getString(R.string.suggestions)}\n")
+                append("${fragmentBinding.suggestionsSubtitle.text}\n\n")
+                append("## ${getString(R.string.est_guesses_to_crack)}\n")
+                append("${
+                    fragmentBinding.guessesSubtitle.text.replace(
+                        // Insert ^ after "x 10" (before superscript)
+                        Regex("\u00D7\\s+10(\\d+)"), "\u00D7 10\u005E$1"
+                    )
+                }\n\n")
+                append("## ${getString(R.string.order_of_magn)}\n")
+                append("${fragmentBinding.orderMagnSubtitle.text}\n\n")
+                append("## ${getString(R.string.entropy)}\n")
+                append("${fragmentBinding.entropySubtitle.text}\n\n")
+                append("## ${getString(R.string.match_sequence)}\n")
+                append("${fragmentBinding.matchSequenceSubtitle.text}\n\n")
+                append("## ${getString(R.string.statistics)}\n")
+                append("${fragmentBinding.statsSubtitle.text}")
+            }
+            else {
+                append("# ${getString(R.string.passphrase)}\n")
+                append("${fragmentBinding.passwordText.text.toString()}\n\n")
+                append("## ${getString(R.string.entropy)}\n")
+                append("${fragmentBinding.entropySubtitle.text}\n\n")
+                append("## ${getString(R.string.statistics)}\n")
+                append("${fragmentBinding.statsSubtitle.text}")
+            }
         }
     }
     

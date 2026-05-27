@@ -15,12 +15,9 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.iyps.objects
+package com.iyps.models
 
-import com.iyps.models.GenMultiItem
-
-object GenerateMultiList {
-    
-    val multiList by lazy { arrayListOf<GenMultiItem>() }
-    
-}
+data class GenMultiItem(
+    val password: String,
+    val phraseDetails: GenPhraseDetails? = null
+)

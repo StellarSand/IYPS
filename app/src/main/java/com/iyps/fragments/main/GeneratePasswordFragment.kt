@@ -41,6 +41,7 @@ import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
 import com.iyps.bottomsheets.GenerateMultipleBottomSheet
 import com.iyps.databinding.FragmentGeneratePasswordBinding
+import com.iyps.models.GenMultiItem
 import com.iyps.objects.AppState
 import com.iyps.objects.GenerateMultiList
 import com.iyps.preferences.PreferenceManager
@@ -235,7 +236,13 @@ class GeneratePasswordFragment : Fragment() {
         fragmentBinding.pwdMultiGenBtn.setOnClickListener {
             lifecycleScope.launch {
                 (1..7).map {
-                    async { GenerateMultiList.multiList.add(generatePassword(shouldBuildAllCharsList = false)) }
+                    async {
+                        GenerateMultiList.multiList.add(
+                            GenMultiItem (
+                                password = generatePassword(shouldBuildAllCharsList = false)
+                            )
+                        )
+                    }
                 }.awaitAll()
                 
                 GenerateMultipleBottomSheet().show(parentFragmentManager, "GenerateMultipleBottomSheet")
@@ -310,7 +317,7 @@ class GeneratePasswordFragment : Fragment() {
                 for (index in (1 until (length - 1)).shuffled(secureRandom)) {
                     if (spacePositions.size >= maxSpaces) break
                     
-                    // Prevent consecutive indexes for spaces
+                    // Prevent consecutive indices for spaces
                     if (!spacePositions.contains(index - 1) && !spacePositions.contains(index + 1)) {
                         spacePositions.add(index)
                     }

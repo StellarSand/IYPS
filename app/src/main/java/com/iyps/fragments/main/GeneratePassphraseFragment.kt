@@ -18,9 +18,11 @@
 package com.iyps.fragments.main
 
 import android.annotation.SuppressLint
+import android.app.ActivityOptions
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -35,9 +37,12 @@ import androidx.lifecycle.lifecycleScope
 import com.google.android.material.slider.Slider
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import com.iyps.R
+import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
 import com.iyps.bottomsheets.GenerateMultipleBottomSheet
 import com.iyps.databinding.FragmentGeneratePassphraseBinding
+import com.iyps.models.GenMultiItem
+import com.iyps.models.GenPhraseDetails
 import com.iyps.objects.AppState
 import com.iyps.objects.GenerateMultiList
 import com.iyps.preferences.PreferenceManager
@@ -72,6 +77,7 @@ class GeneratePassphraseFragment : Fragment() {
     private var separatorDropdownSelectedPos = 0
     private var allWordsArray = arrayOf<String>()
     private var totalWordsInWordlist = 0
+    private var separator: String = ""
     private val secureRandom by inject<SecureRandom>()
     private var generatedPhraseString: String = ""
     
@@ -162,9 +168,10 @@ class GeneratePassphraseFragment : Fragment() {
         (fragmentBinding.separatorDropdownMenu as MaterialAutoCompleteTextView).apply {
             setText(separatorDropdownArray[separatorDropdownSelectedPos])
             setSimpleItems(separatorDropdownArray)
-            setOnItemClickListener { _, _, position, _ ->
+            setOnItemClickListener { parent, _, position, _ ->
                 if (position != separatorDropdownSelectedPos) {
                     separatorDropdownSelectedPos = position
+                    separator = getSeparator(parent.getItemAtPosition(position) as String)
                     showGeneratedPassphrase()
                 }
             }
@@ -189,13 +196,25 @@ class GeneratePassphraseFragment : Fragment() {
         lifecycleScope.launch {
             allWordsArray = getWordsArrayFromRes()
             totalWordsInWordlist = allWordsArray.size
+            separator = getSeparator(fragmentBinding.separatorDropdownMenu.adapter.getItem(separatorDropdownSelectedPos) as String)
             showGeneratedPassphrase()
+        }
+        
+        // Details
+        fragmentBinding.phraseDetailsBtn.setOnClickListener {
+            startActivity(
+                Intent(requireActivity(), DetailsActivity::class.java)
+                    .putExtra("PwdLine", generatedPhraseString)
+                    .putExtra("isPassphrase", true)
+                    .putExtra("phraseDetails", getPhraseDetails()),
+                ActivityOptions.makeSceneTransitionAnimation(requireActivity()).toBundle()
+            )
         }
         
         // Copy
         fragmentBinding.phraseCopyBtn.apply {
             setOnClickListener {
-                val clipData = ClipData.newPlainText("", fragmentBinding.phraseGeneratedTextView.text)
+                val clipData = ClipData.newPlainText("", generatedPhraseString)
                 clipData.hideSensitiveContent()
                 (requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
                 // Show snackbar only if 12L or lower to avoid duplicate notifications
@@ -216,14 +235,21 @@ class GeneratePassphraseFragment : Fragment() {
         
         // Share
         fragmentBinding.phraseShareBtn.setOnClickListener {
-            requireActivity().shareText(fragmentBinding.phraseGeneratedTextView.text.toString())
+            requireActivity().shareText(generatedPhraseString)
         }
         
         // Generate multiple
         fragmentBinding.phraseMultiGenBtn.setOnClickListener {
             lifecycleScope.launch {
                 (1..7).map {
-                    async { GenerateMultiList.multiList.add(generatePassphrase()) }
+                    async {
+                        GenerateMultiList.multiList.add(
+                            GenMultiItem (
+                                password = generatePassphrase(),
+                                phraseDetails = getPhraseDetails()
+                            )
+                        )
+                    }
                 }.awaitAll()
                 
                 GenerateMultipleBottomSheet(isPassphraseFragment = true).show(parentFragmentManager, "GenerateMultipleBottomSheet")
@@ -257,24 +283,22 @@ class GeneratePassphraseFragment : Fragment() {
         }
     }
     
-    private suspend fun generatePassphrase(): String {
-        val wordsInPhrase = sliderValue.toInt()
-        val shouldCapitalize = fragmentBinding.capitalizeSwitch.isChecked
-        val shouldAddNumbers = fragmentBinding.phraseNumbersSwitch.isChecked
-        val maxNums: Int
-        var numPositions: Set<Int>? = null
-        
+    private fun getSeparator(selectedItem: String): String {
         // Append zero width space (\u200B) to the separator
         // This will break/wrap the line after the separator,
         // instead of in the middle of a word
-        val separator =
-            if (fragmentBinding.separatorDropdownMenu.text.toString() == getString(R.string.spaces)) " \u200B"
-            else "${fragmentBinding.separatorDropdownMenu.text}\u200B"
+        return if (selectedItem == getString(R.string.spaces)) " \u200B" else "${selectedItem}\u200B"
+    }
+    
+    private suspend fun generatePassphrase(): String {
+        val wordsInPhrase = sliderValue.toInt()
+        val shouldCapitalize = fragmentBinding.capitalizeSwitch.isChecked
+        var shouldAddNumber = fragmentBinding.phraseNumbersSwitch.isChecked
+        var numPosition = 0
         
         return withContext(Dispatchers.Default) {
-            if (shouldAddNumbers) {
-                maxNums = (wordsInPhrase * 0.4).coerceAtMost(8.0).toInt()
-                numPositions = (0 until wordsInPhrase).shuffled(secureRandom).take(maxNums).toSet()
+            if (shouldAddNumber) {
+                numPosition = secureRandom.nextInt(wordsInPhrase)
             }
             
             buildString {
@@ -282,9 +306,17 @@ class GeneratePassphraseFragment : Fragment() {
                 // select random words from wordlist directly.
                 // This will help eliminate some complexity as I cleaned the diceware wordlists,
                 // therefore some diceware wordlists don't have 7776 (6^5) or 1296 (6^4) words.
-                // We could also do:
-                // repeat(5) { secureRandom.nextInt(totalWordsInWordlist) }
-                // but that could result in some words being selected more than once.
+                //
+                // METHOD A (not done below):
+                // (0..wordsInPhrase).forEach{ repeat(5) { secureRandom.nextInt(totalWordsInWordlist) } }
+                // But this could result in some words being selected more than once.
+                //
+                // METHOD B (done below):
+                // - Take the indices of the words from the wordlist
+                // - Shuffle them randomly
+                // - Limit to number of words in passphrase
+                // - Select words using those indices from allWordsArray
+                // This will result in unique words.
                 (0 until totalWordsInWordlist)
                     .shuffled(secureRandom) // Randomly selected indices of the words from wordlist
                     .take(wordsInPhrase)
@@ -296,8 +328,9 @@ class GeneratePassphraseFragment : Fragment() {
                             word = word.replaceFirstChar { it.titlecase() }
                         }
                         append(word)
-                        if (shouldAddNumbers && numPositions?.contains(posInPhrase) == true) {
+                        if (shouldAddNumber && numPosition == posInPhrase) {
                             append(secureRandom.nextInt(9) + 1) // Random number from 1-9
+                            shouldAddNumber = false
                         }
                         if (posInPhrase < wordsInPhrase - 1) append(separator)
                     }
@@ -316,6 +349,15 @@ class GeneratePassphraseFragment : Fragment() {
                 showSupportAnimBtmSheet(parentFragmentManager, prefManager)
             }
         }
+    }
+    
+    private fun getPhraseDetails(): GenPhraseDetails {
+        return GenPhraseDetails(
+            wordsInPhrase = sliderValue,
+            totalWordsInWordlist = totalWordsInWordlist,
+            separator = separator,
+            hasNumber = fragmentBinding.phraseNumbersSwitch.isChecked
+        )
     }
     
     override fun onPause() {

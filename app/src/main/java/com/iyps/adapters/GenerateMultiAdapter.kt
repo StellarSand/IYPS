@@ -26,19 +26,19 @@ import android.os.Build
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
 import com.iyps.activities.MainActivity
+import com.iyps.models.GenMultiItem
 import com.iyps.utils.ClipboardUtils.Companion.hideSensitiveContent
 import com.iyps.utils.IntentUtils.Companion.shareText
 import com.iyps.utils.UiUtils.Companion.setGenTextWithColor
 import com.iyps.utils.UiUtils.Companion.showSnackbar
 
-class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
+class GenerateMultiAdapter(private val aListViewItems: ArrayList<GenMultiItem>,
                            private val mainActivity: MainActivity,
                            private val isPassphrase: Boolean) : RecyclerView.Adapter<GenerateMultiAdapter.ListViewHolder>() {
     
@@ -61,20 +61,25 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<String>,
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         
         // Generated password
-        holder.pwdLine.setGenTextWithColor(aListViewItems[position], isPassphrase)
+        holder.pwdLine.setGenTextWithColor(aListViewItems[position].password, isPassphrase)
         
         // Details
         holder.detailsBtn.apply {
-            if (!isPassphrase) {
-                setOnClickListener {
-                    context.startActivity(Intent(context, DetailsActivity::class.java)
-                                              .putExtra("PwdLine", holder.pwdLine.text.toString()),
-                                          ActivityOptions.makeSceneTransitionAnimation(mainActivity)
-                                              .toBundle())
-                }
+            val intent =
+                Intent(context, DetailsActivity::class.java)
+                    .putExtra("PwdLine", aListViewItems[position].password)
+            
+            if (isPassphrase) {
+                intent
+                    .putExtra("isPassphrase", true)
+                    .putExtra("phraseDetails", aListViewItems[position].phraseDetails)
             }
-            else {
-                isVisible = false
+            
+            setOnClickListener {
+                context.startActivity(
+                    intent,
+                    ActivityOptions.makeSceneTransitionAnimation(mainActivity).toBundle()
+                )
             }
         }
         

@@ -55,7 +55,7 @@ class SupportMethodItemAdapter (private val aListViewItems: ArrayList<SupportMet
             setCompoundDrawablesWithIntrinsicBounds(supportMethod.titleIcon, 0, 0, 0)
         }
         
-        holder.supportMethodQr.setImageResource(supportMethod.qr)
+        holder.supportMethodQr.setImageResource(supportMethod.qrCodeDrawable)
         
         holder.supportMethodUrl.apply {
             text = supportMethod.url

@@ -135,7 +135,7 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
                                     if (!isEnabled) isEnabled = true
                                 }
                             }
-                            displayResults(charSequence)
+                            displayPwdResults(charSequence)
                             if (!isInitialLaunch && AppState.showSupportBtmSheet) {
                                 showSupportAnimBtmSheet(parentFragmentManager, prefManager)
                             }

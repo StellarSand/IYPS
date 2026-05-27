@@ -17,6 +17,7 @@
 
 package com.iyps.activities
 
+import android.os.Build
 import android.os.Bundle
 import android.view.Window
 import androidx.activity.enableEdgeToEdge
@@ -24,7 +25,9 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.transition.platform.MaterialSharedAxis
 import com.iyps.R
 import com.iyps.databinding.ActivityDetailsBinding
-import com.iyps.fragments.details.DetailsFragment
+import com.iyps.fragments.details.PassphraseDetailsFragment
+import com.iyps.fragments.details.PasswordDetailsFragment
+import com.iyps.models.GenPhraseDetails
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.BLOCK_SS
 import com.iyps.utils.UiUtils.Companion.blockScreenshots
@@ -48,6 +51,8 @@ class DetailsActivity : AppCompatActivity() {
         activityBinding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(activityBinding.root)
         
+        val isPassphrase = intent.getBooleanExtra("isPassphrase", false)
+        
         passwordLine = intent.getStringExtra("PwdLine")!!
         
         // Disable screenshots and screen recordings
@@ -57,8 +62,21 @@ class DetailsActivity : AppCompatActivity() {
         activityBinding.detailsBackBtn.setOnClickListener { onBackPressedDispatcher.onBackPressed() }
         
         supportFragmentManager.beginTransaction()
-            .replace(R.id.activity_host_fragment, DetailsFragment())
-            .commitNow()
+            .replace(
+                R.id.activity_host_fragment,
+                if (!isPassphrase) PasswordDetailsFragment()
+                else PassphraseDetailsFragment().apply {
+                    arguments =
+                        Bundle().apply {
+                            putParcelable(
+                                "phraseDetails",
+                                if (Build.VERSION.SDK_INT >= 33) intent.getParcelableExtra("phraseDetails", GenPhraseDetails::class.java)
+                                else intent.getParcelableExtra("phraseDetails")
+                            )
+                        }
+                }
+            )
+            .commit()
         
     }
     

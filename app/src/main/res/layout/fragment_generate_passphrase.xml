@@ -62,6 +62,17 @@
             android:layout_marginTop="@dimen/margin_12">
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/phraseDetailsBtn"
+                android:layout_width="@dimen/margin_55"
+                android:layout_height="@dimen/margin_55"
+                android:layout_marginEnd="@dimen/margin_8"
+                app:icon="@drawable/ic_details"
+                app:iconGravity="textStart"
+                style="?attr/materialIconButtonFilledTonalStyle"
+                android:contentDescription="@string/details"
+                android:tooltipText="@string/details"/>
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/phraseCopyBtn"
                 android:layout_width="@dimen/margin_55"
                 android:layout_height="@dimen/margin_55"

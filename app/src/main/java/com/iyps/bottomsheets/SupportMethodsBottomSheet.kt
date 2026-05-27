@@ -62,19 +62,19 @@ class SupportMethodsBottomSheet : BottomSheetDialogFragment() {
                 // Liberapay
                 add(SupportMethod(title = getString(R.string.liberapay),
                                   titleIcon = R.drawable.ic_liberapay,
-                                  qr = R.drawable.ic_liberapay_qr,
+                                  qrCodeDrawable = R.drawable.ic_liberapay_qr,
                                   url = getString(R.string.liberapay_url)))
                 
                 // PayPal
                 add(SupportMethod(title = getString(R.string.paypal),
                                   titleIcon = R.drawable.ic_paypal,
-                                  qr = R.drawable.ic_paypal_qr,
+                                  qrCodeDrawable = R.drawable.ic_paypal_qr,
                                   url = getString(R.string.paypal_url)))
                 
                 // Ko-fi
                 add(SupportMethod(title = getString(R.string.kofi),
                                   titleIcon = R.drawable.ic_kofi,
-                                  qr = R.drawable.ic_kofi_qr,
+                                  qrCodeDrawable = R.drawable.ic_kofi_qr,
                                   url = getString(R.string.kofi_url)))
                 
             }
