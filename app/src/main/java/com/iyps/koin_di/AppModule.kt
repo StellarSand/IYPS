@@ -30,6 +30,7 @@ import org.koin.dsl.module
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.security.SecureRandom
+import java.text.NumberFormat
 
 val appModule =
     module {
@@ -117,4 +118,6 @@ val appModule =
         }
         
         single { SecureRandom.getInstanceStrong() }
+        
+        single { NumberFormat.getInstance() }
     }

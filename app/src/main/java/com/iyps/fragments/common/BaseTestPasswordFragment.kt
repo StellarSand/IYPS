@@ -44,6 +44,7 @@ import com.nulabinc.zxcvbn.Pattern
 import com.nulabinc.zxcvbn.Strength
 import com.nulabinc.zxcvbn.Zxcvbn
 import org.koin.android.ext.android.get
+import org.koin.android.ext.android.inject
 import java.io.InputStreamReader
 import java.text.NumberFormat
 import java.time.LocalDateTime
@@ -131,7 +132,7 @@ abstract class BaseTestPasswordFragment : Fragment() {
     private val graphString by lazy { getString(R.string.graph) }
     private val turnsString by lazy { getString(R.string.turns) }
     private val regexNameString by lazy { getString(R.string.regex_name) }
-    private val numberFmt by lazy { NumberFormat.getInstance() }
+    private val numberFmt by inject<NumberFormat>()
     protected var isPassphrase = false
     protected lateinit var clipboardManager: ClipboardManager
     
@@ -521,27 +522,28 @@ abstract class BaseTestPasswordFragment : Fragment() {
                 )
             }
         
-        val wordsList =
-            passphrase
-                .split(phraseDetails.separator)
-                .map {
+        var splitWordsList =
+            passphrase.split(phraseDetails.separator)
+        
+        if (phraseDetails.hasNumber) {
+            splitWordsList =
+                splitWordsList.map {
                     it.dropLastWhile { char ->
                         char.isDigit()
                     }
                 }
-        val longestWord = wordsList.maxBy { it.length }
-        val shortestWord = wordsList.minBy { it.length }
+        }
+        
+        val avgWordLength = splitWordsList.sumOf { it.length }.toDouble() / splitWordsList.size.toDouble()
+        val longestWord = splitWordsList.maxBy { it.length }
+        val shortestWord = splitWordsList.minBy { it.length }
         
         // Statistics
         fragmentBinding.statsSubtitle.text =
             buildString {
                 append(
                     "\u2022 ${getString(R.string.words)}: ${numberFmt.format(phraseDetails.wordsInPhrase.toInt())}",
-                    "\n\u2022 ${getString(R.string.avg_word_length)}: ${
-                        numberFmt.format(
-                            (longestWord.length + shortestWord.length) / 2
-                        )
-                    }",
+                    "\n\u2022 ${getString(R.string.avg_word_length)}: ${numberFmt.format(avgWordLength)}",
                     "\n\u2022 ${getString(R.string.longest_word)}: $longestWord",
                     "\n\u2022 ${getString(R.string.longest_word_length)}: ${numberFmt.format(longestWord.length)}",
                     "\n\u2022 ${getString(R.string.shortest_word)}: $shortestWord",
