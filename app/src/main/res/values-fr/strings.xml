@@ -92,6 +92,7 @@
     <string name="regex_name">\u2022 Nom de l\'expression rationnelle</string>
     <string name="statistics">Statistiques</string>
     <string name="length">Longueur</string>
+    <string name="unique_chars">Unique characters</string>
     <string name="uppercase">Majuscules</string>
     <string name="lowercase">Minuscules</string>
     <string name="numbers">Chiffres</string> <!-- On compte le nombre de chiffres -->
@@ -126,6 +127,16 @@
     <string name="eff_short_2">EFF short (typo-tolerant)</string>
     <string name="capitalize">Capitaliser</string>
 
+    <!--#########################################################################################-->
+
+    <!--Passphrase details fragment-->
+    <string name="total">Total</string>
+    <string name="per_word">Per word</string>
+    <string name="avg_word_length">Average word length</string>
+    <string name="longest_word">Longest word</string>
+    <string name="longest_word_length">Longest word length</string>
+    <string name="shortest_word">Shortest word</string>
+    <string name="shortest_word_length">Shortest word length</string>
     <!--#########################################################################################-->
 
     <!--Settings fragment-->

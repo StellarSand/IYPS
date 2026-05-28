@@ -82,6 +82,7 @@
     <string name="regex_name">\u2022 正規表現名</string>
     <string name="statistics">統計情報</string>
     <string name="length">長さ</string>
+    <string name="unique_chars">Unique characters</string>
     <string name="uppercase">大文字</string>
     <string name="lowercase">小文字</string>
     <string name="numbers">数字</string>
@@ -116,6 +117,16 @@
     <string name="eff_short_2">EFF short (typo-tolerant)</string>
     <string name="capitalize">資本金</string>
 
+    <!--#########################################################################################-->
+
+    <!--Passphrase details fragment-->
+    <string name="total">Total</string>
+    <string name="per_word">Per word</string>
+    <string name="avg_word_length">Average word length</string>
+    <string name="longest_word">Longest word</string>
+    <string name="longest_word_length">Longest word length</string>
+    <string name="shortest_word">Shortest word</string>
+    <string name="shortest_word_length">Shortest word length</string>
     <!--#########################################################################################-->
 
     <!--Settings fragment-->

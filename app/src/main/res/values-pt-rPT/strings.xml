@@ -72,6 +72,7 @@
     <string name="regex_name">• Nome do regex</string>
     <string name="statistics">Estatísticas</string>
     <string name="length">Comprimento</string>
+    <string name="unique_chars">Unique characters</string>
     <string name="uppercase">Maiúsculas</string>
     <string name="lowercase">Minúsculas</string>
     <string name="numbers">Números</string>
@@ -88,6 +89,15 @@
     <string name="include_spaces">Incluir espaços</string>
     <string name="words">Palavras</string>
     <string name="capitalize">Capitalizar</string>
+    <!--Passphrase details fragment-->
+    <string name="total">Total</string>
+    <string name="per_word">Per word</string>
+    <string name="avg_word_length">Average word length</string>
+    <string name="longest_word">Longest word</string>
+    <string name="longest_word_length">Longest word length</string>
+    <string name="shortest_word">Shortest word</string>
+    <string name="shortest_word_length">Shortest word length</string>
+    <!--#########################################################################################-->
     <string name="app_version">Versão</string>
     <string name="appearance">Aparência</string>
     <string name="theme">Tema</string>

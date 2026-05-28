@@ -77,6 +77,7 @@
     <string name="shifted_times">• Vahetatud %1$s korda</string>
     <string name="statistics">Statistika</string>
     <string name="length">Pikkus</string>
+    <string name="unique_chars">Unique characters</string>
     <string name="uppercase">Suurtähed</string>
     <string name="lowercase">Väiketähed</string>
     <string name="numbers">Numbrid</string>
@@ -106,6 +107,16 @@
     <string name="eff_short_1">EFF-i lühike (meeldejäetav)</string>
     <string name="eff_short_2">EFF-i lühike (trükiveakindel)</string>
     <string name="capitalize">Kasuta suurtähti</string>
+    <!--#########################################################################################-->
+
+    <!--Passphrase details fragment-->
+    <string name="total">Total</string>
+    <string name="per_word">Per word</string>
+    <string name="avg_word_length">Average word length</string>
+    <string name="longest_word">Longest word</string>
+    <string name="longest_word_length">Longest word length</string>
+    <string name="shortest_word">Shortest word</string>
+    <string name="shortest_word_length">Shortest word length</string>
     <!--#########################################################################################-->
 
     <!--Settings fragment-->

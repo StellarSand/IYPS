@@ -29,8 +29,6 @@
         ú = \u00FA
     -->
 
-    <string name="app_version">Versi\u00F3n</string>
-
     <!--Bottom nav view-->
     <string name="test">Prueba</string>
     <string name="generate">Genere</string>
@@ -94,6 +92,7 @@
     <string name="regex_name">\u2022 Nombre Regex</string>
     <string name="statistics">Estad\u00EDsticas</string>
     <string name="length">Longitud</string>
+    <string name="unique_chars">Unique characters</string>
     <string name="uppercase">May\u00FAsculas</string>
     <string name="lowercase">Min\u00FAsculas</string>
     <string name="numbers">N\u00FAmeros</string>
@@ -130,7 +129,19 @@
 
     <!--#########################################################################################-->
 
+    <!--Passphrase details fragment-->
+    <string name="total">Total</string>
+    <string name="per_word">Per word</string>
+    <string name="avg_word_length">Average word length</string>
+    <string name="longest_word">Longest word</string>
+    <string name="longest_word_length">Longest word length</string>
+    <string name="shortest_word">Shortest word</string>
+    <string name="shortest_word_length">Shortest word length</string>
+
+    <!--#########################################################################################-->
+
     <!--Settings fragment-->
+    <string name="app_version">Versi\u00F3n</string>
     <string name="appearance">Apariencia</string>
     <string name="theme">Tem\u00E1tica</string>
     <string name="material_you">Material You\n(requiere reiniciar la app)</string>

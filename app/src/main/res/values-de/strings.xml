@@ -91,6 +91,7 @@
     <string name="regex_name">\u2022 Regex-Name</string>
     <string name="statistics">Statistik</string>
     <string name="length">L\u00E4nge</string>
+    <string name="unique_chars">Unique characters</string>
     <string name="uppercase">Gro\u00DFbuchstaben</string>
     <string name="lowercase">Kleinbuchstaben</string>
     <string name="numbers">Zahlen</string>
@@ -124,6 +125,17 @@
     <string name="eff_short_1">EFF short (memorable)</string>
     <string name="eff_short_2">EFF short (typo-tolerant)</string>
     <string name="capitalize">Gro\u00DFschreiben</string>
+
+    <!--#########################################################################################-->
+
+    <!--Passphrase details fragment-->
+    <string name="total">Total</string>
+    <string name="per_word">Per word</string>
+    <string name="avg_word_length">Average word length</string>
+    <string name="longest_word">Longest word</string>
+    <string name="longest_word_length">Longest word length</string>
+    <string name="shortest_word">Shortest word</string>
+    <string name="shortest_word_length">Shortest word length</string>
 
     <!--#########################################################################################-->
 
