@@ -33,17 +33,32 @@
 \n
 \nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
 
-    <string name="cc_3_0_license" translatable="false">You are free to:
-\nShare — copy and redistribute the material in any medium or format
+    <string name="cc_by_3_0_license" translatable="false">You are free to:
+\nShare — copy and redistribute the material in any medium or format for any purpose, even commercially.
 \nAdapt — remix, transform, and build upon the material for any purpose, even commercially.
 \nThe licensor cannot revoke these freedoms as long as you follow the license terms.
 \n
 \nUnder the following terms:
 \n
-\nAttribution - You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-\nShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+\nAttribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 \n
-\nNo additional restrictions - You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+\n
+\nNotices:
+\n
+\nYou do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation.
+\nNo warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</string>
+
+    <string name="cc_by_4_0_license" translatable="false">You are free to:
+\nShare — copy and redistribute the material in any medium or format for any purpose, even commercially.
+\nAdapt — remix, transform, and build upon the material for any purpose, even commercially.
+\nThe licensor cannot revoke these freedoms as long as you follow the license terms.
+\n
+\nUnder the following terms:
+\n
+\nAttribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+\n
+\nNo additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
 \n
 \nNotices:
 \n
@@ -57,10 +72,30 @@
 \n
 \nOther Information
 \n
-\n- In no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in the work or in how the work is used, such as publicity or privacy rights.
+\nIn no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in the work or in how the work is used, such as publicity or privacy rights.
 \n
-\n- Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.
+\nUnless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.
 \n
-\n- When using or citing the work, you should not imply endorsement by the author or the affirmer.</string>
+\nWhen using or citing the work, you should not imply endorsement by the author or the affirmer.</string>
+
+    <string name="gpl_3_0_license" translatable="false">This program is free software: you can redistribute it and/or modify
+\nit under the terms of the GNU General Public License as published by
+\nthe Free Software Foundation, either version 3 of the License, or
+\n(at your option) any later version.
+\n
+\nThis program is distributed in the hope that it will be useful,
+\nbut WITHOUT ANY WARRANTY; without even the implied warranty of
+\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+\nGNU General Public License for more details.
+\n
+\nYou should have received a copy of the GNU General Public License
+\nalong with this program.  If not, see https://www.gnu.org/licenses.</string>
+    
+    <string name="gpl_free_doc_license" translatable="false">Permission is granted to copy, distribute and/or modify this document
+\nunder the terms of the GNU Free Documentation License, Version 1.3
+\nor any later version published by the Free Software Foundation;
+\nwith no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+\nA copy of the license is included in the section entitled "GNU
+\nFree Documentation License".</string>
 
 </resources>

@@ -36,6 +36,10 @@
     <string name="zxcvbn4j_license_url" translatable="false">https://github.com/nulab/zxcvbn4j/blob/master/LICENSE.txt</string>
     <string name="seclists_license_url" translatable="false">https://github.com/danielmiessler/SecLists/blob/master/LICENSE</string>
     <string name="eff_diceware_license_url" translatable="false">https://www.eff.org/dice</string>
+    <string name="diceware_en_license_url" translatable="false">https://www.theworld.com/~reinhold/diceware.html</string>
+    <string name="diceware_de_license_url" translatable="false">https://github.com/dys2p/wordlists-de/blob/main/LICENSE</string>
+    <string name="diceware_fr_license_url" translatable="false">https://theworld.com/~reinhold/Tails_fr_lists_README.txt</string>
+    <string name="diceware_other_langs_license_url" translatable="false">https://www.theworld.com/~reinhold/diceware.html#Diceware%20in%20Other%20Languages|outline</string>
     <string name="fastscroll_license_url" translatable="false">https://github.com/StellarSand/AndroidFastScroll-kt/blob/master/LICENSE</string>
     <string name="liberapay_icon_license_url" translatable="false">https://liberapay.com/about/logos</string>
     <string name="paypal_icon_license_url" translatable="false">https://commons.wikimedia.org/wiki/Category:SVG_PayPal_logos</string>

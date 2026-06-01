@@ -70,8 +70,65 @@ class LicensesBottomSheet : BottomSheetDialogFragment() {
             
             // EFF Diceware
             add(License(title = getString(R.string.eff_diceware),
-                        desc = getString(R.string.cc_3_0_license),
+                        desc = getString(R.string.cc_by_3_0_license),
                         url = getString(R.string.eff_diceware_license_url)))
+            
+            // Diceware
+            add(License(title = getString(R.string.diceware_cs),
+                        desc = getString(R.string.gpl_3_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_de),
+                        desc = getString(R.string.cc0_1_0_universal_public_domain_license),
+                        url = getString(R.string.diceware_de_license_url)))
+            
+            add(License(title = getString(R.string.diceware_et),
+                        desc = getString(R.string.cc_by_4_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_en),
+                        desc = getString(R.string.cc_by_4_0_license),
+                        url = getString(R.string.diceware_en_license_url)))
+            
+            add(License(title = getString(R.string.diceware_es),
+                        desc = getString(R.string.cc_by_4_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_fr),
+                        desc = getString(R.string.cc0_1_0_universal_public_domain_license),
+                        url = getString(R.string.diceware_fr_license_url)))
+            
+            add(License(title = getString(R.string.diceware_it),
+                        desc = getString(R.string.gpl_3_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_nl_1),
+                        desc = getString(R.string.gpl_free_doc_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_nl_2),
+                        desc = getString(R.string.cc_by_4_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_pt),
+                        desc = getString(R.string.cc_by_4_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_sv),
+                        desc = getString(R.string.cc_by_4_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_tr),
+                        desc = getString(R.string.cc_by_4_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_zh),
+                        desc = getString(R.string.gpl_3_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
+            
+            add(License(title = getString(R.string.diceware_ja),
+                        desc = getString(R.string.cc_by_4_0_license),
+                        url = getString(R.string.diceware_other_langs_license_url)))
             
             // Fastscroll
             add(License(title = getString(R.string.fastscroll),

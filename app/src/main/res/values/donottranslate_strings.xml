@@ -24,6 +24,25 @@
     <string name="na" translatable="false">-</string>
     <string name="bottom_sheet_title" translatable="false">Bottom Sheet Title</string>
 
+    <!--Diceware word lists-->
+    <!--Keep it alphabetically arranged-->
+    <string name="diceware_cs" translatable="false">Diceware Čeština</string>
+    <string name="diceware_de" translatable="false">Diceware Deutsch</string>
+    <string name="diceware_de_long" translatable="false">Diceware Deutsch long</string>
+    <string name="diceware_de_short" translatable="false">Diceware Deutsch short</string>
+    <string name="diceware_et" translatable="false">Diceware Eesti</string>
+    <string name="diceware_en" translatable="false">Diceware English</string>
+    <string name="diceware_es" translatable="false">Diceware Español</string>
+    <string name="diceware_fr" translatable="false">Diceware Français</string>
+    <string name="diceware_it" translatable="false">Diceware Italiano</string>
+    <string name="diceware_nl_1" translatable="false">Diceware Nederlands 1</string>
+    <string name="diceware_nl_2" translatable="false">Diceware Nederlands 2</string>
+    <string name="diceware_pt" translatable="false">Diceware Português</string>
+    <string name="diceware_sv" translatable="false">Diceware Svenska</string>
+    <string name="diceware_tr" translatable="false">Diceware Türkçe</string>
+    <string name="diceware_zh" translatable="false">Diceware 汉语</string>
+    <string name="diceware_ja" translatable="false">Diceware 日本語</string>
+
     <!--Support methods-->
     <string name="liberapay" translatable="false">Liberapay</string>
     <string name="paypal" translatable="false">PayPal</string>

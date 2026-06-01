@@ -99,19 +99,21 @@ class GeneratePassphraseFragment : Fragment() {
                 getString(R.string.eff_long),
                 getString(R.string.eff_short_1),
                 getString(R.string.eff_short_2),
-                "Diceware Čeština", // Czech
-                "Diceware Deutsch", // German
-                "Diceware Eesti", // Estonian
-                "Diceware English",
-                "Diceware Español", // Spanish
-                "Diceware Français", // French
-                "Diceware Italiano", // Italian
-                "Diceware Nederlands", // Dutch
-                "Diceware Português", // Portuguese
-                "Diceware Svenska", // Swedish
-                "Diceware Türkçe", // Turkish
-                "Diceware 汉语", // Chinese
-                "Diceware 日本語" // Japanese
+                getString(R.string.diceware_cs), // Czech
+                getString(R.string.diceware_de_long), // German long
+                getString(R.string.diceware_de_short), // German long
+                getString(R.string.diceware_et), // Estonian
+                getString(R.string.diceware_en), // English
+                getString(R.string.diceware_es), // Spanish
+                getString(R.string.diceware_fr), // French
+                getString(R.string.diceware_it), // Italian
+                getString(R.string.diceware_nl_1), // Dutch
+                getString(R.string.diceware_nl_2), // Dutch
+                getString(R.string.diceware_pt), // Portuguese
+                getString(R.string.diceware_sv), // Swedish
+                getString(R.string.diceware_tr), // Turkish
+                getString(R.string.diceware_zh), // Chinese
+                getString(R.string.diceware_ja) // Japanese
             )
         wordListDropdownSelectedPos = prefManager.getInt(PHRASE_WORDLIST_POS)
         val separatorDropdownArray = PHRASE_SEPARATORS.map { it.toString() }.toTypedArray() + getString(R.string.spaces)
@@ -265,17 +267,19 @@ class GeneratePassphraseFragment : Fragment() {
                     1 -> resources.openRawResource(R.raw.eff_passphrase_short)
                     2 -> resources.openRawResource(R.raw.eff_passphrase_typo_tolerant)
                     3 -> resources.openRawResource(R.raw.diceware_cs)
-                    4 -> resources.openRawResource(R.raw.diceware_de)
-                    5 -> resources.openRawResource(R.raw.diceware_et)
-                    6 -> resources.openRawResource(R.raw.diceware_en)
-                    7 -> resources.openRawResource(R.raw.diceware_es)
-                    8 -> resources.openRawResource(R.raw.diceware_fr)
-                    9 -> resources.openRawResource(R.raw.diceware_it)
-                    10 -> resources.openRawResource(R.raw.diceware_nl)
-                    11 -> resources.openRawResource(R.raw.diceware_pt)
-                    12 -> resources.openRawResource(R.raw.diceware_sv)
-                    13 -> resources.openRawResource(R.raw.diceware_tr)
-                    14 -> resources.openRawResource(R.raw.diceware_zh)
+                    4 -> resources.openRawResource(R.raw.diceware_de_long)
+                    5 -> resources.openRawResource(R.raw.diceware_de_short)
+                    6 -> resources.openRawResource(R.raw.diceware_et)
+                    7 -> resources.openRawResource(R.raw.diceware_en)
+                    8 -> resources.openRawResource(R.raw.diceware_es)
+                    9 -> resources.openRawResource(R.raw.diceware_fr)
+                    10 -> resources.openRawResource(R.raw.diceware_it)
+                    11 -> resources.openRawResource(R.raw.diceware_nl_1)
+                    12 -> resources.openRawResource(R.raw.diceware_nl_2)
+                    13 -> resources.openRawResource(R.raw.diceware_pt)
+                    14 -> resources.openRawResource(R.raw.diceware_sv)
+                    15 -> resources.openRawResource(R.raw.diceware_tr)
+                    16 -> resources.openRawResource(R.raw.diceware_zh)
                     else -> resources.openRawResource(R.raw.diceware_ja)
                 }
             
