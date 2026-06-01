@@ -77,7 +77,7 @@
     <string name="regex_name">• Jméno regexu</string>
     <string name="statistics">Statistika</string>
     <string name="length">Délka</string>
-    <string name="unique_chars">Unique characters</string>
+    <string name="unique_chars">Jedinečné znaky</string>
     <string name="uppercase">Velká písmena</string>
     <string name="lowercase">Malá písmena</string>
     <string name="numbers">Čísla</string>
@@ -112,11 +112,11 @@
     <!--Passphrase details fragment-->
     <string name="total">Total</string>
     <string name="per_word">Per word</string>
-    <string name="avg_word_length">Average word length</string>
-    <string name="longest_word">Longest word</string>
-    <string name="longest_word_length">Longest word length</string>
-    <string name="shortest_word">Shortest word</string>
-    <string name="shortest_word_length">Shortest word length</string>
+    <string name="avg_word_length">Průměrná délka slov</string>
+    <string name="longest_word">Nejdelší slovo</string>
+    <string name="longest_word_length">Délka nejdelšího slova</string>
+    <string name="shortest_word">Nejkratší slovo</string>
+    <string name="shortest_word_length">Délka nejkratšího slova</string>
     <!--#########################################################################################-->
 
     <!--Settings fragment-->
