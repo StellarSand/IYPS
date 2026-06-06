@@ -72,7 +72,7 @@
     <string name="regex_name">• Nome do regex</string>
     <string name="statistics">Estatísticas</string>
     <string name="length">Comprimento</string>
-    <string name="unique_chars">Unique characters</string>
+    <string name="unique_chars">Caracteres únicos</string>
     <string name="uppercase">Maiúsculas</string>
     <string name="lowercase">Minúsculas</string>
     <string name="numbers">Números</string>
@@ -91,12 +91,12 @@
     <string name="capitalize">Capitalizar</string>
     <!--Passphrase details fragment-->
     <string name="total">Total</string>
-    <string name="per_word">Per word</string>
-    <string name="avg_word_length">Average word length</string>
-    <string name="longest_word">Longest word</string>
-    <string name="longest_word_length">Longest word length</string>
-    <string name="shortest_word">Shortest word</string>
-    <string name="shortest_word_length">Shortest word length</string>
+    <string name="per_word">Por palavra</string>
+    <string name="avg_word_length">Tamanho médio de palavra</string>
+    <string name="longest_word">Palavra mais longa</string>
+    <string name="longest_word_length">Maior comprimento de palavra</string>
+    <string name="shortest_word">Palavra mais curta</string>
+    <string name="shortest_word_length">Comprimento de palavra mais curta</string>
     <!--#########################################################################################-->
     <string name="app_version">Versão</string>
     <string name="appearance">Aparência</string>
@@ -142,4 +142,9 @@
     <string name="proceed">Proceder</string>
     <string name="solutions">Soluções</string>
     <string name="do_not_show_again">Não mostrar novamente</string>
+    <string name="eff_long">EFF longo</string>
+    <string name="eff_short_1">EFF curto (memorizável)</string>
+    <string name="eff_short_2">EFF curto (tolerante a erros)</string>
+    <string name="dismiss">Descartar</string>
+    <string name="dev_verf_warn_desc">O Google anunciou que a partir de 2026/2027, todas as aplicações de dispositivos certificados Android vão exigir que os desenvolvedores submetam detalhes de identificação pessoal diretamente ao Google. \n \nUma vez que os desenvolvedores desta aplicação não concordam com este requisito, esta aplicação não irá funcionar em dispositivos Android certificados <b>após esse tempo</b>.</string>
 </resources>
