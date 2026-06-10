@@ -17,7 +17,6 @@
 
 plugins {
     alias(libs.plugins.android.application)
-    alias(libs.plugins.android.kotlin)
     id("kotlin-parcelize")
 }
 
@@ -27,24 +26,23 @@ kotlin {
 
 android {
     namespace = "com.iyps"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.iyps"
         minSdk = 26
-        targetSdk = 36
-        versionCode = 158
-        versionName = "1.5.8"
-        extensions.getByType<BasePluginExtension>().archivesName.set("${rootProject.name}_v$versionName")
+        targetSdk = 37
+        versionCode = 160
+        versionName = "1.6.0"
     }
     
     buildTypes {
-        getByName("release") {
+        release {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
-        /*getByName("debug") {
+        /*debug {
             isMinifyEnabled = true
             isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -55,6 +53,10 @@ android {
         viewBinding = true
         buildConfig = true
     }
+}
+
+base {
+    archivesName.set("${rootProject.name}_v${android.defaultConfig.versionName}")
 }
 
 dependencies {
