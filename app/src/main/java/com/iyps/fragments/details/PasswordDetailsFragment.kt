@@ -25,9 +25,9 @@ import androidx.core.view.isVisible
 import androidx.core.view.updatePadding
 import com.iyps.R
 import com.iyps.activities.DetailsActivity
-import com.iyps.fragments.common.BaseTestPasswordFragment
+import com.iyps.fragments.common.BasePwdResultsFragment
 
-class PasswordDetailsFragment : BaseTestPasswordFragment() {
+class PasswordDetailsFragment : BasePwdResultsFragment() {
     
     private lateinit var detailsActivity: DetailsActivity
     

@@ -343,7 +343,7 @@ class GeneratePasswordFragment : Fragment() {
             generatedPwdString = generatePassword(shouldBuildAllCharsList)
             fragmentBinding.pwdGeneratedTextView.setGenTextWithColor(generatedPwdString)
             if (AppState.showSupportBtmSheet) {
-                showSupportAnimBtmSheet(parentFragmentManager, prefManager)
+                showSupportAnimBtmSheet(parentFragmentManager)
             }
         }
     }

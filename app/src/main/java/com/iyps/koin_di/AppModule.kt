@@ -18,6 +18,7 @@
 package com.iyps.koin_di
 
 import android.app.Application
+import android.content.Context
 import com.iyps.R
 import com.iyps.inputstream.ResourceFromInputStream
 import com.iyps.preferences.PreferenceManager
@@ -29,8 +30,14 @@ import org.koin.core.qualifier.named
 import org.koin.dsl.module
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
+import java.io.InputStreamReader
 import java.security.SecureRandom
 import java.text.NumberFormat
+import java.util.Collections
+import java.util.Enumeration
+import java.util.Locale
+import java.util.Properties
+import java.util.ResourceBundle
 
 val appModule =
     module {
@@ -103,7 +110,7 @@ val appModule =
             // "female_names" contains all female_names and_male_names.
             // The default dictionary names like "english_wikipedia" & "female_names" are used,
             // so that default warnings matching those dictionary names can be displayed.
-            // The dictionary names are later changed while displaying, in BaseTestPasswordFragment.getMatchSequenceText()
+            // The dictionary names are later changed while displaying, in BasePwdResultsFragment.getMatchSequenceText()
             ZxcvbnBuilder()
                 .dictionaries(listOf(DictionaryLoader("passwords", get(named("commonPasswordsResource"))).load(),
                                      DictionaryLoader("english_wikipedia", get(named("wordsResource"))).load(),
@@ -120,4 +127,46 @@ val appModule =
         single { SecureRandom.getInstanceStrong() }
         
         single { NumberFormat.getInstance() }
+        
+        single(named("localizedFeedback")) {
+            localizedFeedbackResourceBundle(get<Application>())
+        }
     }
+
+private fun localizedFeedbackResourceBundle(context: Context): ResourceBundle {
+    val locale = Locale.getDefault().language
+    
+    // If locale is in zxcvbn4j, use default resource bundle
+    // else use custom messages.properties from res/raw
+    return if (locale !in setOf("cs", "et", "fa", "pt-rBR", "sv", "tr", "zh-rCN")) {
+        ResourceBundle.getBundle("com/nulabinc/zxcvbn/messages")
+    }
+    else {
+        val properties =
+            when(locale) {
+                "cs" -> loadTranslations(context, R.raw.messages_cs)
+                "et" -> loadTranslations(context, R.raw.messages_et)
+                "fa" -> loadTranslations(context, R.raw.messages_fa)
+                "pt-rBR" -> loadTranslations(context, R.raw.messages_pt_br)
+                "sv" -> loadTranslations(context, R.raw.messages_sv)
+                "tr" -> loadTranslations(context, R.raw.messages_tr)
+                else -> loadTranslations(context, R.raw.messages_zh_cn)
+            }
+        
+        object : ResourceBundle() {
+            override fun handleGetObject(key: String?): Any? {
+                return properties.getProperty(key)
+            }
+            
+            override fun getKeys(): Enumeration<String> {
+                return Collections.enumeration(properties.keys.map { it.toString() })
+            }
+        }
+    }
+}
+
+private fun loadTranslations(context: Context, resId: Int): Properties {
+    return Properties().apply {
+        load(InputStreamReader(context.resources.openRawResource(resId), Charsets.UTF_8))
+    }
+}

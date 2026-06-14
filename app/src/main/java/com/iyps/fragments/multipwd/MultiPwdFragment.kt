@@ -36,12 +36,10 @@ import com.iyps.adapters.MultiPwdAdapter
 import com.iyps.databinding.RecyclerViewBinding
 import com.iyps.objects.AppState
 import com.iyps.objects.MultiPwdList
-import com.iyps.preferences.PreferenceManager
 import com.iyps.utils.UiUtils.Companion.convertDpToPx
 import com.iyps.utils.UiUtils.Companion.showSupportAnimBtmSheet
 import kotlinx.coroutines.launch
 import me.stellarsand.android.fastscroll.FastScrollerBuilder
-import org.koin.android.ext.android.get
 
 class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
     
@@ -82,9 +80,7 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
             }
             
             if (AppState.showSupportBtmSheet) {
-                lifecycleScope.launch {
-                    showSupportAnimBtmSheet(parentFragmentManager, get<PreferenceManager>())
-                }
+                showSupportAnimBtmSheet(parentFragmentManager)
             }
         }
     }

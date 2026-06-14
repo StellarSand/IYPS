@@ -350,7 +350,7 @@ class GeneratePassphraseFragment : Fragment() {
                 isPassphrase = true
             )
             if (AppState.showSupportBtmSheet) {
-                showSupportAnimBtmSheet(parentFragmentManager, prefManager)
+                showSupportAnimBtmSheet(parentFragmentManager)
             }
         }
     }

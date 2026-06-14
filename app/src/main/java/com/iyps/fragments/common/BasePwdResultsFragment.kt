@@ -30,6 +30,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.text.HtmlCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.lifecycleScope
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.textview.MaterialTextView
 import com.iyps.R
@@ -43,17 +44,16 @@ import com.nulabinc.zxcvbn.Feedback
 import com.nulabinc.zxcvbn.Pattern
 import com.nulabinc.zxcvbn.Strength
 import com.nulabinc.zxcvbn.Zxcvbn
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import org.koin.android.ext.android.get
 import org.koin.android.ext.android.inject
-import java.io.InputStreamReader
+import org.koin.core.qualifier.named
 import java.text.NumberFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
-import java.util.Collections
-import java.util.Enumeration
 import java.util.Locale
-import java.util.Properties
-import java.util.ResourceBundle
 import java.util.concurrent.TimeUnit
 import kotlin.math.floor
 import kotlin.math.log10
@@ -61,7 +61,7 @@ import kotlin.math.log2
 import kotlin.math.pow
 import kotlin.text.ifEmpty
 
-abstract class BaseTestPasswordFragment : Fragment() {
+abstract class BasePwdResultsFragment : Fragment() {
     
     private var _binding: FragmentTestPasswordBinding? = null
     protected val fragmentBinding get() = _binding!!
@@ -137,51 +137,11 @@ abstract class BaseTestPasswordFragment : Fragment() {
     protected lateinit var clipboardManager: ClipboardManager
     
     private companion object {
-        
         private const val WORST_SCORE = 1
         private const val WEAK_SCORE = 2
         private const val MEDIUM_SCORE = 3
         private const val STRONG_SCORE = 4
         private const val EXCELLENT_SCORE = 5
-        
-        private fun localizedFeedbackResourceBundle(context: Context): ResourceBundle {
-            val locale = Locale.getDefault().language
-            
-            // If locale is in zxcvbn4j, use default resource bundle
-            // else use custom messages.properties from res/raw
-            return if (locale !in setOf("cs", "et", "fa", "pt-rBR", "sv", "tr", "zh-rCN")) {
-                ResourceBundle.getBundle("com/nulabinc/zxcvbn/messages")
-            }
-            else {
-                val properties =
-                    when(locale) {
-                        "cs" -> loadTranslations(context, R.raw.messages_cs)
-                        "et" -> loadTranslations(context, R.raw.messages_et)
-                        "fa" -> loadTranslations(context, R.raw.messages_fa)
-                        "pt-rBR" -> loadTranslations(context, R.raw.messages_pt_br)
-                        "sv" -> loadTranslations(context, R.raw.messages_sv)
-                        "tr" -> loadTranslations(context, R.raw.messages_tr)
-                        else -> loadTranslations(context, R.raw.messages_zh_cn)
-                    }
-                
-                object : ResourceBundle() {
-                    override fun handleGetObject(key: String?): Any? {
-                        return properties.getProperty(key)
-                    }
-                    
-                    override fun getKeys(): Enumeration<String> {
-                        return Collections.enumeration(properties.keys.map { it.toString() })
-                    }
-                }
-            }
-        }
-        
-        private fun loadTranslations(context: Context, resId: Int): Properties {
-            return Properties().apply {
-                load(InputStreamReader(context.resources.openRawResource(resId), Charsets.UTF_8))
-            }
-        }
-        
     }
     
     override fun onCreateView(inflater: LayoutInflater,
@@ -219,24 +179,27 @@ abstract class BaseTestPasswordFragment : Fragment() {
     protected abstract fun setupFragmentContent()
     
     // Replace hardcoded strings from the library for proper language support
-    private fun replaceCrackTimeStrings(timeToCrackString: String): String {
-        var replacedString = timeToCrackString
-        timeStringsReplacementMap.forEach { (key, value) ->
-            if (replacedString.contains(key)) {
-                return replacedString.replace(key, value)
+    private suspend fun replaceCrackTimeStrings(timeToCrackString: String): String {
+        return withContext(Dispatchers.Default) {
+            var replacedString = timeToCrackString
+            timeStringsReplacementMap.forEach { (key, value) ->
+                if (replacedString.contains(key)) {
+                    replacedString.replace(key, value) // return
+                }
             }
+            
+            replacedString =
+                timeStringsRegex.replace(replacedString) { matchResult ->
+                    val quantity = matchResult.groupValues[1]
+                    val timeUnit = matchResult.groupValues[2]
+                    val baseUnit = timeUnit.removeSuffix("s")
+                    val (singular, plural) =
+                        timeUnitsReplacementMap[baseUnit] ?: (timeUnit to "${timeUnit}s")
+                    "$quantity ${if (quantity == "1") singular else plural}"
+                }
+            
+            replacedString // return
         }
-        
-        replacedString =
-            timeStringsRegex.replace(replacedString) { matchResult ->
-                val quantity = matchResult.groupValues[1]
-                val timeUnit = matchResult.groupValues[2]
-                val baseUnit = if (timeUnit.endsWith("s")) timeUnit.dropLast(1) else timeUnit
-                val replacementPair = timeUnitsReplacementMap[baseUnit] ?: Pair(timeUnit, "${timeUnit}s")
-                "$quantity ${if (quantity == "1") replacementPair.first else replacementPair.second}"
-            }
-        
-        return replacedString
     }
     
     // Custom score
@@ -293,17 +256,19 @@ abstract class BaseTestPasswordFragment : Fragment() {
         }
     }
     
-    private fun getGuessesText(guesses: Double): CharSequence {
-        return if (guesses >= 1000000) {
-            val exponent = floor(log10(guesses)).toInt()
-            val mantissa = guesses / 10.0.pow(exponent.toDouble())
-            val formattedMantissa = numberFmt.format(mantissa)
-            HtmlCompat.fromHtml(
-                "$formattedMantissa \u00D7 10<sup><small>$exponent</small></sup>",
-                HtmlCompat.FROM_HTML_MODE_COMPACT
-            )
+    private suspend fun getGuessesText(guesses: Double): CharSequence {
+        return withContext(Dispatchers.Default) {
+            if (guesses >= 1000000) {
+                val exponent = floor(log10(guesses)).toInt()
+                val mantissa = guesses / 10.0.pow(exponent.toDouble())
+                val formattedMantissa = numberFmt.format(mantissa)
+                HtmlCompat.fromHtml(
+                    "$formattedMantissa \u00D7 10<sup><small>$exponent</small></sup>",
+                    HtmlCompat.FROM_HTML_MODE_COMPACT
+                )
+            }
+            else numberFmt.format(guesses)
         }
-        else numberFmt.format(guesses)
     }
     
     private fun getMatchSequenceText(strength: Strength): CharSequence {
@@ -371,185 +336,205 @@ abstract class BaseTestPasswordFragment : Fragment() {
         return HtmlCompat.fromHtml(matchesText, HtmlCompat.FROM_HTML_MODE_COMPACT)
     }
     
-    private fun getStatisticsCounts(charSequence: CharSequence): Array<Int> {
-        val length = charSequence.length
-        val uniqueCharsCount = charSequence.toSet().size
-        val upperCaseCount = charSequence.count { it.isUpperCase() }
-        val lowerCaseCount = charSequence.count { it.isLowerCase() }
-        val numbersCount = charSequence.count { it.isDigit() }
-        val spacesCount = charSequence.count { it.isWhitespace() }
-        val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount - spacesCount
-        return arrayOf(
-            length,
-            uniqueCharsCount,
-            upperCaseCount,
-            lowerCaseCount,
-            numbersCount,
-            specialCharsCount,
-            spacesCount
-        )
+    private suspend fun getStatisticsCounts(charSequence: CharSequence): Array<Int> {
+        return withContext(Dispatchers.Default) {
+            val length = charSequence.length
+            val uniqueCharsCount = charSequence.toSet().size
+            val upperCaseCount = charSequence.count { it.isUpperCase() }
+            val lowerCaseCount = charSequence.count { it.isLowerCase() }
+            val numbersCount = charSequence.count { it.isDigit() }
+            val spacesCount = charSequence.count { it.isWhitespace() }
+            val specialCharsCount = length - upperCaseCount - lowerCaseCount - numbersCount - spacesCount
+            arrayOf(
+                length,
+                uniqueCharsCount,
+                upperCaseCount,
+                lowerCaseCount,
+                numbersCount,
+                specialCharsCount,
+                spacesCount
+            )
+        }
     }
     
-    private fun getPwdEntropyText(statsCountsList: Array<Int>): String {
-        var poolSize = 0.0
-        
-        // Pool size
-        // A-Z -> 26
-        // a-z -> 26
-        // 0-9 -> 10
-        // Special characters -> 32 on a standard US keyboard
-        if (statsCountsList[2] > 0) poolSize += 26.0 // Uppercase
-        if (statsCountsList[3] > 0) poolSize += 26.0 // Lowercase
-        if (statsCountsList[4] > 0) poolSize += 10.0 // Digits
-        if (statsCountsList[5] > 0) poolSize += 32.0 // Special characters
-        
-        return numberFmt.format(
-            // Entropy = Length * log2(pool size)
-            (statsCountsList[0] * log2(poolSize))
-        )
+    private suspend fun getPwdEntropyText(statsCountsList: Array<Int>): String {
+        return withContext(Dispatchers.Default) {
+            var poolSize = 0.0
+            
+            // Pool size
+            // A-Z -> 26
+            // a-z -> 26
+            // 0-9 -> 10
+            // Special characters -> 32 on a standard US keyboard
+            if (statsCountsList[2] > 0) poolSize += 26.0 // Uppercase
+            if (statsCountsList[3] > 0) poolSize += 26.0 // Lowercase
+            if (statsCountsList[4] > 0) poolSize += 10.0 // Digits
+            if (statsCountsList[5] > 0) poolSize += 32.0 // Special characters
+            
+            numberFmt.format(
+                // Entropy = Length * log2(pool size)
+                (statsCountsList[0] * log2(poolSize))
+            )
+        }
     }
     
-    private fun getPhraseEntropyText(wordsInPhrase: Double,
-                                     totalWordsInWordlist: Double,
-                                     hasNumber: Boolean): Pair<String, String> {
-        // Entropy = words_in_passphrase * log2(total_words_in_wordlist)
-        // if numbers included, add log2(10.0)
-        var entropy = wordsInPhrase * log2(totalWordsInWordlist)
-        if (hasNumber) entropy += log2(10.0)
+    private suspend fun getPhraseEntropyText(wordsInPhrase: Double,
+                                             totalWordsInWordlist: Double,
+                                             hasNumber: Boolean): Pair<String, String> {
+        return withContext(Dispatchers.Default) {
+            // Entropy = words_in_passphrase * log2(total_words_in_wordlist)
+            // if numbers included, add log2(10.0)
+            var entropy = wordsInPhrase * log2(totalWordsInWordlist)
+            if (hasNumber) entropy += log2(10.0)
+            
+            Pair(
+                numberFmt.format(entropy), // Total entropy
+                numberFmt.format(entropy / wordsInPhrase) // Per word entropy
+            )
+        }
         
-        return Pair(
-            numberFmt.format(entropy), // Total entropy
-            numberFmt.format(entropy / wordsInPhrase) // Per word entropy
-        )
     }
     
     @SuppressLint("SetTextI18n")
     protected fun displayPwdResults(password: CharSequence) {
-        val strength = get<Zxcvbn>().measure(password)
-        val crackTimesDisplay = strength.crackTimesDisplay
-        val crackTimeSeconds = strength.crackTimeSeconds
-        
-        val tenBCrackTimeString = crackTimesDisplay.offlineFastHashing1e10PerSecond
-        val tenKCrackTimeString = crackTimesDisplay.offlineSlowHashing1e4perSecond
-        val tenCrackTimeString = crackTimesDisplay.onlineNoThrottling10perSecond
-        val hundredCrackTimeString = crackTimesDisplay.onlineThrottling100perHour
-        
-        val tenBCrackTimeMillis = (crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
-        val tenKCrackTimeMillis = (crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
-        val tenCrackTimeMillis = (crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
-        val hundredCrackTimeMillis = (crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
-        
-        fragmentBinding.apply {
+        lifecycleScope.launch {
+            val strength = get<Zxcvbn>().measure(password)
+            val crackTimesDisplay = strength.crackTimesDisplay
+            val crackTimeSeconds = strength.crackTimeSeconds
             
-            // Estimated time to crack
-            tenBGuessesSubtitle.text = replaceCrackTimeStrings(tenBCrackTimeString)
-            val tenBCrackTimeScore = crackTimeScore(tenBCrackTimeMillis)
-            setStrengthProgressAndText(tenBCrackTimeScore,
-                                       tenBGuessesStrengthMeter,
-                                       tenBGuessesStrength)
+            val tenBCrackTimeString = crackTimesDisplay.offlineFastHashing1e10PerSecond
+            val tenKCrackTimeString = crackTimesDisplay.offlineSlowHashing1e4perSecond
+            val tenCrackTimeString = crackTimesDisplay.onlineNoThrottling10perSecond
+            val hundredCrackTimeString = crackTimesDisplay.onlineThrottling100perHour
             
-            tenKGuessesSubtitle.text = replaceCrackTimeStrings(tenKCrackTimeString)
-            setStrengthProgressAndText(crackTimeScore(tenKCrackTimeMillis),
-                                       tenKGuessesStrengthMeter,
-                                       tenKGuessesStrength)
+            val tenBCrackTimeMillis =
+                (crackTimeSeconds.offlineFastHashing1e10PerSecond * 1000).toLong()
+            val tenKCrackTimeMillis =
+                (crackTimeSeconds.offlineSlowHashing1e4perSecond * 1000).toLong()
+            val tenCrackTimeMillis =
+                (crackTimeSeconds.onlineNoThrottling10perSecond * 1000).toLong()
+            val hundredCrackTimeMillis =
+                (crackTimeSeconds.onlineThrottling100perHour * 1000).toLong()
             
-            tenGuessesSubtitle.text = replaceCrackTimeStrings(tenCrackTimeString)
-            setStrengthProgressAndText(crackTimeScore(tenCrackTimeMillis),
-                                       tenGuessesStrengthMeter,
-                                       tenGuessesStrength)
-            
-            hundredGuessesSubtitle.text = replaceCrackTimeStrings(hundredCrackTimeString)
-            setStrengthProgressAndText(crackTimeScore(hundredCrackTimeMillis),
-                                       hundredGuessesStrengthMeter,
-                                       hundredGuessesStrength)
-            
-            // Warning
-            val localizedFeedback =
-                strength.feedback.withResourceBundle(localizedFeedbackResourceBundle(requireContext()))
-            warningSubtitle.text = getWarningText(localizedFeedback, tenBCrackTimeScore)
-            
-            // Suggestions
-            suggestionsSubtitle.text = getSuggestionsText(localizedFeedback)
-            
-            // Guesses
-            val guesses = strength.guesses
-            guessesSubtitle.text = getGuessesText(guesses)
-            
-            // Order of magnitude of guesses
-            orderMagnSubtitle.text = numberFmt.format(strength.guessesLog10)
-            
-            // Entropy
-            val statsList = getStatisticsCounts(password)
-            entropySubtitle.text = "${getPwdEntropyText(statsList)} ${getString(R.string.bits)}"
-            
-            // Match sequence
-            matchSequenceSubtitle.text = getMatchSequenceText(strength)
-            
-            // Statistics
-            statsSubtitle.text =
-                buildString {
-                    append(
-                        "\u2022 ${getString(R.string.length)}: ${numberFmt.format(statsList[0])}",
-                        "\n\u2022 ${getString(R.string.unique_chars)}: ${numberFmt.format(statsList[1])}",
-                        "\n\u2022 ${getString(R.string.uppercase)}: ${numberFmt.format(statsList[2])}",
-                        "\n\u2022 ${getString(R.string.lowercase)}: ${numberFmt.format(statsList[3])}",
-                        "\n\u2022 ${getString(R.string.numbers)}: ${numberFmt.format(statsList[4])}",
-                        "\n\u2022 ${getString(R.string.special_char)}: ${numberFmt.format(statsList[5])}",
-                        "\n\u2022 ${getString(R.string.spaces)}: ${numberFmt.format(statsList[6])}"
-                    )
-                }
+            fragmentBinding.apply {
+                
+                // Estimated time to crack
+                tenBGuessesSubtitle.text = replaceCrackTimeStrings(tenBCrackTimeString)
+                val tenBCrackTimeScore = crackTimeScore(tenBCrackTimeMillis)
+                setStrengthProgressAndText(tenBCrackTimeScore,
+                                           tenBGuessesStrengthMeter,
+                                           tenBGuessesStrength)
+                
+                tenKGuessesSubtitle.text = replaceCrackTimeStrings(tenKCrackTimeString)
+                setStrengthProgressAndText(crackTimeScore(tenKCrackTimeMillis),
+                                           tenKGuessesStrengthMeter,
+                                           tenKGuessesStrength)
+                
+                tenGuessesSubtitle.text = replaceCrackTimeStrings(tenCrackTimeString)
+                setStrengthProgressAndText(crackTimeScore(tenCrackTimeMillis),
+                                           tenGuessesStrengthMeter,
+                                           tenGuessesStrength)
+                
+                hundredGuessesSubtitle.text = replaceCrackTimeStrings(hundredCrackTimeString)
+                setStrengthProgressAndText(crackTimeScore(hundredCrackTimeMillis),
+                                           hundredGuessesStrengthMeter,
+                                           hundredGuessesStrength)
+                
+                // Warning
+                val localizedFeedback =
+                    strength.feedback.withResourceBundle(get(named("localizedFeedback")))
+                warningSubtitle.text = getWarningText(localizedFeedback, tenBCrackTimeScore)
+                
+                // Suggestions
+                suggestionsSubtitle.text = getSuggestionsText(localizedFeedback)
+                
+                // Guesses
+                val guesses = strength.guesses
+                guessesSubtitle.text = getGuessesText(guesses)
+                
+                // Order of magnitude of guesses
+                orderMagnSubtitle.text = numberFmt.format(strength.guessesLog10)
+                
+                // Entropy
+                val statsList = getStatisticsCounts(password)
+                entropySubtitle.text = "${getPwdEntropyText(statsList)} ${getString(R.string.bits)}"
+                
+                // Match sequence
+                matchSequenceSubtitle.text = getMatchSequenceText(strength)
+                
+                // Statistics
+                statsSubtitle.text =
+                    buildString {
+                        append(
+                            "\u2022 ${getString(R.string.length)}: ${numberFmt.format(statsList[0])}",
+                            "\n\u2022 ${getString(R.string.unique_chars)}: ${numberFmt.format(statsList[1])}",
+                            "\n\u2022 ${getString(R.string.uppercase)}: ${numberFmt.format(statsList[2])}",
+                            "\n\u2022 ${getString(R.string.lowercase)}: ${numberFmt.format(statsList[3])}",
+                            "\n\u2022 ${getString(R.string.numbers)}: ${numberFmt.format(statsList[4])}",
+                            "\n\u2022 ${getString(R.string.special_char)}: ${numberFmt.format(statsList[5])}",
+                            "\n\u2022 ${getString(R.string.spaces)}: ${numberFmt.format(statsList[6])}"
+                        )
+                    }
+            }
         }
     }
     
     protected fun displayPhraseResults(passphrase: CharSequence) {
-        val phraseDetails =
-            if (Build.VERSION.SDK_INT >= 33) arguments?.getParcelable("phraseDetails", GenPhraseDetails::class.java)!!
-            else arguments?.getParcelable("phraseDetails")!!
-        
-        val (totalEntropy, perWordEntropy) =
-            getPhraseEntropyText(
-                phraseDetails.wordsInPhrase.toDouble(),
-                phraseDetails.totalWordsInWordlist.toDouble(),
-                phraseDetails.hasNumber
-            )
-        
-        @SuppressLint("SetTextI18n")
-        fragmentBinding.entropySubtitle.text =
-            buildString {
-                append(
-                    "\u2022 ${getString(R.string.total)}: $totalEntropy ${getString(R.string.bits)}",
-                    "\n\u2022 ${getString(R.string.per_word)}: $perWordEntropy ${getString(R.string.bits)}"
+        lifecycleScope.launch {
+            val phraseDetails =
+                if (Build.VERSION.SDK_INT >= 33) arguments?.getParcelable("phraseDetails",
+                                                                          GenPhraseDetails::class.java) !!
+                else arguments?.getParcelable("phraseDetails") !!
+            
+            val (totalEntropy, perWordEntropy) =
+                getPhraseEntropyText(
+                    phraseDetails.wordsInPhrase.toDouble(),
+                    phraseDetails.totalWordsInWordlist.toDouble(),
+                    phraseDetails.hasNumber
                 )
+            
+            @SuppressLint("SetTextI18n")
+            fragmentBinding.entropySubtitle.text =
+                buildString {
+                    append(
+                        "\u2022 ${getString(R.string.total)}: $totalEntropy ${getString(R.string.bits)}",
+                        "\n\u2022 ${getString(R.string.per_word)}: $perWordEntropy ${getString(R.string.bits)}"
+                    )
+                }
+            
+            val avgWordLength: Double
+            val longestWord: String
+            val shortestWord: String
+            
+            withContext(Dispatchers.Default) {
+                var splitWordsList = passphrase.split(phraseDetails.separator)
+                if (phraseDetails.hasNumber) {
+                    splitWordsList =
+                        splitWordsList.map {
+                            it.dropLastWhile { char ->
+                                char.isDigit()
+                            }
+                        }
+                }
+                avgWordLength =
+                    splitWordsList.sumOf { it.length }.toDouble() / splitWordsList.size.toDouble()
+                longestWord = splitWordsList.maxBy { it.length }
+                shortestWord = splitWordsList.minBy { it.length }
             }
-        
-        var splitWordsList =
-            passphrase.split(phraseDetails.separator)
-        
-        if (phraseDetails.hasNumber) {
-            splitWordsList =
-                splitWordsList.map {
-                    it.dropLastWhile { char ->
-                        char.isDigit()
-                    }
+            
+            // Statistics
+            fragmentBinding.statsSubtitle.text =
+                buildString {
+                    append(
+                        "\u2022 ${getString(R.string.words)}: ${numberFmt.format(phraseDetails.wordsInPhrase.toInt())}",
+                        "\n\u2022 ${getString(R.string.avg_word_length)}: ${numberFmt.format(avgWordLength)}",
+                        "\n\u2022 ${getString(R.string.longest_word)}: $longestWord",
+                        "\n\u2022 ${getString(R.string.longest_word_length)}: ${numberFmt.format(longestWord.length)}",
+                        "\n\u2022 ${getString(R.string.shortest_word)}: $shortestWord",
+                        "\n\u2022 ${getString(R.string.shortest_word_length)}: ${numberFmt.format(shortestWord.length)}"
+                    )
                 }
         }
-        
-        val avgWordLength = splitWordsList.sumOf { it.length }.toDouble() / splitWordsList.size.toDouble()
-        val longestWord = splitWordsList.maxBy { it.length }
-        val shortestWord = splitWordsList.minBy { it.length }
-        
-        // Statistics
-        fragmentBinding.statsSubtitle.text =
-            buildString {
-                append(
-                    "\u2022 ${getString(R.string.words)}: ${numberFmt.format(phraseDetails.wordsInPhrase.toInt())}",
-                    "\n\u2022 ${getString(R.string.avg_word_length)}: ${numberFmt.format(avgWordLength)}",
-                    "\n\u2022 ${getString(R.string.longest_word)}: $longestWord",
-                    "\n\u2022 ${getString(R.string.longest_word_length)}: ${numberFmt.format(longestWord.length)}",
-                    "\n\u2022 ${getString(R.string.shortest_word)}: $shortestWord",
-                    "\n\u2022 ${getString(R.string.shortest_word_length)}: ${numberFmt.format(shortestWord.length)}"
-                )
-            }
     }
     
     protected fun copyToClipboard(copiedText: CharSequence) {

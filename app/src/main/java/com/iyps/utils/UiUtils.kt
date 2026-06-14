@@ -41,11 +41,14 @@ import com.iyps.preferences.PreferenceManager.Companion.ONE_MONTH_DONE
 import com.iyps.utils.TextUtils.Companion.PHRASE_SEPARATORS
 import com.iyps.utils.TextUtils.Companion.SPECIAL_CHARS
 import kotlinx.coroutines.delay
+import org.koin.core.component.KoinComponent
+import org.koin.core.component.get
 import kotlin.text.forEach
+import kotlin.time.Duration.Companion.milliseconds
 
 class UiUtils {
     
-    companion object {
+    companion object : KoinComponent {
         
         fun setAppTheme(selectedTheme: Int) {
             when(selectedTheme) {
@@ -113,13 +116,15 @@ class UiUtils {
                 .show()
         }
         
-        suspend fun showSupportAnimBtmSheet(fragmentManager: FragmentManager, preferenceManager: PreferenceManager) {
-            delay(300)
+        suspend fun showSupportAnimBtmSheet(fragmentManager: FragmentManager) {
+            delay(300.milliseconds)
             SupportAnimBottomSheet().show(fragmentManager, "SupportAnimBottomSheet")
             AppState.showSupportBtmSheet = false
-            preferenceManager.setLong(key = LAST_SUPPORT_SHOWN_TIME, value = System.currentTimeMillis())
-            if (!preferenceManager.getBoolean(ONE_MONTH_DONE, defValue = false)) {
-                preferenceManager.setBoolean(ONE_MONTH_DONE, value = true)
+            get<PreferenceManager>().apply {
+                setLong(key = LAST_SUPPORT_SHOWN_TIME, value = System.currentTimeMillis())
+                if (!getBoolean(ONE_MONTH_DONE, defValue = false)) {
+                    setBoolean(ONE_MONTH_DONE, value = true)
+                }
             }
         }
         

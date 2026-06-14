@@ -60,48 +60,50 @@ class GenerateMultiAdapter(private val aListViewItems: ArrayList<GenMultiItem>,
     
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         
-        // Generated password
-        holder.pwdLine.setGenTextWithColor(aListViewItems[position].password, isPassphrase)
-        
-        // Details
-        holder.detailsBtn.apply {
-            val intent =
-                Intent(context, DetailsActivity::class.java)
-                    .putExtra("PwdLine", aListViewItems[position].password)
+        aListViewItems[position].let { genItem ->
+            // Generated password
+            holder.pwdLine.setGenTextWithColor(genItem.password, isPassphrase)
             
-            if (isPassphrase) {
-                intent
-                    .putExtra("isPassphrase", true)
-                    .putExtra("phraseDetails", aListViewItems[position].phraseDetails)
-            }
-            
-            setOnClickListener {
-                context.startActivity(
-                    intent,
-                    ActivityOptions.makeSceneTransitionAnimation(mainActivity).toBundle()
-                )
-            }
-        }
-        
-        // Copy
-        holder.copyBtn.apply {
-            setOnClickListener {
-                val clipData = ClipData.newPlainText("", holder.pwdLine.text.toString())
-                clipData.hideSensitiveContent()
-                (context.getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
-                // Show snackbar only if 12L or lower to avoid duplicate notifications
-                // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
-                if (Build.VERSION.SDK_INT <= 32) {
-                    showSnackbar(mainActivity.activityBinding.mainCoordLayout,
-                                 context.getString(R.string.copied_to_clipboard),
-                                 mainActivity.activityBinding.mainBottomNav)
+            // Details
+            holder.detailsBtn.apply {
+                val intent =
+                    Intent(context, DetailsActivity::class.java)
+                        .putExtra("PwdLine", genItem.password)
+                
+                if (isPassphrase) {
+                    intent
+                        .putExtra("isPassphrase", true)
+                        .putExtra("phraseDetails", genItem.phraseDetails)
+                }
+                
+                setOnClickListener {
+                    context.startActivity(
+                        intent,
+                        ActivityOptions.makeSceneTransitionAnimation(mainActivity).toBundle()
+                    )
                 }
             }
-        }
-        
-        // Share
-        holder.shareBtn.setOnClickListener {
-            mainActivity.shareText(holder.pwdLine.text.toString())
+            
+            // Copy
+            holder.copyBtn.apply {
+                setOnClickListener {
+                    val clipData = ClipData.newPlainText("", genItem.password)
+                    clipData.hideSensitiveContent()
+                    (context.getSystemService(CLIPBOARD_SERVICE) as ClipboardManager).setPrimaryClip(clipData)
+                    // Show snackbar only if 12L or lower to avoid duplicate notifications
+                    // https://developer.android.com/develop/ui/views/touch-and-input/copy-paste#duplicate-notifications
+                    if (Build.VERSION.SDK_INT <= 32) {
+                        showSnackbar(mainActivity.activityBinding.mainCoordLayout,
+                                     context.getString(R.string.copied_to_clipboard),
+                                     mainActivity.activityBinding.mainBottomNav)
+                    }
+                }
+            }
+            
+            // Share
+            holder.shareBtn.setOnClickListener {
+                mainActivity.shareText(genItem.password)
+            }
         }
     }
     

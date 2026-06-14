@@ -46,16 +46,16 @@ class LicenseItemAdapter(private val aListViewItems: ArrayList<License>,
     
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         
-        val license = aListViewItems[position]
-        
-        holder.licenseTitle.apply {
-            text = license.title
-            setOnClickListener{
-                openURL(mainActivity, license.url)
+        aListViewItems[position].let { license ->
+            holder.licenseTitle.apply {
+                text = license.title
+                setOnClickListener{
+                    openURL(mainActivity, license.url)
+                }
             }
+            
+            holder.licenseDesc.text = license.desc
         }
-        
-        holder.licenseDesc.text = license.desc
     }
     
     override fun getItemCount(): Int {

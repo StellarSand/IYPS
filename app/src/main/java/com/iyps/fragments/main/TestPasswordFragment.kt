@@ -38,7 +38,7 @@ import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.chip.Chip
 import com.iyps.activities.MainActivity
 import com.iyps.bottomsheets.TestMultiPwdBottomSheet
-import com.iyps.fragments.common.BaseTestPasswordFragment
+import com.iyps.fragments.common.BasePwdResultsFragment
 import com.iyps.objects.AppState
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.INCOG_KEYBOARD
@@ -48,16 +48,15 @@ import com.iyps.utils.UiUtils.Companion.showSupportAnimBtmSheet
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import org.koin.android.ext.android.inject
-import kotlin.getValue
+import org.koin.android.ext.android.get
+import kotlin.time.Duration.Companion.milliseconds
 
-class TestPasswordFragment : BaseTestPasswordFragment() {
+class TestPasswordFragment : BasePwdResultsFragment() {
     
     private lateinit var mainActivity: MainActivity
     
     override fun setupFragmentContent() {
         mainActivity = requireActivity() as MainActivity
-        val prefManager by inject<PreferenceManager>()
         var job: Job? = null
         var isInitialLaunch = true
         val displayMetrics = resources.displayMetrics
@@ -118,7 +117,7 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
         fragmentBinding.scrollView.isVisible = false
         
         fragmentBinding.passwordText.apply {
-            if (prefManager.getBoolean(INCOG_KEYBOARD)) {
+            if (get<PreferenceManager>().getBoolean (INCOG_KEYBOARD)) {
                 imeOptions = IME_FLAG_NO_PERSONALIZED_LEARNING
                 inputType = TYPE_TEXT_VARIATION_PASSWORD
             }
@@ -128,7 +127,7 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
                 job?.cancel()
                 job =
                     lifecycleScope.launch {
-                        delay(300)
+                        delay(300.milliseconds)
                         if (charSequence!!.isNotEmpty()) {
                             fragmentBinding.copyChipGroup.forEach {
                                 (it as? Chip)?.apply {
@@ -137,7 +136,7 @@ class TestPasswordFragment : BaseTestPasswordFragment() {
                             }
                             displayPwdResults(charSequence)
                             if (!isInitialLaunch && AppState.showSupportBtmSheet) {
-                                showSupportAnimBtmSheet(parentFragmentManager, prefManager)
+                                showSupportAnimBtmSheet(parentFragmentManager)
                             }
                             if (isInitialLaunch) {
                                 isInitialLaunch = false

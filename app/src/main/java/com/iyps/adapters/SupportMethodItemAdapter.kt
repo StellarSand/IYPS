@@ -48,19 +48,19 @@ class SupportMethodItemAdapter (private val aListViewItems: ArrayList<SupportMet
     
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         
-        val supportMethod = aListViewItems[position]
-        
-        holder.supportMethodTitle.apply {
-            text = supportMethod.title
-            setCompoundDrawablesWithIntrinsicBounds(supportMethod.titleIcon, 0, 0, 0)
-        }
-        
-        holder.supportMethodQr.setImageResource(supportMethod.qrCodeDrawable)
-        
-        holder.supportMethodUrl.apply {
-            text = supportMethod.url
-            setOnClickListener{
-                openURL(mainActivity, supportMethod.url)
+        aListViewItems[position].let { supportMethod ->
+            holder.supportMethodTitle.apply {
+                text = supportMethod.title
+                setCompoundDrawablesWithIntrinsicBounds(supportMethod.titleIcon, 0, 0, 0)
+            }
+            
+            holder.supportMethodQr.setImageResource(supportMethod.qrCodeDrawable)
+            
+            holder.supportMethodUrl.apply {
+                text = supportMethod.url
+                setOnClickListener{
+                    openURL(mainActivity, supportMethod.url)
+                }
             }
         }
     }

@@ -28,8 +28,8 @@
     <!--Keep it alphabetically arranged-->
     <string name="diceware_cs" translatable="false">Diceware Čeština</string>
     <string name="diceware_de" translatable="false">Diceware Deutsch</string>
-    <string name="diceware_de_long" translatable="false">Diceware Deutsch long</string>
-    <string name="diceware_de_short" translatable="false">Diceware Deutsch short</string>
+    <string name="diceware_de_long" translatable="false">Diceware Deutsch lang</string>
+    <string name="diceware_de_short" translatable="false">Diceware Deutsch kurz</string>
     <string name="diceware_et" translatable="false">Diceware Eesti</string>
     <string name="diceware_en" translatable="false">Diceware English</string>
     <string name="diceware_es" translatable="false">Diceware Español</string>
