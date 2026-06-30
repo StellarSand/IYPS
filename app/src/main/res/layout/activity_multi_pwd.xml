@@ -34,14 +34,14 @@
         app:defaultNavHost="true"/>
 
     <com.google.android.material.floatingtoolbar.FloatingToolbarLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="bottom|center_horizontal"
         android:layout_marginHorizontal="@dimen/margin_65"
-        android:layout_marginBottom="@dimen/margin_8"
-        app:layout_behavior="com.google.android.material.behavior.HideViewOnScrollBehavior"
+        android:layout_marginBottom="@dimen/margin_16"
         android:clickable="true"
-        android:focusable="true">
+        android:focusable="true"
+        app:layout_behavior="com.google.android.material.behavior.HideViewOnScrollBehavior">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -52,8 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/viewButton"
-                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintEnd_toStartOf="@id/space1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:icon="@drawable/ic_back"
@@ -61,12 +60,21 @@
                 android:tooltipText="@string/back"
                 style="?attr/materialIconButtonStyle"/>
 
+            <Space
+                android:id="@+id/space1"
+                android:layout_width="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/backButton"
+                app:layout_constraintEnd_toStartOf="@id/viewButton"/>
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/viewButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/backButton"
-                app:layout_constraintEnd_toStartOf="@id/sortButton"
+                app:layout_constraintStart_toEndOf="@id/space1"
+                app:layout_constraintEnd_toStartOf="@id/space2"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:icon="@drawable/ic_view_grid"
@@ -74,11 +82,20 @@
                 android:tooltipText="@string/view"
                 style="?attr/materialIconButtonStyle"/>
 
+            <Space
+                android:id="@+id/space2"
+                android:layout_width="@dimen/margin_10"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/viewButton"
+                app:layout_constraintEnd_toStartOf="@id/sortButton"/>
+
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/sortButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintStart_toEndOf="@id/viewButton"
+                app:layout_constraintStart_toEndOf="@id/space2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"

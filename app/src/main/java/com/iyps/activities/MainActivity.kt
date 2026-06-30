@@ -63,7 +63,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var navActionsMap: Map<Int, Int>
     private lateinit var toggleActionsMap: Map<Int, Int>
-    private lateinit var viewsToAnimate: Array<ViewGroup>
     private var selectedItem = 0
     
     private companion object {
@@ -117,19 +116,15 @@ class MainActivity : AppCompatActivity() {
             )
         
         val checkIcon = ContextCompat.getDrawable(this, R.drawable.ic_done)
-        viewsToAnimate = arrayOf(activityBinding.generateToggleGroup, activityBinding.generateDockedToolbar)
         
         // Adjust UI components for edge to edge
-        mapOf(activityBinding.generateDockedToolbar to 64f,
-              activityBinding.generateToggleGroup to 78f).forEach { (view, margin) ->
-            ViewCompat.setOnApplyWindowInsetsListener(view) { v, windowInsets ->
-                v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
-                    bottomMargin =
-                        windowInsets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom +
-                        convertDpToPx(this@MainActivity, margin)
-                }
-                WindowInsetsCompat.CONSUMED
+        ViewCompat.setOnApplyWindowInsetsListener(activityBinding.generateDockedToolbar) { v, windowInsets ->
+            v.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                bottomMargin =
+                    windowInsets.getInsets(WindowInsetsCompat.Type.navigationBars()).bottom +
+                    convertDpToPx(this@MainActivity, 64f)
             }
+            WindowInsetsCompat.CONSUMED
         }
         
         // Disable screenshots and screen recordings
@@ -143,7 +138,7 @@ class MainActivity : AppCompatActivity() {
         // Opened from shortcut or quick settings toggle
         if (savedInstanceState == null && selectedItem == R.id.nav_generate) {
             displayFragment(selectedItem)
-            showViewsWithAnimation()
+            showDockedToolbarWithAnimation()
         }
         
         if (selectedItem != R.id.nav_settings // Prevent showing when theme is changed from settings
@@ -157,10 +152,10 @@ class MainActivity : AppCompatActivity() {
                 selectedItem = item.itemId
                 displayFragment(selectedItem)
                 if (selectedItem == R.id.nav_generate) {
-                    showViewsWithAnimation()
+                    showDockedToolbarWithAnimation()
                 }
                 else {
-                    hideViewsWithAnimation()
+                    hideDockedToolbarWithAnimation()
                 }
                 true
                 
@@ -213,25 +208,25 @@ class MainActivity : AppCompatActivity() {
         return elapsedTime.toDuration(DurationUnit.MILLISECONDS).inWholeDays > days
     }
     
-    private fun showViewsWithAnimation() {
-        viewsToAnimate.forEach { view ->
-            ObjectAnimator.ofFloat(view, "alpha", 0f, 1f).apply {
+    private fun showDockedToolbarWithAnimation() {
+        activityBinding.generateDockedToolbar.apply {
+            ObjectAnimator.ofFloat(this, "alpha", 0f, 1f).apply {
                 duration = ANIM_DURATION
                 interpolator = ANIM_INTERPOLATOR
-                doOnStart { view.isVisible = true }
+                doOnStart { isVisible = true }
                 start()
             }
         }
     }
     
-    private fun hideViewsWithAnimation() {
-        viewsToAnimate.forEach { view ->
-            if (view.isVisible) {
-                ObjectAnimator.ofFloat(view, "alpha", 1f, 0f).apply {
+    private fun hideDockedToolbarWithAnimation() {
+        activityBinding.generateDockedToolbar.apply {
+            if (isVisible) {
+                ObjectAnimator.ofFloat(this, "alpha", 1f, 0f).apply {
                     duration = ANIM_DURATION
                     interpolator = ANIM_INTERPOLATOR
                     start()
-                    doOnEnd { view.isVisible = false }
+                    doOnEnd { isVisible = false }
                 }
             }
         }
@@ -249,7 +244,7 @@ class MainActivity : AppCompatActivity() {
             if (navController.currentDestination?.id != navController.graph.startDestinationId) {
                 selectedItem = R.id.nav_test
                 displayFragment(selectedItem)
-                hideViewsWithAnimation()
+                hideDockedToolbarWithAnimation()
             }
             else {
                 finish()

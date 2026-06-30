@@ -27,8 +27,8 @@
     <!--#########################################################################################-->
 
     <!--Bottom Nav-->
-    <style name="NavTextActive" parent="MediumBoldText">
-        <item name="android:textSize">@dimen/text_15</item>
+    <style name="NavItemText" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">@dimen/text_14</item>
     </style>
 
     <!--#########################################################################################-->

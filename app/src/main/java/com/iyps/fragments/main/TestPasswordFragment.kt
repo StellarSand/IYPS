@@ -60,27 +60,28 @@ class TestPasswordFragment : BasePwdResultsFragment() {
         var job: Job? = null
         var isInitialLaunch = true
         val displayMetrics = resources.displayMetrics
-        var collapsingToolbarLargeHeightInPx = 0
-        var collapsingToolbarTopInsets = -1
+        var toolbarHeightInPx = 0
+        var toolbarTopInsets = -1
         
         TypedValue().let {
             requireContext().theme.resolveAttribute(
-                com.google.android.material.R.attr.collapsingToolbarLayoutLargeSize,
+                android.R.attr.actionBarSize,
                 it,
                 true
             )
-            collapsingToolbarLargeHeightInPx = TypedValue.complexToDimensionPixelSize(it.data, displayMetrics)
+            toolbarHeightInPx = TypedValue.complexToDimensionPixelSize(it.data, displayMetrics)
         }
         
         // Adjust UI components for edge to edge
-        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.collapsingToolbar) { _, windowInsets ->
-            if (collapsingToolbarTopInsets == -1) {
+        ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.toolbar) { _, windowInsets ->
+            if (toolbarTopInsets == -1) {
                 val insets =
                     windowInsets.getInsets(
                         WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
                     )
-                collapsingToolbarTopInsets = insets.top
+                toolbarTopInsets = insets.top
             }
+            
             WindowInsetsCompat.CONSUMED
         }
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.scrollView) { v, windowInsets ->
@@ -99,9 +100,16 @@ class TestPasswordFragment : BasePwdResultsFragment() {
             WindowInsetsCompat.CONSUMED
         }
         
-        // Set collapsing toolbar to center of screen for first time
+        // Set toolbar height to height of whole screen (excluding status & nav bars),
+        // so that editText is at center of screen for first time.
         // Don't move this within setOnApplyWindowInsetsListener() above
-        setCollapsingToolbarHeight((collapsingToolbarTopInsets + displayMetrics.heightPixels) / 2)
+        setToolbarHeight(
+            displayMetrics.heightPixels -
+            convertDpToPx(requireContext(), 100f)
+            // 100 = 64 + 36
+            // Bottom navigation bar height = 64dp
+            // Extra bottom margin to move the editText a little upwards = 36dp
+        )
         
         // Prevent dragging of appbar when scrollview is not visible
         val appBarLayoutBehavior =
@@ -140,9 +148,8 @@ class TestPasswordFragment : BasePwdResultsFragment() {
                             }
                             if (isInitialLaunch) {
                                 isInitialLaunch = false
-                                fragmentBinding.appBar.setExpanded(false, true)
                                 fragmentBinding.scrollView.isVisible = true
-                                setCollapsingToolbarHeight(collapsingToolbarTopInsets + collapsingToolbarLargeHeightInPx)
+                                setToolbarHeight(toolbarTopInsets + toolbarHeightInPx)
                             }
                         }
                         // If edit text is empty or cleared, reset everything
@@ -185,11 +192,14 @@ class TestPasswordFragment : BasePwdResultsFragment() {
         }
     }
     
-    private fun setCollapsingToolbarHeight(height: Int) {
-        fragmentBinding.collapsingToolbar.apply {
+    private fun setToolbarHeight(height: Int) {
+        fragmentBinding.toolbar.apply {
             val params = layoutParams
             params.height = height
             layoutParams = params
+            convertDpToPx(requireContext(), 12f).let {
+                setPaddingRelative(paddingStart, it, paddingEnd, it)
+            }
             requestLayout()
         }
     }

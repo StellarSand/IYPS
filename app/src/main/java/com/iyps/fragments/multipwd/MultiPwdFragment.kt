@@ -64,10 +64,16 @@ class MultiPwdFragment : Fragment(), MultiPwdAdapter.OnItemClickListener {
                 ViewCompat.setOnApplyWindowInsetsListener(this) { v, windowInsets ->
                     val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
                                                                 or WindowInsetsCompat.Type.displayCutout())
-                    v.updatePadding(left = insets.left,
-                                    top = insets.top + convertDpToPx(requireContext(), 10f),
-                                    right = insets.right,
-                                    bottom = insets.bottom + convertDpToPx(requireContext(), 10f))
+                    v.updatePadding(
+                        left = insets.left,
+                        top = insets.top + convertDpToPx(requireContext(), 10f),
+                        right = insets.right,
+                        bottom = insets.bottom + convertDpToPx(requireContext(), 90f)
+                        // 90 = 64 + 16 + 10
+                        // Floating toolbar height = 64dp
+                        // Floating toolbar bottom margin = 16dp
+                        // Space between floating toolbar & last item in recycler view = 10dp
+                    )
                     WindowInsetsCompat.CONSUMED
                 }
                 

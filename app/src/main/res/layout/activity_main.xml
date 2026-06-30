@@ -42,47 +42,46 @@
         android:layout_gravity="bottom"
         android:layout_marginBottom="@dimen/margin_64"
         android:visibility="gone"
-        tools:visibility="visible"/>
+        tools:visibility="visible">
 
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/generateToggleGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|bottom"
-        android:gravity="center"
-        android:layout_marginHorizontal="@dimen/margin_4"
-        android:layout_marginBottom="78dp"
-        app:singleSelection="true"
-        app:selectionRequired="true"
-        android:visibility="gone"
-        tools:visibility="visible"
-        style="@style/Widget.Material3Expressive.MaterialButtonGroup.Connected">
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/togglePassword"
-            android:layout_width="wrap_content"
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/generateToggleGroup"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/password"
-            android:textSize="@dimen/text_16"
-            style="@style/ToggleButtonStyle"/>
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_4"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            style="@style/Widget.Material3Expressive.MaterialButtonGroup.Connected">
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/togglePassphrase"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/passphrase"
-            android:textSize="@dimen/text_16"
-            style="@style/ToggleButtonStyle"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/togglePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="@dimen/text_16"
+                style="@style/ToggleButtonStyle"/>
 
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/togglePassphrase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passphrase"
+                android:textSize="@dimen/text_16"
+                style="@style/ToggleButtonStyle"/>
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </com.google.android.material.dockedtoolbar.DockedToolbarLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/main_bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:itemTextAppearanceActive="@style/NavTextActive"
-        app:labelVisibilityMode="selected"
+        app:itemTextAppearanceActive="@style/NavItemText"
+        app:itemTextAppearanceInactive="@style/NavItemText"
         app:menu="@menu/menu_bottom_nav"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

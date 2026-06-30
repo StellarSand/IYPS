@@ -156,6 +156,8 @@ abstract class BasePwdResultsFragment : Fragment() {
         
         clipboardManager = requireContext().getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         
+        fragmentBinding.passwordText.isSingleLine = true
+        
         setupFragmentContent()
         
         // Copy

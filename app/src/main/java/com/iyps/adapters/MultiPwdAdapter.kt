@@ -69,9 +69,6 @@ class MultiPwdAdapter(private val aListViewItems: List<String>,
     }
     
     override fun getPopupText(view: View, position: Int): CharSequence {
-        return aListViewItems[position].first().let {
-            if (it.isLowerCase()) it.uppercase()
-            else it
-        }.toString()
+        return aListViewItems[position].first().uppercaseChar().toString()
     }
 }

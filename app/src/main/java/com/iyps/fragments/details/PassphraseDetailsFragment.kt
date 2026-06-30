@@ -86,7 +86,6 @@ class PassphraseDetailsFragment : BasePwdResultsFragment() {
                 setText(passphrase)
                 isFocusable = false
                 isCursorVisible = false
-                isSingleLine = true
             }
         }
         
