@@ -21,6 +21,21 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!--WorkManager auto includes the following permissions due to merged manifest:
+    FOREGROUND_SERVICE
+    RECEIVE_BOOT_COMPLETED
+    ACCESS_NETWORK_STATE
+    WAKE_LOCK
+
+    Remove all of them, except WAKE_LOCK
+    - FOREGROUND_SERVICE is not required since clear clipboard work is done in background
+    - RECEIVE_BOOT_COMPLETED is not required as clipboard is already cleared after reboot
+    - ACCESS_NETWORK_STATE is not required as app is completely offline
+    -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" tools:node="remove"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" tools:node="remove"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" tools:node="remove"/>
+
     <application
         android:name=".appmanager.ApplicationManager"
         android:icon="@mipmap/ic_launcher"
