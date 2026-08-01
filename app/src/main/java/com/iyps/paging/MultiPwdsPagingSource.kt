@@ -65,7 +65,7 @@ class MultiPwdsPagingSource(
                         }
                     }
                     is MultiPwdsInput.Source.FileInput -> {
-                        // - Open a raw, read only system pipeline to the text file on the device
+                        // - Open a read only system pipeline to the text file on the device
                         // - Grab the pointer coordinates for only the requested range of items (e.g., 20 items)
                         // - Using fileChannel.position(), instantly jump to the exact byte offset where that specific line starts
                         // - Create a byte container, sized exactly to that line's length

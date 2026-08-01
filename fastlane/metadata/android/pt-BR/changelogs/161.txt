@@ -1,5 +1,3 @@
-IMPORTANTE: A chave de assinatura do app foi alterada. Desinstale qualquer versão instalada anteriormente antes de instalar esta versão.
-
 - Compatibilidade com o Android 17.
 - Opção para selecionar uma lista de palavras para a geração de senhas.
 - Inclusão de números na geração de senhas.

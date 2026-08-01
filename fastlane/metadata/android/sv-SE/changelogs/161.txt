@@ -1,5 +1,3 @@
-VIKTIGT: Appens signeringsnyckel har ändrats. Avinstallera eventuella tidigare installerade versioner innan du installerar den här versionen.
-
 - Stöd för Android 17.
 - Möjlighet att välja ordlista för generering av lösenfraser.
 - Möjlighet att inkludera siffror vid generering av lösenfraser.

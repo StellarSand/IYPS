@@ -1,5 +1,3 @@
-TÄHTIS: Rakenduse allkirjastamisvõti on muutunud. Enne selle versiooni installimist desinstallige kõik varem installitud versioonid.
-
 - Android 17 tugi.
 - Võimalus valida paroolifraaside genereerimiseks sõnastik.
 - Numbrite lisamine paroolifraaside genereerimisel.

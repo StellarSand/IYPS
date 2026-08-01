@@ -1,5 +1,3 @@
-IMPORTANTE: la chiave di firma dell’app è cambiata. Disinstalla eventuali versioni già installate prima di installare questa versione.
-
 - Supporto per Android 17.
 - Opzione per selezionare l'elenco di parole da utilizzare per la generazione delle passphrase.
 - Inclusione di numeri nella generazione delle passphrase.

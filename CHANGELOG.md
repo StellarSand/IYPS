@@ -1,6 +1,10 @@
 # CHANGELOG
 
 
+## v1.6.1
+- Remove unnecessary permissions introduced by WorkManager.
+
+
 ## v1.6.0
 > [!IMPORTANT]
 > The app's signing key has changed. Please uninstall any previously installed versions before installing this version.

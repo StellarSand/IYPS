@@ -1,5 +1,3 @@
-IMPORTANTE: A chave de assinatura da app foi alterada. Desinstale quaisquer versões anteriormente instaladas antes de instalar esta versão.
-
 - Compatibilidade com o Android 17.
 - Opção para selecionar uma lista de palavras para a geração de frases-passe.
 - Inclusão de números na geração de frases-passe.

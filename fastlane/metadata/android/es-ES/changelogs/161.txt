@@ -1,5 +1,3 @@
-IMPORTANTE: La clave de firma de la app ha cambiado. Desinstala cualquier versión instalada anteriormente antes de instalar esta versión.
-
 - Compatibilidad con Android 17.
 - Opción para seleccionar una lista de palabras para generar contraseñas.
 - Incluir números al generar contraseñas.

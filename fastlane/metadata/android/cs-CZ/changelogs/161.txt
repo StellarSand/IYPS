@@ -1,5 +1,3 @@
-DŮLEŽITÉ: Podepisovací klíč aplikace se změnil. Před instalací této verze odinstalujte všechny dříve nainstalované verze.
-
 - Podpora systému Android 17.
 - Možnost výběru seznamu slov pro generování hesel.
 - Zahrnutí čísel při generování hesel.
