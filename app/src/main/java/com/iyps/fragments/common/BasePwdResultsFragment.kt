@@ -179,11 +179,11 @@ abstract class BasePwdResultsFragment : Fragment() {
             object : AppBarLayout.LiftOnScrollProgressListener() {
                 override fun onUpdate(elevation: Float, backgroundColor: Int, progress: Float) {
                     fragmentBinding.topPasswordBox.boxBackgroundColor =
-                    argbEvaluator.evaluate(
-                        progress,
-                        colorSurfaceContainerHigh,
-                        colorSurfaceContainerHighest
-                    ) as Int
+                        argbEvaluator.evaluate(
+                            progress,
+                            colorSurfaceContainerHigh,
+                            colorSurfaceContainerHighest
+                        ) as Int
                 }
             }
         )
@@ -514,8 +514,7 @@ abstract class BasePwdResultsFragment : Fragment() {
     protected fun displayPhraseResults(passphrase: CharSequence) {
         lifecycleScope.launch {
             val phraseDetails =
-                if (Build.VERSION.SDK_INT >= 33) arguments?.getParcelable("phraseDetails",
-                                                                          GenPhraseDetails::class.java) !!
+                if (Build.VERSION.SDK_INT >= 33) arguments?.getParcelable("phraseDetails", GenPhraseDetails::class.java)!!
                 else arguments?.getParcelable("phraseDetails") !!
             
             val (totalEntropy, perWordEntropy) =
@@ -535,24 +534,30 @@ abstract class BasePwdResultsFragment : Fragment() {
                 }
             
             val avgWordLength: Double
-            val longestWord: String
-            val shortestWord: String
+            var longestWord: String? = null
+            var shortestWord: String? = null
             
             withContext(Dispatchers.Default) {
-                var splitWordsList = passphrase.split(phraseDetails.separator)
-                if (phraseDetails.hasNumber) {
-                    splitWordsList =
-                        splitWordsList.map {
-                            it.dropLastWhile { char ->
-                                char.isDigit()
-                            }
+                val splitWordsList = passphrase.split(phraseDetails.separator)
+                var totalLength = 0L
+                
+                splitWordsList.forEach { splitWord ->
+                    val word =
+                        if (phraseDetails.hasNumber) {
+                            splitWord.dropWhile { it.isDigit() }.dropLastWhile { it.isDigit() }
                         }
+                        else splitWord
+                    
+                    word.length.let {
+                        totalLength += it
+                        if (longestWord == null || it > longestWord!!.length) longestWord = word
+                        if (shortestWord == null || it < shortestWord!!.length) shortestWord = word
+                    }
                 }
-                avgWordLength =
-                    splitWordsList.sumOf { it.length }.toDouble() / splitWordsList.size.toDouble()
-                longestWord = splitWordsList.maxBy { it.length }
-                shortestWord = splitWordsList.minBy { it.length }
+                
+                avgWordLength = totalLength.toDouble() / splitWordsList.size.toDouble()
             }
+            
             
             // Statistics
             fragmentBinding.statsSubtitle.text =
@@ -561,9 +566,9 @@ abstract class BasePwdResultsFragment : Fragment() {
                         "\u2022 ${getString(R.string.words)}: ${numberFmt.format(phraseDetails.wordsInPhrase.toInt())}",
                         "\n\u2022 ${getString(R.string.avg_word_length)}: ${numberFmt.format(avgWordLength)}",
                         "\n\u2022 ${getString(R.string.longest_word)}: $longestWord",
-                        "\n\u2022 ${getString(R.string.longest_word_length)}: ${numberFmt.format(longestWord.length)}",
+                        "\n\u2022 ${getString(R.string.longest_word_length)}: ${numberFmt.format(longestWord!!.length)}",
                         "\n\u2022 ${getString(R.string.shortest_word)}: $shortestWord",
-                        "\n\u2022 ${getString(R.string.shortest_word_length)}: ${numberFmt.format(shortestWord.length)}"
+                        "\n\u2022 ${getString(R.string.shortest_word_length)}: ${numberFmt.format(shortestWord!!.length)}"
                     )
                 }
         }

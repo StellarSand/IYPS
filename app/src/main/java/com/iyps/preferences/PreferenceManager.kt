@@ -41,6 +41,7 @@ class PreferenceManager(context: Context) {
         const val PHRASE_SEPARATOR_POS = "phrase_separator_pos"
         const val PHRASE_CAPITALIZE = "phrase_capitalize"
         const val PHRASE_NUMBERS = "phrase_numbers"
+        const val PHRASE_NUM_POS = "phrase_numbers_pos"
         const val MATERIAL_YOU = "material_you"
         const val CLEAR_CLIPBOARD_POS = "clear_clipboard_pos"
         const val CLEAR_CLIPBOARD_TIME = "clear_clipboard_time"

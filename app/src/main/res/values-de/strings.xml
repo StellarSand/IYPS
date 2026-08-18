@@ -125,6 +125,9 @@
     <string name="eff_short_1">EFF short (memorable)</string>
     <string name="eff_short_2">EFF short (typo-tolerant)</string>
     <string name="capitalize">Gro\u00DFschreiben</string>
+    <string name="number_position">Number position</string>
+    <string name="start_of_word">Start of word</string>
+    <string name="end_of_word">End of word</string>
 
     <!--#########################################################################################-->
 

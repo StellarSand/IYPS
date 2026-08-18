@@ -48,6 +48,7 @@ import com.iyps.objects.GenerateMultiList
 import com.iyps.preferences.PreferenceManager
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_CAPITALIZE
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_NUMBERS
+import com.iyps.preferences.PreferenceManager.Companion.PHRASE_NUM_POS
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_SEPARATOR_POS
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDLIST_POS
 import com.iyps.preferences.PreferenceManager.Companion.PHRASE_WORDS_COUNT
@@ -75,6 +76,7 @@ class GeneratePassphraseFragment : Fragment() {
     private var sliderValue = 0.0f
     private var wordListDropdownSelectedPos = 0
     private var separatorDropdownSelectedPos = 0
+    private var numPosDropdownSelectedPos = 0
     private var allWordsArray = arrayOf<String>()
     private var totalWordsInWordlist = 0
     private var separator: String = ""
@@ -107,8 +109,8 @@ class GeneratePassphraseFragment : Fragment() {
                 getString(R.string.diceware_es), // Spanish
                 getString(R.string.diceware_fr), // French
                 getString(R.string.diceware_it), // Italian
-                getString(R.string.diceware_nl_1), // Dutch
-                getString(R.string.diceware_nl_2), // Dutch
+                getString(R.string.diceware_nl_1), // Dutch 1
+                getString(R.string.diceware_nl_2), // Dutch 2
                 getString(R.string.diceware_pt), // Portuguese
                 getString(R.string.diceware_sv), // Swedish
                 getString(R.string.diceware_tr), // Turkish
@@ -118,6 +120,12 @@ class GeneratePassphraseFragment : Fragment() {
         wordListDropdownSelectedPos = prefManager.getInt(PHRASE_WORDLIST_POS)
         val separatorDropdownArray = PHRASE_SEPARATORS.map { it.toString() }.toTypedArray() + getString(R.string.spaces)
         separatorDropdownSelectedPos = prefManager.getInt(PHRASE_SEPARATOR_POS)
+        val numPosDropdownArray =
+            arrayOf(
+                getString(R.string.start_of_word),
+                getString(R.string.end_of_word)
+            )
+        numPosDropdownSelectedPos = prefManager.getInt(PHRASE_NUM_POS, defVal = 1)
         
         // Adjust scrollview for edge to edge
         ViewCompat.setOnApplyWindowInsetsListener(fragmentBinding.phraseScrollView) { v, windowInsets ->
@@ -190,8 +198,22 @@ class GeneratePassphraseFragment : Fragment() {
         // Numbers
         fragmentBinding.phraseNumbersSwitch.apply {
             isChecked = prefManager.getBoolean(PHRASE_NUMBERS, defValue = false)
-            setOnCheckedChangeListener { _, _ ->
+            fragmentBinding.numPosTextInputLayout.isEnabled = isChecked
+            setOnCheckedChangeListener { _, isChecked ->
+                fragmentBinding.numPosTextInputLayout.isEnabled = isChecked
                 showGeneratedPassphrase()
+            }
+        }
+        
+        // Numbers position
+        (fragmentBinding.numPosDropdownMenu as MaterialAutoCompleteTextView).apply {
+            setText(numPosDropdownArray[numPosDropdownSelectedPos])
+            setSimpleItems(numPosDropdownArray)
+            setOnItemClickListener { _, _, position, _ ->
+                if (position != numPosDropdownSelectedPos) {
+                    numPosDropdownSelectedPos = position
+                    showGeneratedPassphrase()
+                }
             }
         }
         
@@ -333,14 +355,22 @@ class GeneratePassphraseFragment : Fragment() {
                         // posInPhrase = position of the word in passphrase
                         // indexInWordlist = index of the word from wordlist
                         var word = allWordsArray[indexInWordlist]
-                        if (shouldCapitalize) {
-                            word = word.replaceFirstChar { it.titlecase() }
-                        }
-                        append(word)
+                        if (shouldCapitalize) word = word.replaceFirstChar { it.titlecase() }
                         if (shouldAddNumber && numPosition == posInPhrase) {
-                            append(secureRandom.nextInt(9) + 1) // Random number from 1-9
+                            val randomNumber = secureRandom.nextInt(9) + 1 // Random number from 1-9
+                            when (numPosDropdownSelectedPos) {
+                                0 -> {
+                                    append(randomNumber)
+                                    append(word)
+                                }
+                                else -> {
+                                    append(word)
+                                    append(randomNumber)
+                                }
+                            }
                             shouldAddNumber = false
                         }
+                        else append(word)
                         if (posInPhrase < wordsInPhrase - 1) append(separator)
                     }
             }
@@ -377,6 +407,7 @@ class GeneratePassphraseFragment : Fragment() {
             setInt(PHRASE_SEPARATOR_POS, separatorDropdownSelectedPos)
             setBoolean(PHRASE_CAPITALIZE, fragmentBinding.capitalizeSwitch.isChecked)
             setBoolean(PHRASE_NUMBERS, fragmentBinding.phraseNumbersSwitch.isChecked)
+            setInt(PHRASE_NUM_POS, numPosDropdownSelectedPos)
         }
     }
     
