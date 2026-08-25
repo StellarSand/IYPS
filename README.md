@@ -20,7 +20,7 @@ A password strength app that evaluates and rates your password's robustness, est
 - [Screenshots](#screenshots)
 - [Download](#download)
 - [Changelog](#changelog)
-- [How does it work?](#how-does-it-work)
+- [References](#references)
 - [Privacy Policy](#privacy-policy)
 - [Issues](#issues)
 - [Contributing](#contributing)
@@ -133,7 +133,7 @@ All notable changes are documented in the [changelog](https://github.com/Stellar
 
 
 
-## How does it work?
+## References
 For a detailed explanation, refer to the following:
 - [Realistic password strength estimation](https://dropbox.tech/security/zxcvbn-realistic-password-strength-estimation)
 - [Five algorithms to measure real password strength](https://medium.com/nulab/five-algorithms-to-measure-real-password-strength-bd30126e82cc)
