@@ -16,7 +16,7 @@
 #
 
 [versions]
-androidGradle = "9.3.1"
+androidGradle = "9.3.2"
 kotlinGradle = "2.4.10" # https://github.com/JetBrains/kotlin/releases/latest (latest version is not auto detected)
 appcompat = "1.8.0"
 coreKtx = "1.19.0"
