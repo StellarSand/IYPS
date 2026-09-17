@@ -165,7 +165,7 @@ New pull requests can be submitted [here](https://github.com/StellarSand/IYPS/pu
 - [Arnold G. Reinhold](https://theworld.com/~reinhold/) for the original Diceware wordlist and everyone else mentioned [here](https://www.theworld.com/~reinhold/diceware.html#Diceware%20in%20Other%20Languages|outline) for the word lists in other languages.
 - [Weblate](https://hosted.weblate.org/) for providing free hosting to support translations.
 - [parveshnarwal](https://github.com/parveshnarwal) for publishing the app on Google Play.
-- [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors) & translators for making this app better.
+- [Contributors](https://github.com/StellarSand/IYPS/graphs/contributors?all=1) & translators for making this app better.
 
 
 
